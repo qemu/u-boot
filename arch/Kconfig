@@ -8,6 +8,12 @@ config CREATE_ARCH_SYMLINK
 config HAVE_ARCH_IOREMAP
 	bool
 
+config HAVE_STACK_VALIDATION
+	bool
+	help
+	  Architecture supports the 'objtool check' host tool command, which
+	  performs compile-time stack metadata validation.
+
 config SYS_CACHE_SHIFT_4
 	bool
 

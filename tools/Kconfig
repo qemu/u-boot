@@ -9,6 +9,17 @@ config MKIMAGE_DTC_PATH
 	  some cases the system dtc may not support all required features
 	  and the path to a different version should be given here.
 
+config STACK_VALIDATION
+	bool # "Compile-time stack metadata validation"
+	depends on HAVE_STACK_VALIDATION
+	help
+	  Add compile-time checks to validate stack metadata, including frame
+	  pointers (if CONFIG_FRAME_POINTER is enabled).  This helps ensure
+	  that runtime stack traces are more reliable.
+
+	  For more information, see
+	  tools/objtool/Documentation/stack-validation.txt.
+
 config TOOLS_CRC32
 	def_bool y
 	help
