@@ -71,6 +71,9 @@ HOSTCFLAGS_xway-swap-bytes.o := -pedantic
 hostprogs-y += mkenvimage
 mkenvimage-objs := mkenvimage.o os_support.o lib/crc32.o
 
+hostprogs-y += printvars
+printvars-objs := printvars.o
+
 hostprogs-y += dumpimage mkimage
 hostprogs-$(CONFIG_TOOLS_LIBCRYPTO) += fit_info fit_check_sign
 
@@ -258,7 +261,7 @@ $(obj)/lib/%.c $(obj)/common/%.c $(obj)/env/%.c:
 
 clean-dirs := lib common
 
-always := $(hostprogs-y)
+always := printvars
 
 # Generated LCD/video logo
 LOGO_H = $(objtree)/include/bmp_logo.h

@@ -1089,10 +1089,7 @@ endef
 PHONY += inputs
 inputs: $(INPUTS-y)
 
-all: .binman_stamp inputs
-ifeq ($(CONFIG_BINMAN),y)
-	$(call if_changed,binman)
-endif
+all: tools
 
 # Timestamp file to make sure that binman always runs
 .binman_stamp: FORCE
