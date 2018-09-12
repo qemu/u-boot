@@ -2302,7 +2302,7 @@ quiet_cmd_rmfiles = $(if $(wildcard $(rm-files)),CLEAN   $(wildcard $(rm-files))
 
 # read all saved command lines
 
-cmd_files := $(wildcard .*.cmd $(foreach f,$(sort $(targets)),$(dir $(f)).$(notdir $(f)).cmd))
+cmd_files := $(wildcard .*.cmd)
 
 ifneq ($(cmd_files),)
   $(cmd_files): ;	# Do not try to update included dependency files
