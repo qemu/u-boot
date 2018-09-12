@@ -2215,9 +2215,6 @@ PHONY += $(DOC_TARGETS)
 $(DOC_TARGETS): scripts_basic FORCE
 	$(Q)$(MAKE) $(build)=doc $@
 
-endif #ifeq ($(config-targets),1)
-endif #ifeq ($(mixed-targets),1)
-
 PHONY += checkstack ubootrelease ubootversion
 
 checkstack:
@@ -2312,6 +2309,8 @@ ifneq ($(cmd_files),)
   include $(cmd_files)
 endif
 
+endif    #ifeq ($(config-targets),1)
+endif    #ifeq ($(mixed-targets),1)
 endif	# skip-makefile
 
 PHONY += FORCE
