@@ -48,9 +48,6 @@ include scripts/Makefile.uncmd_spl
 
 include scripts/Kbuild.include
 
-# For backward compatibility check that these variables do not change
-save-cflags := $(CFLAGS)
-
 # The filename Kbuild has precedence over Makefile
 kbuild-dir := $(if $(filter /%,$(src)),$(src),$(srctree)/$(src))
 kbuild-file := $(if $(wildcard $(kbuild-dir)/Kbuild),$(kbuild-dir)/Kbuild,$(kbuild-dir)/Makefile)
@@ -60,13 +57,6 @@ include $(kbuild-file)
 asflags-y  += $(PLATFORM_CPPFLAGS)
 ccflags-y  += $(PLATFORM_CPPFLAGS)
 cppflags-y += $(PLATFORM_CPPFLAGS)
-
-# If the save-* variables changed error out
-ifeq ($(KBUILD_NOPEDANTIC),)
-        ifneq ("$(save-cflags)","$(CFLAGS)")
-                $(error CFLAGS was changed in "$(kbuild-file)". Fix it to use ccflags-y)
-        endif
-endif
 
 include scripts/Makefile.lib
 
