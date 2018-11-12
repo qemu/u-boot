@@ -449,6 +449,7 @@ CLANG_FLAGS	+= -no-integrated-as
 KBUILD_CFLAGS	+= $(CLANG_FLAGS)
 KBUILD_AFLAGS	+= $(CLANG_FLAGS)
 LDPPFLAGS	+= $(CLANG_TARGET)
+export CLANG_FLAGS
 endif
 
 # Don't generate position independent code
