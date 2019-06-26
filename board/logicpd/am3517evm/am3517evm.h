@@ -294,18 +294,6 @@ const omap3_sysinfo sysinfo = {
 	MUX_VAL(CP(HECC1_TXD),		(IEN  | PTU | EN  | M0)) \
 	MUX_VAL(CP(HECC1_RXD),		(IEN  | PTU | EN  | M0)) \
 	/* HSUSB */\
-	MUX_VAL(CP(HSUSB0_CLK),		(IEN  | PTD | DIS | M0)) \
-	MUX_VAL(CP(HSUSB0_STP),		(IDIS | PTU | EN  | M0)) \
-	MUX_VAL(CP(HSUSB0_DIR),		(IEN  | PTD | DIS | M0)) \
-	MUX_VAL(CP(HSUSB0_NXT),		(IEN  | PTD | DIS | M0)) \
-	MUX_VAL(CP(HSUSB0_DATA0),	(IEN  | PTD | DIS | M0)) \
-	MUX_VAL(CP(HSUSB0_DATA1),	(IEN  | PTD | DIS | M0)) \
-	MUX_VAL(CP(HSUSB0_DATA2),	(IEN  | PTD | DIS | M0)) \
-	MUX_VAL(CP(HSUSB0_DATA3),	(IEN  | PTD | DIS | M0)) \
-	MUX_VAL(CP(HSUSB0_DATA4),	(IEN  | PTD | DIS | M0)) \
-	MUX_VAL(CP(HSUSB0_DATA5),	(IEN  | PTD | DIS | M0)) \
-	MUX_VAL(CP(HSUSB0_DATA6),	(IEN  | PTD | DIS | M0)) \
-	MUX_VAL(CP(HSUSB0_DATA7),	(IEN  | PTD | DIS | M0)) \
 	MUX_VAL(CP(USB0_DRVBUS),	(IEN  | PTD | EN  | M0)) \
 	/* HDQ */\
 	MUX_VAL(CP(HDQ_SIO),		(IEN  | PTU | EN  | M0)) \
