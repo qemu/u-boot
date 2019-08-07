@@ -382,7 +382,8 @@ void spl_optee_entry(void *arg0, void *arg1, void *arg2, void *arg3);
  * stage wants to return to the ROM code to continue booting, boards
  * can implement 'board_return_to_bootrom'.
  */
-void board_return_to_bootrom(void);
+int board_return_to_bootrom(struct spl_image_info *spl_image,
+			    struct spl_boot_device *bootdev);
 
 /**
  * board_spl_fit_post_load - allow process images after loading finished
