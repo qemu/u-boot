@@ -822,7 +822,7 @@ int submit_control_msg(struct usb_device *dev, unsigned long pipe,
 }
 
 int submit_int_msg(struct usb_device *dev, unsigned long pipe, void *buffer,
-			int transfer_len, int interval)
+			int transfer_len, int interval, bool nonblock)
 {
 	/* no implement */
 	R8A66597_DPRINT("%s\n", __func__);
