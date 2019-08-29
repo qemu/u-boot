@@ -242,8 +242,8 @@ def scan_defconfigs(jobs=1):
     processes = []
     queues = []
     for i in range(jobs):
-        defconfigs = all_defconfigs[total_boards * i / jobs :
-                                    total_boards * (i + 1) / jobs]
+        defconfigs = all_defconfigs[total_boards * i // jobs :
+                                    total_boards * (i + 1) // jobs]
         q = multiprocessing.Queue(maxsize=-1)
         p = multiprocessing.Process(target=scan_defconfigs_for_multiprocess,
                                     args=(q, defconfigs))
