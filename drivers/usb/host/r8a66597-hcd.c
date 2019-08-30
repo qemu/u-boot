@@ -768,7 +768,7 @@ static int r8a66597_submit_control_msg(struct udevice *udev,
 
 static int r8a66597_submit_bulk_msg(struct udevice *udev,
 				    struct usb_device *dev, unsigned long pipe,
-				    void *buffer, int length)
+				    void *buffer, int length, bool nonblock)
 {
 	struct r8a66597 *r8a66597 = dev_get_priv(udev);
 	int ret = 0;
