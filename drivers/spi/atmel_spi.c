@@ -14,7 +14,7 @@
 
 #include <asm/arch/clk.h>
 #include <asm/arch/hardware.h>
-#ifdef CONFIG_DM_SPI
+#if CONFIG_IS_ENABLED(DM_SPI)
 #include <asm/arch/at91_spi.h>
 #endif
 #ifdef CONFIG_DM_GPIO
@@ -23,7 +23,7 @@
 
 #include "atmel_spi.h"
 
-#ifndef CONFIG_DM_SPI
+#if !CONFIG_IS_ENABLED(DM_SPI)
 
 static int spi_has_wdrbt(struct atmel_spi_slave *slave)
 {

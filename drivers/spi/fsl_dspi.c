@@ -97,7 +97,7 @@ struct fsl_dspi_priv {
 	struct dspi *regs;
 };
 
-#ifndef CONFIG_DM_SPI
+#if !CONFIG_IS_ENABLED(DM_SPI)
 struct fsl_dspi {
 	struct spi_slave slave;
 	struct fsl_dspi_priv priv;
@@ -411,7 +411,8 @@ static int fsl_dspi_cfg_speed(struct fsl_dspi_priv *priv, uint speed)
 
 	return 0;
 }
-#ifndef CONFIG_DM_SPI
+
+#if !CONFIG_IS_ENABLED(DM_SPI)
 int spi_cs_is_valid(unsigned int bus, unsigned int cs)
 {
 	if (((cs >= 0) && (cs < 8)) && ((bus >= 0) && (bus < 8)))

@@ -52,7 +52,7 @@
 /* SPIDEF */
 #define SPIDEF_CSDEF0_MASK	BIT(0)
 
-#ifndef CONFIG_DM_SPI
+#if !CONFIG_IS_ENABLED(DM_SPI)
 #define SPI0_BUS		0
 #define SPI0_BASE		CONFIG_SYS_SPI_BASE
 /*
@@ -119,7 +119,7 @@ struct davinci_spi_regs {
 
 /* davinci spi slave */
 struct davinci_spi_slave {
-#ifndef CONFIG_DM_SPI
+#if !CONFIG_IS_ENABLED(DM_SPI)
 	struct spi_slave slave;
 #endif
 	struct davinci_spi_regs *regs;
@@ -343,7 +343,7 @@ out:
 	return 0;
 }
 
-#ifndef CONFIG_DM_SPI
+#if !CONFIG_IS_ENABLED(DM_SPI)
 
 static inline struct davinci_spi_slave *to_davinci_spi(struct spi_slave *slave)
 {
