@@ -363,14 +363,6 @@ unsigned long get_board_ddr_clk(void);
 #define QSPI0_AMBA_BASE			0x40000000
 #define FSL_QSPI_FLASH_SIZE		(1 << 24)
 #define FSL_QSPI_FLASH_NUM		2
-
-/* DSPI */
-
-/* DM SPI */
-#if defined(CONFIG_FSL_DSPI) || defined(CONFIG_FSL_QSPI)
-#define CONFIG_DM_SPI_FLASH
-#define CONFIG_SPI_FLASH_DATAFLASH
-#endif
 #endif
 
 /*
