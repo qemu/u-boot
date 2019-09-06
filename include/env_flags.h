@@ -153,7 +153,11 @@ int env_flags_validate_env_set_params(char *name, char *const val[], int count);
  * When adding a variable to the environment, initialize the flags for that
  * variable.
  */
+#if CONFIG_IS_ENABLED(ENV_SUPPORT)
 void env_flags_init(struct env_entry *var_entry);
+#else
+static inline void env_flags_init(struct env_entry *var_entry) { }
+#endif
 
 /*
  * Validate the newval for to conform with the requirements defined by its flags

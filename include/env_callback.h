@@ -72,6 +72,10 @@
 	"serial#:serialno," \
 	CONFIG_ENV_CALLBACK_LIST_STATIC
 
+#if CONFIG_IS_ENABLED(ENV_SUPPORT)
 void env_callback_init(struct env_entry *var_entry);
+#else
+static inline void env_callback_init(struct env_entry *var_entry) { }
+#endif
 
 #endif /* __ENV_CALLBACK_H__ */

@@ -1,5 +1,12 @@
 menu "Environment"
 
+config ENV_SUPPORT
+	bool "Support all environment features"
+	default y
+	help
+	  Enable full environment support in U-Boot,
+	  including attributes, callbacks and flags.
+
 config ENV_IS_NOWHERE
 	bool "Environment is not stored"
 	default y if !ENV_IS_IN_EEPROM && !ENV_IS_IN_EXT4 && \
