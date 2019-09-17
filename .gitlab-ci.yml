@@ -18,10 +18,10 @@ stages:
     - git clone --depth=1 git://github.com/swarren/uboot-test-hooks.git /tmp/uboot-test-hooks
     - ln -s travis-ci /tmp/uboot-test-hooks/bin/`hostname`
     - ln -s travis-ci /tmp/uboot-test-hooks/py/`hostname`
-    - virtualenv /tmp/venv
+    - virtualenv -p /usr/bin/python3 /tmp/venv
     - . /tmp/venv/bin/activate
-    - pip install pytest==2.8.7
-    - pip install python-subunit
+    - pip3 install pytest
+    - pip3 install python-subunit
     - grub-mkimage -o ~/grub_x86.efi -O i386-efi normal  echo lsefimmap lsefi lsefisystab efinet tftp minicmd
     - grub-mkimage -o ~/grub_x64.efi -O x86_64-efi normal  echo lsefimmap lsefi lsefisystab efinet tftp minicmd
     - mkdir ~/grub2-arm
