@@ -136,9 +136,6 @@ class Config(object):
 
         # The set of all symbols, indexed by name (a string)
         self.syms = {}
-        # Python 2/3 compatibility hack. This is the only one needed.
-        self.syms_iter = self.syms.values if sys.version_info[0] >= 3 else \
-                         self.syms.itervalues
 
         # The set of all defined symbols in the configuration in the order they
         # appear in the Kconfig files. This excludes the special symbols n, m,
@@ -525,7 +522,7 @@ class Config(object):
            beginning of the file, with each line commented out automatically.
            None means no header."""
 
-        for sym in self.syms_iter():
+        for sym in self.syms.values():
             sym.already_written = False
 
         with open(filename, "w") as f:
@@ -564,7 +561,7 @@ class Config(object):
     def unset_user_values(self):
         """Resets the values of all symbols, as if Config.load_config() or
         Symbol.set_user_value() had never been called."""
-        for sym in self.syms_iter():
+        for sym in self.syms.values():
             sym._unset_user_value_no_recursive_invalidate()
 
     def set_print_warnings(self, print_warnings):
@@ -1507,7 +1504,7 @@ class Config(object):
         #    (these won't be included in 'dep' as that makes the dependency
         #    graph unwieldy, but Symbol._get_dependent() will include them)
         #  - Any symbols in a choice statement that depends on the symbol
-        for sym in self.syms_iter():
+        for sym in self.syms.values():
             for _, e in sym.prompts:
                 add_expr_deps(e, sym)
 
@@ -1578,7 +1575,7 @@ class Config(object):
         return rec(expr)
 
     def _invalidate_all(self):
-        for sym in self.syms_iter():
+        for sym in self.syms.values():
             sym._invalidate()
 
     #

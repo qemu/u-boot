@@ -97,7 +97,7 @@ boards = [
 
 BASE_DIR = 'base'
 
-OUTCOME_OK, OUTCOME_WARN, OUTCOME_ERR = range(3)
+OUTCOME_OK, OUTCOME_WARN, OUTCOME_ERR = list(range(3))
 
 class Options:
     """Class that holds build options"""
@@ -455,7 +455,7 @@ class TestBuild(unittest.TestCase):
         if use_network:
             with test_util.capture_sys_output() as (stdout, stderr):
                 url = self.toolchains.LocateArchUrl('arm')
-            self.assertRegexpMatches(url, 'https://www.kernel.org/pub/tools/'
+            self.assertRegex(url, 'https://www.kernel.org/pub/tools/'
                     'crosstool/files/bin/x86_64/.*/'
                     'x86_64-gcc-.*-nolibc_arm-.*linux-gnueabi.tar.xz')
 

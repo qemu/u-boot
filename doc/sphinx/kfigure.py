@@ -62,12 +62,7 @@ from six import iteritems
 
 import kernellog
 
-PY3 = sys.version_info[0] == 3
-
-if PY3:
-    _unicode = str
-else:
-    _unicode = unicode
+_unicode = str
 
 # Get Sphinx version
 major, minor, patch = sphinx.version_info[:3]

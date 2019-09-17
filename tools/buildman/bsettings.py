@@ -21,9 +21,9 @@ def Setup(fname=''):
         if config_fname == '':
             config_fname = '%s/.buildman' % os.getenv('HOME')
         if not os.path.exists(config_fname):
-            print 'No config file found ~/.buildman\nCreating one...\n'
+            print('No config file found ~/.buildman\nCreating one...\n')
             CreateBuildmanConfigFile(config_fname)
-            print 'To install tool chains, please use the --fetch-arch option'
+            print('To install tool chains, please use the --fetch-arch option')
         if config_fname:
             settings.read(config_fname)
 
@@ -68,10 +68,10 @@ def CreateBuildmanConfigFile(config_fname):
     try:
         f = open(config_fname, 'w')
     except IOError:
-        print "Couldn't create buildman config file '%s'\n" % config_fname
+        print("Couldn't create buildman config file '%s'\n" % config_fname)
         raise
 
-    print >>f, '''[toolchain]
+    print('''[toolchain]
 # name = path
 # e.g. x86 = /opt/gcc-4.6.3-nolibc/x86_64-linux
 
@@ -93,5 +93,5 @@ openrisc = or1k
 # snapper-boards=ENABLE_AT91_TEST=1
 # snapper9260=${snapper-boards} BUILD_TAG=442
 # snapper9g45=${snapper-boards} BUILD_TAG=443
-'''
+''', file=f)
     f.close();

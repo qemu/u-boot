@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # SPDX-License-Identifier: GPL-2.0+
 #
 # Copyright (C) 2016 Google, Inc
@@ -24,8 +24,6 @@ increasing the code size of SPL. This supports the CONFIG_SPL_OF_PLATDATA
 options. For more information about the use of this options and tool please
 see doc/driver-model/of-plat.txt
 """
-
-from __future__ import print_function
 
 from optparse import OptionParser
 import os

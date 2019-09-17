@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # SPDX-License-Identifier: GPL-2.0+
 #
 # Copyright (C) 2014, Masahiro Yamada <yamada.m@jp.panasonic.com>
@@ -149,7 +149,7 @@ if infile:
         output_lines.append(line)
     infile.close()
 
-for mail, name in output.items():
+for mail, name in list(output.items()):
     output_lines.append(name + ' ' + mail + '\n')
 
 output_lines.sort()

@@ -150,8 +150,8 @@ def CheckPatches(verbose, args):
             error_count += result.errors
             warning_count += result.warnings
             check_count += result.checks
-            print('%d errors, %d warnings, %d checks for %s:' % (result.errors,
-                    result.warnings, result.checks, col.Color(col.BLUE, fname)))
+            print(('%d errors, %d warnings, %d checks for %s:' % (result.errors,
+                    result.warnings, result.checks, col.Color(col.BLUE, fname))))
             if (len(result.problems) != result.errors + result.warnings +
                     result.checks):
                 print("Internal error: some problems lost")
@@ -160,7 +160,7 @@ def CheckPatches(verbose, args):
                     GetWarningMsg(col, item.get('type', '<unknown>'),
                         item.get('file', '<unknown>'),
                         item.get('line', 0), item.get('msg', 'message')))
-            print
+            print()
             #print(stdout)
     if error_count or warning_count or check_count:
         str = 'checkpatch.pl found %d error(s), %d warning(s), %d checks(s)'
@@ -169,6 +169,6 @@ def CheckPatches(verbose, args):
             color = col.YELLOW
         if error_count:
             color = col.RED
-        print(col.Color(color, str % (error_count, warning_count, check_count)))
+        print((col.Color(color, str % (error_count, warning_count, check_count))))
         return False
     return True

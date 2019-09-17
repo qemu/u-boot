@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # SPDX-License-Identifier: GPL-2.0+
 #
 # Author: Masahiro Yamada <yamada.m@jp.panasonic.com>
@@ -168,7 +168,7 @@ class KconfigScanner:
         warnings = self._conf.load_config(self._tmpfile)
         if warnings:
             for warning in warnings:
-                print '%s: %s' % (defconfig, warning)
+                print('%s: %s' % (defconfig, warning))
 
         try_remove(self._tmpfile)
         self._tmpfile = None
@@ -177,7 +177,7 @@ class KconfigScanner:
 
         # Get the value of CONFIG_SYS_ARCH, CONFIG_SYS_CPU, ... etc.
         # Set '-' if the value is empty.
-        for key, symbol in self._SYMBOL_TABLE.items():
+        for key, symbol in list(self._SYMBOL_TABLE.items()):
             value = self._conf.get_symbol(symbol).get_value()
             if value:
                 params[key] = value
@@ -290,7 +290,7 @@ class MaintainersDatabase:
           'Active', 'Orphan' or '-'.
         """
         if not target in self.database:
-            print >> sys.stderr, "WARNING: no status info for '%s'" % target
+            print("WARNING: no status info for '%s'" % target, file=sys.stderr)
             return '-'
 
         tmp = self.database[target][0]
@@ -301,8 +301,8 @@ class MaintainersDatabase:
         elif tmp.startswith('Orphan'):
             return 'Orphan'
         else:
-            print >> sys.stderr, ("WARNING: %s: unknown status for '%s'" %
-                                  (tmp, target))
+            print(("WARNING: %s: unknown status for '%s'" %
+                                  (tmp, target)), file=sys.stderr)
             return '-'
 
     def get_maintainers(self, target):
@@ -313,7 +313,7 @@ class MaintainersDatabase:
           they are separated with colons.
         """
         if not target in self.database:
-            print >> sys.stderr, "WARNING: no maintainers for '%s'" % target
+            print("WARNING: no maintainers for '%s'" % target, file=sys.stderr)
             return ''
 
         return ':'.join(self.database[target][1])
@@ -418,7 +418,7 @@ def gen_boards_cfg(output, jobs=1, force=False):
     check_top_directory()
 
     if not force and output_is_new(output):
-        print "%s is up to date. Nothing to do." % output
+        print("%s is up to date. Nothing to do." % output)
         sys.exit(0)
 
     params_list = scan_defconfigs(jobs)

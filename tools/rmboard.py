@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#!/usr/bin/env python3
 # SPDX-License-Identifier: GPL-2.0+
 # Copyright 2019 Google LLC
 #
@@ -22,8 +22,6 @@ This script works by:
 
 Search for ## to update the commit message manually.
 """
-
-from __future__ import print_function
 
 import glob
 import os

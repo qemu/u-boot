@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 import os
 import sys
@@ -11,4 +11,4 @@ import libfdt
 with open('b/sandbox_spl/u-boot.dtb') as fd:
     fdt = fd.read()
 
-print libfdt.fdt_path_offset(fdt, "/aliases")
+print(libfdt.fdt_path_offset(fdt, "/aliases"))

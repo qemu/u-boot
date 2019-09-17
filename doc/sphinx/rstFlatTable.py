@@ -57,13 +57,9 @@ from docutils.utils import SystemMessagePropagation
 # (doc/books/kernel-doc-HOWTO).
 __version__  = '1.0'
 
-PY3 = sys.version_info[0] == 3
-PY2 = sys.version_info[0] == 2
-
-if PY3:
-    # pylint: disable=C0103, W0622
-    unicode     = str
-    basestring  = str
+# pylint: disable=C0103, W0622
+unicode     = str
+basestring  = str
 
 # ==============================================================================
 def setup(app):

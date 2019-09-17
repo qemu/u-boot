@@ -31,11 +31,8 @@ class TestEntry(unittest.TestCase):
     def _ReloadEntry(self):
         global entry
         if entry:
-            if sys.version_info[0] >= 3:
-                import importlib
-                importlib.reload(entry)
-            else:
-                reload(entry)
+            import importlib
+            importlib.reload(entry)
         else:
             import entry
 

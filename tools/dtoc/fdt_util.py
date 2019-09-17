@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 # SPDX-License-Identifier: GPL-2.0+
 #
 # Copyright (C) 2016 Google, Inc

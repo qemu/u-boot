@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # SPDX-License-Identifier: GPL-2.0+
 
 # Copyright (c) 2016 Google, Inc
@@ -8,8 +8,6 @@
 #
 
 """See README for more information"""
-
-from __future__ import print_function
 
 from distutils.sysconfig import get_python_lib
 import glob

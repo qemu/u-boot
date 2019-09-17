@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # SPDX-License-Identifier: GPL-2.0+
 # Copyright 2019 Google LLC
 # Written by Simon Glass <sjg@chromium.org>
@@ -8,8 +8,6 @@
 These create and read various CBFSs and compare the results with expected
 values and with cbfstool
 """
-
-from __future__ import print_function
 
 import io
 import os
