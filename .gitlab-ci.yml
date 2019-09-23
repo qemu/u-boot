@@ -38,7 +38,7 @@ stages:
         ret=0;
         tools/buildman/buildman -o /tmp -P -E ${BUILDMAN} ${OVERRIDE}|| ret=$?;
         if [[ $ret -ne 0 && $ret -ne 129 ]]; then
-          tools/buildman/buildman -sdeP ${BUILDMAN};
+          tools/buildman/buildman -o /tmp -sdeP ${BUILDMAN};
           exit $ret;
         fi;
       fi
@@ -66,7 +66,7 @@ build all 32bit ARM plaforms:
     - ret=0;
      ./tools/buildman/buildman -o /tmp -P -E arm -x aarch64 || ret=$?;
      if [[ $ret -ne 0 && $ret -ne 129 ]]; then
-       ./tools/buildman/buildman -sdeP;
+       ./tools/buildman/buildman -o /tmp -sdeP;
        exit $ret;
      fi;
 
@@ -80,7 +80,7 @@ build all 64bit ARM plaforms:
     - ret=0;
      ./tools/buildman/buildman -o /tmp -P -E aarch64 || ret=$?;
      if [[ $ret -ne 0 && $ret -ne 129 ]]; then
-       ./tools/buildman/buildman -sdeP;
+       ./tools/buildman/buildman -o /tmp -sdeP;
        exit $ret;
      fi;
 
@@ -91,7 +91,7 @@ build all PowerPC plaforms:
     - ret=0;
      ./tools/buildman/buildman -o /tmp -P -E powerpc || ret=$?;
      if [[ $ret -ne 0 && $ret -ne 129 ]]; then
-       ./tools/buildman/buildman -sdeP;
+       ./tools/buildman/buildman -o /tmp -sdeP;
        exit $ret;
      fi;
 
@@ -102,7 +102,7 @@ build all other plaforms:
     - ret=0;
      ./tools/buildman/buildman -o /tmp -P -E -x arm,powerpc || ret=$?;
      if [[ $ret -ne 0 && $ret -ne 129 ]]; then
-       ./tools/buildman/buildman -sdeP;
+       ./tools/buildman/buildman -o /tmp -sdeP;
        exit $ret;
      fi;
 
@@ -160,7 +160,7 @@ Run binman, buildman, dtoc and patman testsuites:
       export PATH="${UBOOT_TRAVIS_BUILD_DIR}/scripts/dtc:${PATH}";
       ./tools/buildman/buildman -o /tmp -P sandbox_spl;
       ./tools/binman/binman --toolpath ${UBOOT_TRAVIS_BUILD_DIR}/tools test;
-      ./tools/buildman/buildman -t;
+      ./tools/buildman/buildman -o /tmp -t;
       ./tools/dtoc/dtoc -t;
       ./tools/patman/patman --test
 
