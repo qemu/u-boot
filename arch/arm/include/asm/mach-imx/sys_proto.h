@@ -38,11 +38,13 @@
 #define is_mx6solo() (is_cpu_type(MXC_CPU_MX6SOLO))
 #define is_mx6ul() (is_cpu_type(MXC_CPU_MX6UL))
 #define is_mx6ull() (is_cpu_type(MXC_CPU_MX6ULL))
+#define is_mx6ulz() (is_cpu_type(MXC_CPU_MX6ULZ))
 #define is_mx6sll() (is_cpu_type(MXC_CPU_MX6SLL))
 
 #define is_mx7ulp() (is_cpu_type(MXC_CPU_MX7ULP))
 
 #define is_imx8mq() (is_cpu_type(MXC_CPU_IMX8MQ))
+#define is_imx8qm() (is_cpu_type(MXC_CPU_IMX8QM))
 #define is_imx8qxp() (is_cpu_type(MXC_CPU_IMX8QXP))
 
 #ifdef CONFIG_MX6

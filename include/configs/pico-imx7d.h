@@ -70,7 +70,11 @@
 #define PICO_BOOT_ENV \
 	"bootmenu_0=Boot using PICO-Hobbit baseboard=" \
 		"setenv fdtfile imx7d-pico-hobbit.dtb\0" \
-	"bootmenu_1=Boot using PICO-Pi baseboard=" \
+	"bootmenu_1=Boot using PICO-Dwarf baseboard=" \
+		"setenv fdtfile imx7d-pico-dwarf.dtb\0" \
+	"bootmenu_2=Boot using PICO-Nymph baseboard=" \
+		"setenv fdtfile imx7d-pico-nymph.dtb\0" \
+	"bootmenu_3=Boot using PICO-Pi baseboard=" \
 		"setenv fdtfile imx7d-pico-pi.dtb\0" \
 	BOOTENV
 #endif
@@ -163,7 +167,7 @@
 #define CONFIG_POWER_PFUZE3000
 #define CONFIG_POWER_PFUZE3000_I2C_ADDR	0x08
 
-#ifdef CONFIG_VIDEO
+#ifdef CONFIG_DM_VIDEO
 #define CONFIG_VIDEO_MXS
 #define CONFIG_VIDEO_LOGO
 #define CONFIG_SPLASH_SCREEN
