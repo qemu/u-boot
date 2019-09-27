@@ -51,7 +51,7 @@ class LogfileStream(object):
         """Write data to the log stream.
 
         Args:
-            data: The data to write tot he file.
+            data: The data to write to the file.
             implicit: Boolean indicating whether data actually appeared in the
                 stream, or was implicitly generated. A valid use-case is to
                 repeat a shell prompt at the start of each separate log
@@ -64,7 +64,8 @@ class LogfileStream(object):
 
         self.logfile.write(self, data, implicit)
         if self.chained_file:
-            self.chained_file.write(data)
+            # Chained file is console, convert things a little
+            self.chained_file.write((data.encode("ascii", "replace")).decode())
 
     def flush(self):
         """Flush the log stream, to ensure correct log interleaving.
@@ -133,7 +134,7 @@ class RunAndLog(object):
         self.logfile.write(self, msg)
 
         try:
-            p = subprocess.Popen(cmd, cwd=cwd,
+            p = subprocess.Popen(cmd, cwd=cwd, encoding="utf-8",
                 stdin=None, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
             (stdout, stderr) = p.communicate()
             output = ''
@@ -215,7 +216,7 @@ class Logfile(object):
             Nothing.
         """
 
-        self.f = open(fn, 'wt')
+        self.f = open(fn, 'wt', encoding="utf-8")
         self.last_stream = None
         self.blocks = []
         self.cur_evt = 1
