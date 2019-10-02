@@ -27,6 +27,11 @@ config DEPRECATED
 	  code that relies on deprecated features that will be removed and
 	  the conversion deadline has passed.
 
+config OPTIMIZE_INLINING
+	def_bool y
+	help
+	  Allow the compiler to decide on inline, or not.
+
 config LOCALVERSION
 	string "Local version - append to U-Boot release"
 	help
