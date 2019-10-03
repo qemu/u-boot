@@ -1,11 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 */
+/* SPDX-License-Identifier: GPL-2.0-only */
 /*
+ * Based on arch/arm/include/asm/barrier.h
+ *
  * Copyright (C) 2012 ARM Ltd.
  * Copyright (C) 2013 Regents of the University of California
  * Copyright (C) 2017 SiFive
- *
- * Taken from Linux arch/riscv/include/asm/barrier.h, which is based on
- * arch/arm/include/asm/barrier.h
  */
 
 #ifndef _ASM_RISCV_BARRIER_H
@@ -61,6 +60,8 @@ do {									\
  * on that one lock.  Thus, we're just doing a full fence.
  */
 #define smp_mb__after_spinlock()	RISCV_FENCE(rw,rw)
+
+#include <asm-generic/barrier.h>
 
 #endif /* __ASSEMBLY__ */
 
