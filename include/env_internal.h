@@ -120,6 +120,7 @@ extern unsigned long nand_env_oob_offset;
 	!defined(CONFIG_ENV_IS_IN_SPI_FLASH)
 #  error "CONFIG_ENV_IS_EMBEDDED not supported for your flash type"
 # endif
+#error "On this board we set CONFIG_ENV_IS_EMBEDDED somewhere"
 #endif
 
 /*
@@ -173,6 +174,7 @@ typedef struct environment_s {
 
 #ifdef ENV_IS_EMBEDDED
 extern env_t embedded_environment;
+#error "ENV_IS_EMBEDDED IS SET"
 #endif /* ENV_IS_EMBEDDED */
 
 extern const unsigned char default_environment[];
