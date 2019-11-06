@@ -176,6 +176,7 @@ sandbox test.py:
   variables:
     TEST_PY_BD: "sandbox"
     BUILDMAN: "^sandbox$"
+  <<: *buildman_and_testpy_dfn
 
 sandbox with clang test.py:
   tags: [ 'all' ]
