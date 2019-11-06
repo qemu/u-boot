@@ -176,6 +176,13 @@ sandbox test.py:
   variables:
     TEST_PY_BD: "sandbox"
     BUILDMAN: "^sandbox$"
+
+sandbox with clang test.py:
+  tags: [ 'all' ]
+  variables:
+    TEST_PY_BD: "sandbox"
+    BUILDMAN: "^sandbox$"
+    OVERRIDE: "-O clang-7"
   <<: *buildman_and_testpy_dfn
 
 sandbox_spl test.py:
