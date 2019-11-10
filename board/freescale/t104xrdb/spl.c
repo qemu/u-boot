@@ -106,6 +106,7 @@ void board_init_r(gd_t *gd, ulong dest_addr)
 #endif
 
 	/* relocate environment function pointers etc. */
+#ifndef CONFIG_NXP_ESBC
 #ifdef CONFIG_SPL_NAND_BOOT
 	nand_spl_load_image(CONFIG_ENV_OFFSET, CONFIG_ENV_SIZE,
 			    (uchar *)CONFIG_ENV_ADDR);
@@ -120,6 +121,7 @@ void board_init_r(gd_t *gd, ulong dest_addr)
 #endif
 	gd->env_addr  = (ulong)(CONFIG_ENV_ADDR);
 	gd->env_valid = ENV_VALID;
+#endif
 
 	i2c_init_all();
 
