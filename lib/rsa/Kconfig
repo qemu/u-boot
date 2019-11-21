@@ -1,5 +1,6 @@
 config RSA
 	bool "Use RSA Library"
+	select RSA_VERIFY
 	select RSA_FREESCALE_EXP if FSL_CAAM && !ARCH_MX7 && !ARCH_MX6 && !ARCH_MX5
 	select RSA_SOFTWARE_EXP if !RSA_FREESCALE_EXP
 	help
@@ -17,6 +18,17 @@ if RSA
 
 config SPL_RSA
 	bool "Use RSA Library within SPL"
+	select SPL_RSA_VERIFY
+
+config SPL_RSA_VERIFY
+	bool
+	help
+	  Add RSA signature verification support in SPL.
+
+config RSA_VERIFY
+	bool
+	help
+	  Add RSA signature verification support.
 
 config RSA_SOFTWARE_EXP
 	bool "Enable driver for RSA Modular Exponentiation in software"
