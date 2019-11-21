@@ -33,6 +33,7 @@ config RSA_VERIFY
 config RSA_VERIFY_WITH_PKEY
 	bool "Execute RSA verification without key parameters from FDT"
 	depends on RSA
+	imply RSA_PUBLIC_KEY_PARSER
 	help
 	  The standard RSA-signature verification code (FIT_SIGNATURE) uses
 	  pre-calculated key properties, that are stored in fdt blob, in
