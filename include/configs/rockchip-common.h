@@ -11,6 +11,12 @@
 
 #ifndef CONFIG_SPL_BUILD
 
+#if CONFIG_IS_ENABLED(CMD_SF)
+# define BOOT_TARGET_SF(func) func(SF, sf, 0)
+#else
+# define BOOT_TARGET_SF(func)
+#endif
+
 /* First try to boot from SD (index 0), then eMMC (index 1) */
 #if CONFIG_IS_ENABLED(CMD_MMC)
 	#define BOOT_TARGET_MMC(func) \
@@ -39,6 +45,7 @@
 #endif
 
 #define BOOT_TARGET_DEVICES(func) \
+	BOOT_TARGET_SF(func) \
 	BOOT_TARGET_MMC(func) \
 	BOOT_TARGET_USB(func) \
 	BOOT_TARGET_PXE(func) \
