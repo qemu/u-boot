@@ -58,8 +58,6 @@ static char *delete_char (char *buffer, char *p, int *colp, int *np, int plen)
  * Author: Janghoon Lyu <nandy@mizi.com>
  */
 
-#define putnstr(str, n)	printf("%.*s", (int)n, str)
-
 #define CTL_CH(c)		((c) - 'a' + 1)
 #define CTL_BACKSPACE		('\b')
 #define DEL			((char)255)
@@ -82,6 +80,34 @@ static char *hist_list[HIST_MAX];
 static char hist_lines[HIST_MAX][HIST_SIZE + 1];	/* Save room for NULL */
 
 #define add_idx_minus_one() ((hist_add_idx == 0) ? hist_max : hist_add_idx-1)
+
+/**
+ * putchar() - output single character
+ *
+ * Outputs single character. Control characters are converted,
+ * e.g. CTR-c is displayed as C.
+ */
+static void putchar(char c)
+{
+	if (c < ' ')
+		c += '@';
+	putc(c);
+}
+
+/**
+ * putnstr() - output string buffer
+ *
+ * Outputs n characters for buffer str. Control characters are converted, e.g.
+ * CTRL-c is displayed as C.
+ *
+ * @str:	string buffer
+ * @n:		number of characters to print
+ */
+static void putnstr(const char *str, size_t n)
+{
+	for (; n; --n)
+		putchar(*str++);
+}
 
 static void hist_init(void)
 {
@@ -385,7 +411,7 @@ static int cread_line(const char *const prompt, char *buf, unsigned int *len,
 			return -1;
 		case CTL_CH('f'):
 			if (num < eol_num) {
-				getcmd_putch(buf[num]);
+				putchar(buf[num]);
 				num++;
 			}
 			break;
@@ -418,6 +444,12 @@ static int cread_line(const char *const prompt, char *buf, unsigned int *len,
 			break;
 		case CTL_CH('o'):
 			insert = !insert;
+			break;
+		case CTL_CH('v'):
+			/* Add next character verbatim */
+			ichar = getcmd_getch();
+			cread_add_char(ichar, insert, &num, &eol_num, buf,
+				       *len);
 			break;
 		case CTL_CH('x'):
 		case CTL_CH('u'):
