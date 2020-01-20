@@ -43,6 +43,22 @@
 #define BOOTENV_DEV_NAME_BLKDEV(devtypeu, devtypel, instance) \
 	#devtypel #instance " "
 
+#define BOOTENV_SHARED_SF_BODY(devtypel) \
+		"if " #devtypel " probe ${devnum}; then " \
+			"devtype=" #devtypel "; "	  \
+			"run scan_flash_for_scripts; "	  \
+		"fi\0"
+
+#define BOOTENV_SHARED_FLASH(devtypel) \
+	#devtypel "_boot=" \
+	BOOTENV_SHARED_SF_BODY(devtypel)
+
+#define BOOTENV_DEV_FLASH(devtypeu, devtypel, instance) \
+	BOOTENV_DEV_BLKDEV(devtypeu, devtypel, instance)
+
+#define BOOTENV_DEV_NAME_FLASH(devtypeu, devtypel, instance) \
+	BOOTENV_DEV_NAME_BLKDEV(devtypeu, devtypel, instance)
+
 #ifdef CONFIG_SANDBOX
 #define BOOTENV_SHARED_HOST	BOOTENV_SHARED_BLKDEV(host)
 #define BOOTENV_DEV_HOST	BOOTENV_DEV_BLKDEV
@@ -398,6 +414,18 @@
 	BOOT_TARGET_DEVICES_references_PXE_without_CONFIG_CMD_DHCP_or_PXE
 #endif
 
+#if defined(CONFIG_CMD_SF)
+#define BOOTENV_SHARED_SF	BOOTENV_SHARED_FLASH(sf)
+#define BOOTENV_DEV_SF		BOOTENV_DEV_FLASH
+#define BOOTENV_DEV_NAME_SF	BOOTENV_DEV_NAME_FLASH
+#else
+#define BOOTENV_SHARED_SF
+#define BOOTENV_DEV_SF \
+	BOOT_TARGET_DEVICES_references_SF_without_CONFIG_CMD_SF
+#define BOOTENV_DEV_NAME_SF \
+	BOOT_TARGET_DEVICES_references_SF_without_CONFIG_CMD_SF
+#endif
+
 #define BOOTENV_DEV_NAME(devtypeu, devtypel, instance) \
 	BOOTENV_DEV_NAME_##devtypeu(devtypeu, devtypel, instance)
 #define BOOTENV_BOOT_TARGETS \
@@ -412,6 +440,7 @@
 	BOOTENV_SHARED_USB \
 	BOOTENV_SHARED_SATA \
 	BOOTENV_SHARED_SCSI \
+	BOOTENV_SHARED_SF \
 	BOOTENV_SHARED_NVME \
 	BOOTENV_SHARED_IDE \
 	BOOTENV_SHARED_UBIFS \
@@ -435,6 +464,12 @@
 			"run boot_extlinux; "                             \
 			"echo SCRIPT FAILED: continuing...; "             \
 		"fi\0"                                                    \
+	\
+	"scan_flash_for_scripts="                                         \
+		"${devtype} read ${scriptaddr} "                          \
+			"${script_offset_f} ${script_size_f}; "		  \
+		"source ${scriptaddr}; "				  \
+		"echo SCRIPT FAILED: continuing...\0"			  \
 	\
 	"boot_a_script="                                                  \
 		"load ${devtype} ${devnum}:${distro_bootpart} "           \

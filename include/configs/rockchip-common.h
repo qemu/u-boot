@@ -9,7 +9,16 @@
 
 #define CONFIG_SYS_NS16550_MEM32
 
+/* ((CONFIG_SYS_MMCSD_RAW_MODE_U_BOOT_SECTOR - 64) * 512) */
+#define CONFIG_SPL_PAD_TO		8355840
+
 #ifndef CONFIG_SPL_BUILD
+
+#if CONFIG_IS_ENABLED(CMD_SF)
+# define BOOT_TARGET_SF(func) func(SF, sf, 0)
+#else
+# define BOOT_TARGET_SF(func)
+#endif
 
 /* First try to boot from SD (index 0), then eMMC (index 1) */
 #if CONFIG_IS_ENABLED(CMD_MMC)
@@ -39,6 +48,7 @@
 #endif
 
 #define BOOT_TARGET_DEVICES(func) \
+	BOOT_TARGET_SF(func) \
 	BOOT_TARGET_MMC(func) \
 	BOOT_TARGET_USB(func) \
 	BOOT_TARGET_PXE(func) \
