@@ -5,20 +5,20 @@
 
 #ccflags-y += -DDEBUG
 
-obj-$(CONFIG_NET)      += arp.o
+obj-$(CONFIG_$(SPL_)NET) += arp.o
 obj-$(CONFIG_CMD_BOOTP) += bootp.o
 obj-$(CONFIG_CMD_CDP)  += cdp.o
 obj-$(CONFIG_CMD_DNS)  += dns.o
 ifdef CONFIG_DM_ETH
-obj-$(CONFIG_NET)      += eth-uclass.o
+obj-$(CONFIG_$(SPL_)NET) += eth-uclass.o
 else
-obj-$(CONFIG_NET)      += eth_legacy.o
+obj-$(CONFIG_$(SPL_)NET) += eth_legacy.o
 endif
 obj-$(CONFIG_DM_MDIO)  += mdio-uclass.o
 obj-$(CONFIG_DM_MDIO_MUX) += mdio-mux-uclass.o
-obj-$(CONFIG_NET)      += eth_common.o
+obj-$(CONFIG_$(SPL_)NET) += eth_common.o
 obj-$(CONFIG_CMD_LINK_LOCAL) += link_local.o
-obj-$(CONFIG_NET)      += net.o
+obj-$(CONFIG_$(SPL_)NET) += net.o
 obj-$(CONFIG_CMD_NFS)  += nfs.o
 obj-$(CONFIG_CMD_PING) += ping.o
 obj-$(CONFIG_CMD_PCAP) += pcap.o
