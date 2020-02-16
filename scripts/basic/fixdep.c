@@ -25,7 +25,7 @@
  *
  * So we play the same trick that "mkdep" played before. We replace
  * the dependency on autoconf.h by a dependency on every config
- * option which is mentioned in any of the listed prequisites.
+ * option which is mentioned in any of the listed prerequisites.
  *
  * kconfig populates a tree in include/config/ with an empty file
  * for each config symbol and when the configuration is updated
@@ -34,7 +34,7 @@
  * the config symbols are rebuilt.
  *
  * So if the user changes his CONFIG_HIS_DRIVER option, only the objects
- * which depend on "include/linux/config/his/driver.h" will be rebuilt,
+ * which depend on "include/config/his/driver.h" will be rebuilt,
  * so most likely only his driver ;-)
  *
  * The idea above dates, by the way, back to Michael E Chastain, AFAIK.
@@ -75,7 +75,7 @@
  * and then basically copies the .<target>.d file to stdout, in the
  * process filtering out the dependency on autoconf.h and adding
  * dependencies on include/config/my/option.h for every
- * CONFIG_MY_OPTION encountered in any of the prequisites.
+ * CONFIG_MY_OPTION encountered in any of the prerequisites.
  *
  * It will also filter out all the dependencies on *.ver. We need
  * to make sure that the generated version checksum are globally up
@@ -94,14 +94,6 @@
  * (Note: it'd be easy to port over the complete mkdep state machine,
  *  but I don't think the added complexity is worth it)
  */
-/*
- * Note 2: if somebody writes HELLO_CONFIG_BOOM in a file, it will depend onto
- * CONFIG_BOOM. This could seem a bug (not too hard to fix), but please do not
- * fix it! Some UserModeLinux files (look at arch/um/) call CONFIG_BOOM as
- * UML_CONFIG_BOOM, to avoid conflicts with /usr/include/linux/autoconf.h,
- * through arch/um/include/uml-config.h; this fixdep "bug" makes sure that
- * those files will have correct dependencies.
- */
 
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -111,7 +103,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <limits.h>
 #include <ctype.h>
 #include <arpa/inet.h>
 
@@ -120,6 +111,7 @@
 #define INT_NFIG ntohl(0x4e464947)
 #define INT_FIG_ ntohl(0x4649475f)
 
+int insert_extra_deps;
 char *target;
 char *depfile;
 char *cmdline;
@@ -127,7 +119,8 @@ int is_spl_build = 0; /* hack for U-Boot */
 
 static void usage(void)
 {
-	fprintf(stderr, "Usage: fixdep <depfile> <target> <cmdline>\n");
+	fprintf(stderr, "Usage: fixdep [-e] <depfile> <target> <cmdline>\n");
+	fprintf(stderr, " -e  insert extra dependencies given on stdin\n");
 	exit(1);
 }
 
@@ -137,6 +130,40 @@ static void usage(void)
 static void print_cmdline(void)
 {
 	printf("cmd_%s := %s\n\n", target, cmdline);
+}
+
+/*
+ * Print out a dependency path from a symbol name
+ */
+static void print_dep(const char *m, int slen, const char *dir)
+{
+	int c, i;
+
+	printf("    $(wildcard %s/", dir);
+	for (i = 0; i < slen; i++) {
+		c = m[i];
+		if (c == '_')
+			c = '/';
+		else
+			c = tolower(c);
+		putchar(c);
+	}
+	printf(".h) \\\n");
+}
+
+static void do_extra_deps(void)
+{
+	if (insert_extra_deps) {
+		char buf[80];
+		while(fgets(buf, sizeof(buf), stdin)) {
+			int len = strlen(buf);
+			if (len < 2 || buf[len-1] != '\n') {
+				fprintf(stderr, "fixdep: bad data on stdin\n");
+				exit(1);
+			}
+			print_dep(buf, len - 1, "include/ksym");
+		}
+	}
 }
 
 struct item {
@@ -198,23 +225,12 @@ static void define_config(const char *name, int len, unsigned int hash)
 static void use_config(const char *m, int slen)
 {
 	unsigned int hash = strhash(m, slen);
-	int c, i;
 
 	if (is_defined_config(m, slen, hash))
 	    return;
 
 	define_config(m, slen, hash);
-
-	printf("    $(wildcard include/config/");
-	for (i = 0; i < slen; i++) {
-		c = m[i];
-		if (c == '_')
-			c = '/';
-		else
-			c = tolower(c);
-		putchar(c);
-	}
-	printf(".h) \\\n");
+	print_dep(m, slen, "include/config");
 }
 
 static void parse_config_file(const char *map, size_t len)
@@ -279,8 +295,8 @@ static void parse_config_file(const char *map, size_t len)
 	}
 }
 
-/* test is s ends in sub */
-static int strrcmp(char *s, char *sub)
+/* test if s ends in sub */
+static int strrcmp(const char *s, const char *sub)
 {
 	int slen = strlen(s);
 	int sublen = strlen(sub);
@@ -331,24 +347,26 @@ static void do_config_file(const char *filename)
  * assignments are parsed not only by make, but also by the rather simple
  * parser in scripts/mod/sumversion.c.
  */
-static void parse_dep_file(void *map, size_t len)
+static void parse_dep_file(char *m)
 {
-	char *m = map;
-	char *end = m + len;
 	char *p;
-	char s[PATH_MAX];
-	int is_target;
+	int is_last, is_target;
 	int saw_any_target = 0;
 	int is_first_dep = 0;
 
-	while (m < end) {
+	while (1) {
 		/* Skip any "white space" */
-		while (m < end && (*m == ' ' || *m == '\\' || *m == '\n'))
+		while (*m == ' ' || *m == '\\' || *m == '\n')
 			m++;
+
+		if (!*m)
+			break;
+
 		/* Find next "white space" */
 		p = m;
-		while (p < end && *p != ' ' && *p != '\\' && *p != '\n')
+		while (*p && *p != ' ' && *p != '\\' && *p != '\n')
 			p++;
+		is_last = (*p == '\0');
 		/* Is the token we found a target name? */
 		is_target = (*(p-1) == ':');
 		/* Don't write any target names into the dependency file */
@@ -356,15 +374,13 @@ static void parse_dep_file(void *map, size_t len)
 			/* The /next/ file is the first dependency */
 			is_first_dep = 1;
 		} else {
-			/* Save this token/filename */
-			memcpy(s, m, p-m);
-			s[p - m] = 0;
+			*p = '\0';
 
 			/* Ignore certain dependencies */
-			if (strrcmp(s, "include/generated/autoconf.h") &&
-			    strrcmp(s, "arch/um/include/uml-config.h") &&
-			    strrcmp(s, "include/linux/kconfig.h") &&
-			    strrcmp(s, ".ver")) {
+			if (strrcmp(m, "include/generated/autoconf.h") &&
+			    strrcmp(m, "include/generated/autoksyms.h") &&
+			    strrcmp(m, "include/linux/kconfig.h") &&
+			    strrcmp(m, ".ver")) {
 				/*
 				 * Do not list the source file as dependency,
 				 * so that kbuild is not confused if a .c file
@@ -385,16 +401,20 @@ static void parse_dep_file(void *map, size_t len)
 					if (!saw_any_target) {
 						saw_any_target = 1;
 						printf("source_%s := %s\n\n",
-							target, s);
+							target, m);
 						printf("deps_%s := \\\n",
 							target);
 					}
 					is_first_dep = 0;
 				} else
-					printf("  %s \\\n", s);
-				do_config_file(s);
+					printf("  %s \\\n", m);
+				do_config_file(m);
 			}
 		}
+
+		if (is_last)
+			break;
+
 		/*
 		 * Start searching for next token immediately after the first
 		 * "whitespace" character that follows this token.
@@ -407,44 +427,48 @@ static void parse_dep_file(void *map, size_t len)
 		exit(1);
 	}
 
+	do_extra_deps();
+
 	printf("\n%s: $(deps_%s)\n\n", target, target);
 	printf("$(deps_%s):\n", target);
 }
 
-static void print_deps(void)
+static void print_deps(const char *filename)
 {
 	struct stat st;
 	int fd;
-	void *map;
+	char *buf;
 
-	fd = open(depfile, O_RDONLY);
+	fd = open(filename, O_RDONLY);
 	if (fd < 0) {
 		fprintf(stderr, "fixdep: error opening depfile: ");
-		perror(depfile);
+		perror(filename);
 		exit(2);
 	}
 	if (fstat(fd, &st) < 0) {
 		fprintf(stderr, "fixdep: error fstat'ing depfile: ");
-		perror(depfile);
+		perror(filename);
 		exit(2);
 	}
 	if (st.st_size == 0) {
-		fprintf(stderr,"fixdep: %s is empty\n",depfile);
 		close(fd);
 		return;
 	}
-	map = mmap(NULL, st.st_size, PROT_READ, MAP_PRIVATE, fd, 0);
-	if ((long) map == -1) {
-		perror("fixdep: mmap");
-		close(fd);
-		return;
+	buf = malloc(st.st_size + 1);
+	if (!buf) {
+		perror("fixdep: malloc");
+		exit(2);
 	}
-
-	parse_dep_file(map, st.st_size);
-
-	munmap(map, st.st_size);
-
+	if (read(fd, buf, st.st_size) != st.st_size) {
+		perror("fixdep: read");
+		exit(2);
+	}
+	buf[st.st_size] = '\0';
 	close(fd);
+
+	parse_dep_file(buf);
+
+	free(buf);
 }
 
 static void traps(void)
@@ -463,7 +487,10 @@ int main(int argc, char *argv[])
 {
 	traps();
 
-	if (argc != 4)
+	if (argc == 5 && !strcmp(argv[1], "-e")) {
+		insert_extra_deps = 1;
+		argv++;
+	} else if (argc != 4)
 		usage();
 
 	depfile = argv[1];
@@ -475,7 +502,7 @@ int main(int argc, char *argv[])
 		is_spl_build = 1;
 
 	print_cmdline();
-	print_deps();
+	print_deps(depfile);
 
 	return 0;
 }
