@@ -82,8 +82,7 @@
  * to date before even starting the recursive build, so it's too late
  * at this point anyway.
  *
- * The algorithm to grep for "CONFIG_..." is bit unusual, but should
- * be fast ;-) We don't even try to really parse the header files, but
+ * We don't even try to really parse the header files, but
  * merely grep, i.e. if CONFIG_FOO is mentioned in a comment, it will
  * be picked up as well. It's not a problem with respect to
  * correctness, since that can only give too many dependencies, thus
@@ -114,11 +113,6 @@
 #include <limits.h>
 #include <ctype.h>
 #include <arpa/inet.h>
-
-#define INT_CONF ntohl(0x434f4e46)
-#define INT_ONFI ntohl(0x4f4e4649)
-#define INT_NFIG ntohl(0x4e464947)
-#define INT_FIG_ ntohl(0x4649475f)
 
 char *target;
 char *depfile;
@@ -217,38 +211,20 @@ static void use_config(const char *m, int slen)
 	printf(".h) \\\n");
 }
 
-static void parse_config_file(const char *map, size_t len)
+static void parse_config_file(const char *p)
 {
-	const int *end = (const int *) (map + len);
-	/* start at +1, so that p can never be < map */
-	const int *m   = (const int *) map + 1;
-	const char *p, *q;
+	const char *q, *r;
 	char tmp_buf[256] = "SPL_"; /* hack for U-Boot */
 
-	for (; m < end; m++) {
-		if (*m == INT_CONF) { p = (char *) m  ; goto conf; }
-		if (*m == INT_ONFI) { p = (char *) m-1; goto conf; }
-		if (*m == INT_NFIG) { p = (char *) m-2; goto conf; }
-		if (*m == INT_FIG_) { p = (char *) m-3; goto conf; }
-		continue;
-	conf:
-		if (p > map + len - 7)
-			continue;
-		if (memcmp(p, "CONFIG_", 7))
-			continue;
+	while ((p = strstr(p, "CONFIG_"))) {
 		p += 7;
-		for (q = p; q < map + len; q++) {
-			if (!(isalnum(*q) || *q == '_'))
-				goto found;
-		}
-		continue;
-
-	found:
-		if (!memcmp(q - 7, "_MODULE", 7))
-			q -= 7;
-		if (q - p < 0)
-			continue;
-
+		q = p;
+		while (*q && (isalnum(*q) || *q == '_'))
+			q++;
+		if (memcmp(q - 7, "_MODULE", 7) == 0)
+			r = q - 7;
+		else
+			r = q;
 		/*
 		 * U-Boot also handles
 		 *   CONFIG_IS_ENABLED(...)
@@ -261,21 +237,20 @@ static void parse_config_file(const char *map, size_t len)
 		    (q - p == 9 && !memcmp(p, "IS_MODULE(", 10)) ||
 		    (q - p == 3 && !memcmp(p, "VAL(", 4))) {
 			p = q + 1;
-			for (q = p; q < map + len; q++)
-				if (*q == ')')
-					goto found2;
-			continue;
-
-		found2:
-			if (is_spl_build) {
-				memcpy(tmp_buf + 4, p, q - p);
-				q = tmp_buf + 4 + (q - p);
+			while (*q && (isalnum(*q) || *q == ')'))
+				q++;
+			r = q;
+			if (r > p && is_spl_build) {
+				memcpy(tmp_buf + 4, p, r - p);
+				q = tmp_buf + 4 + (r - p);
 				p = tmp_buf;
 			}
 		}
 		/* end U-Boot hack */
 
-		use_config(p, q - p);
+		if (r > p)
+			use_config(p, r - p);
+		p = q;
 	}
 }
 
@@ -295,7 +270,7 @@ static void do_config_file(const char *filename)
 {
 	struct stat st;
 	int fd;
-	void *map;
+	char *map;
 
 	fd = open(filename, O_RDONLY);
 	if (fd < 0) {
@@ -312,18 +287,23 @@ static void do_config_file(const char *filename)
 		close(fd);
 		return;
 	}
-	map = mmap(NULL, st.st_size, PROT_READ, MAP_PRIVATE, fd, 0);
-	if ((long) map == -1) {
-		perror("fixdep: mmap");
+	map = malloc(st.st_size + 1);
+	if (!map) {
+		perror("fixdep: malloc");
 		close(fd);
 		return;
 	}
-
-	parse_config_file(map, st.st_size);
-
-	munmap(map, st.st_size);
-
+	if (read(fd, map, st.st_size) != st.st_size) {
+		perror("fixdep: read");
+		close(fd);
+		return;
+	}
+	map[st.st_size] = '\0';
 	close(fd);
+
+	parse_config_file(map);
+
+	free(map);
 }
 
 /*
@@ -447,22 +427,8 @@ static void print_deps(void)
 	close(fd);
 }
 
-static void traps(void)
-{
-	static char test[] __attribute__((aligned(sizeof(int)))) = "CONF";
-	int *p = (int *)test;
-
-	if (*p != INT_CONF) {
-		fprintf(stderr, "fixdep: sizeof(int) != 4 or wrong endianness? %#x\n",
-			*p);
-		exit(2);
-	}
-}
-
 int main(int argc, char *argv[])
 {
-	traps();
-
 	if (argc != 4)
 		usage();
 
