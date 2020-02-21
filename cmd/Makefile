@@ -228,3 +228,5 @@ $(obj)/license_data_size.h: $(srctree)/Licenses/gpl-2.0.txt FORCE
 	$(call filechk,data_size)
 
 CFLAGS_ethsw.o := -Wno-enum-conversion
+CFLAGS_config.o += -I$(objtree)/$(obj)
+CFLAGS_license.o += -I$(objtree)/$(obj)

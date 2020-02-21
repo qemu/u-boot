@@ -47,3 +47,7 @@ pkcs7_message-y := \
 
 $(obj)/pkcs7_parser.o: $(obj)/pkcs7.asn1.h
 $(obj)/pkcs7.asn1.o: $(obj)/pkcs7.asn1.c $(obj)/pkcs7.asn1.h
+
+CFLAGS_rsa_helper.o += -I$(objtree)/$(obj)
+CFLAGS_pkcs7_parser.o += -I$(objtree)/$(obj)
+CFLAGS_x509_cert_parser.o += -I$(objtree)/$(obj)

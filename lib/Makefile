@@ -127,6 +127,7 @@ obj-y += date.o
 # Build a fast OID lookup registry from include/linux/oid_registry.h
 #
 obj-$(CONFIG_OID_REGISTRY) += oid_registry.o
+CFLAGS_oid_registry.o += -I$(objtree)/$(obj)
 
 $(obj)/oid_registry.o: $(obj)/oid_registry_data.c
 
