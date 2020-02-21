@@ -12,6 +12,10 @@ CFLAGS_efi_selftest_miniapp_exit.o := $(CFLAGS_EFI) -Os -ffreestanding
 CFLAGS_REMOVE_efi_selftest_miniapp_exit.o := $(CFLAGS_NON_EFI)
 CFLAGS_efi_selftest_miniapp_return.o := $(CFLAGS_EFI) -Os -ffreestanding
 CFLAGS_REMOVE_efi_selftest_miniapp_return.o := $(CFLAGS_NON_EFI)
+CFLAGS_efi_selftest_exception.o += -I$(objtree)/$(obj)
+CFLAGS_efi_selftest_loadimage.o += -I$(objtree)/$(obj)
+CFLAGS_efi_selftest_startimage_exit.o += -I$(objtree)/$(obj)
+CFLAGS_efi_selftest_startimage_return.o += -I$(objtree)/$(obj)
 
 obj-y += \
 efi_selftest.o \
