@@ -27,7 +27,7 @@ PLATFORM_CPPFLAGS	+= -ffixed-gp -fpic
 PLATFORM_RELFLAGS	+= -fno-common -gdwarf-2 -ffunction-sections \
 			   -fdata-sections
 LDFLAGS_u-boot		+= --gc-sections -static -pie
-PLATFORM_LDFLAGS	+= $(ldflags-y)
+KBUILD_LDFLAGS		+= $(ldflags-y)
 
 EFI_CRT0		:= crt0_riscv_efi.o
 EFI_RELOC		:= reloc_riscv_efi.o
