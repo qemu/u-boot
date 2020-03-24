@@ -4,8 +4,8 @@
 # Wolfgang Denk, DENX Software Engineering, wd@denx.de.
 
 ifdef CONFIG_SYS_BIG_ENDIAN
-32bit-emul		:= elf32btsmip
-64bit-emul		:= elf64btsmip
+ldflags-$(CONFIG_32BIT) += -m elf32btsmip
+ldflags-$(CONFIG_64BIT)	+= -m elf64btsmip
 32bit-bfd		:= elf32-tradbigmips
 64bit-bfd		:= elf64-tradbigmips
 PLATFORM_CPPFLAGS	+= -EB
@@ -13,8 +13,8 @@ PLATFORM_LDFLAGS	+= -EB
 endif
 
 ifdef CONFIG_SYS_LITTLE_ENDIAN
-32bit-emul		:= elf32ltsmip
-64bit-emul		:= elf64ltsmip
+ldflags-$(CONFIG_32BIT) += -m elf32btsmip
+ldflags-$(CONFIG_64BIT)	+= -m elf64btsmip
 32bit-bfd		:= elf32-tradlittlemips
 64bit-bfd		:= elf64-tradlittlemips
 PLATFORM_CPPFLAGS	+= -EL
@@ -23,17 +23,17 @@ endif
 
 ifdef CONFIG_32BIT
 PLATFORM_CPPFLAGS	+= -mabi=32
-PLATFORM_LDFLAGS	+= -m $(32bit-emul)
 OBJCOPYFLAGS		+= -O $(32bit-bfd)
 CONFIG_STANDALONE_LOAD_ADDR	?= 0x80200000
 endif
 
 ifdef CONFIG_64BIT
 PLATFORM_CPPFLAGS	+= -mabi=64
-PLATFORM_LDFLAGS	+= -m$(64bit-emul)
 OBJCOPYFLAGS		+= -O $(64bit-bfd)
 CONFIG_STANDALONE_LOAD_ADDR	?= 0xffffffff80200000
 endif
+
+PLATFORM_LDFLAGS += $(ldflags-y)
 
 PLATFORM_CPPFLAGS += -D__MIPS__
 PLATFORM_ELFENTRY = "__start"
