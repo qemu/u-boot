@@ -119,6 +119,7 @@ obj-$(CONFIG_$(SPL_TPL_)STRTO) += strto.o
 else
 # Main U-Boot always uses the full printf support
 obj-y += vsprintf.o strto.o
+obj-$(CONFIG_OID_REGISTRY) += oid_registry.o
 endif
 
 obj-y += date.o
@@ -127,8 +128,6 @@ obj-$(CONFIG_LIB_ELF) += elf.o
 #
 # Build a fast OID lookup registry from include/linux/oid_registry.h
 #
-obj-$(CONFIG_OID_REGISTRY) += oid_registry.o
-
 $(obj)/oid_registry.o: $(obj)/oid_registry_data.c
 
 $(obj)/oid_registry_data.c: $(srctree)/include/linux/oid_registry.h \
