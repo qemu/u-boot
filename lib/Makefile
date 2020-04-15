@@ -116,13 +116,14 @@ else
 obj-$(CONFIG_$(SPL_TPL_)SPRINTF) += vsprintf.o
 endif
 obj-$(CONFIG_$(SPL_TPL_)STRTO) += strto.o
+obj-$(CONFIG_$(SPL_TPL_)RTC_SUPPORT) += date.o
 else
 # Main U-Boot always uses the full printf support
 obj-y += vsprintf.o strto.o
 obj-$(CONFIG_OID_REGISTRY) += oid_registry.o
+obj-y += date.o
 endif
 
-obj-y += date.o
 obj-$(CONFIG_LIB_ELF) += elf.o
 
 #
