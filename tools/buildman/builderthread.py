@@ -397,6 +397,7 @@ class BuilderThread(threading.Thread):
                     result.out_dir, build_dir, dirname,
                     ['u-boot.cfg', 'spl/u-boot-spl.cfg', 'tpl/u-boot-tpl.cfg',
                      '.config', 'include/autoconf.mk',
+                     'include/generated/generic-asm-offsets.h', 'include/generated/asm-offsets.h',
                      'include/generated/autoconf.h'])
 
             # Now write the actual build output
