@@ -16,4 +16,5 @@ jobs:
       vmImage: $(macos_vm)
     steps:
       - script: |
+          ls -R /usr/local
           make tools-only_config tools-only -j$(sysctl -n hw.logicalcpu)
