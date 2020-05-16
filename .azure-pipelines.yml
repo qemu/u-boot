@@ -16,5 +16,5 @@ jobs:
       vmImage: $(macos_vm)
     steps:
       - script: |
-          ls -R /usr/local
+          find /usr /Applications /Library -name evp.h
           make tools-only_config tools-only -j$(sysctl -n hw.logicalcpu)
