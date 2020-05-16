@@ -16,5 +16,7 @@ jobs:
       vmImage: $(macos_vm)
     steps:
       - script: |
-          ls -lR /usr/local/opt/openssl@1.1
-          make tools-only_config tools-only NO_SDL=1 HOSTCFLAGS="-I/usr/local/opt/openssl@1.1/include" HOSTLDFLAGS="-L/usr/local/opt/openssl@1.1/lib" -j$(sysctl -n hw.logicalcpu)
+          make tools-only_config tools-only NO_SDL=1 \
+            HOSTCFLAGS="-I/usr/local/opt/openssl@1.1/include" \
+            HOSTLDFLAGS="-L/usr/local/opt/openssl@1.1/lib" \
+            -j$(sysctl -n hw.logicalcpu)
