@@ -17,4 +17,4 @@ jobs:
     steps:
       - script: |
           find /usr /Applications /Library -name evp.h
-          make tools-only_config tools-only -j$(sysctl -n hw.logicalcpu)
+          make tools-only_config tools-only NO_SDL=1 HOSTCFLAGS="-I/usr/local/miniconda/include" -j$(sysctl -n hw.logicalcpu)
