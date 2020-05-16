@@ -16,6 +16,5 @@ jobs:
       vmImage: $(macos_vm)
     steps:
       - script: |
-          ls /usr/local/opt
-          find /usr /Applications /Library -name evp.h
-          make tools-only_config tools-only NO_SDL=1 HOSTCFLAGS="-I/usr/local/miniconda/include" -j$(sysctl -n hw.logicalcpu)
+          ls -lR /usr/local/opt/openssl@1.1
+          make tools-only_config tools-only NO_SDL=1 HOSTCFLAGS="-I/usr/local/opt/openssl@1.1/include" HOSTLDFLAGS="-L/usr/local/opt/openssl@1.1/lib" -j$(sysctl -n hw.logicalcpu)
