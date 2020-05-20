@@ -1,5 +1,5 @@
 config AHCI
-	bool "Support SATA controllers with driver model"
+	bool
 	depends on DM
 	help
 	  This enables a uclass for disk controllers in U-Boot. Various driver
@@ -9,7 +9,9 @@ config AHCI
 
 config SATA
 	bool "Support SATA controllers"
+	depends on DM
 	select HAVE_BLOCK_DEVICE
+	select AHCI
 	help
 	  This enables support for SATA (Serial Advanced Technology
 	  Attachment), a serial bus standard for connecting to hard drives and
@@ -28,6 +30,8 @@ config LIBATA
 
 config SCSI_AHCI
 	bool "Enable SCSI interface to SATA devices"
+	depends on DM
+	select AHCI
 	select LIBATA
 	help
 	  Enable this to allow interfacing SATA devices via the SCSI layer.
@@ -42,7 +46,8 @@ config AHCI_PCI
 
 config SATA_CEVA
 	bool "Ceva Sata controller"
-	depends on AHCI
+	depends on DM
+	select AHCI
 	depends on DM_SCSI
 	help
 	  This option enables Ceva Sata controller hard IP available on Xilinx
@@ -61,6 +66,8 @@ config DWC_AHCI
 
 config DWC_AHSATA
 	bool "Enable DWC AHSATA driver support"
+	depends on DM
+	select AHCI
 	select LIBATA
 	help
 	  Enable this driver to support the DWC AHSATA SATA controller found
@@ -69,13 +76,15 @@ config DWC_AHSATA
 config DWC_AHSATA_AHCI
 	bool "Enable DWC AHSATA AHCI driver support"
 	depends on DWC_AHSATA
-	depends on AHCI
+	depends on DM
+	select AHCI
 	default y
 	help
 	  Enable this option unless you need your private ahci implementation
 
 config FSL_SATA
 	bool "Enable Freescale SATA controller driver support"
+	depends on DM
 	select LIBATA
 	select AHCI if BLK
 	help
@@ -87,12 +96,14 @@ config SATA_MV
 	select AHCI
 	select LIBATA
 	depends on BLK
+	depends on DM
 	help
 	  Enable this driver to support the SATA controller found in
 	  some Marvell SoCs.
 
 config SATA_SIL
 	bool "Enable Silicon Image SIL3131 / SIL3132 / SIL3124 SATA driver support"
+	depends on DM
 	select LIBATA
 	select AHCI if BLK
 	help
@@ -101,13 +112,16 @@ config SATA_SIL
 
 config SATA_SIL3114
 	bool "Enable Silicon Image SIL3114 SATA driver support"
+	depends on DM
+	select AHCI
 	select LIBATA
 	help
 	  Enable this driver to support the SIL3114 SATA controllers.
 
 config SUNXI_AHCI
 	bool "Enable Allwinner SATA driver support"
-	depends on AHCI
+	depends on DM
+	select AHCI
 	default y if ARCH_SUNXI
 	help
 	  Enable this driver to support the SATA controllers found in the
@@ -116,7 +130,8 @@ config SUNXI_AHCI
 config AHCI_MVEBU
 	bool "Marvell EBU AHCI SATA support"
 	depends on ARCH_MVEBU
-	depends on AHCI
+	depends on DM
+	select AHCI
 	select SCSI_AHCI
 	select DM_SCSI
 	help

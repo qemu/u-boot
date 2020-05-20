@@ -1217,6 +1217,7 @@ config CMD_REMOTEPROC
 
 config CMD_SATA
 	bool "sata - Access SATA subsystem"
+	depends on DM
 	select SATA
 	help
 	  SATA (Serial Advanced Technology Attachment) is a serial bus
