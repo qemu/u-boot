@@ -1012,7 +1012,7 @@ ifeq ($(CONFIG_DEPRECATED),y)
 	$(warning "You have deprecated configuration options enabled in your .config! Please check your configuration.")
 ifeq ($(CONFIG_SPI),y)
 ifneq ($(CONFIG_DM_SPI)$(CONFIG_OF_CONTROL),yy)
-	$(warning "The relevant config item with associated code will remove in v2019.07 release.")
+	$(error "The relevant config item with associated code will remove in v2019.07 release.")
 endif
 endif
 endif
@@ -1026,63 +1026,62 @@ ifneq ($(CONFIG_DM),y)
 endif
 ifeq ($(CONFIG_MMC),y)
 ifneq ($(CONFIG_DM_MMC)$(CONFIG_OF_CONTROL)$(CONFIG_BLK),yyy)
-	@echo >&2 "===================== WARNING ======================"
-	@echo >&2 "This board does not use CONFIG_DM_MMC. Please update"
-	@echo >&2 "the board to use CONFIG_DM_MMC before the v2019.04 release."
-	@echo >&2 "Failure to update by the deadline may result in board removal."
-	@echo >&2 "See doc/driver-model/migration.rst for more info."
-	@echo >&2 "===================================================="
+	$(error "===================== WARNING ======================" \
+	"This board does not use CONFIG_DM_MMC. Please update" \
+	"the board to use CONFIG_DM_MMC before the v2019.04 release." \
+	"Failure to update by the deadline may result in board removal." \
+	"See doc/driver-model/migration.rst for more info." \
+	"====================================================")
 endif
 endif
 ifeq ($(CONFIG_USB),y)
 ifneq ($(CONFIG_DM_USB)$(CONFIG_OF_CONTROL)$(CONFIG_BLK),yyy)
-	@echo >&2 "===================== WARNING ======================"
-	@echo >&2 "This board does not use CONFIG_DM_USB. Please update"
-	@echo >&2 "the board to use CONFIG_DM_USB before the v2019.07 release."
-	@echo >&2 "Failure to update by the deadline may result in board removal."
-	@echo >&2 "See doc/driver-model/migration.rst for more info."
-	@echo >&2 "===================================================="
+	$(error "===================== WARNING ======================" \
+	"This board does not use CONFIG_DM_USB. Please update" \
+	"the board to use CONFIG_DM_USB before the v2019.07 release." \
+	"Failure to update by the deadline may result in board removal." \
+	"See doc/driver-model/migration.rst for more info." \
+	"====================================================")
 endif
 endif
 ifeq ($(CONFIG_MVSATA_IDE),y)
-	@echo >&2 "===================== WARNING ======================"
-	@echo >&2 "This board does use CONFIG_MVSATA_IDE which is not"
-	@echo >&2 "ported to driver-model (DM) yet. Please update the storage"
-	@echo >&2 "controller driver to use CONFIG_AHCI before the v2019.07"
-	@echo >&2 "release."
-	@echo >&2 "Failure to update by the deadline may result in board removal."
-	@echo >&2 "See doc/driver-model/migration.rst for more info."
-	@echo >&2 "===================================================="
+	$(error "===================== WARNING ======================" \
+	"This board does use CONFIG_MVSATA_IDE which is not" \
+	"ported to driver-model (DM) yet. Please update the storage" \
+	"controller driver to use CONFIG_AHCI before the v2019.07 release." \
+	"Failure to update by the deadline may result in board removal." \
+	"See doc/driver-model/migration.rst for more info." \
+	"====================================================")
 endif
 ifeq ($(CONFIG_LIBATA),y)
 ifneq ($(CONFIG_AHCI),y)
-	@echo >&2 "===================== WARNING ======================"
-	@echo >&2 "This board does use CONFIG_LIBATA but has CONFIG_AHCI not"
-	@echo >&2 "enabled. Please update the storage controller driver to use"
-	@echo >&2 "CONFIG_AHCI before the v2019.07 release."
-	@echo >&2 "Failure to update by the deadline may result in board removal."
-	@echo >&2 "See doc/driver-model/migration.rst for more info."
-	@echo >&2 "===================================================="
+	$(error "===================== WARNING ======================")
+	"This board does use CONFIG_LIBATA but has CONFIG_AHCI not" \
+	"enabled. Please update the storage controller driver to use" \
+	"CONFIG_AHCI before the v2019.07 release." \
+	"Failure to update by the deadline may result in board removal." \
+	"See doc/driver-model/migration.rst for more info." \
+	"====================================================")
 endif
 endif
 ifeq ($(CONFIG_PCI),y)
 ifneq ($(CONFIG_DM_PCI),y)
-	@echo >&2 "===================== WARNING ======================"
-	@echo >&2 "This board does not use CONFIG_DM_PCI Please update"
-	@echo >&2 "the board to use CONFIG_DM_PCI before the v2019.07 release."
-	@echo >&2 "Failure to update by the deadline may result in board removal."
-	@echo >&2 "See doc/driver-model/migration.rst for more info."
-	@echo >&2 "===================================================="
+	$(error "===================== WARNING ======================" \
+	"This board does not use CONFIG_DM_PCI Please update" \
+	"the board to use CONFIG_DM_PCI before the v2019.07 release." \
+	"Failure to update by the deadline may result in board removal." \
+	"See doc/driver-model/migration.rst for more info." \
+	"====================================================")
 endif
 endif
 ifneq ($(CONFIG_LCD)$(CONFIG_VIDEO),)
 ifneq ($(CONFIG_DM_VIDEO),y)
-	@echo >&2 "===================== WARNING ======================"
-	@echo >&2 "This board does not use CONFIG_DM_VIDEO Please update"
-	@echo >&2 "the board to use CONFIG_DM_VIDEO before the v2019.07 release."
-	@echo >&2 "Failure to update by the deadline may result in board removal."
-	@echo >&2 "See doc/driver-model/migration.rst for more info."
-	@echo >&2 "===================================================="
+	$(error "===================== WARNING ======================" \
+	"This board does not use CONFIG_DM_VIDEO Please update" \
+	"the board to use CONFIG_DM_VIDEO before the v2019.07 release." \
+	"Failure to update by the deadline may result in board removal." \
+	"See doc/driver-model/migration.rst for more info." \
+	"====================================================")
 endif
 endif
 ifeq ($(CONFIG_OF_EMBED),y)
@@ -1095,12 +1094,12 @@ ifeq ($(CONFIG_OF_EMBED),y)
 endif
 ifeq ($(CONFIG_SPI_FLASH),y)
 ifneq ($(CONFIG_DM_SPI_FLASH)$(CONFIG_OF_CONTROL),yy)
-	@echo >&2 "===================== WARNING ======================"
-	@echo >&2 "This board does not use CONFIG_DM_SPI_FLASH. Please update"
-	@echo >&2 "the board to use CONFIG_SPI_FLASH before the v2019.07 release."
-	@echo >&2 "Failure to update by the deadline may result in board removal."
-	@echo >&2 "See doc/driver-model/migration.rst for more info."
-	@echo >&2 "===================================================="
+	$(error "===================== WARNING ======================" \
+	"This board does not use CONFIG_DM_SPI_FLASH. Please update" \
+	"the board to use CONFIG_SPI_FLASH before the v2019.07 release." \
+	"Failure to update by the deadline may result in board removal." \
+	"See doc/driver-model/migration.rst for more info." \
+	"====================================================")
 endif
 endif
 ifneq ($(CONFIG_WATCHDOG)$(CONFIG_HW_WATCHDOG),)
