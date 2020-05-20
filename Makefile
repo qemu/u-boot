@@ -1010,11 +1010,6 @@ cmd_cfgcheck = $(srctree)/scripts/check-config.sh $2 \
 all:		$(ALL-y)
 ifeq ($(CONFIG_DEPRECATED),y)
 	$(warning "You have deprecated configuration options enabled in your .config! Please check your configuration.")
-ifeq ($(CONFIG_SPI),y)
-ifneq ($(CONFIG_DM_SPI)$(CONFIG_OF_CONTROL),yy)
-	$(error "The relevant config item with associated code will remove in v2019.07 release.")
-endif
-endif
 endif
 ifneq ($(CONFIG_DM),y)
 	@echo >&2 "===================== WARNING ======================"
