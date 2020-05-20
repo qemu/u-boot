@@ -81,22 +81,6 @@
 #endif
 
 /*
- * SATA Driver configuration
- */
-#ifdef CONFIG_MVSATA_IDE
-#define CONFIG_SYS_ATA_IDE0_OFFSET      MV_SATA_PORT0_OFFSET
-#if defined(CONFIG_NETSPACE_MAX_V2) || defined(CONFIG_D2NET_V2) || \
-	defined(CONFIG_NET2BIG_V2)
-#define CONFIG_SYS_ATA_IDE1_OFFSET      MV_SATA_PORT1_OFFSET
-#define CONFIG_SYS_IDE_MAXBUS           2
-#define CONFIG_SYS_IDE_MAXDEVICE        2
-#else
-#define CONFIG_SYS_IDE_MAXBUS           1
-#define CONFIG_SYS_IDE_MAXDEVICE        1
-#endif
-#endif /* CONFIG_MVSATA_IDE */
-
-/*
  * Enable GPI0 support
  */
 #define CONFIG_KIRKWOOD_GPIO

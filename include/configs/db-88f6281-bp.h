@@ -79,13 +79,6 @@
 #define CONFIG_SYS_MMC_BASE KW_SDIO_BASE
 #endif /* CONFIG_CMD_MMC */
 
-/*
- * SATA Driver configuration
- */
-#ifdef CONFIG_MVSATA_IDE
-#define CONFIG_SYS_ATA_IDE0_OFFSET	MV_SATA_PORT0_OFFSET
-#endif /*CONFIG_MVSATA_IDE*/
-
 #define CONFIG_SYS_LOAD_ADDR  0x1000000      /* default location for tftp and bootm */
 
 #endif /* _CONFIG_DB_88F6281_BP_H */
