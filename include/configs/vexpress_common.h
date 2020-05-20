@@ -163,11 +163,17 @@
 #define CONFIG_SYS_INIT_SP_ADDR		CONFIG_SYS_GBL_DATA_OFFSET
 
 /* Basic environment settings */
+#ifdef CONFIG_CMD_MMC
 #define BOOT_TARGET_DEVICES(func) \
         func(MMC, mmc, 1) \
         func(MMC, mmc, 0) \
         func(PXE, pxe, na) \
         func(DHCP, dhcp, na)
+#else
+#define BOOT_TARGET_DEVICES(func) \
+        func(PXE, pxe, na) \
+        func(DHCP, dhcp, na)
+#endif
 #include <config_distro_bootcmd.h>
 
 #ifdef CONFIG_VEXPRESS_ORIGINAL_MEMORY_MAP
