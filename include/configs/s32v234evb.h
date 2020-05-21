@@ -135,8 +135,6 @@
 	BOOTENV
 
 #define BOOT_TARGET_DEVICES(func) \
-	func(MMC, mmc, 1) \
-	func(MMC, mmc, 0) \
 	func(DHCP, dhcp, na)
 
 #define CONFIG_BOOTCOMMAND \
