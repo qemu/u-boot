@@ -480,7 +480,7 @@ void ft_cpu_setup(void *blob, bd_t *bd)
 	ft_pci_setup(blob, bd);
 #endif
 
-#ifdef CONFIG_FSL_ESDHC
+#if defined(CONFIG_FSL_ESDHC) && defined(CONFIG_MMC)
 	fdt_fixup_esdhc(blob, bd);
 #endif
 
