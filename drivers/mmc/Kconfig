@@ -544,13 +544,6 @@ config MMC_SDHCI_MV
 
 	  If unsure, say N.
 
-config MMC_SDHCI_PIC32
-	bool "Microchip PIC32 on-chip SDHCI support"
-	depends on DM_MMC && MACH_PIC32
-	depends on MMC_SDHCI
-	help
-	  Support for Microchip PIC32 SDHCI controller.
-
 config MMC_SDHCI_ROCKCHIP
 	bool "Arasan SDHCI controller for Rockchip support"
 	depends on ARCH_ROCKCHIP
