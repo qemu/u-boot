@@ -164,6 +164,7 @@ int board_init(void)
 	return 0;
 }
 
+#ifdef CONFIG_MMC
 int board_mmc_init(bd_t *bis)
 {
 	struct gpio_regs *gpio = GPIO_BASE;
@@ -176,6 +177,7 @@ int board_mmc_init(bd_t *bis)
 
 	return mmcif_mmc_init();
 }
+#endif
 
 static int get_sh_eth_mac_raw(unsigned char *buf, int size)
 {
