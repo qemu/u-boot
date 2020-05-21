@@ -72,10 +72,6 @@
 	#devtypel #instance " "
 
 #define BOOT_TARGET_DEVICES(func) \
-	func(MMC, mmc, 0) \
-	func(LEGACY_MMC, legacy_mmc, 0) \
-	func(MMC, mmc, 1) \
-	func(LEGACY_MMC, legacy_mmc, 1) \
 	func(PXE, pxe, na) \
 	func(DHCP, dhcp, na)
 
