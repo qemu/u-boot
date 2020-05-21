@@ -292,7 +292,7 @@ static int do_errata(struct cmd_tbl *cmdtp, int flag, int argc,
 #ifdef CONFIG_SYS_FSL_ERRATUM_A005125
 	puts("Work-around for Erratum A005125 enabled\n");
 #endif
-#ifdef CONFIG_SYS_FSL_ERRATUM_A007075
+#if defined(CONFIG_SYS_FSL_ERRATUM_A007075) && defined(CONFIG_USB)
 	if (has_erratum_a007075())
 		puts("Work-around for Erratum A007075 enabled\n");
 #endif
@@ -300,7 +300,7 @@ static int do_errata(struct cmd_tbl *cmdtp, int flag, int argc,
 	if (has_erratum_a007798())
 		puts("Work-around for Erratum A007798 enabled\n");
 #endif
-#ifdef CONFIG_SYS_FSL_ERRATUM_A004477
+#if defined(CONFIG_SYS_FSL_ERRATUM_A004477) && defined(CONFIG_USB)
 	if (has_erratum_a004477())
 		puts("Work-around for Erratum A004477 enabled\n");
 #endif
@@ -309,11 +309,11 @@ static int do_errata(struct cmd_tbl *cmdtp, int flag, int argc,
 	    (SVR_REV(svr) <= CONFIG_SYS_FSL_A004447_SVR_REV))
 		puts("Work-around for Erratum I2C-A004447 enabled\n");
 #endif
-#ifdef CONFIG_SYS_FSL_ERRATUM_A005275
+#if defined(CONFIG_SYS_FSL_ERRATUM_A005275) && defined(CONFIG_USB)
 	if (has_erratum_a005275())
 		puts("Work-around for Erratum A005275 enabled\n");
 #endif
-#ifdef CONFIG_SYS_FSL_ERRATUM_A006261
+#if defined(CONFIG_SYS_FSL_ERRATUM_A006261) && defined(CONFIG_USB)
 	if (has_erratum_a006261())
 		puts("Work-around for Erratum A006261 enabled\n");
 #endif

@@ -892,7 +892,7 @@ int cpu_init_r(void)
 	{
 		struct ccsr_usb_phy __iomem *usb_phy1 =
 			(void *)CONFIG_SYS_MPC85xx_USB1_PHY_ADDR;
-#ifdef CONFIG_SYS_FSL_ERRATUM_A006261
+#if defined(CONFIG_SYS_FSL_ERRATUM_A006261) && defined(CONFIG_USB)
 		if (has_erratum_a006261())
 			fsl_erratum_a006261_workaround(usb_phy1);
 #endif
