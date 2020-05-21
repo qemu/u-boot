@@ -67,7 +67,6 @@
 
 /* USB device configuration */
 #define CONFIG_USB_DEVICE
-#define CONFIG_USB_TTY
 
 /* commands to include */
 

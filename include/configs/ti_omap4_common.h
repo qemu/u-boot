@@ -55,7 +55,6 @@
 
 /* USB device configuration */
 #define CONFIG_USB_DEVICE		1
-#define CONFIG_USB_TTY			1
 
 /*
  * Environment setup
