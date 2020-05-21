@@ -106,7 +106,7 @@ static void announce_and_cleanup(int fake)
 	bootstage_report();
 #endif
 
-#ifdef CONFIG_USB_DEVICE
+#if defined(CONFIG_USB_DEVICE) && defined(CONFIG_USB)
 	udc_disconnect();
 #endif
 

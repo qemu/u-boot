@@ -70,13 +70,6 @@
 #define CONFIG_ENV_OVERWRITE
 #define CONFIG_SYS_BAUDRATE_TABLE { 4800, 9600, 19200, 38400, 57600, 115200 }
 
-/* USB device configuration */
-#define CONFIG_USB_DEVICE
-#define CONFIG_USBD_VENDORID		0x0421
-#define CONFIG_USBD_PRODUCTID		0x01c8
-#define CONFIG_USBD_MANUFACTURER	"Nokia"
-#define CONFIG_USBD_PRODUCT_NAME	"N900"
-
 /* commands to include */
 
 #define CONFIG_SYS_I2C

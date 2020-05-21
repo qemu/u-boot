@@ -65,9 +65,6 @@
 #define CONFIG_SYS_BAUDRATE_TABLE	{4800, 9600, 19200, 38400, 57600,\
 					115200}
 
-/* USB device configuration */
-#define CONFIG_USB_DEVICE
-
 /* commands to include */
 
 #define CONFIG_SYS_I2C

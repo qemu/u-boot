@@ -27,8 +27,6 @@
  * Hardware drivers
  */
 
-/* USB device configuration */
-#define CONFIG_USB_DEVICE		1
 /* Change these to suit your needs */
 #define CONFIG_USBD_VENDORID		0x0451
 #define CONFIG_USBD_PRODUCTID		0x5678
