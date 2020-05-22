@@ -491,7 +491,7 @@ int fm_init_common(int index, struct ccsr_fman *reg)
 			printf("SF: read for ucode failed\n");
 		spi_flash_free(ucode_flash);
 	}
-#elif defined(CONFIG_SYS_QE_FMAN_FW_IN_MMC)
+#elif defined(CONFIG_SYS_QE_FMAN_FW_IN_MMC) && defined(CONFIG_MMC)
 	int dev = CONFIG_SYS_MMC_ENV_DEV;
 	void *addr = malloc(CONFIG_SYS_QE_FMAN_FW_LENGTH);
 	u32 cnt = CONFIG_SYS_QE_FMAN_FW_LENGTH / 512;
