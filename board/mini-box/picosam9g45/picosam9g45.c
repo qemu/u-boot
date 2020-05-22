@@ -42,7 +42,7 @@ DECLARE_GLOBAL_DATA_PTR;
 
 void at91_spl_board_init(void)
 {
-#ifdef CONFIG_SYS_USE_MMC
+#if defined(CONFIG_SYS_USE_MMC) && defined(CONFIG_GENERIC_ATMEL_MCI)
 	at91_mci_hw_init();
 #endif
 }

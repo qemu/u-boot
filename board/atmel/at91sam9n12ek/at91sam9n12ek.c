@@ -226,7 +226,7 @@ int dram_init(void)
 
 void at91_spl_board_init(void)
 {
-#ifdef CONFIG_SD_BOOT
+#if defined(CONFIG_SD_BOOT) && defined(CONFIG_GENERIC_ATMEL_MCI)
 	at91_mci_hw_init();
 #elif CONFIG_NAND_BOOT
 	at91sam9n12ek_nand_hw_init();
