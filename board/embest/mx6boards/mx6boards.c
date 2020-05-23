@@ -218,6 +218,7 @@ int board_mmc_getcd(struct mmc *mmc)
 	return ret;
 }
 
+#ifdef CONFIG_MMC
 int board_mmc_init(bd_t *bis)
 {
 	int ret;
@@ -282,6 +283,7 @@ int board_mmc_init(bd_t *bis)
 
 	return 0;
 }
+#endif
 #endif
 
 #ifdef CONFIG_MXC_SPI
