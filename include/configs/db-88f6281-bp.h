@@ -72,14 +72,6 @@
 #define CONFIG_SYS_RESET_ADDRESS 0xffff0000	/* Rst Vector Adr */
 
 /*
- * SDIO/MMC Card Configuration
- */
-#ifdef CONFIG_CMD_MMC
-#define CONFIG_MVEBU_MMC
-#define CONFIG_SYS_MMC_BASE KW_SDIO_BASE
-#endif /* CONFIG_CMD_MMC */
-
-/*
  * SATA Driver configuration
  */
 #ifdef CONFIG_MVSATA_IDE
