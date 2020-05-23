@@ -109,6 +109,7 @@
 	"pxefile_addr_r=0x13200000\0" \
 	"ramdisk_addr_r=0x13300000\0"
 
+#if defined(CONFIG_MMC) && defined(CONFIG_USB)
 #define BOOT_TARGET_DEVICES(func) \
 	func(MMC, mmc, 0) \
 	func(MMC, mmc, 1) \
@@ -116,6 +117,11 @@
 	func(USB, usb, 0) \
 	func(PXE, pxe, na) \
 	func(DHCP, dhcp, na)
+#else
+#define BOOT_TARGET_DEVICES(func) \
+	func(PXE, pxe, na) \
+	func(DHCP, dhcp, na)
+#endif
 
 #include <config_distro_bootcmd.h>
 
