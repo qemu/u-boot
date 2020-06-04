@@ -8,6 +8,7 @@
 #include <cpu_func.h>
 #include <asm/cache.h>
 #include <watchdog.h>
+#include <linux/sizes.h>
 
 void flush_cache(ulong start_addr, ulong size)
 {
@@ -20,15 +21,18 @@ void flush_cache(ulong start_addr, ulong size)
 	for (addr = start; (addr <= end) && (addr >= start);
 			addr += CONFIG_SYS_CACHELINE_SIZE) {
 		asm volatile("dcbst 0,%0" : : "r" (addr) : "memory");
-		WATCHDOG_RESET();
+		if ((addr & (SZ_64K - 1)) == 0)
+			WATCHDOG_RESET();
 	}
 	/* wait for all dcbst to complete on bus */
 	asm volatile("sync" : : : "memory");
+	WATCHDOG_RESET();
 
 	for (addr = start; (addr <= end) && (addr >= start);
 			addr += CONFIG_SYS_CACHELINE_SIZE) {
 		asm volatile("icbi 0,%0" : : "r" (addr) : "memory");
-		WATCHDOG_RESET();
+		if ((addr & (SZ_64K - 1)) == 0)
+			WATCHDOG_RESET();
 	}
 	asm volatile("sync" : : : "memory");
 	/* flush prefetch queue */
