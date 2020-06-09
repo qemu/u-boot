@@ -671,8 +671,6 @@ The following options need to be configured:
 		Current user of this option is drivers/serial/nsl16550.c driver
 
 - Console Baudrate:
-		CONFIG_BAUDRATE - in bps
-		Select one of the baudrates listed in
 		CONFIG_SYS_BAUDRATE_TABLE, see below.
 
 - Autoboot Command:

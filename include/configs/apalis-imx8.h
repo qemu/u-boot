@@ -104,7 +104,6 @@
 #define PHYS_SDRAM_2_SIZE		SZ_2G		/* 2 GB */
 
 /* Serial */
-#define CONFIG_BAUDRATE			115200
 
 /* Monitor Command Prompt */
 #define CONFIG_SYS_PROMPT_HUSH_PS2	"> "

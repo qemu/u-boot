@@ -164,7 +164,6 @@
 #define PHYS_SDRAM_2_SIZE		0x80000000	/* 2 GB */
 
 /* Serial */
-#define CONFIG_BAUDRATE			115200
 
 /* Generic Timer Definitions */
 #define COUNTER_FREQUENCY		8000000	/* 8MHz */
