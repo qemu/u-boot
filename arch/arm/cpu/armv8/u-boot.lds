@@ -20,8 +20,8 @@ SECTIONS
 #endif
 	. = 0x00000000;
 
-	. = ALIGN(8);
-	.text :
+	/* Align .text to the page size */
+	.text ALIGN(0x1000):
 	{
 		*(.__image_copy_start)
 		CPUDIR/start.o (.text*)
@@ -39,6 +39,8 @@ SECTIONS
 	.text_rest :
 	{
 		*(.text*)
+		. = NEXT(0x1000);
+		KEEP(*(.__text_end))
 	}
 
 #ifdef CONFIG_ARMV8_PSCI

@@ -59,6 +59,12 @@
  */
 #define PTE_BLOCK_MEMTYPE(x)	((x) << 2)
 #define PTE_BLOCK_NS            (1 << 5)
+/*
+ * AP[1] bit is ignored by hardware and is
+ * treated as if it was One in EL2/EL3
+ */
+#define PTE_BLOCK_AP_RO		(1 << 7)
+#define PTE_BLOCK_AP_RW		(0 << 7)
 #define PTE_BLOCK_NON_SHARE	(0 << 8)
 #define PTE_BLOCK_OUTER_SHARE	(2 << 8)
 #define PTE_BLOCK_INNER_SHARE	(3 << 8)

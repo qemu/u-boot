@@ -72,6 +72,7 @@ extern void _start(void);
  */
 #ifdef CONFIG_ARM
 
+extern char __text_end[];
 extern char __bss_start[];
 extern char __bss_end[];
 extern char __image_copy_start[];

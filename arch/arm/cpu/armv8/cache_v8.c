@@ -14,6 +14,7 @@
 #include <asm/cache.h>
 #include <asm/system.h>
 #include <asm/armv8/mmu.h>
+#include <asm/sections.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 
@@ -364,6 +365,24 @@ __weak u64 get_page_table_size(void)
 	return size;
 }
 
+__weak void add_text_map(void)
+{
+	if (!(gd->flags & GD_FLG_RELOC))
+		return;
+
+	/* Text is always XN=0, read-only region. */
+	struct mm_region text = {
+		.virt = (unsigned long)__image_copy_start,
+		.phys = (unsigned long)__image_copy_start,
+		.size = (unsigned long)__text_end - (unsigned long)__image_copy_start,
+		.attrs = PTE_BLOCK_MEMTYPE(MT_NORMAL) |
+			 PTE_BLOCK_INNER_SHARE |
+			 PTE_BLOCK_AP_RO
+	};
+
+	add_map(&text);
+}
+
 void setup_pgtables(void)
 {
 	int i;
@@ -381,6 +400,8 @@ void setup_pgtables(void)
 	/* Now add all MMU table entries one after another to the table */
 	for (i = 0; mem_map[i].size || mem_map[i].attrs; i++)
 		add_map(&mem_map[i]);
+
+	add_text_map();
 }
 
 static void setup_all_pgtables(void)
