@@ -141,10 +141,6 @@
 	EXTRA_ENV_DFUARGS
 
 /* MMC ENV related defines */
-#ifdef CONFIG_ENV_IS_IN_MMC
-#define CONFIG_SYS_MMC_ENV_DEV		0
-#define CONFIG_SYS_MMC_ENV_PART	1
-#endif
 
 /* Now for the remaining common defines */
 #include <configs/ti_armv7_common.h>

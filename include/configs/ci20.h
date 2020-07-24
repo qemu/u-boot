@@ -39,7 +39,6 @@
 #define DM9000_DATA			(CONFIG_DM9000_BASE + 2)
 
 /* Environment */
-#define CONFIG_SYS_MMC_ENV_DEV		0
 #define CONFIG_ENV_OVERWRITE
 
 #define CONFIG_SYS_CBSIZE	1024		/* Console I/O buffer size */

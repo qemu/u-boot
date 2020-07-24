@@ -30,11 +30,6 @@
  * in case of SD Card or Network boot we want to have a possibility to
  * debrick the shc, therefore do not read environment from eMMC
  */
-#if defined(CONFIG_SHC_SDBOOT) || defined(CONFIG_SHC_NETBOOT)
-#define CONFIG_SYS_MMC_ENV_DEV		0
-#else
-#define CONFIG_SYS_MMC_ENV_DEV		1
-#endif
 
 /*
  * Info when using boot partitions: As environment resides within first

@@ -23,8 +23,6 @@
 /* Allow to overwrite serial and ethaddr */
 #define CONFIG_ENV_OVERWRITE
 
-#define CONFIG_SYS_MMC_ENV_DEV 0
-
 /* Uboot definition */
 #define CONFIG_SYS_UBOOT_BASE                   CONFIG_SYS_TEXT_BASE
 

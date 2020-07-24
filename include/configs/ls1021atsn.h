@@ -238,10 +238,6 @@
 /* Environment */
 #define CONFIG_ENV_OVERWRITE
 
-#if defined(CONFIG_SD_BOOT)
-#define CONFIG_SYS_MMC_ENV_DEV		0
-#endif
-
 #define CONFIG_SYS_BOOTM_LEN		0x8000000 /* 128 MB */
 
 #endif

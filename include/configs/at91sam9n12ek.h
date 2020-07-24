@@ -98,7 +98,6 @@
 
 #ifdef CONFIG_ENV_IS_IN_MMC
 /* Use raw reserved sectors to save environment */
-#define CONFIG_SYS_MMC_ENV_DEV		0
 #else
 /* Use file in FAT file to save environment */
 #endif

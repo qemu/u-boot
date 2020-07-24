@@ -96,7 +96,6 @@
 /*
  * Environment
  */
-#define CONFIG_SYS_MMC_ENV_DEV		0
 #define CONFIG_SYS_FSL_QSPI_BASE	0x40000000
 
 #ifndef CONFIG_SPL_BUILD

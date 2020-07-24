@@ -17,8 +17,6 @@
 #define CONFIG_IODELAY_RECALIBRATION
 
 /* MMC ENV related defines */
-#define CONFIG_SYS_MMC_ENV_DEV		1		/* eMMC */
-#define CONFIG_SYS_MMC_ENV_PART		0
 
 #define CONFIG_SYS_BOOTM_LEN		SZ_64M
 

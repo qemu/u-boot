@@ -170,8 +170,6 @@ unsigned long get_board_ddr_clk(void);
 #define CONFIG_HWCONFIG
 #define HWCONFIG_BUFFER_SIZE		128
 
-#define CONFIG_SYS_MMC_ENV_DEV          0
-
 /* Allow to overwrite serial and ethaddr */
 #define CONFIG_ENV_OVERWRITE
 
