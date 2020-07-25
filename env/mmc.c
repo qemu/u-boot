@@ -119,7 +119,7 @@ __weak int mmc_get_env_dev(void)
 	return CONFIG_SYS_MMC_ENV_DEV;
 }
 
-#ifdef CONFIG_SYS_MMC_ENV_PART
+#if (CONFIG_SYS_MMC_ENV_PART != 0)
 __weak uint mmc_get_env_part(struct mmc *mmc)
 {
 	return CONFIG_SYS_MMC_ENV_PART;
@@ -166,7 +166,7 @@ static const char *init_mmc_for_env(struct mmc *mmc)
 
 static void fini_mmc_for_env(struct mmc *mmc)
 {
-#ifdef CONFIG_SYS_MMC_ENV_PART
+#if (CONFIG_SYS_MMC_ENV_PART != 0)
 	int dev = mmc_get_env_dev();
 
 	blk_select_hwpart_devnum(IF_TYPE_MMC, dev, env_mmc_orig_hwpart);
