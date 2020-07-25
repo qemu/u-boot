@@ -528,7 +528,6 @@ int mmc_get_env_dev(void)
 	return board_mmc_get_env_dev(devno);
 }
 
-#ifdef CONFIG_SYS_MMC_ENV_PART
 __weak int board_mmc_get_env_part(int devno)
 {
 	return CONFIG_SYS_MMC_ENV_PART;
@@ -544,7 +543,6 @@ uint mmc_get_env_part(struct mmc *mmc)
 
 	return board_mmc_get_env_part(devno);
 }
-#endif
 #endif
 
 int board_postclk_init(void)
