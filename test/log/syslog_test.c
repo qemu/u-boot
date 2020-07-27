@@ -276,7 +276,7 @@ static int log_test_syslog_nodebug(struct unit_test_state *uts)
 	sandbox_eth_set_tx_handler(0, sb_log_tx_handler);
 	/* Used by ut_assert macros in the tx_handler */
 	sandbox_eth_set_priv(0, &env);
-	log_debug("testing %s\n", "log_debug");
+	log_content("testing %s\n", "log_debug");
 	sandbox_eth_set_tx_handler(0, NULL);
 	/* Check that the callback function was not called */
 	ut_assertnonnull(env.expected);

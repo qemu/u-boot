@@ -156,16 +156,20 @@ static bool log_has_file(const char *file_list, const char *file)
 static bool log_passes_filters(struct log_device *ldev, struct log_rec *rec)
 {
 	struct log_filter *filt;
+	int level = rec->level & LOGL_LEVEL_MASK;
+
+	if (rec->force_debug && level <= LOGL_DEBUG)
+		return true;
 
 	/* If there are no filters, filter on the default log level */
 	if (list_empty(&ldev->filter_head)) {
-		if (rec->level > gd->default_log_level)
+		if (level > gd->default_log_level)
 			return false;
 		return true;
 	}
 
 	list_for_each_entry(filt, &ldev->filter_head, sibling_node) {
-		if (rec->level > filt->max_level)
+		if (level > filt->max_level)
 			continue;
 		if ((filt->flags & LOGFF_HAS_CAT) &&
 		    !log_has_cat(filt->cat_list, rec->cat))
@@ -208,7 +212,8 @@ int _log(enum log_category_t cat, enum log_level_t level, const char *file,
 	va_list args;
 
 	rec.cat = cat;
-	rec.level = level;
+	rec.level = level & LOGL_LEVEL_MASK;
+	rec.force_debug = level & LOGL_FORCE_DEBUG;
 	rec.file = file;
 	rec.line = line;
 	rec.func = func;
