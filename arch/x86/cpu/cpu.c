@@ -35,6 +35,7 @@
 #include <asm/control_regs.h>
 #include <asm/coreboot_tables.h>
 #include <asm/cpu.h>
+#include <asm/global_data.h>
 #include <asm/lapic.h>
 #include <asm/microcode.h>
 #include <asm/mp.h>

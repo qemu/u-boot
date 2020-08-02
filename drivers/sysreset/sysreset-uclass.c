@@ -15,6 +15,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <regmap.h>
+#include <asm/global_data.h>
 #include <dm/device-internal.h>
 #include <dm/lists.h>
 #include <dm/root.h>

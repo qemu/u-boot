@@ -28,6 +28,7 @@
 #include <asm/arch/gpio.h>
 #include <asm/arch/mmc.h>
 #include <asm/arch/spl.h>
+#include <asm/global_data.h>
 #include <linux/delay.h>
 #include <u-boot/crc.h>
 #ifndef CONFIG_ARM64

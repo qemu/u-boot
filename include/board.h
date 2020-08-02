@@ -4,6 +4,8 @@
  * Mario Six,  Guntermann & Drunck GmbH, mario.six@gdsys.cc
  */
 
+struct udevice;
+
 /*
  * This uclass encapsulates hardware methods to gather information about a
  * board or a specific device such as hard-wired GPIOs on GPIO expanders,
@@ -32,6 +34,7 @@
  */
 
 #if CONFIG_IS_ENABLED(BOARD)
+
 struct board_ops {
 	/**
 	 * detect() - Run the hardware info detection procedure for this

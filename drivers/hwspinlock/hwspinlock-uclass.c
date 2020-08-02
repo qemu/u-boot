@@ -8,6 +8,7 @@
 #include <errno.h>
 #include <hwspinlock.h>
 #include <log.h>
+#include <asm/global_data.h>
 #include <dm/device-internal.h>
 #include <dm/device_compat.h>
 #include <linux/compat.h>

@@ -12,6 +12,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <time.h>
+#include <asm/global_data.h>
 #include <linux/libfdt_env.h>
 #include <u-boot/crc.h>
 #include <bootm.h>

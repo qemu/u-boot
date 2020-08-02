@@ -10,6 +10,7 @@
 #include <lmb.h>
 #include <log.h>
 #include <ram.h>
+#include <asm/global_data.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

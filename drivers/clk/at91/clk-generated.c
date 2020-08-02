@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
+#include <asm/global_data.h>
 #include <linux/err.h>
 #include <linux/io.h>
 #include <mach/at91_pmc.h>

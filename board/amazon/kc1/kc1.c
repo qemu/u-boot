@@ -9,6 +9,7 @@
 #include <common.h>
 #include <env.h>
 #include <init.h>
+#include <asm/global_data.h>
 #include <linux/ctype.h>
 #include <linux/usb/musb.h>
 #include <asm/omap_musb.h>

@@ -4,6 +4,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <asm/arch/gpio.h>
+#include <asm/global_data.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <dm/device_compat.h>

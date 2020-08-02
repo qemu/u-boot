@@ -11,6 +11,8 @@
 
 #define TPM2_DIGEST_LEN		32
 
+struct udevice;
+
 /**
  * TPM2 Structure Tags for command/response buffers.
  *

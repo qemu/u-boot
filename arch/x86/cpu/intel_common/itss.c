@@ -17,6 +17,7 @@
 #include <malloc.h>
 #include <p2sb.h>
 #include <spl.h>
+#include <asm/global_data.h>
 #include <asm/itss.h>
 
 struct itss_platdata {

@@ -10,6 +10,7 @@
 #include <malloc.h>
 #include <serial.h>
 #include <watchdog.h>
+#include <asm/global_data.h>
 #include <dm/lists.h>
 #include <dm/device-internal.h>
 #include <linux/delay.h>

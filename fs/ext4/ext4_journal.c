@@ -19,6 +19,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <ext_common.h>
+#include <asm/global_data.h>
 #include "ext4_common.h"
 
 static struct revoke_blk_list *revk_blk_list;

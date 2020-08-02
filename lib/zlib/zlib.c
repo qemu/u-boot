@@ -13,6 +13,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 
 #ifdef CONFIG_GZIP_COMPRESSED
 #define NO_DUMMY_DECL

@@ -14,6 +14,7 @@
 #include <clk.h>
 #include <dm.h>
 #include <malloc.h>
+#include <asm/global_data.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

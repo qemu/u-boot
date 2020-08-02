@@ -12,6 +12,7 @@
 #include <clk.h>
 #include <common.h>
 #include <dm.h>
+#include <asm/global_data.h>
 #include <dm/platform_data/spi_pl022.h>
 #include <linux/io.h>
 #include <spi.h>

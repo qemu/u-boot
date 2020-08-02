@@ -8,6 +8,7 @@
 #include <clk-uclass.h>
 #include <dm.h>
 #include <log.h>
+#include <asm/global_data.h>
 #include <dm/lists.h>
 #include <dm/util.h>
 #include "pmc.h"

@@ -8,6 +8,7 @@
 #include <common.h>
 #include <console.h>
 #include <malloc.h>
+#include <asm/global_data.h>
 #include <test/test.h>
 #include <test/ut.h>
 

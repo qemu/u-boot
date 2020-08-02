@@ -17,6 +17,7 @@
 #include <misc.h>
 #include <tpm-v1.h>
 #include <video_osd.h>
+#include <asm/global_data.h>
 
 #include "../common/ihs_mdio.h"
 #include "../../../drivers/board/gazerbeam.h"

@@ -6,6 +6,7 @@
 #include <common.h>
 #include <hang.h>
 #include <log.h>
+#include <asm/global_data.h>
 
 #ifdef CONFIG_SPL_BUILD
 static int setup_led(void)

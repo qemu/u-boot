@@ -7,6 +7,7 @@
 #include <common.h>
 #include <clk-uclass.h>
 #include <dm.h>
+#include <asm/global_data.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

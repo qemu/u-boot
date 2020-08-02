@@ -8,6 +8,7 @@
 #include <log.h>
 #include <usb.h>
 #include <errno.h>
+#include <asm/global_data.h>
 #include <linux/compiler.h>
 #include <linux/delay.h>
 #include <usb/ehci-ci.h>

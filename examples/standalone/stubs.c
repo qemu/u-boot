@@ -1,5 +1,6 @@
 #include <common.h>
 #include <exports.h>
+#include <asm/global_data.h>
 #include <linux/compiler.h>
 
 struct cmd_tbl;

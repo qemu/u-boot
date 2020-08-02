@@ -9,6 +9,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <spi.h>
+#include <asm/global_data.h>
 #include <dm/device-internal.h>
 #include <dm/uclass-internal.h>
 #include <dm/lists.h>

@@ -14,6 +14,7 @@
 #include <syscon.h>
 #include <time.h>
 #include <vsprintf.h>
+#include <asm/global_data.h>
 #include <linux/bitops.h>
 #include <linux/io.h>
 #include <linux/iopoll.h>

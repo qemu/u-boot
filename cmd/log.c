@@ -8,6 +8,7 @@
 #include <command.h>
 #include <dm.h>
 #include <log.h>
+#include <asm/global_data.h>
 
 static char log_fmt_chars[LOGF_COUNT] = "clFLfm";
 

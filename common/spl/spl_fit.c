@@ -14,6 +14,7 @@
 #include <malloc.h>
 #include <spl.h>
 #include <asm/cache.h>
+#include <asm/global_data.h>
 #include <linux/libfdt.h>
 
 DECLARE_GLOBAL_DATA_PTR;

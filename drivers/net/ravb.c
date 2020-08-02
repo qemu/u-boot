@@ -17,6 +17,7 @@
 #include <miiphy.h>
 #include <malloc.h>
 #include <asm/cache.h>
+#include <asm/global_data.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/mii.h>

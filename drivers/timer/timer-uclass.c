@@ -6,6 +6,7 @@
 #include <common.h>
 #include <dm.h>
 #include <init.h>
+#include <asm/global_data.h>
 #include <dm/lists.h>
 #include <dm/device-internal.h>
 #include <dm/root.h>

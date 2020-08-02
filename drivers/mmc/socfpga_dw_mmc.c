@@ -12,6 +12,7 @@
 #include <dwmmc.h>
 #include <errno.h>
 #include <fdtdec.h>
+#include <asm/global_data.h>
 #include <dm/device_compat.h>
 #include <linux/libfdt.h>
 #include <linux/err.h>

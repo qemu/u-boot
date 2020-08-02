@@ -13,6 +13,7 @@
 #include <log.h>
 #include <miiphy.h>
 #include <netdev.h>
+#include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/arch/reset_manager.h>
 #include <asm/arch/system_manager.h>

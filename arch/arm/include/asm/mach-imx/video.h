@@ -16,9 +16,7 @@ struct display_info_t {
 	struct	fb_videomode mode;
 };
 
-#ifdef CONFIG_IMX_HDMI
-extern int detect_hdmi(struct display_info_t const *dev);
-#endif
+int detect_hdmi(struct display_info_t const *dev);
 
 #ifdef CONFIG_IMX_VIDEO_SKIP
 extern struct display_info_t const displays[];

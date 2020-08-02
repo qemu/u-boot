@@ -7,6 +7,7 @@
 #include <log.h>
 #include <asm/sections.h>
 #include <asm/system.h>
+#include <linux/libfdt.h>
 
 /*
  * Force data-section, as .bss will not be valid

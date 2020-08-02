@@ -6,6 +6,7 @@
 #include <common.h>
 #include <debug_uart.h>
 #include <init.h>
+#include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/arch-rockchip/bootrom.h>
 #include <asm/arch-rockchip/sdram_rk3036.h>

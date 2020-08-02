@@ -10,8 +10,6 @@
 #ifndef __LIBATA_H__
 #define __LIBATA_H__
 
-#include <common.h>
-
 enum {
 	/* various global constants */
 	ATA_MAX_DEVICES		= 2,	/* per bus/port */

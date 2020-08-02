@@ -13,6 +13,7 @@
 #include <ram.h>
 #include <regmap.h>
 #include <syscon.h>
+#include <asm/global_data.h>
 #include <asm/io.h>
 #include <clk.h>
 #include <wait_bit.h>

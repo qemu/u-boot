@@ -10,6 +10,7 @@
 #include <cpu.h>
 #include <dm.h>
 #include <log.h>
+#include <asm/global_data.h>
 #include <dm/uclass-internal.h>
 #include <mapmem.h>
 #include <serial.h>

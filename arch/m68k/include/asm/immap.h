@@ -30,6 +30,7 @@
 
 #define CONFIG_SYS_INTR_BASE		(MMAP_INTC0)
 #define CONFIG_SYS_NUM_IRQS		(128)
+#include <asm/global_data.h>
 #endif				/* CONFIG_M520x */
 
 #ifdef CONFIG_M52277

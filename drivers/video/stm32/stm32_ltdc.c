@@ -14,6 +14,7 @@
 #include <reset.h>
 #include <video.h>
 #include <video_bridge.h>
+#include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/arch/gpio.h>
 #include <dm/device-internal.h>

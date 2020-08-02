@@ -6,6 +6,7 @@
 #include <common.h>
 #include <dm.h>
 #include <log.h>
+#include <asm/global_data.h>
 #include <dm/device-internal.h>
 #include <dm/lists.h>
 #include <dm/uclass-internal.h>

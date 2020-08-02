@@ -11,6 +11,7 @@
 #include <log.h>
 #include <misc.h>
 #include <net.h>
+#include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/arch/bsec.h>
 #include <asm/arch/stm32.h>
