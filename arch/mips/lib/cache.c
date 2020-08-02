@@ -5,7 +5,9 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/cache.h>
 #include <asm/cacheops.h>
@@ -16,6 +18,7 @@
 #include <asm/system.h>
 #include <linux/bug.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

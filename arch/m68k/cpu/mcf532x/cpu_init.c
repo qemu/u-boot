@@ -14,6 +14,7 @@
 #include <watchdog.h>
 #include <asm/immap.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 #if defined(CONFIG_MCFFEC)
 #include <config.h>

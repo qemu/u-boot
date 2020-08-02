@@ -32,6 +32,7 @@
 #include <asm/arch/sys_proto.h>
 #include <asm/u-boot.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "../../../drivers/video/da8xx-fb.h"
 #include <asm/io.h>
 #include <asm/emif.h>

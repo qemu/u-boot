@@ -12,10 +12,12 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <env.h>
 #include <i2c.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <linux/ctype.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>

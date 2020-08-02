@@ -24,6 +24,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* Allow ports to override the default behavior */
 static unsigned long do_bootelf_exec(ulong (*entry)(int, char * const[]),

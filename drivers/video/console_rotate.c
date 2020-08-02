@@ -11,6 +11,7 @@
 #include <video_console.h>
 #include <video_font.h>		/* Get font data, width and height */
 #include <linux/errno.h>
+#include <linux/types.h>
 
 static int console_set_row_1(struct udevice *dev, uint row, int clr)
 {

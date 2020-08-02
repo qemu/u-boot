@@ -7,6 +7,8 @@
 #ifndef __DRV_CLK_MTK_H
 #define __DRV_CLK_MTK_H
 
+#include <compiler.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/kernel.h>
 #define CLK_XTAL			0

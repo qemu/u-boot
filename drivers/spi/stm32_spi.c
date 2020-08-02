@@ -6,18 +6,21 @@
  */
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <errno.h>
 #include <log.h>
 #include <malloc.h>
 #include <reset.h>
 #include <spi.h>
+#include <stdbool.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #include <asm/io.h>
 #include <asm/gpio.h>

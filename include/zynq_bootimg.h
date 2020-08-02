@@ -6,6 +6,7 @@
 #ifndef _ZYNQ_BOOTIMG_H_
 #define _ZYNQ_BOOTIMG_H_
 
+#include <asm/types.h>
 #define ZYNQ_MAX_PARTITION_NUMBER	0xE
 
 struct partition_hdr {

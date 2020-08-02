@@ -12,6 +12,7 @@
 
 #include <common.h>
 #include <linux/stat.h>
+#include <linux/types.h>
 
 #if ( S_ISUID != 04000 ) || ( S_ISGID != 02000 ) || ( S_ISVTX != 01000 ) \
  || ( S_IRUSR != 00400 ) || ( S_IWUSR != 00200 ) || ( S_IXUSR != 00100 ) \

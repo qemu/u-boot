@@ -17,6 +17,7 @@
 #include <asm/pch_common.h>
 #include <asm/arch/pch.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 struct sata_platdata {
 	int port_map;

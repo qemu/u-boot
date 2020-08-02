@@ -6,6 +6,7 @@
 #ifndef _ASM_ARCH_SDRAM_MSCH_H
 #define _ASM_ARCH_SDRAM_MSCH_H
 
+#include <asm/types.h>
 union noc_ddrtiminga0 {
 	u32 d32;
 	struct {

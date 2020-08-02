@@ -7,6 +7,7 @@
 #include <common.h>
 #include <clock_legacy.h>
 #include <command.h>
+#include <compiler.h>
 #include <fdt_support.h>
 #include <i2c.h>
 #include <init.h>
@@ -34,6 +35,7 @@
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "../common/sleep.h"
 #ifdef CONFIG_U_QE
 #include <fsl_qe.h>

@@ -19,6 +19,7 @@
 #include <asm/arch/at91_rstc.h>
 #include <asm/arch/clk.h>
 #include <asm/arch/gpio.h>
+#include <linux/types.h>
 
 #include <lcd.h>
 #include <atmel_lcdc.h>

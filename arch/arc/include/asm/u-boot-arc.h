@@ -6,6 +6,7 @@
 #ifndef __ASM_ARC_U_BOOT_ARC_H__
 #define __ASM_ARC_U_BOOT_ARC_H__
 
+#include <linux/types.h>
 int arch_early_init_r(void);
 
 void	board_init_f_r_trampoline(ulong) __attribute__ ((noreturn));

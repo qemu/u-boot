@@ -8,6 +8,7 @@
 #include <common.h>
 #include <stdio.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 int raise (int signum)
 {

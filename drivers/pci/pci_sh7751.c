@@ -15,6 +15,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /* Register addresses and such */
 #define SH7751_BCR1	(vu_long *)0xFF800000

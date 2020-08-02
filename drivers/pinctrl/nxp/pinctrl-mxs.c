@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <asm/global_data.h>
 #include <dm/device_compat.h>
@@ -15,6 +16,7 @@
 #include <dm.h>
 #include <dm/pinctrl.h>
 #include <dm/read.h>
+#include <linux/types.h>
 #include "pinctrl-mxs.h"
 
 DECLARE_GLOBAL_DATA_PTR;

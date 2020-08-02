@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <ns16550.h>
 #include <dm/platform_data/lpc32xx_hsuart.h>
+#include <linux/types.h>
 
 #include <asm/arch/clk.h>
 #include <asm/arch/uart.h>

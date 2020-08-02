@@ -12,11 +12,13 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <env.h>
 #include <fastboot.h>
 #include <stdarg.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/string.h>
 #include <net/fastboot.h>

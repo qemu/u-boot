@@ -15,6 +15,7 @@
 #include <asm/arch/mrc.h>
 #include <asm/arch/msg_port.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "mrc_util.h"
 #include "hte.h"
 #include "smc.h"

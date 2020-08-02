@@ -17,6 +17,7 @@
 #include <spl.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifndef CONFIG_SPL_LOAD_FIT_ADDRESS
 # define CONFIG_SPL_LOAD_FIT_ADDRESS	0

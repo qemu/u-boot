@@ -8,6 +8,7 @@
 #define __MICROCHIP_PIC32_ETH_H_
 
 #include <linux/bitops.h>
+#include <linux/types.h>
 #include <mach/pic32.h>
 
 /* Ethernet */

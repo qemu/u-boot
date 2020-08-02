@@ -8,6 +8,7 @@
 #define __TPM_COMMON_H
 
 #include <command.h>
+#include <linux/types.h>
 
 struct udevice;
 

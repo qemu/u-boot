@@ -10,6 +10,7 @@
 #include <common.h>
 #include <miiphy.h>
 #include <phy.h>
+#include <asm/types.h>
 
 int gen10g_shutdown(struct phy_device *phydev)
 {

@@ -13,6 +13,7 @@
 
 #include <linux/list.h>
 #include <linux/fb.h>
+#include <linux/types.h>
 
 /*  IPU Pixel format definitions */
 #define fourcc(a, b, c, d)\

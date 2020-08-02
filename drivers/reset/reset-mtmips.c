@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <errno.h>
 #include <log.h>

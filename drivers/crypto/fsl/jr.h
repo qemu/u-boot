@@ -7,7 +7,9 @@
 #ifndef __JR_H
 #define __JR_H
 
+#include <compiler.h>
 #include <linux/compiler.h>
+#include <linux/types.h>
 
 #define JR_SIZE 4
 /* Timeout currently defined as 90 sec */

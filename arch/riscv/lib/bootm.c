@@ -9,6 +9,7 @@
 #include <common.h>
 #include <bootstage.h>
 #include <command.h>
+#include <compiler.h>
 #include <dm.h>
 #include <fdt_support.h>
 #include <hang.h>
@@ -23,6 +24,7 @@
 #include <asm/u-boot-riscv.h>
 #include <dm/device.h>
 #include <dm/root.h>
+#include <linux/types.h>
 #include <u-boot/zlib.h>
 
 DECLARE_GLOBAL_DATA_PTR;

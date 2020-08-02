@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <i2c.h>
+#include <linux/types.h>
 #include <power/tps65217.h>
 
 struct udevice *tps65217_dev __attribute__((section(".data"))) = NULL;

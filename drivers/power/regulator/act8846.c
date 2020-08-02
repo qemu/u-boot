@@ -12,6 +12,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <stdbool.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <power/act8846_pmic.h>
 #include <power/pmic.h>

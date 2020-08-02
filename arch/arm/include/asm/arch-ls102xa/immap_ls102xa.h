@@ -6,6 +6,7 @@
 #ifndef __ASM_ARCH_LS102XA_IMMAP_H_
 #define __ASM_ARCH_LS102XA_IMMAP_H_
 #include <fsl_immap.h>
+#include <linux/types.h>
 
 #define SVR_MAJ(svr)		(((svr) >>  4) & 0xf)
 #define SVR_MIN(svr)		(((svr) >>  0) & 0xf)

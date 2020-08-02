@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <memalign.h>
 #include <net.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <usb.h>
 #include <vsprintf.h>
@@ -21,6 +22,7 @@
 #include <linux/mii.h>
 #include <linux/bitops.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "usb_ether.h"
 #include "r8152.h"
 

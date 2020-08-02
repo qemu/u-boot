@@ -10,6 +10,7 @@
 #include <ide.h>
 #include <uuid.h>
 #include <linux/list.h>
+#include <linux/types.h>
 
 struct block_drvr {
 	char *name;

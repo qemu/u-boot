@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <asm/types.h>
 
 #include <asm/sections.h>
 #include <asm/io.h>

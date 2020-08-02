@@ -3,6 +3,7 @@
 #ifndef _GPIO_DA8XX_DEFS_H_
 #define _GPIO_DA8XX_DEFS_H_
 
+#include <linux/types.h>
 struct davinci_gpio {
 	unsigned int dir;
 	unsigned int out_data;

@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <stdio.h>
 #include <vsprintf.h>

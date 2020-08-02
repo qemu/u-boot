@@ -13,6 +13,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <p2sb.h>
+#include <stdbool.h>
 #include <acpi/acpi_s3.h>
 #include <asm/global_data.h>
 #include <asm/intel_pinctrl.h>
@@ -30,6 +31,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #define PCH_P2SB_E0		0xe0
 #define HIDE_BIT		BIT(0)

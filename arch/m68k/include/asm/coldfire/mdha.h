@@ -10,6 +10,7 @@
 #define __MDHA_H__
 
 /* Message Digest Hardware Accelerator */
+#include <asm/types.h>
 typedef struct mdha_ctrl {
 	u32 mr;			/* 0x00 MDHA Mode */
 	u32 cr;			/* 0x04 Control */

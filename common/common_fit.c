@@ -12,6 +12,7 @@
 #include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 ulong fdt_getprop_u32(const void *fdt, int node, const char *prop)
 {

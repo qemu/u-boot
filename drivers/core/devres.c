@@ -12,6 +12,7 @@
 #include <common.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/compat.h>
 #include <linux/errno.h>
@@ -21,6 +22,7 @@
 #include <dm/devres.h>
 #include <dm/root.h>
 #include <dm/util.h>
+#include <linux/types.h>
 
 /** enum devres_phase - Shows where resource was allocated
  *

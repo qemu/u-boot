@@ -12,6 +12,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <net.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -20,6 +21,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <linux/ctype.h>
 #include <linux/sizes.h>

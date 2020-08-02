@@ -15,6 +15,7 @@
 #ifdef __UBOOT__
 #include <asm/byteorder.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <linux/usb/ch9.h>
 #include <linux/usb/gadget.h>
 #endif

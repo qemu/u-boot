@@ -4,6 +4,7 @@
  */
 #include <common.h>
 #include <log.h>
+#include <stdbool.h>
 #include <time.h>
 #include <asm/io.h>
 #include <clk.h>
@@ -14,6 +15,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #define I2C_TIMEOUT_MS		100
 

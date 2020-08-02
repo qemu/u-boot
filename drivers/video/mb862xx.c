@@ -11,6 +11,7 @@
 
 #include <common.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 
 #include <asm/io.h>

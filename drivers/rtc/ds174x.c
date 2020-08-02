@@ -16,6 +16,7 @@
 #include <command.h>
 #include <rtc.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 static uchar rtc_read( unsigned int addr );
 static void  rtc_write( unsigned int addr, uchar val);

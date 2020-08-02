@@ -7,6 +7,7 @@
 #ifndef __BUS_VCXK_H_
 #define __BUS_VCXK_H_
 
+#include <linux/types.h>
 extern int vcxk_init(unsigned long width, unsigned long height);
 extern void vcxk_setpixel(int x, int y, unsigned long color);
 extern int vcxk_acknowledge_wait(void);

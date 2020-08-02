@@ -9,6 +9,7 @@
 #define __ASM_FSP_INTERNAL_H
 
 #include <stdbool.h>
+#include <linux/types.h>
 struct binman_entry;
 struct fsp_header;
 struct fspm_upd;

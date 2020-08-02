@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <stdio.h>
 #include <usb.h>
@@ -14,6 +15,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <usb/ehci-ci.h>
 #include <asm/io.h>
 #include <asm/arch/imx-regs.h>

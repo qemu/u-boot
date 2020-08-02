@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <init.h>
 #include <stdio.h>
 #include <asm/global_data.h>
@@ -11,6 +12,7 @@
 #include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <asm/arch/misc.h>
+#include <linux/types.h>
 
 #include "preloader.h"
 

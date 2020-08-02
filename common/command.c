@@ -19,6 +19,7 @@
 #include <asm/global_data.h>
 #include <linux/ctype.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * Use puts() instead of printf() to avoid printf buffer overflow

@@ -15,6 +15,7 @@
 #include <asm/mach-imx/regs-common.h>
 
 #ifndef	__ASSEMBLY__
+#include <linux/types.h>
 struct mxs_clkctrl_regs {
 	mxs_reg_32(hw_clkctrl_pll0ctrl0)	/* 0x00 */
 	uint32_t	hw_clkctrl_pll0ctrl1;	/* 0x10 */

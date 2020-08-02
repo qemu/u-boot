@@ -14,6 +14,7 @@
 #include <dm/devres.h>
 #include <dm/test.h>
 #include <dm/uclass-internal.h>
+#include <linux/types.h>
 #include <test/ut.h>
 
 /* Test that devm_kmalloc() allocates memory, free when device is removed */

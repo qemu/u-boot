@@ -23,6 +23,7 @@
 
 #include <asm/types.h>
 #include <config.h>
+#include <linux/types.h>
 
 #define CS8900_DRIVERNAME "CS8900"
 /* although the registers are 16 bit, they are 32-bit aligned on the

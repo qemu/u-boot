@@ -9,6 +9,7 @@
 #define _CPU_H_
 
 #include <command.h>
+#include <compiler.h>
 
 /* Use this to create board specific reset functions */
 void board_reset(void) __attribute__((__weak__));

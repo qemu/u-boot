@@ -8,6 +8,7 @@
 #include <common.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/max8997_muic.h>
 #include <power/hi6553_pmic.h>

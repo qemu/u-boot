@@ -2,6 +2,7 @@
 /*
  *  Header file for AT91/AT32 MULTI LAYER LCD Controller
  *
+#include <asm/types.h>
  *  Data structure and register user interface
  *
  *  Copyright (C) 2012 Atmel Corporation

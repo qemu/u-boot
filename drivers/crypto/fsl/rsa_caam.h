@@ -7,6 +7,7 @@
 #define __RSA_CAAM_H
 
 #include <common.h>
+#include <linux/types.h>
 
 /**
  * struct pk_in_params - holder for input to PKHA block in CAAM

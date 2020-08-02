@@ -13,6 +13,7 @@
 #include <errno.h>
 #include <fdtdec.h>
 #include <wait_bit.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 
 DECLARE_GLOBAL_DATA_PTR;

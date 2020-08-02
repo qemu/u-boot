@@ -22,6 +22,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define MAX_PARENT			100
 #define MAX_NODES			6

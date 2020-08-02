@@ -8,6 +8,7 @@
 #include <common.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
@@ -18,6 +19,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 static const resource_size_t zynqmp_crf_apb_clkc_base = 0xfd1a0020;
 static const resource_size_t zynqmp_crl_apb_clkc_base = 0xff5e0020;

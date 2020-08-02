@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <linux/kernel.h>
 #include <eeprom_layout.h>

@@ -10,6 +10,7 @@
 #define MHZ		(1000 * 1000)
 #endif
 
+#include <asm/types.h>
 #define PATTERN		(0x5aa5f00f)
 
 #define MIN(a, b)	(((a) > (b)) ? (b) : (a))

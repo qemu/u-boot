@@ -15,6 +15,7 @@
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <phy.h>
 #include <miiphy.h>

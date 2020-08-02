@@ -8,6 +8,7 @@
 #include <asm/io.h>
 #include <asm/immap_85xx.h>
 #include <asm/fsl_serdes.h>
+#include <asm/types.h>
 
 phy_interface_t fman_port_enet_if(enum fm_port port)
 {

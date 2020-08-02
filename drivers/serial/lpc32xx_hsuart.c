@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <serial.h>
 #include <stdbool.h>
+#include <asm/types.h>
 #include <dm/platform_data/lpc32xx_hsuart.h>
 #include <linux/errno.h>
 

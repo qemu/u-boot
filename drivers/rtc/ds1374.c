@@ -19,6 +19,7 @@
 #include <i2c.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 /*---------------------------------------------------------------------*/
 #undef DEBUG_RTC

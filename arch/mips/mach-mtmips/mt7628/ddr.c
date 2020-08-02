@@ -6,8 +6,10 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <asm/addrspace.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/sizes.h>

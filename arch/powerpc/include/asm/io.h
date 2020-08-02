@@ -7,7 +7,9 @@
 #ifndef _PPC_IO_H
 #define _PPC_IO_H
 
+#include <compiler.h>
 #include <asm/byteorder.h>
+#include <asm/types.h>
 #include <linux/string.h>
 
 #ifdef CONFIG_ADDR_MAP

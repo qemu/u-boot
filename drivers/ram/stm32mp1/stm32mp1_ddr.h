@@ -7,6 +7,7 @@
 #define _RAM_STM32MP1_DDR_H
 
 #include <stdbool.h>
+#include <asm/types.h>
 enum stm32mp1_ddr_interact_step {
 	STEP_DDR_RESET,
 	STEP_CTL_INIT,

@@ -24,6 +24,7 @@
 #include <linux/bitops.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 #include "rk_vop.h"
 

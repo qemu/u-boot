@@ -4,10 +4,12 @@
  * Copyright (C) 2018, Bin Meng <bmeng.cn@gmail.com>
  *
  * The riscv_get_time() API implementation that is using the
+#include <asm/types.h>
  * standard rdtime instruction.
  */
 
 #include <common.h>
+#include <linux/types.h>
 
 /* Implement the API required by RISC-V timer driver */
 int riscv_get_time(u64 *time)

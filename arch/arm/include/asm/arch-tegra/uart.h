@@ -8,6 +8,7 @@
 #define _UART_H_
 
 /* UART registers */
+#include <linux/types.h>
 struct uart_ctlr {
 	uint uart_thr_dlab_0;		/* UART_THR_DLAB_0_0, offset 00 */
 	uint uart_ier_dlab_0;		/* UART_IER_DLAB_0_0, offset 04 */

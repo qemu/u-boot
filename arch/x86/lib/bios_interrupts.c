@@ -11,6 +11,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <asm/pci.h>
+#include <asm/types.h>
 #include "bios_emul.h"
 
 /* errors go in AH. Just set these up so that word assigns will work */

@@ -13,6 +13,7 @@
 #include <dt-bindings/reset/sun8i-r40-ccu.h>
 #include <linux/bitops.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 static struct ccu_clk_gate r40_gates[] = {
 	[CLK_BUS_MMC0]		= GATE(0x060, BIT(8)),

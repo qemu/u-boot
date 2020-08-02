@@ -63,6 +63,7 @@
 #include <asm/coldfire/pwm.h>
 #include <asm/coldfire/ssi.h>
 #include <asm/coldfire/skha.h>
+#include <asm/types.h>
 
 /* System control module registers */
 typedef struct scm1_ctrl {

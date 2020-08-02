@@ -16,6 +16,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <nand.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <dm/devres.h>
@@ -23,6 +24,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <asm/io.h>
 #include <jffs2/jffs2.h>

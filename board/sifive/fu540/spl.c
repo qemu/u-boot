@@ -16,6 +16,7 @@
 #include <asm/gpio.h>
 #include <asm/arch/gpio.h>
 #include <asm/arch/spl.h>
+#include <linux/types.h>
 
 #define GEM_PHY_RESET		SIFIVE_GENERIC_GPIO_NR(0, 12)
 

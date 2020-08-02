@@ -7,6 +7,7 @@
 #include <asm/io.h>
 #include <asm/arch/wdt.h>
 #include <linux/err.h>
+#include <linux/types.h>
 
 u32 ast_reset_mode_from_flags(ulong flags)
 {

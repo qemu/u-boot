@@ -14,6 +14,7 @@
 #include <fdtdec.h>
 #include <stdbool.h>
 #include <usb_defs.h>
+#include <linux/types.h>
 #include <linux/usb/ch9.h>
 #include <asm/cache.h>
 #include <part.h>

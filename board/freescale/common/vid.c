@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <env.h>
 #include <i2c.h>
 #include <irq_func.h>
@@ -21,6 +22,7 @@
 #endif
 #include <linux/delay.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "vid.h"
 
 int __weak i2c_multiplexer_select_vid_channel(u8 channel)

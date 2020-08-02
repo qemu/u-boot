@@ -12,6 +12,7 @@
 #include <fsl_dtsec.h>
 #include <fsl_mdio.h>
 #include <malloc.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/string.h>
 

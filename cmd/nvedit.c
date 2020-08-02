@@ -35,6 +35,7 @@
 #include <errno.h>
 #include <malloc.h>
 #include <mapmem.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
@@ -43,6 +44,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 #include <watchdog.h>
 #include <linux/stddef.h>

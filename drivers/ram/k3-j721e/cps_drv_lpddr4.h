@@ -15,6 +15,7 @@
 #include <stddef.h>
 #include <inttypes.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 /**
  *  \brief    Read a 32-bit value from memory.

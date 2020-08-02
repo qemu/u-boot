@@ -7,6 +7,7 @@
 #ifndef __CHIMP_H__
 #define __CHIMP_H__
 
+#include <asm/types.h>
 #include <linux/compiler.h>
 
 /**

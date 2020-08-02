@@ -6,6 +6,7 @@
 #ifndef _PCI_ROM_H
 #define _PCI_ROM_H
 
+#include <linux/types.h>
 #define PCI_ROM_HDR			0xaa55
 
 struct pci_rom_header {

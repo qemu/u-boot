@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <fdt_support.h>
 #include <init.h>
 #include <log.h>
@@ -18,6 +19,7 @@
 #include <asm/arch-rockchip/gpio.h>
 #include <asm/arch-rockchip/grf_rk3399.h>
 #include <asm/arch-rockchip/hardware.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>

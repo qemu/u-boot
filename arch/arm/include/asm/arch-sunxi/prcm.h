@@ -200,6 +200,7 @@
 #define PRCM_SEC_SWITCH_PWR_GATE_NONSEC (0x1 << 2)
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/compiler.h>
 
 struct sunxi_prcm_reg {

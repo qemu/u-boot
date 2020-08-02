@@ -13,6 +13,7 @@
 #include <uuid.h>
 #include <acpi/acpigen.h>
 #include <acpi/acpi_dp.h>
+#include <asm/types.h>
 #include <dm/acpi.h>
 #include <linux/errno.h>
 #include <linux/string.h>

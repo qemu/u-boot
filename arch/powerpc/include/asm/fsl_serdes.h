@@ -7,6 +7,7 @@
 #define __FSL_SERDES_H
 
 #include <config.h>
+#include <asm/types.h>
 
 enum srds_prtcl {
 	/*

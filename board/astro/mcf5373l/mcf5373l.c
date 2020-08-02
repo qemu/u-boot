@@ -16,6 +16,7 @@
 #include <asm/m5329.h>
 #include <asm/immap_5329.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 
 /* needed for astro bus: */

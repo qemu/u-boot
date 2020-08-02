@@ -12,6 +12,7 @@
 #define _NETDEV_H_
 #include <phy_interface.h>
 #include <asm/u-boot.h>
+#include <linux/types.h>
 
 struct udevice;
 

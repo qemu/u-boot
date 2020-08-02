@@ -10,6 +10,7 @@
 
 #include <asm/io.h>
 #include <asm/system.h>
+#include <asm/types.h>
 
 /*
  * Main Power Management (MPMU) Registers

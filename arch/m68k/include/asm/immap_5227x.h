@@ -59,6 +59,7 @@
 #include <asm/coldfire/lcd.h>
 #include <asm/coldfire/pwm.h>
 #include <asm/coldfire/ssi.h>
+#include <asm/types.h>
 
 /* Reset Controller Module (RCM) */
 typedef struct rcm {

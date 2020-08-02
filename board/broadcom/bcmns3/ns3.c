@@ -14,6 +14,7 @@
 #include <asm/arch-bcmns3/bl33_info.h>
 #include <dt-bindings/memory/bcm-ns3-mc.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /* Default reset-level = 3 and strap-val = 0 */
 #define L3_RESET	30

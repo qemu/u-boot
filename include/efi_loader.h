@@ -15,6 +15,8 @@
 #include <efi_api.h>
 #include <image.h>
 #include <pe.h>
+#include <stdbool.h>
+#include <linux/types.h>
 
 struct blk_desc;
 

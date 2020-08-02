@@ -19,11 +19,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <init.h>
 #include <log.h>
 #include <malloc.h>
 #include <spl.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/control_regs.h>
 #include <asm/coreboot_tables.h>
@@ -36,6 +38,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

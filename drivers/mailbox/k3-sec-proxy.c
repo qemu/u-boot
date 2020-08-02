@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <malloc.h>
 #include <stdio.h>

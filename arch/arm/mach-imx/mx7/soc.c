@@ -4,7 +4,9 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <init.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/clock.h>
@@ -19,6 +21,7 @@
 #include <imx_thermal.h>
 #include <fsl_sec.h>
 #include <asm/setup.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
 

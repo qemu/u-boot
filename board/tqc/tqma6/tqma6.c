@@ -7,6 +7,7 @@
  * Author: Markus Niebel <markus.niebel@tq-group.com>
  */
 
+#include <compiler.h>
 #include <init.h>
 #include <stdio.h>
 #include <vsprintf.h>
@@ -30,6 +31,7 @@
 #include <linux/libfdt.h>
 #include <i2c.h>
 #include <mmc.h>
+#include <linux/types.h>
 #include <power/pfuze100_pmic.h>
 #include <power/pmic.h>
 #include <spi_flash.h>

@@ -23,6 +23,7 @@
 #include <command.h>
 #include <asm/immap_5329.h>
 #include <asm/io.h>
+#include <linux/types.h>
 #include "fpga.h"
 
 int altera_pre_fn(int cookie)

@@ -9,6 +9,7 @@
 #ifndef __W1_EEPROM_H
 #define __W1_EEPROM_H
 
+#include <asm/types.h>
 struct udevice;
 
 struct w1_eeprom_ops {

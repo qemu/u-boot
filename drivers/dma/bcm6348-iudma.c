@@ -17,6 +17,7 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <dm.h>
 #include <dma-uclass.h>
@@ -31,6 +32,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #define DMA_RX_DESC	6
 #define DMA_TX_DESC	1

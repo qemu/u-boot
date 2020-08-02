@@ -19,6 +19,7 @@
 #include <stdbool.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "gdsys_ioep.h"
 

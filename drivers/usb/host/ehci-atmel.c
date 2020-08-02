@@ -14,6 +14,7 @@
 #include <asm/io.h>
 #include <asm/arch/clk.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #include "ehci.h"
 

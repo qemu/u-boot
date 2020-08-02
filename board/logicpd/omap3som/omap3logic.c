@@ -29,6 +29,7 @@
 #include <asm/gpio.h>
 #include <asm/omap_mmc.h>
 #include <asm/mach-types.h>
+#include <asm/types.h>
 #include <linux/mtd/rawnand.h>
 #include <asm/omap_musb.h>
 #include <linux/errno.h>

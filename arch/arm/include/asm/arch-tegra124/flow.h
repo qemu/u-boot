@@ -8,6 +8,7 @@
 #define _TEGRA124_FLOW_H_
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/bitops.h>
 #endif
 

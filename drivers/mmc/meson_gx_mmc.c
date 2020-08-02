@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <pwrseq.h>
 #include <mmc.h>
+#include <stdbool.h>
 #include <time.h>
 #include <asm/io.h>
 #include <asm/gpio.h>
@@ -20,6 +21,7 @@
 #include <linux/kernel.h>
 #include <linux/log2.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static inline void *get_regbase(const struct mmc *mmc)
 {

@@ -14,6 +14,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <dm.h>
 #include <log.h>
@@ -21,6 +22,7 @@
 #include <miiphy.h>
 #include <net.h>
 #include <reset.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <wait_bit.h>
@@ -33,6 +35,7 @@
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* Ethernet frame engine register */
 #define PDMA_RELATED		0x0800

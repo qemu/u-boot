@@ -11,6 +11,8 @@
 
 #ifndef __ASSEMBLY__
 /* Parameters of early board initialization in SPL */
+#include <compiler.h>
+#include <asm/types.h>
 struct spl_machine_param {
 	/* Add fields as and when required */
 	u32		signature;

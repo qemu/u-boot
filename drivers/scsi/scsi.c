@@ -13,6 +13,7 @@
 #include <part.h>
 #include <pci.h>
 #include <scsi.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <dm/device-internal.h>
@@ -20,6 +21,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #if !defined(CONFIG_DM_SCSI)
 # ifdef CONFIG_SCSI_DEV_LIST

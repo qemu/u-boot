@@ -6,6 +6,7 @@
 #ifndef _SYS_PROTO_H_
 #define _SYS_PROTO_H_
 
+#include <asm/types.h>
 extern void zynq_slcr_lock(void);
 extern void zynq_slcr_unlock(void);
 extern void zynq_slcr_cpu_reset(void);

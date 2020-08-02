@@ -19,6 +19,7 @@
 #include <linux/compat.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 int virtqueue_add(struct virtqueue *vq, struct virtio_sg *sgs[],
 		  unsigned int out_sgs, unsigned int in_sgs)

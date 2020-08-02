@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <clock_legacy.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <env.h>
 #include <fsl_immap.h>
@@ -43,6 +44,7 @@
 #if defined(CONFIG_TFABOOT) || defined(CONFIG_GIC_V3_ITS)
 DECLARE_GLOBAL_DATA_PTR;
 #endif
+#include <linux/types.h>
 
 #ifdef CONFIG_GIC_V3_ITS
 int ls_gic_rd_tables_init(void *blob)

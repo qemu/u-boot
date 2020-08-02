@@ -11,6 +11,7 @@
 #include <mapmem.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 int efi_info_get(enum efi_entry_t type, void **datap, int *sizep)
 {

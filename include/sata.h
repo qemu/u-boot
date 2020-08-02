@@ -1,6 +1,7 @@
 #ifndef __SATA_H__
 #define __SATA_H__
 #include <part.h>
+#include <linux/types.h>
 
 #if !defined(CONFIG_DM_SCSI) && !defined(CONFIG_AHCI)
 int init_sata(int dev);

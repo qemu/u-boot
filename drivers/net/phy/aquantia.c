@@ -11,12 +11,14 @@
 #include <log.h>
 #include <net.h>
 #include <phy.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 #include <malloc.h>
 #include <asm/byteorder.h>

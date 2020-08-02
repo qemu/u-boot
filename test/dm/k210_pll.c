@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 /* For DIV_ROUND_DOWN_ULL, defined in linux/kernel.h */

@@ -7,6 +7,7 @@
 #ifndef _U_BOOT_I386_H_
 #define _U_BOOT_I386_H_	1
 
+#include <linux/types.h>
 struct global_data;
 
 extern char gdt_rom[];

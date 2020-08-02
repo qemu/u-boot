@@ -8,7 +8,9 @@
 #ifndef _asm_arch_me_h
 #define _asm_arch_me_h
 
+#include <compiler.h>
 #include <asm/me_common.h>
+#include <asm/types.h>
 
 #define  ME_INIT_STATUS_SUCCESS_OTHER 3 /* SEE ME9 BWG */
 

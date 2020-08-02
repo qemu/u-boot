@@ -7,12 +7,14 @@
 #include <common.h>
 #include <dm.h>
 #include <net.h>
+#include <stdbool.h>
 #include <virtio_types.h>
 #include <virtio.h>
 #include <virtio_ring.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "virtio_net.h"
 
 /* Amount of buffers to keep in the RX virtqueue */

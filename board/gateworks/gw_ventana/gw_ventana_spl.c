@@ -21,6 +21,7 @@
 #include <env.h>
 #include <i2c.h>
 #include <spl.h>
+#include <linux/types.h>
 
 #include "gsc.h"
 #include "common.h"

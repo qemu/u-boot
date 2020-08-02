@@ -9,6 +9,7 @@
 #include <asm/fsl_law.h>
 #include <asm/fsl_serdes.h>
 #include <pci.h>
+#include <asm/types.h>
 
 #define PEX_IP_BLK_REV_2_2	0x02080202
 #define PEX_IP_BLK_REV_2_3	0x02080203

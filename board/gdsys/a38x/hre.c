@@ -10,10 +10,12 @@
 #include <fs.h>
 #include <i2c.h>
 #include <mmc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <tpm-v1.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 #include <u-boot/sha1.h>
 #include <asm/byteorder.h>

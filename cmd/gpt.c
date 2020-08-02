@@ -19,6 +19,7 @@
 #include <part.h>
 #include <part_efi.h>
 #include <exports.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <uuid.h>
 #include <vsprintf.h>
@@ -31,6 +32,7 @@
 #include <linux/sizes.h>
 #include <stdlib.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static LIST_HEAD(disk_partitions);
 

@@ -1,5 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /*
+#include <linux/types.h>
  * exynos_lcd.h - Exynos LCD Controller structures
  *
  * (C) Copyright 2001

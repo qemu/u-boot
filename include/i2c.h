@@ -19,6 +19,7 @@
 #include <linker_lists.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 /*
  * For now there are essentially two parts to this file - driver model

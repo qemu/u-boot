@@ -8,6 +8,7 @@
 #ifndef __ASSEMBLY__
 
 /* i2c slave addresses */
+#include <linux/types.h>
 #define GSC_SC_ADDR		0x20
 #define GSC_RTC_ADDR		0x68
 #define GSC_HWMON_ADDR		0x29

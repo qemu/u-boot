@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <config.h>
 #include <init.h>
 #include <log.h>
@@ -15,6 +16,7 @@
 #include <asm/arch/sys_proto.h>
 #include <linux/compiler.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include "mxs_init.h"
 

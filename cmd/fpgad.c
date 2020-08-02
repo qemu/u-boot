@@ -13,6 +13,7 @@
 #include <console.h>
 #include <display_options.h>
 #include <vsprintf.h>
+#include <linux/types.h>
 
 #include <gdsys_fpga.h>
 

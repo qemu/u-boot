@@ -68,6 +68,7 @@ static inline phys_addr_t map_to_sysmem(const void *ptr)
 #define __iormb()	rmb()
 #define __iowmb()	wmb()
 
+#include <compiler.h>
 static inline void writeb(u8 val, volatile void __iomem *addr)
 {
 	__iowmb();

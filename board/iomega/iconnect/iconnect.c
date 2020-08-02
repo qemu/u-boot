@@ -12,6 +12,7 @@
 #include <asm/arch/soc.h>
 #include <asm/arch/mpp.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include "iconnect.h"
 
 DECLARE_GLOBAL_DATA_PTR;

@@ -15,6 +15,7 @@
 #include <asm/cache.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static ulong versal_align_dma_buffer(ulong *buf, u32 len)
 {

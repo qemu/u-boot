@@ -6,12 +6,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <asm/io.h>
 #include <dm.h>
 #include <mailbox-uclass.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <mach/sys_proto.h>
 #include <linux/ioport.h>
 #include <linux/io.h>

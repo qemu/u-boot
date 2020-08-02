@@ -20,6 +20,7 @@
 #include <linux/compiler.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "mxs_init.h"
 

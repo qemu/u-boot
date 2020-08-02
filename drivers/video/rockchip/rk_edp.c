@@ -13,6 +13,7 @@
 #include <malloc.h>
 #include <panel.h>
 #include <regmap.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <syscon.h>
 #include <time.h>
@@ -27,6 +28,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define MAX_CR_LOOP 5
 #define MAX_EQ_LOOP 5

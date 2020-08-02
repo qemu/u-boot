@@ -13,6 +13,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <mapmem.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <syscon.h>
 #include <asm/global_data.h>
@@ -33,6 +34,7 @@
 #include <linux/log2.h>
 #include <linux/string.h>
 #include <linux/stringify.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

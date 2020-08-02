@@ -6,6 +6,7 @@
 #define _FS_H
 
 #include <common.h>
+#include <linux/types.h>
 
 struct cmd_tbl;
 

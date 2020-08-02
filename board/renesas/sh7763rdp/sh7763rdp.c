@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <asm/io.h>
 #include <asm/processor.h>
+#include <linux/types.h>
 
 #define CPU_CMDREG	0xB1000006
 #define PDCR        0xffef0006

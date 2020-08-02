@@ -10,6 +10,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <config.h>
 #include <command.h>
 #include <status_led.h>

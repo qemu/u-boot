@@ -7,6 +7,8 @@
 #ifndef __PFE_DRIVER_H__
 #define __PFE_DRIVER_H__
 
+#include <compiler.h>
+#include <linux/types.h>
 #include <net/pfe_eth/pfe/pfe_hw.h>
 #include <dm/platform_data/pfe_dm_eth.h>
 

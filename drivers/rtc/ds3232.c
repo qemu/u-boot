@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <i2c.h>
 #include <rtc.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>

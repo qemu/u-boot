@@ -4,11 +4,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <ram.h>
 #include <asm/io.h>
 #include <asm/arch-rockchip/sdram.h>
 #include <asm/arch-rockchip/sdram_common.h>
 #include <asm/arch-rockchip/sdram_phy_px30.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 
 static void sdram_phy_dll_bypass_set(void __iomem *phy_base, u32 freq)

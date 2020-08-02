@@ -24,6 +24,7 @@
 #include <linux/kernel.h>
 #include <linux/list.h>
 #include <linux/compat.h>
+#include <linux/types.h>
 
 #define MAX_EP_CTX_NUM		31
 #define XHCI_ALIGNMENT		64

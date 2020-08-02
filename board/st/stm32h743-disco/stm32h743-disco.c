@@ -9,6 +9,7 @@
 #include <init.h>
 #include <log.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;

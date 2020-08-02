@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/imx-regs.h>
@@ -14,6 +15,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include "ehci.h"
 

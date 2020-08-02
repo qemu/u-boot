@@ -19,6 +19,7 @@
 #include <pch.h>
 #include <sound.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 
 static int bd82x6x_azalia_probe(struct udevice *dev)

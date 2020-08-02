@@ -59,6 +59,7 @@
 #include <asm/coldfire/ssi.h>
 #include <asm/coldfire/rng.h>
 #include <asm/rtc.h>
+#include <asm/types.h>
 
 /* System Controller Module */
 typedef struct scm1 {

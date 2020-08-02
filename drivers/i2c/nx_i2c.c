@@ -11,6 +11,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #define I2C_WRITE       0
 #define I2C_READ        1

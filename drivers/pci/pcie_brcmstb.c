@@ -13,8 +13,10 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <errno.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <dm/ofnode.h>
 #include <pci.h>
@@ -24,6 +26,7 @@
 #include <linux/kernel.h>
 #include <linux/log2.h>
 #include <linux/iopoll.h>
+#include <linux/types.h>
 
 /* Offset of the mandatory PCIe capability config registers */
 #define BRCM_PCIE_CAP_REGS				0x00ac

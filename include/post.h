@@ -13,6 +13,7 @@
 #ifndef	__ASSEMBLY__
 #include <common.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_POST)
 

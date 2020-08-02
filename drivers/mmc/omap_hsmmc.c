@@ -22,6 +22,7 @@
  * MA 02111-1307 USA
  */
 
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <cpu_func.h>
@@ -34,6 +35,7 @@
 #if defined(CONFIG_OMAP54XX) || defined(CONFIG_OMAP44XX)
 #include <palmas.h>
 #endif
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <vsprintf.h>
@@ -59,6 +61,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 #include <thermal.h>
 

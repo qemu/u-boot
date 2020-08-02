@@ -9,6 +9,7 @@
  * Haikun Wang (B53464@freescale.com)
  */
 
+#include <compiler.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
@@ -29,6 +30,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 /* linux/include/time.h */
 #define NSEC_PER_SEC	1000000000L

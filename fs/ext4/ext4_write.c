@@ -27,12 +27,14 @@
 #include <malloc.h>
 #include <memalign.h>
 #include <part.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/stat.h>
 #include <div64.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "ext4_common.h"
 
 static inline void ext4fs_sb_free_inodes_inc(struct ext2_sblock *sb)

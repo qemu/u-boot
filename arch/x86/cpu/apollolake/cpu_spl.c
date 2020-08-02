@@ -35,6 +35,7 @@
 #include <asm/arch/uart.h>
 #include <asm/fsp2/fsp_api.h>
 #include <linux/sizes.h>
+#include <linux/types.h>
 #include <power/acpi_pmc.h>
 
 /* Define this here to avoid referencing any drivers for the debug UART 1 */

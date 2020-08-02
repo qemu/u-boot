@@ -6,7 +6,10 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
+#include <stdbool.h>
+#include <asm/types.h>
 #include <linux/bitfield.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>

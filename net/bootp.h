@@ -25,6 +25,7 @@
 extern u8 *dhcp_vendorex_prep(u8 *e); /*rtn new e after add own opts. */
 extern u8 *dhcp_vendorex_proc(u8 *e); /*rtn next e if mine,else NULL  */
 #endif
+#include <asm/types.h>
 #else
 #define OPT_FIELD_SIZE 64
 #endif

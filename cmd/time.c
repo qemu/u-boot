@@ -6,6 +6,7 @@
 #include <common.h>
 #include <command.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 static void report_time(ulong cycles)
 {

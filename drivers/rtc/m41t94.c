@@ -16,6 +16,7 @@
 #include <common.h>
 #include <rtc.h>
 #include <spi.h>
+#include <asm/types.h>
 
 static struct spi_slave *slave;
 

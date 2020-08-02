@@ -29,6 +29,7 @@
 #include <miiphy.h>
 #include <micrel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <common.h>
 #include <malloc.h>

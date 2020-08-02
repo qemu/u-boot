@@ -9,6 +9,7 @@
 #ifndef	__M28_INIT_H__
 #define	__M28_INIT_H__
 
+#include <linux/types.h>
 void early_delay(int delay);
 
 void mxs_power_init(void);

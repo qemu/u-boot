@@ -7,6 +7,7 @@
 #define __ASM_ARCH_CRU_RK3328_H_
 
 #include <linux/kernel.h>
+#include <linux/types.h>
 struct rk3328_clk_priv {
 	struct rk3328_cru *cru;
 	ulong rate;

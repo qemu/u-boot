@@ -10,6 +10,7 @@
 #include <common.h>
 #include <stdio.h>
 #include <asm/ti-common/keystone_serdes.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>

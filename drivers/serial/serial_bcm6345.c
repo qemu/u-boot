@@ -7,6 +7,7 @@
  */
 
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <debug_uart.h>
 #include <errno.h>
@@ -16,6 +17,7 @@
 #include <asm/io.h>
 #include <asm/types.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /* UART Control register */
 #define UART_CTL_REG			0x0

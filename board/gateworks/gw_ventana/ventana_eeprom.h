@@ -6,6 +6,7 @@
 #ifndef _VENTANA_EEPROM_
 #define _VENTANA_EEPROM_
 
+#include <asm/types.h>
 struct ventana_board_info {
 	u8 mac0[6];          /* 0x00: MAC1 */
 	u8 mac1[6];          /* 0x06: MAC2 */

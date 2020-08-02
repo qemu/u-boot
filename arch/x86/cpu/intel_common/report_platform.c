@@ -13,6 +13,7 @@
 #include <asm/arch/pch.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static void report_cpu_info(void)
 {

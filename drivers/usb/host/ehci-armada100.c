@@ -14,6 +14,7 @@
 #include <log.h>
 #include <asm/io.h>
 #include <usb.h>
+#include <linux/types.h>
 #include "ehci.h"
 #include <asm/arch/cpu.h>
 #include <asm/arch/armada100.h>

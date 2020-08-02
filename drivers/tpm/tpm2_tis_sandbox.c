@@ -15,6 +15,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 
 /* Hierarchies */

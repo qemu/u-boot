@@ -7,6 +7,7 @@
 #ifndef	_ASM_ARCH_SPL_H_
 #define	_ASM_ARCH_SPL_H_
 
+#include <linux/types.h>
 #define BOOT0_MAGIC		"eGON.BT0"
 #define SPL_SIGNATURE		"SPL" /* marks "sunxi" SPL header */
 #define SPL_MAJOR_BITS		3

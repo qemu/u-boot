@@ -18,6 +18,7 @@
 #include <asm/mach-imx/iomux-v3.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include "pf0100_otp.inc"
 #include "pf0100.h"

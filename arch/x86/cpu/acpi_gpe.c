@@ -15,6 +15,7 @@
 #include <dt-bindings/interrupt-controller/x86-irq.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /**
  * struct acpi_gpe_priv - private driver information

@@ -25,8 +25,10 @@
 #include <plat/usb.h>
 #else
 #include <common.h>
+#include <compiler.h>
 #include <time.h>
 #include <asm/omap_musb.h>
+#include <asm/types.h>
 #include <linux/bug.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

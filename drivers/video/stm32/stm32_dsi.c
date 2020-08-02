@@ -10,6 +10,7 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <dsi_host.h>
 #include <log.h>
@@ -21,6 +22,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/arch/gpio.h>
+#include <asm/types.h>
 #include <dm/device-internal.h>
 #include <dm/device_compat.h>
 #include <dm/lists.h>

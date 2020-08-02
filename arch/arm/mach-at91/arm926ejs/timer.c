@@ -14,6 +14,7 @@
 #include <asm/arch/at91_pit.h>
 #include <asm/arch/clk.h>
 #include <div64.h>
+#include <linux/types.h>
 
 #if !defined(CONFIG_AT91FAMILY)
 # error You need to define CONFIG_AT91FAMILY in your board config!

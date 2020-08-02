@@ -13,6 +13,7 @@
 #include <dm/uclass-id.h>
 #include <linker_lists.h>
 #include <linux/list.h>
+#include <linux/types.h>
 
 /**
  * struct uclass - a U-Boot drive class, collecting together similar drivers

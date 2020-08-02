@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "ddr.h"
 #include <log.h>
 #include <vsprintf.h>

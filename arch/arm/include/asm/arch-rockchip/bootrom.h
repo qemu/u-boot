@@ -11,6 +11,7 @@
  * Saved Stack pointer address.
  * Access might be needed in some special cases.
  */
+#include <asm/types.h>
 extern u32 SAVE_SP_ADDR;
 
 /**

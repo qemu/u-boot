@@ -22,6 +22,7 @@
  * This helper function returns %1 if @znode is dirty and %0 otherwise.
  */
 #include <linux/kernel.h>
+#include <linux/types.h>
 static inline int ubifs_zn_dirty(const struct ubifs_znode *znode)
 {
 	return !!test_bit(DIRTY_ZNODE, &znode->flags);

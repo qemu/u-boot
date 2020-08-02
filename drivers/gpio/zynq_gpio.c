@@ -17,6 +17,7 @@
 #include <dm.h>
 #include <fdtdec.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* Maximum banks */
 #define ZYNQ_GPIO_MAX_BANK	4

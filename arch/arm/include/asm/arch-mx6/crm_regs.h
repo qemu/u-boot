@@ -18,6 +18,7 @@
 #define PMU_MISC2		0x020C8170
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 struct mxc_ccm_reg {
 	u32 ccr;	/* 0x0000 */
 	u32 ccdr;

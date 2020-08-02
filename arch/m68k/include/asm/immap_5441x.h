@@ -84,6 +84,7 @@
 #include <asm/coldfire/flexcan.h>
 #include <asm/coldfire/intctrl.h>
 #include <asm/coldfire/ssi.h>
+#include <asm/types.h>
 
 /* Serial Boot Facility (SBF) */
 typedef struct sbf {

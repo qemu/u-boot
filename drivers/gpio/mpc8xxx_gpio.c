@@ -9,12 +9,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <mapmem.h>
 #include <vsprintf.h>
 #include <asm/gpio.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 struct ccsr_gpio {
 	u32	gpdir;

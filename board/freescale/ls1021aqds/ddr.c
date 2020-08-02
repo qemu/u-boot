@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <fsl_ddr_sdram.h>
 #include <fsl_ddr_dimm_params.h>
 #include <init.h>
@@ -15,6 +16,7 @@
 #include <asm/arch/clock.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "ddr.h"
 
 DECLARE_GLOBAL_DATA_PTR;

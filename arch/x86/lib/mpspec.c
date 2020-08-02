@@ -6,11 +6,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu.h>
 #include <dm.h>
 #include <errno.h>
 #include <fdtdec.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/cpu.h>
 #include <asm/global_data.h>
 #include <asm/irq.h>
@@ -22,6 +24,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

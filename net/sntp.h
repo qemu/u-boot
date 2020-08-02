@@ -6,6 +6,7 @@
 #ifndef __SNTP_H__
 #define __SNTP_H__
 
+#include <linux/types.h>
 #define NTP_SERVICE_PORT	123
 #define SNTP_PACKET_LEN		48
 

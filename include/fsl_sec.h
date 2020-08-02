@@ -10,6 +10,7 @@
 
 #include <common.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_SYS_FSL_SEC_LE
 #define sec_in32(a)       in_le32(a)

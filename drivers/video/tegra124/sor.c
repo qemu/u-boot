@@ -9,6 +9,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <panel.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <syscon.h>
 #include <time.h>
@@ -19,6 +20,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include "displayport.h"
 #include "sor.h"
 #include <linux/err.h>

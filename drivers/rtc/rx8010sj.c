@@ -22,6 +22,7 @@
 #include <i2c.h>
 #include <rtc.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 

@@ -11,6 +11,7 @@
 #include <asm/encoding.h>
 #include <asm/sbi.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 struct sbiret sbi_ecall(int ext, int fid, unsigned long arg0,
 			unsigned long arg1, unsigned long arg2,

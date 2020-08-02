@@ -12,6 +12,7 @@
 
 #include <log.h>
 #include <stdbool.h>
+#include <linux/types.h>
 
 /* Turn on this macro to enable MRC debugging output */
 #undef  MRC_DEBUG

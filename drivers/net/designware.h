@@ -9,6 +9,7 @@
 
 #include <asm/cache.h>
 #include <net.h>
+#include <linux/types.h>
 
 #if CONFIG_IS_ENABLED(DM_GPIO)
 #include <asm-generic/gpio.h>

@@ -11,6 +11,7 @@
 /*
  * SJA1000 register layout in basic can mode
  */
+#include <asm/types.h>
 struct sja1000_basic_s {
 	u8 cr;
 	u8 cmr;

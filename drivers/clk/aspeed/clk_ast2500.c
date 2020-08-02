@@ -7,6 +7,7 @@
 #include <clk-uclass.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/arch/scu_ast2500.h>
@@ -16,6 +17,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 /*
  * MAC Clock Delay settings, taken from Aspeed SDK

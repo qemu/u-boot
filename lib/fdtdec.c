@@ -6,6 +6,7 @@
 #ifndef USE_HOSTCC
 #include <common.h>
 #include <boot_fit.h>
+#include <compiler.h>
 #include <display_options.h>
 #include <dm.h>
 #include <hang.h>
@@ -13,6 +14,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <net.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/u-boot.h>
@@ -32,6 +34,7 @@
 #include <linux/ctype.h>
 #include <linux/lzo.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

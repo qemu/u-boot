@@ -10,6 +10,7 @@
 #include <rtc.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
 

@@ -12,6 +12,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <linux/types.h>
 static inline void mips_cache(int op, const volatile void *addr)
 {
 #ifdef __GCC_HAVE_BUILTIN_MIPS_CACHE

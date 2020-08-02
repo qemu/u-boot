@@ -9,6 +9,8 @@
 #include <errno.h>
 #include <dm.h>
 #include <i2c.h>
+#include <stdbool.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>

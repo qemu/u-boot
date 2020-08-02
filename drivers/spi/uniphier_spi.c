@@ -6,6 +6,7 @@
 
 #include <clk.h>
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <time.h>
@@ -20,6 +21,7 @@
 #include <wait_bit.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

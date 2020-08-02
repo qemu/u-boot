@@ -8,6 +8,7 @@
 #define _FSL_DPIO_H
 
 /* DPIO Version */
+#include <linux/types.h>
 #define DPIO_VER_MAJOR				4
 #define DPIO_VER_MINOR				2
 

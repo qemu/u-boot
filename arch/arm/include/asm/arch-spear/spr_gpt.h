@@ -7,6 +7,7 @@
 #ifndef _SPR_GPT_H
 #define _SPR_GPT_H
 
+#include <asm/types.h>
 struct gpt_regs {
 	u8 reserved[0x80];
 	u32 control;

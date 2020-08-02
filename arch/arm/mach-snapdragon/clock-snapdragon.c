@@ -14,6 +14,7 @@
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include "clock-snapdragon.h"
 
 /* CBCR register fields */

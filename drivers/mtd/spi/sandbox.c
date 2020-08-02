@@ -20,6 +20,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <spi_flash.h>
 #include "sf_internal.h"

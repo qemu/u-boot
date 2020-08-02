@@ -10,6 +10,8 @@
 #ifndef _K3_AVS0_
 #define _K3_AVS0_
 
+#include <asm/types.h>
+
 #define AM6_VDD_WKUP		0
 #define AM6_VDD_MCU		1
 #define AM6_VDD_CORE		2

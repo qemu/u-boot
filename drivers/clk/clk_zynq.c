@@ -11,6 +11,7 @@
 #include <clk-uclass.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <dm/device_compat.h>
@@ -22,6 +23,7 @@
 #include <asm/arch/sys_proto.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 /* Register bitfield defines */
 #define PLLCTRL_FBDIV_MASK	0x7f000

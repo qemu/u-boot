@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <remoteproc.h>
@@ -16,6 +17,7 @@
 #include <linux/errno.h>
 #include <linux/soc/ti/k3-sec-proxy.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define K3_MSG_R5_TO_M3_M3FW			0x8105
 #define K3_MSG_M3_TO_R5_CERT_RESULT		0x8805

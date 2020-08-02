@@ -22,6 +22,7 @@
 #include <common.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/bug.h>
@@ -33,6 +34,7 @@
 #include <linux/err.h>
 #include <linux/ioport.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

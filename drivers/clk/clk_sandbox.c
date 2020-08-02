@@ -11,6 +11,7 @@
 #include <stdbool.h>
 #include <asm/clk.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 struct sandbox_clk_priv {
 	bool probed;

@@ -14,6 +14,7 @@
 #include <common.h>
 #include <bootstage.h>
 #include <command.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <dm.h>
 #include <hang.h>
@@ -28,6 +29,7 @@
 #include <env.h>
 #include <image.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/zlib.h>
 #include <asm/byteorder.h>
 #include <linux/libfdt.h>

@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <env.h>
 #include <dm.h>
 #include <wdt.h>
@@ -13,6 +14,7 @@
 #include <asm/ppc.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 void hw_watchdog_reset(void)
 {

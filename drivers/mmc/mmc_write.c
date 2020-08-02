@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <linux/kernel.h>
 #include <linux/math64.h>
+#include <linux/types.h>
 #include "mmc_private.h"
 
 static ulong mmc_erase_t(struct mmc *mmc, ulong start, lbaint_t blkcnt)

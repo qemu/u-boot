@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <log.h>
 #include <miiphy.h>
+#include <asm/types.h>
 #include <misc.h>
 #include <dm/test.h>
 #include <test/test.h>

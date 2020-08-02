@@ -9,6 +9,7 @@
 
 #include <common.h>
 #include <i2c.h>
+#include <asm/types.h>
 
 /* I2C chip addresses */
 #define TWL6030_CHIP_PM		0x48

@@ -21,6 +21,7 @@
 #include <asm/arch/clock.h>
 #include <common.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

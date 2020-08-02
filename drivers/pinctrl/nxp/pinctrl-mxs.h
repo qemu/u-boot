@@ -6,6 +6,8 @@
 #ifndef __PINCTRL_MXS_H
 #define __PINCTRL_MXS_H
 
+#include <compiler.h>
+#include <asm/types.h>
 #include <dm/pinctrl.h>
 
 #define SET	0x4

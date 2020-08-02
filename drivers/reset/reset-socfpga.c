@@ -13,12 +13,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <dm/lists.h>
 #include <dm/of_access.h>
 #include <env.h>

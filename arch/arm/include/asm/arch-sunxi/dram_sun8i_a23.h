@@ -13,6 +13,7 @@
 #ifndef _SUNXI_DRAM_SUN8I_H
 #define _SUNXI_DRAM_SUN8I_H
 
+#include <asm/types.h>
 struct dram_para {
 	u32 clock;
 	u32 type;

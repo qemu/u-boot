@@ -3,11 +3,13 @@
  * Copyright (c) 2019, Linaro Limited
  */
 
+#include <compiler.h>
 #include <log.h>
 #include <malloc.h>
 #include <asm/io.h>
 #include <common.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <dt-bindings/reset/ti-syscon.h>
 #include <reset-uclass.h>
 #include <linux/bitops.h>

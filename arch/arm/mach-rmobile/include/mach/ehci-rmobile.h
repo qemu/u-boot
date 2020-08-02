@@ -8,6 +8,7 @@
 #define __EHCI_RMOBILE_H__
 
 /* Register offset */
+#include <asm/types.h>
 #define OHCI_OFFSET	0x00
 #define OHCI_SIZE	0x1000
 #define EHCI_OFFSET	0x1000

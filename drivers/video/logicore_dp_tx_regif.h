@@ -12,6 +12,7 @@
 #ifndef __GDSYS_LOGICORE_DP_TX_REGIF_H__
 #define __GDSYS_LOGICORE_DP_TX_REGIF_H__
 
+#include <asm/types.h>
 enum {
 	/* link configuration field */
 	REG_LINK_BW_SET =		0x000,

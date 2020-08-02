@@ -10,6 +10,7 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <spi.h>
@@ -20,6 +21,7 @@
 #include <linux/io.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #define MT7621_RX_FIFO_LEN	32
 #define MT7621_TX_FIFO_LEN	36

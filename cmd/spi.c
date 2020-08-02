@@ -17,6 +17,7 @@
 #include <vsprintf.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*-----------------------------------------------------------------------
  * Definitions

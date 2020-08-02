@@ -10,6 +10,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <display_options.h>
 #include <dm.h>
 #include <i2c.h>
@@ -17,11 +18,13 @@
 #include <fsl_ddr.h>
 #include <init.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/bitops.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * CONFIG_SYS_FSL_DDR_SDRAM_BASE_PHY is the physical address from the view

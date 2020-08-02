@@ -9,6 +9,7 @@
 #include <log.h>
 #include <asm/global_data.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include <asm/cache.h>
 #include <asm/arch/clock.h>

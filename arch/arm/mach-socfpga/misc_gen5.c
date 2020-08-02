@@ -6,12 +6,14 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <init.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <env.h>
 #include <errno.h>
 #include <fdtdec.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>

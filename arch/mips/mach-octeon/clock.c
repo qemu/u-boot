@@ -6,6 +6,7 @@
 #include <compiler.h>
 #include <time.h>
 #include <asm/global_data.h>
+#include <linux/types.h>
 #include <mach/clock.h>
 
 DECLARE_GLOBAL_DATA_PTR;

@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <cpu_func.h>
+#include <linux/types.h>
 
 /*
  * CPU test

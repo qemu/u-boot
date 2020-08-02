@@ -15,6 +15,7 @@
 #include <asm/io.h>
 #include <asm/rtc.h>
 #include <asm/test.h>
+#include <asm/types.h>
 #include <dm/test.h>
 #include <linux/errno.h>
 #include <test/test.h>

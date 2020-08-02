@@ -14,6 +14,7 @@
 #include <command.h>
 #include <asm/processor.h>
 #include <asm/ptrace.h>
+#include <linux/types.h>
 
 
 extern void _exc_handler(void);

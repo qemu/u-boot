@@ -11,6 +11,7 @@
 #include <log.h>
 #include <virtio_types.h>
 #include <virtio.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 
 #ifdef CONFIG_ARM64

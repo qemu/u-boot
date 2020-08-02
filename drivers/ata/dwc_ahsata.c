@@ -7,6 +7,7 @@
 #include <common.h>
 #include <ahci.h>
 #include <blk.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <dm.h>
 #include <dwc_ahsata.h>
@@ -28,6 +29,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "dwc_ahsata_priv.h"
 
 struct sata_port_regs {

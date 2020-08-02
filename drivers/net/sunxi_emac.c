@@ -21,6 +21,7 @@
 #include <asm/arch/gpio.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* EMAC register  */
 struct emac_regs {

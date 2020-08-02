@@ -10,6 +10,7 @@
 #include <asm/arch-rockchip/sdram_pctl_px30.h>
 #include <asm/arch-rockchip/sdram_phy_px30.h>
 #include <asm/arch-rockchip/sdram_phy_ron_rtt_px30.h>
+#include <asm/types.h>
 
 #define SR_IDLE		93
 #define PD_IDLE		13

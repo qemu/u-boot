@@ -4,9 +4,11 @@
  */
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
@@ -14,6 +16,7 @@
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * The u-boot networking stack is a little weird.  It seems like the

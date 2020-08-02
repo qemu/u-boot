@@ -18,7 +18,9 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <dm/device.h>
 #include <dm/read.h>
 #include <linux/bitops.h>

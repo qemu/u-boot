@@ -43,6 +43,7 @@
 extern "C" {                        /* Use "C" linkage when in C++ mode */
 #endif
 
+#include <asm/types.h>
 u16     aaa_word (u16 d);
 u16     aas_word (u16 d);
 u16     aad_word (u16 d);

@@ -8,11 +8,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <errno.h>
 #include <led.h>
 #include <log.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <dm/lists.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>

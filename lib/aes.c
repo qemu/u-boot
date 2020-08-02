@@ -26,6 +26,7 @@
 #include <display_options.h>
 #include <log.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/string.h>
 #else
 #include <string.h>

@@ -67,6 +67,7 @@
 
 unsigned int base_width;
 unsigned int base_height;
+#include <linux/types.h>
 size_t bufsize;
 u16 *buf;
 

@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <errno.h>
 #include <log.h>
 #include <stdbool.h>
@@ -19,6 +20,7 @@
 #include <i2c.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define LPI2C_FIFO_SIZE 4
 #define LPI2C_NACK_TOUT_MS 1

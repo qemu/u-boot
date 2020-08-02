@@ -8,9 +8,11 @@
 #define DEBUG
 #include <linux/printk.h>
 #endif
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #endif
 
 #include <config.h>

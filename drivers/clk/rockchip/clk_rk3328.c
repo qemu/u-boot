@@ -24,6 +24,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 struct pll_div {
 	u32 refdiv;

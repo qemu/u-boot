@@ -17,6 +17,7 @@
 #include <asm/global_data.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include "s3c24x0_i2c.h"
 
 DECLARE_GLOBAL_DATA_PTR;

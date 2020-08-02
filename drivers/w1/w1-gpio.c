@@ -13,6 +13,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <w1.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 
 #include <asm/gpio.h>

@@ -14,6 +14,7 @@
 #include <asm/arch/hardware.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 struct cm_perpll *const cmper = (struct cm_perpll *)CM_PER;
 struct cm_wkuppll *const cmwkup = (struct cm_wkuppll *)CM_WKUP;

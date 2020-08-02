@@ -8,12 +8,14 @@
 #include <dm.h>
 #include <log.h>
 #include <spi_flash.h>
+#include <stdbool.h>
 #include <asm/fsp/fsp_support.h>
 #include <asm/fsp2/fsp_internal.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* The amount of the FSP header to probe to obtain what we need */
 #define PROBE_BUF_SIZE 0x180

@@ -9,6 +9,7 @@
 #include <common.h>
 #include <config.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 #ifdef CONFIG_SYS_FSL_SRK_LE
 #define srk_in32(a)       in_le32(a)

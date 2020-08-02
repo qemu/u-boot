@@ -19,6 +19,7 @@
 #include <linux/mii.h>
 #include <linux/ethtool.h>
 #include <linux/mdio.h>
+#include <linux/types.h>
 
 struct udevice;
 

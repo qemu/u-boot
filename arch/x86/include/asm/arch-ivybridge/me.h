@@ -8,7 +8,9 @@
 #ifndef _ASM_INTEL_ME_H
 #define _ASM_INTEL_ME_H
 
+#include <compiler.h>
 #include <asm/me_common.h>
+#include <asm/types.h>
 
 struct __packed mbp_fw_version_name {
 	u32 major_version:16;

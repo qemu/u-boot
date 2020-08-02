@@ -22,6 +22,7 @@
 #include <dm.h>
 #include <i2c.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/bitrev.h>
 #include <rtc.h>
 #include <linux/delay.h>

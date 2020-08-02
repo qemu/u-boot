@@ -6,6 +6,7 @@
 
 #include <mmc.h>
 #include <spl.h>
+#include <asm/types.h>
 
 u32 spl_mmc_boot_mode(const u32 boot_device)
 {

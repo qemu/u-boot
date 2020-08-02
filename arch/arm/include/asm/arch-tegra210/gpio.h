@@ -15,6 +15,7 @@
 #define TEGRA_GPIO_BANKS	8	/* number of banks */
 
 #include <asm/arch-tegra/gpio.h>
+#include <linux/types.h>
 
 /* GPIO Controller registers for a single bank */
 struct gpio_ctlr_bank {

@@ -13,6 +13,7 @@
 #include <net.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/immap_qe.h>

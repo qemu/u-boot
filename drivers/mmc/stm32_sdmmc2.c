@@ -11,9 +11,11 @@
 #include <fdtdec.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/bitops.h>
 #include <asm/cache.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

@@ -11,6 +11,7 @@
 #define __LINUX_USB_GADGET_USBA_UDC_H__
 
 /* USB register offsets */
+#include <asm/types.h>
 #include <linux/kernel.h>
 #define USBA_CTRL				0x0000
 #define USBA_FNUM				0x0004

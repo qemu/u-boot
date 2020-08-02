@@ -10,6 +10,7 @@
 #include <common.h>
 #include <asm/arch/mrc.h>
 #include <asm/arch/msg_port.h>
+#include <asm/types.h>
 #include "mrc_util.h"
 #include "hte.h"
 

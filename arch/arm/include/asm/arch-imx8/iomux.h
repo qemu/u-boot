@@ -7,6 +7,7 @@
 #define __ASM_ARCH_IMX8_IOMUX_H__
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/bitops.h>
 #endif
 

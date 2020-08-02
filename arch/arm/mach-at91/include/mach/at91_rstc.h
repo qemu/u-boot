@@ -18,6 +18,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 typedef struct at91_rstc {
 	u32	cr;	/* Reset Controller Control Register */
 	u32	sr;	/* Reset Controller Status Register */

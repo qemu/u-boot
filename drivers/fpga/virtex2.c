@@ -18,6 +18,7 @@
 #include <time.h>
 #include <virtex2.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 #if 0
 #define FPGA_DEBUG

@@ -9,12 +9,13 @@
  */
 
 #include <common.h>
-#include <dm.h>
 #include <log.h>
 #include <stdio.h>
 #include <time.h>
+#include <dm/device.h>
 #include <asm/io.h>
 #include <asm/arch/am35x_def.h>
+#include <asm/types.h>
 
 void am35x_musb_reset(struct udevice *dev)
 {

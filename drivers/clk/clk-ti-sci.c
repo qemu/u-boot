@@ -20,6 +20,7 @@
 #include <linux/kernel.h>
 #include <linux/soc/ti/ti_sci_protocol.h>
 #include <k3-avs.h>
+#include <linux/types.h>
 
 /**
  * struct ti_sci_clk_data - clock controller information structure

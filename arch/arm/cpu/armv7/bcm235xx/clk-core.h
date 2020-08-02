@@ -4,6 +4,7 @@
  */
 
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 #include <linux/stddef.h>
 #include <linux/stringify.h>

@@ -20,6 +20,7 @@
 #include <asm/arch-tegra/scu.h>
 #include <asm/arch-tegra/tegra.h>
 #include <asm/arch-tegra/warmboot.h>
+#include <linux/types.h>
 
 int tegra_get_chip(void)
 {

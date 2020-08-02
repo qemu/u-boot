@@ -9,9 +9,11 @@
 #include <ram.h>
 #include <rand.h>
 #include <reset.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/iopoll.h>

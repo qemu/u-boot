@@ -15,6 +15,7 @@
  * Basic ET HW initialization and packet RX/TX routines
  *
  * This code will not perform the IO port configuration. This should be
+#include <linux/types.h>
  * done in the iop_conf_t structure specific for the board.
  *
  * TODO:

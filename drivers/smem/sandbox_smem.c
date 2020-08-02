@@ -8,6 +8,7 @@
 #include <errno.h>
 #include <smem.h>
 #include <asm/test.h>
+#include <linux/types.h>
 
 static int sandbox_smem_alloc(unsigned int host,
 		unsigned int item, size_t size)

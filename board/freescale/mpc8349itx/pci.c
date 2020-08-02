@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <init.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 
 #include <asm/mmu.h>

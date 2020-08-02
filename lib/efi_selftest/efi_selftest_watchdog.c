@@ -18,6 +18,7 @@
 
 #include <efi_selftest.h>
 #include <stdbool.h>
+#include <linux/types.h>
 
 /*
  * This is the communication structure for the notification function.

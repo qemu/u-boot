@@ -11,6 +11,7 @@
 #define K3_SEC_PROXY_H
 
 /**
+#include <linux/types.h>
  * struct k3_sec_proxy_msg - Secure proxy message structure
  * @len: Length of data in the Buffer
  * @buf: Buffer pointer

@@ -8,6 +8,7 @@
 #define _DM_OF_EXTRA_H
 
 #include <dm/ofnode.h>
+#include <linux/types.h>
 
 enum fmap_compress_t {
 	FMAP_COMPRESS_NONE,

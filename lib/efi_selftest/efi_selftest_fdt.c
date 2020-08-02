@@ -13,6 +13,7 @@
 #include <efi_selftest.h>
 #include <stdio.h>
 #include <linux/libfdt.h>
+#include <linux/types.h>
 
 static const struct efi_system_table *systemtab;
 static const struct efi_boot_services *boottime;

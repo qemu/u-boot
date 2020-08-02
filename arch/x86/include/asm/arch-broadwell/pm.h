@@ -8,6 +8,7 @@
 #ifndef __ASM_ARCH_PM_H
 #define __ASM_ARCH_PM_H
 
+#include <linux/types.h>
 #define PM1_STS			0x00
 #define  WAK_STS		(1 << 15)
 #define  PCIEXPWAK_STS		(1 << 14)

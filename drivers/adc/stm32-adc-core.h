@@ -27,6 +27,7 @@
 #define STM32_ADCX_COMN_OFFSET		0x300
 
 #include <clk.h>
+#include <compiler.h>
 
 struct udevice;
 

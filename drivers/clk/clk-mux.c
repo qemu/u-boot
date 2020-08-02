@@ -22,10 +22,12 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <malloc.h>
 #include <clk-uclass.h>
+#include <asm/types.h>
 #include <dm/device.h>
 #include <dm/devres.h>
 #include <linux/bitops.h>

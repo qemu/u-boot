@@ -21,6 +21,7 @@
 #include <linux/bitops.h>
 #include <asm/psci.h>
 #include <asm/gpio.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

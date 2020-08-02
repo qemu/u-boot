@@ -19,8 +19,10 @@
 #include <linux/interrupt.h>
 #else
 #include <common.h>
+#include <compiler.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include "linux-compat.h"
 #include <asm/processor.h>
 #endif

@@ -7,6 +7,7 @@
 #ifndef USE_HOSTCC
 #include <common.h>
 #include <bootstage.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <env.h>
 #include <errno.h>
@@ -17,6 +18,7 @@
 #include <malloc.h>
 #include <mapmem.h>
 #include <net.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/cache.h>
@@ -28,6 +30,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #else
 #include "mkimage.h"
 #endif

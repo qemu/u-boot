@@ -1,6 +1,7 @@
 #include <common.h>
 #include <dm.h>
 #include <miiphy.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm-generic/gpio.h>
@@ -9,6 +10,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "ihs_phys.h"
 #include "dt_helpers.h"

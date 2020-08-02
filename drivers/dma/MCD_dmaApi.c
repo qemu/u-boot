@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <stdio.h>
+#include <asm/types.h>
 
 #include <MCD_dma.h>
 #include <MCD_tasksInit.h>

@@ -24,6 +24,7 @@
 #include <jffs2/load_kernel.h>
 #include <cramfs/cramfs_fs.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 /* enable/disable debugging messages */
 #define	DEBUG_CRAMFS

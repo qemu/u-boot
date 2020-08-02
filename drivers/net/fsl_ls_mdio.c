@@ -9,6 +9,7 @@
 #include <miiphy.h>
 #include <asm/io.h>
 #include <fsl_memac.h>
+#include <asm/types.h>
 
 #ifdef CONFIG_SYS_MEMAC_LITTLE_ENDIAN
 #define memac_out_32(a, v)	out_le32(a, v)

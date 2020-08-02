@@ -22,6 +22,7 @@
  * NOTE: DO NOT use the functions in this file except in test code!
  */
 #include <asm-generic/gpio.h>
+#include <linux/types.h>
 
 /**
  * Return the simulated value of a GPIO (used only in sandbox test code)

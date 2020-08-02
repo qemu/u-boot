@@ -9,6 +9,7 @@
 #ifdef CONFIG_PPC
 #include <asm/ppc.h>
 #endif
+#include <asm/types.h>
 #include <linux/delay.h>
 
 static u32 get_sec_mon_state(void)

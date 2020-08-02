@@ -8,6 +8,7 @@
 #define __TGEC_H__
 
 #include <phy.h>
+#include <asm/types.h>
 
 struct tgec {
 	/* 10GEC general control and status registers */

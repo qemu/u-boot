@@ -10,6 +10,7 @@
 #define __FLEXCAN_H__
 
 /* FlexCan Message Buffer */
+#include <asm/types.h>
 typedef struct can_msgbuf_ctrl {
 #ifdef CONFIG_M5282
 	u8 tmstamp;		/* 0x00 Timestamp */

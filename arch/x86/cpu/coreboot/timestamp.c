@@ -7,10 +7,12 @@
 
 #include <common.h>
 #include <bootstage.h>
+#include <compiler.h>
 #include <asm/arch/timestamp.h>
 #include <asm/arch/sysinfo.h>
 #include <asm/u-boot-x86.h>
 #include <linux/compiler.h>
+#include <linux/types.h>
 
 struct timestamp_entry {
 	uint32_t	entry_id;

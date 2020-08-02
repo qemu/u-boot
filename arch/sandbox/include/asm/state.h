@@ -11,6 +11,7 @@
 #include <stdbool.h>
 #include <linux/list.h>
 #include <linux/stringify.h>
+#include <linux/types.h>
 
 /**
  * Selects the behavior of the serial terminal.

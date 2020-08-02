@@ -14,6 +14,7 @@
 /*
  * Signature for checksum functions.
  */
+#include <linux/types.h>
 typedef void zio_checksum_t(const void *data, uint64_t size,
 			    zfs_endian_t endian, zio_cksum_t *zcp);
 

@@ -21,6 +21,7 @@
 #include <i2c.h>
 #include <asm/u-boot.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "t4rdb.h"
 

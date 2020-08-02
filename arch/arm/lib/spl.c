@@ -8,6 +8,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <config.h>
 #include <init.h>
 #include <log.h>
@@ -17,6 +18,7 @@
 #include <asm/global_data.h>
 #include <linux/compiler.h>
 #include <asm/mach-types.h>
+#include <linux/types.h>
 
 #ifndef CONFIG_SPL_DM
 /* Pointer to as well as the global data structure for SPL */

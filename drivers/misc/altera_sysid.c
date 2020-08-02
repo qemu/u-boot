@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <linux/time.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 struct altera_sysid_regs {
 	u32	id;		/* The system build id */

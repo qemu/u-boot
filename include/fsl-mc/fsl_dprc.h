@@ -9,6 +9,7 @@
 #define _FSL_DPRC_H
 
 /* DPRC Version */
+#include <linux/types.h>
 #define DPRC_VER_MAJOR				6
 #define DPRC_VER_MINOR				1
 

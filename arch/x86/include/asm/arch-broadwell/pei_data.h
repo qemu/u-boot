@@ -8,7 +8,9 @@
 #ifndef ASM_ARCH_PEI_DATA_H
 #define ASM_ARCH_PEI_DATA_H
 
+#include <compiler.h>
 #include <linux/linkage.h>
+#include <linux/types.h>
 
 #define PEI_VERSION 22
 

@@ -18,6 +18,7 @@
  * accessing a logical eraseblock it is locked for reading or writing. The
  * per-logical eraseblock locking is implemented by means of the lock tree. The
  * lock tree is an RB-tree which refers all the currently locked logical
+#include <linux/types.h>
  * eraseblocks. The lock tree elements are &struct ubi_ltree_entry objects.
  * They are indexed by (@vol_id, @lnum) pairs.
  *

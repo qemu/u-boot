@@ -56,6 +56,7 @@ next:
 
 		arg_end = strpbrk(str, stopchs);
 		if (!arg_end)
+#include <linux/kernel.h>
 			*arglen = min(maxlen, strlen(str)) - optlen - 1;
 		else
 			*arglen = arg_end - end - 1;

@@ -21,6 +21,7 @@
  * function can indicate that LUN is removable and/or CD-ROM.  (The
  * later implies read-only access.)
  *
+#include <linux/types.h>
  * MSF is configured by specifying a fsg_config structure.  It has the
  * following fields:
  *

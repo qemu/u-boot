@@ -8,6 +8,7 @@
 #define __STM32_RCC_H_
 
 #include <stdbool.h>
+#include <asm/types.h>
 #define AHB_PSC_1			0
 #define AHB_PSC_2			0x8
 #define AHB_PSC_4			0x9

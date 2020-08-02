@@ -22,6 +22,7 @@
 #include <asm/macro.h>
 #include <asm/psci.h>
 #include <asm/secure.h>
+#include <asm/types.h>
 #include <linux/linkage.h>
 
 static u32 psci_target_pc[CONFIG_ARMV7_PSCI_NR_CPUS] __secure_data = { 0 };

@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <stdio.h>
 #include <linux/errno.h>
@@ -13,6 +14,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "fsl_sec.h"
 #include "jr.h"
 #include "jobdesc.h"

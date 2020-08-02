@@ -5,9 +5,11 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <errno.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <wait_bit.h>
 #include <dm.h>
 #include <reset-uclass.h>
@@ -19,6 +21,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

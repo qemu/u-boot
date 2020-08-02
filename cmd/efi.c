@@ -11,11 +11,13 @@
 #include <log.h>
 #include <malloc.h>
 #include <sort.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static const char *const type_name[] = {
 	"reserved",

@@ -6,6 +6,7 @@
 #include <common.h>
 #include <errno.h>
 #include <asm/arch/sdram.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 
 /* Board-specific header. */

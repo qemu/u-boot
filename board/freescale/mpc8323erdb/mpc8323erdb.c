@@ -28,6 +28,7 @@
 #include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 #if defined(CONFIG_PCI)
 #include <pci.h>

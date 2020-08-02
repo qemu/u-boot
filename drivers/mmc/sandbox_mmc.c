@@ -11,6 +11,7 @@
 #include <log.h>
 #include <mmc.h>
 #include <asm/test.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
 

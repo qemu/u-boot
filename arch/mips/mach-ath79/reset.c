@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

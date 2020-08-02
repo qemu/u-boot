@@ -11,6 +11,7 @@
 #include <asm/gpio.h>
 #include <axp_pmic.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <dm/device-internal.h>
 #include <dm/lists.h>
 #include <dm/root.h>

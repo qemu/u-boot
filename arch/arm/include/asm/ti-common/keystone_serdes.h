@@ -10,6 +10,7 @@
 #define __TI_KEYSTONE_SERDES_H__
 
 /* SERDES Reference clock */
+#include <asm/types.h>
 enum ks2_serdes_clock {
 	SERDES_CLOCK_100M,		/* 100 MHz */
 	SERDES_CLOCK_122P88M,		/* 122.88 MHz */

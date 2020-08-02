@@ -14,6 +14,7 @@
 #include <linux/mtd/omap_gpmc.h>
 #include <asm/arch/clock.h>
 #include <asm/ti-common/sys_proto.h>
+#include <linux/types.h>
 
 /*
  * Structure for Iodelay configuration registers.

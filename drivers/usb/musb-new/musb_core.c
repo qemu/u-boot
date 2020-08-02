@@ -80,6 +80,8 @@
 #include <linux/io.h>
 #else
 #include <common.h>
+#include <compiler.h>
+#include <stdbool.h>
 #include <usb.h>
 #include <vsprintf.h>
 #include <linux/bitops.h>
@@ -87,6 +89,7 @@
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <linux/usb/ch9.h>
 #include <linux/usb/gadget.h>
 #include <linux/usb/musb.h>

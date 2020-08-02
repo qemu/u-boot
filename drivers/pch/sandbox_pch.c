@@ -8,6 +8,7 @@
 #include <pch.h>
 #include <stdbool.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 struct sandbox_pch_priv {
 	bool protect;

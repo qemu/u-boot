@@ -9,6 +9,7 @@
 #include <asm/io.h>
 #include <asm/omap_common.h>
 #include <spl.h>
+#include <asm/types.h>
 
 static u32 boot_devices[] = {
 #if defined(CONFIG_DRA7XX)

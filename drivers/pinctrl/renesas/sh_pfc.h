@@ -11,6 +11,8 @@
 #ifndef __SH_PFC_H
 #define __SH_PFC_H
 
+#include <compiler.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 #include <linux/stringify.h>
 

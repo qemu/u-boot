@@ -8,6 +8,7 @@
 #ifndef _DAVINCI_I2C_H_
 #define _DAVINCI_I2C_H_
 
+#include <asm/types.h>
 #define I2C_WRITE		0
 #define I2C_READ		1
 

@@ -1,3 +1,4 @@
+#include <asm/types.h>
 struct stm32_flash_regs {
 	u32 acr;
 	u32 key;

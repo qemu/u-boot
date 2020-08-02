@@ -12,6 +12,7 @@
 #include <asm/io.h>
 #include <dm.h>
 #include <errno.h>
+#include <asm/types.h>
 #include <dm/lists.h>
 #include <regmap.h>
 #include <reset-uclass.h>

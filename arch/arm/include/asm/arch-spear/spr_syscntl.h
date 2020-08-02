@@ -7,6 +7,7 @@
 #ifndef __SYSCTRL_H
 #define __SYSCTRL_H
 
+#include <asm/types.h>
 struct syscntl_regs {
 	u32 scctrl;
 	u32 scsysstat;

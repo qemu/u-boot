@@ -6,6 +6,7 @@
 
 #ifndef __ASM_ARCH_OMAP3_MUSB_H
 #define __ASM_ARCH_OMAP3_MUSB_H
+#include <asm/types.h>
 void am35x_musb_reset(struct udevice *dev);
 void am35x_musb_phy_power(struct udevice *dev, u8 on);
 void am35x_musb_clear_irq(struct udevice *dev);

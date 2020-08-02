@@ -38,6 +38,7 @@
 #endif
 
 #include <asm/processor.h>
+#include <linux/types.h>
 
 static inline uint get_immr(void)
 {

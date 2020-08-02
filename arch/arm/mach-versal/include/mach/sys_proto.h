@@ -3,6 +3,7 @@
  * Copyright 2016 - 2018 Xilinx, Inc.
  */
 
+#include <asm/types.h>
 enum {
 	TCM_LOCK,
 	TCM_SPLIT,

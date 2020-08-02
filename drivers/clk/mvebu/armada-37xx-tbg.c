@@ -11,12 +11,14 @@
 #include <common.h>
 #include <clk-uclass.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/cpu.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define NUM_TBG	    4
 

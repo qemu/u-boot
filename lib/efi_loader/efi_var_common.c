@@ -9,8 +9,10 @@
 #include <common.h>
 #include <efi_loader.h>
 #include <efi_variable.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 enum efi_secure_mode {
 	EFI_MODE_SETUP,

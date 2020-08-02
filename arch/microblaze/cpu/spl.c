@@ -13,6 +13,7 @@
 #include <stdbool.h>
 #include <asm/io.h>
 #include <asm/u-boot.h>
+#include <linux/types.h>
 
 bool boot_linux;
 

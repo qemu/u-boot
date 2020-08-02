@@ -13,11 +13,13 @@
 #include <hash.h>
 #include <log.h>
 #include <os.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/sha256.h>
 #include <spi.h>
 #include <asm/malloc.h>

@@ -11,6 +11,7 @@
 #include <asm/arch/powergate.h>
 #include <asm/arch-tegra/ap.h>
 #include <asm/arch-tegra/pmc.h>
+#include <asm/types.h>
 
 static void park_cpu(void)
 {

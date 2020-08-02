@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <display_options.h>
 #include <stdio.h>
 #include <version.h>

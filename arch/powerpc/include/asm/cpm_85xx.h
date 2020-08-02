@@ -6,6 +6,7 @@
  * MPC8260 Communication Processor Module.
  * Copyright (c) 1999 Dan Malek (dmalek@jlc.net)
  *
+#include <linux/types.h>
  * This file contains structures and information for the communication
  * processor channels found in the dual port RAM or parameter RAM.
  * All CPM control and status is available through the MPC8260 internal

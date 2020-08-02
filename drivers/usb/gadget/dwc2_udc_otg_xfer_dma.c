@@ -25,6 +25,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static u8 clear_feature_num;
 int clear_feature_flag;

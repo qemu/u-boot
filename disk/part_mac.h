@@ -7,6 +7,7 @@
 /*
  * See also Linux sources, fs/partitions/mac.h
  *
+#include <linux/types.h>
  * This file describes structures and values related to the standard
  * Apple SCSI disk partitioning scheme. For more information see:
  * http://developer.apple.com/techpubs/mac/Devices/Devices-126.html#MARKER-14-92

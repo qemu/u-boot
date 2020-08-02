@@ -10,6 +10,7 @@
 /* ngPIXIS register set. Hopefully, this won't change too much over time.
  * Feel free to add board-specific #ifdefs where necessary.
  */
+#include <asm/types.h>
 typedef struct ngpixis {
 	u8 id;
 	u8 arch;

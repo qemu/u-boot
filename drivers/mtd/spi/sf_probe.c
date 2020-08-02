@@ -17,6 +17,7 @@
 #include <stdio.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "sf_internal.h"
 

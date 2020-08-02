@@ -8,6 +8,7 @@
 #ifndef __UBI_USER_H__
 #define __UBI_USER_H__
 
+#include <compiler.h>
 #include <linux/types.h>
 
 /*

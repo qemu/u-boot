@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <asm/hob.h>
+#include <linux/types.h>
 
 /**
  * Returns the next instance of a HOB type from the starting HOB.

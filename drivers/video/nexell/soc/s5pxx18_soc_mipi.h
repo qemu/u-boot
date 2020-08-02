@@ -8,6 +8,7 @@
 #ifndef _S5PXX18_SOC_MIPI_H_
 #define _S5PXX18_SOC_MIPI_H_
 
+#include <linux/types.h>
 #define NUMBER_OF_MIPI_MODULE 1
 #define PHY_BASEADDR_MIPI_MODULE	0xC00D0000
 #define	PHY_BASEADDR_MIPI_LIST	\

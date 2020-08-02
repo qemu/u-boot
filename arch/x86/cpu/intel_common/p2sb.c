@@ -13,10 +13,12 @@
 #include <log.h>
 #include <p2sb.h>
 #include <spl.h>
+#include <stdbool.h>
 #include <asm/pci.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #define PCH_P2SB_E0		0xe0
 #define HIDE_BIT		BIT(0)

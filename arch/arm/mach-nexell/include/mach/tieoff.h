@@ -7,6 +7,7 @@
 #ifndef _NEXELL_TIEOFF_H
 #define _NEXELL_TIEOFF_H
 
+#include <asm/types.h>
 void nx_tieoff_set(u32 tieoff_index, u32 tieoff_value);
 u32 nx_tieoff_get(u32 tieoff_index);
 

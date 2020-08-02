@@ -12,6 +12,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* Functions needed by stb_truetype.h */
 static int tt_floor(double val)

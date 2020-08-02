@@ -18,6 +18,7 @@
 #ifndef _TPM_TIS_I2C_H
 #define _TPM_TIS_I2C_H
 
+#include <compiler.h>
 #include <linux/compiler.h>
 #include <linux/types.h>
 

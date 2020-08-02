@@ -10,6 +10,7 @@
 
 #include <common.h>
 #include <hexdump.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/ctype.h>
@@ -17,6 +18,7 @@
 #include <linux/kernel.h>
 #include <linux/log2.h>
 #include <asm/unaligned.h>
+#include <linux/types.h>
 
 const char hex_asc[] = "0123456789abcdef";
 const char hex_asc_upper[] = "0123456789ABCDEF";

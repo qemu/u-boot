@@ -5,10 +5,12 @@
 
 #include <common.h>
 #include <clock_legacy.h>
+#include <compiler.h>
 #include <dm.h>
 #include <div64.h>
 #include <errno.h>
 #include <serial.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <asm/addrspace.h>
 #include <asm/types.h>

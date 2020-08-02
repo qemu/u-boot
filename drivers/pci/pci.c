@@ -15,6 +15,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <init.h>
 #include <log.h>
 #include <stdio.h>
@@ -22,6 +23,7 @@
 #include <asm/global_data.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include <command.h>
 #include <env.h>

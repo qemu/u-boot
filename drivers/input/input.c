@@ -12,6 +12,7 @@
 #include <env.h>
 #include <errno.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio_dev.h>
 #include <input.h>
 #ifdef CONFIG_DM_KEYBOARD
@@ -21,6 +22,7 @@
 #include <linux/input.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 enum {
 	/* These correspond to the lights on the keyboard */

@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include <linux/mtd/mtd.h>
 #include <linux/mtd/partitions.h>
+#include <linux/types.h>
 
 struct pxa3xx_nand_timing {
 	unsigned int	tCH;  /* Enable signal hold time */

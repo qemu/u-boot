@@ -15,6 +15,7 @@
 #include <dm/uclass-internal.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <linux/ctype.h>
 

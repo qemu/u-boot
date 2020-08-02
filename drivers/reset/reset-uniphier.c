@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
@@ -14,6 +15,7 @@
 #include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/sizes.h>
+#include <linux/types.h>
 
 struct uniphier_reset_data {
 	unsigned int id;

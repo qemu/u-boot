@@ -6,10 +6,12 @@
 /* Tegra SoC common clock control functions */
 
 #include <common.h>
+#include <compiler.h>
 #include <div64.h>
 #include <dm.h>
 #include <errno.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <asm/io.h>
@@ -22,6 +24,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 /*
  * This is our record of the current clock rate of each clock. We don't

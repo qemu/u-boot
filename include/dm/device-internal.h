@@ -13,6 +13,7 @@
 #include <stdbool.h>
 #include <asm/global_data.h>
 #include <dm/ofnode.h>
+#include <linux/types.h>
 
 struct device_node;
 struct udevice;

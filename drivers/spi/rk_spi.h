@@ -11,6 +11,7 @@
 #ifndef __RK_SPI_H
 #define __RK_SPI_H
 
+#include <asm/types.h>
 struct rockchip_spi {
 	u32 ctrlr0;
 	u32 ctrlr1;

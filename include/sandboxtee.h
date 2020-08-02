@@ -7,6 +7,7 @@
 #define __SANDBOXTEE_H
 
 #include <search.h>
+#include <asm/types.h>
 #include <tee/optee_ta_avb.h>
 
 /**

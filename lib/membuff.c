@@ -10,9 +10,11 @@
 #include <errno.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "membuff.h"
 
 void membuff_purge(struct membuff *mb)

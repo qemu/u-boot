@@ -6,6 +6,7 @@
 
 #include <clk.h>
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <dm/devres.h>
 #include <generic-phy.h>
@@ -13,6 +14,7 @@
 #include <usb.h>
 #include <linux/errno.h>
 #include <linux/compat.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 #include <linux/iopoll.h>
 #include <usb/xhci.h>

@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <errno.h>
 #include <log.h>
 #include <asm/io.h>

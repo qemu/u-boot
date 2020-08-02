@@ -7,6 +7,7 @@
 #ifndef _PMIC_RK8XX_H_
 #define _PMIC_RK8XX_H_
 
+#include <asm/types.h>
 enum {
 	REG_SECONDS			= 0x00,
 	REG_MINUTES,

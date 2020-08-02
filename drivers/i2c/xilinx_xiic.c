@@ -11,12 +11,14 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <i2c.h>
 #include <wait_bit.h>
 #include <asm/io.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 struct xilinx_xiic_priv {
 	void __iomem		*base;

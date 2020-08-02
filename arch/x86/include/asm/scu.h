@@ -6,6 +6,7 @@
 #define _X86_ASM_SCU_IPC_H_
 
 /* IPC defines the following message types */
+#include <asm/types.h>
 #define IPCMSG_INDIRECT_READ	0x02
 #define IPCMSG_INDIRECT_WRITE	0x05
 #define IPCMSG_WARM_RESET	0xf0

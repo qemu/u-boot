@@ -16,6 +16,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static int netboot_common(enum proto_t, struct cmd_tbl *, int, char * const []);
 

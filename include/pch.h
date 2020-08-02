@@ -9,6 +9,7 @@
 
 #include <stdbool.h>
 #include <linux/bitops.h>
+#include <linux/types.h>
 #define PCH_RCBA		0xf0
 
 #define BIOS_CTRL_BIOSWE	BIT(0)

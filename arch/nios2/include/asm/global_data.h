@@ -7,6 +7,7 @@
 #define __ASM_NIOS2_GLOBALDATA_H_
 
 /* Architecture-specific global data */
+#include <asm/types.h>
 struct arch_global_data {
 	u32 dcache_line_size;
 	u32 icache_line_size;

@@ -6,10 +6,12 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <efi_loader.h>
 #include <init.h>
 #include <malloc.h>
 #include <mapmem.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <watchdog.h>
 #include <asm/cache.h>
@@ -17,6 +19,7 @@
 #include <linux/kernel.h>
 #include <linux/list_sort.h>
 #include <linux/sizes.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -13,6 +13,7 @@
 #ifndef __ASM_ARCH_MX85XX_GPIO_H
 #define __ASM_ARCH_MX85XX_GPIO_H
 
+#include <linux/types.h>
 struct mpc8xxx_gpio_plat {
 	ulong addr;
 	ulong size;

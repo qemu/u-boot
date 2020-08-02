@@ -7,6 +7,7 @@
 #ifndef __ASM_ARCH_MMC_H_
 #define __ASM_ARCH_MMC_H_
 
+#include <asm/types.h>
 #define S5P_MMC_DEV_OFFSET	0x10000
 
 #define SDHCI_CONTROL2		0x80

@@ -13,6 +13,7 @@
 #include <malloc.h>
 #include <vsprintf.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <test/test.h>
 #include <test/suites.h>
 #include <test/ut.h>

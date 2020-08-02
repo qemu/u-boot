@@ -12,6 +12,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <linux/bug.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 
 DECLARE_GLOBAL_DATA_PTR;

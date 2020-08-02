@@ -22,6 +22,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static unsigned char *dfu_file_buf;
 static u64 dfu_file_buf_len;

@@ -11,6 +11,7 @@
 #define __ASM_ARCH_VF610_DDRMC_H
 
 #include <asm/arch/iomux-vf610.h>
+#include <asm/types.h>
 
 struct ddr3_jedec_timings {
 	u8 tinit;

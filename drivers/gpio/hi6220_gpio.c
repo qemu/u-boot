@@ -10,6 +10,7 @@
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <errno.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/string.h>

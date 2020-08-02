@@ -12,6 +12,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 typedef struct at91_eefc {
 	u32	fmr;	/* Flash Mode Register RW */
 	u32	fcr;	/* Flash Command Register WO */

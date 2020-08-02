@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <errno.h>
 #include <stdbool.h>

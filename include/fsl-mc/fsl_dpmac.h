@@ -11,6 +11,7 @@
 #define __FSL_DPMAC_H
 
 /* DPMAC Version */
+#include <linux/types.h>
 #define DPMAC_VER_MAJOR				4
 #define DPMAC_VER_MINOR				2
 

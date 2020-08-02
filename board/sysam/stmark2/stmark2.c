@@ -14,6 +14,7 @@
 #include <asm/immap.h>
 #include <mmc.h>
 #include <fsl_esdhc.h>
+#include <asm/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

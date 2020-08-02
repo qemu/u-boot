@@ -10,6 +10,7 @@
 #include <init.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <dm/platform_data/net_ethoc.h>
 #include <env.h>
 #include <linux/ctype.h>

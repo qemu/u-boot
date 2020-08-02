@@ -17,12 +17,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <mpc8xx.h>
 #include <spi.h>
 #include <stdio.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #include <asm/cpm_8xx.h>
 #include <asm/io.h>

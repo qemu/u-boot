@@ -18,6 +18,7 @@
 #include <clk.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include <linux/usb/otg.h>
 
 #include <asm/arch/usb-gx.h>

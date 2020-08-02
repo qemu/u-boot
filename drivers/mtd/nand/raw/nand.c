@@ -6,11 +6,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <nand.h>
 #include <errno.h>
 #include <vsprintf.h>
 #include <linux/errno.h>
 #include <linux/mtd/concat.h>
+#include <linux/types.h>
 
 #ifndef CONFIG_SYS_NAND_BASE_LIST
 #define CONFIG_SYS_NAND_BASE_LIST { CONFIG_SYS_NAND_BASE }

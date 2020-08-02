@@ -342,6 +342,7 @@ typedef uLong FAR uLongf;
 #endif
 
 #  ifdef VMS
+#include <linux/types.h>
 #    include <unixio.h>   /* for off_t */
 #  endif
 #  define z_off_t off_t

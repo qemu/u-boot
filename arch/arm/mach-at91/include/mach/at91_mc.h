@@ -15,6 +15,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 typedef struct at91_ebi {
 	u32 	csa;		/* 0x00 Chip Select Assignment Register */
 	u32	cfgr;		/* 0x04 Configuration Register */

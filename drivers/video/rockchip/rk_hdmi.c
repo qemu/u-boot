@@ -18,6 +18,7 @@
 #include <asm/io.h>
 #include <asm/arch-rockchip/clock.h>
 #include <asm/arch-rockchip/hardware.h>
+#include <linux/types.h>
 #include "rk_hdmi.h"
 #include "rk_vop.h" /* for rk_vop_probe_regulators */
 

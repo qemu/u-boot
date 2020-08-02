@@ -13,6 +13,7 @@
 #include <asm/arch/mailbox_s10.h>
 #include <asm/arch/system_manager.h>
 #include <asm/secure.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;

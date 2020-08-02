@@ -5,12 +5,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <asm/arch/nexell.h>
 #include <asm/arch/clk.h>
 #include <asm/arch/reset.h>
 #include <asm/arch/nx_gpio.h>
 #include <asm/arch/tieoff.h>
 #include <asm/arch/sec_reg.h>
+#include <asm/types.h>
 
 #define	NX_PIN_FN_SIZE	4
 #define TIEOFF_REG_NUM 33

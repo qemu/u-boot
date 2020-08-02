@@ -9,7 +9,9 @@
  * Author: Piotr Bugalski <bugalski.piotr@gmail.com>
  */
 
+#include <compiler.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <asm/io.h>
 #include <clk.h>
@@ -25,6 +27,7 @@
 #include <linux/iopoll.h>
 #include <linux/ioport.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <mach/clk.h>
 #include <spi.h>
 #include <spi-mem.h>

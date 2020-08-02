@@ -1,9 +1,11 @@
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <console.h> /* ctrlc */
 #include <pci.h>
 #include <stdio.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 #include "hydra.h"
 

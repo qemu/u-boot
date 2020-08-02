@@ -17,6 +17,7 @@
 #include <malloc.h>
 #include <mapmem.h>
 #include <hw_sha.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/cache.h>
@@ -25,6 +26,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 #else
 #include "mkimage.h"

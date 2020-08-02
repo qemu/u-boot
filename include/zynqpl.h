@@ -10,6 +10,7 @@
 #define _ZYNQPL_H_
 
 #include <xilinx.h>
+#include <asm/types.h>
 
 #ifdef CONFIG_CMD_ZYNQ_AES
 int zynq_decrypt_load(u32 srcaddr, u32 dstaddr, u32 srclen, u32 dstlen,

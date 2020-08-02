@@ -352,6 +352,7 @@ struct sunxi_ccm_reg {
 #define CCM_DE_CTRL_GATE		(1 << 31)
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 void clock_set_pll1(unsigned int hz);
 void clock_set_pll3(unsigned int hz);
 unsigned int clock_get_pll3(void);

@@ -6,8 +6,10 @@
 #define pr_fmt(fmt) "udma: " fmt
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/cache.h>
@@ -34,6 +36,7 @@
 #include <linux/soc/ti/ti-udma.h>
 #include <linux/soc/ti/ti_sci_protocol.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "k3-udma-hwdef.h"
 #include "k3-psil-priv.h"

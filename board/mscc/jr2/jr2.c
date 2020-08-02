@@ -4,12 +4,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <image.h>
 #include <init.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <led.h>
 #include <miiphy.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/string.h>

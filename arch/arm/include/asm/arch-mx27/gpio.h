@@ -9,6 +9,7 @@
 #define __ASM_ARCH_MX27_GPIO_H
 
 /* GPIO registers */
+#include <asm/types.h>
 struct gpio_regs {
 	u32 gpio_dir; /* DDIR */
 	u32 ocr1;

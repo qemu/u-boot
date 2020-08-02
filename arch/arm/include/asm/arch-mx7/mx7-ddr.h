@@ -11,6 +11,7 @@
 #define __ASM_ARCH_MX7_DDR_H__
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/bitops.h>
 #endif
 

@@ -4,6 +4,8 @@
  * Reinhard Pfau, Guntermann & Drunck GmbH, reinhard.pfau@gdsys.cc
  */
 
+#include <stdbool.h>
+#include <linux/types.h>
 /* TODO: some more #ifdef's to avoid unneeded code for stage 1 / stage 2 */
 
 #ifdef CCDM_ID_DEBUG

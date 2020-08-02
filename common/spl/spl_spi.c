@@ -9,6 +9,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <image.h>
 #include <log.h>
 #include <spi.h>
@@ -19,6 +20,7 @@
 #include <asm/global_data.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

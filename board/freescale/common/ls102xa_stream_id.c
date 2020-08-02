@@ -6,6 +6,7 @@
 #include <common.h>
 #include <asm/io.h>
 #include <asm/arch/ls102xa_stream_id.h>
+#include <linux/types.h>
 
 void ls102xa_config_smmu_stream_id(struct smmu_stream_id *id, uint32_t num)
 {

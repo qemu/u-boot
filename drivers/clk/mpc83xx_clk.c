@@ -10,6 +10,7 @@
 #include <command.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
@@ -20,6 +21,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include "mpc83xx_clk.h"
 

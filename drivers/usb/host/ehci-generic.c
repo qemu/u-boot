@@ -14,6 +14,7 @@
 #include <asm/io.h>
 #include <dm.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include "ehci.h"
 #include <power/regulator.h>
 

@@ -11,6 +11,7 @@
 #include <common.h>
 #include <i2c.h>
 #include <malloc.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <pca9698.h>
 

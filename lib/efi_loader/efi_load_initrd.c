@@ -13,6 +13,7 @@
 #include <efi_load_initrd.h>
 #include <stdbool.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static const efi_guid_t efi_guid_load_file2_protocol =
 		EFI_LOAD_FILE2_PROTOCOL_GUID;

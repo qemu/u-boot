@@ -8,6 +8,7 @@
 #include <asm/cpu_common.h>
 #include <asm/fast_spi.h>
 #include <asm/pci.h>
+#include <linux/types.h>
 
 /*
  * Returns bios_start and fills in size of the BIOS region.

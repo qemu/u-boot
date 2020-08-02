@@ -12,6 +12,7 @@
 #include <part.h>
 #include <memalign.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
 

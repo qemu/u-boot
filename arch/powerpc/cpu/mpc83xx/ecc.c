@@ -7,12 +7,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <irq_func.h>
 #include <mpc83xx.h>
 #include <command.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/ppc.h>
+#include <asm/types.h>
 #include <linux/string.h>
 
 #if defined(CONFIG_DDR_ECC) && defined(CONFIG_DDR_ECC_CMD)

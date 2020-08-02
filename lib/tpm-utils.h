@@ -7,6 +7,7 @@
 #ifndef __TPM_UTILS_H
 #define __TPM_UTILS_H
 
+#include <linux/types.h>
 #define COMMAND_BUFFER_SIZE 256
 
 /* Internal error of TPM command library */

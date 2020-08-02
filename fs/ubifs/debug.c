@@ -24,6 +24,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifndef __UBOOT__
 #include <linux/module.h>

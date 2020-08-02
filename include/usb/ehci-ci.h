@@ -9,6 +9,7 @@
 #define _EHCI_CI_H
 
 #include <asm/processor.h>
+#include <asm/types.h>
 
 #define CONTROL_REGISTER_W1C_MASK       0x00020000  /* W1C: PHY_CLK_VALID */
 

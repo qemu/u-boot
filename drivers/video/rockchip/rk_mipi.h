@@ -7,6 +7,7 @@
 #ifndef __RK_MIPI_H
 #define __RK_MIPI_H
 
+#include <linux/types.h>
 struct rk_mipi_priv {
 	uintptr_t regs;
 	void *grf;

@@ -10,6 +10,7 @@
 #define __QSPI_H__
 
 /* QSPI module registers */
+#include <asm/types.h>
 typedef struct qspi_ctrl {
 	u16 mr;			/* 0x00 Mode */
 	u16 res1;

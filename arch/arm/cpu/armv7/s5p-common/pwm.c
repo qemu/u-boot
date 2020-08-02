@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <asm/arch/pwm.h>
 #include <asm/arch/clk.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 
 int pwm_enable(int pwm_id)

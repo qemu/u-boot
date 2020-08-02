@@ -8,10 +8,12 @@
  *
  * Sricharan R <r.sricharan@ti.com>
  */
+#include <compiler.h>
 #include <config.h>
 #include <cpu_func.h>
 #include <asm/io.h>
 #include <asm/arch/cpu.h>
+#include <asm/types.h>
 #include <linux/compiler.h>
 
 void __weak reset_cpu(unsigned long ignored)

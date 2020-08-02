@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <asm/io.h>
 #include "mt7628.h"
 

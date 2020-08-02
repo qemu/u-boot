@@ -15,6 +15,7 @@
 #include <asm/io.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/soc.h>
+#include <linux/types.h>
 
 static u32 get_boot_device(void)
 {

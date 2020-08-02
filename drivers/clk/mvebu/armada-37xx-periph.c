@@ -9,10 +9,12 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <malloc.h>
 #include <clk-uclass.h>
 #include <clk.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/cpu.h>
@@ -21,6 +23,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define TBG_SEL		0x0
 #define DIV_SEL0	0x4

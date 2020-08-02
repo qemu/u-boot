@@ -10,6 +10,7 @@
  */
 
 #include <common.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 

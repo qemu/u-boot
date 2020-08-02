@@ -12,6 +12,7 @@
 #include <errno.h>
 #include <stdbool.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <spmi/spmi.h>
 #include <asm/gpio.h>
 #include <asm/io.h>

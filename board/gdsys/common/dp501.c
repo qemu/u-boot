@@ -23,6 +23,7 @@ int dp501_i2c[] = CONFIG_SYS_DP501_I2C;
 int dp501_base[] = CONFIG_SYS_DP501_BASE;
 #endif
 
+#include <linux/types.h>
 static void dp501_setbits(u8 addr, u8 reg, u8 mask)
 {
 	u8 val;

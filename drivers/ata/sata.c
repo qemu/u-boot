@@ -12,6 +12,7 @@
 #include <common.h>
 #include <ahci.h>
 #include <blk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <part.h>
 #include <sata.h>

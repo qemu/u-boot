@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/md5.h>
 #include <asm/io.h>
 

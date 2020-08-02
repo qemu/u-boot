@@ -17,6 +17,7 @@
 #endif
 #include <asm/ptrace.h>
 #include <asm/ppc.h>
+#include <linux/types.h>
 
 #ifndef CONFIG_MPC83XX_TIMER
 #ifndef CONFIG_SYS_WATCHDOG_FREQ

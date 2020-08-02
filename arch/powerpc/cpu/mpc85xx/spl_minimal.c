@@ -9,6 +9,7 @@
 #include <fsl_ifc.h>
 #include <asm/io.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

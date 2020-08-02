@@ -8,6 +8,7 @@
 #include <malloc.h>
 #include <dm/test.h>
 #include <asm/power-domain.h>
+#include <linux/types.h>
 #include <test/test.h>
 #include <test/ut.h>
 

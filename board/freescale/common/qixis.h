@@ -10,6 +10,7 @@
 #ifndef __QIXIS_H_
 #define __QIXIS_H_
 
+#include <asm/types.h>
 struct qixis {
 	u8 id;      /* ID value uniquely identifying each QDS board type */
 	u8 arch;    /* Board version information */

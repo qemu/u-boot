@@ -8,6 +8,7 @@
 #ifndef USE_HOSTCC
 #include <common.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #else
 #include <string.h>
 #endif /* USE_HOSTCC */

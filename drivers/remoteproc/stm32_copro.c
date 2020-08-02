@@ -11,12 +11,14 @@
 #include <regmap.h>
 #include <remoteproc.h>
 #include <reset.h>
+#include <stdbool.h>
 #include <syscon.h>
 #include <asm/io.h>
 #include <dm/device_compat.h>
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #define RCC_GCR_HOLD_BOOT	0
 #define RCC_GCR_RELEASE_BOOT	1

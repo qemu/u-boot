@@ -7,6 +7,7 @@
 #define _FSL_PORTALS_H_
 
 /* entries must be in order and contiguous */
+#include <asm/types.h>
 enum fsl_dpaa_dev {
 	FSL_HW_PORTAL_SEC,
 #ifdef CONFIG_SYS_DPAA_FMAN

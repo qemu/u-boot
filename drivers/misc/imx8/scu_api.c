@@ -14,6 +14,7 @@
 #include <dm.h>
 #include <asm/arch/sci/sci.h>
 #include <misc.h>
+#include <asm/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

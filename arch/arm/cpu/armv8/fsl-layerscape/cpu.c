@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <env.h>
 #include <fsl_ddr_sdram.h>
@@ -44,6 +45,7 @@
 #include <fsl_qbman.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_TFABOOT
 #include <env_internal.h>

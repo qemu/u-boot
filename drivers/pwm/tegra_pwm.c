@@ -12,6 +12,7 @@
 #include <asm/arch/clock.h>
 #include <asm/arch/pwm.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 struct tegra_pwm_priv {
 	struct pwm_ctlr *regs;

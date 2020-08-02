@@ -12,6 +12,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <net.h>
@@ -30,6 +31,7 @@
 #include <asm/byteorder.h>
 #include <asm/arch/cpu.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_ARCH_KIRKWOOD)
 #include <asm/arch/soc.h>

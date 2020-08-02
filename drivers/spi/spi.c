@@ -8,6 +8,7 @@
 #include <malloc.h>
 #include <spi.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/string.h>
 
 int spi_set_wordlen(struct spi_slave *slave, unsigned int wordlen)

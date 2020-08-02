@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <lcd.h>
 #include <log.h>
 #include <serial.h>
@@ -19,6 +20,7 @@
 #include <vsprintf.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static struct console_t cons;
 

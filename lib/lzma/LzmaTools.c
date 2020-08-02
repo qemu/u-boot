@@ -22,6 +22,7 @@
 #include <log.h>
 #include <watchdog.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_LZMA
 

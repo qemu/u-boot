@@ -18,6 +18,7 @@
 #define _MUSB_OMAP3_H_
 
 #include <asm/arch/cpu.h>
+#include <asm/types.h>
 #include "musb_core.h"
 
 /* Base address of MUSB registers */

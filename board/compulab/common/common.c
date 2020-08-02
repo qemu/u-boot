@@ -6,11 +6,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <malloc.h>
 #include <stdio.h>
 #include <asm/bootm.h>
 #include <asm/gpio.h>
 #include <asm/setup.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 
 #include "common.h"

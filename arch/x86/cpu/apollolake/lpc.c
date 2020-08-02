@@ -16,6 +16,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/log2.h>
+#include <linux/types.h>
 
 void lpc_enable_fixed_io_ranges(uint io_enables)
 {

@@ -25,6 +25,7 @@
 #include <linux/libfdt.h>
 #include <linux/string.h>
 #include <miiphy.h>
+#include <linux/types.h>
 #include <mvebu/comphy.h>
 #include <spi.h>
 

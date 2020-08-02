@@ -9,6 +9,7 @@
 #include <asm/io.h>
 #include <asm/arch/sys_proto.h>
 #include <spl.h>
+#include <asm/types.h>
 
 static u32 boot_devices[] = {
 	BOOT_DEVICE_ONENAND,

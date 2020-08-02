@@ -6,6 +6,7 @@
 #include <common.h>
 #include <ddr_spd.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 /* used for ddr1 and ddr2 spd */
 static int

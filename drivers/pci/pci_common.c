@@ -10,6 +10,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <env.h>
 #include <errno.h>
@@ -17,6 +18,7 @@
 #include <stdio.h>
 #include <asm/io.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 const char *pci_class_str(u8 class)
 {

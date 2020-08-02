@@ -13,6 +13,7 @@
 #ifndef JFFS2_SUMMARY_H
 #define JFFS2_SUMMARY_H
 
+#include <linux/types.h>
 #define BLK_STATE_ALLFF		0
 #define BLK_STATE_CLEAN		1
 #define BLK_STATE_PARTDIRTY	2

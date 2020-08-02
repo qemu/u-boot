@@ -1,6 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /*
  * CAAM descriptor composition header
+#include <compiler.h>
+#include <linux/types.h>
  * Definitions to support CAAM descriptor instruction generation
  *
  * Copyright 2008-2014 Freescale Semiconductor, Inc.

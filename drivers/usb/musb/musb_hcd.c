@@ -9,7 +9,9 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdbool.h>
 #include <usb.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>

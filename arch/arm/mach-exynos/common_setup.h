@@ -24,6 +24,7 @@
  */
 
 #include <asm/arch/system.h>
+#include <linux/types.h>
 
 #define DMC_OFFSET	0x10000
 

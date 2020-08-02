@@ -9,10 +9,12 @@
 #include <log.h>
 #include <malloc.h>
 #include <phy.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <net/ncsi.h>
 #include <net/ncsi-pkt.h>
 #include <asm/unaligned.h>

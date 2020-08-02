@@ -8,6 +8,7 @@
 #ifndef __SOC_TI_K3_NAVSS_RINGACC_API_H_
 #define __SOC_TI_K3_NAVSS_RINGACC_API_H_
 
+#include <asm/types.h>
 #include <dm/ofnode.h>
 #include <linux/bitops.h>
 

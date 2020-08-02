@@ -9,6 +9,7 @@
 #include <asm/arch/sys_proto.h>
 #include <asm/mach-imx/boot_mode.h>
 #include <asm/arch/crm_regs.h>
+#include <asm/types.h>
 
 void init_aips(void)
 {

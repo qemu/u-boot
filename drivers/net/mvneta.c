@@ -13,6 +13,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <dm.h>
 #include <log.h>
@@ -41,6 +42,7 @@
 #include <linux/mbus.h>
 #include <asm-generic/gpio.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

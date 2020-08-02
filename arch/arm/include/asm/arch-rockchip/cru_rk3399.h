@@ -7,6 +7,7 @@
 #define __ASM_ARCH_CRU_RK3399_H_
 
 /* Private data for the clock driver - used by rockchip_get_cru() */
+#include <asm/types.h>
 #include <linux/kernel.h>
 struct rk3399_clk_priv {
 	struct rockchip_cru *cru;

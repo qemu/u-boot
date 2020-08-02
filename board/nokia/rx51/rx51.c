@@ -39,6 +39,7 @@
 #include <asm/arch/mux.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/arch/mmc_host_def.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/string.h>
 

@@ -465,6 +465,7 @@ void lbc_sdram_init(void);
 
 #ifndef __ASSEMBLY__
 #include <asm/io.h>
+#include <linux/types.h>
 
 extern void print_lbc_regs(void);
 extern void init_early_memctl_regs(void);

@@ -10,6 +10,8 @@
 #ifndef _GLOBAL_NVS_H_
 #define _GLOBAL_NVS_H_
 
+#include <compiler.h>
+#include <asm/types.h>
 struct __packed acpi_global_nvs {
 	/* Miscellaneous */
 	u8	pcnt; /* 0x00 - Processor Count */

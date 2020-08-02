@@ -17,6 +17,7 @@
 #include <dm/util.h>
 #include <hexdump.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <test/test.h>
 #include <test/ut.h>
 

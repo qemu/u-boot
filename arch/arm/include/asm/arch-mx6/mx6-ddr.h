@@ -23,6 +23,7 @@
 #else
 #error "Please select cpu"
 #endif	/* CONFIG_MX6SL */
+#include <asm/types.h>
 #endif	/* CONFIG_MX6UL */
 #endif	/* CONFIG_MX6SX */
 #endif	/* CONFIG_MX6DL or CONFIG_MX6S */

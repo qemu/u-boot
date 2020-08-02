@@ -5,6 +5,7 @@
  */
 
 #include <env.h>
+#include <stdbool.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
 #include <linux/ctype.h>

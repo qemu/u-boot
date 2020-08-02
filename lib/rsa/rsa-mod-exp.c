@@ -13,6 +13,7 @@
 #include <asm/types.h>
 #include <asm/unaligned.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #else
 #include "fdt_host.h"
 #include "mkimage.h"

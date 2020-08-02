@@ -33,6 +33,7 @@
 #include <input.h>
 #include <pwm.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 DECLARE_GLOBAL_DATA_PTR;
 
 #define NC_PAD_CTRL (PAD_CTL_PUS_100K_UP |	\

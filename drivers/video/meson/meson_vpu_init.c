@@ -13,6 +13,7 @@
 #include <stdbool.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
+#include <linux/types.h>
 
 #include "meson_vpu.h"
 

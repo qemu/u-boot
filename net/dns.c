@@ -31,6 +31,7 @@
 #include <time.h>
 #include <asm/unaligned.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "dns.h"
 

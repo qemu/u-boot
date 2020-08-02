@@ -6,6 +6,7 @@
 #ifndef _TEGRA_DISPLAYPORT_H
 #define _TEGRA_DISPLAYPORT_H
 
+#include <asm/types.h>
 #include <linux/drm_dp_helper.h>
 
 struct dpaux_ctlr {

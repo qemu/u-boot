@@ -1,6 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * tegra_i2s.h - Definitions for Tegra124 I2S driver.
+#include <asm/types.h>
  * Note, some structures (ex, CIF) are different in Tegra114.
  *
  * NVIDIA Tegra I2S controller

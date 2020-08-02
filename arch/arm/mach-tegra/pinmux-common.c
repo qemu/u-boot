@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/pinmux.h>
+#include <asm/types.h>
 
 /* return 1 if a pingrp is in range */
 #define pmux_pingrp_isvalid(pin) (((pin) >= 0) && ((pin) < PMUX_PINGRP_COUNT))

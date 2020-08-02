@@ -7,6 +7,7 @@
 #ifndef _IHS_MDIO_H_
 #define _IHS_MDIO_H_
 
+#include <asm/types.h>
 struct ihs_mdio_info {
 #ifdef CONFIG_GDSYS_LEGACY_DRIVERS
 	u32 fpga;

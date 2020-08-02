@@ -9,6 +9,7 @@
 #include <common.h>
 #include <lcd.h>
 #include <log.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/err.h>
 #include <asm/arch/dsim.h>

@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <asm/arch/sys_proto.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 
 #define SD_DLL_CTRL			0xFF180358

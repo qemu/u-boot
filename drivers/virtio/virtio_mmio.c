@@ -8,6 +8,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <virtio_types.h>
@@ -19,6 +20,7 @@
 #include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "virtio_mmio.h"
 
 static int virtio_mmio_get_config(struct udevice *udev, unsigned int offset,

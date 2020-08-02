@@ -24,6 +24,7 @@
 #include <dt-bindings/gpio/x86-gpio.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static int intel_gpio_direction_input(struct udevice *dev, uint offset)
 {

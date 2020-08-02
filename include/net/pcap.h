@@ -13,6 +13,7 @@
  * @return	0 on success, -ERROR on error
  */
 #include <stdbool.h>
+#include <linux/types.h>
 int pcap_init(phys_addr_t paddr, unsigned long size);
 
 /**

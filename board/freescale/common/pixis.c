@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/string.h>
 
 #define pixis_base (u8 *)PIXIS_BASE

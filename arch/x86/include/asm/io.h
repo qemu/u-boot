@@ -9,6 +9,7 @@
 
 #include <compiler.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * This file contains the definitions for the x86 IO instructions

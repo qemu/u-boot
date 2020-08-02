@@ -11,9 +11,11 @@
 
 #include <common.h>
 #include <clk-uclass.h>
+#include <compiler.h>
 #include <div64.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>
 #include <linux/delay.h>
@@ -22,6 +24,7 @@
 #include <asm/arcregs.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #include <dt-bindings/clock/snps,hsdk-cgu.h>
 

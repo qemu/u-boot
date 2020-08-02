@@ -24,7 +24,9 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
@@ -41,6 +43,7 @@
 #include <spi.h>
 #include <spi-mem.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

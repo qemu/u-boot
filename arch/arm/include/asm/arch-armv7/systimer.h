@@ -7,6 +7,7 @@
 #define _SYSTIMER_H_
 
 /* AMBA timer register base address */
+#include <asm/types.h>
 #define SYSTIMER_BASE		0x10011000
 
 #define SYSHZ_CLOCK		1000000		/* Timers -> 1Mhz */

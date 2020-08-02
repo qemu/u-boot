@@ -10,9 +10,11 @@
 #include <malloc.h>
 #include <power-domain-uclass.h>
 #include <regmap.h>
+#include <stdbool.h>
 #include <syscon.h>
 #include <reset.h>
 #include <clk.h>
+#include <asm/types.h>
 #include <dt-bindings/power/meson-g12a-power.h>
 #include <dt-bindings/power/meson-sm1-power.h>
 #include <linux/bitops.h>

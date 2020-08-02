@@ -7,6 +7,7 @@
 #include <asm/arch/ep93xx.h>
 #include <config.h>
 #include <status_led.h>
+#include <linux/types.h>
 
 static uint8_t saved_state[2] = {CONFIG_LED_STATUS_OFF, CONFIG_LED_STATUS_OFF};
 static uint32_t gpio_pin[2] = {1 << CONFIG_LED_STATUS_GREEN,

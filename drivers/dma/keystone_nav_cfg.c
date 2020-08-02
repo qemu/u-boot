@@ -7,6 +7,7 @@
  */
 
 #include <asm/ti-common/keystone_nav.h>
+#include <asm/types.h>
 
 #ifdef CONFIG_KSNAV_PKTDMA_NETCP
 /* NETCP Pktdma */

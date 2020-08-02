@@ -7,6 +7,7 @@
 #ifndef _ASM_ARCH_VOP_RK3288_H
 #define _ASM_ARCH_VOP_RK3288_H
 
+#include <asm/types.h>
 #include <linux/kernel.h>
 struct rk3288_vop {
 	u32 reg_cfg_done;

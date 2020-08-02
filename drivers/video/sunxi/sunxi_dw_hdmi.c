@@ -19,6 +19,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 struct sunxi_dw_hdmi_priv {
 	struct dw_hdmi hdmi;

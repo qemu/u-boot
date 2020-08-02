@@ -22,6 +22,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include "tegra_spi.h"
 
 DECLARE_GLOBAL_DATA_PTR;

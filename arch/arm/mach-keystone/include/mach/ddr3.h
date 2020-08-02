@@ -10,6 +10,7 @@
 #define _DDR3_H_
 
 #include <asm/arch/hardware.h>
+#include <asm/types.h>
 
 struct ddr3_phy_config {
 	unsigned int pllcr;

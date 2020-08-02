@@ -16,6 +16,7 @@
 #include <asm/arch/systemagent.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /*
  * Punit Initialisation code. This all isn't documented, but

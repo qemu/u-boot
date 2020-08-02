@@ -9,11 +9,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <asm/omap_common.h>
 #include <asm/arch/clock.h>
 #include <asm/io.h>
 #include <asm/arch/sys_proto.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/kernel.h>
 

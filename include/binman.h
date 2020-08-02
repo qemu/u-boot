@@ -9,6 +9,7 @@
 #ifndef _BINMAN_H_
 #define _BINMAN_H_
 
+#include <asm/types.h>
 #include <dm/ofnode.h>
 
 /**

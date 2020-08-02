@@ -9,6 +9,7 @@
 #define SQFS_FILESYSTEM_H
 
 #include <asm/unaligned.h>
+#include <stdbool.h>
 #include <stdint.h>
 #include <stdbool.h>
 #include <fs.h>

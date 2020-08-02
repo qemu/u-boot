@@ -8,6 +8,7 @@
 #define _SYS_PROTO_H_
 #include <linux/mtd/omap_gpmc.h>
 #include <asm/omap_common.h>
+#include <linux/types.h>
 
 typedef struct {
 	u32 mtype;

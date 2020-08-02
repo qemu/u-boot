@@ -3,6 +3,7 @@
  * Copyright 2016 General Electric Company
  */
 
+#include <linux/types.h>
 struct vpd_cache;
 
 /*

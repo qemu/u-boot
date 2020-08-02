@@ -8,6 +8,7 @@
  * Copyright (C) 2013, 2014 Renesas Electronics Corporation
  */
 
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <cpu_func.h>
@@ -27,6 +28,7 @@
 #include <asm/io.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_DM_ETH
 #include <clk.h>

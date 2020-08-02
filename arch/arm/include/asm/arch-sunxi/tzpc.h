@@ -7,6 +7,7 @@
 #define _SUNXI_TZPC_H
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 struct sunxi_tzpc {
 	u32 r0size;		/* 0x00 Size of secure RAM region */
 	u32 decport0_status;	/* 0x04 Status of decode protection port 0 */

@@ -9,6 +9,7 @@
 
 #include <common.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 /************************************************************
  * sdelay() - simple spin loop.  Will be constant time as

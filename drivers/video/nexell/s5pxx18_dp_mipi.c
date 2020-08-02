@@ -5,11 +5,13 @@
  * Author: junghyun, kim <jhkim@nexell.co.kr>
  */
 
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <errno.h>
 #include <stdbool.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #include <asm/arch/nexell.h>
 #include <asm/arch/tieoff.h>

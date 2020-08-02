@@ -18,4 +18,5 @@ struct gpio_regs {
 /* IMX8 the GPIO index is from 0 not 1 */
 #define IMX_GPIO_NR(port, index)		(((port) * 32) + ((index) & 31))
 
+#include <asm/types.h>
 #endif /* __ASM_ARCH_IMX8_GPIO_H */

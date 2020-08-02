@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <env.h>
 #include <log.h>
 #include <stdio.h>
@@ -17,6 +18,7 @@
 	defined(CONFIG_ARM)
 #include <asm/arch/clock.h>
 #endif
+#include <asm/types.h>
 #include <linux/delay.h>
 
 #define CTLR_INTLV_MASK	0x20000000

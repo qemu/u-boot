@@ -17,6 +17,7 @@
  * 3.  The RX/TX FIFO
  */
 
+#include <asm/types.h>
 #define MAX_ENDPOINTS		16
 
 struct udc_endp_regs {

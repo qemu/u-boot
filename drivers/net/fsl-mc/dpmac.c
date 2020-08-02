@@ -10,6 +10,7 @@
 #include <fsl-mc/fsl_mc_sys.h>
 #include <fsl-mc/fsl_mc_cmd.h>
 #include <fsl-mc/fsl_dpmac.h>
+#include <linux/types.h>
 
 int dpmac_open(struct fsl_mc_io *mc_io,
 	       uint32_t cmd_flags,

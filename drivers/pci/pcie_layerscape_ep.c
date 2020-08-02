@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <stdio.h>
 #include <asm/global_data.h>
@@ -16,6 +17,7 @@
 #include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <linux/log2.h>
+#include <linux/types.h>
 #include "pcie_layerscape.h"
 
 DECLARE_GLOBAL_DATA_PTR;

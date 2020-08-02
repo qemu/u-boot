@@ -18,6 +18,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 
 #define OTM8009A_BACKLIGHT_DEFAULT	240

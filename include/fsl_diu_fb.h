@@ -7,6 +7,7 @@
  * FSL DIU Framebuffer driver
  */
 
+#include <asm/types.h>
 int fsl_diu_init(u16 xres, u16 yres, u32 pixel_format, int gamma_fix);
 
 /* Prototypes for external board-specific functions */

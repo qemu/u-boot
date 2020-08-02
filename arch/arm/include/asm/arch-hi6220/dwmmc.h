@@ -4,4 +4,5 @@
  * Peter Griffin <peter.griffin@linaro.org>
  */
 
+#include <asm/types.h>
 int hi6220_dwmci_add_port(int index, u32 regbase, int bus_width);

@@ -103,6 +103,7 @@
 #define MAX_SYSCLK	4
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 static inline u8 get_sysclk_index(void)
 {
 	u32 dev_stat = __raw_readl(KS2_DEVSTAT);

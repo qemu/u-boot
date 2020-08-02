@@ -5,15 +5,18 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <env.h>
 #include <env_internal.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

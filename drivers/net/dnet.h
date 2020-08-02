@@ -11,6 +11,7 @@
 #ifndef __DRIVERS_DNET_H__
 #define __DRIVERS_DNET_H__
 
+#include <asm/types.h>
 #define DRIVERNAME "dnet"
 
 struct dnet_registers {

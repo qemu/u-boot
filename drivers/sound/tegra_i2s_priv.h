@@ -7,6 +7,7 @@
 #ifndef __TEGRA_I2S_PRIV_H
 #define __TEGRA_I2S_PRIV_H
 
+#include <asm/types.h>
 enum {
 	/* Set i2s device (in buf) */
 	AHUB_MISCOP_SET_I2S,

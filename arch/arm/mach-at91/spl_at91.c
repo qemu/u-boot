@@ -9,6 +9,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <hang.h>
 #include <init.h>
 #include <log.h>
@@ -21,6 +22,7 @@
 #include <asm/arch/at91_wdt.h>
 #include <asm/arch/clk.h>
 #include <spl.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

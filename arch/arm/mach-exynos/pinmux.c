@@ -10,6 +10,7 @@
 #include <asm/gpio.h>
 #include <asm/arch/pinmux.h>
 #include <asm/arch/sromc.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 
 static void exynos5_uart_config(int peripheral)

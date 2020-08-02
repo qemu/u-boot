@@ -15,6 +15,7 @@
 #include <asm/io.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/imx-regs.h>
+#include <linux/types.h>
 
 /*
  * The PLL frequency is 480MHz and XTAL frequency is 24MHz

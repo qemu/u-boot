@@ -23,6 +23,7 @@
 #define AT91_ASM_MATRIX_MCFG	ATMEL_BASE_MATRIX
 
 #else
+#include <asm/types.h>
 #if defined(CONFIG_AT91SAM9260) || defined(CONFIG_AT91SAM9G20)
 #define AT91_MATRIX_MASTERS	6
 #define AT91_MATRIX_SLAVES	5

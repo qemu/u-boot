@@ -5,6 +5,7 @@
  * Eddie Cai <eddie.cai.linux@gmail.com>
  */
 #include <command.h>
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <env.h>
@@ -17,6 +18,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <linux/usb/ch9.h>
 #include <linux/usb/gadget.h>
 #include <linux/usb/composite.h>

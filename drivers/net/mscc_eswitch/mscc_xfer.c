@@ -3,12 +3,14 @@
  * Copyright (c) 2018 Microsemi Corporation
  */
 
+#include <compiler.h>
 #include <log.h>
 #include <stdbool.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/io.h>
+#include <linux/types.h>
 #include "mscc_xfer.h"
 
 #define QS_XTR_FLUSH_FLUSH		GENMASK(1, 0)

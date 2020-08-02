@@ -11,6 +11,7 @@
 #include <dm.h>
 #include <malloc.h>
 #include <mapmem.h>
+#include <stdbool.h>
 #include <version.h>
 #include <tables_csum.h>
 #include <version.h>
@@ -22,6 +23,7 @@
 #include <dm/test.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <test/ut.h>
 #include "acpi.h"
 

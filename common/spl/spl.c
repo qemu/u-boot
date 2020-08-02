@@ -10,6 +10,7 @@
 #include <bloblist.h>
 #include <binman_sym.h>
 #include <bootstage.h>
+#include <compiler.h>
 #include <dm.h>
 #include <handoff.h>
 #include <hang.h>
@@ -18,6 +19,7 @@
 #include <log.h>
 #include <serial.h>
 #include <spl.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
@@ -27,6 +29,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 #include <version.h>
 #include <image.h>

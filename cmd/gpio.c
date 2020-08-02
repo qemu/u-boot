@@ -8,10 +8,12 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <errno.h>
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/gpio.h>

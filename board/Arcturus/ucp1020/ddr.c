@@ -18,6 +18,7 @@
 #include <asm/io.h>
 #include <asm/fsl_law.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_SYS_DDR_RAW_TIMING
 #if defined(CONFIG_UCP1020) || defined(CONFIG_UCP1020T1)

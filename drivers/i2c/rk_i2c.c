@@ -12,6 +12,7 @@
 #include <errno.h>
 #include <i2c.h>
 #include <log.h>
+#include <stdbool.h>
 #include <time.h>
 #include <asm/io.h>
 #include <asm/arch-rockchip/clock.h>
@@ -22,6 +23,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/sizes.h>
+#include <linux/types.h>
 
 /* i2c timerout */
 #define I2C_TIMEOUT_MS		100

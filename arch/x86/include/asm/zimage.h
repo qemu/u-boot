@@ -9,6 +9,7 @@
 
 #include <asm/bootparam.h>
 #include <asm/e820.h>
+#include <linux/types.h>
 
 /* linux i386 zImage/bzImage header. Offsets relative to
  * the start of the image */

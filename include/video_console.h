@@ -8,6 +8,7 @@
 
 #include <video.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 struct video_priv;
 

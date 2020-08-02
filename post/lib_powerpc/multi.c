@@ -9,6 +9,7 @@
 #include <log.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * CPU test

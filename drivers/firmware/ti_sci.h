@@ -15,6 +15,8 @@
 #define __TI_SCI_H
 
 /* Generic Messages */
+#include <compiler.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #define TI_SCI_MSG_ENABLE_WDT		0x0000
 #define TI_SCI_MSG_WAKE_RESET		0x0001

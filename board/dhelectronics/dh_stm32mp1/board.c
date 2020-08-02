@@ -7,6 +7,7 @@
 #include <adc.h>
 #include <log.h>
 #include <net.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/arch/stm32.h>
@@ -42,6 +43,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 #include <remoteproc.h>
 #include <reset.h>

@@ -33,6 +33,7 @@ enum {
 };
 #endif
 
+#include <linux/types.h>
 #define TCA642X_OUT_LOW		0
 #define TCA642X_OUT_HIGH	1
 #define TCA642X_POL_NORMAL	0

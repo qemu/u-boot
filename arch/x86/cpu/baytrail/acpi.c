@@ -13,6 +13,7 @@
 #include <asm/tables.h>
 #include <asm/arch/global_nvs.h>
 #include <asm/arch/iomap.h>
+#include <asm/types.h>
 #include <dm/uclass-internal.h>
 #include <linux/string.h>
 

@@ -10,6 +10,7 @@
 #define __RNG_H__
 
 /* Random Number Generator */
+#include <asm/types.h>
 typedef struct rng_ctrl {
 	u32 cr;			/* 0x00 Control */
 	u32 sr;			/* 0x04 Status */

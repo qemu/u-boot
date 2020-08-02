@@ -10,6 +10,7 @@
 #define __ASM_GBL_DATA_H
 
 /* Architecture-specific global data */
+#include <linux/types.h>
 struct arch_global_data {
 	uint8_t		*ram_buf;	/* emulated RAM buffer */
 	void		*text_base;	/* pointer to base of text region */

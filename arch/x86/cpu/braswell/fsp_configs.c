@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <fdtdec.h>
 #include <log.h>
 #include <asm/fsp1/fsp_support.h>

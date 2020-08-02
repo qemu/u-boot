@@ -11,6 +11,7 @@
 #include <asm/arch-fsl-layerscape/fsl_portals.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 struct icid_id_table icid_tbl[] = {
 	SET_USB_ICID(1, "snps,dwc3", FSL_USB1_STREAM_ID),

@@ -292,6 +292,7 @@
 #define TP_INIT_PER_CLUSTER     4
 /* This is chassis generation 3 */
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 struct sys_info {
 	unsigned long freq_processor[CONFIG_MAX_CPUS];
 	/* frequency of platform PLL */

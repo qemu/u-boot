@@ -7,6 +7,7 @@
 #define _ARCH_IRQ_H_
 
 #include <stdbool.h>
+#include <asm/types.h>
 #include <dt-bindings/interrupt-router/intel-irq.h>
 
 /**

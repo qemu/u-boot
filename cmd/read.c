@@ -13,6 +13,7 @@
 #include <part.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/types.h>
 
 int do_read(struct cmd_tbl *cmdtp, int flag, int argc, char *const argv[])
 {

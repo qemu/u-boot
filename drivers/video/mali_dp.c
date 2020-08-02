@@ -25,6 +25,7 @@
 #include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define MALIDP_CORE_ID		0x0018
 #define MALIDP_REG_BG_COLOR	0x0044

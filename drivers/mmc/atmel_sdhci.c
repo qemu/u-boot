@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <asm/arch/clk.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 
 #define ATMEL_SDHC_MIN_FREQ	400000

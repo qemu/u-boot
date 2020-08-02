@@ -7,6 +7,7 @@
  * cpu specific common code for 85xx/86xx processors.
  */
 
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <command.h>
@@ -22,6 +23,7 @@
 #include <vsc9953.h>
 #include <asm/u-boot.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

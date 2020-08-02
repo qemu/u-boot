@@ -9,12 +9,14 @@
 #include <console.h>
 #include <display_options.h>
 #include <div64.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <version.h>
 #include <vsprintf.h>
 #include <linux/ctype.h>
 #include <asm/io.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 char *display_options_get_banner_priv(bool newlines, const char *build_tag,
 				      char *buf, int size)

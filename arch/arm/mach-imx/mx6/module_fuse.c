@@ -14,6 +14,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static struct fuse_entry_desc mx6_fuse_descs[] = {
 #if defined(CONFIG_MX6ULL)

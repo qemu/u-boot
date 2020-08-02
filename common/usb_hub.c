@@ -23,16 +23,19 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <dm.h>
 #include <env.h>
 #include <errno.h>
 #include <log.h>
 #include <malloc.h>
 #include <memalign.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <vsprintf.h>
 #include <asm/processor.h>
+#include <asm/types.h>
 #include <asm/unaligned.h>
 #include <linux/ctype.h>
 #include <linux/delay.h>

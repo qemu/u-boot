@@ -8,6 +8,7 @@
 #include <env.h>
 #include <errno.h>
 #include <init.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
@@ -25,6 +26,7 @@
 #include <asm/arch/iomux.h>
 #include <asm/arch/sys_proto.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

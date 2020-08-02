@@ -14,6 +14,7 @@
 #include <asm/mtrr.h>
 #include <asm/post.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

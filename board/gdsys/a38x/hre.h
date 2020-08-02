@@ -8,6 +8,7 @@
 #define __HRE_H
 
 #include <stdbool.h>
+#include <linux/types.h>
 struct key_program {
 	uint32_t magic;
 	uint32_t code_crc;

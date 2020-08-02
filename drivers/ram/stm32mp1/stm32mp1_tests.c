@@ -7,6 +7,7 @@
 #include <init.h>
 #include <log.h>
 #include <rand.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <watchdog.h>
@@ -15,6 +16,7 @@
 #include <linux/kernel.h>
 #include <linux/log2.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "stm32mp1_tests.h"
 
 #define ADDR_INVALID	0xFFFFFFFF

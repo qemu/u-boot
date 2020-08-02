@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <usb.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 #include "ehci.h"
 

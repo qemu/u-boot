@@ -6,6 +6,7 @@
 #ifndef __S5M8767_H_
 #define __S5M8767_H_
 
+#include <asm/types.h>
 enum s5m8767_regnum {
 	S5M8767_BUCK1 = 0,
 	S5M8767_BUCK2,

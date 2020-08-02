@@ -10,6 +10,7 @@
  */
 #include <common.h>
 #include <blk.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <log.h>
 #include <stdio.h>
@@ -18,6 +19,7 @@
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <command.h>
 #include <dm.h>

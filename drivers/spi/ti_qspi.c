@@ -8,6 +8,7 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
@@ -27,6 +28,7 @@
 #include <linux/kernel.h>
 #include <regmap.h>
 #include <syscon.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -17,6 +17,7 @@
 #include <linux/compat.h>
 #include <linux/oid_registry.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/rsa.h>
 #include <u-boot/sha256.h>
 

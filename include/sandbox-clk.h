@@ -7,6 +7,8 @@
 #ifndef __SANDBOX_CLK_H__
 #define __SANDBOX_CLK_H__
 
+#include <compiler.h>
+#include <asm/types.h>
 #include <linux/clk-provider.h>
 
 enum {

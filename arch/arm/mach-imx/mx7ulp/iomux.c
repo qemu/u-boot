@@ -7,6 +7,7 @@
 #include <asm/io.h>
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/iomux.h>
+#include <asm/types.h>
 
 static void *base = (void *)IOMUXC_BASE_ADDR;
 

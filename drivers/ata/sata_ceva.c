@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <linux/errno.h>
 #include <linux/ioport.h>
+#include <linux/types.h>
 
 /* Vendor Specific Register Offsets */
 #define AHCI_VEND_PCFG  0xA4

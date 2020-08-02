@@ -10,6 +10,8 @@
  */
 
 #include <common.h>
+#include <compiler.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <malloc.h>
 #include <clk-uclass.h>
@@ -27,6 +29,7 @@
 #include <div64.h>
 #include <clk.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include "clk.h"
 
 #define UBOOT_DM_CLK_CCF_DIVIDER "ccf_clk_divider"

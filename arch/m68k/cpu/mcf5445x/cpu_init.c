@@ -16,6 +16,7 @@
 #include <asm/processor.h>
 #include <asm/rtc.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/compiler.h>
 
 #if defined(CONFIG_CMD_NET)

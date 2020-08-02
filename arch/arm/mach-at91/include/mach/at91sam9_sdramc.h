@@ -25,6 +25,7 @@
 #define AT91_ASM_SDRAMC_MDR	(ATMEL_BASE_SDRAMC + 0x24)
 
 #else
+#include <asm/types.h>
 struct sdramc_reg {
 	u32	mr;
 	u32	tr;

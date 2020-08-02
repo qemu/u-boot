@@ -5,6 +5,7 @@
 
 #include <stdbool.h>
 #include <linux/list.h>
+#include <linux/types.h>
 
 /*
  * A note on the pxe file parser.

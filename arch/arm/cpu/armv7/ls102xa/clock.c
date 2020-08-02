@@ -5,12 +5,14 @@
 
 #include <common.h>
 #include <clock_legacy.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/arch/immap_ls102xa.h>
 #include <asm/arch/clock.h>
 #include <fsl_ifc.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

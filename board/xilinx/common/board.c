@@ -14,6 +14,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/sizes.h>
+#include <linux/types.h>
 #include "board.h"
 
 int zynq_board_read_rom_ethaddr(unsigned char *ethaddr)

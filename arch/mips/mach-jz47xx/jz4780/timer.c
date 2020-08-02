@@ -6,6 +6,7 @@
  * Author: Paul Burton <paul.burton@imgtec.com>
  */
 
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <div64.h>
@@ -16,6 +17,7 @@
 #include <asm/mipsregs.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 #include <mach/jz4780.h>
 
 #define TCU_TSR		0x1C	/* Timer Stop Register */

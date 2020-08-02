@@ -10,6 +10,7 @@
 #define _DRA7_IODELAY_H_
 
 #include <asm/arch/sys_proto.h>
+#include <asm/types.h>
 
 /* CONFIG_REG_0 */
 #define CFG_REG_0_OFFSET		0xC

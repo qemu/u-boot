@@ -7,6 +7,7 @@
 #define _GP_PADCTRL_H_
 
 /* APB_MISC_PP registers */
+#include <asm/types.h>
 struct apb_misc_pp_ctlr {
 	u32	reserved0[2];
 	u32	strapping_opt_a;/* 0x08: APB_MISC_PP_STRAPPING_OPT_A */

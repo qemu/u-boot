@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
+#include <compiler.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/io.h>

@@ -22,6 +22,7 @@
 #include <log.h>
 #include <mapmem.h>
 #include <rand.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <vsprintf.h>
@@ -34,6 +35,7 @@
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

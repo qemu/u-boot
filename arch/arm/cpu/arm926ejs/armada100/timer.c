@@ -14,6 +14,7 @@
 #include <asm/arch/armada100.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 /*
  * Timer registers

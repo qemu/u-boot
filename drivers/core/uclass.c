@@ -23,6 +23,7 @@
 #include <dm/util.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

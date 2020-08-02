@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <dma.h>
 #include <log.h>
@@ -22,6 +23,7 @@
 #include <asm/io.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #define ETH_RX_DESC			PKTBUFSRX
 #define ETH_MAX_MTU_SIZE		1518

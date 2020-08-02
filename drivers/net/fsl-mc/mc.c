@@ -5,12 +5,14 @@
  */
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <env.h>
 #include <errno.h>
 #include <image.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
@@ -34,6 +36,7 @@
 #include <fsl-mc/fsl_qbman_portal.h>
 #include <fsl-mc/ldpaa_wriop.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define MC_RAM_BASE_ADDR_ALIGNMENT  (512UL * 1024 * 1024)
 #define MC_RAM_BASE_ADDR_ALIGNMENT_MASK	(~(MC_RAM_BASE_ADDR_ALIGNMENT - 1))

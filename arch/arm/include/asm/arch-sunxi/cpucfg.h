@@ -13,6 +13,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <compiler.h>
 struct __packed sunxi_cpucfg_cpu {
 	u32 rst;		/* base + 0x0 */
 	u32 ctrl;		/* base + 0x4 */

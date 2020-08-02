@@ -21,6 +21,7 @@
 #include <asm/arch-imx8/imx8-pins.h>
 #include <asm/arch-imx8/snvs_security_sc.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 

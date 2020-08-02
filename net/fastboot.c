@@ -5,13 +5,16 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <fastboot.h>
 #include <net.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <net/fastboot.h>
 
 /* Fastboot port # defined in spec */

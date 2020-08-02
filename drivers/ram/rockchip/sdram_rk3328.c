@@ -4,6 +4,7 @@
  */
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <debug_uart.h>
 #include <dm.h>
 #include <dt-structs.h>
@@ -20,6 +21,7 @@
 #include <asm/arch-rockchip/sdram.h>
 #include <asm/arch-rockchip/sdram_rk3328.h>
 #include <asm/arch-rockchip/uart.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>

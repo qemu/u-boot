@@ -8,6 +8,7 @@
 
 #include <asm/arch/pcc.h>
 #include <asm/arch/scg.h>
+#include <asm/types.h>
 
 /* Mainly for compatible to imx common code. */
 enum mxc_clock {

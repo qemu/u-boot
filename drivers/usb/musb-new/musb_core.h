@@ -20,6 +20,9 @@
 #include <linux/usb.h>
 #include <linux/usb/otg.h>
 #else
+#include <compiler.h>
+#include <stdbool.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #endif

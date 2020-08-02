@@ -3,6 +3,7 @@
  * Copyright 2016 NXP Semiconductor, Inc.
  */
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <malloc.h>
 #include <config.h>
@@ -26,6 +27,7 @@
 #endif
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_SYS_LS_PPA_FW_IN_NAND
 #include <nand.h>

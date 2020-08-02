@@ -6,6 +6,7 @@
 #include <common.h>
 #include <clock_legacy.h>
 #include <command.h>
+#include <compiler.h>
 #include <hang.h>
 #include <stdio.h>
 #include <asm/global_data.h>
@@ -15,6 +16,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <mach/ar71xx_regs.h>
 #include <mach/ath79.h>
 #include <wait_bit.h>

@@ -19,6 +19,7 @@
 #include <spi.h>
 #include <spi_flash.h>
 #include <splash.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <usb.h>
 #include <vsprintf.h>
@@ -26,6 +27,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -5,6 +5,7 @@
 
 #include <asm/io.h>
 #include <asm/arch/imx-regs.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 
 #define SNVS_HPCOMR		0x04

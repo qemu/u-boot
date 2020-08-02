@@ -19,6 +19,8 @@
  *      - ERR is the error code. (defined by EC_RES_ constants)
  *      - Px is the optional payload.
  *        it is not sent if the error code is not success.
+#include <compiler.h>
+#include <linux/types.h>
  *        (defined by ec_params_ and ec_response_ structures)
  *      - S is the checksum which is the sum of all payload bytes.
  *

@@ -9,6 +9,7 @@
 #ifndef __ASM_ACPI_TABLE_H__
 #define __ASM_ACPI_TABLE_H__
 
+#include <linux/types.h>
 struct acpi_facs;
 struct acpi_fadt;
 struct acpi_global_nvs;

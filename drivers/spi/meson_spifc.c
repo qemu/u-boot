@@ -14,12 +14,14 @@
 #include <dm.h>
 #include <regmap.h>
 #include <errno.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <linux/bitfield.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* register map */
 #define REG_CMD			0x00

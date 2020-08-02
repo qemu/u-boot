@@ -24,6 +24,7 @@
 #include <asm/io.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <fsl_ddr_sdram.h>
 #include <fsl_ddr.h>

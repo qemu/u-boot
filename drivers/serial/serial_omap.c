@@ -15,6 +15,7 @@
 #include <clk.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #ifndef CONFIG_SYS_NS16550_CLK
 #define CONFIG_SYS_NS16550_CLK  0

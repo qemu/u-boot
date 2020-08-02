@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <blk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <dfu.h>
 #include <env.h>
@@ -16,6 +17,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/arch/stm32prog.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>

@@ -24,6 +24,7 @@
 #include <fsl_esdhc_imx.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 #include "common.h"
 
 enum ddr_config {

@@ -7,6 +7,7 @@
 #define __DM_TEST_H
 
 struct udevice;
+#include <linux/types.h>
 
 /**
  * struct dm_test_cdata - configuration data for test instance

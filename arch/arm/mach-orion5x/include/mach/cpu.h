@@ -21,6 +21,7 @@
 #define ORION5XGBE_PORT_SERIAL_CONTROL1_REG(_x)	\
 		((_x ? ORION5X_EGIGA0_BASE : ORION5X_EGIGA1_BASE) + 0x44c)
 
+#include <asm/types.h>
 enum memory_bank {
 	BANK0,
 	BANK1,

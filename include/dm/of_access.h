@@ -19,6 +19,7 @@
 
 #include <stdbool.h>
 #include <dm/of.h>
+#include <linux/types.h>
 
 /**
  * of_find_all_nodes - Get next node in global list

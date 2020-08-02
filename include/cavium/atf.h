@@ -5,6 +5,7 @@
 #ifndef __ATF_H__
 #define __ATF_H__
 #include <cavium/atf_part.h>
+#include <linux/types.h>
 
 ssize_t atf_read_mmc(uintptr_t offset, void *buffer, size_t size);
 ssize_t atf_read_nor(uintptr_t offset, void *buffer, size_t size);

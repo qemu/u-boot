@@ -13,6 +13,7 @@
 #include <dwmmc.h>
 #include <errno.h>
 #include <fdtdec.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>

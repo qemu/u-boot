@@ -5,6 +5,7 @@
 #ifndef __UBOOT_UBISPL_H
 #define __UBOOT_UBISPL_H
 
+#include <asm/types.h>
 #define UBI_VOL_NAME_MAX	127
 
 /*

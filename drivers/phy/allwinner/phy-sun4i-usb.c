@@ -12,8 +12,10 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <dm/device.h>
 #include <generic-phy.h>
@@ -29,6 +31,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define REG_ISCR			0x00
 #define REG_PHYCTL_A10			0x04

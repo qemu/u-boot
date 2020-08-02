@@ -72,6 +72,7 @@
  * Structure used for telling the next BL how much of a particular type of
  * memory is available for its use and how much is already used.
  ******************************************************************************/
+#include <linux/types.h>
 struct aapcs64_params {
 	unsigned long arg0;
 	unsigned long arg1;

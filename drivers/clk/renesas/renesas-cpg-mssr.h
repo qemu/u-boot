@@ -13,7 +13,9 @@
 #ifndef __DRIVERS_CLK_RENESAS_CPG_MSSR__
 #define __DRIVERS_CLK_RENESAS_CPG_MSSR__
 
+#include <compiler.h>
 #include <stdbool.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 struct cpg_mssr_info {
 	const struct cpg_core_clk	*core_clk;

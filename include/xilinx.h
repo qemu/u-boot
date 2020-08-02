@@ -5,6 +5,7 @@
  */
 
 #include <fpga.h>
+#include <linux/types.h>
 
 #ifndef _XILINX_H_
 #define _XILINX_H_

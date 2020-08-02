@@ -10,6 +10,7 @@
 
 #include <bootcount.h>
 #include <asm/davinci_rtc.h>
+#include <linux/types.h>
 
 void bootcount_store(ulong a)
 {

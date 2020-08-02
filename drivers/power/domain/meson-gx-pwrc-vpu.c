@@ -15,6 +15,7 @@
 #include <syscon.h>
 #include <reset.h>
 #include <clk.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/err.h>

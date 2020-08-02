@@ -13,6 +13,7 @@
 #include <dm/device-internal.h>
 #include <i2c.h>
 #include <i2c_eeprom.h>
+#include <linux/types.h>
 
 struct i2c_eeprom_drv_data {
 	u32 size; /* size in bytes */

@@ -67,6 +67,7 @@ int timer_init(void)
 /*
  * reset time
  */
+#include <linux/types.h>
 void reset_timer_masked(void)
 {
 	struct fttmr010 *tmr = (struct fttmr010 *)CONFIG_FTTMR010_BASE;

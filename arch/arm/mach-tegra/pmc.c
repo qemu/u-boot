@@ -9,6 +9,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <linux/types.h>
 
 #include <linux/arm-smccc.h>
 

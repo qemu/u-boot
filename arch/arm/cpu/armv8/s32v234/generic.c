@@ -21,6 +21,7 @@
 #include <errno.h>
 #include <asm/u-boot.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 u32 get_cpu_rev(void)
 {

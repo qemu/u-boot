@@ -7,6 +7,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 const struct socfpga_sdram_config *socfpga_get_sdram_config(void);
 
 void socfpga_get_seq_ac_init(const u32 **init, unsigned int *nelem);

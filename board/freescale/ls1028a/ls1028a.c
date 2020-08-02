@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <display_options.h>
 #include <init.h>
 #include <malloc.h>
@@ -27,6 +28,7 @@
 #endif
 #include <fsl_immap.h>
 #include <netdev.h>
+#include <linux/types.h>
 
 #include <fdtdec.h>
 #include <miiphy.h>

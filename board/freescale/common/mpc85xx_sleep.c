@@ -4,10 +4,12 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <stdbool.h>
 #include <asm/global_data.h>
 #include <asm/immap_85xx.h>
+#include <asm/types.h>
 #include "sleep.h"
 #ifdef CONFIG_U_QE
 #include <fsl_qe.h>

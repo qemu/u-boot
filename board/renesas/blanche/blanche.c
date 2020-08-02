@@ -34,6 +34,7 @@
 #include <mmc.h>
 #include <netdev.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "qos.h"
 
 DECLARE_GLOBAL_DATA_PTR;

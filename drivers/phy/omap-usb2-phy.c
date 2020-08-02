@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
@@ -18,6 +19,7 @@
 #include <linux/bitops.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define OMAP_USB2_CALIBRATE_FALSE_DISCONNECT	BIT(0)
 #define OMAP_USB2_DISABLE_CHG_DET		BIT(1)

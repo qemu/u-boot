@@ -7,6 +7,7 @@
 #include <common.h>
 #include <hang.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>

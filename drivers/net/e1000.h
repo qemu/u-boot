@@ -12,6 +12,7 @@
 *******************************************************************************/
 
 /* e1000_hw.h
+#include <linux/types.h>
  * Structures, enums, and macros for the MAC
  */
 

@@ -16,6 +16,7 @@
 #include <asm/gpio.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <mach/gpio.h>
 #include <mach/atmel_pio4.h>
 

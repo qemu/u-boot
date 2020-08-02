@@ -7,6 +7,7 @@
 #define _ASM_ARCH_GRF_RK3368_H
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/kernel.h>
 #endif

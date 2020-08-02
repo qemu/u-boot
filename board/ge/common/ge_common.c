@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <env.h>
+#include <asm/types.h>
 #include <dm/uclass.h>
 #include <rtc.h>
 #include <linux/errno.h>

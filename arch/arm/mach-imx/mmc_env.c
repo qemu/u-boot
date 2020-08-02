@@ -4,10 +4,12 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/io.h>
 #include <asm/mach-imx/boot_mode.h>
+#include <linux/types.h>
 
 __weak int board_mmc_get_env_dev(int devno)
 {

@@ -18,6 +18,7 @@
 #endif
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * A very simple ELF64 loader, assumes the image is valid, returns the

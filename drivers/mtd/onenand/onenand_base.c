@@ -20,6 +20,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <time.h>
 #include <vsprintf.h>
@@ -31,6 +32,7 @@
 #include <linux/mtd/mtd.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "linux/mtd/flashchip.h"
 #include <linux/mtd/onenand.h>
 

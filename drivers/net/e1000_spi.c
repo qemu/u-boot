@@ -1,11 +1,13 @@
 #include <common.h>
 #include <command.h>
 #include <console.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "e1000.h"
 #include <malloc.h>
 #include <linux/compiler.h>

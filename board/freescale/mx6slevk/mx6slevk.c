@@ -29,6 +29,7 @@
 #include <i2c.h>
 #include <mmc.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/pfuze100_pmic.h>
 #include "../common/pfuze.h"

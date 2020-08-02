@@ -8,6 +8,7 @@
 #include <command.h>
 #include <asm/arch/pmic_bus.h>
 #include <axp_pmic.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 

@@ -14,6 +14,7 @@
  * Each TX CIF transmits data into the XBAR. Each RX CIF can receive audio
  * transmitted by a particular TX CIF.
  */
+#include <asm/types.h>
 struct xbar_regs {
 	u32 apbif_rx0;		/* AUDIO_APBIF_RX0, offset 0x00 */
 	u32 apbif_rx1;		/* AUDIO_APBIF_RX1, offset 0x04 */

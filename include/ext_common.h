@@ -5,6 +5,7 @@
  * Uma Shankar <uma.shankar@samsung.com>
  * Manjunatha C Achar <a.manjunatha@samsung.com>
  *
+#include <linux/types.h>
  * Data structures and headers for ext4 support have been taken from
  * ext2 ls load support in Uboot
  *

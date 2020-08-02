@@ -12,6 +12,7 @@
 #include <stdbool.h>
 #include <dm/pinctrl.h>
 #include <linux/bitops.h>
+#include <linux/types.h>
 
 /**
  * struct pad_config - config for a pad

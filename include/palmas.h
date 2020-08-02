@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <i2c.h>
+#include <linux/types.h>
 
 /* I2C chip addresses, TW6035/37 */
 #define TWL603X_CHIP_P1		0x48	/* Page 1 */

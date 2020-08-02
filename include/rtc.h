@@ -16,6 +16,7 @@
 #include <stdbool.h>
 #include <bcd.h>
 #include <rtc_def.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_DM_RTC
 

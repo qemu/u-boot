@@ -8,6 +8,7 @@
  * Copyright (C) 2013, Texas Instruments, Incorporated - http://www.ti.com/
  */
 #include <common.h>
+#include <compiler.h>
 #include <hang.h>
 #include <init.h>
 #include <log.h>
@@ -17,6 +18,7 @@
 #include <asm/arch/hardware.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 static void setup_post_dividers(const struct dpll_regs *dpll_regs,
 			 const struct dpll_params *params)

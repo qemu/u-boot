@@ -30,6 +30,7 @@
 #include "crc16.h"
 #endif
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define YES		1
 #define NO		0

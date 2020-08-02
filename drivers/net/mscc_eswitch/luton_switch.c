@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <config.h>
 #include <dm.h>
 #include <malloc.h>
@@ -20,6 +21,7 @@
 #include <wait_bit.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "mscc_xfer.h"
 #include "mscc_mac_table.h"

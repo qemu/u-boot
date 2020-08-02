@@ -35,6 +35,7 @@
 #include <asm/sections.h>
 #include <linux/bitops.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /**
  * read_uint() - Read an unsigned integer from the buffer

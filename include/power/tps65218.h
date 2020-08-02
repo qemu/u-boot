@@ -8,6 +8,7 @@
 #define __POWER_TPS65218_H__
 
 #include <linux/bitops.h>
+#include <linux/types.h>
 
 /* I2C chip address */
 #define TPS65218_CHIP_PM			0x24

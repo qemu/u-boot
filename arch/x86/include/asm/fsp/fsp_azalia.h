@@ -7,6 +7,8 @@
 #ifndef _FSP_AZALIA_H_
 #define _FSP_AZALIA_H_
 
+#include <compiler.h>
+#include <asm/types.h>
 struct __packed azalia_verb_table_header {
 	u32 vendor_device_id;
 	u16 sub_system_id;

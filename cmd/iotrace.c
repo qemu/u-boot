@@ -8,6 +8,7 @@
 #include <iotrace.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/types.h>
 
 static void do_print_stats(void)
 {

@@ -4,6 +4,7 @@
  * https://spdx.org/licenses
  */
 
+#include <linux/types.h>
  #ifndef __PINCTRL_MVEBU_H_
  #define __PINCTRL_MVEBU_H_
 

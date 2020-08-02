@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <wdt.h>
 #include <asm/global_data.h>
@@ -14,6 +15,7 @@
 #include <asm/arch/soc.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

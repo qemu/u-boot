@@ -19,6 +19,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* Non-standard registers needed for SDHCI startup */
 #define SDCC_MCI_POWER   0x0

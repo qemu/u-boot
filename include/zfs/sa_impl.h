@@ -10,6 +10,7 @@
 #ifndef	_SYS_SA_IMPL_H
 #define	_SYS_SA_IMPL_H
 
+#include <linux/types.h>
 typedef struct sa_hdr_phys {
 	uint32_t sa_magic;
 	uint16_t sa_layout_info;

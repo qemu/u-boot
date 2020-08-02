@@ -6,6 +6,7 @@
  */
 
 #include <twl4030.h>
+#include <asm/types.h>
 
 int twl4030_input_power_button(void)
 {

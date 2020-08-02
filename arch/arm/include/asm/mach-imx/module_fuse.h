@@ -6,6 +6,7 @@
 #ifndef __MODULE_FUSE_H__
 #define __MODULE_FUSE_H__
 
+#include <linux/types.h>
 enum fuse_module_type {
 	MODULE_TSC,
 	MODULE_ADC1,

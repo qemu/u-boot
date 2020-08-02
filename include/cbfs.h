@@ -8,6 +8,7 @@
 
 #include <compiler.h>
 #include <linux/compiler.h>
+#include <linux/types.h>
 
 enum cbfs_result {
 	CBFS_SUCCESS = 0,

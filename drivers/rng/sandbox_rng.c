@@ -8,6 +8,7 @@
 #include <rand.h>
 #include <rng.h>
 #include <time.h>
+#include <linux/types.h>
 
 #include <linux/string.h>
 

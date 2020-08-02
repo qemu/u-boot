@@ -8,6 +8,7 @@
 #define __HI6553_PMIC_H__
 
 /* Registers */
+#include <asm/types.h>
 enum {
 	HI6553_VERSION_REG = 0x000,
 	HI6553_ENABLE2_LDO1_8 = 0x029,

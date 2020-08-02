@@ -15,6 +15,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #define SARADC_CTRL_CHN_MASK		GENMASK(2, 0)
 #define SARADC_CTRL_POWER_CTRL		BIT(3)

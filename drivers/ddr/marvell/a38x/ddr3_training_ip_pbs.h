@@ -6,6 +6,7 @@
 #ifndef _DDR3_TRAINING_IP_PBS_H_
 #define _DDR3_TRAINING_IP_PBS_H_
 
+#include <asm/types.h>
 enum {
 	EBA_CONFIG,
 	EEBA_CONFIG,

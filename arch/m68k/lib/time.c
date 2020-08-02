@@ -12,6 +12,7 @@
 #include <time.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 #include <asm/timer.h>
 #include <asm/immap.h>

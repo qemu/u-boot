@@ -9,6 +9,7 @@
 #include <asm/io.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/soc.h>
+#include <asm/types.h>
 
 #include "high_speed_env_spec.h"
 #include "sys_env_lib.h"

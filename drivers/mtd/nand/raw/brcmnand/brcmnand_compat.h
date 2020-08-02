@@ -6,6 +6,8 @@
 struct clk;
 struct udevice;
 
+#include <linux/types.h>
+
 char *devm_kasprintf(struct udevice *dev, gfp_t gfp, const char *fmt, ...);
 
 #endif /* __BRCMNAND_COMPAT_H */

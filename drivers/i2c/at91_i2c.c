@@ -6,6 +6,7 @@
  */
 
 #include <malloc.h>
+#include <stdbool.h>
 #include <time.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
@@ -18,6 +19,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <mach/clk.h>
 
 #include "at91_i2c.h"

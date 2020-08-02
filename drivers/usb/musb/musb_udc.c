@@ -41,6 +41,7 @@
 #include <hang.h>
 #include <serial.h>
 #include <usbdevice.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <usb/udc.h>

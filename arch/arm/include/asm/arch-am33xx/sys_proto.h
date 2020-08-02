@@ -11,6 +11,7 @@
 #define _SYS_PROTO_H_
 #include <linux/mtd/omap_gpmc.h>
 #include <asm/arch/cpu.h>
+#include <linux/types.h>
 
 u32 get_cpu_rev(void);
 u32 get_sysboot_value(void);

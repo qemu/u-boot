@@ -17,6 +17,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "cdp.h"
 

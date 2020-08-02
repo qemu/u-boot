@@ -7,6 +7,7 @@
 #include <common.h>
 #include <dm.h>
 #include <video_osd.h>
+#include <linux/types.h>
 
 int video_osd_get_info(struct udevice *dev, struct video_osd_info *info)
 {

@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <time.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 static inline struct mbox_ops *mbox_dev_ops(struct udevice *dev)
 {

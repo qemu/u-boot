@@ -7,8 +7,10 @@
  * Copyright (c) 2007 Carlos Munoz <carlos@kenati.com>
  */
 
+#include <compiler.h>
 #include <netdev.h>
 #include <asm/types.h>
+#include <linux/types.h>
 
 #define SHETHER_NAME "sh_eth"
 

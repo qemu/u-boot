@@ -18,6 +18,7 @@
 #ifndef __SANDBOX_FS__
 #define __SANDBOX_FS__
 
+#include <linux/types.h>
 struct blk_desc;
 struct disk_partition;
 

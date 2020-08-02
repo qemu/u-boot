@@ -66,6 +66,7 @@
  * 512-byte chunks, we have to allocate one more buffer and copy our VID header
  * to offset 448 of this buffer.
  *
+#include <linux/types.h>
  * The I/O sub-system does the following trick in order to avoid this extra
  * copy. It always allocates a @ubi->vid_hdr_alsize bytes buffer for the VID
  * header and returns a pointer to offset @ubi->vid_hdr_shift of this buffer.

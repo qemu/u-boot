@@ -20,6 +20,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <usb/ehci-ci.h>
 #include <hwconfig.h>
 #include <fsl_usb.h>

@@ -18,6 +18,7 @@
 #include <asm/gpio.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "i2s.h"
 #include "max98095.h"
 

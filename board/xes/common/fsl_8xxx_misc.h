@@ -6,6 +6,7 @@
 #ifndef __FSL_8XXX_MISC_H___
 #define __FSL_8XXX_MISC_H___
 
+#include <linux/types.h>
 uint get_board_derivative(void);
 
 #endif /* __FSL_8XXX_MISC_H__ */

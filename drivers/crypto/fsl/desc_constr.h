@@ -1,5 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /*
+#include <linux/types.h>
  * caam descriptor construction helper functions
  *
  * Copyright 2008-2014 Freescale Semiconductor, Inc.

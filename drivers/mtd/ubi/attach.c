@@ -11,6 +11,7 @@
  * This sub-system is responsible for attaching MTD devices and it also
  * implements flash media scanning.
  *
+#include <linux/types.h>
  * The attaching information is represented by a &struct ubi_attach_info'
  * object. Information about volumes is represented by &struct ubi_ainf_volume
  * objects which are kept in volume RB-tree with root at the @volumes field.

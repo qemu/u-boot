@@ -17,6 +17,7 @@
 #include <crypto/internal/rsa.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include "rsapubkey.asn1.h"
 #ifndef __UBOOT__
 #include "rsaprivkey.asn1.h"

@@ -2,6 +2,7 @@
 #define _LPC32XX_I2C_H
 
 #include <asm/types.h>
+#include <linux/types.h>
 
 /* i2c register set */
 struct lpc32xx_i2c_base {

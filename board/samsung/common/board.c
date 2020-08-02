@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cros_ec.h>
 #include <env.h>
 #include <errno.h>
@@ -38,6 +39,7 @@
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <samsung/misc.h>
 #include <dm/pinctrl.h>
 #include <dm.h>

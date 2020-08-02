@@ -36,6 +36,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/ioport.h>
+#include <linux/types.h>
 
 /* PCIe core registers */
 #define PCIE_CORE_CMD_STATUS_REG				0x4

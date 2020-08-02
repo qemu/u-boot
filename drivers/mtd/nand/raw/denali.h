@@ -7,6 +7,7 @@
 #ifndef __DENALI_H__
 #define __DENALI_H__
 
+#include <compiler.h>
 #include <linux/bitops.h>
 #include <linux/mtd/rawnand.h>
 #include <linux/types.h>

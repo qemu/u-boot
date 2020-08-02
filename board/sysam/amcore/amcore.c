@@ -14,6 +14,7 @@
 #include <asm/immap.h>
 #include <asm/io.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <dm/platform_data/serial_coldfire.h>
 
 DECLARE_GLOBAL_DATA_PTR;

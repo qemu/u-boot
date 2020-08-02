@@ -13,6 +13,7 @@
 #include <netdev.h>
 #include <asm/arch-rockchip/bootrom.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 static int get_ethaddr_from_eeprom(u8 *addr)
 {

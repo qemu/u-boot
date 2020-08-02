@@ -10,6 +10,7 @@
 #include <malloc.h>
 #include <net.h>
 #include <miiphy.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/u-boot.h>

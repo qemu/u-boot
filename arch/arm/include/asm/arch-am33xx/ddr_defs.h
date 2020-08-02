@@ -12,6 +12,7 @@
 
 #include <asm/arch/hardware.h>
 #include <asm/emif.h>
+#include <asm/types.h>
 
 /* AM335X EMIF Register values */
 #define VTP_CTRL_READY		(0x1 << 5)

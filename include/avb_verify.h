@@ -11,6 +11,7 @@
 #include <../lib/libavb/libavb.h>
 #include <mapmem.h>
 #include <mmc.h>
+#include <linux/types.h>
 
 #define AVB_MAX_ARGS			1024
 #define VERITY_TABLE_OPT_RESTART	"restart_on_corruption"

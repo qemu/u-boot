@@ -8,6 +8,7 @@
 #ifndef SATA_SIL3132_H
 #define SATA_SIL3132_H
 
+#include <linux/types.h>
 #define READ_CMD	0
 #define WRITE_CMD	1
 

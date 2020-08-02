@@ -8,6 +8,7 @@
 #ifndef _MTMIPS_DDR_H_
 #define _MTMIPS_DDR_H_
 
+#include <compiler.h>
 #include <linux/io.h>
 #include <linux/types.h>
 

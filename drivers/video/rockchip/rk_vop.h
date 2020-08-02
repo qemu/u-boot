@@ -7,6 +7,7 @@
 #define __RK_VOP_H__
 
 #include <asm/arch-rockchip/vop_rk3288.h>
+#include <asm/types.h>
 
 struct rk_vop_priv {
 	void *grf;

@@ -9,6 +9,7 @@
 #include <asm/arch/freeze_controller.h>
 #include <asm/arch/scan_manager.h>
 #include <asm/arch/system_manager.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 

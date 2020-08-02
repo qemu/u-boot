@@ -8,6 +8,7 @@
 #define _PFE_H_
 
 #include <elf.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include "cbus.h"
 

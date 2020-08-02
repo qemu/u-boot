@@ -8,11 +8,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <stdio.h>
 #include <usb.h>
 #include <linux/errno.h>
 #include <linux/compat.h>
+#include <linux/types.h>
 #include <linux/usb/xhci-fsl.h>
 #include <linux/usb/dwc3.h>
 #include <usb/xhci.h>

@@ -32,6 +32,7 @@
 #else
 #define _ULCAST_ (unsigned long)
 #define _U64CAST_ (u64)
+#include <asm/types.h>
 #endif
 
 /*

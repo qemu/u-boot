@@ -8,6 +8,7 @@
 #include <init.h>
 #include <stdio.h>
 #include <asm/fsl_lbc.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_MPC83xx
 #include "../mpc83xx/elbc/elbc.h"

@@ -60,6 +60,8 @@
 
 #if !defined(__ASSEMBLY__)
 
+#include <linux/types.h>
+
 /**
  * Information about the previous MTRR state, set up by mtrr_open()
  *

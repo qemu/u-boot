@@ -10,6 +10,7 @@
 #ifndef _ASM_CPU_H
 #define _ASM_CPU_H
 
+#include <linux/types.h>
 enum {
 	X86_VENDOR_INVALID = 0,
 	X86_VENDOR_INTEL,

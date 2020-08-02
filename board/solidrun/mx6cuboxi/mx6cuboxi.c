@@ -17,6 +17,7 @@
 #include <image.h>
 #include <init.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/arch/clock.h>
@@ -42,6 +43,7 @@
 #include <usb.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <usb/ehci-ci.h>
 
 DECLARE_GLOBAL_DATA_PTR;

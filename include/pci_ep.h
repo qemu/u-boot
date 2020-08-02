@@ -12,6 +12,7 @@
 #define _PCI_EP_H
 
 #include <pci.h>
+#include <linux/types.h>
 
 /**
  * enum pci_interrupt_pin - PCI INTx interrupt values

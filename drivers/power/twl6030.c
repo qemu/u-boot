@@ -5,6 +5,7 @@
  */
 #include <config.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/printk.h>
 

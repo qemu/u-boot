@@ -50,6 +50,7 @@
 #include <asm/coldfire/flexcan.h>
 #include <asm/coldfire/intctrl.h>
 #include <asm/coldfire/qspi.h>
+#include <linux/types.h>
 
 /* System Control Module */
 typedef struct scm_ctrl {

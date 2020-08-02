@@ -6,6 +6,7 @@
 #include <common.h>
 #include <dm.h>
 #include <errno.h>
+#include <stdbool.h>
 #include <syscon.h>
 #include <time.h>
 #include <asm/io.h>
@@ -13,6 +14,7 @@
 #include <linux/bitops.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/regulator.h>
 

@@ -11,6 +11,7 @@
 #include <stdbool.h>
 #include <usb.h>
 #include <generic-phy.h>
+#include <linux/types.h>
 
 /* Section 2.2.3 - N_PORTS */
 #define MAX_HC_PORTS		15

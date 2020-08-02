@@ -40,6 +40,7 @@
 #include <malloc.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "cadence_qspi.h"
 
 #define CQSPI_REG_POLL_US			1 /* 1us */

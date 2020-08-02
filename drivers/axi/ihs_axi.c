@@ -15,6 +15,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /**
  * struct ihs_axi_regs - Structure for the register map of a IHS AXI device

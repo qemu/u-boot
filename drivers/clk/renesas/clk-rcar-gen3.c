@@ -22,6 +22,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include <dt-bindings/clock/renesas-cpg-mssr.h>
 

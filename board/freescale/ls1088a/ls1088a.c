@@ -3,6 +3,7 @@
  * Copyright 2017-2018 NXP
  */
 #include <common.h>
+#include <compiler.h>
 #include <display_options.h>
 #include <env.h>
 #include <i2c.h>
@@ -14,6 +15,7 @@
 #include <fsl_ifc.h>
 #include <fsl_ddr.h>
 #include <fsl_sec.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
@@ -31,6 +33,7 @@
 #include <asm/arch/soc.h>
 #include <asm/arch-fsl-layerscape/fsl_icid.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "../common/qixis.h"
 #include "ls1088a_qixis.h"

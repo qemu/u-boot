@@ -13,6 +13,7 @@
 #include <asm/global_data.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static char log_fmt_chars[LOGF_COUNT] = "clFLfm";
 

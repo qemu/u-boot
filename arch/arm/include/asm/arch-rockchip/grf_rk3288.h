@@ -7,6 +7,7 @@
 #ifndef _ASM_ARCH_GRF_RK3288_H
 #define _ASM_ARCH_GRF_RK3288_H
 
+#include <asm/types.h>
 struct rk3288_grf_gpio_lh {
 	u32 l;
 	u32 h;

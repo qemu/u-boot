@@ -7,6 +7,7 @@
 #ifndef __AUDIO_CODEC_H__
 #define __AUDIO_CODEC_H__
 
+#include <linux/types.h>
 struct udevice;
 
 /*

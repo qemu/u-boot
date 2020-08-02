@@ -3,6 +3,7 @@
  * Copyright (C) 2018 Armadeus Systems
  */
 
+#include <compiler.h>
 #include <init.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/crm_regs.h>
@@ -12,6 +13,7 @@
 #include <asm/io.h>
 #include <common.h>
 #include <env.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

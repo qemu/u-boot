@@ -20,6 +20,7 @@
  * each of which contains log records (i.e., transactions) followed by
  * a log block trailer (zil_trailer_t).  The format of a log record
  * depends on the record (or transaction) type, but all records begin
+#include <linux/types.h>
  * with a common structure that defines the type, length, and txg.
  */
 

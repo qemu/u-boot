@@ -24,6 +24,7 @@
 #include <versalpl.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "../common/board.h"
 
 DECLARE_GLOBAL_DATA_PTR;

@@ -17,6 +17,7 @@
 #endif
 
 #include <irq_func.h>
+#include <linux/types.h>
 
 struct cmd_tbl;
 struct spi_slave;

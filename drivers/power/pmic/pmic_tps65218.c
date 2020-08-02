@@ -8,6 +8,7 @@
 #include <i2c.h>
 #include <stdio.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/tps65218.h>
 

@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/string.h>
 #include "pinctrl-exynos.h"

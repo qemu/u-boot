@@ -9,7 +9,9 @@
 #ifndef __F_DFU_H_
 #define __F_DFU_H_
 
+#include <compiler.h>
 #include <linux/compiler.h>
+#include <linux/types.h>
 #include <linux/usb/composite.h>
 
 #define DFU_CONFIG_VAL			1

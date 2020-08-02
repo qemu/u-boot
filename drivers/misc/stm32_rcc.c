@@ -13,6 +13,7 @@
 #include <dm/device_compat.h>
 #include <dm/lists.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 struct stm32_rcc_clk stm32_rcc_clk_f42x = {
 	.drv_name = "stm32fx_rcc_clock",

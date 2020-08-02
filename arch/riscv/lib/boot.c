@@ -6,6 +6,7 @@
 
 #include <command.h>
 #include <asm/u-boot-riscv.h>
+#include <linux/types.h>
 
 unsigned long do_go_exec(ulong (*entry)(int, char * const []),
 			 int argc, char *const argv[])

@@ -12,6 +12,7 @@
 #include <asm/arch-armv7/globaltimer.h>
 #include <asm/arch/rmobile.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 static struct globaltimer *global_timer = \
 		(struct globaltimer *)GLOBAL_TIMER_BASE_ADDR;

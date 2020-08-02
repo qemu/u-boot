@@ -17,6 +17,7 @@
 /* #define DEBUG	*/
 
 #include <common.h>
+#include <compiler.h>
 #include <console.h>
 #include <dm.h>
 #include <env.h>
@@ -39,6 +40,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <mtd/cfi_flash.h>
 #include <watchdog.h>
 

@@ -32,6 +32,7 @@
 
 #define id_to_core(x)	((x & 3) | (x >> 6))
 #ifndef __ASSEMBLY__
+#include <linux/types.h>
 extern u64 __real_cntfrq;
 extern void *secondary_boot_addr;
 extern void *secondary_boot_code_start;

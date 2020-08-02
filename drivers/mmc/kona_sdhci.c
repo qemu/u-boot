@@ -7,6 +7,7 @@
 #include <malloc.h>
 #include <sdhci.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <asm/kona-common/clk.h>

@@ -3,6 +3,7 @@
 
 #include <stdbool.h>
 #include <post.h>
+#include <linux/types.h>
 
 struct serial_device {
 	/* enough bytes to match alignment of following func pointer */

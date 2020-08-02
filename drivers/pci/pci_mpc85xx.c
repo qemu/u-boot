@@ -5,6 +5,7 @@
  *
  */
 #include <common.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <asm/bitops.h>
 #include <asm/cpm_85xx.h>
@@ -12,6 +13,7 @@
 #include <dm.h>
 #include <asm/fsl_law.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 struct mpc85xx_pci_priv {
 	void __iomem		*cfg_addr;

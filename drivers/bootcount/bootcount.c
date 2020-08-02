@@ -5,11 +5,14 @@
  */
 
 #include <bootcount.h>
+#include <compiler.h>
 #include <cpu_func.h>
+#include <stdbool.h>
 #include <asm/cache.h>
 #include <linux/compiler.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #if !defined(CONFIG_DM_BOOTCOUNT)
 /* Now implement the generic default functions */

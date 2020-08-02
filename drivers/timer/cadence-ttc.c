@@ -13,6 +13,7 @@
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/err.h>
+#include <linux/types.h>
 
 #define CNT_CNTRL_RESET		BIT(4)
 

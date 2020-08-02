@@ -13,6 +13,8 @@
 #ifndef __ASSEMBLY__
 
 /**
+#include <compiler.h>
+#include <asm/types.h>
  * struct sipi_params_16bit - 16-bit SIPI entry-point parameters
  *
  * These are set up in the same space as the SIPI 16-bit code so that each AP

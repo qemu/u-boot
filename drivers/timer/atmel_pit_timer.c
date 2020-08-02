@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define AT91_PIT_VALUE		0xfffff
 #define AT91_PIT_PITEN		BIT(24)		/* Timer Enabled */

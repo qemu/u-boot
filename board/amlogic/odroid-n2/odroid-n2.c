@@ -13,6 +13,7 @@
 #include <asm/io.h>
 #include <asm/arch/sm.h>
 #include <asm/arch/eth.h>
+#include <linux/types.h>
 
 #define EFUSE_MAC_OFFSET	20
 #define EFUSE_MAC_SIZE		12

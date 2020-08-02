@@ -7,6 +7,7 @@
 #ifndef __ASM_ARCH_STV0991_GPIO_H
 #define __ASM_ARCH_STV0991_GPIO_H
 
+#include <asm/types.h>
 enum gpio_direction {
 	GPIO_DIRECTION_IN,
 	GPIO_DIRECTION_OUT,

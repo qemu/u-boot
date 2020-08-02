@@ -11,6 +11,7 @@
  *	Steve Sakoman	<steve@sakoman.com>
  */
 #include <common.h>
+#include <compiler.h>
 #include <debug_uart.h>
 #include <fdtdec.h>
 #include <init.h>
@@ -24,6 +25,7 @@
 #include <linux/compiler.h>
 #include <asm/system.h>
 #include <dm/root.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

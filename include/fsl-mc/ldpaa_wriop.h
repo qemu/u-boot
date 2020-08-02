@@ -7,6 +7,7 @@
 #define __LDPAA_WRIOP_H
 
 #include <phy.h>
+#include <asm/types.h>
 
 #define DEFAULT_WRIOP_MDIO1_NAME "FSL_MDIO0"
 #define DEFAULT_WRIOP_MDIO2_NAME "FSL_MDIO1"

@@ -15,6 +15,7 @@
 #include <net.h>
 #include <netdev.h>
 #include <cpsw.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/u-boot.h>
 #include <dm/device_compat.h>
@@ -29,6 +30,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "cpsw_mdio.h"
 

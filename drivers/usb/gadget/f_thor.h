@@ -9,6 +9,7 @@
 #ifndef _USB_THOR_H_
 #define _USB_THOR_H_
 
+#include <compiler.h>
 #include <linux/compiler.h>
 #include <linux/sizes.h>
 

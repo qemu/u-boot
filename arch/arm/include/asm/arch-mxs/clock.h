@@ -9,6 +9,7 @@
 #ifndef __CLOCK_H__
 #define __CLOCK_H__
 
+#include <linux/types.h>
 enum mxc_clock {
 	MXC_ARM_CLK = 0,
 	MXC_AHB_CLK,

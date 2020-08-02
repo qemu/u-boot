@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <miiphy.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 
 /* macros copied over from mdio_sandbox.c */

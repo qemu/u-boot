@@ -10,6 +10,7 @@
 #include <vsprintf.h>
 #include <linux/ctype.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 enum {
 	OP_ID_XOR,

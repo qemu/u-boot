@@ -12,6 +12,8 @@
 #define __TISCI_PROTOCOL_H
 
 /**
+#include <compiler.h>
+#include <asm/types.h>
  * struct ti_sci_version_info - version information structure
  * @abi_major:	Major ABI version. Change here implies risk of backward
  *		compatibility break.

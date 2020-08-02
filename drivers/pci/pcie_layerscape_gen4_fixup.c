@@ -20,6 +20,7 @@
 #ifdef CONFIG_ARM
 #include <asm/arch/clock.h>
 #endif
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/errno.h>
 #include "pcie_layerscape_gen4.h"

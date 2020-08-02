@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <linux/kernel.h>
 #include "common.h"

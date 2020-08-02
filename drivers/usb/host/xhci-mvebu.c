@@ -6,12 +6,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <fdtdec.h>
 #include <log.h>
 #include <stdio.h>
 #include <usb.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 #include <asm/gpio.h>
 

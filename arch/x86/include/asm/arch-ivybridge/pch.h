@@ -12,6 +12,7 @@
 #define _ASM_ARCH_PCH_H
 
 #include <pci.h>
+#include <asm/types.h>
 
 /* PCH types */
 #define PCH_TYPE_CPT	0x1c /* CougarPoint */

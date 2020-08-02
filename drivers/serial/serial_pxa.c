@@ -20,6 +20,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <hang.h>
 #include <stdbool.h>
 #include <vsprintf.h>
@@ -33,6 +34,7 @@
 #include <serial.h>
 #include <watchdog.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -14,6 +14,7 @@
 #include <clk-uclass.h>
 #include <dm.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include <dt-bindings/clock/r8a774a1-cpg-mssr.h>
 

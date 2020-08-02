@@ -9,6 +9,7 @@
 #define __BTRFS_BTRFS_H__
 
 #include <linux/rbtree.h>
+#include <linux/types.h>
 #include "conv-funcs.h"
 
 struct btrfs_info {

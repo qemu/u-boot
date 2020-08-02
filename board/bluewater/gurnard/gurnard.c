@@ -39,6 +39,7 @@
 #include <dm/uclass-internal.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_GURNARD_SPLASH
 #include "splash_logo.h"

@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <stdbool.h>
 #include <asm/global_data.h>
@@ -15,6 +16,7 @@
 #include <dt-bindings/clock/agilex-clock.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #include <asm/arch/clock_manager.h>
 

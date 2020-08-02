@@ -24,6 +24,7 @@
 #include <asm/io.h>
 #include <asm/gpio.h>
 #include <asm/emif.h>
+#include <asm/types.h>
 #include <power/tps65217.h>
 #include "../common/bur_common.h"
 #include "../common/br_resetc.h"

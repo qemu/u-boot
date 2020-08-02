@@ -10,6 +10,7 @@
 #include <malloc.h>
 #include <uuid.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/time.h>
 
 struct btrfs_info btrfs_info;

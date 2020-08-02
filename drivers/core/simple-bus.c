@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 
 struct simple_bus_plat {

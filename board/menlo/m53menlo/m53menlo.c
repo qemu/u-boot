@@ -39,6 +39,7 @@
 #include <splash.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <usb/ehci-ci.h>
 #include <video_console.h>
 

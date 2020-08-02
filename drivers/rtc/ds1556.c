@@ -19,6 +19,7 @@
 #include <command.h>
 #include <rtc.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_CMD_DATE)
 

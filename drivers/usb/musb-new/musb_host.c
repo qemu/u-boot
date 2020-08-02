@@ -22,8 +22,11 @@
 #include <linux/dma-mapping.h>
 #else
 #include <common.h>
+#include <compiler.h>
+#include <stdbool.h>
 #include <usb.h>
 #include <linux/bug.h>
+#include <linux/types.h>
 #include "linux-compat.h"
 #include "usb-compat.h"
 #endif

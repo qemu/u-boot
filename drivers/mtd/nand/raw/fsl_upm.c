@@ -6,6 +6,7 @@
  *                    Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <log.h>
@@ -15,6 +16,7 @@
 #include <linux/mtd/mtd.h>
 #include <linux/mtd/fsl_upm.h>
 #include <nand.h>
+#include <linux/types.h>
 
 static void fsl_upm_start_pattern(struct fsl_upm *upm, u32 pat_offset)
 {

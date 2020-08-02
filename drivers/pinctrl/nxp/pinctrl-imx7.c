@@ -6,6 +6,7 @@
 #include <common.h>
 #include <dm.h>
 #include <dm/pinctrl.h>
+#include <linux/types.h>
 
 #include "pinctrl-imx.h"
 

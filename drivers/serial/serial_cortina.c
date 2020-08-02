@@ -6,12 +6,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <errno.h>
 #include <stdbool.h>
 #include <watchdog.h>
 #include <asm/io.h>
 #include <serial.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/compiler.h>
 #include <linux/errno.h>

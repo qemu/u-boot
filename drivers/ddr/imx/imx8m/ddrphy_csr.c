@@ -5,6 +5,7 @@
 
 #include <linux/kernel.h>
 #include <asm/arch/ddr.h>
+#include <linux/types.h>
 
 /* ddr phy trained csr */
 struct dram_cfg_param ddrphy_trained_csr[] = {

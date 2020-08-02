@@ -12,7 +12,9 @@
 #include <dm/device-internal.h>
 #include <linux/clk-provider.h>
 #endif
+#include <compiler.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 
 #if defined(CONFIG_DM) && defined(CONFIG_CLK)

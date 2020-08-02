@@ -15,6 +15,7 @@
  * header files exported to user space
  */
 
+#include <asm/types.h>
 typedef __signed__ char __s8;
 typedef unsigned char __u8;
 

@@ -12,6 +12,7 @@
 #include <asm/axi.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 int axi_sandbox_get_emul(struct udevice *bus, ulong address,
 			 enum axi_size_t size, struct udevice **emulp)

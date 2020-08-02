@@ -25,6 +25,7 @@
 #include <asm/arch/mem.h>
 #include <asm/u-boot.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "tricorder.h"
 #include "tricorder-eeprom.h"
 

@@ -8,6 +8,7 @@
 #ifndef _CMD_ETHSW_H_
 #define _CMD_ETHSW_H_
 
+#include <linux/types.h>
 #define ETHSW_MAX_CMD_PARAMS 20
 #define ETHSW_CMD_PORT_ALL -1
 #define ETHSW_CMD_VLAN_ALL -1

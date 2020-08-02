@@ -14,6 +14,7 @@
 #include <env_internal.h>
 #include <asm/global_data.h>
 #include <linux/stddef.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 #if defined(CONFIG_I2C_ENV_EEPROM_BUS)
 #include <i2c.h>

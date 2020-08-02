@@ -7,6 +7,7 @@
 #include <common.h>
 #include <blk.h>
 #include <command.h>
+#include <compiler.h>
 #include <console.h>
 #include <div64.h>
 #include <gzip.h>
@@ -14,6 +15,7 @@
 #include <malloc.h>
 #include <memalign.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>
 #include <watchdog.h>

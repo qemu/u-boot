@@ -18,6 +18,7 @@
 #include <asm/acpi_nhlt.h>
 #endif
 #include <asm-generic/gpio.h>
+#include <asm/types.h>
 #include <dt-bindings/sound/nhlt.h>
 #include <dm/acpi.h>
 #include <linux/errno.h>

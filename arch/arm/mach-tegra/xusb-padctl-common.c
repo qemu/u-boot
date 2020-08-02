@@ -8,6 +8,7 @@
 #include <common.h>
 #include <errno.h>
 #include <log.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>

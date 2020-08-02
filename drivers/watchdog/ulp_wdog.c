@@ -7,6 +7,7 @@
 #include <cpu_func.h>
 #include <asm/io.h>
 #include <asm/arch/imx-regs.h>
+#include <linux/types.h>
 
 /*
  * MX7ULP WDOG Register Map

@@ -10,9 +10,11 @@
 #include <errno.h>
 #include <log.h>
 #include <reset.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/ccu.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/log2.h>

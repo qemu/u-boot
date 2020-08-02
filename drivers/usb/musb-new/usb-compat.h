@@ -1,6 +1,7 @@
 #ifndef __USB_COMPAT_H__
 #define __USB_COMPAT_H__
 
+#include <asm/types.h>
 #include "usb.h"
 
 struct udevice;

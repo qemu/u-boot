@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <display_options.h>
 #include <dm.h>
 #include <stdbool.h>
@@ -14,6 +15,7 @@
 #include <asm/unaligned.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 
 /* TPM NVRAM location indices. */

@@ -9,6 +9,7 @@
  */
 
 #include <efi_selftest.h>
+#include <asm/types.h>
 #include <linux/string.h>
 
 #define EFI_ST_MAX_DATA_SIZE 16

@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <s_record.h>
+#include <linux/types.h>
 
 static int hex1_bin (char  c);
 static int hex2_bin (char *s);

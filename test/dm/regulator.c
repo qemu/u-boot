@@ -12,6 +12,7 @@
 #include <fdtdec.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <dm/device-internal.h>
 #include <dm/root.h>
 #include <dm/util.h>

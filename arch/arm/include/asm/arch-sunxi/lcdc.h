@@ -11,6 +11,7 @@
 
 #include <fdtdec.h>
 #include <stdbool.h>
+#include <asm/types.h>
 
 struct sunxi_lcdc_reg {
 	u32 ctrl;			/* 0x00 */

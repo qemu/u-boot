@@ -5,6 +5,8 @@
 
 #ifndef __FSL_QBMAN_H__
 #define __FSL_QBMAN_H__
+#include <compiler.h>
+#include <asm/types.h>
 void fdt_fixup_qportals(void *blob);
 void fdt_fixup_bportals(void *blob);
 void inhibit_portals(void __iomem *addr, int max_portals,

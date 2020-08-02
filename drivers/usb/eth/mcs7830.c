@@ -14,6 +14,7 @@
 #include <errno.h>
 #include <log.h>
 #include <net.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
@@ -25,6 +26,7 @@
 #include <usb.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "usb_ether.h"
 

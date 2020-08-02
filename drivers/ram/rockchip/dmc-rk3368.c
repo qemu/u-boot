@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <hang.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <dt-bindings/memory/rk3368-dmc.h>
@@ -28,6 +29,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 struct dram_info {
 	struct ram_info info;

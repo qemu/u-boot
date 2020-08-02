@@ -9,9 +9,11 @@
 
 #ifndef __ASSEMBLY__
 
+#include <compiler.h>
 #include <stdbool.h>
 #include <asm/processor.h>
 #include <asm/mrccache.h>
+#include <linux/types.h>
 
 enum pei_boot_mode_t {
 	PEI_BOOT_NONE = 0,

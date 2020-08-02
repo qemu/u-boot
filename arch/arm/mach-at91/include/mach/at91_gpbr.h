@@ -32,6 +32,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 typedef struct at91_gpbr {
 	u32 reg[4];
 } at91_gpbr_t;

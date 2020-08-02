@@ -14,6 +14,7 @@
 
 #include <efi_selftest.h>
 #include <stdbool.h>
+#include <linux/types.h>
 
 static const efi_guid_t text_input_ex_protocol_guid =
 		EFI_SIMPLE_TEXT_INPUT_EX_PROTOCOL_GUID;

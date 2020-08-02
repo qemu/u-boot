@@ -14,6 +14,7 @@
 #include <fsl_ddr_sdram.h>
 #include <asm/fsl_law.h>
 #include <asm/global_data.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_SYS_NAND_BASE)
 #include <nand.h>

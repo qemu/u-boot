@@ -11,6 +11,7 @@
 #define LOG_CATEGORY UCLASS_SPI
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
@@ -19,6 +20,7 @@
 #include <os.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/types.h>
 
 #include <linux/errno.h>
 #include <asm/spi.h>

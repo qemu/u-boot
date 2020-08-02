@@ -6,6 +6,7 @@
 #include <common.h>
 #include <dm.h>
 #include <asm/pch_common.h>
+#include <asm/types.h>
 
 u32 pch_common_sir_read(struct udevice *dev, int idx)
 {

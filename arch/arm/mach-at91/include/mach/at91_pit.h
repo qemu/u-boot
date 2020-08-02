@@ -12,6 +12,7 @@
 #ifndef AT91_PIT_H
 #define AT91_PIT_H
 
+#include <asm/types.h>
 typedef struct at91_pit {
 	u32	mr;	/* 0x00 Mode Register */
 	u32	sr;	/* 0x04 Status Register */

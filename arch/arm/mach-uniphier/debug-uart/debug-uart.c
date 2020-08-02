@@ -3,7 +3,9 @@
  * Copyright (C) 2016 Masahiro Yamada <yamada.masahiro@socionext.com>
  */
 
+#include <compiler.h>
 #include <debug_uart.h>
+#include <asm/types.h>
 #include <linux/io.h>
 #include <linux/serial_reg.h>
 

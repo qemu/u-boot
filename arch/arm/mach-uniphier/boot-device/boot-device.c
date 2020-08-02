@@ -6,7 +6,9 @@
 
 #include <command.h>
 #include <spl.h>
+#include <stdbool.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>
 #include <linux/errno.h>

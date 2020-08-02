@@ -16,6 +16,7 @@
 #include <asm/cache.h>
 #include <linux/kernel.h>
 #include <linux/soc/ti/ti_sci_protocol.h>
+#include <linux/types.h>
 #include <mach/spl.h>
 #include <spl.h>
 #include <asm/arch/sys_proto.h>

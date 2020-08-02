@@ -10,6 +10,7 @@
 #include <memalign.h>
 #include <nvme.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include "nvme.h"
 

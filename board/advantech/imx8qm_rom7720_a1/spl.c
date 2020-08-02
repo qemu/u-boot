@@ -14,6 +14,7 @@
 #include <asm/u-boot.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <asm/io.h>
 #include <asm/gpio.h>

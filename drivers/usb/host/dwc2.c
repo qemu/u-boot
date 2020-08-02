@@ -14,6 +14,7 @@
 #include <malloc.h>
 #include <memalign.h>
 #include <phys2bus.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <usb.h>
@@ -26,6 +27,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 #include <reset.h>
 

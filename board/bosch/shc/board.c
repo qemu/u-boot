@@ -40,6 +40,7 @@
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <power/tps65217.h>
 #include <env_internal.h>
 #include <watchdog.h>

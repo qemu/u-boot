@@ -77,6 +77,7 @@ are GPL, so this is, of course, GPL.
 #define __DRIVERS_NE2000_H__
 
 /* Enable NE2000 basic init function */
+#include <linux/types.h>
 #define NE2000_BASIC_INIT
 
 #define DP_DATA		0x10

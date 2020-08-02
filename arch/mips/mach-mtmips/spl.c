@@ -11,6 +11,7 @@
 #include <asm/sections.h>
 #include <linux/libfdt.h>
 #include <linux/sizes.h>
+#include <linux/types.h>
 #include <mach/serial.h>
 
 void __noreturn board_init_f(ulong dummy)

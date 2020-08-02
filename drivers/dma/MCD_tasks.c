@@ -3,6 +3,7 @@
  * Copyright (C) 2004-2007 Freescale Semiconductor, Inc.
  */
 
+#include <asm/types.h>
 /* Contains task code and structures for Multi-channel DMA */
 
 #include <common.h>

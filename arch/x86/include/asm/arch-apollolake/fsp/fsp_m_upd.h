@@ -8,7 +8,9 @@
 #define	__ASM_ARCH_FSP_M_UDP_H
 
 #ifndef __ASSEMBLY__
+#include <compiler.h>
 #include <asm/fsp2/fsp_api.h>
+#include <asm/types.h>
 
 #define FSP_DRAM_CHANNELS	4
 

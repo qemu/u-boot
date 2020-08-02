@@ -6,6 +6,7 @@
 #ifndef _XOR_H
 #define _XOR_H
 
+#include <asm/types.h>
 #define SRAM_BASE		0x40000000
 
 #define MV_XOR_MAX_UNIT		2	/* XOR unit == XOR engine */

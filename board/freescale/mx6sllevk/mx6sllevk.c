@@ -17,6 +17,7 @@
 #include <asm/mach-imx/boot_mode.h>
 #include <asm/io.h>
 #include <common.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/sizes.h>

@@ -17,6 +17,7 @@
 #include <asm/lapic.h>
 #include <asm/msr.h>
 #include <asm/turbo.h>
+#include <linux/types.h>
 
 #define BYT_PRV_CLK			0x800
 #define BYT_PRV_CLK_EN			(1 << 0)

@@ -8,6 +8,7 @@
 
 #include <binman_sym.h>
 #include <linker_lists.h>
+#include <linux/types.h>
 
 /* Platform-specific defines */
 #include <linux/compiler.h>

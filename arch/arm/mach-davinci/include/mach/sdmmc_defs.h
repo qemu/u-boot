@@ -10,6 +10,7 @@
 
 #include <asm/arch/hardware.h>
 #include <asm/u-boot.h>
+#include <linux/types.h>
 
 /* MMC Control Reg fields */
 #define MMCCTL_DATRST		(1 << 0)

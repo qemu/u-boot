@@ -7,6 +7,7 @@
 #ifndef __HW_SHA_H
 #define __HW_SHA_H
 #include <hash.h>
+#include <linux/types.h>
 
 /**
  * Computes hash value of input pbuf using h/w acceleration

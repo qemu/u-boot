@@ -19,6 +19,7 @@
 #include <asm/arch/pinmux.h>
 #include <asm/arch-tegra/cboot.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "../p2571/max77620_init.h"
 
 void pin_mux_mmc(void)

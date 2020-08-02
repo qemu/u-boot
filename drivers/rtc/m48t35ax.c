@@ -15,6 +15,7 @@
 #include <command.h>
 #include <rtc.h>
 #include <config.h>
+#include <linux/types.h>
 
 static uchar rtc_read  (uchar reg);
 static void  rtc_write (uchar reg, uchar val);

@@ -10,6 +10,7 @@
 #define _LINUX_VIRTIO_NET_H
 
 /* TODO: needs to be removed! */
+#include <compiler.h>
 #define ETH_ALEN				6
 
 /* The feature bitmap for virtio net */

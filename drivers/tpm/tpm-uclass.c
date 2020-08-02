@@ -11,6 +11,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <linux/unaligned/be_byteshift.h>
 #include <tpm-v1.h>
 #include <tpm-v2.h>

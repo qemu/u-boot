@@ -6,6 +6,7 @@
 #ifndef _FB_MMC_H_
 #define _FB_MMC_H_
 
+#include <asm/types.h>
 struct blk_desc;
 struct disk_partition;
 

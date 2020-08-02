@@ -5,6 +5,7 @@
 
 
 #include <common.h>
+#include <linux/types.h>
 
 
 /*

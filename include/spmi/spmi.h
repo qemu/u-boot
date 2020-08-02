@@ -2,6 +2,7 @@
 #define _SPMI_SPMI_H
 
 /**
+#include <linux/types.h>
  * struct dm_spmi_ops - SPMI device I/O interface
  *
  * Should be implemented by UCLASS_SPMI device drivers. The standard

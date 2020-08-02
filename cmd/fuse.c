@@ -14,6 +14,7 @@
 #include <fuse.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/string.h>
 

@@ -7,6 +7,7 @@
 #define __asm_pch_common_h
 
 /* Common Intel SATA registers */
+#include <asm/types.h>
 #define SATA_SIRI		0xa0 /* SATA Indexed Register Index */
 #define SATA_SIRD		0xa4 /* SATA Indexed Register Data */
 #define SATA_SP			0xd0 /* Scratchpad */

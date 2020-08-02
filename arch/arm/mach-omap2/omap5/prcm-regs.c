@@ -11,6 +11,7 @@
 
 #include <asm/omap_common.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 struct prcm_regs const omap5_es1_prcm = {
 	/* cm1.ckgen */

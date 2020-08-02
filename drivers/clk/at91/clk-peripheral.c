@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <malloc.h>
 #include <linux/io.h>
+#include <linux/types.h>
 #include <mach/at91_pmc.h>
 #include "pmc.h"
 

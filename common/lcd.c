@@ -7,6 +7,7 @@
  */
 
 /* #define DEBUG */
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <command.h>

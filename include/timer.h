@@ -13,6 +13,7 @@
  *
  * @return - 0 on success or error number
  */
+#include <asm/types.h>
 int dm_timer_init(void);
 
 /*

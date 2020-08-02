@@ -16,6 +16,7 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <asm/byteorder.h>
@@ -24,6 +25,7 @@
 #include <linux/bug.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include <usb/xhci.h>
 

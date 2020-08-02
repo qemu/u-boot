@@ -16,6 +16,7 @@
 #include <stdbool.h>
 #include <dm/platdata.h>	/* For platform data support - non dt world */
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /**
  * enum rproc_mem_type - What type of memory model does the rproc use

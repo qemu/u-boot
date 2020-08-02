@@ -12,6 +12,7 @@
 #include <mapmem.h>
 #include <stdio.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 static int simple_hello(struct udevice *dev, int ch)
 {

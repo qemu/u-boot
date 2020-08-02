@@ -9,6 +9,8 @@
 #define _PINCTRL_MTMIPS_COMMON_H_
 
 #include <common.h>
+#include <compiler.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 
 struct mtmips_pmx_func {

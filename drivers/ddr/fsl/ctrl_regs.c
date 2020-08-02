@@ -11,11 +11,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <fsl_ddr_sdram.h>
 #include <fsl_errata.h>
 #include <fsl_ddr.h>
 #include <fsl_immap.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/bitops.h>
 #include <asm/io.h>
@@ -23,6 +25,7 @@
 	defined(CONFIG_ARM)
 #include <asm/arch/clock.h>
 #endif
+#include <asm/types.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
 

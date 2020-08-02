@@ -10,6 +10,7 @@
  * GPIO Register map for LPC32xx
  */
 
+#include <asm/types.h>
 struct gpio_regs {
 	u32 p3_inp_state;
 	u32 p3_outp_set;

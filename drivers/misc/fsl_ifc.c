@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <fsl_ifc.h>
 #include <part.h>
 #include <stdio.h>

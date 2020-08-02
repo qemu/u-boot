@@ -6,6 +6,7 @@
  *      Rohan Garg <rohan.garg@collabora.com>
  */
 
+#include <asm/types.h>
 int rockchip_cpuid_from_efuse(const u32 cpuid_offset,
 			      const u32 cpuid_length,
 			      u8 *cpuid);

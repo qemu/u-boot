@@ -19,12 +19,14 @@
 #include <malloc.h>
 #include <mapmem.h>
 #include <splash.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <video.h>
 #include <vsprintf.h>
 #include <asm/byteorder.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static int bmp_info (ulong addr);
 

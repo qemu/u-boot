@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <image.h>
 #include <init.h>
@@ -18,6 +19,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "common.h"
 #include <dm.h>
 #include <remoteproc.h>

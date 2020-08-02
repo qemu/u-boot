@@ -7,6 +7,7 @@
 #define __SOCFPGA_PINMUX_CONFIG_H__
 
 /* pin MUX configuration data */
+#include <asm/types.h>
 const u8 sys_mgr_init_table[] = {
 	0, /* EMACIO0 */
 	2, /* EMACIO1 */

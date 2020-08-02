@@ -7,10 +7,12 @@
 #include <common.h>
 #include <blk.h>
 #include <part.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 struct blk_driver *blk_driver_lookup_type(int if_type)
 {

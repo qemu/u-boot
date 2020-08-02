@@ -6,6 +6,7 @@
  */
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <display_options.h>
 #include <eeprom.h>
 #include <i2c.h>
@@ -13,6 +14,7 @@
 #include <vsprintf.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 
 #include "tricorder-eeprom.h"

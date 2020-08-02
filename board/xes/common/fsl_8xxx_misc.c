@@ -21,6 +21,7 @@ int board_flash_wp_on(void)
 	return 0;
 }
 #endif
+#include <linux/types.h>
 
 /*
  * Return a board's derivative model number.  For example:

@@ -7,6 +7,7 @@
 #define OPTEE_SMC_H
 
 #include <stdbool.h>
+#include <asm/types.h>
 #include <linux/arm-smccc.h>
 #include <linux/bitops.h>
 

@@ -6,6 +6,7 @@
 #include <common.h>
 #include <mmc.h>
 #include <malloc.h>
+#include <asm/types.h>
 
 /*
  * The environment variables are written to just after the u-boot image

@@ -15,6 +15,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "pic32_eth.h"
 
 static int pic32_mdio_write(struct mii_dev *bus,

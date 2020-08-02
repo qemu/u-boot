@@ -57,6 +57,7 @@
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "smc91111.h"
 #include <net.h>
 

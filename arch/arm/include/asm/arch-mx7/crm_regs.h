@@ -20,6 +20,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <linux/types.h>
 struct mxc_ccm_ccgr {
 	uint32_t ccgr;
 	uint32_t ccgr_set;

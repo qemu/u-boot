@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <clock_legacy.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <env.h>
 #include <image.h>
@@ -21,6 +22,7 @@
 #include <asm/arch/ppa.h>
 #include <asm/arch/soc.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

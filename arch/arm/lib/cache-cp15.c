@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <log.h>
 #include <stdio.h>
@@ -15,6 +16,7 @@
 #include <linux/compiler.h>
 #include <asm/armv7_mpu.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #if !(CONFIG_IS_ENABLED(SYS_ICACHE_OFF) && CONFIG_IS_ENABLED(SYS_DCACHE_OFF))
 

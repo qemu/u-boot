@@ -16,6 +16,7 @@
 #include <log.h>
 #include <net.h>
 #include <rand.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <uuid.h>
@@ -23,6 +24,7 @@
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <net/tftp.h>
 #include "bootp.h"
 #ifdef CONFIG_LED_STATUS

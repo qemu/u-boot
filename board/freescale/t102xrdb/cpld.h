@@ -4,6 +4,7 @@
  *
  */
 
+#include <asm/types.h>
 struct cpld_data {
 	u8 cpld_ver;		/* 0x00 - CPLD Major Revision Register */
 	u8 cpld_ver_sub;	/* 0x01 - CPLD Minor Revision Register */

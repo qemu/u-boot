@@ -20,6 +20,7 @@
 #include <dm/uclass-internal.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <test/ut.h>
 #include "acpi.h"
 

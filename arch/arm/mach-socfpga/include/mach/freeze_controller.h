@@ -6,6 +6,7 @@
 #ifndef	_FREEZE_CONTROLLER_H_
 #define	_FREEZE_CONTROLLER_H_
 
+#include <asm/types.h>
 struct socfpga_freeze_controller {
 	u32	vioctrl;
 	u32	padding[3];

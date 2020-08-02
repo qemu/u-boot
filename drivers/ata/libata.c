@@ -9,6 +9,7 @@
 #include <compiler.h>
 #include <libata.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/string.h>
 
 u64 ata_id_n_sectors(u16 *id)

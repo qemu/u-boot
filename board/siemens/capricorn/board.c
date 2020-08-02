@@ -7,6 +7,7 @@
  */
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <dm.h>
 #include <env.h>
 #include <errno.h>
@@ -33,6 +34,7 @@
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "../common/factoryset.h"
 
 #define GPIO_PAD_CTRL \

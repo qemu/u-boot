@@ -14,6 +14,7 @@
  * #define NUMBER_OF_LVDS_MODULE 1
  * #define PHY_BASEADDR_LVDS_MODULE	0xC010A000
  */
+#include <asm/types.h>
 #define	PHY_BASEADDR_LVDS_LIST	\
 		{ PHY_BASEADDR_LVDS_MODULE }
 

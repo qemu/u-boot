@@ -5,6 +5,7 @@
  * Uma Shankar <uma.shankar@samsung.com>
  * Manjunatha C Achar <a.manjunatha@samsung.com>
  *
+#include <linux/types.h>
  * Journal data structures and headers for Journaling feature of ext4
  * have been referred from JBD2 (Journaling Block device 2)
  * implementation in Linux Kernel.

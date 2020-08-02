@@ -6,6 +6,7 @@
 /**
  * fastboot_buf_addr - base address of the fastboot download buffer
  */
+#include <asm/types.h>
 extern void *fastboot_buf_addr;
 
 /**

@@ -11,6 +11,7 @@
 #ifndef	_SYS_DNODE_H
 #define	_SYS_DNODE_H
 
+#include <linux/types.h>
 #include <zfs/spa.h>
 
 /*

@@ -9,6 +9,7 @@
  */
 
 #include <common.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 
 #include "musb_core.h"

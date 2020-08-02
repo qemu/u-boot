@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/arch/clock-g12a.h>
 #include <asm/io.h>
 #include <clk-uclass.h>
@@ -20,6 +21,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "clk_meson.h"
 
 /* This driver support only basic clock tree operations :

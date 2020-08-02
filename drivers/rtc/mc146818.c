@@ -13,6 +13,7 @@
 #include <dm.h>
 #include <rtc.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_X86) || defined(CONFIG_MALTA)
 #include <asm/io.h>

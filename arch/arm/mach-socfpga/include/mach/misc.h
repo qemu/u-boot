@@ -8,6 +8,7 @@
 
 #include <stdbool.h>
 #include <asm/sections.h>
+#include <asm/types.h>
 
 void dwmac_deassert_reset(const unsigned int of_reset_id, const u32 phymode);
 

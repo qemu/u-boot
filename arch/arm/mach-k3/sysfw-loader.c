@@ -24,6 +24,7 @@
 #include <dfu.h>
 #include <dm/uclass-internal.h>
 #include <spi_flash.h>
+#include <linux/types.h>
 
 #include <asm/arch/sys_proto.h>
 #include "common.h"

@@ -9,6 +9,7 @@
 #include <init.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>

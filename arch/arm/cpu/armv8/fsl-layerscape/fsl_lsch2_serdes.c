@@ -4,9 +4,11 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <stdio.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <asm/arch/fsl_serdes.h>

@@ -16,6 +16,7 @@
 #include <linux/errno.h>
 #include <linux/sizes.h>
 #include <linux/stddef.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

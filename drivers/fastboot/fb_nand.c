@@ -4,6 +4,7 @@
  * Copyright 2015 Free Electrons.
  */
 
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <blk.h>
@@ -12,6 +13,7 @@
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <fastboot.h>
 #include <image-sparse.h>

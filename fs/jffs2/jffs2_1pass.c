@@ -122,6 +122,7 @@
 #include <linux/stat.h>
 #include <linux/string.h>
 #include <linux/time.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 #include <watchdog.h>
 #include <jffs2/jffs2.h>

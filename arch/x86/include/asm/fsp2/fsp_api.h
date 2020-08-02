@@ -9,8 +9,10 @@
 #ifndef __ASM_FSP2_API_H
 #define __ASM_FSP2_API_H
 
+#include <compiler.h>
 #include <stdbool.h>
 #include <asm/fsp/fsp_api.h>
+#include <asm/types.h>
 
 struct fspm_upd;
 struct fsps_upd;

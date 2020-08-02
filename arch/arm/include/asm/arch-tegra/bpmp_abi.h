@@ -73,6 +73,7 @@
  *
  * @todo document the flags
  */
+#include <linux/types.h>
 struct mrq_request {
 	/** @brief MRQ number of the request */
 	uint32_t mrq;

@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <env.h>
 #include <fdt_support.h>
 #include <hwconfig.h>
@@ -14,6 +15,7 @@
 #include <netdev.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/compiler.h>
 #include <asm/mmu.h>

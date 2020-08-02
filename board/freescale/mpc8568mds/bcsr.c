@@ -6,6 +6,7 @@
 #include <common.h>
 #include <flash.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 #include "bcsr.h"
 

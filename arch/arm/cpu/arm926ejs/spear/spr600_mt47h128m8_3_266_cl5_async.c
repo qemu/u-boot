@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <asm/types.h>
 
 #if (CONFIG_DDR_PLL2)
 

@@ -72,6 +72,7 @@
 #ifndef __ASSEMBLY__
 
 /* variable range MTRR usage */
+#include <asm/types.h>
 enum {
 	MTRR_VAR_ROM,
 	MTRR_VAR_ESRAM,

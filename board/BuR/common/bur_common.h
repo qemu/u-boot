@@ -17,6 +17,7 @@
 int load_lcdtiming(struct am335x_lcdpanel *panel);
 #endif
 
+#include <asm/types.h>
 void br_summaryscreen(void);
 void pmicsetup(u32 mpupll, unsigned int bus);
 void enable_uart0_pin_mux(void);

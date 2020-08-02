@@ -22,6 +22,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 /*
  * Clock types that we can use as a source. The Tegra20 has muxes for the

@@ -20,6 +20,7 @@
 #include <linux/errno.h>
 #include <linux/iopoll.h>
 #include <asm/arch-rockchip/clock.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

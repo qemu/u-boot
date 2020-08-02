@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <asm/arch/spr_misc.h>
 #include <asm/arch/spr_defs.h>
+#include <asm/types.h>
 
 void spear_late_init(void)
 {

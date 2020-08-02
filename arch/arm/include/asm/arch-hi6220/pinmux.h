@@ -57,6 +57,7 @@
 /* maybe more registers, but highest used is 123 */
 #define REG_NUM 123
 
+#include <linux/types.h>
 struct hi6220_pinmux0_regs {
 	uint32_t	iomg[REG_NUM];
 };

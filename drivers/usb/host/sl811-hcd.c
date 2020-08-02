@@ -20,9 +20,11 @@
 
 #include <common.h>
 #include <mpc8xx.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <usb.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>

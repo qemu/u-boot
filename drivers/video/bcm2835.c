@@ -12,6 +12,7 @@
 #include <asm/cache.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 static int bcm2835_video_probe(struct udevice *dev)
 {

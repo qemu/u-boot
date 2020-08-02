@@ -19,6 +19,7 @@
 #include <spi.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include <asm/types.h>
 #include <asm/io.h>

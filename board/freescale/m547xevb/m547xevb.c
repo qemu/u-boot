@@ -15,6 +15,7 @@
 #include <asm/global_data.h>
 #include <asm/immap.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 
 DECLARE_GLOBAL_DATA_PTR;

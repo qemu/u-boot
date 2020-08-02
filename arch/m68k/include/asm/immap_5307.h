@@ -7,6 +7,7 @@
 #ifndef __IMMAP_5307__
 #define __IMMAP_5307__
 
+#include <asm/types.h>
 #define MMAP_SIM	(CONFIG_SYS_MBAR + 0x00000000)
 #define MMAP_INTC	(CONFIG_SYS_MBAR + 0x00000040)
 #define MMAP_CSM	(CONFIG_SYS_MBAR + 0x00000080)

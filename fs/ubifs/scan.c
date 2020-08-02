@@ -22,6 +22,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #endif
 #include "ubifs.h"
 

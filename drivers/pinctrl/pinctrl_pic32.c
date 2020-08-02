@@ -5,12 +5,14 @@
  * Written by Purna Chandra Mandal <purna.mandal@microchip.com>
  */
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <errno.h>
 #include <log.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <dm/pinctrl.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>

@@ -12,6 +12,7 @@
 #include <errno.h>
 #include <stdio.h>
 #include <usb.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <usb/ehci-ci.h>

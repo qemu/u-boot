@@ -27,6 +27,7 @@
 #include <vsprintf.h>
 #include <xyzModem.h>
 #include <stdarg.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 #include <watchdog.h>
 

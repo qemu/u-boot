@@ -16,6 +16,7 @@
 #include <crypto/internal/rsa.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/rsa-mod-exp.h>
 
 /**

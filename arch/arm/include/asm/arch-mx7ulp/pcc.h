@@ -8,6 +8,7 @@
 
 #include <stdbool.h>
 #include <asm/arch/scg.h>
+#include <asm/types.h>
 
 /* PCC2 */
 

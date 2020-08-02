@@ -8,6 +8,7 @@
 
 #include <net.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_ARM64
 

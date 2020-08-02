@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/armada100.h>
+#include <asm/types.h>
 
 #define UARTCLK14745KHZ	(APBC_APBCLK | APBC_FNCLK | APBC_FNCLKSEL(1))
 #define SET_MRVL_ID	(1<<8)

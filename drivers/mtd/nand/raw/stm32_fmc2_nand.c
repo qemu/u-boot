@@ -6,10 +6,13 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <nand.h>
 #include <reset.h>
+#include <stdbool.h>
+#include <asm/types.h>
 #include <linux/bitfield.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

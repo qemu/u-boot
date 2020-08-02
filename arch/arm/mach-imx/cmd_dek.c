@@ -15,6 +15,7 @@
 #include <fsl_sec.h>
 #include <asm/arch/clock.h>
 #include <mapmem.h>
+#include <linux/types.h>
 
 /**
 * blob_dek() - Encapsulate the DEK as a blob using CAM's Key

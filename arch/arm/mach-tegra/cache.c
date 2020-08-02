@@ -11,6 +11,7 @@
 #if IS_ENABLED(CONFIG_TEGRA_GP_PADCTRL)
 #include <asm/arch/gp_padctrl.h>
 #endif
+#include <asm/types.h>
 
 #ifndef CONFIG_ARM64
 void config_cache(void)

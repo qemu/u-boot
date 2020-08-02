@@ -18,6 +18,7 @@
 #include <net.h>
 #include <spi.h>
 #include <spl.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/arch/cpu.h>
@@ -36,6 +37,7 @@
 #include <cpsw.h>
 #include <video.h>
 #include <watchdog.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>

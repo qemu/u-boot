@@ -4,6 +4,7 @@
  *
  * Copyright (C) 2005-2006 Atmel Corporation
  *
+#include <asm/types.h>
  * Modified to support C structure SoC access by
  * Andreas Bießmann <biessmann@corscience.de>
  */

@@ -10,6 +10,7 @@
 #include <init.h>
 #include <asm/io.h>
 #include <env.h>
+#include <asm/types.h>
 #include <linux/ctype.h>
 #include <linux/kernel.h>
 

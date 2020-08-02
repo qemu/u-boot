@@ -8,6 +8,7 @@
  * Contains general API for the Management Complex firmware
  */
 
+#include <linux/types.h>
 struct fsl_mc_io;
 
 /**

@@ -12,6 +12,7 @@
  * @module: ID of module to power on (BCM2835_MBOX_POWER_DEVID_...)
  * @return 0 if OK, -EIO on error
  */
+#include <linux/types.h>
 int bcm2835_power_on_module(u32 module);
 
 /**

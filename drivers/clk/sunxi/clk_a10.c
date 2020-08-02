@@ -13,6 +13,7 @@
 #include <dt-bindings/reset/sun4i-a10-ccu.h>
 #include <linux/bitops.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 static struct ccu_clk_gate a10_gates[] = {
 	[CLK_AHB_OTG]		= GATE(0x060, BIT(0)),

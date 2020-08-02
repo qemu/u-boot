@@ -17,6 +17,7 @@
 #include <linux/list.h>
 #include <mmc.h>
 #include <spi_flash.h>
+#include <linux/types.h>
 #include <linux/usb/composite.h>
 
 enum dfu_device_type {

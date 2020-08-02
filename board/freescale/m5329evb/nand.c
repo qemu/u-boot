@@ -11,6 +11,7 @@
 #include <common.h>
 #include <asm/io.h>
 #include <asm/immap.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_CMD_NAND)
 #include <nand.h>

@@ -4,6 +4,7 @@
  * (c) Copyright 2016 Topic Embedded Products.
  */
 
+#include <compiler.h>
 #include <asm/io.h>
 #include <asm/spl.h>
 #include <asm/arch/sys_proto.h>

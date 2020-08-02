@@ -18,6 +18,7 @@
 #include <asm/arch/clock.h>
 #include <asm/arch/funcmux.h>
 #include <asm/arch-tegra/timer.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/input.h>

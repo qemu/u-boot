@@ -16,6 +16,7 @@
 #include <lcd.h>
 #include <os.h>
 #include <serial.h>
+#include <stdbool.h>
 #include <video.h>
 #include <asm/global_data.h>
 #include <linux/compiler.h>
@@ -23,6 +24,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

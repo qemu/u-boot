@@ -4,6 +4,7 @@
  */
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <dm.h>
 #include <env.h>
 #include <clk.h>
@@ -25,6 +26,7 @@
 #include <asm/u-boot.h>
 #include <linux/err.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

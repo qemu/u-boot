@@ -12,6 +12,7 @@
 #include <asm/arch/mipi_dsim.h>
 #include <asm/arch/power.h>
 #include <asm/arch/cpu.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 
 #include "exynos_mipi_dsi_lowlevel.h"

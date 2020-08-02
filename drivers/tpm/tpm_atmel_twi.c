@@ -15,6 +15,7 @@
 #include <asm/unaligned.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "tpm_internal.h"
 

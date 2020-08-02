@@ -7,6 +7,7 @@
 #define _X86_TABLES_H_
 
 #include <tables_csum.h>
+#include <linux/types.h>
 
 #define ROM_TABLE_ADDR	CONFIG_ROM_TABLE_ADDR
 #define ROM_TABLE_END	(CONFIG_ROM_TABLE_ADDR + CONFIG_ROM_TABLE_SIZE - 1)

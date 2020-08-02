@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <watchdog.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <asm/io.h>

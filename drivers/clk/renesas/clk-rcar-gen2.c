@@ -20,6 +20,7 @@
 #include <asm/io.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <dt-bindings/clock/renesas-cpg-mssr.h>
 

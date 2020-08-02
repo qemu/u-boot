@@ -9,6 +9,7 @@
 #ifndef _PCH_GBE_H_
 #define _PCH_GBE_H_
 
+#include <asm/types.h>
 #include <linux/kernel.h>
 #define PCH_GBE_TIMEOUT		(3 * CONFIG_SYS_HZ)
 

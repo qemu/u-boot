@@ -28,6 +28,7 @@
  * @size:	Access size
  * @return 0 if OK, -ve on error
  */
+#include <linux/types.h>
 int pci_x86_read_config(pci_dev_t bdf, uint offset, ulong *valuep,
 			enum pci_size_t size);
 

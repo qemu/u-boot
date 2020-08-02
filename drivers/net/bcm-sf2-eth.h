@@ -8,6 +8,7 @@
 
 #include <phy.h>
 #include <stdbool.h>
+#include <linux/types.h>
 
 #define RX_BUF_SIZE	2048
 /* RX_BUF_NUM must be power of 2 */

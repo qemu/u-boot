@@ -7,6 +7,7 @@
 #define	_CLK_AGILEX_
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/bitops.h>
 #endif
 

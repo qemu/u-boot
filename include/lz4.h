@@ -19,6 +19,7 @@
  *	buffer is overrun, -EEPROTO if the compressed data causes an error in
  *	the decompression algorithm
  */
+#include <linux/types.h>
 int ulz4fn(const void *src, size_t srcn, void *dst, size_t *dstn);
 
 #endif

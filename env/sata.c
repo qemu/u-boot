@@ -6,9 +6,11 @@
 /* #define DEBUG */
 
 #include <common.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include <command.h>
 #include <env.h>

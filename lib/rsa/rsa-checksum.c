@@ -10,6 +10,7 @@
 #include <linux/errno.h>
 #include <asm/unaligned.h>
 #include <hash.h>
+#include <linux/types.h>
 #else
 #include "fdt_host.h"
 #endif

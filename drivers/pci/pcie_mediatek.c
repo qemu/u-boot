@@ -9,6 +9,7 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <generic-phy.h>
 #include <log.h>
@@ -23,6 +24,7 @@
 #include <linux/iopoll.h>
 #include <linux/list.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 /* PCIe shared registers */
 #define PCIE_SYS_CFG		0x00

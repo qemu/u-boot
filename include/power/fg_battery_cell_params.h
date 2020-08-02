@@ -70,4 +70,5 @@ u16 cell_character2[16] = {
 	0x0100
 };
 #endif
+#include <asm/types.h>
 #endif /* __FG_BATTERY_CELL_PARAMS_H_ */

@@ -13,6 +13,7 @@
 #ifndef __BLOBLIST_H
 #define __BLOBLIST_H
 
+#include <linux/types.h>
 enum {
 	BLOBLIST_VERSION	= 0,
 	BLOBLIST_MAGIC		= 0xb00757a3,

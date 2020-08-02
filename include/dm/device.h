@@ -18,6 +18,7 @@
 #include <linux/kernel.h>
 #include <linux/list.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 struct driver_info;
 

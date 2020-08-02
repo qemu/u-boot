@@ -26,6 +26,7 @@
 #include <errno.h>
 #include <fdt_support.h>
 #include <reset.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <wait_bit.h>
 #include <asm/global_data.h>
@@ -33,6 +34,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include <asm/bitops.h>
 #include <asm/gpio.h>

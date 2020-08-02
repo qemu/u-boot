@@ -8,6 +8,7 @@
 #include <display_options.h>
 #include <dm.h>
 #include <stdio.h>
+#include <linux/types.h>
 #include <video_osd.h>
 #include <asm/test.h>
 #include <dm/test.h>

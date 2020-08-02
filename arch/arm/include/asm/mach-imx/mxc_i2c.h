@@ -9,6 +9,7 @@
 #if CONFIG_IS_ENABLED(CLK)
 #include <clk.h>
 #endif
+#include <linux/types.h>
 
 struct i2c_pin_ctrl {
 	iomux_v3_cfg_t i2c_mode;

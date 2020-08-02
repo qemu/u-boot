@@ -9,6 +9,7 @@
 
 /* Port Id lives in bits 23:16 and register offset lives in 15:0 of address */
 #include <stdbool.h>
+#include <linux/types.h>
 #define PCR_PORTID_SHIFT	16
 
 /**

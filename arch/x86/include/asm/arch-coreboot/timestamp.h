@@ -8,6 +8,7 @@
 #ifndef __COREBOOT_TIMESTAMP_H__
 #define __COREBOOT_TIMESTAMP_H__
 
+#include <linux/types.h>
 enum timestamp_id {
 	/* coreboot specific timestamp IDs */
 	TS_START_ROMSTAGE = 1,

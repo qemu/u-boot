@@ -3,11 +3,13 @@
  * Copyright (C) 2019 Intel Corporation <www.intel.com>
  *
  */
+#include <compiler.h>
 #include <dm.h>
 #include <hang.h>
 #include <stdio.h>
 #include <wait_bit.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #include <asm/io.h>
 #include <linux/bitops.h>

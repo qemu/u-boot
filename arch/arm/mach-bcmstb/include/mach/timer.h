@@ -8,6 +8,7 @@
 #ifndef _BCMSTB_TIMER_H
 #define _BCMSTB_TIMER_H
 
+#include <linux/types.h>
 uint64_t get_ticks(void);
 
 #endif /* _BCMSTB_TIMER_H */

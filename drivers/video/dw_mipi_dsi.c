@@ -11,10 +11,12 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dsi_host.h>
 #include <dm.h>
 #include <errno.h>
 #include <panel.h>
+#include <stdbool.h>
 #include <video.h>
 #include <asm/io.h>
 #include <asm/arch/gpio.h>
@@ -27,6 +29,7 @@
 #include <video_bridge.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define HWVER_131			0x31333100	/* IP version 1.31 */
 

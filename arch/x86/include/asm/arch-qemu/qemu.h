@@ -7,6 +7,7 @@
 #define _ARCH_QEMU_H_
 
 /* Programmable Attribute Map (PAM) Registers */
+#include <asm/types.h>
 #define I440FX_PAM		0x59
 #define Q35_PAM			0x90
 #define PAM_NUM			7

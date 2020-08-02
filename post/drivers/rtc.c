@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <time.h>
+#include <linux/types.h>
 
 /*
  * RTC test

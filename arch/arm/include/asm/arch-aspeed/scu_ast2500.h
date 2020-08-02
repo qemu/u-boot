@@ -141,6 +141,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 struct ast2500_clk_priv {
 	struct ast2500_scu *scu;
 };

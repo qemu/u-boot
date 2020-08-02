@@ -14,6 +14,7 @@
 #include <asm/io.h>
 #include <asm/arch/psc_defs.h>
 #include <asm/arch/hardware.h>
+#include <asm/types.h>
 
 /**
  * cpu_to_bus - swap bytes of the 32-bit data if the device is BE

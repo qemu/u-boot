@@ -16,6 +16,7 @@
 #include <dm/device-internal.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "usb_ether.h"
 

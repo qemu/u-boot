@@ -10,6 +10,7 @@
 #include <spl.h>
 #include <stdio.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #include <lzma/LzmaTypes.h>
 #include <lzma/LzmaDec.h>

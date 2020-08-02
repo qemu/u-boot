@@ -14,6 +14,7 @@
 #include <clk.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #include "clk.h"
 

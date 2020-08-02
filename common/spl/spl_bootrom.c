@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <spl.h>
 
 __weak int board_return_to_bootrom(struct spl_image_info *spl_image,

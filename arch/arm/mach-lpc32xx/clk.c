@@ -9,6 +9,7 @@
 #include <asm/arch/cpu.h>
 #include <asm/arch/clk.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 static struct clk_pm_regs *clk = (struct clk_pm_regs *)CLK_PM_BASE;
 

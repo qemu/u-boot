@@ -21,6 +21,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #define RTC_RV3029_PAGE_LEN             7
 

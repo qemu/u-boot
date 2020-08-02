@@ -5,12 +5,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <regmap.h>
 #include <syscon.h>
 #include <sysreset.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/printk.h>

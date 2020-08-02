@@ -15,12 +15,14 @@
 #include <log.h>
 #include <mapmem.h>
 #include <net.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <net/tftp.h>
 #include "bootp.h"
 #ifdef CONFIG_SYS_DIRECT_FLASH_TFTP

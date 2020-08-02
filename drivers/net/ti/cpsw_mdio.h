@@ -8,6 +8,7 @@
 #ifndef CPSW_MDIO_H_
 #define CPSW_MDIO_H_
 
+#include <asm/types.h>
 struct cpsw_mdio;
 
 struct mii_dev *cpsw_mdio_init(const char *name, phys_addr_t mdio_base,

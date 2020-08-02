@@ -2,6 +2,7 @@
 #include <asm/io.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/clock.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_SPL_BUILD
 void clock_init_safe(void)

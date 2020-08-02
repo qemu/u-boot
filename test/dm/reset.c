@@ -10,6 +10,7 @@
 #include <reset.h>
 #include <dm/test.h>
 #include <asm/reset.h>
+#include <linux/types.h>
 #include <test/test.h>
 #include <test/ut.h>
 

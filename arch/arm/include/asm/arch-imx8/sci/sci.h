@@ -16,6 +16,7 @@
 #include <asm/arch/sci/rpc.h>
 #include <dt-bindings/soc/imx_rsrc.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 static inline int sc_err_to_linux(sc_err_t err)
 {

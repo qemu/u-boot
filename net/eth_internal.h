@@ -9,6 +9,7 @@
 #define __ETH_INTERNAL_H
 
 /* Do init that is common to driver model and legacy networking */
+#include <linux/types.h>
 void eth_common_init(void);
 
 /**

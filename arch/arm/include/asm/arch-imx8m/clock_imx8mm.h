@@ -9,6 +9,7 @@
 #define _ASM_ARCH_IMX8MM_CLOCK_H
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/bitops.h>
 #endif
 

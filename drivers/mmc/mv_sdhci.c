@@ -4,11 +4,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <malloc.h>
 #include <sdhci.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/mbus.h>
 #include <linux/string.h>

@@ -17,6 +17,7 @@
 #include <errno.h>
 #include <log.h>
 #include <spi.h>
+#include <stdbool.h>
 #include <time.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
@@ -25,6 +26,7 @@
 #include <asm/arch-rockchip/periph.h>
 #include <dm/pinctrl.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "rk_spi.h"
 
 /* Change to 1 to output registers at the start of each transaction */

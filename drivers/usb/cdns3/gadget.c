@@ -56,7 +56,9 @@
  *
  */
 
+#include <compiler.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <dm/device_compat.h>
 #include <dm/devres.h>
@@ -67,6 +69,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <linux/usb/gadget.h>
 #include <linux/compat.h>
 #include <linux/iopoll.h>

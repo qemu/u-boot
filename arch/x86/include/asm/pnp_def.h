@@ -10,6 +10,7 @@
 #define _ASM_PNP_DEF_H_
 
 #include <asm/io.h>
+#include <linux/types.h>
 
 #define PNP_IDX_EN   0x30
 #define PNP_IDX_IO0  0x60

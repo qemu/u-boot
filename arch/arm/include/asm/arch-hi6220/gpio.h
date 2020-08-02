@@ -7,6 +7,7 @@
 #ifndef _HI6220_GPIO_H_
 #define _HI6220_GPIO_H_
 
+#include <linux/types.h>
 #define HI6220_GPIO_BASE(bank)	(((bank < 4) ? 0xf8011000 : \
 				0xf7020000 - 0x4000) + (0x1000 * bank))
 

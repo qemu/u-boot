@@ -9,6 +9,7 @@
 #include <asm/io.h>
 #include <mvmfp.h>
 #include <asm/arch/mfp.h>
+#include <asm/types.h>
 
 /*
  * mfp_config

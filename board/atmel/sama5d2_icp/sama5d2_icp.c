@@ -16,6 +16,7 @@
 #include <asm/arch/clk.h>
 #include <asm/arch/gpio.h>
 #include <asm/arch/sama5d2.h>
+#include <asm/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

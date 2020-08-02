@@ -25,6 +25,7 @@
 #include <vsprintf.h>
 #include <asm/byteorder.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_FIT)
 /**

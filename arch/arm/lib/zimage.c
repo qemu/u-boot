@@ -7,8 +7,10 @@
  * Copyright (C) 2012 Marek Vasut <marek.vasut@gmail.com>
  */
 #include <common.h>
+#include <compiler.h>
 #include <image.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 #define	LINUX_ARM_ZIMAGE_MAGIC	0x016f2818
 #define	BAREBOX_IMAGE_MAGIC	0x00786f62

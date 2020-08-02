@@ -7,6 +7,7 @@
 #ifndef __LDPAA_ETH_H
 #define __LDPAA_ETH_H
 
+#include <compiler.h>
 #include <stdbool.h>
 #include <linux/netdevice.h>
 #include <fsl-mc/fsl_mc.h>
@@ -17,6 +18,7 @@
 #include <fsl-mc/fsl_dpio.h>
 #include <fsl-mc/fsl_qbman_portal.h>
 #include <fsl-mc/fsl_mc_private.h>
+#include <linux/types.h>
 
 
 enum ldpaa_eth_type {

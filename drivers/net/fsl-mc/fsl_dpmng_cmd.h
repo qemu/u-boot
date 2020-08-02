@@ -6,6 +6,7 @@
 #define __FSL_DPMNG_CMD_H
 
 /* Command IDs */
+#include <linux/types.h>
 #define DPMNG_CMDID_GET_VERSION			0x8311
 
 /*                cmd, param, offset, width, type, arg_name */

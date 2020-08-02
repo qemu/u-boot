@@ -5,6 +5,7 @@
  */
 
 /**
+#include <asm/types.h>
  * enum srdscr0_mask - Bit masks for SRDSCR0 (SerDes Control Register 0)
  * @SRDSCR0_DPPA:       Bitmask for the DPPA (diff pk-pk swing for lane A)
  *			field of the SRCSCR0

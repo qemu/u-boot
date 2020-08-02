@@ -8,6 +8,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <debug_uart.h>
 #include <errno.h>
@@ -38,6 +39,7 @@
 #include <linux/errno.h>
 #include <linux/compiler.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include <linux/usb/ch9.h>
 #include <linux/usb/gadget.h>
 #include <linux/usb/musb.h>

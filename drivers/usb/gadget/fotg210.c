@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <config.h>
 #include <cpu_func.h>
 #include <log.h>

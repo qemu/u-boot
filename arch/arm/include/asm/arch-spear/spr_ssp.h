@@ -6,6 +6,7 @@
 #ifndef _SPR_SSP_H
 #define _SPR_SSP_H
 
+#include <asm/types.h>
 struct ssp_regs {
 	u32 sspcr0;
 	u32 sspcr1;

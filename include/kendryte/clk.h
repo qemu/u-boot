@@ -7,6 +7,7 @@
 #define K210_CLK_H
 
 #define LOG_CATEGORY UCLASS_CLK
+#include <compiler.h>
 #include <linux/types.h>
 #include <linux/clk-provider.h>
 

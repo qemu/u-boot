@@ -3,6 +3,7 @@
  * Copyright (c) 2017 Intel Corporation
  */
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <dm/device.h>
 #include <linux/errno.h>

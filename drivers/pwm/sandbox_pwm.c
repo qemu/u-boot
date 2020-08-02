@@ -11,6 +11,7 @@
 #include <stdbool.h>
 #include <asm/test.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 enum {
 	NUM_CHANNELS	= 3,

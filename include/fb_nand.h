@@ -7,6 +7,7 @@
 #ifndef _FB_NAND_H_
 #define _FB_NAND_H_
 
+#include <asm/types.h>
 #include <jffs2/load_kernel.h>
 
 /**

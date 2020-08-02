@@ -19,6 +19,7 @@
 #include <asm/arch-mx7/mx7-ddr.h>
 #include <asm/u-boot.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "common.h"
 
 #ifdef CONFIG_FSL_ESDHC_IMX

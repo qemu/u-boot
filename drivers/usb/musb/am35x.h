@@ -13,6 +13,7 @@
 #define __AM35X_USB_H__
 
 #include <asm/arch/am35x_def.h>
+#include <asm/types.h>
 #include "musb_core.h"
 
 /* Base address of musb wrapper */

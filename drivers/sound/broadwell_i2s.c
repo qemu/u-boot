@@ -16,6 +16,7 @@
 #include <time.h>
 #include <asm/io.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include "broadwell_i2s.h"
 
 enum {

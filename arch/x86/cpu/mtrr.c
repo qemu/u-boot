@@ -27,6 +27,7 @@
 #include <asm/msr.h>
 #include <asm/mtrr.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

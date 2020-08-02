@@ -45,6 +45,7 @@
 /* Common utility functions */
 
 /*
+#include <asm/types.h>
  * Perform a number of NOP instructions, blocks of 8 instructions.
  * The (inlined) function will not affect cache or processor state.
  */

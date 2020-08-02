@@ -7,6 +7,7 @@
 #ifndef MISC_H
 #define MISC_H
 
+#include <asm/types.h>
 u32 msm_board_serial(void);
 void msm_generate_mac_addr(u8 *mac);
 

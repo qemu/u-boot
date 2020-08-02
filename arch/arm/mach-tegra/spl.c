@@ -9,6 +9,7 @@
 #include <debug_uart.h>
 #include <log.h>
 #include <spl.h>
+#include <asm/types.h>
 
 #include <asm/io.h>
 #include <asm/arch/clock.h>

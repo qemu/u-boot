@@ -12,6 +12,7 @@
 #include <asm/arch/wdt.h>
 #include <linux/err.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #define WDT_AST2500	2500
 #define WDT_AST2400	2400

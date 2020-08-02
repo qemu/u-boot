@@ -41,6 +41,7 @@
 
 /*---------------------- Macros and type definitions ----------------------*/
 
+#include <asm/types.h>
 #include <linux/printk.h>
 #pragma pack(1)
 

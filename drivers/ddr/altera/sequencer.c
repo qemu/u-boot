@@ -5,10 +5,12 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <asm/arch/sdram.h>
 #include <errno.h>
 #include <hang.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>

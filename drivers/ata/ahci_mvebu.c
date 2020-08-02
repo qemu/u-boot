@@ -5,8 +5,10 @@
 
 #include <common.h>
 #include <ahci.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
+#include <linux/types.h>
 
 /*
  * Dummy implementation that can be overwritten by a board

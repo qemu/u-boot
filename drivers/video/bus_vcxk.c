@@ -9,6 +9,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 vu_char  *vcxk_bws      = ((vu_char *) (CONFIG_SYS_VCXK_BASE));
 vu_short *vcxk_bws_word = ((vu_short *)(CONFIG_SYS_VCXK_BASE));

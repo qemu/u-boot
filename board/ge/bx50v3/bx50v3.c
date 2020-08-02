@@ -7,6 +7,7 @@
 
 #include <image.h>
 #include <init.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/arch/clock.h>
@@ -34,6 +35,7 @@
 #include <asm/io.h>
 #include <asm/arch/sys_proto.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 #include <power/da9063_pmic.h>
 #include <input.h>

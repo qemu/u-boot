@@ -12,6 +12,7 @@
 #include <dm/uclass-internal.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 
 #define LIMIT_DEV	32

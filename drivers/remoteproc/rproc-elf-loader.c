@@ -3,6 +3,7 @@
  * Copyright (C) 2019, STMicroelectronics - All Rights Reserved
  */
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <dm.h>
 #include <elf.h>
@@ -15,6 +16,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /**
  * struct resource_table - firmware resource table header

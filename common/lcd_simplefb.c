@@ -14,6 +14,7 @@
 #include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <video.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

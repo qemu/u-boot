@@ -46,6 +46,7 @@
 #include <asm/arch/msg.h>
 #include <asm/arch/mbox.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <mach/sdhci.h>
 #include <mach/timer.h>
 

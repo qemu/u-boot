@@ -14,6 +14,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "desc_constr.h"
 #include "jobdesc.h"
 #include "jr.h"

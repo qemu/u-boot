@@ -7,6 +7,7 @@
 #ifndef _GPI_H_
 #define _GPI_H_
 
+#include <asm/types.h>
 #define GPI_VERSION			0x00
 #define GPI_CTRL			0x04
 #define GPI_RX_CONFIG			0x08

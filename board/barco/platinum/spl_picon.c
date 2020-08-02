@@ -19,6 +19,7 @@
 #include <asm/mach-imx/mxc_i2c.h>
 #include <spl.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "platinum.h"
 

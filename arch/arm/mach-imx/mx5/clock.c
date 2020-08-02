@@ -9,6 +9,7 @@
 #include <common.h>
 #include <command.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <linux/errno.h>
@@ -19,6 +20,7 @@
 #include <asm/arch/sys_proto.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 enum pll_clocks {
 	PLL1_CLOCK = 0,

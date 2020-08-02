@@ -27,6 +27,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "crc16.h"
 #endif
 #include "ubifs.h"

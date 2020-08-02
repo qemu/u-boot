@@ -14,6 +14,7 @@
 #include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define PHYS_FLASH_1 CONFIG_SYS_FLASH_BASE
 #define FLASH_BANK_SIZE 0x200000

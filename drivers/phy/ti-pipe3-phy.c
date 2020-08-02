@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <stdio.h>
 #include <asm/global_data.h>
@@ -19,6 +20,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 /* PLLCTRL Registers */
 #define PLL_STATUS              0x00000004

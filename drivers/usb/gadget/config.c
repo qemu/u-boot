@@ -9,6 +9,7 @@
  */
 
 #include <common.h>
+#include <asm/types.h>
 #include <asm/unaligned.h>
 #include <linux/errno.h>
 #include <linux/list.h>

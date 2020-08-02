@@ -13,6 +13,7 @@
 #include <dm.h>
 #include <regmap.h>
 #include <errno.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
@@ -22,6 +23,7 @@
 #include <linux/math64.h>
 #include <linux/bitfield.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #define MESON_SAR_ADC_REG0					0x00
 	#define MESON_SAR_ADC_REG0_PANEL_DETECT			BIT(31)

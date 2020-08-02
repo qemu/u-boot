@@ -5,12 +5,14 @@
 
 #include <common.h>
 #include <clk-uclass.h>
+#include <compiler.h>
 #include <div64.h>
 #include <dm.h>
 #include <init.h>
 #include <log.h>
 #include <regmap.h>
 #include <spl.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <syscon.h>
 #include <time.h>
@@ -25,6 +27,7 @@
 #include <dt-bindings/clock/stm32mp1-clksrc.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

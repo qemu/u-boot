@@ -6,6 +6,7 @@
  * Author: Paul Burton <paul.burton@imgtec.com>
  */
 
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <asm/io.h>

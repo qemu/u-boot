@@ -13,6 +13,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "../anx98xx-edp.h"
 
 #define DP_MAX_LINK_RATE		0x001

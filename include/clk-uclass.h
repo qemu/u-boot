@@ -11,6 +11,7 @@
 /* See clk.h for background documentation. */
 
 #include <clk.h>
+#include <linux/types.h>
 
 struct ofnode_phandle_args;
 

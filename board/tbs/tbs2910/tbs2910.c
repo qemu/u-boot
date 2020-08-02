@@ -23,6 +23,7 @@
 #include <asm/io.h>
 #include <asm/arch/sys_proto.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 DECLARE_GLOBAL_DATA_PTR;
 
 #define UART_PAD_CTRL  (PAD_CTL_PUS_100K_UP |			\

@@ -23,6 +23,7 @@
 #include <asm/arch/cpu.h>
 #include <asm/arch/clock.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

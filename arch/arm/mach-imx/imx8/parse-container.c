@@ -13,6 +13,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define SEC_SECURE_RAM_BASE		0x31800000UL
 #define SEC_SECURE_RAM_END_BASE		(SEC_SECURE_RAM_BASE + 0xFFFFUL)

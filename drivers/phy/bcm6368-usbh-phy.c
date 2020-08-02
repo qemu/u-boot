@@ -9,6 +9,7 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <generic-phy.h>
 #include <log.h>
@@ -20,6 +21,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /* USBH PLL Control register */
 #define USBH_PLL_REG		0x18

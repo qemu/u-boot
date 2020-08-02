@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <fdtdec.h>
 #include <init.h>
@@ -19,6 +20,7 @@
 #include <asm/arch/cpu.h>
 #include <asm/arch/soc.h>
 #include <asm/armv8/mmu.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

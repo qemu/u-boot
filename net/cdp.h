@@ -14,6 +14,7 @@
 #ifndef __CDP_H__
 #define __CDP_H__
 
+#include <linux/types.h>
 void cdp_start(void);
 /* Process a received CDP packet */
 void cdp_receive(const uchar *pkt, unsigned len);

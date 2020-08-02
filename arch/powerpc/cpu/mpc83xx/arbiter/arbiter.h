@@ -1,3 +1,4 @@
+#include <linux/types.h>
 	const __be32 acr_mask =
 #ifndef CONFIG_ACR_PIPE_DEP_UNSET
 		ACR_PIPE_DEP |

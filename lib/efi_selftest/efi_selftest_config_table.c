@@ -9,6 +9,7 @@
  */
 
 #include <efi_selftest.h>
+#include <asm/types.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>
 

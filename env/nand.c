@@ -27,6 +27,7 @@
 #include <nand.h>
 #include <search.h>
 #include <errno.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 
 #if defined(CONFIG_CMD_SAVEENV) && defined(CONFIG_CMD_NAND) && \

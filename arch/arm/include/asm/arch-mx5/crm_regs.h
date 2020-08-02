@@ -6,6 +6,7 @@
 #ifndef __ARCH_ARM_MACH_MX51_CRM_REGS_H__
 #define __ARCH_ARM_MACH_MX51_CRM_REGS_H__
 
+#include <asm/types.h>
 #define MXC_CCM_BASE	CCM_BASE_ADDR
 
 /* DPLL register mapping structure */

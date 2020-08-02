@@ -13,6 +13,7 @@
 
 #include <asm/cache.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 #ifdef CONFIG_SYS_OHCI_SWAP_REG_ACCESS
 # define ohci_readl(a) __swap_32(in_be32((u32 *)a))

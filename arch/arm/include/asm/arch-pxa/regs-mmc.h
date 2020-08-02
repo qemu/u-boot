@@ -6,6 +6,7 @@
 #ifndef __REGS_MMC_H__
 #define __REGS_MMC_H__
 
+#include <linux/types.h>
 #define MMC0_BASE	0x41100000
 #define MMC1_BASE	0x42000000
 

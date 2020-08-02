@@ -11,6 +11,7 @@
 #include <asm/arch/timer.h>
 #include <asm/io.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 static struct timer_regs  *timer0 = (struct timer_regs *)TIMER0_BASE;
 static struct timer_regs  *timer1 = (struct timer_regs *)TIMER1_BASE;

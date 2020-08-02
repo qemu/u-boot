@@ -9,6 +9,7 @@
 
 #include <efi_selftest.h>
 #include <efi_rng.h>
+#include <asm/types.h>
 #include <linux/string.h>
 
 #define RNG_LEN 9

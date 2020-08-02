@@ -14,6 +14,7 @@
 #include <malloc.h>
 #include <stdio.h>
 #include <dt-bindings/clock/microchip,clock.h>
+#include <linux/types.h>
 #include <mach/pic32.h>
 
 #ifdef CONFIG_DISPLAY_BOARDINFO

@@ -16,6 +16,7 @@
 #include <errno.h>
 #include <log.h>
 #include <pci.h>
+#include <stdbool.h>
 #include <linux/kernel.h>
 
 void pciauto_region_init(struct pci_region *res)

@@ -10,6 +10,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <display_options.h>
 #include <env.h>
 #include <init.h>
@@ -39,6 +40,7 @@
 #include <linux/compiler.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "mp.h"
 #ifdef CONFIG_CHAIN_OF_TRUST
 #include <fsl_validate.h>

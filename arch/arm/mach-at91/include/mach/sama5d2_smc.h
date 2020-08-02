@@ -16,6 +16,7 @@
 #define AT91_ASM_SMC_TIMINGS0	(ATMEL_BASE_SMC + 0x70c)
 #define AT91_ASM_SMC_MODE0	(ATMEL_BASE_SMC + 0x710)
 #else
+#include <asm/types.h>
 struct at91_cs {
 	u32	setup;		/* 0x600 SMC Setup Register */
 	u32	pulse;		/* 0x604 SMC Pulse Register */

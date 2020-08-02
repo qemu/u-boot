@@ -21,6 +21,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <net/pcap.h>
 #include "eth_internal.h"
 

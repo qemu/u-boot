@@ -18,6 +18,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 int acpi_create_dmar(struct acpi_dmar *dmar, enum dmar_flags flags)
 {

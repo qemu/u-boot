@@ -7,6 +7,7 @@
 #define _ASM_ARCH_CRU_RK3128_H
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/kernel.h>
 #endif

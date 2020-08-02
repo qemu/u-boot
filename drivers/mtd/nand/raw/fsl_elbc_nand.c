@@ -9,12 +9,14 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <malloc.h>
 #include <nand.h>
 #include <stdio.h>
 #include <time.h>
 #include <dm/devres.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include <linux/mtd/mtd.h>
 #include <linux/mtd/rawnand.h>

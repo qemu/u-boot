@@ -9,6 +9,7 @@
 #include <stdbool.h>
 #include <linux/bitops.h>
 #include <linux/list.h>
+#include <linux/types.h>
 
 #define TEE_UUID_LEN		16
 

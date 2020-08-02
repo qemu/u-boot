@@ -12,6 +12,7 @@
 #include <ram.h>
 #include <vsprintf.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

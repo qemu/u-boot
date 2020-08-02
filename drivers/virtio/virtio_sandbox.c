@@ -16,6 +16,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/io.h>
+#include <linux/types.h>
 
 struct virtio_sandbox_priv {
 	u8 id;

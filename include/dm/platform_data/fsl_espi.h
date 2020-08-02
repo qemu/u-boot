@@ -6,6 +6,7 @@
 #ifndef __fsl_espi_h
 #define __fsl_espi_h
 
+#include <linux/types.h>
 struct fsl_espi_platdata {
 	uint flags;
 	uint speed_hz;

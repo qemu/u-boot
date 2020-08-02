@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <spl.h>
+#include <asm/types.h>
 
 u32 spl_boot_device(void)
 {

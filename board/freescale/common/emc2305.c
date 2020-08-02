@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 #include "emc2305.h"
 

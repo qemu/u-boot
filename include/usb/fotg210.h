@@ -9,6 +9,7 @@
 #ifndef _FOTG210_H
 #define _FOTG210_H
 
+#include <linux/types.h>
 struct fotg210_regs {
 	/* USB Host Controller */
 	struct {

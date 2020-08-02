@@ -22,6 +22,7 @@
 #include <dt-bindings/gpio/gpio.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define SUNXI_GPIOS_PER_BANK	SUNXI_GPIO_A_NR
 

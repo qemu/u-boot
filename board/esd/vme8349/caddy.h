@@ -9,6 +9,7 @@
 #ifndef __CADDY_H__
 #define __CADDY_H__
 
+#include <linux/types.h>
 #define CMD_SIZE	1024
 #define ANSWER_SIZE	1024
 #define CADDY_MAGIC	"esd vme8349 V1.0"

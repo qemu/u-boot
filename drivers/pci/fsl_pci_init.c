@@ -13,6 +13,7 @@
 #include <asm/fsl_serdes.h>
 #include <asm/global_data.h>
 #include <asm/ppc.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>

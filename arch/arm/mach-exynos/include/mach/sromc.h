@@ -24,6 +24,7 @@
 #define SROMC_BC_PMC(x)  (x << 0)  /* normal(1data)page mode configuration */
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 struct s5p_sromc {
 	unsigned int	bw;
 	unsigned int	bc[4];

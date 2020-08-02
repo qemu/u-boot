@@ -21,6 +21,7 @@
 #include <dm.h>
 #include <spl.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

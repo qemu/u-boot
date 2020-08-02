@@ -16,6 +16,7 @@
 
 #include <env.h>
 #include <stddef.h>
+#include <linux/types.h>
 
 #define set_errno(val) do { errno = val; } while (0)
 

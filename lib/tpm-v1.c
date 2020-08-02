@@ -12,6 +12,7 @@
 #include <asm/unaligned.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/sha1.h>
 #include <tpm-common.h>
 #include <tpm-v1.h>

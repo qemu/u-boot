@@ -6,6 +6,8 @@
 #define K210_PLL_H
 
 #include <clk.h>
+#include <compiler.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 #include <test/export.h>
 

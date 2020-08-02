@@ -24,6 +24,7 @@
 #include <asm/arch/clk.h>
 #include <asm/arch/hardware.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "atmel_mci.h"
 
 #ifndef CONFIG_SYS_MMC_CLK_OD

@@ -130,4 +130,5 @@ extern int strcasecmp(const char *, const char *);
 #define __HAVE_ARCH_STRTOK      1
 
 #endif /* KERNEL */
+#include <linux/types.h>
 #endif /* __ASM_SH_STRING_H */

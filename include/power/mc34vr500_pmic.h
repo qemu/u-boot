@@ -7,6 +7,7 @@
 #ifndef __MC34VR500_H_
 #define __MC34VR500_H_
 
+#include <linux/types.h>
 #include <power/pmic.h>
 
 #define MC34VR500_I2C_ADDR	0x08

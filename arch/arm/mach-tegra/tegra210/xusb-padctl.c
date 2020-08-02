@@ -10,6 +10,7 @@
 #include <log.h>
 #include <time.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <dm/of_access.h>
 #include <dm/ofnode.h>
 #include <linux/delay.h>

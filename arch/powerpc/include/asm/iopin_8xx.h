@@ -8,6 +8,7 @@
 #ifndef _ASM_IOPIN_8XX_H_
 #define _ASM_IOPIN_8XX_H_
 
+#include <compiler.h>
 #include <linux/types.h>
 #include <asm/immap_8xx.h>
 #include <asm/io.h>

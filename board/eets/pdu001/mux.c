@@ -13,6 +13,7 @@
 #include <asm/arch/hardware.h>
 #include <asm/arch/mux.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include "board.h"
 
 static struct module_pin_mux uart0_pin_mux[] = {

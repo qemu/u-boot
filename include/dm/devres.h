@@ -13,6 +13,7 @@
 
 #include <linux/compat.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 struct udevice;
 

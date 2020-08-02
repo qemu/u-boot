@@ -792,6 +792,7 @@ enum ifc_nand_fir_opcodes {
 
 #ifndef __ASSEMBLY__
 #include <asm/io.h>
+#include <linux/types.h>
 
 extern void print_ifc_regs(void);
 extern void init_early_memctl_regs(void);

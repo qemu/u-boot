@@ -29,6 +29,7 @@
 #include <asm/gpio.h>
 #include <linux/errno.h>
 #include <linux/compat.h>
+#include <linux/types.h>
 #include <linux/usb/dwc3.h>
 
 #include <usb/xhci.h>

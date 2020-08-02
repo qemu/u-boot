@@ -12,6 +12,7 @@
 #define _FSL_DSPI_H_
 
 /* DMA Serial Peripheral Interface (DSPI) */
+#include <asm/types.h>
 struct dspi {
 	u32 mcr;	/* 0x00 */
 	u32 resv0;	/* 0x04 */

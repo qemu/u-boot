@@ -10,6 +10,7 @@
 #include <malloc.h>
 #include <stdio.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define ESPI_BOOT_IMAGE_SIZE	0x48
 #define ESPI_BOOT_IMAGE_ADDR	0x50

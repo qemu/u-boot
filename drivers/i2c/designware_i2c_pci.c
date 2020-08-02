@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <spl.h>
@@ -18,6 +19,7 @@
 #include <dm/uclass-internal.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "designware_i2c.h"
 
 enum {

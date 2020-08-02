@@ -9,11 +9,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <mapmem.h>
 #include <physmem.h>
 #include <linux/compiler.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 phys_addr_t __weak arch_phys_memset(phys_addr_t s, int c, phys_size_t n)
 {

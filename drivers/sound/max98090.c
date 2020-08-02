@@ -16,6 +16,7 @@
 #include <asm/gpio.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include "maxim_codec.h"
 #include "max98090.h"
 

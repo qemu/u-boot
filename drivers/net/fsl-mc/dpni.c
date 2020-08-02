@@ -7,6 +7,7 @@
 #include <fsl-mc/fsl_mc_sys.h>
 #include <fsl-mc/fsl_mc_cmd.h>
 #include <fsl-mc/fsl_dpni.h>
+#include <linux/types.h>
 
 int dpni_prepare_cfg(const struct dpni_cfg	*cfg,
 		     uint8_t			*cfg_buf)

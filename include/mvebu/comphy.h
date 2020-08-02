@@ -7,6 +7,7 @@
 #define _MVEBU_COMPHY_H_
 
 #include <stdbool.h>
+#include <asm/types.h>
 #include <dt-bindings/comphy/comphy_data.h>
 
 struct comphy_map {

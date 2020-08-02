@@ -16,6 +16,7 @@
 #include <asm/arch/pwm.h>
 #include <asm/arch/gpio.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 
 DECLARE_GLOBAL_DATA_PTR;

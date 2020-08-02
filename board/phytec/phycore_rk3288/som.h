@@ -5,6 +5,7 @@
  */
 
 /*
+#include <compiler.h>
  * rk3288_som struct represents the eeprom layout for PHYTEC RK3288 based SoMs
  */
 struct rk3288_som {

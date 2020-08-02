@@ -2,6 +2,7 @@
 
 #include <common.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 #if defined(CONFIG_MX53)
 #define MEMCTL_BASE	ESDCTL_BASE_ADDR

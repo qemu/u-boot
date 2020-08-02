@@ -14,6 +14,7 @@
 #include <div64.h>
 #include <clk.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include "clk.h"
 #include <linux/err.h>
 

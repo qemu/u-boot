@@ -11,10 +11,12 @@
 #include <image.h>
 #include <malloc.h>
 #include <mmc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define AVB_BOOTARGS	"avb_bootargs"
 static struct AvbOps *avb_ops;

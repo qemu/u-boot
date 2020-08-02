@@ -7,6 +7,7 @@
 #define _S3C24X0_I2C_H
 
 #include <stdbool.h>
+#include <asm/types.h>
 struct s3c24x0_i2c {
 	u32	iiccon;
 	u32	iicstat;

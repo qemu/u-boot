@@ -13,6 +13,7 @@
 #define AT91_SPI_H
 
 #include <asm/arch/at91_pdc.h>
+#include <asm/types.h>
 
 typedef struct at91_spi {
 	u32		cr;		/* 0x00 Control Register */

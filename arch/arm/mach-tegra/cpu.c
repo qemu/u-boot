@@ -15,6 +15,7 @@
 #include <asm/arch-tegra/pmc.h>
 #include <asm/arch-tegra/scu.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 #include "cpu.h"
 
 int get_num_cpus(void)

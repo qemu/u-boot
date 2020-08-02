@@ -16,6 +16,7 @@
 #include <stdio.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* GUID for file system information */
 const efi_guid_t efi_file_system_info_guid = EFI_FILE_SYSTEM_INFO_GUID;

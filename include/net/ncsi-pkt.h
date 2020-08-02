@@ -6,6 +6,7 @@
 #ifndef __NCSI_PKT_H__
 #define __NCSI_PKT_H__
 
+#include <linux/types.h>
 struct ncsi_pkt_hdr {
 	unsigned char mc_id;        /* Management controller ID */
 	unsigned char revision;     /* NCSI version - 0x01      */

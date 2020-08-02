@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <clk-uclass.h>
+#include <compiler.h>
 #include <dm.h>
 #include <errno.h>
 #include <asm/io.h>

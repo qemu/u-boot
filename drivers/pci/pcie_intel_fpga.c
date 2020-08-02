@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <pci.h>
 #include <stdbool.h>
@@ -16,6 +17,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define RP_TX_REG0			0x2000
 #define RP_TX_CNTRL			0x2004

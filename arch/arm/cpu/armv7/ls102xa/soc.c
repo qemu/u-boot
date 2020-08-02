@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <asm/arch/clock.h>
 #include <asm/io.h>
@@ -13,6 +14,7 @@
 #include <asm/arch/ls102xa_stream_id.h>
 #include <fsl_csu.h>
 #include <fsl_ddr_sdram.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 
 struct liodn_id_table sec_liodn_tbl[] = {

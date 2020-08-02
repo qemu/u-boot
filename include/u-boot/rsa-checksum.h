@@ -8,6 +8,7 @@
 
 #include <errno.h>
 #include <image.h>
+#include <linux/types.h>
 #include <u-boot/sha1.h>
 #include <u-boot/sha256.h>
 #include <u-boot/sha512.h>

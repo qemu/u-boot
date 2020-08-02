@@ -5,11 +5,13 @@
 
 #include <common.h>
 #include <clock_legacy.h>
+#include <compiler.h>
 #include <log.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/addrspace.h>
 #include <asm/types.h>
+#include <linux/types.h>
 #include <mach/ar71xx_regs.h>
 #include <mach/ath79.h>
 #include <wait_bit.h>

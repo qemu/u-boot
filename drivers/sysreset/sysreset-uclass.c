@@ -23,6 +23,7 @@
 #include <linux/delay.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 int sysreset_request(struct udevice *dev, enum sysreset_t type)
 {

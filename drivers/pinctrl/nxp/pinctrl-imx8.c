@@ -7,6 +7,7 @@
 #include <asm/global_data.h>
 #include <dm/device.h>
 #include <dm/pinctrl.h>
+#include <linux/types.h>
 
 #include "pinctrl-imx.h"
 

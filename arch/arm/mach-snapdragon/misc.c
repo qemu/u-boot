@@ -10,6 +10,7 @@
 #include <mmc.h>
 #include <vsprintf.h>
 #include <asm/arch/misc.h>
+#include <asm/types.h>
 
 /* UNSTUFF_BITS macro taken from Linux Kernel: drivers/mmc/core/sd.c */
 #define UNSTUFF_BITS(resp, start, size) \

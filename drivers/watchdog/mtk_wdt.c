@@ -7,12 +7,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <hang.h>
 #include <wdt.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define MTK_WDT_MODE			0x00
 #define MTK_WDT_LENGTH			0x04

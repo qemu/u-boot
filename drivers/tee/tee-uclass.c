@@ -13,6 +13,7 @@
 #include <dm/uclass-internal.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /**
  * struct tee_uclass_priv - information of a TEE, stored by the uclass

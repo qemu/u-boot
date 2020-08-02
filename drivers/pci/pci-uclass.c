@@ -11,6 +11,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <pci.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
@@ -26,6 +27,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "pci_internal.h"
 
 DECLARE_GLOBAL_DATA_PTR;

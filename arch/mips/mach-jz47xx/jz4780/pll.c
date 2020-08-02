@@ -6,10 +6,12 @@
  * Author: Paul Burton <paul.burton@imgtec.com>
  */
 
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <stdio.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>

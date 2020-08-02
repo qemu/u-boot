@@ -8,6 +8,8 @@
 #ifndef _MSCC_SERVAL_H_
 #define _MSCC_SERVAL_H_
 
+#include <compiler.h>
+
 /*
  * Target offset base(s)
  */

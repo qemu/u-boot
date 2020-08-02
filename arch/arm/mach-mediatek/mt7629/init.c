@@ -6,6 +6,7 @@
 
 #include <clk.h>
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <fdtdec.h>
 #include <init.h>
@@ -15,6 +16,7 @@
 #include <asm/arch/misc.h>
 #include <asm/global_data.h>
 #include <asm/sections.h>
+#include <asm/types.h>
 #include <dm/uclass.h>
 #include <linux/bitops.h>
 #include <linux/io.h>

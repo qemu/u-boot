@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <mapmem.h>
 #include <pci.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/immap_85xx.h>
 #include <asm/fsl_pci.h>
@@ -21,6 +22,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include "pcie_fsl.h"
 #include <dm/device_compat.h>
 

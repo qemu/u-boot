@@ -27,6 +27,7 @@
  */
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
@@ -43,6 +44,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define USB_BUFSIZ	512
 

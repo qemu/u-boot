@@ -12,8 +12,10 @@
 #define PCIE_CADENCE_H
 
 #include <common.h>
+#include <compiler.h>
 #include <pci_ep.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 
 /*

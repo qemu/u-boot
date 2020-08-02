@@ -11,6 +11,7 @@
 #include <log.h>
 #include <asm/io.h>
 #include <asm/arch/imx-regs.h>
+#include <asm/types.h>
 #include <linux/bitmap.h>
 
 #include "ddrmc-vf610-calibration.h"

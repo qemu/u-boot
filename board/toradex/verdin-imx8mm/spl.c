@@ -26,6 +26,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/bd71837.h>
 #include <power/pmic.h>
 #include <spl.h>

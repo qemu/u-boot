@@ -7,6 +7,7 @@
 #define _ASM_MP_H_
 
 #include <lmb.h>
+#include <asm/types.h>
 
 void setup_mp(void);
 void cpu_mp_lmb_reserve(struct lmb *lmb);

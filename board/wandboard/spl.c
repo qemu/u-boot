@@ -24,6 +24,7 @@
 #include <asm/io.h>
 #include <asm/arch/sys_proto.h>
 #include <spl.h>
+#include <linux/types.h>
 
 #include <asm/arch/mx6-ddr.h>
 /*

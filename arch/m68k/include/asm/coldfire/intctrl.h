@@ -15,6 +15,7 @@
 #	define	CONFIG_SYS_CF_INTC_REG1
 #endif
 
+#include <asm/types.h>
 typedef struct int0_ctrl {
 	/* Interrupt Controller 0 */
 	u32 iprh0;		/* 0x00 Pending High */

@@ -16,6 +16,7 @@
 #ifdef CONFIG_CHAIN_OF_TRUST
 #include <fsl_validate.h>
 #endif
+#include <linux/types.h>
 
 static inline int is_blank(uchar *addr, int page_size)
 {

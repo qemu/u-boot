@@ -13,6 +13,7 @@
 #include <SA-1100.h>
 #include <time.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 static ulong get_timer_masked (void)
 {

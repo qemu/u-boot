@@ -11,6 +11,7 @@
 #include <dm.h>
 #include <asm/io.h>
 #include <p2sb.h>
+#include <linux/types.h>
 
 struct sandbox_p2sb_priv {
 	ulong base;

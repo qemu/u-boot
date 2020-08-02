@@ -8,6 +8,7 @@
 #include <common.h>
 #include <fdtdec.h>
 #include <log.h>
+#include <stdbool.h>
 #include <time.h>
 #include <asm/io.h>
 #include <i2c.h>
@@ -15,6 +16,7 @@
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "dw_hdmi.h"
 
 struct tmds_n_cts {

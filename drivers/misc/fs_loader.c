@@ -17,6 +17,7 @@
 #include <mapmem.h>
 #include <malloc.h>
 #include <spl.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

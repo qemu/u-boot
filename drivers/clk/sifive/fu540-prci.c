@@ -29,6 +29,7 @@
  */
 
 #include <common.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <asm/arch/reset.h>
 #include <clk-uclass.h>
@@ -44,6 +45,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <linux/math64.h>
 #include <linux/clk/analogbits-wrpll-cln28hpc.h>

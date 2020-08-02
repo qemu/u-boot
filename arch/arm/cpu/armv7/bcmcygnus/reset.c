@@ -6,6 +6,7 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 #define CRMU_MAIL_BOX1		0x03024028
 #define CRMU_SOFT_RESET_CMD	0xFFFFFFFF

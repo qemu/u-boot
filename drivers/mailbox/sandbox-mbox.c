@@ -12,6 +12,7 @@
 #include <asm/io.h>
 #include <asm/mbox.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define SANDBOX_MBOX_CHANNELS 2
 

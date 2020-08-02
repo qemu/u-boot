@@ -12,6 +12,7 @@
 #include <linux/device.h>
 #include <linux/kernel.h>
 #endif
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/mtd/spinand.h>

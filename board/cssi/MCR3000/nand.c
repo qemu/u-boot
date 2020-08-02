@@ -5,6 +5,7 @@
  * Christophe Leroy <christophe.leroy@c-s.fr>
  */
 
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <nand.h>

@@ -21,6 +21,7 @@
  * stddef.h
  */
 #include <compiler.h>
+#include <linux/types.h>
 #endif
 
 // Spaces used by misc partition are as below:

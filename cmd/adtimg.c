@@ -13,6 +13,7 @@
 #include <vsprintf.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define OPT_INDEX	"--index"
 

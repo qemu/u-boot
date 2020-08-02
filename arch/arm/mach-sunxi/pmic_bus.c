@@ -13,6 +13,7 @@
 #include <asm/arch/rsb.h>
 #include <i2c.h>
 #include <asm/arch/pmic_bus.h>
+#include <asm/types.h>
 
 #define AXP152_I2C_ADDR			0x30
 

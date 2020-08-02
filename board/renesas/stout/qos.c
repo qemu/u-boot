@@ -12,6 +12,7 @@
 #include <asm/mach-types.h>
 #include <asm/io.h>
 #include <asm/arch/rmobile.h>
+#include <asm/types.h>
 
 /* QoS version 0.955 for ES1 and version 0.973 for ES2 */
 #if defined(CONFIG_ARCH_RMOBILE_EXTRAM_BOOT)

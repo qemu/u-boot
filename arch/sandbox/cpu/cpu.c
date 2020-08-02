@@ -21,6 +21,7 @@
 #include <asm/setjmp.h>
 #include <asm/state.h>
 #include <dm/root.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

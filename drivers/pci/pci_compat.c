@@ -10,6 +10,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <pci.h>
+#include <asm/types.h>
 #include <dm/device-internal.h>
 #include <dm/lists.h>
 #include "pci_internal.h"

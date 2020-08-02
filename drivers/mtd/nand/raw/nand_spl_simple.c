@@ -5,9 +5,11 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <nand.h>
 #include <asm/io.h>
 #include <linux/mtd/nand_ecc.h>
+#include <linux/types.h>
 
 static int nand_ecc_pos[] = CONFIG_SYS_NAND_ECCPOS;
 static struct mtd_info *mtd;

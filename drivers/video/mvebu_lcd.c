@@ -18,6 +18,7 @@
 #include <asm/io.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/soc.h>
+#include <linux/types.h>
 
 #define MVEBU_LCD_WIN_CONTROL(w)	(0xf000 + ((w) << 4))
 #define MVEBU_LCD_WIN_BASE(w)		(0xf004 + ((w) << 4))

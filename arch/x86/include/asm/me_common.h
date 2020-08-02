@@ -12,6 +12,7 @@
 #ifndef __ASM_ME_COMMON_H
 #define __ASM_ME_COMMON_H
 
+#include <compiler.h>
 #include <linux/compiler.h>
 #include <linux/string.h>
 #include <linux/types.h>

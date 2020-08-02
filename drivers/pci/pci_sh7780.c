@@ -9,6 +9,7 @@
 #include <common.h>
 #include <stdio.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 #include <pci.h>
 #include <asm/processor.h>

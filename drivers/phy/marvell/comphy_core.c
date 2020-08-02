@@ -6,11 +6,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <fdtdec.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <linux/err.h>
 #include <linux/errno.h>

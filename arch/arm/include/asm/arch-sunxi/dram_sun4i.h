@@ -11,6 +11,7 @@
 #ifndef _SUNXI_DRAM_SUN4I_H
 #define _SUNXI_DRAM_SUN4I_H
 
+#include <asm/types.h>
 struct sunxi_dram_reg {
 	u32 ccr;		/* 0x00 controller configuration register */
 	u32 dcr;		/* 0x04 dram configuration register */

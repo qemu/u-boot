@@ -13,6 +13,7 @@
 /* System Memory Controller Register Defines */
 
 /* Memory Controller Message Bus Registers Offsets */
+#include <linux/types.h>
 #define DRP			0x00
 #define DTR0			0x01
 #define DTR1			0x02

@@ -12,6 +12,7 @@
 #include <dt-bindings/mailbox/tegra186-hsp.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define TEGRA_HSP_INT_DIMENSIONING		0x380
 #define TEGRA_HSP_INT_DIMENSIONING_NSI_SHIFT	16

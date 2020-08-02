@@ -12,6 +12,7 @@
 #include <errno.h>
 #include <linux/compiler.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_CPU_PXA25X
 #if ((CONFIG_SYS_INIT_SP_ADDR) != 0xfffff800)

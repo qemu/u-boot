@@ -7,6 +7,7 @@
 #define _FSL_DPNI_H
 
 /* DPNI Version */
+#include <linux/types.h>
 #define DPNI_VER_MAJOR				7
 #define DPNI_VER_MINOR				3
 

@@ -7,6 +7,7 @@
 #define SC_MISC_API_H
 
 /* Defines for sc_misc_boot_status_t */
+#include <asm/types.h>
 #define SC_MISC_BOOT_STATUS_SUCCESS	0U	/* Success */
 #define SC_MISC_BOOT_STATUS_SECURITY	1U	/* Security violation */
 

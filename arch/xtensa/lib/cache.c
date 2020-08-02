@@ -7,6 +7,7 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <asm/cache.h>
+#include <linux/types.h>
 
 /*
  * We currently run always with caches enabled when running from memory.

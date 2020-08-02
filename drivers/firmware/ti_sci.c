@@ -13,6 +13,7 @@
 #include <log.h>
 #include <mailbox.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <dm/device.h>
 #include <dm/device_compat.h>
 #include <dm/devres.h>
@@ -24,6 +25,7 @@
 #include <linux/soc/ti/k3-sec-proxy.h>
 #include <linux/soc/ti/ti_sci_protocol.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "ti_sci.h"
 

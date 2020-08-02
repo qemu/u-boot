@@ -13,6 +13,7 @@
  * Intel MultiProcessor Specification 1.4
  */
 
+#include <linux/types.h>
 #define MPSPEC_V14	4
 
 #define MPF_SIGNATURE	"_MP_"

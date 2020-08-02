@@ -14,10 +14,12 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <malloc.h>
 #include <asm/io.h>
 #include <dm.h>
 #include <dwc3-omap-uboot.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <dm/devres.h>
 #include <linux/errno.h>

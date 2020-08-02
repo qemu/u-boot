@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <asm/arch/spl.h>
+#include <linux/types.h>
 
 #include "clock_init.h"
 #include "common_setup.h"

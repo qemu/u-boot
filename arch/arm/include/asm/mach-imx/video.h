@@ -5,6 +5,7 @@
 
 #include <linux/fb.h>
 #include <ipu_pixfmt.h>
+#include <linux/types.h>
 
 struct display_info_t {
 	int	bus;

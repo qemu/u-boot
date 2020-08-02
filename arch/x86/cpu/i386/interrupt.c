@@ -11,6 +11,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <efi_loader.h>
 #include <hang.h>
@@ -27,6 +28,7 @@
 #include <asm/processor-flags.h>
 #include <asm/ptrace.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

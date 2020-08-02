@@ -42,6 +42,7 @@
 
 /*
  * When FSG_BUFFHD_STATIC_BUFFER is defined when this file is included
+#include <asm/types.h>
  * the fsg_buffhd structure's buf field will be an array of FSG_BUFLEN
  * characters rather then a pointer to void.
  */

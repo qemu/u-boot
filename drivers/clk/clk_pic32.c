@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <clk-uclass.h>
+#include <compiler.h>
 #include <dm.h>
 #include <div64.h>
 #include <stdio.h>
@@ -18,6 +19,7 @@
 #include <linux/bitops.h>
 #include <linux/bug.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <mach/pic32.h>
 #include <dt-bindings/clock/microchip,clock.h>
 

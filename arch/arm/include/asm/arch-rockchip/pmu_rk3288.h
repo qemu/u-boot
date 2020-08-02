@@ -8,6 +8,7 @@
 #ifndef _ASM_ARCH_PMU_RK3288_H
 #define _ASM_ARCH_PMU_RK3288_H
 
+#include <asm/types.h>
 #include <linux/kernel.h>
 struct rk3288_pmu {
 	u32 wakeup_cfg[2];

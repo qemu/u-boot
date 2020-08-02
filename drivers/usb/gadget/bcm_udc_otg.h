@@ -7,6 +7,7 @@
 #define __BCM_UDC_OTG_H
 
 #include <common.h>
+#include <linux/types.h>
 
 static inline void wfld_set(uintptr_t addr, uint32_t fld_val, uint32_t fld_mask)
 {

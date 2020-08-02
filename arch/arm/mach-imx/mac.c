@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <asm/arch/sys_proto.h>
 #include <errno.h>
+#include <linux/types.h>
 
 struct imx_mac_fuse {
 	u32 mac_addr0;

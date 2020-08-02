@@ -17,6 +17,7 @@
 #include <asm/global_data.h>
 #include <asm/microblaze_intc.h>
 #include <asm/asm.h>
+#include <asm/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

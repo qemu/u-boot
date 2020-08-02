@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <linux/libfdt.h>
 #include <mapmem.h>
+#include <linux/types.h>
 
 /**
  * Check if image header is correct.

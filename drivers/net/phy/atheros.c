@@ -9,6 +9,7 @@
 #include <common.h>
 #include <phy.h>
 #include <stdbool.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <linux/bitfield.h>
 #include <linux/bitops.h>

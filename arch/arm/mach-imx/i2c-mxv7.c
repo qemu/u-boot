@@ -15,6 +15,7 @@
 #include <asm/mach-imx/mxc_i2c.h>
 #include <watchdog.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 int force_idle_bus(void *priv)
 {

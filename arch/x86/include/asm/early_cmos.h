@@ -7,6 +7,7 @@
 #define __EARLY_CMOS_H
 
 /* CMOS actually resides in the RTC SRAM */
+#include <asm/types.h>
 #define CMOS_IO_PORT	0x70
 
 /**

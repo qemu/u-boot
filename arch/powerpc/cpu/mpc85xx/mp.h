@@ -2,6 +2,7 @@
 #define __MPC85XX_MP_H_
 
 #include <asm/mp.h>
+#include <asm/types.h>
 
 phys_addr_t get_spin_phys_addr(void);
 u32 get_my_id(void);

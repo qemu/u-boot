@@ -5,6 +5,7 @@
  */
 
 #include <spl.h>
+#include <asm/types.h>
 #include <linux/io.h>
 #include <linux/kernel.h>
 

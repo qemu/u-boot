@@ -8,6 +8,7 @@
 #include <init.h>
 #include <asm/global_data.h>
 #include <asm/immap.h>
+#include <asm/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

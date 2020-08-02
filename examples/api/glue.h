@@ -12,6 +12,7 @@
 #ifndef _API_GLUE_H_
 #define _API_GLUE_H_
 
+#include <linux/types.h>
 #define API_SEARCH_LEN		(3 * 1024 * 1024)	/* 3MB search range */
 
 #define UB_MAX_MR	5	/* max mem regions number */

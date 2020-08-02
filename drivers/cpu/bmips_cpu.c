@@ -8,6 +8,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu.h>
 #include <display_options.h>
 #include <dm.h>
@@ -18,6 +19,7 @@
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define REV_CHIPID_SHIFT		16
 #define REV_CHIPID_MASK			(0xffff << REV_CHIPID_SHIFT)

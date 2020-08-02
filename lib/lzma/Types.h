@@ -5,6 +5,7 @@
 #define __7Z_TYPES_H
 
 #include <stddef.h>
+#include <linux/types.h>
 
 #ifdef _WIN32
 #include <windows.h>

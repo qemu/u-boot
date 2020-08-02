@@ -14,6 +14,7 @@
 #include <bedbug/bedbug.h>
 #include <bedbug/regs.h>
 #include <bedbug/ppc.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

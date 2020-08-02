@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/bitops.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 

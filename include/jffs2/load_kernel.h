@@ -9,6 +9,7 @@
  * Description:   header for load kernel modules
  *-----------------------------------------------------------------------*/
 
+#include <asm/types.h>
 #include <linux/list.h>
 
 /* mtd device types */

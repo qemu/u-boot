@@ -20,6 +20,7 @@
 #include <mtd.h>
 #include <nand.h>
 #include <onenand_uboot.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <dm/devres.h>
@@ -31,6 +32,7 @@
 #include <linux/errno.h>
 #include <jffs2/load_kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #undef ubi_msg
 #define ubi_msg(fmt, ...) printf("UBI: " fmt "\n", ##__VA_ARGS__)

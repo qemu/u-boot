@@ -18,6 +18,7 @@
 #include <asm/arch/lcdc.h>
 #include <asm/arch/gpio.h>
 #include <asm/gpio.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/string.h>
 

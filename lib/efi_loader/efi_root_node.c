@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <malloc.h>
 #include <efi_loader.h>
 

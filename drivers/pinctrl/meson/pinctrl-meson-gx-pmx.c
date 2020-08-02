@@ -3,11 +3,13 @@
  * (C) Copyright 2016 - Beniamino Galvani <b.galvani@gmail.com>
  */
 
+#include <compiler.h>
 #include <log.h>
 #include <vsprintf.h>
 #include <asm/gpio.h>
 #include <common.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <dm/pinctrl.h>
 #include <linux/bitops.h>
 #include <linux/io.h>

@@ -3,10 +3,12 @@
  * Copyright (C) 2019 Texas Instruments Incorporated - http://www.ti.com/
  */
 
+#include <compiler.h>
 #include <asm/io.h>
 #include <clk.h>
 #include <common.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/err.h>

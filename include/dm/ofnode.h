@@ -11,6 +11,7 @@
 #include <fdtdec.h>
 #include <stdbool.h>
 #include <dm/of.h>
+#include <linux/types.h>
 
 /* Enable checks to protect against invalid calls */
 #undef OF_CHECKS

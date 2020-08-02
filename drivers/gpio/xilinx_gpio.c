@@ -15,6 +15,7 @@
 #include <dm.h>
 #include <dt-bindings/gpio/gpio.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define XILINX_GPIO_MAX_BANK	2
 

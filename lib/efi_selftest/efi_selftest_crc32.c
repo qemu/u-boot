@@ -10,6 +10,7 @@
  */
 
 #include <efi_selftest.h>
+#include <asm/types.h>
 #include <u-boot/crc.h>
 
 const struct efi_system_table *st;

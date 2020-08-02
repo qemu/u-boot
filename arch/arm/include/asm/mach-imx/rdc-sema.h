@@ -13,6 +13,7 @@
  *      d3      d2      d1       d0    | master id  |  peri id
  *   d[x] means domain[x], x can be [3 - 0].
  */
+#include <asm/types.h>
 typedef u32 rdc_peri_cfg_t;
 typedef u32 rdc_ma_cfg_t;
 

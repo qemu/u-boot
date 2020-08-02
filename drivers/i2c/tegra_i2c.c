@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <i2c.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <clk.h>
 #include <reset.h>
@@ -25,6 +26,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 enum i2c_type {
 	TYPE_114,

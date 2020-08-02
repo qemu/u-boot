@@ -9,6 +9,7 @@
 #include <netdev.h>
 #include <asm/io.h>
 #include <asm/u-boot.h>
+#include <linux/types.h>
 
 void reset_cpu(ulong addr)
 {

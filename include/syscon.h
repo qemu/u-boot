@@ -9,6 +9,7 @@
 
 #include <dm/ofnode.h>
 #include <fdtdec.h>
+#include <linux/types.h>
 
 /**
  * struct syscon_uc_info - Information stored by the syscon UCLASS_UCLASS

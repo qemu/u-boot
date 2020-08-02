@@ -16,6 +16,7 @@
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "../common/sleep.h"
 #include <fsl_validate.h>
 #include <fsl_immap.h>

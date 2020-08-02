@@ -5,8 +5,10 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include <asm/io.h>
 #include <asm/arch/nexell.h>

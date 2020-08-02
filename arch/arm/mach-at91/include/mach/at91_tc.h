@@ -6,6 +6,7 @@
 #ifndef AT91_TC_H
 #define AT91_TC_H
 
+#include <asm/types.h>
 typedef struct at91_tcc {
 	u32		ccr;	/* 0x00 Channel Control Register */
 	u32		cmr;	/* 0x04 Channel Mode Register */

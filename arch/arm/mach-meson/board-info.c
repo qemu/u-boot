@@ -10,6 +10,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <linux/bitfield.h>
 #include <regmap.h>
 #include <syscon.h>

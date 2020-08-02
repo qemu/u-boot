@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <fdtdec.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include "mmc_private.h"

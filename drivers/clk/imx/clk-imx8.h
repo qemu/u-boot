@@ -5,6 +5,7 @@
  */
 
 #include <stdbool.h>
+#include <linux/types.h>
 struct imx8_clks {
 	ulong id;
 	const char *name;

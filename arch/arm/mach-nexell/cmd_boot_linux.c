@@ -11,6 +11,7 @@
 #include <errno.h>
 #include <image.h>
 #include <fdt_support.h>
+#include <linux/types.h>
 
 #if !defined(CONFIG_SPL_BUILD) || defined(CONFIG_SPL_CLI_FRAMEWORK)
 

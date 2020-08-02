@@ -8,6 +8,7 @@
 #ifndef _FSL_MC_SYS_H
 #define _FSL_MC_SYS_H
 
+#include <compiler.h>
 #include <asm/io.h>
 
 struct mc_command;

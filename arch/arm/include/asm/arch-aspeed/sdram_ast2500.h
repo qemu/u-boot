@@ -97,6 +97,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 struct ast2500_sdrammc_regs {
 	u32 protection_key;
 	u32 config;

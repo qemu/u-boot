@@ -11,6 +11,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <asm/gpio.h>
 #include <asm/arch/gpio.h>
@@ -22,6 +23,7 @@
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <malloc.h>
 #include <nand.h>

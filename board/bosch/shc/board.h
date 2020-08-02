@@ -15,6 +15,7 @@
 #define _BOARD_H_
 
 /* Definition to control the GPIOs (for LEDs and Reset) */
+#include <linux/types.h>
 #define GPIO_TO_PIN(bank, gpio) (32 * (bank) + (gpio))
 
 static inline int board_is_b_sample(void)

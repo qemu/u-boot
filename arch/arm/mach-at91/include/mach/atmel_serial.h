@@ -7,6 +7,7 @@
 #define _ATMEL_SERIAL_H
 
 /* Information about a serial port */
+#include <linux/types.h>
 struct atmel_serial_platdata {
 	uint32_t base_addr;
 };

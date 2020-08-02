@@ -16,6 +16,7 @@
 #include <asm/arch/sama5d3_smc.h>
 #include <asm/arch/sama5d4.h>
 #include <debug_uart.h>
+#include <asm/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

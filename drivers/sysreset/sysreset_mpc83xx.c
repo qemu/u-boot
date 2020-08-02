@@ -8,6 +8,7 @@
 #include <command.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <sysreset.h>
 #include <vsprintf.h>
@@ -17,6 +18,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include "sysreset_mpc83xx.h"
 

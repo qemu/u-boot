@@ -9,9 +9,11 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <asm/system.h>
 #include <asm/cache.h>
 #include <asm/armv7.h>
+#include <asm/types.h>
 #include <linux/compiler.h>
 
 void __weak v7_arch_cp15_set_l2aux_ctrl(u32 l2actlr, u32 cpu_midr,

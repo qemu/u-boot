@@ -7,6 +7,7 @@
 #ifndef _CLOCK_SNAPDRAGON_H
 #define _CLOCK_SNAPDRAGON_H
 
+#include <linux/types.h>
 #define CFG_CLK_SRC_CXO   (0 << 8)
 #define CFG_CLK_SRC_GPLL0 (1 << 8)
 #define CFG_CLK_SRC_MASK  (7 << 8)

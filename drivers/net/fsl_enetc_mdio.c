@@ -14,6 +14,7 @@
 #include <asm/io.h>
 #include <asm/processor.h>
 #include <miiphy.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 
 #include "fsl_enetc.h"

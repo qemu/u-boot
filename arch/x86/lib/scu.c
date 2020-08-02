@@ -16,6 +16,7 @@
 #include <syscon.h>
 #include <asm/cpu.h>
 #include <asm/scu.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/ddr.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <power/pmic.h>

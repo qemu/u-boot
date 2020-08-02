@@ -27,6 +27,7 @@
 #ifdef CONFIG_NET
 #include <netdev.h>
 #endif
+#include <linux/types.h>
 #include <u-boot/crc.h>
 #include "theadorable.h"
 

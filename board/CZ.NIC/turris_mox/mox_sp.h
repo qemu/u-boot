@@ -7,6 +7,7 @@
 #define _BOARD_CZNIC_TURRIS_MOX_MOX_SP_H_
 
 #include <common.h>
+#include <asm/types.h>
 
 const char *mox_sp_get_ecdsa_public_key(void);
 int mbox_sp_get_board_info(u64 *sn, u8 *mac1, u8 *mac2, int *bv,

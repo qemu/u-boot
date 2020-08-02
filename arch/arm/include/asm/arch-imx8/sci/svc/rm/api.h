@@ -7,6 +7,7 @@
 #define SC_RM_API_H
 
 #include <asm/arch/sci/types.h>
+#include <asm/types.h>
 
 /* Defines for type widths */
 #define SC_RM_PARTITION_W   5U      /* Width of sc_rm_pt_t */

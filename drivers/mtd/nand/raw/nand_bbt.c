@@ -71,6 +71,7 @@
 #include <linux/bitops.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define BBT_BLOCK_GOOD		0x00
 #define BBT_BLOCK_WORN		0x01

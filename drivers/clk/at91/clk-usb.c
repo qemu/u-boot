@@ -12,6 +12,7 @@
 #include <linux/err.h>
 #include <linux/io.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <mach/at91_pmc.h>
 #include "pmc.h"
 

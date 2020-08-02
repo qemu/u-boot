@@ -103,6 +103,7 @@
 #include <vsprintf.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <net/fastboot.h>
 #include <net/tftp.h>
 #if defined(CONFIG_CMD_PCAP)

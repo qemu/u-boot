@@ -7,6 +7,7 @@
 #ifndef _VIDEO_OSD_H_
 #define _VIDEO_OSD_H_
 
+#include <linux/types.h>
 struct video_osd_info {
 	/* The width of the OSD display in columns */
 	uint width;

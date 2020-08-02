@@ -11,6 +11,7 @@
 #ifndef	_SYS_ZAP_LEAF_H
 #define	_SYS_ZAP_LEAF_H
 
+#include <linux/types.h>
 #define	ZAP_LEAF_MAGIC 0x2AB1EAF
 
 /* chunk size = 24 bytes */

@@ -17,6 +17,7 @@
 #include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_SPL_ETH_SUPPORT) || defined(CONFIG_SPL_USB_ETHER)
 static ulong spl_net_load_read(struct spl_load_info *load, ulong sector,

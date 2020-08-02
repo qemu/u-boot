@@ -6,6 +6,7 @@
 
 #include <clk.h>
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <malloc.h>
 #include <power-domain-uclass.h>
@@ -13,6 +14,7 @@
 #include <syscon.h>
 #include <asm/io.h>
 #include <asm/processor.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/err.h>
 #include <linux/errno.h>

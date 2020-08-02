@@ -13,6 +13,7 @@
 #include <crypto/public_key.h>
 #endif
 
+#include <linux/types.h>
 struct key;
 struct pkcs7_message;
 

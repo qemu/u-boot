@@ -8,6 +8,7 @@
 #include <common.h>
 #include <efi_loader.h>
 #include <stdbool.h>
+#include <linux/types.h>
 
 const efi_guid_t efi_guid_device_path_utilities_protocol =
 		EFI_DEVICE_PATH_UTILITIES_PROTOCOL_GUID;

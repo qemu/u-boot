@@ -23,6 +23,7 @@
 #include <rtc.h>
 #include <i2c.h>
 #include <stdio.h>
+#include <asm/types.h>
 
 #define M41T62_REG_SSEC	0
 #define M41T62_REG_SEC	1

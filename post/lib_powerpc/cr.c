@@ -7,6 +7,7 @@
 #include <common.h>
 #include <irq_func.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 /*
  * CPU test

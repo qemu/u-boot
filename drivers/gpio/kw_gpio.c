@@ -7,6 +7,7 @@
 
 /*
  * Based on (mostly copied from) plat-orion based Linux 2.6 kernel driver.
+#include <asm/types.h>
  * Removed orion_gpiochip struct and kernel level irq handling.
  *
  * Dieter Kiermaier dk-arm-linux@gmx.de

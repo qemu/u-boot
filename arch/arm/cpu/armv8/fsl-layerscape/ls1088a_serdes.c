@@ -4,9 +4,12 @@
  */
 
 #include <common.h>
+#include <compiler.h>
+#include <stdbool.h>
 #include <asm/arch/fsl_serdes.h>
 #include <asm/arch/soc.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 
 struct serdes_config {

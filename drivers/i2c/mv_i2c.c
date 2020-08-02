@@ -17,6 +17,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <i2c.h>
 #include <log.h>
@@ -25,6 +26,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "mv_i2c.h"
 
 /* All transfers are described by this data structure */

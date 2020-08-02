@@ -7,6 +7,7 @@
 #ifndef __NEXELL_RESET__
 #define __NEXELL_RESET__
 
+#include <asm/types.h>
 #define NUMBER_OF_RESET_MODULE_PIN      69
 
 enum rstcon {

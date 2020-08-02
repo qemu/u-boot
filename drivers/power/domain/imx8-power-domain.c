@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <asm/arch/power-domain.h>
 #include <asm/arch/sci/sci.h>
+#include <asm/types.h>
 
 static int imx8_power_domain_request(struct power_domain *power_domain)
 {

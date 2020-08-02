@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <dm/device_compat.h>
@@ -17,6 +18,7 @@
 #include <dm/pinctrl.h>
 #include <dm/util.h>
 #include <dm/of_access.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

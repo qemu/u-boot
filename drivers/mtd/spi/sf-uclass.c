@@ -13,6 +13,7 @@
 #include <asm/global_data.h>
 #include <dm/device-internal.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "sf_internal.h"
 
 DECLARE_GLOBAL_DATA_PTR;

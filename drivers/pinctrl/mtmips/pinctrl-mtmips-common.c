@@ -8,6 +8,7 @@
 #include <common.h>
 #include <dm.h>
 #include <malloc.h>
+#include <asm/types.h>
 #include <dm/pinctrl.h>
 #include <linux/errno.h>
 #include <linux/io.h>

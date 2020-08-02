@@ -10,7 +10,9 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm-generic/gpio.h>
 #include <clk.h>
@@ -27,6 +29,7 @@
 #include <linux/iopoll.h>
 #include <asm/io.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 /* Register offsets */
 #define DW_SPI_CTRL0			0x00

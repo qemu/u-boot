@@ -13,6 +13,7 @@
 #include <fdt_support.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/string.h>
 

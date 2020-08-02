@@ -67,6 +67,7 @@
 	 WDT_RESET_ADC | WDT_RESET_GPIO | WDT_RESET_MISC)
 
 #ifndef __ASSEMBLY__
+#include <linux/types.h>
 struct ast_wdt {
 	u32 counter_status;
 	u32 counter_reload_val;

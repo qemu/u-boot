@@ -12,6 +12,7 @@
 #include <common.h>
 #include <i2c.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include "anx98xx-edp.h"
 #include "anx9804.h"

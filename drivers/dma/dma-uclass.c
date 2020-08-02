@@ -22,6 +22,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_DMA_CHANNELS
 static inline struct dma_ops *dma_dev_ops(struct udevice *dev)

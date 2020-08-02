@@ -3,7 +3,9 @@
  * Copyright 2018 NXP
  */
 #include <common.h>
+#include <compiler.h>
 #include <phy.h>
+#include <asm/types.h>
 #include <fsl-mc/ldpaa_wriop.h>
 #include <asm/io.h>
 #include <asm/arch/fsl_serdes.h>

@@ -16,6 +16,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "tpm-user-utils.h"
 
 static int do_tpm2_startup(struct cmd_tbl *cmdtp, int flag, int argc,

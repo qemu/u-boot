@@ -8,11 +8,13 @@
 
 #include <clk.h>
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <generic-phy.h>
 #include <log.h>
 #include <reset.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

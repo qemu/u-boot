@@ -8,6 +8,7 @@
 #include <common.h>
 #include <asm/io.h>
 #include <div64.h>
+#include <linux/types.h>
 
 #define PLL145X_MDIV_SHIFT	16
 #define PLL145X_MDIV_MASK	0x3ff

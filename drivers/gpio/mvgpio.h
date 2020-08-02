@@ -12,6 +12,7 @@
 #define __MVGPIO_H__
 
 #include <common.h>
+#include <asm/types.h>
 
 /*
  * GPIO Register map for Marvell SOCs

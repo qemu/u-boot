@@ -24,6 +24,7 @@
 #include <membuff.h>
 #include <asm/u-boot.h>
 #include <linux/list.h>
+#include <linux/types.h>
 
 typedef struct global_data {
 	struct bd_info *bd;

@@ -12,6 +12,7 @@
 #include <dm/uclass.h>
 #include <linux/bch.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include "vpd_reader.h"
 
 /* BCH configuration */

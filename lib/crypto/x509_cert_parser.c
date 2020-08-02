@@ -19,6 +19,7 @@
 #ifdef __UBOOT__
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #endif
 #include <crypto/public_key.h>
 #ifdef __UBOOT__

@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <i2c.h>
 #include <fdt_support.h>
 #include <fsl_ddr_sdram.h>
@@ -30,6 +31,7 @@
 #include <fsl_esdhc.h>
 #include <fsl_ifc.h>
 #include <spl.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 
 #include "../common/qixis.h"

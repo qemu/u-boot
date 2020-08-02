@@ -10,6 +10,7 @@
 /**
  * Defines the memory controller registers we need/care about
  */
+#include <asm/types.h>
 struct mc_ctlr {
 	u32 reserved0[3];			/* offset 0x00 - 0x08 */
 	u32 mc_emem_cfg;			/* offset 0x0C */

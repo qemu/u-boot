@@ -10,6 +10,7 @@
 
 #include <linux/ctype.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /**
  * skip_spaces - Removes leading whitespace from @str.

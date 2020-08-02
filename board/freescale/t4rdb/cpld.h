@@ -11,6 +11,7 @@
 /*
  * CPLD register set. Feel free to add board-specific #ifdefs where necessary.
  */
+#include <asm/types.h>
 struct cpld_data {
 	u8 chip_id1;	/* 0x00 - CPLD Chip ID1 Register */
 	u8 chip_id2;	/* 0x01 - CPLD Chip ID2 Register */

@@ -14,6 +14,7 @@
 #include <dm/lists.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include <power/as3722.h>
 #include <power/pmic.h>
 

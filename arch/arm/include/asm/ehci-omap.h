@@ -11,6 +11,7 @@
 #ifndef _OMAP_COMMON_EHCI_H_
 #define _OMAP_COMMON_EHCI_H_
 
+#include <asm/types.h>
 enum usbhs_omap_port_mode {
 	OMAP_USBHS_PORT_MODE_UNUSED,
 	OMAP_EHCI_PORT_MODE_PHY,

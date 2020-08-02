@@ -13,6 +13,7 @@
 
 #include <efi.h>
 #include <elf.h>
+#include <linux/types.h>
 
 efi_status_t EFIAPI _relocate(long ldbase, Elf32_Dyn *dyn)
 {

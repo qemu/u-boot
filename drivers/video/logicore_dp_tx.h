@@ -12,6 +12,7 @@
 #define __GDSYS_LOGICORE_DP_TX_H__
 
 /*
+#include <asm/types.h>
  * struct logicore_dp_tx_msa - Main Stream Attributes (MSA)
  * @pixel_clock_hz:            The pixel clock of the stream (in Hz)
  * @bits_per_color:            Number of bits per color component

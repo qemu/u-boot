@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
@@ -13,6 +14,7 @@
 #include <errno.h>
 #include <fdtdec.h>
 #include <generic-phy.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/libfdt.h>

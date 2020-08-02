@@ -16,6 +16,7 @@
 #include <spi.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 #include "tegra_spi.h"
 
 /* COMMAND1 */

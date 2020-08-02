@@ -30,6 +30,7 @@
 #include <asm/io.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifndef CONFIG_SYS_XIMG_LEN
 /* use 8MByte as default max gunzip size */

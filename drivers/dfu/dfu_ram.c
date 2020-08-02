@@ -16,6 +16,7 @@
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static int dfu_transfer_medium_ram(enum dfu_op op, struct dfu_entity *dfu,
 				   u64 offset, void *buf, long *len)

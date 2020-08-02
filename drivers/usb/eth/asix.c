@@ -19,6 +19,7 @@
 #include <linux/errno.h>
 #include <linux/mii.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "usb_ether.h"
 
 /* ASIX AX8817X based USB 2.0 Ethernet Devices */

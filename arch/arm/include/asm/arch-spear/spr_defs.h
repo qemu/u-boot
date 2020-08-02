@@ -7,6 +7,7 @@
 #ifndef __SPR_DEFS_H__
 #define __SPR_DEFS_H__
 
+#include <linux/types.h>
 extern int spear_board_init(ulong);
 extern void setfreq(unsigned int, unsigned int);
 extern unsigned int setfreq_sz;

@@ -11,6 +11,7 @@
 
 #include <asm/arch/hardware.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 #define QM_OK                    0
 #define QM_ERR                  -1

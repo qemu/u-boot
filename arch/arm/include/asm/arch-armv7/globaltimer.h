@@ -6,6 +6,7 @@
 #ifndef _GLOBALTIMER_H_
 #define _GLOBALTIMER_H_
 
+#include <asm/types.h>
 struct globaltimer {
 	u32 cnt_l; /* 0x00 */
 	u32 cnt_h;

@@ -40,6 +40,7 @@
 #include <asm/io.h>
 #include <asm/pci.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

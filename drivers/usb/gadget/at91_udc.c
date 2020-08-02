@@ -14,6 +14,7 @@
 #undef	PACKET_TRACE
 
 #include <common.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <dm/devres.h>
 #include <linux/bug.h>
@@ -25,6 +26,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <mach/at91_matrix.h>
 #include <linux/list.h>
 #include <linux/usb/ch9.h>

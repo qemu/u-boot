@@ -7,6 +7,7 @@
 #define _MVEBU_EFUSE_H
 
 #include <common.h>
+#include <asm/types.h>
 
 struct efuse_val {
 	union {

@@ -6,6 +6,7 @@
 #ifndef __CONTAINER_HEADER_H_
 #define __CONTAINER_HEADER_H_
 
+#include <compiler.h>
 #include <linux/sizes.h>
 #include <linux/types.h>
 

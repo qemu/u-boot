@@ -10,6 +10,7 @@
 #include <common.h>
 #include <stdbool.h>
 #include <asm/cache.h>
+#include <asm/types.h>
 
 #include <asm/arch/cpu.h>
 #include <asm/arch/cpucfg.h>

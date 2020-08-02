@@ -8,6 +8,8 @@
  * Wolfgang Denk's LCD-Framework (CONFIG_LCD, common/lcd.c)
  *
  * - supporting 16/24/32bit RGB/TFT raster Mode (not using palette)
+#include <stdbool.h>
+#include <linux/types.h>
  * - sets up LCD controller as in 'am335x_lcdpanel' struct given
  * - starts output DMA from gd->fb_base buffer
  */

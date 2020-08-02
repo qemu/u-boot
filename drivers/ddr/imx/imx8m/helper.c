@@ -15,6 +15,7 @@
 #include <asm/arch/ddr.h>
 #include <asm/arch/lpddr4_define.h>
 #include <asm/sections.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 
 DECLARE_GLOBAL_DATA_PTR;

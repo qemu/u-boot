@@ -68,6 +68,7 @@
 #include <bootretry.h>
 #include <cli.h>
 #include <command.h>
+#include <compiler.h>
 #include <console.h>
 #include <dm.h>
 #include <edid.h>
@@ -83,6 +84,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 
 /* Display values from last command.

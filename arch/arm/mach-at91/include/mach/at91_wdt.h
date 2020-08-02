@@ -19,6 +19,8 @@
 
 #else
 
+#include <compiler.h>
+#include <asm/types.h>
 typedef struct at91_wdt {
 	u32	cr;
 	u32	mr;

@@ -26,6 +26,7 @@
 #include <linux/delay.h>
 #include <linux/libfdt.h>
 #include <fdt_support.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

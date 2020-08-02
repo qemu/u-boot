@@ -7,6 +7,7 @@
 #ifndef __asm_axi_h
 #define __asm_axi_h
 
+#include <linux/types.h>
 #define axi_emul_get_ops(dev)	((struct axi_emul_ops *)(dev)->driver->ops)
 
 /**

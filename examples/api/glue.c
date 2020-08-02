@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <env.h>
 #include <linux/string.h>
 #include <linux/types.h>

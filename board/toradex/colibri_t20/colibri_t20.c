@@ -18,6 +18,7 @@
 #include <asm/io.h>
 #include <i2c.h>
 #include <nand.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include "../common/tdx-common.h"

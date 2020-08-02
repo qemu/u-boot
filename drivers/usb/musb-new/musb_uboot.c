@@ -2,9 +2,11 @@
 #include <console.h>
 #include <dm.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <watchdog.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/err.h>
 #include <linux/errno.h>

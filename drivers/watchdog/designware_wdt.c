@@ -5,6 +5,7 @@
 
 #include <clk.h>
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <reset.h>
 #include <wdt.h>
@@ -13,6 +14,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #define DW_WDT_CR	0x00
 #define DW_WDT_TORR	0x04

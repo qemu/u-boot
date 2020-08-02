@@ -8,6 +8,7 @@
 #ifndef	__PXA_H__
 #define	__PXA_H__
 
+#include <linux/types.h>
 #define PXA255_A0	0x00000106
 #define PXA250_C0	0x00000105
 #define PXA250_B2	0x00000104

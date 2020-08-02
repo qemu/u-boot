@@ -7,6 +7,7 @@
 #define _SMSC_LPC47M_H_
 
 /* I/O address of LPC47M */
+#include <linux/types.h>
 #define LPC47M_IO_PORT	0x2e
 
 /* Logical device number */

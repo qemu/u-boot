@@ -7,6 +7,7 @@
 #define __FSL_LS102XA_STREAM_ID_H_
 
 #include <fsl_sec.h>
+#include <linux/types.h>
 
 #define SET_LIODN_ENTRY_1(name, idA, off, compatoff) \
 	{ .compat = name, \

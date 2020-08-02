@@ -6,6 +6,7 @@
  * Author: Christoph Fritz <chf.fritz@googlemail.com>
  */
 
+#include <compiler.h>
 #include <init.h>
 #include <net.h>
 #include <stdio.h>
@@ -34,6 +35,7 @@
 #include <miiphy.h>
 #include <netdev.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/pfuze100_pmic.h>
 #include <usb.h>

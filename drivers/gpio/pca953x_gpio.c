@@ -33,6 +33,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define PCA953X_INPUT           0
 #define PCA953X_OUTPUT          1

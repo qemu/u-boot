@@ -10,6 +10,7 @@
 #define __LCDC_H__
 
 /* LCD module registers */
+#include <asm/types.h>
 typedef struct lcd_ctrl {
 	u32 ssar;		/* 0x00 Screen Start Address Register */
 	u32 sr;			/* 0x04 LCD Size Register */

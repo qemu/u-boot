@@ -35,6 +35,7 @@
 #include <input.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/pfuze100_pmic.h>
 #include <asm/arch/mx6-ddr.h>

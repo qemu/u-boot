@@ -7,6 +7,7 @@
 #include <common.h>
 #include <bootm.h>
 #include <command.h>
+#include <compiler.h>
 #include <image.h>
 #include <irq_func.h>
 #include <lmb.h>
@@ -14,6 +15,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/compiler.h>
+#include <linux/types.h>
 
 int __weak bootz_setup(ulong image, ulong *start, ulong *end)
 {

@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <console.h>
 #include <flash.h>
 #include <hwconfig.h>
@@ -31,6 +32,7 @@
 #include <fsl_esdhc.h>
 #include <phy.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "bcsr.h"
 #if defined(CONFIG_PQ_MDS_PIB)

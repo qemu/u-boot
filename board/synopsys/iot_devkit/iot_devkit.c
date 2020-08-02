@@ -14,6 +14,7 @@
 #include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <fdtdec.h>
+#include <linux/types.h>
 
 #include <asm/arcregs.h>
 

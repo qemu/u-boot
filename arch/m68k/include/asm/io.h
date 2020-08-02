@@ -10,6 +10,7 @@
 #define __ASM_M68K_IO_H__
 
 #include <asm/byteorder.h>
+#include <asm/types.h>
 
 #ifndef _IO_BASE
 #define _IO_BASE 0

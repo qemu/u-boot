@@ -10,6 +10,7 @@
 #ifndef LPDDR4_PRIV_H
 #define LPDDR4_PRIV_H
 
+#include <linux/types.h>
 #define PRODUCT_ID (0x1046U)
 #define VERSION_0  (0x54d5da40U)
 #define VERSION_1  (0xc1865a1U)

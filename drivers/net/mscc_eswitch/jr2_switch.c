@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <config.h>
 #include <dm.h>
 #include <malloc.h>
@@ -22,6 +23,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <dt-bindings/mscc/jr2_data.h>
 #include "mscc_xfer.h"

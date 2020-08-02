@@ -7,6 +7,7 @@
 #ifndef _SPR_MISC_H
 #define _SPR_MISC_H
 
+#include <linux/types.h>
 struct misc_regs {
 	u32 auto_cfg_reg;	/* 0x0 */
 	u32 armdbg_ctr_reg;	/* 0x4 */

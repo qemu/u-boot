@@ -24,6 +24,7 @@
 #define AT91_ASM_SMC_MODE0	(ATMEL_BASE_SMC + 0x0C)
 
 #else
+#include <asm/types.h>
 
 typedef struct	at91_cs {
 	u32	setup;		/* 0x00 SMC Setup Register */

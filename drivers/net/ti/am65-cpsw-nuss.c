@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/cache.h>
 #include <asm/io.h>
@@ -27,6 +28,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/soc/ti/ti-udma.h>
+#include <linux/types.h>
 
 #include "cpsw_mdio.h"
 

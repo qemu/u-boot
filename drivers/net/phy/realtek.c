@@ -8,6 +8,7 @@
  */
 #include <common.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <phy.h>
 #include <linux/delay.h>

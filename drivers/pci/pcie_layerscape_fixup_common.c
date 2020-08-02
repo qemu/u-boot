@@ -16,6 +16,7 @@
 #include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "pcie_layerscape_fixup_common.h"
 
 void ft_pci_setup(void *blob, struct bd_info *bd)

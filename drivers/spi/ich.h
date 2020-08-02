@@ -8,7 +8,9 @@
 #ifndef _ICH_H_
 #define _ICH_H_
 
+#include <compiler.h>
 #include <linux/bitops.h>
+#include <linux/types.h>
 struct ich7_spi_regs {
 	uint16_t spis;
 	uint16_t spic;

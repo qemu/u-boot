@@ -16,6 +16,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 const long long ICS8N3QV01_FREF = 114285000;
 const long long ICS8N3QV01_FREF_LL = 114285000LL;

@@ -39,6 +39,7 @@
 #include <linux/sizes.h>
 #include <asm/dma-mapping.h>
 #include <wait_bit.h>
+#include <linux/types.h>
 
 /* Register definitions derived from Linux source */
 #define SYS_REV_CTRL			0x00

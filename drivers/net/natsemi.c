@@ -61,6 +61,7 @@
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* defines */
 #define EEPROM_SIZE 0xb /*12 16-bit chunks, or 24 bytes*/

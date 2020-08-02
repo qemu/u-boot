@@ -4,6 +4,7 @@
  */
 
 /* ID = Device Version (bit31:16) + Device Part Number (RPN) (bit7:0) */
+#include <asm/types.h>
 #define CPU_STM32MP157Cxx	0x05000000
 #define CPU_STM32MP157Axx	0x05000001
 #define CPU_STM32MP153Cxx	0x05000024

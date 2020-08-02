@@ -7,6 +7,7 @@
 #ifndef __MICROCHIP_DDR2_REGS_H
 #define __MICROCHIP_DDR2_REGS_H
 
+#include <asm/types.h>
 #include <linux/bitops.h>
 
 /* DDR2 Controller */

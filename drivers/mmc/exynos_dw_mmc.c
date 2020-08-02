@@ -20,6 +20,7 @@
 #include <asm/arch/power.h>
 #include <asm/gpio.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #define	DWMMC_MAX_CH_NUM		4
 #define	DWMMC_MAX_FREQ			52000000

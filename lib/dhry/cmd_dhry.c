@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <vsprintf.h>
+#include <linux/types.h>
 #include "dhry.h"
 
 static int do_dhry(struct cmd_tbl *cmdtp, int flag, int argc,

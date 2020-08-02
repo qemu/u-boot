@@ -108,6 +108,7 @@ are GPL, so this is, of course, GPL.
 /* timeout for tx/rx in s */
 #include <stdbool.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #define TOUT 5
 /* Ether MAC address size */

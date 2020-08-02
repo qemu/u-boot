@@ -43,6 +43,7 @@
 #include <linux/stat.h>
 #include <linux/err.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "ubifs.h"
 #include <ubi_uboot.h>
 #include <linux/stringify.h>

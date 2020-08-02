@@ -7,6 +7,7 @@
 #define __SEC_FIRMWARE_H_
 
 #include <stdbool.h>
+#include <linux/types.h>
 
 #define PSCI_INVALID_VER		0xffffffff
 #define SEC_JR3_OFFSET			0x40000

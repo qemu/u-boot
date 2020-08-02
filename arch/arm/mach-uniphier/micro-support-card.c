@@ -5,10 +5,12 @@
  *   Author: Masahiro Yamada <yamada.masahiro@socionext.com>
  */
 
+#include <compiler.h>
 #include <dm.h>
 #include <fdt_support.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/ctype.h>
 #include <linux/delay.h>
 #include <linux/io.h>

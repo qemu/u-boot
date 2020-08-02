@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /* Write the RBF data to FPGA via SPI */
 static int program_write(int spi_bus, int spi_dev, const void *rbf_data,

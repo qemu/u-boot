@@ -6,6 +6,7 @@
 #ifndef	_NIC301_REGISTERS_H_
 #define	_NIC301_REGISTERS_H_
 
+#include <asm/types.h>
 struct nic301_registers {
 	u32	remap;				/* 0x0 */
 	/* Security Register Group */

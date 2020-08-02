@@ -84,6 +84,7 @@
 #include <linux/err.h>
 #include <linux/mtd/mtd.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_CMD_NAND)
 #include <linux/mtd/rawnand.h>

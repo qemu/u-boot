@@ -10,6 +10,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <reset-uclass.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <dm/lists.h>
@@ -17,6 +18,7 @@
 #include <linux/errno.h>
 #include <linux/log2.h>
 #include <asm/arch/ccu.h>
+#include <linux/types.h>
 
 struct sunxi_reset_priv {
 	void *base;

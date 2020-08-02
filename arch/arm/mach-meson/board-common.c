@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <init.h>
 #include <net.h>
@@ -22,6 +23,7 @@
 #include <asm/armv8/mmu.h>
 #include <asm/unaligned.h>
 #include <efi_loader.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 
 #if CONFIG_IS_ENABLED(FASTBOOT)

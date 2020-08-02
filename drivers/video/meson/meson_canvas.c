@@ -9,6 +9,7 @@
 #include <common.h>
 #include <dm.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 #include "meson_vpu.h"
 

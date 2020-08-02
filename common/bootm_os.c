@@ -7,6 +7,7 @@
 #include <common.h>
 #include <bootm.h>
 #include <bootstage.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <efi_loader.h>
 #include <env.h>
@@ -14,6 +15,7 @@
 #include <image.h>
 #include <lmb.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
@@ -24,6 +26,7 @@
 #include <mapmem.h>
 #include <vxworks.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <tee/optee.h>
 
 DECLARE_GLOBAL_DATA_PTR;

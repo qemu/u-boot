@@ -25,6 +25,7 @@
  * However we relay on the ROM to configure the pins of MMC0 (eMMC) as well
  * as MMC1 (microSD card-cage) since these are our boot devices.
  */
+#include <asm/types.h>
 void enable_uart0_pin_mux(void);
 void enable_uart1_pin_mux(void);
 void enable_uart2_pin_mux(void);

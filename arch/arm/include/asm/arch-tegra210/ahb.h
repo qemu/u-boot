@@ -7,6 +7,7 @@
 #ifndef _TEGRA210_AHB_H_
 #define _TEGRA210_AHB_H_
 
+#include <asm/types.h>
 struct ahb_ctlr {
 	u32 reserved0;			/* 00h */
 	u32 arbitration_disable;	/* _ARBITRATION_DISABLE_0,	04h */

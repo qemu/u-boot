@@ -9,7 +9,9 @@
 #include <common.h>
 #include <dm.h>
 #include <edid.h>
+#include <stdbool.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>

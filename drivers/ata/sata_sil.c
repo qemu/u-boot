@@ -22,6 +22,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #if CONFIG_IS_ENABLED(BLK)
 #include <dm.h>

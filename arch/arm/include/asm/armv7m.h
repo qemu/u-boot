@@ -23,6 +23,7 @@
 #define V7M_SCB_VTOR		0x08
 
 #if !defined(__ASSEMBLY__)
+#include <linux/types.h>
 struct v7m_scb {
 	uint32_t cpuid;		/* CPUID Base Register */
 	uint32_t icsr;		/* Interrupt Control and State Register */

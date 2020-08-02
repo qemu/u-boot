@@ -15,6 +15,7 @@
  * but not include/linux/mfd/mc9s08dz60/pmic.h
  *
  */
+#include <asm/types.h>
 enum mc9sdz60_reg {
 	MC9SDZ60_REG_VERSION		= 0x00,
 	/* reserved                       0x01 */

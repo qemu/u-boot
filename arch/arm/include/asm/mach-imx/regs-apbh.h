@@ -237,6 +237,7 @@ struct mxs_apbh_regs {
 };
 #endif
 
+#include <linux/types.h>
 #endif
 
 #define	APBH_CTRL0_SFTRST				(1 << 31)

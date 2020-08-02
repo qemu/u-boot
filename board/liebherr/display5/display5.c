@@ -9,6 +9,7 @@
 #include <fdt_support.h>
 #include <init.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
@@ -27,6 +28,7 @@
 #include <miiphy.h>
 #include <netdev.h>
 #include <i2c.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>

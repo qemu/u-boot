@@ -12,6 +12,7 @@
 #ifndef __ARM_PL180_MMCI_H__
 #define __ARM_PL180_MMCI_H__
 
+#include <asm/types.h>
 /* need definition of struct mmc_config */
 #include <mmc.h>
 

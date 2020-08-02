@@ -13,6 +13,7 @@
 #include <asm/arch-rockchip/sdram.h>
 #include <dm/uclass-internal.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

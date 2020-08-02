@@ -10,6 +10,8 @@
 
 /*
  * This file describes UBIFS on-flash format and contains definitions of all the
+#include <compiler.h>
+#include <linux/types.h>
  * relevant data structures and constants.
  *
  * All UBIFS on-flash objects are stored in the form of nodes. All nodes start

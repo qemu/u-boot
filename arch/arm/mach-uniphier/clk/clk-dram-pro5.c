@@ -3,6 +3,7 @@
  * Copyright (C) 2015-2017 Socionext Inc.
  */
 
+#include <asm/types.h>
 #include <linux/io.h>
 
 #include "../init.h"

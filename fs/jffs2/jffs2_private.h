@@ -1,6 +1,7 @@
 #ifndef jffs2_private_h
 #define jffs2_private_h
 
+#include <asm/types.h>
 #include <jffs2/jffs2.h>
 
 

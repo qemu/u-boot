@@ -7,6 +7,7 @@
 #include <common.h>
 #include <log.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>

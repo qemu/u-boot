@@ -60,6 +60,7 @@
 #define	DPC_PADCLKSEL_VCLK2		1	/* VCLK2 */
 
 /* display sync info for DPC */
+#include <linux/types.h>
 struct dp_sync_info {
 	int interlace;
 	int h_active_len;

@@ -14,4 +14,5 @@ void mv_phy_88e1318_init(const char *name, u16 phyaddr);
 int lacie_read_mac_address(uchar *mac);
 #endif
 
+#include <linux/types.h>
 #endif /* _LACIE_COMMON_H */

@@ -10,6 +10,7 @@
 #include <dm/root.h>
 #include <dm/util.h>
 #include <dm/uclass-internal.h>
+#include <linux/types.h>
 
 static void show_devices(struct udevice *dev, int depth, int last_flag)
 {

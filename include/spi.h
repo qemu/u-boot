@@ -11,6 +11,7 @@
 
 #include <common.h>
 #include <linux/bitops.h>
+#include <linux/types.h>
 
 /* SPI mode flags */
 #define SPI_CPHA	BIT(0)	/* clock phase (1 = SPI_CLOCK_PHASE_SECOND) */

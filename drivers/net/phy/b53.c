@@ -26,6 +26,7 @@
 #include <command.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

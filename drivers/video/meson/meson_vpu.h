@@ -9,8 +9,10 @@
 #ifndef __MESON_VPU_H__
 #define __MESON_VPU_H__
 
+#include <compiler.h>
 #include <stdbool.h>
 #include <video.h>
+#include <asm/types.h>
 #include "meson_registers.h"
 
 struct display_timing;

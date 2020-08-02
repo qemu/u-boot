@@ -16,6 +16,7 @@
 #define _ENV_INTERNAL_H_
 
 #include <linux/kconfig.h>
+#include <linux/types.h>
 
 /**************************************************************************
  *

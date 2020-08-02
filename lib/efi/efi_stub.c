@@ -10,12 +10,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <debug_uart.h>
 #include <efi.h>
 #include <efi_api.h>
 #include <errno.h>
 #include <malloc.h>
 #include <ns16550.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/cpu.h>
 #include <asm/io.h>

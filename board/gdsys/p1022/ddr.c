@@ -10,6 +10,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <fsl_ddr_sdram.h>
 #include <fsl_ddr_dimm_params.h>

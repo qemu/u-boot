@@ -5,9 +5,11 @@
 
 #include <common.h>
 #include <ahci.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <init.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

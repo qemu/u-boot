@@ -10,6 +10,7 @@
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <asm/arch/pinmux.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 
 struct hi6220_pinmux0_regs *pmx0 =

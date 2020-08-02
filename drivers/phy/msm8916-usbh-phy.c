@@ -4,8 +4,10 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <generic-phy.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <usb/ehci-ci.h>

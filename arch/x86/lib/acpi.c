@@ -9,6 +9,7 @@
 #include <asm/io.h>
 #include <asm/tables.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static struct acpi_rsdp *acpi_valid_rsdp(struct acpi_rsdp *rsdp)
 {

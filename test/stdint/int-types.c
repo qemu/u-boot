@@ -1,5 +1,6 @@
 #include <common.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 int test_types(void)
 {

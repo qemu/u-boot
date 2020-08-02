@@ -11,8 +11,10 @@
  */
 #ifndef __LINUX_CDNS3_GADGET
 #define __LINUX_CDNS3_GADGET
+#include <compiler.h>
 #include <linux/bitops.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <linux/usb/gadget.h>
 
 /*

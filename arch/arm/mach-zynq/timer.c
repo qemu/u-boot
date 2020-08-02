@@ -38,6 +38,7 @@
 #include <asm/io.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/clk.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

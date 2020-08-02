@@ -33,6 +33,7 @@ struct lpuart_fsl_reg32 {
 };
 #endif
 
+#include <linux/types.h>
 struct lpuart_fsl {
 	u8 ubdh;
 	u8 ubdl;

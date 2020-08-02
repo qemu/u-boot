@@ -19,6 +19,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "pch_gbe.h"
 
 #if !defined(CONFIG_PHYLIB)

@@ -23,6 +23,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 /**
  * check_node_type() - check node type

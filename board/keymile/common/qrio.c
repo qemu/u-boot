@@ -5,8 +5,10 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <stdbool.h>
 #include <asm/ppc.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 
 #include "common.h"

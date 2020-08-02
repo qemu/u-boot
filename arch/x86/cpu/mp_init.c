@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu.h>
 #include <dm.h>
 #include <errno.h>
@@ -35,6 +36,7 @@
 #include <linux/kernel.h>
 #include <linux/linkage.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

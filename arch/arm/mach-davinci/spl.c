@@ -17,6 +17,7 @@
 #include <malloc.h>
 #include <spi_flash.h>
 #include <mmc.h>
+#include <linux/types.h>
 
 #ifndef CONFIG_SPL_LIBCOMMON_SUPPORT
 void puts(const char *str)

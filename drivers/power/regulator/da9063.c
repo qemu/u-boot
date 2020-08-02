@@ -6,10 +6,12 @@
 
 #include <common.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/da9063_pmic.h>
 #include <power/pmic.h>
 #include <power/regulator.h>

@@ -11,6 +11,7 @@
 #include <init.h>
 #include <mpc83xx.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 
 #include <asm/bitops.h>
 #include <asm/io.h>

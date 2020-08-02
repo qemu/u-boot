@@ -6,6 +6,7 @@
 #ifndef __PRELOADER_H_
 #define __PRELOADER_H_
 
+#include <asm/types.h>
 enum forbidden_mode {
 	F_FACTORY_MODE = 0x0001
 };

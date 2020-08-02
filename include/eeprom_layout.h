@@ -9,6 +9,7 @@
 #ifndef _LAYOUT_
 #define _LAYOUT_
 
+#include <compiler.h>
 #define RESERVED_FIELDS			NULL
 #define LAYOUT_VERSION_UNRECOGNIZED	-1
 #define LAYOUT_VERSION_AUTODETECT	-2

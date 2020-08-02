@@ -13,6 +13,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 struct at91_matrix {
 	u32	mcfg[16];
 	u32	scfg[16];

@@ -10,6 +10,7 @@
 #include <vbe.h>
 #include <video.h>
 #include <asm/mtrr.h>
+#include <linux/types.h>
 
 static int vesa_video_probe(struct udevice *dev)
 {

@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

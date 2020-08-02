@@ -27,6 +27,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_DM_MMC
 struct sunxi_mmc_variant {

@@ -17,6 +17,7 @@
 #include <rtc.h>
 #include <i2c.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 
 /*

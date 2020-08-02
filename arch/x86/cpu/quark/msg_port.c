@@ -7,6 +7,7 @@
 #include <asm/arch/device.h>
 #include <asm/arch/msg_port.h>
 #include <asm/arch/quark.h>
+#include <asm/types.h>
 
 void msg_port_setup(int op, int port, int reg)
 {

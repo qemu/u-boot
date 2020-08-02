@@ -41,6 +41,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <linux/types.h>
 static inline __attribute__((always_inline)) void cpu_hlt(void)
 {
 	asm("hlt");

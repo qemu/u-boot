@@ -9,6 +9,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 #include <linux/bitops.h>
 struct atmel_pio4_port {
 	u32 mskr;		/* 0x00 PIO Mask Register */

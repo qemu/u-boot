@@ -2,6 +2,7 @@
 #ifndef __ASM_MACH_BMIPS_IOREMAP_H
 #define __ASM_MACH_BMIPS_IOREMAP_H
 
+#include <compiler.h>
 #include <linux/types.h>
 
 /*

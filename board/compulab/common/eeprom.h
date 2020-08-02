@@ -10,6 +10,7 @@
 #define _EEPROM_
 #include <errno.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_SYS_I2C
 int cl_eeprom_read_mac_addr(uchar *buf, uint eeprom_bus);

@@ -7,6 +7,7 @@
 #include <common.h>
 #include <ata.h>
 #include <blk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <ide.h>
 #include <log.h>
@@ -17,6 +18,7 @@
 #include <asm/io.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifdef __PPC__
 # define EIEIO		__asm__ volatile ("eieio")

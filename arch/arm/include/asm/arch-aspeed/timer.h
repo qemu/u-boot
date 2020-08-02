@@ -28,6 +28,7 @@
  * it this just one device.
  */
 
+#include <asm/types.h>
 struct ast_timer_counter {
 	u32 status;
 	u32 reload_val;

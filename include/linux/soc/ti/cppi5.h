@@ -8,11 +8,14 @@
 #ifndef __TI_CPPI5_H__
 #define __TI_CPPI5_H__
 
+#include <compiler.h>
 #include <hexdump.h>
 #include <stdbool.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 /**
  * Descriptor header, present in all types of descriptors

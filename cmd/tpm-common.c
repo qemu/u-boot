@@ -13,6 +13,7 @@
 #include <asm/unaligned.h>
 #include <linux/string.h>
 #include <tpm-common.h>
+#include <linux/types.h>
 #include "tpm-user-utils.h"
 
 static struct udevice *tpm_dev;

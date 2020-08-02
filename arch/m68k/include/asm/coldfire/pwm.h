@@ -10,6 +10,7 @@
 #define __ATA_H__
 
 /* Pulse Width Modulation (PWM) */
+#include <asm/types.h>
 typedef struct pwm_ctrl {
 #ifdef CONFIG_M5272
 	u8 cr0;

@@ -15,6 +15,7 @@
 #include <asm/u-boot.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_SYS_MEMAC_LITTLE_ENDIAN
 #define memac_out_32(a, v)	out_le32(a, v)

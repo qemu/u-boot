@@ -8,6 +8,7 @@
 #include <errno.h>
 #include <asm/io.h>
 #include <asm/arch/handoff_s10.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 
 static void sysmgr_pinmux_handoff_read(void *handoff_address,

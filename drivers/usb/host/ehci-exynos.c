@@ -22,6 +22,7 @@
 #include <asm/gpio.h>
 #include <linux/errno.h>
 #include <linux/compat.h>
+#include <linux/types.h>
 #include "ehci.h"
 
 /* Declare global data pointer */

@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <dma.h>
 #include <log.h>
@@ -24,6 +25,7 @@
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define ETH_PORT_STR			"brcm,enetsw-port"
 

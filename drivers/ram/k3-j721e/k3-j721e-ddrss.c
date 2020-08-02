@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <hang.h>
 #include <log.h>
@@ -17,6 +18,7 @@
 #include <wait_bit.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #include "lpddr4_obj_if.h"
 #include "lpddr4_if.h"

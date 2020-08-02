@@ -1,5 +1,6 @@
 /* this file is generated - do not edit */
 
+#include <asm/types.h>
 static const u32 crc32table_le[] = {
 tole(0x00000000L), tole(0x77073096L), tole(0xee0e612cL), tole(0x990951baL),
 tole(0x076dc419L), tole(0x706af48fL), tole(0xe963a535L), tole(0x9e6495a3L),

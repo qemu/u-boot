@@ -29,6 +29,7 @@
 #include <fsl_dtsec.h>
 #include <asm/fsl_serdes.h>
 #include <hwconfig.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/string.h>
 #include "../common/qixis.h"

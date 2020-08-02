@@ -14,6 +14,7 @@
 #include <vsprintf.h>
 #include <watchdog.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #ifndef CONFIG_BOOT_RETRY_MIN
 #define CONFIG_BOOT_RETRY_MIN CONFIG_BOOT_RETRY_TIME

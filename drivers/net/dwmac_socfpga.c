@@ -13,6 +13,7 @@
 #include <regmap.h>
 #include <reset.h>
 #include <syscon.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include "designware.h"
 #include <dm/device_compat.h>

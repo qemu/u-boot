@@ -11,6 +11,8 @@
 
 /*
  * This file defines the layout of UBI headers and all the other UBI on-flash
+#include <compiler.h>
+#include <linux/types.h>
  * data structures.
  */
 

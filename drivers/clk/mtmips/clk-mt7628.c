@@ -7,12 +7,14 @@
 
 #include <common.h>
 #include <clk-uclass.h>
+#include <compiler.h>
 #include <dm.h>
 #include <dt-bindings/clock/mt7628-clk.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 /* SYSCFG0 */
 #define XTAL_40M_SEL			BIT(6)

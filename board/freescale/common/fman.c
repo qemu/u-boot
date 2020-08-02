@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <asm/types.h>
 #include <linux/libfdt.h>
 #include <linux/libfdt_env.h>
 #include <fdt_support.h>

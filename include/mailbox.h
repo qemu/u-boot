@@ -32,6 +32,7 @@
  * messages. This header file describes the API used by clients.
  */
 
+#include <linux/types.h>
 struct udevice;
 
 /**

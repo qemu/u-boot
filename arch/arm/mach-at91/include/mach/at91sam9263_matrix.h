@@ -14,6 +14,7 @@
 #ifndef __ASSEMBLY__
 
 /*
+#include <asm/types.h>
  * This struct defines access to the matrix' maximum of
  * 16 masters and 16 slaves.
  * Note: not all masters/slaves are available

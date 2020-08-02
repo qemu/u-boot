@@ -10,6 +10,7 @@
 #define __ATA_H__
 
 /* ATA */
+#include <asm/types.h>
 typedef struct atac {
 	/* PIO */
 	u8 toff;		/* 0x00 */

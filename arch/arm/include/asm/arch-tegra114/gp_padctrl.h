@@ -7,6 +7,7 @@
 #define _TEGRA114_GP_PADCTRL_H_
 
 #include <asm/arch-tegra/gp_padctrl.h>
+#include <asm/types.h>
 
 /* APB_MISC_GP and padctrl registers */
 struct apb_misc_gp_ctlr {

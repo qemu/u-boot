@@ -13,6 +13,7 @@
 #include <vsprintf.h>
 #include <asm/io.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 /* Display values from last command */
 static ulong last_addr, last_size;

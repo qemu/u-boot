@@ -12,6 +12,7 @@
 #include <common.h>
 #include <api.h>
 #include <bootstage.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <display_options.h>
 #include <exports.h>
@@ -28,6 +29,7 @@
 #include <asm/u-boot.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 /* TODO: can we just include all these headers whether needed or not? */
 #if defined(CONFIG_CMD_BEDBUG)

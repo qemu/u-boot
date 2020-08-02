@@ -13,6 +13,7 @@
 #define __ARP_H__
 
 #include <common.h>
+#include <linux/types.h>
 
 extern struct in_addr net_arp_wait_packet_ip;
 /* MAC address of waiting packet's destination */

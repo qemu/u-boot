@@ -13,6 +13,7 @@
 #include <phy.h>
 #ifndef __ASSEMBLY__
 #include <linux/bitops.h>
+#include <linux/types.h>
 #endif
 
 /* EMAC */

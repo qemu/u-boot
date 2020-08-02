@@ -4,11 +4,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <asm/ppc.h>
 #include <fsl_ddr_sdram.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 #if (CONFIG_CHIP_SELECTS_PER_CTRL > 4)
 #error Invalid setting for CONFIG_CHIP_SELECTS_PER_CTRL

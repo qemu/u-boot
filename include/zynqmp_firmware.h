@@ -8,6 +8,7 @@
 #ifndef _ZYNQMP_FIRMWARE_H_
 #define _ZYNQMP_FIRMWARE_H_
 
+#include <linux/types.h>
 enum pm_api_id {
 	PM_GET_API_VERSION = 1,
 	PM_SET_CONFIGURATION,

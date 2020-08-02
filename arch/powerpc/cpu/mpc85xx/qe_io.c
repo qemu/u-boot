@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <asm/io.h>
 #include <asm/immap_85xx.h>

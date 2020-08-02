@@ -11,6 +11,7 @@
 
 #include <stdbool.h>
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/kernel.h>
 #endif

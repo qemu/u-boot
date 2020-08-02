@@ -11,6 +11,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <spi.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <asm/mpc8xxx_spi.h>
@@ -20,6 +21,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 enum {
 	SPI_EV_NE = BIT(31 - 22),	/* Receiver Not Empty */

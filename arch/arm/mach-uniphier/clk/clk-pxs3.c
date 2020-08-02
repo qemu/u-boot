@@ -3,6 +3,7 @@
  * Copyright (C) 2017 Socionext Inc.
  */
 
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/io.h>
 

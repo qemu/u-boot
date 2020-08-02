@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <miiphy.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 
 #define SANDBOX_PHY_ADDR	5

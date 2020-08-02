@@ -8,6 +8,7 @@
 #ifndef _NHLT_H_
 #define _NHLT_H_
 
+#include <linux/types.h>
 struct acpi_ctx;
 struct nhlt;
 struct nhlt_endpoint;

@@ -11,6 +11,7 @@
 #include <asm/byteorder.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* Offset of master header from the start of a coreboot ROM */
 #define MASTER_HDR_OFFSET	0x38

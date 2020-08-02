@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <dwmmc.h>
 #include <init.h>
@@ -11,6 +12,7 @@
 #include <stdio.h>
 #include <asm/arcregs.h>
 #include <asm/global_data.h>
+#include <linux/types.h>
 #include "axs10x.h"
 #include <asm/cache.h>
 

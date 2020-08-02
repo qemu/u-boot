@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <log.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #include <asm/arch/nexell.h>
 #include <asm/arch/tieoff.h>

@@ -7,6 +7,7 @@
 #include <common.h>
 #include <lcd.h>
 #include <libtizen.h>
+#include <linux/types.h>
 
 #include "tizen_logo_16bpp.h"
 #include "tizen_logo_16bpp_gzip.h"

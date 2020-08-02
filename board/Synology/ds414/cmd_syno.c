@@ -16,6 +16,7 @@
 #include <vsprintf.h>
 #include <linux/mtd/mtd.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <asm/io.h>
 #include "../drivers/ddr/marvell/axp/ddr3_init.h"

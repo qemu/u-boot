@@ -11,6 +11,7 @@
 #include <log.h>
 #include <stdbool.h>
 #include <video_bridge.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 

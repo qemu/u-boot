@@ -10,6 +10,7 @@
 #include <log.h>
 #include <stdbool.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <spmi/spmi.h>
 #include <asm/io.h>

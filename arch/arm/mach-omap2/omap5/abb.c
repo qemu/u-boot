@@ -11,6 +11,7 @@
 #include <common.h>
 #include <asm/omap_common.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 
 /*

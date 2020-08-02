@@ -9,6 +9,7 @@
 #include <common.h>
 #include <fsl_dcu_fb.h>
 #include <i2c.h>
+#include <asm/types.h>
 #include <linux/fb.h>
 
 #define PIXEL_CLK_LSB_REG		0x00

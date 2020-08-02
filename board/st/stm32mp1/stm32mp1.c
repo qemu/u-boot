@@ -26,6 +26,7 @@
 #include <phy.h>
 #include <remoteproc.h>
 #include <reset.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <syscon.h>
 #include <usb.h>
@@ -46,6 +47,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 #include <usb/dwc2_udc.h>
 

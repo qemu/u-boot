@@ -8,9 +8,11 @@
 #ifndef _IMX8IMAGE_H_
 #define _IMX8IMAGE_H_
 
+#include <compiler.h>
 #include <image.h>
 #include <inttypes.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "imagetool.h"
 
 #define __packed   __attribute__((packed))

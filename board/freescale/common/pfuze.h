@@ -14,4 +14,5 @@ struct pmic *pfuze_common_init(unsigned char i2cbus);
 int pfuze_mode_init(struct pmic *p, u32 mode);
 #endif
 
+#include <asm/types.h>
 #endif

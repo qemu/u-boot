@@ -9,6 +9,7 @@
 #include <common.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <asm/io.h>

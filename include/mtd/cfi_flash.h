@@ -7,6 +7,7 @@
 #ifndef __CFI_FLASH_H__
 #define __CFI_FLASH_H__
 
+#include <asm/types.h>
 #define FLASH_CMD_CFI			0x98
 #define FLASH_CMD_READ_ID		0x90
 #define FLASH_CMD_RESET			0xff

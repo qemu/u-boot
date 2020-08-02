@@ -6,6 +6,7 @@
 #ifndef __ASM_ARCH_MX7ULP_GPIO_H
 #define __ASM_ARCH_MX7ULP_GPIO_H
 
+#include <asm/types.h>
 struct gpio_regs {
 	u32 gpio_pdor;
 	u32 gpio_psor;

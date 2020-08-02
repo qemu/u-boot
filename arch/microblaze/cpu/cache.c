@@ -9,6 +9,7 @@
 #include <cpu_func.h>
 #include <asm/asm.h>
 #include <asm/cache.h>
+#include <linux/types.h>
 
 int dcache_status(void)
 {

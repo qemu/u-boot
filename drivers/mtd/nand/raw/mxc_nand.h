@@ -43,6 +43,7 @@
 #else
 #error "MXC NFC implementation not supported"
 #endif
+#include <asm/types.h>
 #define is_mxc_nfc_3()		is_mxc_nfc_32()
 
 #if defined(MXC_NFC_V1)

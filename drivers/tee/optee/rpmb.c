@@ -10,6 +10,7 @@
 #include <mmc.h>
 #include <dm/device_compat.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include "optee_msg.h"
 #include "optee_private.h"

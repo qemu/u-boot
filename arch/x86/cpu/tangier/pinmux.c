@@ -4,8 +4,10 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <dm/pinctrl.h>
 #include <dm/read.h>
 #include <regmap.h>
@@ -16,6 +18,7 @@
 #include <linux/io.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #define BUFCFG_OFFSET				0x100
 

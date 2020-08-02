@@ -14,6 +14,7 @@
 #include <mapmem.h>
 #include <stdio.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 #include <u-boot/zlib.h>
 #include <bzlib.h>

@@ -9,6 +9,7 @@
 #include <common.h>
 #include <console.h>
 #include <mapmem.h>
+#include <asm/types.h>
 #include <dm/test.h>
 #include <test/ut.h>
 

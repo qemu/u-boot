@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <malloc.h>
 #include <fdtdec.h>
 #include <nand.h>

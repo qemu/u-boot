@@ -16,6 +16,7 @@
 #include <mapmem.h>
 #include <spi.h>
 #include <spi_flash.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <vsprintf.h>
@@ -24,6 +25,7 @@
 #include <linux/kernel.h>
 #include <linux/mtd/mtd.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <asm/io.h>
 #include <dm/device-internal.h>

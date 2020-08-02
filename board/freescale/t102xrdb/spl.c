@@ -4,6 +4,7 @@
 
 #include <common.h>
 #include <clock_legacy.h>
+#include <compiler.h>
 #include <console.h>
 #include <env_internal.h>
 #include <init.h>
@@ -18,6 +19,7 @@
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "../common/sleep.h"
 #include "../common/spl.h"
 

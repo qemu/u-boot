@@ -10,6 +10,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <malloc.h>
 #include <asm/bitops.h>

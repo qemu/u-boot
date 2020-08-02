@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <stdio.h>
 #include <asm/io.h>
@@ -17,6 +18,7 @@
 #include <nand.h>
 #include <linux/mtd/omap_elm.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define BADBLOCK_MARKER_LENGTH	2
 #define SECTOR_BYTES		512

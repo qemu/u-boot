@@ -11,6 +11,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <hang.h>
 #include <init.h>
@@ -29,6 +30,7 @@
 #include <asm/arch/sys_proto.h>
 #include <linux/compiler.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

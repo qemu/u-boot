@@ -8,6 +8,7 @@
 #ifndef __EMC2305_H_
 #define __EMC2305_H_
 
+#include <asm/types.h>
 #define I2C_EMC2305_CONF		0x20
 #define I2C_EMC2305_FAN1		0x30
 #define I2C_EMC2305_FAN2		0x40

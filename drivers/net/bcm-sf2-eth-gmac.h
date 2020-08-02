@@ -6,6 +6,7 @@
 #ifndef _BCM_SF2_ETH_GMAC_H_
 #define _BCM_SF2_ETH_GMAC_H_
 
+#include <linux/types.h>
 #define BCM_SF2_ETH_MAC_NAME	"gmac"
 
 #ifndef ETHHW_PORT_INT

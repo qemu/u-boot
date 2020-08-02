@@ -14,6 +14,7 @@
 #include <dm/root.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /**
  * struct i2c_mux: Information the uclass stores about an I2C mux

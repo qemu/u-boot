@@ -10,8 +10,10 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <asm/emif.h>
 #include <asm/arch/sys_proto.h>
+#include <asm/types.h>
 
 /*
  * This file provides details of the LPDDR2 SDRAM parts used on OMAP4430

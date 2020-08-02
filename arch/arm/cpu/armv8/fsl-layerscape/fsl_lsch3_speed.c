@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <clock_legacy.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <stdio.h>
 #include <asm/global_data.h>
@@ -18,6 +19,7 @@
 #include <asm/arch-fsl-layerscape/immap_lsch3.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/soc.h>
+#include <linux/types.h>
 #include "cpu.h"
 
 DECLARE_GLOBAL_DATA_PTR;

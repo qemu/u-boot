@@ -10,6 +10,7 @@
  */
 
 #include <efi_selftest.h>
+#include <linux/types.h>
 /* Include containing the miniapp.efi application */
 #include "efi_miniapp_file_image_return.h"
 

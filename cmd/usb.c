@@ -25,6 +25,7 @@
 #include <part.h>
 #include <usb.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_USB_STORAGE
 static int usb_stor_curr_dev = -1; /* current device */

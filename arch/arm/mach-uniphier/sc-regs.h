@@ -11,6 +11,7 @@
 #define ARCH_SC_REGS_H
 
 #ifndef __ASSEMBLY__
+#include <compiler.h>
 #include <linux/compiler.h>
 #define sc_base			((void __iomem *)SC_BASE)
 #endif

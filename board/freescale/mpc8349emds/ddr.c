@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/ppc.h>
+#include <linux/types.h>
 
 #include <fsl_ddr_sdram.h>
 #include <fsl_ddr_dimm_params.h>

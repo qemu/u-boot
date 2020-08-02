@@ -10,7 +10,9 @@
 #include <fdtdec.h>
 #include <i2c.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/gpio.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>

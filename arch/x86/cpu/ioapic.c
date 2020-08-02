@@ -8,6 +8,7 @@
 #include <asm/io.h>
 #include <asm/ioapic.h>
 #include <asm/lapic.h>
+#include <asm/types.h>
 
 u32 io_apic_read(u32 reg)
 {

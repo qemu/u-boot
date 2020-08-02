@@ -21,6 +21,7 @@ typedef unsigned int u32;
  * in this case being AES_BLOCK_LENGTH bytes.
  */
 
+#include <asm/types.h>
 enum {
 	AES_STATECOLS	= 4,	/* columns in the state & expanded key */
 	AES128_KEYCOLS	= 4,	/* columns in a key for aes128 */

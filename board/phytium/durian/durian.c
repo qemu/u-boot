@@ -19,6 +19,7 @@
 #include <linux/arm-smccc.h>
 #include <linux/kernel.h>
 #include <scsi.h>
+#include <linux/types.h>
 #include "cpu.h"
 
 DECLARE_GLOBAL_DATA_PTR;

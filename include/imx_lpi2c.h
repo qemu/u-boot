@@ -9,6 +9,7 @@
 #define __IMX_LPI2C_H__
 
 #include <clk.h>
+#include <linux/types.h>
 
 struct imx_lpi2c_bus {
 	int index;

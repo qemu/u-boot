@@ -11,6 +11,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <asm/byteorder.h>
@@ -27,6 +28,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "ehci.h"
 

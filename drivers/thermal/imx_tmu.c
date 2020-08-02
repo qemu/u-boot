@@ -4,6 +4,7 @@
  *
  */
 
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <stdbool.h>
@@ -21,6 +22,7 @@
 #include <thermal.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

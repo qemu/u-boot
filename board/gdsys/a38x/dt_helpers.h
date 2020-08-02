@@ -8,6 +8,7 @@
 #define __DT_HELPERS_H
 
 #include <stdbool.h>
+#include <linux/types.h>
 int fdt_disable_by_ofname(void *rw_fdt_blob, char *ofname);
 bool dm_i2c_simple_probe(struct udevice *bus, uint chip_addr);
 int request_gpio_by_name(struct gpio_desc *gpio, const char *gpio_dev_name,

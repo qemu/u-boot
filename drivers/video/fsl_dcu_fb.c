@@ -22,6 +22,7 @@
 #include <video_fb.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "videomodes.h"
 
 /* Convert the X,Y resolution pair into a single number */

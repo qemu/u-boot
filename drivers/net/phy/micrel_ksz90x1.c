@@ -14,6 +14,7 @@
 #include <errno.h>
 #include <micrel.h>
 #include <phy.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 

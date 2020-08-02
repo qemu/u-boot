@@ -13,6 +13,7 @@
 #include <dm.h>
 #include <mapmem.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include "i2c-cortina.h"
 
 static void set_speed(struct i2c_regs *regs, int i2c_spd)

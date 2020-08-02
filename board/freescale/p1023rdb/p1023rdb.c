@@ -34,6 +34,7 @@
 #include <miiphy.h>
 #include <phy.h>
 #include <fsl_dtsec.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

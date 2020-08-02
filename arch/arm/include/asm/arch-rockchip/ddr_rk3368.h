@@ -7,6 +7,7 @@
 #define __ASM_ARCH_DDR_RK3368_H__
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/kernel.h>
 #endif

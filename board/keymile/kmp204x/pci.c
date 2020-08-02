@@ -13,6 +13,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <asm/fsl_pci.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/libfdt.h>

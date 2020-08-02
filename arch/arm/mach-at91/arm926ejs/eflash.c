@@ -52,6 +52,7 @@
 #include <asm/arch/at91_common.h>
 #include <asm/arch/at91_eefc.h>
 #include <asm/arch/at91_dbu.h>
+#include <linux/types.h>
 
 /* checks to detect configuration errors */
 #if CONFIG_SYS_MAX_FLASH_BANKS!=1

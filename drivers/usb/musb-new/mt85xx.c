@@ -12,6 +12,7 @@
 #include <common.h>
 #include <clk.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <dm/lists.h>
 #include <dm/root.h>
@@ -20,6 +21,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <linux/usb/musb.h>
 #include <usb.h>
 #include "linux-compat.h"

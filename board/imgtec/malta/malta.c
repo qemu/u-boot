@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <ide.h>
 #include <init.h>
 #include <net.h>
@@ -20,6 +21,7 @@
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <asm/addrspace.h>
 #include <asm/io.h>

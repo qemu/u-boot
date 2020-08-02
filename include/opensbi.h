@@ -8,6 +8,7 @@
 #define OPENSBI_H
 
 /** Expected value of info magic ('OSBI' ascii string in hex) */
+#include <compiler.h>
 #define FW_DYNAMIC_INFO_MAGIC_VALUE		0x4942534f
 
 /** Maximum supported info version */

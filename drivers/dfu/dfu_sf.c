@@ -17,6 +17,7 @@
 #include <linux/errno.h>
 #include <linux/mtd/mtd.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static int dfu_get_medium_size_sf(struct dfu_entity *dfu, u64 *size)
 {

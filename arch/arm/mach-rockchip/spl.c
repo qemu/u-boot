@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <debug_uart.h>
 #include <dm.h>
 #include <hang.h>
@@ -18,6 +19,7 @@
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

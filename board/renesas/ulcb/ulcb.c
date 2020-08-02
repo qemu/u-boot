@@ -13,6 +13,7 @@
 #include <netdev.h>
 #include <dm.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <dm/platform_data/serial_sh.h>
 #include <asm/processor.h>
 #include <asm/mach-types.h>

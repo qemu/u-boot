@@ -15,6 +15,7 @@
 #include <asm/arch/mpp.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include "nsa310s.h"
 
 DECLARE_GLOBAL_DATA_PTR;

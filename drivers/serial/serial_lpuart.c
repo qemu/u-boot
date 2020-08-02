@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <fsl_lpuart.h>
 #include <log.h>
@@ -20,6 +21,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/clock.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define US1_TDRE	(1 << 7)
 #define US1_RDRF	(1 << 5)

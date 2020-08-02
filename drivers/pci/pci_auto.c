@@ -14,6 +14,7 @@
 #include <pci.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <asm/types.h>
 
 /* the user can define CONFIG_SYS_PCI_CACHE_LINE_SIZE to avoid problems */
 #ifndef CONFIG_SYS_PCI_CACHE_LINE_SIZE

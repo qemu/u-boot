@@ -62,6 +62,7 @@
 #define FPGA_SOCFPGA_A10_RBF_CORE		0x8001
 #ifndef __ASSEMBLY__
 
+#include <linux/types.h>
 struct socfpga_fpga_manager {
 	u32  _pad_0x0_0x7[2];
 	u32  dclkcnt;

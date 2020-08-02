@@ -8,6 +8,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <time.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 
 #include <miiphy.h>

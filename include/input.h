@@ -9,6 +9,7 @@
 #define _INPUT_H
 
 #include <stdbool.h>
+#include <linux/types.h>
 enum {
 	INPUT_MAX_MODIFIERS	= 4,
 	INPUT_BUFFER_LEN	= 16,

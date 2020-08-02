@@ -8,6 +8,7 @@
 #ifndef _SH_MMCIF_H_
 #define _SH_MMCIF_H_
 
+#include <asm/types.h>
 struct sh_mmcif_regs {
 	unsigned long ce_cmd_set;
 	unsigned long reserved;

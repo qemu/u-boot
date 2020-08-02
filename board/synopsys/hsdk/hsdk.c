@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <config.h>
 #include <cpu_func.h>
 #include <env.h>
@@ -13,6 +14,7 @@
 #include <init.h>
 #include <irq_func.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/cache.h>
@@ -29,6 +31,7 @@
 #include <malloc.h>
 #include <usb.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "clk-lib.h"
 #include "env-lib.h"

@@ -10,6 +10,7 @@
 #include <log.h>
 #include <regmap.h>
 #include <reset.h>
+#include <stdbool.h>
 #include <syscon.h>
 #include <time.h>
 #include <linux/bitops.h>
@@ -18,6 +19,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <dm/device.h>
 #include <linux/err.h>

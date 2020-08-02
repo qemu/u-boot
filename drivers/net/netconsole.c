@@ -13,6 +13,7 @@
 #include <vsprintf.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifndef CONFIG_NETCONSOLE_BUFFER_SIZE
 #define CONFIG_NETCONSOLE_BUFFER_SIZE 512

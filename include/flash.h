@@ -15,6 +15,7 @@
  * FLASH Info: contains chip specific data, per FLASH bank
  */
 
+#include <linux/types.h>
 typedef struct {
 	ulong	size;			/* total bank size in bytes		*/
 	ushort	sector_count;		/* number of erase units		*/

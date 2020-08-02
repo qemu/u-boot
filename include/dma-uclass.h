@@ -12,6 +12,7 @@
 /* See dma.h for background documentation. */
 
 #include <dma.h>
+#include <linux/types.h>
 
 struct ofnode_phandle_args;
 

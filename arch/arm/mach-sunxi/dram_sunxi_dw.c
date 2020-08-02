@@ -11,6 +11,7 @@
 #include <common.h>
 #include <init.h>
 #include <log.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <asm/io.h>
 #include <asm/arch/clock.h>
@@ -19,6 +20,7 @@
 #include <linux/delay.h>
 #include <linux/kconfig.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 static void mctl_phy_init(u32 val)
 {

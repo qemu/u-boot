@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
+#include <linux/types.h>
  * SEC Descriptor Construction Library
  * Basic job descriptor construction
  *

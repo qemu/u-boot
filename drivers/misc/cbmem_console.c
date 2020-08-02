@@ -4,10 +4,12 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <console.h>
 #ifndef CONFIG_SYS_COREBOOT
 #error This driver requires coreboot
 #endif
+#include <asm/types.h>
 #include <linux/string.h>
 
 #include <asm/arch/sysinfo.h>

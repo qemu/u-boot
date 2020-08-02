@@ -16,6 +16,7 @@
 #include <asm/armv7.h>
 #include <asm/secure.h>
 #include <asm/setjmp.h>
+#include <linux/types.h>
 
 /**
  * entry_non_secure() - entry point when switching to non-secure mode

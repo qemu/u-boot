@@ -23,6 +23,7 @@
 #include <asm/rtc.h>
 #include <asm/test.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifdef DEBUG
 #define debug_buffer print_buffer

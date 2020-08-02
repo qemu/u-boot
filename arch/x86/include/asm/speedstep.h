@@ -10,6 +10,7 @@
 #define _ASM_SPEEDSTEP_H
 
 /* Magic value used to locate speedstep configuration in the device tree */
+#include <linux/types.h>
 #define SPEEDSTEP_APIC_MAGIC 0xACAC
 
 /* MWAIT coordination I/O base address. This must match

@@ -7,7 +7,9 @@
 #ifndef __FSP_VPD_H__
 #define __FSP_VPD_H__
 
+#include <compiler.h>
 #include <stddef.h>
+#include <asm/types.h>
 
 struct __packed memory_upd {
 	u64 signature;				/* Offset 0x0020 */

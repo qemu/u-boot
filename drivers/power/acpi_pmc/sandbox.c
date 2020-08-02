@@ -12,6 +12,7 @@
 #include <log.h>
 #include <asm/io.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <power/acpi_pmc.h>
 
 #define GPIO_GPE_CFG		0x1050

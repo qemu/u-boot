@@ -15,6 +15,7 @@
 #include <mapmem.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 u32 aes_get_key_len(char *command)
 {

@@ -12,6 +12,8 @@
 /* Control registers */
 
 /* Magic value ("virt" string) - Read Only */
+#include <compiler.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #define VIRTIO_MMIO_MAGIC_VALUE		0x000
 

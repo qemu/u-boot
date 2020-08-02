@@ -21,6 +21,7 @@
 #include <linux/compat.h>
 #include <linux/kernel.h>
 #include <linux/math64.h>
+#include <linux/types.h>
 
 /* Not needed on 64bit architectures */
 #if BITS_PER_LONG == 32

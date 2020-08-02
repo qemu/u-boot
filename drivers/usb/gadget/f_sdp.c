@@ -16,17 +16,20 @@
  * Parts of the implementation are based on f_dfu and f_thor.
  */
 
+#include <compiler.h>
 #include <errno.h>
 #include <common.h>
 #include <console.h>
 #include <env.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <linux/usb/ch9.h>
 #include <linux/usb/gadget.h>

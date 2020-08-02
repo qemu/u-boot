@@ -15,6 +15,7 @@
 #include <log.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/bug.h>
 #include <linux/string.h>
 

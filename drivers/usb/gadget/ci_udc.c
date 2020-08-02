@@ -9,10 +9,12 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <config.h>
 #include <cpu_func.h>
 #include <net.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/byteorder.h>
 #include <asm/cache.h>

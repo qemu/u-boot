@@ -14,6 +14,7 @@
 #include <asm/io.h>
 #include <errno.h>
 #include <fdtdec.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <altera.h>

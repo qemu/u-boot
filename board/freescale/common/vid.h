@@ -6,6 +6,7 @@
 #ifndef __VID_H_
 #define __VID_H_
 
+#include <linux/types.h>
 #define IR36021_LOOP1_MANUAL_ID_OFFSET	0x6A
 #define IR36021_LOOP1_VOUT_OFFSET	0x9A
 #define IR36021_MFR_ID_OFFSET		0x92

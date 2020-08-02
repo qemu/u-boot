@@ -9,6 +9,7 @@
  */
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <stdio.h>
 #include <linux/compiler.h>

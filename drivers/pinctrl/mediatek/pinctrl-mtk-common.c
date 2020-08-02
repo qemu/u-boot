@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <dm/device-internal.h>
 #include <dm/lists.h>
 #include <dm/pinctrl.h>

@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <init.h>
 #include <net.h>
@@ -23,6 +24,7 @@
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include "fsl_epu.h"
 

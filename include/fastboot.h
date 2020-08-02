@@ -12,6 +12,7 @@
 #ifndef _FASTBOOT_H_
 #define _FASTBOOT_H_
 
+#include <asm/types.h>
 #define FASTBOOT_VERSION	"0.4"
 
 /* The 64 defined bytes plus \0 */

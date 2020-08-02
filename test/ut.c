@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
+#include <linux/types.h>
 #include <test/test.h>
 #include <test/ut.h>
 

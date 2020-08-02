@@ -34,6 +34,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 struct socfpga_fpga_manager {
 	/* FPGA Manager Module */
 	u32	stat;			/* 0x00 */

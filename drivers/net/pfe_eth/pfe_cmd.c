@@ -16,6 +16,7 @@
 #include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <net/pfe_eth/pfe_eth.h>
 
 static inline void pfe_command_help(void)

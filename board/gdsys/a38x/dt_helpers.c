@@ -10,6 +10,7 @@
 #include <stdbool.h>
 #include <asm-generic/gpio.h>
 #include <dm.h>
+#include <linux/types.h>
 
 int fdt_disable_by_ofname(void *rw_fdt_blob, char *ofname)
 {

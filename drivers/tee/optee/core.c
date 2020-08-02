@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <tee.h>
 #include <linux/arm-smccc.h>
 #include <linux/err.h>
@@ -14,6 +15,7 @@
 #include <linux/io.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "optee_smc.h"
 #include "optee_msg.h"

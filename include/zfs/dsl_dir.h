@@ -11,6 +11,7 @@
 #ifndef	_SYS_DSL_DIR_H
 #define	_SYS_DSL_DIR_H
 
+#include <linux/types.h>
 typedef struct dsl_dir_phys {
 	uint64_t dd_creation_time; /* not actually used */
 	uint64_t dd_head_dataset_obj;

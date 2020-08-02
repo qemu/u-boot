@@ -14,6 +14,7 @@
 #include <asm/global_data.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 DECLARE_GLOBAL_DATA_PTR;
 #endif /* !USE_HOSdTCC*/
 #include <image.h>

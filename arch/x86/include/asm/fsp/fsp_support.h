@@ -14,6 +14,7 @@
 #include <asm/fsp/fsp_types.h>
 #include <asm/fsp_arch.h>
 #include <asm/fsp/fsp_azalia.h>
+#include <asm/types.h>
 
 #define FSP_LOWMEM_BASE		0x100000UL
 #define FSP_HIGHMEM_BASE	0x100000000ULL

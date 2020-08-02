@@ -7,6 +7,7 @@
 #ifndef __TPM_USER_UTILS_H
 #define __TPM_USER_UTILS_H
 
+#include <linux/types.h>
 void print_byte_string(u8 *data, size_t count);
 void *parse_byte_string(char *bytes, u8 *data, size_t *count_ptr);
 int report_return_code(int return_code);

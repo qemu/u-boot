@@ -12,6 +12,7 @@
 #define _MM_COMMUNICATION_H_
 
 #include <part_efi.h>
+#include <linux/types.h>
 
 /*
  * Interface to the pseudo Trusted Application (TA), which provides a

@@ -15,6 +15,7 @@
 #define MVEBU_REG_PCIE_DEVID		(MVEBU_REG_PCIE_BASE + 0x00)
 #define MVEBU_REG_PCIE_REVID		(MVEBU_REG_PCIE_BASE + 0x08)
 
+#include <asm/types.h>
 enum memory_bank {
 	BANK0,
 	BANK1,

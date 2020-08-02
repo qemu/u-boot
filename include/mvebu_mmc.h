@@ -12,6 +12,7 @@
 
 /* needed for the mmc_cfg definition */
 #include <mmc.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 
 #define MMC_BLOCK_SIZE				512

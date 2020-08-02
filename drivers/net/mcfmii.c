@@ -13,6 +13,7 @@
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_MCF547x_8x
 #include <asm/fsl_mcdmafec.h>

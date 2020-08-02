@@ -34,6 +34,7 @@
 #include <errno.h>
 #include <usb.h>
 #include <serial.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_SPL_BUILD
 #include <spl.h>

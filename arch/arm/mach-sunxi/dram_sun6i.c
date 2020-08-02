@@ -18,6 +18,7 @@
 #include <asm/arch/clock.h>
 #include <asm/arch/dram.h>
 #include <asm/arch/prcm.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 
 #define DRAM_CLK (CONFIG_DRAM_CLK * 1000000)

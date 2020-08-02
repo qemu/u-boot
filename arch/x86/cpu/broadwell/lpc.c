@@ -15,6 +15,7 @@
 #include <asm/lpc_common.h>
 #include <asm/arch/pch.h>
 #include <asm/arch/spi.h>
+#include <asm/types.h>
 
 static void set_spi_speed(void)
 {

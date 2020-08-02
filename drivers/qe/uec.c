@@ -18,6 +18,7 @@
 #include <linux/immap_qe.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "uccf.h"
 #include "uec.h"
 #include "uec_phy.h"

@@ -6,6 +6,7 @@
 
 #include <stdbool.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 struct udevice;
 
 /*

@@ -9,6 +9,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <qfw.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
 #ifdef CONFIG_GENERATE_ACPI_TABLE
@@ -18,6 +19,7 @@
 #include <linux/kernel.h>
 #include <linux/list.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static bool fwcfg_present;
 static bool fwcfg_dma_present;

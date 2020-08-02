@@ -25,6 +25,7 @@
 #include <asm/io.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 struct coldfire_spi_priv {
 	struct dspi *regs;

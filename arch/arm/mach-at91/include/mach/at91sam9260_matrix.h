@@ -14,6 +14,7 @@
 #ifndef __ASSEMBLY__
 
 /*
+#include <asm/types.h>
  * This struct defines access to the matrix' maximum of
  * 16 masters and 16 slaves.
  * However, on the AT91SAM9260/9G20/9XE there exist only

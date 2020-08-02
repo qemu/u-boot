@@ -8,6 +8,7 @@
 #ifndef __ASM_IOAPIC_H
 #define __ASM_IOAPIC_H
 
+#include <asm/types.h>
 #define IO_APIC_ADDR		0xfec00000
 
 /* Direct addressed register */

@@ -13,6 +13,7 @@
 #include <asm/test.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <power/acpi_pmc.h>
 
 /**

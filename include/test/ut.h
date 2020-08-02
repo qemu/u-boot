@@ -13,6 +13,7 @@
 #include <linux/err.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <test/test.h>
 
 struct unit_test_state;

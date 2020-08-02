@@ -27,6 +27,7 @@
 #include <asm/io.h>
 #include <asm/arch/mem.h>
 #include <asm/arch/sys_proto.h>
+#include <asm/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 extern omap3_sysinfo sysinfo;

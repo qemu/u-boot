@@ -12,6 +12,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/mx6-pins.h>
 #include <asm/arch/clock.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/errno.h>
 #include <asm/gpio.h>

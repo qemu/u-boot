@@ -7,6 +7,7 @@
 #define __ASM_ARC_SECTIONS_H
 
 #include <asm-generic/sections.h>
+#include <linux/types.h>
 
 extern ulong __ivt_start;
 extern ulong __ivt_end;

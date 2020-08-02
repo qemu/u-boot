@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <asm/psci.h>
 #include <asm/secure.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 
 #define BOOT_API_A7_CORE0_MAGIC_NUMBER	0xCA7FACE0

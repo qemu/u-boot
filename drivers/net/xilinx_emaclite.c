@@ -13,6 +13,7 @@
 #include <dm.h>
 #include <console.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <asm/global_data.h>
@@ -24,6 +25,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

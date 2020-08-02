@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <asm/arch/gpio.h>
 #include <asm/gpio.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
 

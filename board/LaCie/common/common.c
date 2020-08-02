@@ -7,6 +7,7 @@
 #include <i2c.h>
 #include <miiphy.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_CMD_NET) && defined(CONFIG_RESET_PHY_R)
 

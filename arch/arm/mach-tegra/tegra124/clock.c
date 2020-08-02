@@ -20,6 +20,7 @@
 #include <div64.h>
 #include <fdtdec.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 /*
  * Clock types that we can use as a source. The Tegra124 has muxes for the

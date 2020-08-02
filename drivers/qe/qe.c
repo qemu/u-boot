@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <malloc.h>
 #include <command.h>
 #include <stdio.h>
@@ -18,6 +19,7 @@
 #include <fsl_qe.h>
 #include <mmc.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 
 #ifdef CONFIG_ARCH_LS1021A

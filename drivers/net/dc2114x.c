@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0+
 
 #include <common.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/io.h>
@@ -15,6 +16,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define SROM_DLEVEL	0
 

@@ -7,6 +7,7 @@
 #define __USB_ETHER_H__
 
 #include <net.h>
+#include <linux/types.h>
 
 /* TODO(sjg@chromium.org): Remove @pusb_dev when all boards use CONFIG_DM_ETH */
 struct ueth_data {

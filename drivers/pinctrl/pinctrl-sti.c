@@ -15,6 +15,7 @@
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <dm/pinctrl.h>
 #include <linux/bug.h>
 #include <linux/errno.h>

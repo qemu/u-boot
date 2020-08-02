@@ -13,6 +13,7 @@
 #include <asm/arch/sys_proto.h>
 #include <asm/arch/mmc_host_def.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 
 #include "sdp4430_mux_data.h"

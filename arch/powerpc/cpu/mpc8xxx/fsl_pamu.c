@@ -14,6 +14,7 @@
 #include <asm/ppc.h>
 #include <asm/fsl_pamu.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 struct paace *ppaact;
 struct paace *sec;

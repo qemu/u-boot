@@ -4,11 +4,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <errno.h>
 #include <fdt_support.h>
 #include <image.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
@@ -21,6 +23,7 @@
 #include <asm/macro.h>
 #include <asm/armv8/sec_firmware.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 extern void c_runtime_cpu_setup(void);

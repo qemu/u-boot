@@ -13,6 +13,7 @@
 #include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <tee/optee.h>
 
 #define optee_hdr_err_msg \

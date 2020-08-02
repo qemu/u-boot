@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Read a coreboot rmodule and execute it.
+#include <compiler.h>
+#include <linux/types.h>
  * The rmodule_header struct is from coreboot.
  *
  * Copyright (c) 2016 Google, Inc

@@ -19,6 +19,7 @@
 #define MXC_CLK32	32768
 #endif
 
+#include <asm/types.h>
 enum mxc_clock {
 	MXC_ARM_CLK,
 	MXC_AHB_CLK,

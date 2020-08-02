@@ -28,6 +28,7 @@
 #include <fs_internal.h>
 #include <ext4fs.h>
 #include <ext_common.h>
+#include <linux/types.h>
 #include "ext4_common.h"
 #include <log.h>
 

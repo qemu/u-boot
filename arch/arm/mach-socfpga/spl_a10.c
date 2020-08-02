@@ -31,6 +31,7 @@
 #include <asm/arch/fpga_manager.h>
 #include <mmc.h>
 #include <memalign.h>
+#include <linux/types.h>
 
 #define FPGA_BUFSIZ	16 * 1024
 

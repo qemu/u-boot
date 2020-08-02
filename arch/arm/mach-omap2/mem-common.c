@@ -18,6 +18,7 @@
 #include <asm/arch/mem.h>
 #include <asm/arch/sys_proto.h>
 #include <command.h>
+#include <asm/types.h>
 #include <linux/mtd/omap_gpmc.h>
 #include <jffs2/load_kernel.h>
 

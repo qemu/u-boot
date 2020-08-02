@@ -34,6 +34,7 @@
 #include <irq_func.h>
 #include <stdio.h>
 #include <asm/interrupt.h>
+#include <linux/types.h>
 
 #if !CONFIG_IS_ENABLED(X86_64)
 

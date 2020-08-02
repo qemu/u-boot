@@ -14,6 +14,7 @@
 #include <asm/global_data.h>
 #include <asm/immap.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

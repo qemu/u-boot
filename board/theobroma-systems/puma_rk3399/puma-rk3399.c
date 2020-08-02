@@ -12,6 +12,7 @@
 #include <spl.h>
 #include <syscon.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>
 #include <usb.h>

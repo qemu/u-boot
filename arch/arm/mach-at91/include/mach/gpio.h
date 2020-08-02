@@ -12,6 +12,7 @@
 #include <linux/errno.h>
 #include <asm/arch/at91_pio.h>
 #include <asm/arch/hardware.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_ATMEL_LEGACY
 

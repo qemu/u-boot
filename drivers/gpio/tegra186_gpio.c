@@ -9,6 +9,7 @@
 #include <malloc.h>
 #include <errno.h>
 #include <fdtdec.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <asm/bitops.h>
 #include <asm/gpio.h>
@@ -16,6 +17,7 @@
 #include <dt-bindings/gpio/gpio.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "tegra186_gpio_priv.h"
 
 struct tegra186_gpio_port_data {

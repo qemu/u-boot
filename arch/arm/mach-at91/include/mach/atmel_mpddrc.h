@@ -10,6 +10,7 @@
 #ifndef __ATMEL_MPDDRC_H__
 #define __ATMEL_MPDDRC_H__
 
+#include <asm/types.h>
 struct atmel_mpddrc_config {
 	u32 mr;
 	u32 rtr;

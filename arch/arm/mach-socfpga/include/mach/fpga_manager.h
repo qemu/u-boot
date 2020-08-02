@@ -24,6 +24,7 @@
 #ifndef __ASSEMBLY__
 
 /* Common prototypes */
+#include <linux/types.h>
 int fpgamgr_get_mode(void);
 int fpgamgr_poll_fpga_ready(void);
 void fpgamgr_program_write(const void *rbf_data, size_t rbf_size);

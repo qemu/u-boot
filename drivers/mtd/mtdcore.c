@@ -28,6 +28,7 @@
 #include <linux/gfp.h>
 #include <linux/slab.h>
 #else
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>
@@ -35,6 +36,7 @@
 #include <ubi_uboot.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #endif
 
 #include <linux/log2.h>

@@ -34,6 +34,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/string.h>
 
 #include "ngpixis.h"

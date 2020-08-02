@@ -10,6 +10,7 @@
 
 #include <asm/arch/hardware.h>
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/bitops.h>
 #endif
 

@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
+#include <linux/types.h>
 #include <u-boot/zlib.h>
 #include <bzlib.h>
 #include <watchdog.h>

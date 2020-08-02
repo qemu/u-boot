@@ -4,6 +4,7 @@
  * Texas Instruments, <www.ti.com>
  * Aneesh V <aneesh@ti.com>
  */
+#include <compiler.h>
 #include <cpu_func.h>
 #include <asm/cache.h>
 #include <linux/types.h>

@@ -38,6 +38,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "davinci_emac.h"
 
 unsigned int	emac_dbg = 0;

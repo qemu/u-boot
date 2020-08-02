@@ -33,6 +33,8 @@
 
 #ifndef DEFINESONLY
 
+#include <linux/types.h>
+
 /* Portability typedefs */
 #if 1
 #include "common.h"
@@ -55,6 +57,7 @@ typedef char s8;
 #ifndef u8
 typedef unsigned char u8;
 #endif
+#include <asm/types.h>
 #endif
 
 /*

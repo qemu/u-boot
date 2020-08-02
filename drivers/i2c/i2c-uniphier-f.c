@@ -5,6 +5,7 @@
  *   Author: Masahiro Yamada <yamada.masahiro@socionext.com>
  */
 
+#include <compiler.h>
 #include <stdbool.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>

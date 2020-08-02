@@ -12,6 +12,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 typedef struct at91_rtt {
 	u32	mr;	/* Mode Register   RW 0x00008000 */
 	u32	ar;	/* Alarm Register  RW 0xFFFFFFFF */

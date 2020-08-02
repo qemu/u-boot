@@ -8,6 +8,7 @@
 #define _SCU_H_
 
 /* ARM Snoop Control Unit (SCU) registers */
+#include <linux/types.h>
 struct scu_ctlr {
 	uint scu_ctrl;		/* SCU Control Register, offset 00 */
 	uint scu_cfg;		/* SCU Config Register, offset 04 */

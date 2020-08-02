@@ -13,8 +13,10 @@
 #ifndef _ASM_FSL_I2C_H_
 #define _ASM_FSL_I2C_H_
 
+#include <compiler.h>
 #include <asm/types.h>
 #include <linux/compiler.h>
+#include <linux/types.h>
 
 typedef struct fsl_i2c_base {
 

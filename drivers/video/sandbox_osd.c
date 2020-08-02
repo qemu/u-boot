@@ -10,6 +10,7 @@
 #include <video_osd.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "sandbox_osd.h"
 

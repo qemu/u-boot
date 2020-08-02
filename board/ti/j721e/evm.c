@@ -14,6 +14,7 @@
 #include <init.h>
 #include <log.h>
 #include <net.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/arch/sys_proto.h>
@@ -30,6 +31,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "../common/board_detect.h"
 

@@ -10,6 +10,7 @@
 #define __MCFRTC_H__
 
 /* Real time Clock */
+#include <asm/types.h>
 typedef struct rtc_ctrl {
 	u32 hourmin;		/* 0x00 Hours and Minutes Counter Register */
 	u32 seconds;		/* 0x04 Seconds Counter Register */

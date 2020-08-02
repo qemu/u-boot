@@ -21,6 +21,7 @@
 #include <linux/sizes.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/sys_proto.h>
+#include <linux/types.h>
 
 #define DEVCFG_CTRL_PCFG_PROG_B		0x40000000
 #define DEVCFG_CTRL_PCFG_AES_EFUSE_MASK	0x00001000

@@ -7,6 +7,7 @@
 #ifndef _TEGRA124_SYSCTR_H_
 #define _TEGRA124_SYSCTR_H_
 
+#include <asm/types.h>
 struct sysctr_ctlr {
 	u32 cntcr;		/* 0x00: SYSCTR0_CNTCR Counter Control */
 	u32 cntsr;		/* 0x04: SYSCTR0_CNTSR Counter Status */

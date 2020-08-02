@@ -14,6 +14,7 @@
 struct udevice;
 
 #include <stdbool.h>
+#include <asm/types.h>
 
 #define SPI_MEM_OP_CMD(__opcode, __buswidth)			\
 	{							\

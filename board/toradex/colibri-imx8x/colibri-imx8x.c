@@ -10,6 +10,7 @@
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include <asm/arch/clock.h>
 #include <asm/arch/imx8-pins.h>

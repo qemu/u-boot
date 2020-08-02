@@ -9,6 +9,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <fdt_support.h>
 #include <fdtdec.h>
 #include <env.h>
@@ -25,6 +26,7 @@
 #include <mapmem.h>
 #include <asm/io.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <tee/optee.h>
 
 #ifndef CONFIG_SYS_FDT_PAD

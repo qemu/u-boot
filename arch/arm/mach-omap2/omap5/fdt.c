@@ -12,6 +12,7 @@
 #include <linux/libfdt.h>
 #include <fdt_support.h>
 #include <malloc.h>
+#include <linux/types.h>
 
 #include <asm/omap_common.h>
 #include <asm/arch-omap5/sys_proto.h>

@@ -12,6 +12,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>
 #include <linux/delay.h>

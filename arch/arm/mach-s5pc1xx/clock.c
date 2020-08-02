@@ -10,6 +10,7 @@
 #include <asm/io.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/clk.h>
+#include <linux/types.h>
 
 #define CLK_M	0
 #define CLK_D	1

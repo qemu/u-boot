@@ -8,6 +8,7 @@
 #ifdef __UBOOT__
 #include <vsprintf.h>
 #include <linux/compat.h>
+#include <linux/types.h>
 #else
 #include <linux/module.h>
 #include <linux/export.h>

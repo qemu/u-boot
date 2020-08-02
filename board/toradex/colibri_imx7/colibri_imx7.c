@@ -32,6 +32,7 @@
 #include <miiphy.h>
 #include <mtd_node.h>
 #include <netdev.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/rn5t567_pmic.h>
 #include <usb.h>

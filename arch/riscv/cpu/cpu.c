@@ -10,6 +10,7 @@
 #include <log.h>
 #include <stdbool.h>
 #include <asm/encoding.h>
+#include <asm/types.h>
 #include <dm/uclass-internal.h>
 #include <linux/bitops.h>
 #include <linux/string.h>

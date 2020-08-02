@@ -6,6 +6,7 @@
 #ifndef __MESON_SM_H__
 #define __MESON_SM_H__
 
+#include <linux/types.h>
 ssize_t meson_sm_read_efuse(uintptr_t offset, void *buffer, size_t size);
 
 #define SM_SERIAL_SIZE	12

@@ -12,6 +12,7 @@
 #include <linux/compiler.h>
 #include <serial.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 struct meson_uart {
 	u32 wfifo;

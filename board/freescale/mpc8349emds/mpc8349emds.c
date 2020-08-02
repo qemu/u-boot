@@ -25,6 +25,7 @@
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_OF_LIBFDT)
 #include <linux/libfdt.h>

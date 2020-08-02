@@ -6,6 +6,7 @@
 #ifndef __UUID_H__
 #define __UUID_H__
 
+#include <compiler.h>
 #include <linux/bitops.h>
 
 /* This is structure is in big-endian */

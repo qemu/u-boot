@@ -8,6 +8,7 @@
 #include <env.h>
 #include <net.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "wol.h"
 
 static ulong wol_timeout = WOL_DEFAULT_TIMEOUT;

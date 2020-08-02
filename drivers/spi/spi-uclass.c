@@ -9,6 +9,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <spi.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <dm/device-internal.h>
@@ -17,6 +18,7 @@
 #include <dm/util.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

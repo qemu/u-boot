@@ -194,6 +194,7 @@
 // NOTES
 //
 //   The system uses the raw data found in the .ttf file without changing it
+#include <linux/types.h>
 //   and without building auxiliary data structures. This is a bit inefficient
 //   on little-endian systems (the data is big-endian), but assuming you're
 //   caching the bitmaps or glyph shapes this shouldn't be a big deal.

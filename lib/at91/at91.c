@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <atmel_lcd.h>
+#include <linux/types.h>
 
 #include "atmel_logo_8bpp.h"
 #include "microchip_logo_8bpp.h"

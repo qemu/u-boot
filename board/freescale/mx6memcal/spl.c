@@ -18,6 +18,7 @@
 #include <asm/arch/sys_proto.h>
 #include <spl.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

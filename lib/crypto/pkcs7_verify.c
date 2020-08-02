@@ -18,6 +18,7 @@
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/rsa-checksum.h>
 #include <crypto/public_key.h>
 #include <crypto/pkcs7_parser.h>

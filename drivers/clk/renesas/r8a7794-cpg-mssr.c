@@ -14,6 +14,7 @@
 #include <dm.h>
 #include <linux/bitops.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include <dt-bindings/clock/r8a7794-cpg-mssr.h>
 

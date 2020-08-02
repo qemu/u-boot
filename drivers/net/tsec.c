@@ -7,6 +7,7 @@
  * author Andy Fleming
  */
 
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <dm.h>
@@ -25,6 +26,7 @@
 #include <asm/io.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifndef CONFIG_DM_ETH
 /* Default initializations for TSEC controllers. */

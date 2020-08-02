@@ -13,6 +13,7 @@
 #include <irq_func.h>
 #include <stdio.h>
 #include <time.h>
+#include <linux/types.h>
 
 #include <asm/immap.h>
 

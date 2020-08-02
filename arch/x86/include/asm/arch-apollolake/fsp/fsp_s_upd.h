@@ -7,7 +7,9 @@
 #define __ASM_ARCH_FSP_S_UDP_H
 
 #ifndef __ASSEMBLY__
+#include <compiler.h>
 #include <asm/fsp2/fsp_api.h>
+#include <asm/types.h>
 
 /**
  * struct fsp_s_config - FSP-S configuration

@@ -7,6 +7,7 @@
 #ifndef __ATMEL_SDHCI_H
 #define __ATMEL_SDHCI_H
 
+#include <asm/types.h>
 int atmel_sdhci_init(void *regbase, u32 id);
 
 #endif

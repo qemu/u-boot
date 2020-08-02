@@ -8,11 +8,13 @@
 #include <dm.h>
 #include <errno.h>
 #include <pci_ep.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <linux/log2.h>
+#include <linux/types.h>
 #include "pcie-cadence.h"
 
 DECLARE_GLOBAL_DATA_PTR;

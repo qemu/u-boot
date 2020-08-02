@@ -20,6 +20,7 @@
 #ifndef __ASM_ARCH_TMU_H
 #define __ASM_ARCH_TMU_H
 
+#include <asm/types.h>
 struct exynos5_tmu_reg {
 	u32 triminfo;
 	u32 rsvd1[4];

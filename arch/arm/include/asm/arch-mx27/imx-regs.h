@@ -11,6 +11,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 extern void imx_gpio_mode (int gpio_mode);
 
 #ifdef CONFIG_MXC_UART

@@ -7,6 +7,7 @@
 #ifndef __ASM_ARCH_I2C_H
 #define __ASM_ARCH_I2C_H
 
+#include <asm/types.h>
 struct i2c_regs {
 	u32 con;
 	u32 clkdiv;

@@ -11,6 +11,7 @@
 #include <command.h>
 #include <net.h>
 #include <vsprintf.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_CMD_WOL)
 void wol_set_timeout(ulong);

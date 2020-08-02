@@ -58,6 +58,7 @@
 * 1   1	  0	0     1
 * 1   1	  1	1     1
 *
+#include <asm/types.h>
 * Construction of table for cout:
 *
 * ab

@@ -24,6 +24,7 @@
 #include <log.h>
 #include <pci.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/bug.h>
 #include <linux/delay.h>
 #include "integrator-sc.h"

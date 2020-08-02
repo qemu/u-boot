@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <efi_loader.h>
 #include <asm/e820.h>
 #include <asm/global_data.h>

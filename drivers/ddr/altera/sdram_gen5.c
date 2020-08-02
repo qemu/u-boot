@@ -18,6 +18,7 @@
 #include <asm/arch/system_manager.h>
 #include <asm/bitops.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>

@@ -11,6 +11,7 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <clk.h>
@@ -35,6 +36,7 @@
 #include <power-domain.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -13,6 +13,7 @@
 #include <init.h>
 #include <virtio_types.h>
 #include <virtio.h>
+#include <linux/types.h>
 
 int board_init(void)
 {

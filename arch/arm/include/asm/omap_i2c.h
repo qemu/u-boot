@@ -14,6 +14,7 @@ struct omap_i2c_platdata {
 
 #endif
 
+#include <linux/types.h>
 enum {
 	OMAP_I2C_REV_V1 = 0,
 	OMAP_I2C_REV_V2 = 1,

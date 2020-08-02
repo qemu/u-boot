@@ -7,6 +7,7 @@
 #include <malloc.h>
 #include <spi.h>
 #include <spi-mem.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>

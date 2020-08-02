@@ -8,6 +8,7 @@
 #define __ASM_ARCH_TEGRA_DISPLAY_H
 
 #include <asm/arch-tegra/dc.h>
+#include <asm/types.h>
 
 /* This holds information about a window which can be displayed */
 struct disp_ctl_win {

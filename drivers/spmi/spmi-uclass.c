@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <spmi/spmi.h>
 #include <linux/ctype.h>
 

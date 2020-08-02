@@ -8,6 +8,7 @@
 #ifndef _TEGRA_CLOCK_H_
 #define _TEGRA_CLOCK_H_
 
+#include <linux/types.h>
 struct udevice;
 
 /* Set of oscillator frequencies supported in the internal API. */

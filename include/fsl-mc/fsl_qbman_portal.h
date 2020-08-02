@@ -7,6 +7,7 @@
 #define _FSL_QBMAN_PORTAL_H
 
 #include <fsl-mc/fsl_qbman_base.h>
+#include <linux/types.h>
 
 /* Create and destroy a functional object representing the given QBMan portal
  * descriptor. */

@@ -6,6 +6,7 @@
 #include <common.h>
 #include <dm.h>
 #include <stdbool.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <linux/compat.h>
 #include <dm/pinctrl.h>

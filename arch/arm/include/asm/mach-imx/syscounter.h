@@ -7,6 +7,7 @@
 #define _ASM_ARCH_SYSTEM_COUNTER_H
 
 /* System Counter */
+#include <asm/types.h>
 struct sctr_regs {
 	u32 cntcr;
 	u32 cntsr;

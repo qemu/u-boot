@@ -6,6 +6,7 @@
 #ifndef __NFS_H__
 #define __NFS_H__
 
+#include <linux/types.h>
 #define SUNRPC_PORT     111
 
 #define PROG_PORTMAP    100000

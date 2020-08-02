@@ -17,6 +17,7 @@
 
 #include <common.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>

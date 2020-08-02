@@ -13,6 +13,7 @@
 #include <asm/arch/emc.h>
 #include <asm/arch/tegra.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * The EMC registers have shadow registers.  When the EMC clock is updated

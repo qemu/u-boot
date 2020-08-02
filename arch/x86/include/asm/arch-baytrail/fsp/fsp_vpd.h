@@ -7,6 +7,8 @@
 #ifndef __FSP_VPD_H
 #define __FSP_VPD_H
 
+#include <compiler.h>
+#include <linux/types.h>
 struct memory_down_data {
 	uint8_t enable_memory_down;
 	uint8_t dram_speed;

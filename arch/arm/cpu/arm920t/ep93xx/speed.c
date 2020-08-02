@@ -9,6 +9,7 @@
 #include <asm/arch/ep93xx.h>
 #include <asm/io.h>
 #include <div64.h>
+#include <linux/types.h>
 
 /*
  * CONFIG_SYS_CLK_FREQ should be defined as the input frequency of the PLL.

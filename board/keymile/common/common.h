@@ -7,6 +7,7 @@
 #ifndef __KEYMILE_COMMON_H
 #define __KEYMILE_COMMON_H
 
+#include <asm/types.h>
 #define WRG_RESET	0x80
 #define H_OPORTS_14	0x40
 #define WRG_LED		0x02

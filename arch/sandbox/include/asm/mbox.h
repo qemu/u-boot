@@ -7,6 +7,7 @@
 #define __SANDBOX_MBOX_H
 
 #include <common.h>
+#include <linux/types.h>
 
 #define SANDBOX_MBOX_PING_XOR 0x12345678
 

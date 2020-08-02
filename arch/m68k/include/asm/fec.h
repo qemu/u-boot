@@ -15,6 +15,7 @@
 #define	fec_h
 
 #include <phy.h>
+#include <linux/types.h>
 
 /* Buffer descriptors used FEC.
 */

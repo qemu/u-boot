@@ -6,6 +6,7 @@
 #ifndef	__REGS_UART_H__
 #define	__REGS_UART_H__
 
+#include <linux/types.h>
 #define	FFUART_BASE		0x40100000
 #define	BTUART_BASE		0x40200000
 #define	STUART_BASE		0x40700000

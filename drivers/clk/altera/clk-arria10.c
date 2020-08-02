@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <clk-uclass.h>
@@ -17,6 +18,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <asm/arch/clock_manager.h>
 

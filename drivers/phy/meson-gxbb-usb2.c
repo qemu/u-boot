@@ -14,6 +14,7 @@
 #include <generic-phy.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 #include <regmap.h>
 #include <reset.h>

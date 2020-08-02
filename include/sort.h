@@ -17,6 +17,7 @@
  *	  0 if element at s1 == element at s2,
  *	> 0 if element at s1 > element at s2,
  */
+#include <linux/types.h>
 void qsort(void *base, size_t nmemb, size_t size,
 	   int (*compar)(const void *s1, const void *s2));
 

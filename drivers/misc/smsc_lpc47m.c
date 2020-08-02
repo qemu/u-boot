@@ -6,6 +6,7 @@
 #include <common.h>
 #include <asm/io.h>
 #include <asm/pnp_def.h>
+#include <linux/types.h>
 
 static void pnp_enter_conf_state(u16 dev)
 {

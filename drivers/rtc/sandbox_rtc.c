@@ -9,6 +9,7 @@
 #include <i2c.h>
 #include <rtc.h>
 #include <asm/rtc.h>
+#include <asm/types.h>
 #include <dm/acpi.h>
 
 #define REG_COUNT 0x80

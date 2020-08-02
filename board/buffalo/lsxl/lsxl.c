@@ -27,6 +27,7 @@
 #include <asm/arch/gpio.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 #include "lsxl.h"
 

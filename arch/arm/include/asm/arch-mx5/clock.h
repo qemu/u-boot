@@ -20,6 +20,7 @@
 #endif
 
 #include <stdbool.h>
+#include <asm/types.h>
 enum mxc_clock {
 	MXC_ARM_CLK = 0,
 	MXC_AHB_CLK,

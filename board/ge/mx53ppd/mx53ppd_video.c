@@ -21,6 +21,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/io.h>
 #include <panel.h>
+#include <linux/types.h>
 
 static int detect_lcd(struct display_info_t const *dev)
 {

@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <init.h>
 #include <malloc.h>
 #include <stdbool.h>

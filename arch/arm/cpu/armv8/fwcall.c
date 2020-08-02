@@ -14,6 +14,7 @@
 #include <asm/psci.h>
 #include <asm/ptrace.h>
 #include <asm/system.h>
+#include <asm/types.h>
 
 /*
  * Issue the hypervisor call

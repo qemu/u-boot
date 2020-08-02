@@ -16,6 +16,7 @@
 #define MPC83XX_GPIO_CTRLRS 0
 #endif
 
+#include <linux/types.h>
 #define MAX_NUM_GPIOS (32 * MPC83XX_GPIO_CTRLRS)
 
 struct mpc8xxx_gpio_plat {

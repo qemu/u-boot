@@ -15,6 +15,7 @@
 #include <asm/mach-imx/regs-common.h>
 
 #ifndef	__ASSEMBLY__
+#include <linux/types.h>
 struct mxs_pinctrl_regs {
 	mxs_reg_32(hw_pinctrl_ctrl)		/* 0x0 */
 

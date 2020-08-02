@@ -6,11 +6,13 @@
  */
 
 #include <command.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <linux/io.h>
 #include <linux/printk.h>
 #include <linux/sizes.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "../soc-info.h"
 #include "ddrphy-regs.h"

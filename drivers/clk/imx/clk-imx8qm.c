@@ -8,6 +8,7 @@
 #include <clk-uclass.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/arch/sci/sci.h>
 #include <asm/arch/clock.h>
@@ -16,6 +17,7 @@
 #include <misc.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include "clk-imx8.h"
 

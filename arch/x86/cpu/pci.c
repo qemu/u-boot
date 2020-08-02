@@ -16,6 +16,7 @@
 #include <pci.h>
 #include <asm/io.h>
 #include <asm/pci.h>
+#include <linux/types.h>
 
 int pci_x86_read_config(pci_dev_t bdf, uint offset, ulong *valuep,
 			enum pci_size_t size)

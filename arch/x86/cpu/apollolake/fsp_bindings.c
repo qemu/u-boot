@@ -10,6 +10,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /**
  * read_u8_prop() - Read an u8 property from devicetree (scalar or array)

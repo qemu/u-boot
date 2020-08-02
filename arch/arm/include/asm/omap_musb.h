@@ -1,5 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /*
+#include <asm/types.h>
  * Board data structure for musb gadget on OMAPs
  *
  * Copyright (C) 2012, Ilya Yanok <ilya.yanok@gmail.com>

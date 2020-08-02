@@ -17,8 +17,10 @@
 #ifndef __DRIVERS_USB_DWC3_CORE_H
 #define __DRIVERS_USB_DWC3_CORE_H
 
+#include <compiler.h>
 #include <linux/bitops.h>
 #include <linux/ioport.h>
+#include <linux/types.h>
 
 #include <linux/usb/ch9.h>
 #include <linux/usb/otg.h>

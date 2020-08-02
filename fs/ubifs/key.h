@@ -35,6 +35,7 @@
  */
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 static inline uint32_t key_mask_hash(uint32_t hash)
 {
 	hash &= UBIFS_S_KEY_HASH_MASK;

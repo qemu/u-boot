@@ -6,6 +6,7 @@
 #ifndef __RK_HDMI_H__
 #define __RK_HDMI_H__
 
+#include <asm/types.h>
 struct rkhdmi_driverdata {
 	/* configuration */
 	u8 i2c_clk_high;

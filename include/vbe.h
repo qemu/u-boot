@@ -10,6 +10,8 @@
 #ifndef _VBE_H
 #define _VBE_H
 
+#include <compiler.h>
+#include <asm/types.h>
 /* these structs are for input from and output to OF */
 #include <stdbool.h>
 struct __packed vbe_screen_info {

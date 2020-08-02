@@ -5,6 +5,7 @@
  */
 
 /**
+#include <linux/types.h>
  * enum ratio - Description of a core clock ratio
  * @RAT_UNK:      Unknown ratio
  * @RAT_BYP:      Bypass

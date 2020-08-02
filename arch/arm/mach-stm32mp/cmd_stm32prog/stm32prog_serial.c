@@ -14,6 +14,7 @@
 #include <vsprintf.h>
 #include <watchdog.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <dm/lists.h>
 #include <dm/device-internal.h>
 #include <linux/delay.h>

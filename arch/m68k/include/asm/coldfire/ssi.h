@@ -9,6 +9,7 @@
 #ifndef __SSI_H__
 #define __SSI_H__
 
+#include <asm/types.h>
 typedef struct ssi {
 	u32 tx0;
 	u32 tx1;

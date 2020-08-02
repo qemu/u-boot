@@ -23,6 +23,7 @@
  */
 
 #include <common.h>
+#include <linux/types.h>
 
 #include <linux/errno.h>
 #include <linux/mtd/mtd.h>

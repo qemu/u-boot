@@ -27,6 +27,7 @@
 #include <tca642x.h>
 #include <vsprintf.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 /* tca642x register address definitions */
 struct tca642x_bank_info tca642x_regs[] = {

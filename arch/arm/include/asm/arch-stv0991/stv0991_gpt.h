@@ -8,6 +8,7 @@
 #define _STV0991_GPT_H
 
 #include <asm/arch-stv0991/hardware.h>
+#include <asm/types.h>
 
 struct gpt_regs {
 	u32 cr1;

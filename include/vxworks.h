@@ -8,6 +8,7 @@
 #define _VXWORKS_H_
 
 #include <efi_api.h>
+#include <asm/types.h>
 
 struct bootm_headers;
 struct cmd_tbl;

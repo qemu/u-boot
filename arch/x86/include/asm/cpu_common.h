@@ -9,6 +9,7 @@
 #define __ASM_CPU_COMMON_H
 
 #include <stdbool.h>
+#include <linux/types.h>
 
 /* Standard Intel bus clock is fixed at 100MHz */
 enum {

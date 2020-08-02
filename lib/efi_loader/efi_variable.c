@@ -22,6 +22,7 @@
 #include <crypto/pkcs7_parser.h>
 #include <linux/compat.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 #include <asm/sections.h>
 

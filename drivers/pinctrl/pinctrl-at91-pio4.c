@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <dm/pinctrl.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>

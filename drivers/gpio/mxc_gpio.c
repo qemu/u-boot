@@ -14,6 +14,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <dt-structs.h>
 #include <mapmem.h>
 #include <linux/kernel.h>

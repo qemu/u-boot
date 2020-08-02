@@ -17,6 +17,7 @@
 #include <linux/compat.h>
 #include <linux/errno.h>
 #include <linux/io.h>
+#include <linux/types.h>
 
 /* Refresh Register Masks */
 #define XWT_WWREF_GWRR_MASK	BIT(0) /* Refresh and start new period */

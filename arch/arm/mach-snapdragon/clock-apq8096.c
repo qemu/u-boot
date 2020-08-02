@@ -13,6 +13,7 @@
 #include <errno.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
+#include <linux/types.h>
 #include "clock-snapdragon.h"
 
 /* GPLL0 clock control registers */

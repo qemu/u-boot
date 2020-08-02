@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <image.h>
 #include <lmb.h>
 #include <log.h>
@@ -14,6 +15,7 @@
 #include <stdio.h>
 #include <asm/u-boot.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #define LMB_ALLOC_ANYWHERE	0
 

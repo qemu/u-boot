@@ -24,6 +24,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/ptrace.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 /* General purpose timers bitfields */
 #define GPTCR_SWR		(1 << 15)	/* Software reset	*/

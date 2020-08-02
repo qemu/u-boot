@@ -9,6 +9,7 @@
 #ifndef __AT91_SFR_H
 #define __AT91_SFR_H
 
+#include <asm/types.h>
 #include <linux/bitops.h>
 struct atmel_sfr {
 	u32 reserved1;	/* 0x00 */

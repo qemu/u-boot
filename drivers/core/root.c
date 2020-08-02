@@ -7,10 +7,12 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <errno.h>
 #include <fdtdec.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
@@ -28,6 +30,7 @@
 #include <dm/util.h>
 #include <linux/list.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

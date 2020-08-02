@@ -13,6 +13,7 @@
 #include <env_internal.h>
 #include <asm/global_data.h>
 #include <linux/stddef.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -8,6 +8,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 #include <linux/bitops.h>
 
 struct cm_config {

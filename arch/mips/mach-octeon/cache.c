@@ -4,6 +4,7 @@
  */
 
 #include <cpu_func.h>
+#include <linux/types.h>
 
 /*
  * The Octeon platform is cache coherent and cache flushes and invalidates

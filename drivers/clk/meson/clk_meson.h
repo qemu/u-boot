@@ -10,6 +10,7 @@
 
 /* Gate Structure */
 
+#include <asm/types.h>
 #include <linux/bitops.h>
 struct meson_gate {
 	unsigned int reg;

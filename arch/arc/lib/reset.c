@@ -5,8 +5,10 @@
 
 #include <command.h>
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 __weak void reset_cpu(ulong addr)
 {

@@ -4,6 +4,7 @@
  * Youngbok, Park <park@nexell.co.kr>
  */
 
+#include <compiler.h>
 #define NEXELL_L2C_SEC_ID	0
 #define NEXELL_MALI_SEC_ID	2
 #define NEXELL_MIPI_SEC_ID	4

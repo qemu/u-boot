@@ -109,6 +109,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <linux/types.h>
 struct pt_regs;
 
 u64 get_page_table_size(void);

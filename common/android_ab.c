@@ -10,10 +10,12 @@
 #include <malloc.h>
 #include <part.h>
 #include <memalign.h>
+#include <stdbool.h>
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 #include <u-boot/crc.h>
 

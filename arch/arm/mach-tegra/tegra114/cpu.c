@@ -14,6 +14,7 @@
 #include <asm/arch/tegra.h>
 #include <asm/arch-tegra/clk_rst.h>
 #include <asm/arch-tegra/pmc.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include "../cpu.h"
 

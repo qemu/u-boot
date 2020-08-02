@@ -29,6 +29,7 @@
 
 #include <common.h>
 #include <cpu_func.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/byteorder.h>
 #include <dm.h>
@@ -38,6 +39,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_PCI_OHCI)
 # include <pci.h>

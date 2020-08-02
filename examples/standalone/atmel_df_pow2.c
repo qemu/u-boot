@@ -13,6 +13,7 @@
 #include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define CMD_ID    0x9f
 #define CMD_STAT  0xd7

@@ -12,6 +12,7 @@
 #define _BOOTSTAGE_H
 
 #include <stdbool.h>
+#include <linux/types.h>
 
 /* Flags for each bootstage record */
 enum bootstage_flags {

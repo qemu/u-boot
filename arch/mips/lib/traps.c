@@ -22,6 +22,7 @@
 #include <asm/addrspace.h>
 #include <asm/system.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

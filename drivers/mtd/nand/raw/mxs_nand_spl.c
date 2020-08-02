@@ -17,6 +17,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static struct mtd_info *mtd;
 static struct nand_chip nand_chip;

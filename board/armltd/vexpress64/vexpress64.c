@@ -5,6 +5,7 @@
  * Sharma Bhupesh <bhupesh.sharma@freescale.com>
  */
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <dm.h>
 #include <init.h>
@@ -19,6 +20,7 @@
 #include <linux/compiler.h>
 #include <dm/platform_data/serial_pl01x.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "pcie.h"
 #include <asm/armv8/mmu.h>
 

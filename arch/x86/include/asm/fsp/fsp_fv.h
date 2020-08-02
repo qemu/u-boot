@@ -8,6 +8,7 @@
 #define __FSP_FV___
 
 #include <efi.h>
+#include <asm/types.h>
 
 /* Value of EFI_FV_FILE_ATTRIBUTES */
 #define EFI_FV_FILE_ATTR_ALIGNMENT	0x0000001F

@@ -10,6 +10,7 @@
 #define _DM_ROOT_H_
 
 #include <stdbool.h>
+#include <linux/types.h>
 struct udevice;
 
 /**

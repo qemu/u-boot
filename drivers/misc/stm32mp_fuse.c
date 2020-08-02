@@ -9,6 +9,7 @@
 #include <misc.h>
 #include <errno.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <dm/device.h>
 #include <dm/uclass.h>
 #include <linux/errno.h>

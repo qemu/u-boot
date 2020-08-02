@@ -18,6 +18,7 @@ int pci_sh7780_init(struct pci_controller *hose);
 #else
 #error "Not support PCI."
 #endif
+#include <asm/types.h>
 
 int pci_sh4_init(struct pci_controller *hose);
 /* PCI dword read for sh4 */

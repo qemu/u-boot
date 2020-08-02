@@ -8,6 +8,7 @@
 
 #include <stdbool.h>
 #include <linux/linkage.h>
+#include <linux/types.h>
 
 /**
  * mrc_common_init() - Set up SDRAM

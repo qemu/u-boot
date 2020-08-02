@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <irq.h>
 #include <log.h>
+#include <stdbool.h>
 #include <usb.h>
 #include <vsprintf.h>
 #include <acpi/acpigen.h>
@@ -20,6 +21,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /**
  * acpi_device_path_fill() - Find the root device and build a path from there

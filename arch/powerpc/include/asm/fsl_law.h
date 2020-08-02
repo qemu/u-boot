@@ -7,6 +7,7 @@
 #define _FSL_LAW_H_
 
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/log2.h>
 
 #define LAW_EN	0x80000000

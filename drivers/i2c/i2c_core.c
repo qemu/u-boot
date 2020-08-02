@@ -8,10 +8,12 @@
  * Multibus/multiadapter I2C core functions (wrappers)
  */
 #include <common.h>
+#include <compiler.h>
 #include <i2c.h>
 #include <linker_lists.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <linux/types.h>
 
 struct i2c_adapter *i2c_get_adapter(int index)
 {

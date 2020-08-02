@@ -8,6 +8,7 @@
 #include <asm/armv7m.h>
 #include <asm/armv7_mpu.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 #define V7M_MPU_CTRL_ENABLE		BIT(0)
 #define V7M_MPU_CTRL_DISABLE		(0 << 0)

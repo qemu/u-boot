@@ -8,6 +8,7 @@
 #include <spl.h>
 #include <image.h>
 #include <linux/compiler.h>
+#include <linux/types.h>
 
 /*
  * This function jumps to an image with argument. Normally an FDT or ATAGS

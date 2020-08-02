@@ -11,6 +11,7 @@
  */
 
 #include <efi_selftest.h>
+#include <linux/types.h>
 /* Include containing the UEFI application */
 #include "efi_miniapp_file_image_exception.h"
 

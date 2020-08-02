@@ -12,6 +12,7 @@
 #include <asm/arch/ddr.h>
 #include <asm/arch/lpddr4_define.h>
 #include <asm/arch/sys_proto.h>
+#include <asm/types.h>
 
 static unsigned int g_cdd_rr_max[4];
 static unsigned int g_cdd_rw_max[4];

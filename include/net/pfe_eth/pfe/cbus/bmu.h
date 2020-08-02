@@ -7,6 +7,7 @@
 #ifndef _BMU_H_
 #define _BMU_H_
 
+#include <asm/types.h>
 #define BMU_VERSION		0x000
 #define BMU_CTRL		0x004
 #define BMU_UCAST_CONFIG	0x008

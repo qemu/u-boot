@@ -12,6 +12,7 @@
 #define _MVRTC_H_
 
 #include <asm/arch/soc.h>
+#include <asm/types.h>
 #include <linux/compiler.h>
 
 /* RTC registers */

@@ -12,6 +12,7 @@
 #include <asm/arch/at91_wdt.h>
 #include <asm/arch/clk.h>
 #include <spl.h>
+#include <asm/types.h>
 
 #if !defined(CONFIG_WDT_AT91)
 void at91_disable_wdt(void)

@@ -19,6 +19,7 @@
 #include <asm/arch/mpp.h>
 #include <asm/arch/cpu.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

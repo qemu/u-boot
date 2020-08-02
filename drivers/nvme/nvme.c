@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <blk.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <dm.h>
 #include <errno.h>
@@ -13,6 +14,7 @@
 #include <malloc.h>
 #include <memalign.h>
 #include <pci.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <vsprintf.h>
@@ -21,6 +23,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "nvme.h"
 
 #define NVME_Q_DEPTH		2

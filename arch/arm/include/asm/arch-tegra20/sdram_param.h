@@ -11,6 +11,7 @@
  * Defines the number of 32-bit words provided in each set of SDRAM parameters
  * for arbitration configuration data.
  */
+#include <asm/types.h>
 #define BCT_SDRAM_ARB_CONFIG_WORDS 27
 
 enum memory_type {

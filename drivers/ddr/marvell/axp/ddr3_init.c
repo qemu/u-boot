@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <i2c.h>
 #include <log.h>
 #include <spl.h>
@@ -11,6 +12,7 @@
 #include <asm/io.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/soc.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 
 #include "ddr3_init.h"

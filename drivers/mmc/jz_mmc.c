@@ -7,10 +7,12 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <malloc.h>
 #include <mmc.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <asm/unaligned.h>
 #include <errno.h>
 #include <dm/device_compat.h>

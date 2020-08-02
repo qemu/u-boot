@@ -7,6 +7,7 @@
 #ifndef __FACTORYSET_H
 #define __FACTORYSET_H
 
+#include <linux/types.h>
 #define MAX_STRING_LENGTH	32
 
 struct factorysetcontainer {

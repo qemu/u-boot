@@ -10,6 +10,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <malloc.h>
 #include <stdio.h>
 #include <linux/compat.h>
@@ -19,6 +20,7 @@
 #include <linux/mtd/samsung_onenand.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <asm/io.h>
 #include <linux/errno.h>

@@ -6,6 +6,8 @@
 #ifndef _FS_LOADER_H_
 #define _FS_LOADER_H_
 
+#include <linux/types.h>
+
 struct udevice;
 
 /**

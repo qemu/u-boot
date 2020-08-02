@@ -26,6 +26,7 @@
 #include <phy.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 #include "../common/ngpixis.h"
 #include "../common/fman.h"

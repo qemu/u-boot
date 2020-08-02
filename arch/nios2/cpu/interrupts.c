@@ -14,6 +14,7 @@
 #include <asm/types.h>
 #include <asm/io.h>
 #include <asm/ptrace.h>
+#include <linux/types.h>
 
 /*************************************************************************/
 struct	irq_action {

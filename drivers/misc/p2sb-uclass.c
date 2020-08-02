@@ -13,10 +13,12 @@
 #include <mapmem.h>
 #include <p2sb.h>
 #include <spl.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <dm/uclass-internal.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #define PCR_COMMON_IOSF_1_0	1
 

@@ -20,6 +20,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 
 #define PAGE_SIZE 4096

@@ -9,6 +9,7 @@
 #ifndef __SKHA_H__
 #define __SKHA_H__
 
+#include <asm/types.h>
 typedef struct skha_ctrl {
 	u32 mr;			/* 0x00 Mode */
 	u32 cr;			/* 0x04 Control */

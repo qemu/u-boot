@@ -7,6 +7,7 @@
 #ifndef _IMX_NAND_BCB_H_
 #define _IMX_NAND_BCB_H_
 
+#include <asm/types.h>
 #define FCB_FINGERPRINT		0x20424346      /* 'FCB' */
 #define FCB_VERSION_1		0x01000000
 #define FCB_FINGERPRINT_OFF	0x4		/* FCB fingerprint offset*/

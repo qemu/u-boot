@@ -10,6 +10,7 @@
 #ifndef	_SYS_ZAP_IMPL_H
 #define	_SYS_ZAP_IMPL_H
 
+#include <linux/types.h>
 #define	ZAP_MAGIC 0x2F52AB2ABULL
 
 #define	ZAP_HASHBITS		28

@@ -1,5 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /*
+#include <linux/types.h>
  * atmel_lcd.h - Atmel LCD Controller structures
  *
  * (C) Copyright 2001
@@ -8,6 +9,8 @@
 
 #ifndef _ATMEL_LCD_H_
 #define _ATMEL_LCD_H_
+
+#include <linux/types.h>
 
 /**
  * struct atmel_lcd_platdata - platform data for Atmel LCDs with driver model

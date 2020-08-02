@@ -11,6 +11,7 @@
 #include <dm.h>
 #include <log.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <dm/pinctrl.h>
 #include <dm/root.h>
 #include <asm/system.h>

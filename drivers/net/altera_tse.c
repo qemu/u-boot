@@ -26,6 +26,7 @@
 #include <asm/io.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "altera_tse.h"
 
 DECLARE_GLOBAL_DATA_PTR;

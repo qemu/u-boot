@@ -7,11 +7,13 @@
 #include <common.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <usb.h>
 #include <dm/device-internal.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static int copy_to_unicode(char *buff, int length, const char *str)
 {

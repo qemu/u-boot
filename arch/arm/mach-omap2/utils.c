@@ -4,6 +4,7 @@
  * Aneesh V <aneesh@ti.com>
  */
 #include <common.h>
+#include <compiler.h>
 #include <env.h>
 #include <part.h>
 #include <stdio.h>
@@ -11,6 +12,7 @@
 #include <asm/setup.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/omap_common.h>
+#include <asm/types.h>
 #include <linux/printk.h>
 
 static void do_cancel_out(u32 *num, u32 *den, u32 factor)

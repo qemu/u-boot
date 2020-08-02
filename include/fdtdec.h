@@ -18,6 +18,7 @@
 #include <asm/u-boot.h>
 #include <linux/libfdt.h>
 #include <pci.h>
+#include <linux/types.h>
 
 /*
  * A typedef for a physical address. Note that fdt data is always big

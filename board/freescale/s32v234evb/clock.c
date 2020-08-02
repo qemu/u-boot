@@ -8,6 +8,7 @@
 #include <asm/arch/mc_cgm_regs.h>
 #include <asm/arch/mc_me_regs.h>
 #include <asm/arch/clock.h>
+#include <linux/types.h>
 
 /*
  * Select the clock reference for required pll.

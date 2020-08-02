@@ -9,6 +9,7 @@
 #ifndef __ASM_RISCV_PTRACE_H
 #define __ASM_RISCV_PTRACE_H
 
+#include <linux/types.h>
 struct pt_regs {
 	unsigned long sepc;
 	unsigned long ra;

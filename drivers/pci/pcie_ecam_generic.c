@@ -10,9 +10,11 @@
 #include <common.h>
 #include <dm.h>
 #include <pci.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #include <asm/io.h>
 

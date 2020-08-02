@@ -7,6 +7,7 @@
 #define _SYSCTRL_H_
 
 /* System controller (SP810) register definitions */
+#include <asm/types.h>
 #define SP810_TIMER0_ENSEL	(1 << 15)
 #define SP810_TIMER1_ENSEL	(1 << 17)
 #define SP810_TIMER2_ENSEL	(1 << 19)

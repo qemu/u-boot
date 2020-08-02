@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <compiler.h>
+#include <asm/types.h>
 
 /*
  * These weak functions are available to kona architectures that don't

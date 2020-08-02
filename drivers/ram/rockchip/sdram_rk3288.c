@@ -16,6 +16,7 @@
 #include <log.h>
 #include <ram.h>
 #include <regmap.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <syscon.h>
 #include <asm/io.h>
@@ -31,6 +32,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 #include <power/rk8xx_pmic.h>
 

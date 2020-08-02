@@ -18,6 +18,7 @@
 #include <linux/io.h>
 #include <asm/io.h>
 #include <asm/mach-types.h>
+#include <linux/types.h>
 
 #include <faraday/ftsmc020.h>
 

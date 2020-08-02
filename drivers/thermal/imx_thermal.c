@@ -17,6 +17,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <malloc.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/math64.h>

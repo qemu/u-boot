@@ -9,6 +9,7 @@
 
 /* QRIO GPIO ports */
 #include <stdbool.h>
+#include <asm/types.h>
 #define QRIO_GPIO_A		0x40
 #define QRIO_GPIO_B		0x60
 

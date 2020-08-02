@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <errno.h>
 #include <led.h>
@@ -13,6 +14,7 @@
 #include <dm/lists.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define LEDS_MAX		32
 #define LEDS_WAIT		100

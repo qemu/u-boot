@@ -8,6 +8,7 @@
 #ifndef __FSL_CORENET_SERDES_H
 #define __FSL_CORENET_SERDES_H
 
+#include <linux/types.h>
 enum srds_bank {
 	FSL_SRDS_BANK_1  = 0,
 	FSL_SRDS_BANK_2  = 1,

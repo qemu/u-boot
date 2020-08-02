@@ -19,6 +19,7 @@
 #include <asm/arch/i2c.h>
 #include <usb.h>
 #include <i2c.h>
+#include <asm/types.h>
 
 /* OTG I2C controller module register structures */
 struct otgi2c_regs {

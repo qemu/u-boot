@@ -25,6 +25,7 @@
 #include <spl.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "lpddr4_timing.h"
 

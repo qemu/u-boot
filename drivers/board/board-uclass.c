@@ -9,6 +9,7 @@
 #include <board.h>
 #include <stdbool.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 int board_get(struct udevice **devp)
 {

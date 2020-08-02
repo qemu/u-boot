@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <addr_map.h>
+#include <asm/types.h>
 
 static struct {
 	phys_addr_t paddr;

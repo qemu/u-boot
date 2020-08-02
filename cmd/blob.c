@@ -6,11 +6,13 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <malloc.h>
 #include <vsprintf.h>
 #include <asm/byteorder.h>
 #include <linux/compiler.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /**
  * blob_decap() - Decapsulate the data as a blob

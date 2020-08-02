@@ -21,6 +21,7 @@
 #include <dm/util.h>
 #include <power-domain.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 int device_chld_unbind(struct udevice *dev, struct driver *drv)
 {

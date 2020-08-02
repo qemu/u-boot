@@ -13,6 +13,7 @@
 #include <cli.h>
 #include <cli_hush.h>
 #include <command.h>
+#include <compiler.h>
 #include <console.h>
 #include <env.h>
 #include <fdtdec.h>

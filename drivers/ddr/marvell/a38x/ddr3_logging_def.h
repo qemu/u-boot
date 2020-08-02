@@ -71,6 +71,7 @@
 	if (level >= debug_training_access)	\
 		printf s
 #endif
+#include <asm/types.h>
 #endif
 
 

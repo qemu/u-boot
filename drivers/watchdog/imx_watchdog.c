@@ -5,9 +5,11 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <dm.h>
 #include <hang.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <wdt.h>
 #include <watchdog.h>
@@ -19,6 +21,7 @@
 #include <div64.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #define TIMEOUT_MAX	128000
 #define TIMEOUT_MIN	500

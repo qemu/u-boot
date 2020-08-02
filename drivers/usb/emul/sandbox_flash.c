@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <os.h>
@@ -13,6 +14,7 @@
 #include <usb.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * This driver emulates a flash stick using the UFI command specification and

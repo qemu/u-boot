@@ -9,6 +9,7 @@
 
 #ifndef __ASSEMBLY__
 #include <linux/bitops.h>
+#include <linux/types.h>
 #endif
 
 #ifdef CONFIG_CPU_V7M

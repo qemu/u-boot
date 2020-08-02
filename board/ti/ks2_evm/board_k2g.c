@@ -24,6 +24,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "mux-k2g.h"
 #include "../common/board_detect.h"
 

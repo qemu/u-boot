@@ -6,6 +6,7 @@
 #include <common.h>
 #include <string.h>
 #include <tee.h>
+#include <asm/types.h>
 #include <broadcom/chimp.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>

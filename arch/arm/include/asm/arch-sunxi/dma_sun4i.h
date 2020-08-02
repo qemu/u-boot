@@ -6,6 +6,7 @@
 #ifndef _SUNXI_DMA_SUN4I_H
 #define _SUNXI_DMA_SUN4I_H
 
+#include <asm/types.h>
 struct sunxi_dma_cfg
 {
 	u32 ctl;		/* 0x00 Control */

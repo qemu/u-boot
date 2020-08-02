@@ -17,6 +17,7 @@
 #include <linux/compiler.h>
 #include <linux/dma-direction.h>
 #include <part.h>
+#include <linux/types.h>
 
 struct bd_info;
 

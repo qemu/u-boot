@@ -6,6 +6,8 @@
 #ifndef _WDT_H_
 #define _WDT_H_
 
+#include <linux/types.h>
+
 struct udevice;
 
 /*

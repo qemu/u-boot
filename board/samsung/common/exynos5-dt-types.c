@@ -9,7 +9,9 @@
 #include <dm.h>
 #include <errno.h>
 #include <fdtdec.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <power/pmic.h>

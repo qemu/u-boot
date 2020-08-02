@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <stdbool.h>
 #include <asm/global_data.h>
@@ -14,6 +15,7 @@
 #include <asm/secure.h>
 #endif
 #include <asm/armv7.h>
+#include <asm/types.h>
 
 #if defined(CONFIG_ARCH_LS1021A)
 #include <asm/arch/immap_ls102xa.h>

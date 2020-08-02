@@ -5,6 +5,8 @@
 #ifndef __FSL_MC_CMD_H
 #define __FSL_MC_CMD_H
 
+#include <compiler.h>
+#include <linux/types.h>
 #define MC_CMD_NUM_OF_PARAMS	7
 
 #define MAKE_UMASK64(_width) \

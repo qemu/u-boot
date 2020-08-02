@@ -12,6 +12,7 @@
 #include <dm.h>
 #include <ram.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

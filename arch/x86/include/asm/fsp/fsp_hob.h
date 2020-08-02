@@ -7,7 +7,9 @@
 #ifndef __FSP_HOB_H__
 #define __FSP_HOB_H__
 
+#include <compiler.h>
 #include <asm/hob.h>
+#include <asm/types.h>
 
 enum pixel_format {
 	pixel_rgbx_8bpc,	/* RGB 8 bit per color */

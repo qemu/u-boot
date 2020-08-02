@@ -6,6 +6,7 @@
 #ifndef __SOC_ROCKCHIP_RK3328_GRF_H__
 #define __SOC_ROCKCHIP_RK3328_GRF_H__
 
+#include <asm/types.h>
 #include <linux/kernel.h>
 struct rk3328_grf_regs {
 	u32 gpio0a_iomux;

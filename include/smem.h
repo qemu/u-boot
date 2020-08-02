@@ -1,5 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /*
+#include <linux/types.h>
  * The shared memory system is an allocate-only heap structure that
  * consists of one of more memory areas that can be accessed by the processors
  * in the SoC.

@@ -10,6 +10,7 @@
 #include <reset.h>
 #include <syscon.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <test/ut.h>
 #include <asm/test.h>
 #include <linux/bitops.h>

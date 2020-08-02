@@ -17,6 +17,7 @@
 #include <asm/mpc85xx_gpio.h>
 #endif
 
+#include <linux/types.h>
 struct mpc8xxx_gpio_plat {
 	ulong addr;
 	unsigned long size;

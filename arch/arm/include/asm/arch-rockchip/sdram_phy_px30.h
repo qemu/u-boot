@@ -9,6 +9,8 @@
 #include <asm/arch-rockchip/sdram_phy_ron_rtt_px30.h>
 
 #ifndef __ASSEMBLY__
+#include <compiler.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #endif
 

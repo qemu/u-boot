@@ -14,6 +14,7 @@
 #include <asm/arch/dmc.h>
 #include <asm/arch/power.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "common_setup.h"
 #include "exynos5_setup.h"
 #include "clock_init.h"

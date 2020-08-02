@@ -10,6 +10,7 @@
 #ifndef __CLK_SYNTHESIZER_H
 #define __CLK_SYNTHESIZER_H
 
+#include <asm/types.h>
 #define CLK_SYNTHESIZER_ID_REG		0x0
 #define CLK_SYNTHESIZER_XCSEL		0x05
 #define CLK_SYNTHESIZER_MUX_REG		0x14

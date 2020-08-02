@@ -8,6 +8,7 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <init.h>
+#include <stdbool.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/crm_regs.h>
@@ -21,6 +22,7 @@
 #include <asm/u-boot.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_SPL_BUILD)
 

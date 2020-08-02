@@ -4,6 +4,7 @@
  */
 #include <common.h>
 #include <spl.h>
+#include <asm/types.h>
 
 void board_boot_order(u32 *spl_boot_list)
 {

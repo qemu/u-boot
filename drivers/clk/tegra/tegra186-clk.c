@@ -9,6 +9,7 @@
 #include <log.h>
 #include <misc.h>
 #include <asm/arch-tegra/bpmp_abi.h>
+#include <linux/types.h>
 
 static ulong tegra186_clk_get_rate(struct clk *clk)
 {

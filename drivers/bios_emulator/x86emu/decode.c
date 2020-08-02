@@ -33,6 +33,7 @@
 * Developer:	Kendall Bennett
 *
 * Description:	This file includes subroutines which are related to
+#include <linux/types.h>
 *		instruction decoding and accessess of immediate data via IP.  etc.
 *
 ****************************************************************************/

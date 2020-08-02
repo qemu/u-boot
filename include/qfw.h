@@ -6,8 +6,10 @@
 #ifndef __FW_CFG__
 #define __FW_CFG__
 
+#include <compiler.h>
 #include <stdbool.h>
 #include <linux/list.h>
+#include <linux/types.h>
 
 enum qemu_fwcfg_items {
 	FW_CFG_SIGNATURE	= 0x00,

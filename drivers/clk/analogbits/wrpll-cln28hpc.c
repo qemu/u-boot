@@ -7,6 +7,7 @@
  * This library supports configuration parsing and reprogramming of
  * the CLN28HPC variant of the Analog Bits Wide Range PLL.  The
  * intention is for this library to be reusable for any device that
+#include <asm/types.h>
  * integrates this PLL; thus the register structure and programming
  * details are expected to be provided by a separate IP block driver.
  *

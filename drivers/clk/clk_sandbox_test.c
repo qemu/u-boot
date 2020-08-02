@@ -11,6 +11,7 @@
 #include <dm/device_compat.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 struct sandbox_clk_test {
 	struct clk clks[SANDBOX_CLK_TEST_NON_DEVM_COUNT];

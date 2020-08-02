@@ -19,6 +19,7 @@
 #endif
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /**
  * smbios_add_string() - add a string to the string area

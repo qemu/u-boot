@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <vbe.h>
 #include <video.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 
 struct pixel {

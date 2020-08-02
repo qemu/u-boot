@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <bootstage.h>
+#include <compiler.h>
 #include <env.h>
 #include <log.h>
 #include <malloc.h>
@@ -20,6 +21,7 @@
 #include <asm/global_data.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_SYS_POST_HOTKEYS_GPIO
 #include <asm/gpio.h>

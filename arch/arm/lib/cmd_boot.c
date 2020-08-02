@@ -19,6 +19,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <linux/types.h>
 
 /*
  * ARMv7M does not support ARM instruction mode. However, the

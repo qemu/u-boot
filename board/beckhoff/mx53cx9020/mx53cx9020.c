@@ -20,6 +20,7 @@
 #include <asm/gpio.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 enum LED_GPIOS {
 	GPIO_SD1_CD = IMX_GPIO_NR(1, 1),

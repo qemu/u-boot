@@ -6,8 +6,10 @@
 #ifndef _COMPHY_CORE_H_
 #define _COMPHY_CORE_H_
 
+#include <compiler.h>
 #include <fdtdec.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <mvebu/comphy.h>
 
 #if defined(DEBUG)

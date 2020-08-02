@@ -297,6 +297,7 @@ struct sunxi_ccm_reg {
 
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 void clock_set_pll1(unsigned int hz);
 void clock_set_pll5(unsigned int clk);
 unsigned int clock_get_pll6(void);

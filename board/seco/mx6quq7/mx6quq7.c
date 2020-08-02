@@ -34,6 +34,7 @@
 #include <asm/arch/sys_proto.h>
 #include <asm/mach-imx/mxc_i2c.h>
 #include <i2c.h>
+#include <linux/types.h>
 
 #include "../common/mx6.h"
 

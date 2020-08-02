@@ -105,5 +105,6 @@ static inline void unmap_physmem(void *vaddr, unsigned long flags)
 }
 #endif
 
+#include <asm/types.h>
 #endif /* !__ASSEMBLY__ */
 #endif /* __ASM_GENERIC_IO_H__ */

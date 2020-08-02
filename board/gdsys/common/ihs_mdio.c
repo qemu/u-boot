@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <miiphy.h>
 #ifdef CONFIG_GDSYS_LEGACY_DRIVERS

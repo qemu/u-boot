@@ -8,6 +8,7 @@
 #ifndef AT91_H
 #define AT91_H
 
+#include <asm/types.h>
 typedef struct at91_emac {
 	u32	 ctl;
 	u32	 cfg;

@@ -10,6 +10,7 @@
  * Kyle Harris, Nexus Technologies, Inc. kharris@nexus-tech.net
  */
 
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <command.h>
@@ -33,6 +34,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 #include <malloc.h>
 #include <fsl_esdhc_imx.h>

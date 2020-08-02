@@ -16,4 +16,5 @@ inline void zynqmp_dll_reset(u8 deviceid) {}
 inline void arasan_zynqmp_set_tapdelay(u8 device_id, u8 uhsmode, u8 bank) {}
 #endif
 
+#include <asm/types.h>
 #endif

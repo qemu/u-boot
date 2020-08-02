@@ -19,6 +19,7 @@
 #include <linux/arm-smccc.h>
 #include <linux/delay.h>
 #include <linux/psci.h>
+#include <linux/types.h>
 
 #define PMIC_REG_TO_BUS_ADDR(x) (x << 2)
 #define PMIC_VSEL_MASK		0x7

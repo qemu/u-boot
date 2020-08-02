@@ -42,6 +42,7 @@
 #include <asm/coldfire/flexbus.h>
 #include <asm/coldfire/intctrl.h>
 #include <asm/coldfire/qspi.h>
+#include <asm/types.h>
 
 /* System Controller Module */
 typedef struct scm1 {

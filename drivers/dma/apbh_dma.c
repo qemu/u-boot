@@ -17,6 +17,7 @@
 #include <linux/kernel.h>
 #include <linux/list.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <common.h>
 #include <malloc.h>

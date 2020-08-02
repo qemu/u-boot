@@ -15,6 +15,7 @@
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #if !(defined(CONFIG_FIT) && defined(CONFIG_OF_LIBFDT))
 #error "CONFIG_FIT and CONFIG_OF_LIBFDT are required for auto-update feature"

@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "kp_id_rev.h"
 #include <net.h>
 

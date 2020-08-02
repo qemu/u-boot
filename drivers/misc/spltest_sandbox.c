@@ -7,6 +7,7 @@
 #include <common.h>
 #include <dm.h>
 #include <dt-structs.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/kernel.h>
 

@@ -20,6 +20,7 @@
 #include <linux/time.h>
 #include <linux/ctype.h>
 #include <asm/byteorder.h>
+#include <linux/types.h>
 #include "zfs_common.h"
 #include "div64.h"
 

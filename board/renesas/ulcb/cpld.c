@@ -14,6 +14,7 @@
 #include <asm/io.h>
 #include <dm.h>
 #include <errno.h>
+#include <asm/types.h>
 #include <linux/err.h>
 #include <sysreset.h>
 #include <linux/errno.h>

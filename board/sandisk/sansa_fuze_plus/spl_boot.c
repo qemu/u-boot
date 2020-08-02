@@ -13,6 +13,7 @@
 #include <asm/arch/sys_proto.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define	MUX_CONFIG_EMI	(MXS_PAD_1V8 | MXS_PAD_12MA | MXS_PAD_PULLUP)
 #define	MUX_CONFIG_SSP	(MXS_PAD_3V3 | MXS_PAD_4MA | MXS_PAD_PULLUP)

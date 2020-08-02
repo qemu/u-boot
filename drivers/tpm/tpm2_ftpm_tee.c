@@ -21,6 +21,7 @@
 #include <vsprintf.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "tpm_tis.h"
 #include "tpm2_ftpm_tee.h"

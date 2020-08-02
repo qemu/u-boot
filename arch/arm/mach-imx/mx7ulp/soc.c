@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <init.h>
 #include <log.h>
@@ -17,6 +18,7 @@
 #include <asm/mach-imx/boot_mode.h>
 #include <asm/mach-imx/hab.h>
 #include <linux/bitops.h>
+#include <linux/types.h>
 
 #define PMC0_BASE_ADDR		0x410a1000
 #define PMC0_CTRL		0x28

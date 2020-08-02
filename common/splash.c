@@ -21,6 +21,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <display_options.h>
 #include <env.h>
 #include <splash.h>
@@ -30,6 +31,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static struct splash_location default_splash_locations[] = {
 	{

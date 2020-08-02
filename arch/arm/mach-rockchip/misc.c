@@ -16,6 +16,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <dm/uclass-internal.h>
 #include <misc.h>
 #include <linux/string.h>

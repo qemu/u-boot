@@ -16,6 +16,7 @@
 #include <time.h>
 #include <usb.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/string.h>

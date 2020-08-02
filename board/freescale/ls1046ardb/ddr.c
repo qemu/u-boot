@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
+#include <linux/types.h>
 #include "ddr.h"
 #ifdef CONFIG_FSL_DEEP_SLEEP
 #include <fsl_sleep.h>

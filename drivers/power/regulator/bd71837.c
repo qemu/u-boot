@@ -8,6 +8,8 @@
 #include <common.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>

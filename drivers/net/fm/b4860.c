@@ -11,6 +11,7 @@
 #include <asm/immap_85xx.h>
 #include <asm/fsl_serdes.h>
 #include <hwconfig.h>
+#include <asm/types.h>
 
 u32 port_to_devdisr[] = {
 	[FM1_DTSEC1] = FSL_CORENET_DEVDISR2_DTSEC1_1,

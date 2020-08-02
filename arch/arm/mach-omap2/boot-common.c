@@ -9,6 +9,7 @@
 
 #include <common.h>
 #include <ahci.h>
+#include <compiler.h>
 #include <log.h>
 #include <spl.h>
 #include <asm/global_data.h>
@@ -19,6 +20,7 @@
 #include <watchdog.h>
 #include <scsi.h>
 #include <i2c.h>
+#include <asm/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

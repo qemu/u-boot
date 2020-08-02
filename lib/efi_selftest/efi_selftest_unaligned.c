@@ -8,6 +8,7 @@
  */
 
 #include <efi_selftest.h>
+#include <asm/types.h>
 
 struct aligned_buffer {
 	char a[8] __aligned(8);

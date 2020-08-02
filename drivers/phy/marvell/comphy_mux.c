@@ -4,8 +4,10 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 #include "comphy_core.h"
 #include "comphy_hpipe.h"

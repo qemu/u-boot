@@ -21,6 +21,7 @@
 #include <common.h>
 #include <bootstage.h>
 #include <command.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <dm.h>
 #include <errno.h>
@@ -51,6 +52,7 @@
 #include <linux/compiler.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

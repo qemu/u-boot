@@ -8,12 +8,14 @@
 #include <clk-uclass.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stm32_rcc.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <asm/io.h>
 #include <asm/arch/stm32.h>

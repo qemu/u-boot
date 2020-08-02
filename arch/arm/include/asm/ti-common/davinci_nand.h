@@ -11,6 +11,7 @@
 
 #include <linux/mtd/rawnand.h>
 #include <asm/arch/hardware.h>
+#include <linux/types.h>
 
 #define NAND_READ_START  	0x00
 #define NAND_READ_END    	0x30

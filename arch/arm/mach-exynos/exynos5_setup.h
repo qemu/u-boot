@@ -10,6 +10,7 @@
 
 #include <config.h>
 #include <asm/arch/dmc.h>
+#include <linux/types.h>
 
 #define NOT_AVAILABLE		0
 #define DATA_MASK		0xFFFFF

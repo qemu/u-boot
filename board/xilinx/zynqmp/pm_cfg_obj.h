@@ -5,5 +5,6 @@
  * Declaration of PMU config object binary blob linked in at build time.
  */
 
+#include <asm/types.h>
 extern const u32 zynqmp_pm_cfg_obj[];
 extern const int zynqmp_pm_cfg_obj_size;

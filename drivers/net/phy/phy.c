@@ -8,6 +8,7 @@
  * Based loosely off of Linux's PHY Lib
  */
 #include <common.h>
+#include <compiler.h>
 #include <console.h>
 #include <dm.h>
 #include <log.h>
@@ -17,6 +18,7 @@
 #include <miiphy.h>
 #include <phy.h>
 #include <errno.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/bitops.h>
@@ -25,6 +27,7 @@
 #include <linux/compiler.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

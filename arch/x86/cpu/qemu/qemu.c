@@ -14,6 +14,7 @@
 #include <asm/processor.h>
 #include <asm/arch/device.h>
 #include <asm/arch/qemu.h>
+#include <linux/types.h>
 
 static bool i440fx;
 

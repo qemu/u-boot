@@ -10,6 +10,7 @@
 #define __POWER_TPS65217_H__
 
 /* I2C chip address */
+#include <linux/types.h>
 #define TPS65217_CHIP_PM			0x24
 
 /* Registers */

@@ -22,6 +22,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /* SPIGCR0 */
 #define SPIGCR0_SPIENA_MASK	0x1

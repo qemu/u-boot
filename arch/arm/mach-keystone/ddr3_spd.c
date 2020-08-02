@@ -8,6 +8,7 @@
 #include <common.h>
 #include <log.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/string.h>
 
 #include <i2c.h>

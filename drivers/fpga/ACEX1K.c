@@ -12,6 +12,7 @@
 #include <ACEX1K.h>		/* ACEX device family */
 #include <time.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 /* Define FPGA_DEBUG to get debug printf's */
 #ifdef	FPGA_DEBUG

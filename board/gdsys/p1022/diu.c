@@ -11,6 +11,7 @@
 #include <command.h>
 #include <log.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/ctype.h>
 #include <asm/io.h>
 #include <asm/ppc.h>

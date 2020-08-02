@@ -13,6 +13,7 @@
 #include <malloc.h>
 #include <linux/input.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /**
  * Determine if the current keypress configuration can cause key ghosting

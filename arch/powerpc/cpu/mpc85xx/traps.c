@@ -29,6 +29,7 @@
 #include <irq_func.h>
 #include <kgdb.h>
 #include <asm/processor.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

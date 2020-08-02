@@ -22,6 +22,7 @@
    Original copyright notice follows:
 
    lzo1x_9x.c -- implementation of the LZO1X-999 compression algorithm
+#include <linux/types.h>
    lzo_ptr.h -- low-level pointer constructs
    lzo_swd.ch -- sliding window dictionary
    lzoconf.h -- configuration for the LZO real-time data compression library

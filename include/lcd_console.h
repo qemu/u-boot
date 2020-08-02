@@ -5,6 +5,7 @@
 
 /* By default we scroll by a single line */
 
+#include <linux/types.h>
 struct console_t {
 	short curr_col, curr_row;
 	short cols, rows;

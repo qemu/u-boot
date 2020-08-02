@@ -9,6 +9,7 @@
 
 /*
  * This really should be opaque, but the EFI implementation wrongly
+#include <asm/types.h>
  * assumes that a 'struct jmp_buf_data' is defined.
  */
 struct jmp_buf_data {

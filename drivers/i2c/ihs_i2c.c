@@ -13,6 +13,7 @@
 #include <gdsys_fpga.h>
 #endif
 #include <log.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <asm/unaligned.h>
 #include <linux/bitops.h>
@@ -20,6 +21,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_DM_I2C
 struct ihs_i2c_priv {

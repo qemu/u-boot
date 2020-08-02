@@ -10,6 +10,7 @@
 #define __asm_handoff_h
 
 /**
+#include <linux/types.h>
  * struct arch_spl_handoff - architecture-specific handoff info
  *
  * @usable_ram_top: Value returned by board_get_usable_ram_top() in SPL

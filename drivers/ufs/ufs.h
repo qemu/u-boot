@@ -2,7 +2,10 @@
 #ifndef __UFS_H
 #define __UFS_H
 
+#include <compiler.h>
 #include <stdbool.h>
+#include <linux/types.h>
+
 #include "unipro.h"
 
 struct udevice;

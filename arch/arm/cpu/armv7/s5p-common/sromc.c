@@ -7,6 +7,7 @@
 #include <common.h>
 #include <asm/io.h>
 #include <asm/arch/sromc.h>
+#include <asm/types.h>
 
 /*
  * s5p_config_sromc() - select the proper SROMC Bank and configure the

@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <i2c.h>
 #include <pci_ids.h>
@@ -14,6 +15,7 @@
 #include <linux/compat.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define TWSI_SW_TWSI		0x00
 #define TWSI_TWSI_SW		0x08

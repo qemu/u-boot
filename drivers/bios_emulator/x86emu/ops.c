@@ -35,6 +35,7 @@
 * Developer:	Kendall Bennett
 *
 * Description:	This file includes subroutines to implement the decoding
+#include <linux/types.h>
 *		and emulation of all the x86 processor instructions.
 *
 * There are approximately 250 subroutines in here, which correspond

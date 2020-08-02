@@ -59,6 +59,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #endif
 
 #include <linux/err.h>

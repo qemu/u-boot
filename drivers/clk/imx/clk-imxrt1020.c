@@ -8,11 +8,13 @@
 #include <clk.h>
 #include <clk-uclass.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/imx-regs.h>
 #include <dt-bindings/clock/imxrt1020-clock.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include "clk.h"
 

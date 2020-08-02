@@ -13,6 +13,7 @@
 #include <net.h>
 #include <vsprintf.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "eth_internal.h"
 
 int eth_env_get_enetaddr_by_index(const char *base_name, int index,

@@ -18,6 +18,7 @@
 #include <irq_func.h>
 #include <asm/system.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 static void cache_flush(void);
 

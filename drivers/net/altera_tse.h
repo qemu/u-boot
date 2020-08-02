@@ -11,7 +11,9 @@
 #ifndef _ALTERA_TSE_H_
 #define _ALTERA_TSE_H_
 
+#include <compiler.h>
 #include <linux/bitops.h>
+#include <linux/types.h>
 #define __packed_1_    __packed __aligned(1)
 
 /* dma type */

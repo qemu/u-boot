@@ -6,10 +6,12 @@
 
 #include <common.h>
 #include <bootstage.h>
+#include <compiler.h>
 #include <image.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define	LINUX_ARM_ZIMAGE_MAGIC	0x016f2818
 

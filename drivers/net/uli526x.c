@@ -21,6 +21,7 @@
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* some kernel function compatible define */
 

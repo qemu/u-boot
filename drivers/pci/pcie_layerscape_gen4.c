@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/arch/fsl_serdes.h>
 #include <pci.h>
@@ -19,6 +20,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/sizes.h>
+#include <linux/types.h>
 
 #include "pcie_layerscape_gen4.h"
 

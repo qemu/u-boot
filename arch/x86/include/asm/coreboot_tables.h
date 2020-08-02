@@ -8,6 +8,8 @@
 #ifndef _COREBOOT_TABLES_H
 #define _COREBOOT_TABLES_H
 
+#include <compiler.h>
+#include <linux/types.h>
 struct memory_area;
 
 struct cbuint64 {

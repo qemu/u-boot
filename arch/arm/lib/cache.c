@@ -7,6 +7,7 @@
 /* for now: just dummy functions to satisfy the linker */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <log.h>
 #include <malloc.h>
@@ -14,6 +15,7 @@
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

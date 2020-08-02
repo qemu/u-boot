@@ -7,9 +7,11 @@
 #include <fdtdec.h>
 #include <fdt_support.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <tee.h>
 #include <asm/arch/sys_proto.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <dt-bindings/pinctrl/stm32-pinfunc.h>
 #include <linux/io.h>

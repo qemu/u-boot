@@ -17,6 +17,7 @@
 #include <vsprintf.h>
 #include <asm/cache.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <u-boot/md5.h>
 #include <asm/arch/cpu.h>

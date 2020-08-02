@@ -10,6 +10,7 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <dm.h>
 #include <errno.h>
@@ -29,6 +30,7 @@
 #include <asm/io.h>
 #include <asm/gpio.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* Registers */
 #define RAVB_REG_CCC		0x000

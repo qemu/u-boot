@@ -6,6 +6,7 @@
 #ifndef __FMAN_BOARD_HELPER__
 #define __FMAN_BOARD_HELPER__
 
+#include <asm/types.h>
 int fdt_set_phy_handle(void *fdt, char *compat, phys_addr_t addr,
 			const char *alias);
 

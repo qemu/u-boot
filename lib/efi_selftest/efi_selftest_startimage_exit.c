@@ -11,6 +11,7 @@
 
 #include <efi_selftest.h>
 #include <linux/string.h>
+#include <linux/types.h>
 /* Include containing the miniapp.efi application */
 #include "efi_miniapp_file_image_exit.h"
 

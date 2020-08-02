@@ -14,7 +14,9 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/compat.h>
 #include <rtc.h>
 #include <linux/delay.h>

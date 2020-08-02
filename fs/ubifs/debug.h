@@ -13,6 +13,7 @@
 
 /* Checking helper functions */
 #include <linux/printk.h>
+#include <linux/types.h>
 typedef int (*dbg_leaf_callback)(struct ubifs_info *c,
 				 struct ubifs_zbranch *zbr, void *priv);
 typedef int (*dbg_znode_callback)(struct ubifs_info *c,

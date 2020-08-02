@@ -15,6 +15,7 @@
 
 #ifndef __ASSEMBLY__
 /*
+#include <asm/types.h>
  * We can use a combined structure for PL010 and PL011, because they overlap
  * only in common registers.
  */

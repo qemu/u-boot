@@ -15,6 +15,7 @@
 #include <asm/emif.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/tps65218.h>
 #include "board.h"

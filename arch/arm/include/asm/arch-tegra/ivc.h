@@ -28,6 +28,7 @@
  */
 
 /**
+#include <linux/types.h>
  * struct tegra_ivc - In-memory shared memory layout.
  *
  * This is described in detail in ivc.c.

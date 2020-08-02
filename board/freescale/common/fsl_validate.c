@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <flash.h>
 #include <fsl_validate.h>
@@ -17,6 +18,7 @@
 #include <vsprintf.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/rsa-mod-exp.h>
 #include <hash.h>
 #include <fsl_secboot_err.h>

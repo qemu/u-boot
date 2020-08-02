@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <wdt.h>
 #include <asm/state.h>
+#include <linux/types.h>
 
 static int sandbox_wdt_start(struct udevice *dev, u64 timeout, ulong flags)
 {

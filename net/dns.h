@@ -7,6 +7,7 @@
 #ifndef __DNS_H__
 #define __DNS_H__
 
+#include <linux/types.h>
 #define DNS_SERVICE_PORT 53
 #define DNS_TIMEOUT      10000UL
 

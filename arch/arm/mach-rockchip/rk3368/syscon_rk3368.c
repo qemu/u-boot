@@ -10,6 +10,7 @@
 #include <log.h>
 #include <syscon.h>
 #include <asm/arch-rockchip/clock.h>
+#include <linux/types.h>
 
 static const struct udevice_id rk3368_syscon_ids[] = {
 	{ .compatible = "rockchip,rk3368-grf",

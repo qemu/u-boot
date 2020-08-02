@@ -6,9 +6,12 @@
  */
 
 #include <common.h>
+#include <compiler.h>
+#include <stdbool.h>
 #include <asm/addrspace.h>
 #include <asm/cacheops.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/io.h>
 #include <linux/kernel.h>

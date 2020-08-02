@@ -6,6 +6,7 @@
 #ifndef __PINCTRL_MESON_H__
 #define __PINCTRL_MESON_H__
 
+#include <compiler.h>
 #include <linux/kernel.h>
 #include <linux/types.h>
 

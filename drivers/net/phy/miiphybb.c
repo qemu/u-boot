@@ -18,6 +18,7 @@
 #include <miiphy.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <linux/string.h>
 
 #define BB_MII_RELOCATE(v,off) (v += (v?off:0))

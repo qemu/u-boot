@@ -6,10 +6,12 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/io.h>
 #include <linux/sizes.h>
+#include <linux/types.h>
 #include <mach/ddr.h>
 #include <mach/mc.h>
 

@@ -4,6 +4,7 @@
 #include <fsl-mc/fsl_mc_sys.h>
 #include <fsl-mc/fsl_mc_cmd.h>
 #include <fsl-mc/fsl_dpmng.h>
+#include <linux/types.h>
 #include "fsl_dpmng_cmd.h"
 
 int mc_get_version(struct fsl_mc_io *mc_io,

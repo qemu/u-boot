@@ -7,6 +7,7 @@
 #include <errno.h>
 #include <i2c.h>
 #include <status_led.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 
 #ifndef CONFIG_PCA9551_I2C_ADDR

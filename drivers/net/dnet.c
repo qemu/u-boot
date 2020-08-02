@@ -12,6 +12,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>

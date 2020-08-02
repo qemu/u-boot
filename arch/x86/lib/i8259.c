@@ -20,6 +20,7 @@
 #include <asm/i8259.h>
 #include <asm/ibmpc.h>
 #include <asm/interrupt.h>
+#include <asm/types.h>
 
 int i8259_init(void)
 {

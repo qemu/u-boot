@@ -27,6 +27,7 @@
 #include <linux/string.h>
 #include <asm/gpio.h>
 #include <usb.h>
+#include <linux/types.h>
 #include <linux/usb/gadget.h>
 #include <asm/omap_common.h>
 #include <asm/omap_sec_common.h>

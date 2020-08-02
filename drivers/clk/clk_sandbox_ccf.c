@@ -7,9 +7,11 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <clk.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <asm/clk.h>
 #include <clk-uclass.h>
 #include <dm/devres.h>
@@ -19,6 +21,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 /*
  * Sandbox implementation of CCF primitives necessary for clk-uclass testing

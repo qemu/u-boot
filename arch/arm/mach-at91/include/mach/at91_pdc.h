@@ -6,6 +6,7 @@
 #ifndef AT91_PDC_H
 #define AT91_PDC_H
 
+#include <asm/types.h>
 typedef struct at91_pdc {
 	u32	rpr;		/* 0x100 Receive Pointer Register */
 	u32	rcr;		/* 0x104 Receive Counter Register */

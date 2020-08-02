@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <asm/types.h>
 
 /* Functions for initializing variable tables of different types of tasks. */
 

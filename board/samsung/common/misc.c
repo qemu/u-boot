@@ -15,6 +15,7 @@
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include <samsung/misc.h>
 #include <errno.h>
 #include <version.h>

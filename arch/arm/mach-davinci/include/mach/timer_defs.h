@@ -6,6 +6,7 @@
 #ifndef _TIMER_DEFS_H_
 #define _TIMER_DEFS_H_
 
+#include <linux/types.h>
 struct davinci_timer {
 	u_int32_t	pid12;
 	u_int32_t	emumgt;

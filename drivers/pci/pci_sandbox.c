@@ -10,6 +10,7 @@
 #include <log.h>
 #include <pci.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define FDT_DEV_INFO_CELLS	4
 #define FDT_DEV_INFO_SIZE	(FDT_DEV_INFO_CELLS * sizeof(u32))

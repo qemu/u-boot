@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <env.h>
 #include <fsl_validate.h>
@@ -12,6 +13,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <dm/root.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_SPL_BUILD) && defined(CONFIG_SPL_FRAMEWORK)
 #include <spl.h>

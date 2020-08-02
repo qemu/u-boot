@@ -3,6 +3,7 @@
 #include <common.h>
 #include <dm.h>
 #include <log.h>
+#include <asm/types.h>
 #include <dm/of_extra.h>
 #include <dm/test.h>
 #include <test/test.h>

@@ -25,6 +25,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <spi.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <linux/delay.h>
@@ -36,6 +37,7 @@
 #include <dm/uclass-internal.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifdef DEBUG_TRACE
 #define debug_trace(fmt, b...)	debug(fmt, #b)

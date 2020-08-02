@@ -19,6 +19,7 @@
 #include <asm/omap_common.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/arch/clock.h>
+#include <asm/types.h>
 
 /* Register defines and masks for VC IP Block */
 /* PRM_VC_CFG_I2C_MODE */

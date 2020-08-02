@@ -11,6 +11,7 @@
 #include <log.h>
 #include <mapmem.h>
 #include <net.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdio_dev.h>
 #include <vsprintf.h>

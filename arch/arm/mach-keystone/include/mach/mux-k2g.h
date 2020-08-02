@@ -11,6 +11,7 @@
 
 #include <common.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 #define K2G_PADCFG_REG	(KS2_DEVICE_STATE_CTRL_BASE + 0x1000)
 

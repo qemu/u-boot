@@ -20,6 +20,7 @@
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <asm/arch/clock.h>
 #include <asm/arch/crm_regs.h>

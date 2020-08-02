@@ -7,6 +7,7 @@
 #define _BCM2835_WDOG_H
 
 #include <asm/arch/base.h>
+#include <asm/types.h>
 
 #define BCM2835_WDOG_PHYSADDR ({ BUG_ON(!rpi_bcm283x_base); \
 				 rpi_bcm283x_base + 0x00100000; })

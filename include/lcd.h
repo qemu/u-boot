@@ -17,6 +17,7 @@
 #include <bmp_layout.h>
 #include <asm/byteorder.h>
 #endif
+#include <linux/types.h>
 
 int bmp_display(ulong addr, int x, int y);
 struct bmp_image *gunzip_bmp(unsigned long addr, unsigned long *lenp,

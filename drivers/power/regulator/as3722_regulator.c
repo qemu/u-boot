@@ -11,6 +11,7 @@
 #include <errno.h>
 #include <log.h>
 #include <stdbool.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <power/as3722.h>
 #include <power/pmic.h>

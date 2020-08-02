@@ -8,6 +8,7 @@
 
 #include <asm/arch/hardware.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 /* pin muxer definitions */
 #define PIN_MUX_NUM_FIELDS	8	/* Per register */

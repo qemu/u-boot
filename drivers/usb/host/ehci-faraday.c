@@ -7,12 +7,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <usb.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <usb/fusbh200.h>
 #include <usb/fotg210.h>
 

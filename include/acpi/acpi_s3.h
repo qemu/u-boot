@@ -37,6 +37,7 @@
 extern char __wakeup[];
 extern int __wakeup_size;
 
+#include <asm/types.h>
 enum acpi_sleep_state {
 	ACPI_S0,
 	ACPI_S1,

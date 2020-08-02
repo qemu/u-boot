@@ -11,6 +11,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <cpsw.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>
 #include <linux/printk.h>

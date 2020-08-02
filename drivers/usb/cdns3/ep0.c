@@ -10,7 +10,9 @@
  *          Peter Chen <peter.chen@nxp.com>
  */
 
+#include <compiler.h>
 #include <cpu_func.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <asm/cache.h>
 #include <dm/device_compat.h>
@@ -18,6 +20,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <linux/usb/composite.h>
 #include <linux/iopoll.h>
 

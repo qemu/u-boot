@@ -8,6 +8,7 @@
 #ifndef __DS109_H
 #define __DS109_H
 
+#include <asm/types.h>
 #define DS109_OE_LOW			(0)
 #define DS109_OE_HIGH			(0)
 #define DS109_OE_VAL_LOW		((1 << 22)|(1 << 23))

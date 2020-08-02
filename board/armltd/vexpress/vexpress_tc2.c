@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <asm/armv7.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <common.h>
 #include <linux/libfdt.h>

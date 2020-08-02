@@ -27,6 +27,7 @@
 #include <asm/immap.h>
 #include <asm/fsl_mcdmafec.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "MCD_dma.h"
 

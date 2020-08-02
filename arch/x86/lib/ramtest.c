@@ -9,6 +9,7 @@
 #include <vsprintf.h>
 #include <asm/io.h>
 #include <asm/post.h>
+#include <asm/types.h>
 
 static void write_phys(unsigned long addr, u32 value)
 {

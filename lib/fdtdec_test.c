@@ -16,6 +16,7 @@
 #include <malloc.h>
 #include <os.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* The size of our test fdt blob */
 #define FDT_SIZE	(16 * 1024)

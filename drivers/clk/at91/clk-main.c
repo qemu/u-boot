@@ -10,6 +10,7 @@
 #include <asm/global_data.h>
 #include <linux/errno.h>
 #include <linux/io.h>
+#include <linux/types.h>
 #include <mach/at91_pmc.h>
 #include "pmc.h"
 

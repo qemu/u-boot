@@ -20,10 +20,12 @@
 
 /* Trace the 3 different classes of read/write access to QBMan. #undef as
  * required. */
+#include <compiler.h>
 #include <stdio.h>
 #include <linux/bug.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #undef QBMAN_CCSR_TRACE
 #undef QBMAN_CINH_TRACE
 #undef QBMAN_CENA_TRACE

@@ -21,6 +21,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "part_dos.h"
 #include <part.h>
 

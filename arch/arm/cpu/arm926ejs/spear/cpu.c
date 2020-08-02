@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/spr_misc.h>
+#include <asm/types.h>
 #include <linux/string.h>
 
 int arch_cpu_init(void)

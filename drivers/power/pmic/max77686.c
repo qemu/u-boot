@@ -12,6 +12,7 @@
 #include <log.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/regulator.h>
 #include <power/max77686_pmic.h>

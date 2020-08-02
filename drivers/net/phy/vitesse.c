@@ -9,6 +9,7 @@
 #include <common.h>
 #include <miiphy.h>
 #include <stdio.h>
+#include <asm/types.h>
 
 /* Cicada Auxiliary Control/Status Register */
 #define MIIM_CIS82xx_AUX_CONSTAT	0x1c

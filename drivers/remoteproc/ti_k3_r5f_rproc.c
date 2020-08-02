@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
@@ -14,6 +15,7 @@
 #include <errno.h>
 #include <clk.h>
 #include <reset.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <dm/device_compat.h>
@@ -22,6 +24,7 @@
 #include <linux/kernel.h>
 #include <linux/soc/ti/ti_sci_protocol.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "ti_sci_proc.h"
 
 /*

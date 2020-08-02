@@ -11,6 +11,7 @@
 #include <common.h>
 #include <asm/emif.h>
 #include <asm/arch/sys_proto.h>
+#include <asm/types.h>
 #include <asm/utils.h>
 
 #ifndef CONFIG_SYS_EMIF_PRECALCULATED_TIMING_REGS

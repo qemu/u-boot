@@ -7,6 +7,7 @@
 #define _X86_GPIO_H_
 
 #include <asm-generic/gpio.h>
+#include <linux/types.h>
 
 struct ich6_bank_platdata {
 	uint16_t base_addr;

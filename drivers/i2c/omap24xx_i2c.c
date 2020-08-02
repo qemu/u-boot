@@ -39,6 +39,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <i2c.h>
 #include <log.h>
@@ -46,6 +47,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #include <asm/io.h>
 #include <asm/omap_i2c.h>

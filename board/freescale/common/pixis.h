@@ -160,6 +160,7 @@ typedef struct pixis {
 #endif
 
 /* Pointer to the PIXIS register set */
+#include <asm/types.h>
 #define pixis ((pixis_t *)PIXIS_BASE)
 
 #endif	/* __PIXIS_H_ */

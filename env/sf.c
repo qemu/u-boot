@@ -9,6 +9,7 @@
  * (C) Copyright 2008 Atmel Corporation
  */
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <env.h>
 #include <env_internal.h>
@@ -25,6 +26,7 @@
 #include <dm/device-internal.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 
 #ifndef CONFIG_SPL_BUILD

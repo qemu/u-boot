@@ -7,6 +7,7 @@
 #ifndef __SYSRESET_H
 #define __SYSRESET_H
 
+#include <linux/types.h>
 struct udevice;
 
 enum sysreset_t {

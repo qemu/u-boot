@@ -19,6 +19,7 @@
 #include <asm/arch/at91_pio.h>
 #include <asm/arch/at91_common.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 
 DECLARE_GLOBAL_DATA_PTR;

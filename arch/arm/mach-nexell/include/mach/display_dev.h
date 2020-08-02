@@ -14,6 +14,7 @@
 #include <lcd.h>
 #endif
 
+#include <linux/types.h>
 struct nx_display_dev {
 #if defined CONFIG_VIDEO || defined CONFIG_DM_VIDEO
 	GraphicDevice graphic_device;

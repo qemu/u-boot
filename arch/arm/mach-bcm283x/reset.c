@@ -12,6 +12,7 @@
 #include <asm/arch/base.h>
 #include <asm/arch/wdog.h>
 #include <efi_loader.h>
+#include <linux/types.h>
 
 #define RESET_TIMEOUT 10
 

@@ -18,6 +18,7 @@
 extern "C" {
 #endif
 
+#include <linux/types.h>
 #define SHA1_SUM_POS	-0x20
 #define SHA1_SUM_LEN	20
 #define SHA1_DER_LEN	15

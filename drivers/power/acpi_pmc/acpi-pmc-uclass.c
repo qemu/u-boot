@@ -16,6 +16,7 @@
 #endif
 #include <asm/io.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <power/acpi_pmc.h>
 
 struct tco_regs {

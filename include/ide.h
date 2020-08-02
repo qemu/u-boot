@@ -8,6 +8,7 @@
 #define _IDE_H
 
 #include <blk.h>
+#include <linux/types.h>
 
 #define IDE_BUS(dev)	(dev / (CONFIG_SYS_IDE_MAXDEVICE / CONFIG_SYS_IDE_MAXBUS))
 

@@ -12,6 +12,8 @@
 #ifndef __KP_ID_REV_H_
 #define __KP_ID_REV_H_
 
+#include <compiler.h>
+#include <asm/types.h>
 struct id_eeprom {
 	u8 hrcw_primary[0x20];
 	u8 mac[6];              /* 0x20 ... 0x25 */

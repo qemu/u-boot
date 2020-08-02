@@ -8,6 +8,7 @@
 #define _ASM_ARCH_HARDWARE_H
 
 #include <asm/arch-stm32/stm32f.h>
+#include <asm/types.h>
 
 static const u32 sect_sz_kb[CONFIG_SYS_MAX_FLASH_SECT] = {
 	[0 ... 3] =	32 * 1024,

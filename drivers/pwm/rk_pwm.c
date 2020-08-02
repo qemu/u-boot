@@ -18,6 +18,7 @@
 #include <asm/arch-rockchip/pwm.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 
 DECLARE_GLOBAL_DATA_PTR;

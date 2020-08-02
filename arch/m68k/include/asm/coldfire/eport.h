@@ -10,6 +10,7 @@
 #define __EPORT_H__
 
 /* Edge Port Module (EPORT) */
+#include <asm/types.h>
 typedef struct eport {
 #ifdef CONFIG_MCF547x_8x
 	u16 par;	/* 0x00 */

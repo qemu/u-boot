@@ -15,6 +15,7 @@
 #define _U_BOOT_SANDBOX_H_
 
 /* board/.../... */
+#include <asm/types.h>
 int board_init(void);
 
 /* start.c */

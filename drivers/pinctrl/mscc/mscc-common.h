@@ -7,6 +7,7 @@
  * Copyright (c) 2017 Microsemi Corporation
  */
 
+#include <compiler.h>
 #define MSCC_FUNC_PER_PIN	4
 
 enum mscc_regs_gpio {

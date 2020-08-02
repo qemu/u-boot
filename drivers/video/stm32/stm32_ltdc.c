@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <display.h>
 #include <dm.h>
 #include <log.h>
@@ -23,6 +24,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 struct stm32_ltdc_priv {
 	void __iomem *regs;

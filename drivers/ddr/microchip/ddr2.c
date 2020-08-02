@@ -4,8 +4,10 @@
  *
  */
 #include <common.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <wait_bit.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 #include <linux/bitops.h>
 #include <mach/pic32.h>

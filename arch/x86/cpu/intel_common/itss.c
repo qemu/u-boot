@@ -17,11 +17,13 @@
 #include <malloc.h>
 #include <p2sb.h>
 #include <spl.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <asm/itss.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 struct itss_platdata {
 #if CONFIG_IS_ENABLED(OF_PLATDATA)

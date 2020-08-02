@@ -8,6 +8,7 @@
 #ifndef _MSCC_JR2_H_
 #define _MSCC_JR2_H_
 
+#include <compiler.h>
 /*
  * Target offset base(s)
  */

@@ -10,6 +10,7 @@
 
 #include <clk.h>
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <dm.h>
 #include <log.h>
@@ -18,6 +19,7 @@
 #include <config.h>
 #include <console.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/cache.h>
 #include <asm/io.h>
@@ -34,6 +36,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* Bit/mask specification */
 #define ZYNQ_GEM_PHYMNTNC_OP_MASK	0x40020000 /* operation mask bits */

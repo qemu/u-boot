@@ -13,6 +13,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 struct msm_clk_priv {
 	phys_addr_t base;

@@ -14,6 +14,7 @@ void imx_setup_hdmi(void);
 /*
  * Hdmi controller registers
  */
+#include <asm/types.h>
 struct hdmi_regs {
 	/*Identification Registers */
 	u8 design_id;			/* 0x000 */

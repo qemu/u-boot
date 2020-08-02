@@ -7,6 +7,7 @@
 #define _TI_COMMON_SYS_PROTO_H_
 
 #include <asm/global_data.h>
+#include <asm/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

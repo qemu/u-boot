@@ -10,6 +10,7 @@
 #ifndef _BOARD_H_
 #define _BOARD_H_
 
+#include <linux/types.h>
 typedef struct _BSP_VS_HWPARAM    // v1.0
 {
 	uint32_t Magic;

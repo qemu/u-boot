@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <image.h>
 #include <init.h>
 #include <net.h>
@@ -32,6 +33,7 @@
 #include <hwconfig.h>
 #include <i2c.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

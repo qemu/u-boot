@@ -24,6 +24,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/stringify.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

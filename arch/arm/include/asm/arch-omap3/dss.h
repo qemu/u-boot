@@ -29,6 +29,7 @@
 #define DSS_H
 
 /* DSS Base Registers */
+#include <asm/types.h>
 #define OMAP3_DSS_BASE		0x48050000
 #define OMAP3_DISPC_BASE	0x48050400
 #define OMAP3_VENC_BASE		0x48050C00

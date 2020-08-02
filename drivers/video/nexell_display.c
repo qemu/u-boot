@@ -7,6 +7,7 @@
  * Copyright (C) 2020  Stefan Bosch <stefan_b@posteo.net>
  */
 
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <command.h>
@@ -23,6 +24,7 @@
 #include <asm/arch/display.h>
 #include <asm/arch/display_dev.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include "videomodes.h"
 
 DECLARE_GLOBAL_DATA_PTR;

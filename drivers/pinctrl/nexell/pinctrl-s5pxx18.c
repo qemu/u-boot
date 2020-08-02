@@ -10,11 +10,13 @@
 #include <common.h>
 #include <dm.h>
 #include <errno.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <dm/pinctrl.h>
 #include <dm/root.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "pinctrl-nexell.h"
 #include "pinctrl-s5pxx18.h"
 

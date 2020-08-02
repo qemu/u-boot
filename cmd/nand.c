@@ -37,6 +37,7 @@
 #include <jffs2/jffs2.h>
 #include <nand.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "legacy-mtd-utils.h"
 

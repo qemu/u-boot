@@ -15,6 +15,7 @@
 #include <stdbool.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define REG_COUNT	8
 #define BITS_PER_REG	32

@@ -6,10 +6,12 @@
  * B&R Industrial Automation GmbH - http://www.br-automation.com/ *
  */
 #include <common.h>
+#include <compiler.h>
 #include <env.h>
 #include <errno.h>
 #include <i2c.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <dm/uclass.h>
 #include <linux/delay.h>
 #include "br_resetc.h"

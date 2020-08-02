@@ -11,6 +11,7 @@
 #include <errno.h>
 #include <log.h>
 #include <pci.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 
 /*

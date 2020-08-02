@@ -6,6 +6,7 @@
 #ifndef _FSL_PORTALS_H_
 #define _FSL_PORTALS_H_
 
+#include <asm/types.h>
 struct qportal_info {
 	u16	dicid;	/* DQRR ICID */
 	u16	ficid;	/* frame data ICID */

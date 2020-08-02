@@ -10,6 +10,7 @@
 #include <asm/arch/grf_rk3308.h>
 #include <asm/arch-rockchip/clock.h>
 #include <asm/arch-rockchip/sdram.h>
+#include <asm/types.h>
 
 struct dram_info {
 	struct ram_info info;

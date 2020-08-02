@@ -10,6 +10,7 @@
 /* Note: Check SCFW API Released DOC before you want to modify something */
 /* Defines */
 
+#include <asm/types.h>
 #define SCFW_API_VERSION_MAJOR  1U
 #define SCFW_API_VERSION_MINOR  15U
 

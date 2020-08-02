@@ -13,6 +13,7 @@
 #include <common.h>
 #include <config.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <dm/device-internal.h>
 #include <dm/device_compat.h>
 #include <dm/devres.h>

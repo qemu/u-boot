@@ -11,6 +11,7 @@
 #include <log.h>
 #include <ns16550.h>
 #include <spl.h>
+#include <stdbool.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
@@ -31,6 +32,7 @@
 #include <asm/arch-tegra/sys_proto.h>
 #include <asm/arch-tegra/warmboot.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 void save_boot_params_ret(void);
 

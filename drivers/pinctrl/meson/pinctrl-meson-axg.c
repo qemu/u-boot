@@ -12,6 +12,7 @@
 #include <dm/pinctrl.h>
 #include <dt-bindings/gpio/meson-axg-gpio.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include "pinctrl-meson-axg.h"
 

@@ -10,6 +10,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/string.h>
 #include "cpld.h"
 

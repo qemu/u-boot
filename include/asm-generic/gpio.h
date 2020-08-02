@@ -10,6 +10,7 @@
 #include <stdbool.h>
 #include <dm/ofnode.h>
 #include <linux/bitops.h>
+#include <linux/types.h>
 
 struct acpi_gpio;
 struct ofnode_phandle_args;

@@ -18,6 +18,7 @@
 #define __USBDCORE_H__
 
 #include <common.h>
+#include <asm/types.h>
 #include "usbdescriptors.h"
 
 

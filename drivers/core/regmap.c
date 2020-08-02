@@ -17,6 +17,7 @@
 #include <asm/io.h>
 #include <dm/of_addr.h>
 #include <linux/ioport.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

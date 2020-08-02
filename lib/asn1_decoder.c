@@ -9,6 +9,7 @@
 #include <log.h>
 #include <linux/compat.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #else
 #include <linux/export.h>
 #endif

@@ -18,6 +18,7 @@
 
 #include <clk.h>
 #include <asm/u-boot.h>
+#include <linux/types.h>
 
 /* Layout description of the FEC */
 struct ethernet_regs {

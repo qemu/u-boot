@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dwmmc.h>
 #include <fdtdec.h>
 #include <asm/global_data.h>
@@ -15,6 +16,7 @@
 #include <dm.h>
 #include <mapmem.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define SD_CLK_SEL_MASK (0x3)
 #define SD_DLL_DEFAULT  (0x143000)

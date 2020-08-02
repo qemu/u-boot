@@ -19,6 +19,7 @@
 #include <asm/arch/sound.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "wm8994.h"
 #include "wm8994_registers.h"
 

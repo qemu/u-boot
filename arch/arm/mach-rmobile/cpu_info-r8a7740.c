@@ -5,6 +5,7 @@
  */
 #include <common.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 u32 rmobile_get_cpu_type(void)
 {

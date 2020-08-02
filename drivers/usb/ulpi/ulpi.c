@@ -23,6 +23,7 @@
 #include <exports.h>
 #include <log.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <usb/ulpi.h>
 

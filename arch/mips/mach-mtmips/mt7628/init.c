@@ -15,6 +15,7 @@
 #include <dm/uclass.h>
 #include <dt-bindings/clock/mt7628-clk.h>
 #include <linux/io.h>
+#include <linux/types.h>
 #include "mt7628.h"
 
 DECLARE_GLOBAL_DATA_PTR;

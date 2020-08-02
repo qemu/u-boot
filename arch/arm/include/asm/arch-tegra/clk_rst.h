@@ -8,6 +8,7 @@
 #define _TEGRA_CLK_RST_H_
 
 /* PLL registers - there are several PLLs in the clock controller */
+#include <linux/types.h>
 struct clk_pll {
 	uint pll_base;		/* the control register */
 	/* pll_out[0] is output A control, pll_out[1] is output B control */

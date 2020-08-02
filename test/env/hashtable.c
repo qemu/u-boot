@@ -10,6 +10,7 @@
 #include <search.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/types.h>
 #include <test/env.h>
 #include <test/ut.h>
 

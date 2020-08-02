@@ -9,6 +9,7 @@
 #include <common.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <dm/pinctrl.h>
 #include <asm/hardware.h>
@@ -17,6 +18,7 @@
 #include <linux/io.h>
 #include <linux/err.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <mach/at91_pio.h>
 
 DECLARE_GLOBAL_DATA_PTR;

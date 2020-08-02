@@ -23,6 +23,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/arch/davinci_misc.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <hwconfig.h>
 #include <asm/mach-types.h>

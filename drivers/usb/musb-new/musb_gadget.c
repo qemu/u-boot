@@ -23,11 +23,13 @@
 #include <linux/slab.h>
 #else
 #include <common.h>
+#include <compiler.h>
 #include <vsprintf.h>
 #include <linux/bug.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <linux/usb/ch9.h>
 #include "linux-compat.h"
 #endif

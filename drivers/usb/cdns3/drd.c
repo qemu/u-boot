@@ -10,7 +10,9 @@
  *
  *
  */
+#include <compiler.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

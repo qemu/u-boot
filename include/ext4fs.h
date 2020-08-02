@@ -4,6 +4,7 @@
  * Uma Shankar <uma.shankar@samsung.com>
  * Manjunatha C Achar <a.manjunatha@samsung.com>
  *
+#include <linux/types.h>
  * Ext4 Extent data structures are taken from  original ext4 fs code
  * as found in the linux kernel.
  *

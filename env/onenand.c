@@ -17,6 +17,7 @@
 #include <search.h>
 #include <errno.h>
 #include <onenand_uboot.h>
+#include <linux/types.h>
 
 #include <linux/compat.h>
 #include <linux/mtd/mtd.h>

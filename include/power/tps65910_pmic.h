@@ -6,6 +6,7 @@
 #ifndef __TPS65910_PMIC_H_
 #define __TPS65910_PMIC_H_
 
+#include <linux/types.h>
 #define TPS65910_I2C_SEL_MASK		(0x1 << 4)
 #define TPS65910_VDD_SR_MASK		(0x1 << 7)
 #define TPS65910_GAIN_SEL_MASK		(0x3 << 6)

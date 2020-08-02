@@ -8,6 +8,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 void sysmgr_pinmux_init(void);
 void sysmgr_config_warmrstcfgio(int enable);
 

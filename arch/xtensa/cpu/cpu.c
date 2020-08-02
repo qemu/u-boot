@@ -18,6 +18,7 @@
 #include <asm/cache.h>
 #include <asm/string.h>
 #include <asm/misc.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

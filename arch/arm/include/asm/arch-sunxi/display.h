@@ -8,6 +8,7 @@
 #ifndef _SUNXI_DISPLAY_H
 #define _SUNXI_DISPLAY_H
 
+#include <asm/types.h>
 struct sunxi_de_fe_reg {
 	u32 enable;			/* 0x000 */
 	u32 frame_ctrl;			/* 0x004 */

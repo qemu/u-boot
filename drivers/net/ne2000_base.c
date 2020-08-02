@@ -81,6 +81,7 @@ Add SNMP
 #include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/compiler.h>
 #include <linux/string.h>

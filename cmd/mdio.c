@@ -16,6 +16,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static char last_op[2];
 static uint last_data;

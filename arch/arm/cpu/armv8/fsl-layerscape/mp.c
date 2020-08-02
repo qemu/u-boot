@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <image.h>
 #include <log.h>
@@ -18,6 +19,7 @@
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "cpu.h"
 #include <asm/arch-fsl-layerscape/soc.h>
 #include <efi_loader.h>

@@ -7,6 +7,7 @@
 #ifndef _UNIPHIER_BOOT_DEVICE_H_
 #define _UNIPHIER_BOOT_DEVICE_H_
 
+#include <asm/types.h>
 struct uniphier_boot_device {
 	unsigned int boot_device;
 	const char *desc;

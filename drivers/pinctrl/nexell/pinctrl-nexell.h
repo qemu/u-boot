@@ -10,6 +10,7 @@
 #define __PINCTRL_NEXELL_H_
 
 /**
+#include <asm/types.h>
  * struct nexell_pin_bank_data: represent a controller pin-bank data.
  * @offset: starting offset of the pin-bank registers.
  * @nr_pins: number of pins included in this bank.

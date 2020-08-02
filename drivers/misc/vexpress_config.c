@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <malloc.h>
 #include <stdbool.h>
+#include <asm/types.h>
 #include <dm/read.h>
 #include <asm/io.h>
 #include <linux/bitops.h>

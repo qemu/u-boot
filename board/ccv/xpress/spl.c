@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <asm/arch/mx6-ddr.h>
 #include <asm/arch/crm_regs.h>
+#include <linux/types.h>
 
 /* Configuration for IM IME1G16D3EEBG-15EI, 64M x 16 -> 128MiB */
 

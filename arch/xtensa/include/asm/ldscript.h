@@ -8,6 +8,7 @@
 #define _XTENSA_LDSCRIPT_H
 
 /*
+#include <linux/kernel.h>
  * This linker script is pre-processed with CPP to avoid hard-coding
  * addresses that depend on the Xtensa core configuration, because
  * this FPGA board can be used with a huge variety of Xtensa cores.

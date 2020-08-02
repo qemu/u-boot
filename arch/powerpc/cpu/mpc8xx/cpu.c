@@ -17,6 +17,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <display_options.h>
 #include <net.h>
@@ -34,6 +35,7 @@
 #include <asm/u-boot.h>
 #include <linux/compiler.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_OF_LIBFDT)
 #include <linux/libfdt.h>

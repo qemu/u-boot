@@ -7,6 +7,9 @@
 #ifndef __EEPROM_LEGACY_H
 #define __EEPROM_LEGACY_H
 
+#include <linux/errno.h>
+#include <linux/types.h>
+
 #if defined(CONFIG_CMD_EEPROM) || defined(CONFIG_ENV_IS_IN_EEPROM)
 void eeprom_init(int bus);
 int eeprom_read(uint dev_addr, uint offset, uchar *buffer, uint cnt);
@@ -25,5 +28,4 @@ int eeprom_write(uint dev_addr, uint offset, uchar *buffer, uint cnt);
 # define CONFIG_SYS_DEF_EEPROM_ADDR CONFIG_SYS_I2C_EEPROM_ADDR
 #endif
 
-#include <linux/errno.h>
 #endif

@@ -7,6 +7,7 @@
 #define _BCM2835_SDHCI_H_
 
 #include <asm/arch/base.h>
+#include <asm/types.h>
 
 #define BCM2835_SDHCI_PHYSADDR ({ BUG_ON(!rpi_bcm283x_base); \
 				  rpi_bcm283x_base + 0x00300000; })

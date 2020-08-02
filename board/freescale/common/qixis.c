@@ -9,6 +9,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <linux/compiler.h>
@@ -16,6 +17,7 @@
 #include <linux/string.h>
 #include <linux/time.h>
 #include <i2c.h>
+#include <linux/types.h>
 #include "qixis.h"
 
 #ifndef QIXIS_LBMAP_BRDCFG_REG

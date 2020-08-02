@@ -9,6 +9,7 @@
 #include <fsl_ddrc_version.h>
 #include <fsl_ddr_sdram.h>
 #include <fsl_ddr_dimm_params.h>
+#include <asm/types.h>
 
 #include <common_timing_params.h>
 

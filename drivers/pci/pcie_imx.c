@@ -10,10 +10,12 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <init.h>
 #include <log.h>
 #include <malloc.h>
 #include <pci.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/iomux.h>
@@ -28,6 +30,7 @@
 #include <errno.h>
 #include <asm/arch/sys_proto.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define PCI_ACCESS_READ  0
 #define PCI_ACCESS_WRITE 1

@@ -12,6 +12,7 @@
  *
  * These functions are generic and should work for any Quark-based board.
  *
+#include <linux/types.h>
  * MRC requires two data structures to be passed in which are initialized by
  * mrc_adjust_params().
  *

@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 /*
  * This function prepares kernel for zboot. It loads kernel data

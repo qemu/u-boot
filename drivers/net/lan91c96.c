@@ -55,6 +55,7 @@
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "lan91c96.h"
 #include <net.h>
 #include <linux/compiler.h>

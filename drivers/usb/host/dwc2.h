@@ -6,6 +6,7 @@
 #ifndef __DWC2_H__
 #define __DWC2_H__
 
+#include <asm/types.h>
 struct dwc2_hc_regs {
 	u32			hcchar;		/* 0x00 */
 	u32			hcsplt;

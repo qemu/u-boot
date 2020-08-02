@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <env.h>
+#include <linux/types.h>
 
 void bootcount_store(ulong a)
 {

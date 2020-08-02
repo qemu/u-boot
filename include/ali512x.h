@@ -7,6 +7,7 @@
 #ifndef __ASM_IC_ALI512X_H_
 #define __ASM_IC_ALI512X_H_
 
+#include <asm/types.h>
 # define ALI_INDEX    0x3f0
 # define ALI_DATA     0x3f1
 

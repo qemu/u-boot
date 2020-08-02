@@ -11,6 +11,7 @@
 #include <dm/pinctrl.h>
 #include <dt-bindings/gpio/meson-gxbb-gpio.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include "pinctrl-meson-gx.h"
 

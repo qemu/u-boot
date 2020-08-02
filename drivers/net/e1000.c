@@ -39,6 +39,7 @@ tested on both gig copper and gig fiber boards
 #include <memalign.h>
 #include <net.h>
 #include <pci.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/u-boot.h>
@@ -46,6 +47,7 @@ tested on both gig copper and gig fiber boards
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "e1000.h"
 #include <asm/cache.h>
 

@@ -22,6 +22,7 @@
 #include <log.h>
 #include <rtc.h>
 #include <i2c.h>
+#include <asm/types.h>
 
 #define CCR_SEC			0
 #define CCR_MIN			1

@@ -2,6 +2,8 @@
 /*
  * Copyright (C) 2004-2006 Atmel Corporation
  *
+#include <compiler.h>
+#include <linux/types.h>
  * Modified to support C structur SoC access by
  * Andreas Bießmann <biessmann@corscience.de>
  */

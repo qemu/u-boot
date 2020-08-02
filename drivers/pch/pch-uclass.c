@@ -9,6 +9,7 @@
 #include <pch.h>
 #include <stdbool.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 int pch_get_spi_base(struct udevice *dev, ulong *sbasep)
 {

@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <usb.h>
+#include <asm/types.h>
 
 #include "ehci.h"
 

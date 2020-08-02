@@ -6,6 +6,7 @@
 #include <miiphy.h>
 #include <vsprintf.h>
 #include <wait_bit.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include "mscc_miim.h"

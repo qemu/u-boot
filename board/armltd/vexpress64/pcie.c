@@ -10,6 +10,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <pci_ids.h>
 #include <linux/delay.h>

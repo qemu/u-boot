@@ -62,6 +62,7 @@
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* defines */
 #define DSIZE     0x00000FFF

@@ -22,12 +22,14 @@
 
 #include <common.h>
 #include <init.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <asm/io.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/dram.h>
 #include <asm/arch/timer.h>
 #include <asm/arch/sys_proto.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
 

@@ -7,6 +7,7 @@
 #ifndef _STV0991_WD_RST_H
 #define _STV0991_WD_RST_H
 #include <asm/arch-stv0991/hardware.h>
+#include <asm/types.h>
 
 struct stv0991_wd_ru {
 	u32 wdru_config;

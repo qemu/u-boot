@@ -20,6 +20,7 @@
 #include <wait_bit.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define DENALI_CTL_0	0
 #define DENALI_CTL_21	21

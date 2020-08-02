@@ -13,6 +13,7 @@
 #include <efi_selftest.h>
 #include <stdbool.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define EFI_ST_NUM_PAGES 8
 

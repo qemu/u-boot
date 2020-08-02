@@ -11,6 +11,7 @@
 #include <asm/u-boot.h>
 #include <asm/global_data.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* integer value within a device tree property which references another node */
 typedef u32 phandle;

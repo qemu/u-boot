@@ -11,6 +11,7 @@
 #include <asm/pl310.h>
 #include <asm/io.h>
 #include <asm/mach-imx/sys_proto.h>
+#include <asm/types.h>
 
 static void enable_ca7_smp(void)
 {

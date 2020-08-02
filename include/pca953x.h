@@ -6,6 +6,7 @@
 #ifndef __PCA953X_H_
 #define __PCA953X_H_
 
+#include <linux/types.h>
 #define PCA953X_IN		0x00
 #define PCA953X_OUT		0x01
 #define PCA953X_POL		0x02

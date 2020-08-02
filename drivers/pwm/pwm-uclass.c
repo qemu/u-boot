@@ -9,6 +9,7 @@
 #include <pwm.h>
 #include <stdbool.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 int pwm_set_invert(struct udevice *dev, uint channel, bool polarity)
 {

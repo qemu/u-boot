@@ -20,6 +20,7 @@
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define SANDBOX_DMA_CH_CNT 3
 #define SANDBOX_DMA_BUF_SIZE 1024

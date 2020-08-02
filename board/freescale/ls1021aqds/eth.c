@@ -21,6 +21,7 @@
 #include <fsl_mdio.h>
 #include <tsec.h>
 #include <malloc.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/string.h>
 

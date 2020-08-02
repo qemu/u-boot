@@ -25,6 +25,7 @@
 #include <linux/delay.h>
 #include <linux/libfdt.h>
 #include <fdt_support.h>
+#include <linux/types.h>
 
 #include "bcsr.h"
 

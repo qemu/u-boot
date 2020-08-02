@@ -7,6 +7,7 @@
 #include <common.h>
 #include <log.h>
 #include <mmc.h>
+#include <asm/types.h>
 #include "mmc_private.h"
 
 /*

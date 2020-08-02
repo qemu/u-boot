@@ -13,6 +13,7 @@
 #include <asm/arch/clock.h>
 #include <asm/arch/pwm.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 struct exynos_pwm_priv {
 	struct s5p_timer *regs;

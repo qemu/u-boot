@@ -7,6 +7,7 @@
 #include <common.h>
 #include <dm.h>
 #include <miiphy.h>
+#include <asm/types.h>
 #include <misc.h>
 #include <dm/test.h>
 #include <test/test.h>

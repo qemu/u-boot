@@ -10,7 +10,9 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <dm/device_compat.h>
 #include <dm/lists.h>
@@ -24,6 +26,7 @@
 #include <asm/arch-rockchip/clock.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -12,6 +12,7 @@
 #include <common.h>
 #include <command.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <mach/mon.h>
 #include <spl.h>
 asm(".arch_extension sec\n\t");

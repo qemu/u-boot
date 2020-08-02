@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 /**
  * struct sandbox_store_priv - Private data structure of a AXI store device

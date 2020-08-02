@@ -21,6 +21,7 @@
 #include <asm/global_data.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 int fsp_silicon_init(bool s3wake, bool use_spi_flash)
 {

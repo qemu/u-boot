@@ -18,6 +18,7 @@
 #include <vsprintf.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 
 #define PART_STR_LEN 10

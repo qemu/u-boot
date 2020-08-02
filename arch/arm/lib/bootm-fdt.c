@@ -15,6 +15,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <fdt_support.h>
 #ifdef CONFIG_ARMV7_NONSEC
 #include <asm/armv7.h>

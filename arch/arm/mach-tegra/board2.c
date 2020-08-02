@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <env.h>
 #include <errno.h>
@@ -38,6 +39,7 @@
 #ifdef CONFIG_TEGRA_CLOCK_SCALING
 #include <asm/arch/emc.h>
 #endif
+#include <linux/types.h>
 #include "emc.h"
 
 DECLARE_GLOBAL_DATA_PTR;

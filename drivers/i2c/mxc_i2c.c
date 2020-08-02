@@ -16,6 +16,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <asm/arch/clock.h>
@@ -33,6 +34,7 @@
 #include <dm/pinctrl.h>
 #include <fdtdec.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -9,6 +9,7 @@
 #define _KEY_MATRIX_H
 
 #include <common.h>
+#include <linux/types.h>
 
 /* Information about a matrix keyboard */
 struct key_matrix {

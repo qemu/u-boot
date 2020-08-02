@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <errno.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 
 /* Board-specific header. */

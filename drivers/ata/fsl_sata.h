@@ -8,6 +8,7 @@
 #ifndef __FSL_SATA_H__
 #define __FSL_SATA_H__
 
+#include <linux/types.h>
 #define SATA_HC_MAX_NUM		4 /* Max host controller numbers */
 #define SATA_HC_MAX_CMD		16 /* Max command queue depth per host controller */
 #define SATA_HC_MAX_PORT	16 /* Max port number per host controller */

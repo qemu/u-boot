@@ -9,6 +9,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <stdio.h>
 #include <asm/armv7.h>
@@ -18,6 +19,7 @@
 #include <asm/secure.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static unsigned int read_id_pfr1(void)
 {

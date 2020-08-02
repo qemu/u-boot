@@ -18,6 +18,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 #include <clk.h>
 #include <linux/usb/otg.h>

@@ -7,6 +7,7 @@
 #include <log.h>
 #include <phy.h>
 #include <stdbool.h>
+#include <asm/types.h>
 #include <dm/devres.h>
 #include <linux/bitops.h>
 #include <linux/compat.h>

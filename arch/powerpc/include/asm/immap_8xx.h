@@ -14,6 +14,7 @@
 
 /* System configuration registers.
 */
+#include <linux/types.h>
 typedef	struct sys_conf {
 	uint	sc_siumcr;
 	uint	sc_sypcr;

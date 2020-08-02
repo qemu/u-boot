@@ -11,6 +11,7 @@
 #define __KW_SPI_H__
 
 /* SPI Registers on kirkwood SOC */
+#include <asm/types.h>
 struct kwspi_registers {
 	u32 ctrl;	/* 0x10600 */
 	u32 cfg;	/* 0x10604 */

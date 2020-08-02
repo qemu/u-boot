@@ -14,6 +14,7 @@
 
 #ifndef	__ASSEMBLY__
 #include <asm/mach-imx/regs-common.h>
+#include <linux/types.h>
 
 struct mxs_lcdif_regs {
 	mxs_reg_32(hw_lcdif_ctrl)		/* 0x00 */

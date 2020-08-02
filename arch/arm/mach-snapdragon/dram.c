@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <part.h>
@@ -15,6 +16,7 @@
 #include <stdio.h>
 #include <asm/arch/dram.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define SMEM_USABLE_RAM_PARTITION_TABLE 402
 #define RAM_PART_NAME_LENGTH            16

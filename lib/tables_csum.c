@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <asm/types.h>
 #include <linux/ctype.h>
 
 u8 table_compute_checksum(void *v, int len)

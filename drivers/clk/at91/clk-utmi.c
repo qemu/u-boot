@@ -11,6 +11,7 @@
 #include <syscon.h>
 #include <linux/errno.h>
 #include <linux/io.h>
+#include <linux/types.h>
 #include <mach/at91_pmc.h>
 #include <mach/at91_sfr.h>
 #include "pmc.h"

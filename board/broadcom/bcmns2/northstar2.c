@@ -9,6 +9,7 @@
 #include <asm/global_data.h>
 #include <asm/system.h>
 #include <asm/armv8/mmu.h>
+#include <linux/types.h>
 
 static struct mm_region ns2_mem_map[] = {
 	{

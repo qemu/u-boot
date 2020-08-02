@@ -20,6 +20,7 @@
 #include <i2c.h>
 #include <asm/fsl_i2c.h>
 #include <asm/ppc.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include "vme8349pin.h"
 

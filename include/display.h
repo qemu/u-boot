@@ -7,6 +7,7 @@
 #define _DISPLAY_H
 
 #include <stdbool.h>
+#include <asm/types.h>
 
 struct udevice;
 struct display_timing;

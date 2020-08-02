@@ -12,6 +12,7 @@
 #ifndef _ANX9804_H
 #define _ANX9804_H
 
+#include <asm/types.h>
 #define ANX9804_DATA_RATE_1620M				0x06
 #define ANX9804_DATA_RATE_2700M				0x0a
 

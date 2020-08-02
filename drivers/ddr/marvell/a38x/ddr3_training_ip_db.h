@@ -6,6 +6,7 @@
 #ifndef _DDR3_TRAINING_IP_DB_H_
 #define _DDR3_TRAINING_IP_DB_H_
 
+#include <asm/types.h>
 enum hws_pattern {
 	PATTERN_PBS1,
 	PATTERN_PBS2,

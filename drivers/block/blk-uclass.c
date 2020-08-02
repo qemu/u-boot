@@ -10,6 +10,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <part.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <dm/device-internal.h>
@@ -18,6 +19,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static const char *if_typename_str[IF_TYPE_COUNT] = {
 	[IF_TYPE_IDE]		= "ide",

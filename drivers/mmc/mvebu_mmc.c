@@ -22,6 +22,7 @@
 #include <mvebu_mmc.h>
 #include <asm/u-boot.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

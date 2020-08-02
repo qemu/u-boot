@@ -10,6 +10,7 @@
  */
 
 #include <common.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_ARCH_TEGRA)
 static ulong timestamp;

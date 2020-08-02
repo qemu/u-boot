@@ -8,6 +8,7 @@
 #define _BOOTM_H
 
 #include <image.h>
+#include <linux/types.h>
 
 struct cmd_tbl;
 

@@ -8,6 +8,7 @@
 #define _TEGRA_USB_H_
 
 /* USB Controller (USBx_CONTROLLER_) regs */
+#include <linux/types.h>
 struct usb_ctlr {
 	/* 0x000 */
 	uint id;

@@ -6,6 +6,8 @@
 #ifndef __MACH_IMX_CLK_H
 #define __MACH_IMX_CLK_H
 
+#include <compiler.h>
+#include <asm/types.h>
 #include <linux/clk-provider.h>
 #include <linux/kernel.h>
 

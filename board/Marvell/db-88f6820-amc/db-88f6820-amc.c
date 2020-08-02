@@ -14,6 +14,7 @@
 #include <asm/io.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/soc.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/bitops.h>
 #include <linux/kernel.h>

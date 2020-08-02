@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/libfdt.h>
 #include <fdt_support.h>

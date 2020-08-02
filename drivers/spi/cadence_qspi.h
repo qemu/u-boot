@@ -9,6 +9,7 @@
 
 #include <reset.h>
 #include <stdbool.h>
+#include <linux/types.h>
 
 #define CQSPI_IS_ADDR(cmd_len)		(cmd_len > 1 ? 1 : 0)
 

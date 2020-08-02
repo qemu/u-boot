@@ -13,6 +13,7 @@
 #define _SUNXI_DISPLAY2_H
 
 /* internal clock settings */
+#include <asm/types.h>
 struct de_clk {
 	u32 gate_cfg;
 	u32 bus_cfg;

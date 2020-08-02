@@ -11,6 +11,7 @@
 #ifndef _SYS_UBERBLOCK_IMPL_H
 #define	_SYS_UBERBLOCK_IMPL_H
 
+#include <linux/types.h>
 #define UBMAX(a, b) ((a) > (b) ? (a) : (b))
 
 /*

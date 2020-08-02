@@ -49,6 +49,7 @@
 #include <common.h>
 #include <stdio.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "biosemui.h"
 
 BE_sysEnv _BE_env = {{0}};

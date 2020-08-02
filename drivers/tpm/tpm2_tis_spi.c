@@ -18,6 +18,7 @@
 #include <fdtdec.h>
 #include <log.h>
 #include <spi.h>
+#include <stdbool.h>
 #include <time.h>
 #include <tpm-v2.h>
 #include <vsprintf.h>

@@ -11,6 +11,7 @@
 #include <dm.h>
 #include <init.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <vbe.h>
@@ -26,6 +27,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "i915_reg.h"
 
 struct broadwell_igd_priv {

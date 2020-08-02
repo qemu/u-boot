@@ -14,11 +14,13 @@
 #include <errno.h>
 #include <fdtdec.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/ctype.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 int edid_check_info(struct edid1_info *edid_info)
 {

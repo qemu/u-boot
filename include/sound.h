@@ -7,6 +7,7 @@
 #ifndef __SOUND_H__
 #define __SOUND_H__
 
+#include <linux/types.h>
 /* sound codec enum */
 enum sound_compat {
 	AUDIO_COMPAT_SPI,

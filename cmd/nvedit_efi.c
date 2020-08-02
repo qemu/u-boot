@@ -16,11 +16,13 @@
 #include <malloc.h>
 #include <mapmem.h>
 #include <rtc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <uuid.h>
 #include <vsprintf.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * From efi_variable.c,

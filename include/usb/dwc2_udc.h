@@ -10,6 +10,7 @@
 
 #include <stdbool.h>
 #include <dm/ofnode.h>
+#include <linux/types.h>
 
 #define PHY0_SLEEP              (1 << 5)
 #define DWC2_MAX_HW_ENDPOINTS	16

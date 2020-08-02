@@ -41,6 +41,7 @@
  * @port:   port number on the message bus
  * @reg:    register number within a port
  */
+#include <asm/types.h>
 void msg_port_setup(int op, int port, int reg);
 
 /**

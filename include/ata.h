@@ -14,6 +14,7 @@
 #define _ATA_H
 
 #include <libata.h>
+#include <linux/types.h>
 
 /* Register addressing depends on the hardware design; for instance,
  * 8-bit (register) and 16-bit (data) accesses might use different

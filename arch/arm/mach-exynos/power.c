@@ -7,6 +7,7 @@
 #include <common.h>
 #include <asm/io.h>
 #include <asm/arch/power.h>
+#include <linux/types.h>
 
 static void exynos4_mipi_phy_control(unsigned int dev_index,
 					unsigned int enable)

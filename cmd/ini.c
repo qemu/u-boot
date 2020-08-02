@@ -19,6 +19,7 @@
 #include <linux/ctype.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_INI_MAX_LINE
 #define MAX_LINE CONFIG_INI_MAX_LINE

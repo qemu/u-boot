@@ -12,8 +12,10 @@
 #include <log.h>
 #include <miiphy.h>
 #include <bitfield.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

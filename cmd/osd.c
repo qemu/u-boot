@@ -20,6 +20,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* Container for selected OSD device */
 static struct udevice *osd_cur;

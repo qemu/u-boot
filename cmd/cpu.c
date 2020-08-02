@@ -11,6 +11,7 @@
 #include <display_options.h>
 #include <dm.h>
 #include <errno.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>

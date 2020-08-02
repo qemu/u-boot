@@ -6,7 +6,9 @@
 #ifndef _ASM_ARCH_CLOCK_H
 #define _ASM_ARCH_CLOCK_H
 
+#include <compiler.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 struct udevice;
 

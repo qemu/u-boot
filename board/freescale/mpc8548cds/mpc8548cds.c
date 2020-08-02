@@ -26,6 +26,7 @@
 #include <tsec.h>
 #include <fsl_mdio.h>
 #include <netdev.h>
+#include <linux/types.h>
 
 #include "../common/cadmus.h"
 #include "../common/eeprom.h"

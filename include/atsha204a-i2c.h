@@ -13,6 +13,7 @@
 #define _ATSHA204_I2C_H_
 
 #include <stdbool.h>
+#include <linux/types.h>
 enum atsha204a_zone
 {
 	ATSHA204A_ZONE_CONFIG	= 0,

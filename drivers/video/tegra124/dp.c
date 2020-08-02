@@ -10,6 +10,7 @@
 #include <div64.h>
 #include <errno.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <video_bridge.h>
@@ -19,6 +20,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "display.h"
 #include "edid.h"
 #include "sor.h"

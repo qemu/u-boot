@@ -9,6 +9,8 @@
 #define _SMBIOS_H_
 
 /* SMBIOS spec version implemented */
+#include <compiler.h>
+#include <linux/types.h>
 #define SMBIOS_MAJOR_VER	3
 #define SMBIOS_MINOR_VER	0
 

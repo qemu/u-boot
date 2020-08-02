@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <clock_legacy.h>
+#include <compiler.h>
 #include <efi_loader.h>
 #include <log.h>
 #include <stdio.h>
@@ -34,6 +35,7 @@
 #include <asm/arch/speed.h>
 #include <fsl_qbman.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 int fdt_fixup_phy_connection(void *blob, int offset, phy_interface_t phyc)
 {

@@ -5,8 +5,10 @@
  * Copyright (C) 2011 Andes Technology Corporation
  * Macpaul Lin, Andes Technology Corporation <macpaul@andestech.com>
  */
+#include <compiler.h>
 #include <mmc.h>
 #include <stdbool.h>
+#include <linux/types.h>
 
 #ifndef __FTSDC010_MCI_H
 #define __FTSDC010_MCI_H

@@ -9,6 +9,7 @@
 
 #define SECTOR_SIZE		0x200
 #include <part.h>
+#include <linux/types.h>
 #include <linux/usb/composite.h>
 
 /* Wait at maximum 60 seconds for cable connection */

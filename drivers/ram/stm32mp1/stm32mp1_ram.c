@@ -5,11 +5,13 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <init.h>
 #include <log.h>
 #include <ram.h>
 #include <regmap.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <syscon.h>
 #include <asm/io.h>
@@ -17,6 +19,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "stm32mp1_ddr.h"
 
 static const char *const clkname[] = {

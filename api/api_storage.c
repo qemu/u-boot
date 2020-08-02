@@ -10,6 +10,7 @@
 #include <api_public.h>
 #include <part.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_CMD_USB) && defined(CONFIG_USB_STORAGE)
 #include <usb.h>

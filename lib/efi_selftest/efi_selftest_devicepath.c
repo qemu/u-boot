@@ -8,7 +8,9 @@
  * DevicePathToText
  */
 
+#include <compiler.h>
 #include <efi_selftest.h>
+#include <asm/types.h>
 
 static struct efi_boot_services *boottime;
 

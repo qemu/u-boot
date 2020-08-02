@@ -8,6 +8,7 @@
 #include <env.h>
 #include <fdt_support.h>
 #include <fsl_qe.h>	/* For struct qe_firmware */
+#include <linux/types.h>
 #include <u-boot/crc.h>
 
 #ifdef CONFIG_SYS_DPAA_FMAN

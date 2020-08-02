@@ -4,6 +4,7 @@
  * Youngbok, Park <park@nexell.co.kr>
  */
 
+#include <compiler.h>
 #include <linux/types.h>
 #include <asm/io.h>
 #include <asm/arch/nexell.h>

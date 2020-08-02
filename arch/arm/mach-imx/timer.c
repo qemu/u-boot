@@ -14,6 +14,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/sys_proto.h>
+#include <linux/types.h>
 
 /* General purpose timers registers */
 struct mxc_gpt {

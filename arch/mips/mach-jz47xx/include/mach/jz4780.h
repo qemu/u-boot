@@ -82,6 +82,8 @@
 
 #ifndef __ASSEMBLY__
 
+#include <compiler.h>
+#include <linux/types.h>
 u32 sdram_size(int bank);
 
 const u32 jz4780_clk_get_efuse_clk(void);

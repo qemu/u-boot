@@ -15,6 +15,7 @@
 #include <linux/compiler.h>
 #include <linux/libfdt.h>
 #include <fdt_support.h>
+#include <linux/types.h>
 
 
 #ifdef CONFIG_PCI1

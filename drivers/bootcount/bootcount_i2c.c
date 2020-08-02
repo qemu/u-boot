@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <linux/compiler.h>
 #include <i2c.h>
+#include <linux/types.h>
 
 #define BC_MAGIC	0xbc
 

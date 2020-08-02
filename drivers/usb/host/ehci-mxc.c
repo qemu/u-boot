@@ -10,6 +10,7 @@
 #include <asm/arch/imx-regs.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <usb/ehci-ci.h>
 #include <errno.h>
 

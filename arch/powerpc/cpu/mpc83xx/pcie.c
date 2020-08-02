@@ -14,6 +14,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/ppc.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
 

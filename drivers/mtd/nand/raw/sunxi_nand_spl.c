@@ -4,6 +4,7 @@
  * Copyright (c) 2015, AW-SOM Technologies <www.aw-som.com>
  */
 
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/arch/clock.h>
 #include <asm/io.h>
@@ -16,6 +17,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* registers */
 #define NFC_CTL                    0x00000000

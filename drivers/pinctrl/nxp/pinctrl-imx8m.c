@@ -5,6 +5,7 @@
 
 #include <dm/device.h>
 #include <dm/pinctrl.h>
+#include <linux/types.h>
 
 #include "pinctrl-imx.h"
 

@@ -11,6 +11,7 @@
 #define _MMC_PRIVATE_H_
 
 #include <mmc.h>
+#include <linux/types.h>
 
 int mmc_send_cmd(struct mmc *mmc, struct mmc_cmd *cmd, struct mmc_data *data);
 int mmc_send_status(struct mmc *mmc, unsigned int *status);

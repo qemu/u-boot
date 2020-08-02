@@ -7,6 +7,8 @@
 #ifndef _FSP_HEADER_H_
 #define _FSP_HEADER_H_
 
+#include <compiler.h>
+#include <asm/types.h>
 #define FSP_HEADER_OFF	0x94	/* Fixed FSP header offset in the FSP image */
 
 struct __packed fsp_header {

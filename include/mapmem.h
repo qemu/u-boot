@@ -12,6 +12,7 @@
 /* Define a null map_sysmem() if the architecture doesn't use it */
 # ifdef CONFIG_ARCH_MAP_SYSMEM
 #include <asm/io.h>
+#include <linux/types.h>
 # else
 static inline void *map_sysmem(phys_addr_t paddr, unsigned long len)
 {

@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <i2c.h>
 #include <fdt_support.h>
 #include <stdio.h>
@@ -32,6 +33,7 @@
 #include <fsl_sec.h>
 #include <asm/u-boot.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "../common/qixis.h"
 #include "ls1012aqds_qixis.h"
 #include "ls1012aqds_pfe.h"

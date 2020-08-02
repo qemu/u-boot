@@ -16,6 +16,7 @@
 #include <asm/psci.h>
 #include <asm/secure.h>
 #include <asm/system.h>
+#include <linux/types.h>
 
 #include "../debug.h"
 #include "../soc-info.h"

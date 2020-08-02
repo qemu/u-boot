@@ -10,6 +10,7 @@
 #ifndef __HDA_CODEC_H_
 #define __HDA_CODEC_H_
 
+#include <linux/types.h>
 struct hda_regs;
 
 /**

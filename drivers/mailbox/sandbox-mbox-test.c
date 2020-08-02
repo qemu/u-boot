@@ -8,6 +8,7 @@
 #include <mailbox.h>
 #include <malloc.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 struct sandbox_mbox_test {
 	struct mbox_chan chan;

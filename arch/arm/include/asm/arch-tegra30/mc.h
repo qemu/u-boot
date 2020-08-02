@@ -10,6 +10,7 @@
 /**
  * Defines the memory controller registers we need/care about
  */
+#include <asm/types.h>
 struct mc_ctlr {
 	u32 reserved0[4];			/* offset 0x00 - 0x0C */
 	u32 mc_smmu_config;			/* offset 0x10 */

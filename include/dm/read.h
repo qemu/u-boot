@@ -11,6 +11,7 @@
 
 #include <stdbool.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #include <dm/device.h>
 #include <dm/fdtaddr.h>

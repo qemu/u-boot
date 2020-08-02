@@ -27,6 +27,7 @@
 #include <common.h>
 #include <bios_emul.h>
 #include <bootstage.h>
+#include <compiler.h>
 #include <dm.h>
 #include <errno.h>
 #include <init.h>
@@ -34,6 +35,7 @@
 #include <malloc.h>
 #include <pci.h>
 #include <pci_rom.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <vbe.h>
@@ -45,6 +47,7 @@
 #include <linux/kernel.h>
 #include <linux/screen_info.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

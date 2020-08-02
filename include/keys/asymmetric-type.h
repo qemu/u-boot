@@ -49,6 +49,7 @@ enum asymmetric_payload_bits {
  * What we actually do is provide a place where binary identifiers can be
  * stashed and then compare against them when checking for an id match.
  */
+#include <linux/types.h>
 struct asymmetric_key_id {
 	unsigned short	len;
 	unsigned char	data[];

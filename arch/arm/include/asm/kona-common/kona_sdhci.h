@@ -6,6 +6,7 @@
 #ifndef __KONA_SDHCI_H
 #define __KONA_SDHCI_H
 
+#include <asm/types.h>
 int kona_sdhci_init(int dev_index, u32 min_clk, u32 quirks);
 
 #endif

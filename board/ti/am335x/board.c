@@ -45,6 +45,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/tps65217.h>
 #include <power/tps65910.h>
 #include <env_internal.h>

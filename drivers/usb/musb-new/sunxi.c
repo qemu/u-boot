@@ -17,12 +17,14 @@
  */
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <generic-phy.h>
 #include <log.h>
 #include <malloc.h>
 #include <phy-sun4i-usb.h>
 #include <reset.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/clock.h>
@@ -37,6 +39,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <linux/usb/musb.h>
 #include "linux-compat.h"
 #include "musb_core.h"

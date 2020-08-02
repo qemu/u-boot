@@ -6,6 +6,7 @@
 #ifndef _VIDEO_TEGRA124_SOR_H
 #define _VIDEO_TEGRA124_SOR_H
 
+#include <asm/types.h>
 #define SUPER_STATE0					0x1
 #define SUPER_STATE0_UPDATE_SHIFT			0
 #define SUPER_STATE0_UPDATE_DEFAULT_MASK		0x1

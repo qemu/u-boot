@@ -42,6 +42,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "common.h"
 #include "../common/eeprom.h"
 #include "../common/common.h"

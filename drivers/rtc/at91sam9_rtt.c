@@ -26,6 +26,7 @@
 #include <asm/arch/hardware.h>
 #include <asm/arch/at91_rtt.h>
 #include <asm/arch/at91_gpbr.h>
+#include <linux/types.h>
 
 int rtc_get (struct rtc_time *tmp)
 {

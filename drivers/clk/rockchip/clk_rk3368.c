@@ -27,6 +27,7 @@
 #include <linux/printk.h>
 #include <linux/string.h>
 #include <linux/stringify.h>
+#include <linux/types.h>
 
 #if CONFIG_IS_ENABLED(OF_PLATDATA)
 struct rk3368_clk_plat {

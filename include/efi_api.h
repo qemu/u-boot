@@ -16,10 +16,12 @@
 #ifndef _EFI_API_H
 #define _EFI_API_H
 
+#include <compiler.h>
 #include <efi.h>
 #include <charset.h>
 #include <pe.h>
 #include <stdbool.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_EFI_LOADER
 #include <asm/setjmp.h>

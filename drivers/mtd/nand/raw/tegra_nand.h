@@ -4,6 +4,7 @@
  */
 
 /* register offset */
+#include <asm/types.h>
 #define COMMAND_0		0x00
 #define CMD_GO			(1 << 31)
 #define CMD_CLE			(1 << 30)

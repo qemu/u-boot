@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <stdio.h>
@@ -22,6 +23,7 @@
 #include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "virtio_pci.h"
 
 #define VIRTIO_PCI_DRV_NAME	"virtio-pci.m"

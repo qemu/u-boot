@@ -12,6 +12,7 @@
 #include <asm/arch/gpio.h>
 #include <asm/gpio.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "pinmux-config-tamonten-ng.h"
 #include <i2c.h>
 

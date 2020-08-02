@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <nand.h>
 #include <linux/delay.h>
@@ -18,6 +19,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include "mxc_nand.h"
 
 #define DRIVER_NAME "mxc_nand"

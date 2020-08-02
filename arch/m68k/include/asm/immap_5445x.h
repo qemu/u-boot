@@ -60,6 +60,7 @@
 #include <asm/coldfire/flexbus.h>
 #include <asm/coldfire/intctrl.h>
 #include <asm/coldfire/ssi.h>
+#include <asm/types.h>
 
 /* Watchdog Timer Modules (WTM) */
 typedef struct wtm {

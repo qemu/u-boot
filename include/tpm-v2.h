@@ -8,6 +8,7 @@
 #define __TPM_V2_H
 
 #include <tpm-common.h>
+#include <linux/types.h>
 
 #define TPM2_DIGEST_LEN		32
 

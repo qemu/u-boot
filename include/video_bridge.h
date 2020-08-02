@@ -9,6 +9,7 @@
 
 #include <stdbool.h>
 #include <asm/gpio.h>
+#include <asm/types.h>
 
 /**
  * struct video_bridge_priv - uclass information for video bridges

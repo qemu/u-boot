@@ -7,12 +7,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "board.h"
 #include <env.h>
 #include <hang.h>

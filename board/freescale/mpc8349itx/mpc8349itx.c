@@ -29,6 +29,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "../../../arch/powerpc/cpu/mpc83xx/hrcw/hrcw.h"
 #include "../../../arch/powerpc/cpu/mpc83xx/elbc/elbc.h"

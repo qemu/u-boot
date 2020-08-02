@@ -8,6 +8,7 @@
 #ifndef __REGS_USB_H__
 #define __REGS_USB_H__
 
+#include <linux/types.h>
 struct pxa25x_udc_regs {
 	/* UDC Control Register */
 	uint32_t	udccr; /* 0x000 */

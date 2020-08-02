@@ -13,6 +13,7 @@
 #include <asm/arch/sys_proto.h>
 #include <asm/io.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <usb/ehci-ci.h>
 #include <usb/ulpi.h>
 

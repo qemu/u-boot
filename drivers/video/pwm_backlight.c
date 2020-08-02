@@ -16,6 +16,7 @@
 #include <asm/gpio.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 
 /**

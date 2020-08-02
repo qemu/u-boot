@@ -31,6 +31,7 @@
 #include <net.h>
 #include <malloc.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 #include "cs8900.h"
 
 #undef DEBUG

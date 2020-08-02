@@ -12,6 +12,7 @@
 #include <cbfs.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/types.h>
 
 static int do_cbfs_init(struct cmd_tbl *cmdtp, int flag, int argc,
 			char *const argv[])

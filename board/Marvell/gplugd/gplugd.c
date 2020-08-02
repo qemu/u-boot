@@ -23,6 +23,7 @@
 #include <asm/gpio.h>
 #include <miiphy.h>
 #include <asm/mach-types.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 

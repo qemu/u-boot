@@ -10,6 +10,7 @@
 /*
  * CPLD register set. Feel free to add board-specific #ifdefs where necessary.
  */
+#include <asm/types.h>
 typedef struct cpld_data {
 	u8 cpld_ver;		/* 0x0 - CPLD Major Revision Register */
 	u8 cpld_ver_sub;	/* 0x1 - CPLD Minor Revision Register */

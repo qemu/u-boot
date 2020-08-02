@@ -6,6 +6,7 @@
 #include <stdarg.h>
 #include <vsprintf.h>
 #include <dm/devres.h>
+#include <linux/types.h>
 #include "brcmnand_compat.h"
 
 static char *devm_kvasprintf(struct udevice *dev, gfp_t gfp, const char *fmt,

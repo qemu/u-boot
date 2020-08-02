@@ -8,6 +8,7 @@
 #define __TI_UDMA_H
 
 /**
+#include <asm/types.h>
  * struct ti_udma_drv_packet_data - TI UDMA transfer specific data
  *
  * @pkt_type: Packet Type - specific for each DMA client HW

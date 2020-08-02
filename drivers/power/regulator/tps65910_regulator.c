@@ -6,9 +6,11 @@
 #include <common.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/regulator.h>
 #include <power/tps65910_pmic.h>

@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <ahci.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <env.h>
 #include <fdt_support.h>
@@ -15,6 +16,7 @@
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
+#include <linux/types.h>
 
 #include <linux/sizes.h>
 #include <asm/io.h>

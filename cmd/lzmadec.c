@@ -16,6 +16,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 #include <lzma/LzmaTools.h>
 

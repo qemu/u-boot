@@ -4,6 +4,7 @@
  * Lukas Auer <lukas.auer@aisec.fraunhofer.de>
  */
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <hang.h>
 #include <init.h>
@@ -12,6 +13,7 @@
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/smp.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

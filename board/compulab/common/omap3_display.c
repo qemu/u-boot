@@ -20,6 +20,7 @@
 #include <asm/arch-omap3/dss.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 enum display_type {
 	NONE,

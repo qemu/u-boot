@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <env_internal.h>
 #include <hang.h>
 #include <serial.h>

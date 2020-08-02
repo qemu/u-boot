@@ -12,6 +12,7 @@
 #define CS1		0x1 /* mirror CS1 regs appear offset 0x30 from CS0 */
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 enum {
 	STACKED = 0,
 	IP_DDR = 1,

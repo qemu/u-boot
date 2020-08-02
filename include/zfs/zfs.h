@@ -14,6 +14,7 @@
 /*
  * On-disk version number.
  */
+#include <linux/types.h>
 #define	SPA_VERSION			28ULL
 
 /*

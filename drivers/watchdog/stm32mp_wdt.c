@@ -14,6 +14,7 @@
 #include <linux/errno.h>
 #include <linux/iopoll.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 /* IWDG registers */
 #define IWDG_KR		0x00	/* Key register */

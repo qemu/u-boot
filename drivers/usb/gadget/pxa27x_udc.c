@@ -14,6 +14,7 @@
 #include <asm/byteorder.h>
 #include <asm/io.h>
 #include <usbdevice.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <usb/pxa27x_udc.h>

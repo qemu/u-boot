@@ -6,6 +6,7 @@
 #ifndef _LINUX_SFI_H
 #define _LINUX_SFI_H
 
+#include <compiler.h>
 #include <errno.h>
 #include <linux/types.h>
 

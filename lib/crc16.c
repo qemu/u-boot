@@ -27,6 +27,7 @@
 #else
 #include <common.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #endif
 #include <u-boot/crc.h>
 

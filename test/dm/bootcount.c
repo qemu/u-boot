@@ -8,6 +8,7 @@
 #include <bootcount.h>
 #include <log.h>
 #include <asm/test.h>
+#include <asm/types.h>
 #include <dm/test.h>
 #include <test/test.h>
 #include <test/ut.h>

@@ -20,6 +20,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #include <linux/bitops.h>
 #include <linux/compat.h>

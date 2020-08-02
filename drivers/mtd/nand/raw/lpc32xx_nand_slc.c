@@ -11,6 +11,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <nand.h>
 #include <linux/bug.h>
@@ -24,6 +25,7 @@
 #include <asm/arch/dma.h>
 #include <asm/arch/cpu.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 struct lpc32xx_nand_slc_regs {
 	u32 data;

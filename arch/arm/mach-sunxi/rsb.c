@@ -15,6 +15,7 @@
 #include <asm/arch/gpio.h>
 #include <asm/arch/prcm.h>
 #include <asm/arch/rsb.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 
 static int rsb_set_device_mode(void);

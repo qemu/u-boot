@@ -14,6 +14,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/sizes.h>
+#include <linux/types.h>
 
 static u32 lpi_id_bits;
 

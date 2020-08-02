@@ -10,6 +10,7 @@
  * control this QBMan instance, these values may simply be place-holders. The
  * idea is simply that we be able to distinguish between them, eg. so that SWP
  * descriptors can identify which QBMan instance they belong to. */
+#include <linux/types.h>
 struct qbman_block_desc {
 	void *ccsr_reg_bar; /* CCSR register map */
 	int irq_rerr;  /* Recoverable error interrupt line */

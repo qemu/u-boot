@@ -14,6 +14,7 @@
 /*
  * General-purpose 32-bit and 64-bit bitfield encodings.
  */
+#include <linux/types.h>
 #define	BF32_DECODE(x, low, len)	P2PHASE((x) >> (low), 1U << (len))
 #define	BF64_DECODE(x, low, len)	P2PHASE((x) >> (low), 1ULL << (len))
 #define	BF32_ENCODE(x, low, len)	(P2PHASE((x), 1U << (len)) << (low))

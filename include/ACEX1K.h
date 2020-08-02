@@ -11,6 +11,7 @@
 #define _ACEX1K_H_
 
 #include <altera.h>
+#include <linux/types.h>
 
 extern int ACEX1K_load(Altera_desc *desc, const void *image, size_t size);
 extern int ACEX1K_dump(Altera_desc *desc, const void *buf, size_t bsize);

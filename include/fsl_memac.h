@@ -8,6 +8,7 @@
 #define __MEMAC_H__
 
 #include <phy.h>
+#include <asm/types.h>
 
 struct memac {
 	/* memac general control and status registers */

@@ -16,6 +16,7 @@
 #include <asm/coreboot_tables.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /**
  * Function prototype to write a specific configuration table

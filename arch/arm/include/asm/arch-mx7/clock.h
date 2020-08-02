@@ -10,6 +10,7 @@
 #define _ASM_ARCH_CLOCK_H
 
 #include <asm/arch/crm_regs.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_SYS_MX7_HCLK
 #define MXC_HCLK	CONFIG_SYS_MX7_HCLK

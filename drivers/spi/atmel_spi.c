@@ -20,6 +20,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 /*
  * Register definitions for the Atmel AT32/AT91 SPI Controller

@@ -6,8 +6,10 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/cache.h>
 #include <asm/io.h>
 #include <malloc.h>
@@ -27,6 +29,7 @@
 #include <linux/soc/ti/k3-navss-ringacc.h>
 #include <linux/soc/ti/ti_sci_protocol.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define set_bit(bit, bitmap)	__set_bit(bit, bitmap)
 #define clear_bit(bit, bitmap)	__clear_bit(bit, bitmap)

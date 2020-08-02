@@ -20,6 +20,7 @@
 #include <fsl-mc/fsl_mc.h>
 #include <env_internal.h>
 #include <asm/arch/soc.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

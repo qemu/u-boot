@@ -18,6 +18,7 @@
 #include <memalign.h>
 #include <ide.h>
 #include <stdio.h>
+#include <linux/types.h>
 #include "part_mac.h"
 #include <part.h>
 

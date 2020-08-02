@@ -25,10 +25,12 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <fdtdec.h>
 #include <malloc.h>
 #include <memalign.h>
 #include <nand.h>
+#include <stdbool.h>
 #include <time.h>
 #include <asm/global_data.h>
 #include <dm/device_compat.h>
@@ -39,6 +41,7 @@
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <linux/kernel.h>
 #include <linux/mtd/mtd.h>

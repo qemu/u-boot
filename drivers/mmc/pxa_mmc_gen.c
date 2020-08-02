@@ -21,6 +21,7 @@
 #include <mmc.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* PXAMMC Generic default config for various CPUs */
 #if defined(CONFIG_CPU_PXA25X)

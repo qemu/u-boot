@@ -21,6 +21,7 @@
 #include <linux/kernel.h>
 #include <linux/log2.h>
 #include <linux/stringify.h>
+#include <linux/types.h>
 
 enum {
 	VCO_MAX_HZ	= 2400U * 1000000,

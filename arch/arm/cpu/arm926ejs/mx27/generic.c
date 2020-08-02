@@ -20,6 +20,7 @@
 #endif
 #include <asm/u-boot.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 /*
  *  get the system pll clock in Hz

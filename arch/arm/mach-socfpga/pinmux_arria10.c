@@ -8,6 +8,7 @@
 #include <asm/io.h>
 #include <common.h>
 #include <fdtdec.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/string.h>
 

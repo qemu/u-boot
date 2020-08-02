@@ -11,6 +11,7 @@
 #include <common.h>
 #include <asm/arch/hardware.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 void dm365_waitloop(unsigned long loopcnt);
 int dm365_pll1_init(unsigned long pllmult, unsigned long prediv);

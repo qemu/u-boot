@@ -12,6 +12,7 @@
 #include <asm/cache.h>
 #include <nand.h>
 #include <asm/mach-imx/dma.h>
+#include <linux/types.h>
 
 /**
  * @gf_len:                   The length of Galois Field. (e.g., 13 or 14)

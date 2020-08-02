@@ -13,6 +13,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/armv7.h>
 #include <asm/gic.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <common.h>
 #include <fsl_wdog.h>

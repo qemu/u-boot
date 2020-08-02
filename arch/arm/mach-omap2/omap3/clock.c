@@ -18,6 +18,7 @@
 #include <asm/arch/mem.h>
 #include <asm/arch/sys_proto.h>
 #include <command.h>
+#include <asm/types.h>
 
 /******************************************************************************
  * get_sys_clk_speed() - determine reference oscillator speed

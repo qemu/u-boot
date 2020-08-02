@@ -12,8 +12,10 @@
 #include <dm.h>
 #include <errno.h>
 #include <log.h>
+#include <stdbool.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <power/rk8xx_pmic.h>
 #include <power/pmic.h>
 #include <power/regulator.h>

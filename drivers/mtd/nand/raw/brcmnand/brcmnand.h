@@ -3,6 +3,7 @@
 #ifndef __BRCMNAND_H__
 #define __BRCMNAND_H__
 
+#include <compiler.h>
 #include <stdbool.h>
 #include <linux/types.h>
 #include <linux/io.h>

@@ -12,6 +12,7 @@
 #define __SUNXI_RSB_H
 
 #include <asm/io.h>
+#include <asm/types.h>
 
 struct sunxi_rsb_reg {
 	u32 ctrl;	/* 0x00 */

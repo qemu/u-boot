@@ -8,6 +8,7 @@
 #include <common.h>
 #include <i2c.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 #include <asm/arch/nexell.h>
 #include <asm/arch/nx_gpio.h>

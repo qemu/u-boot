@@ -11,6 +11,7 @@
 
 #include <usb_defs.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 #define MUSB_EP0_FIFOSIZE	64	/* This is non-configurable */
 

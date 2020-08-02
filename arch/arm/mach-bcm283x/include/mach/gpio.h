@@ -8,6 +8,7 @@
 #ifndef _BCM2835_GPIO_H_
 #define _BCM2835_GPIO_H_
 
+#include <asm/types.h>
 #define BCM2835_GPIO_COUNT		54
 
 #define BCM2835_GPIO_FSEL_MASK		0x7

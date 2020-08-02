@@ -7,8 +7,10 @@
 #ifndef __TPM_V1_H
 #define __TPM_V1_H
 
+#include <compiler.h>
 #include <tpm-common.h>
 #include <linux/bitops.h>
+#include <linux/types.h>
 
 struct udevice;
 

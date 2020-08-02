@@ -7,15 +7,18 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <pwm.h>
 #include <div64.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 /* PWM registers and bits definitions */
 #define PWMCON			0x00

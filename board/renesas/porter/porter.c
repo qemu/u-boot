@@ -31,6 +31,7 @@
 #include <miiphy.h>
 #include <i2c.h>
 #include <div64.h>
+#include <linux/types.h>
 #include "qos.h"
 
 DECLARE_GLOBAL_DATA_PTR;

@@ -7,6 +7,7 @@
 #include <common.h>
 #include <init.h>
 #include <asm/fsp1/fsp_support.h>
+#include <asm/types.h>
 
 /* ALC262 Verb Table - 10EC0262 */
 static const u32 verb_table_data13[] = {

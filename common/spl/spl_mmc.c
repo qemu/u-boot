@@ -6,6 +6,7 @@
  * Aneesh V <aneesh@ti.com>
  */
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <part.h>
@@ -18,6 +19,7 @@
 #include <mmc.h>
 #include <image.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 static int mmc_load_legacy(struct spl_image_info *spl_image, struct mmc *mmc,
 			   ulong sector, struct image_header *header)

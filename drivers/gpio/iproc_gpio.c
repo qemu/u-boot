@@ -4,11 +4,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <errno.h>
 #include <stdbool.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <dm/devres.h>
 #include <dm/pinctrl.h>

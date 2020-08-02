@@ -11,6 +11,7 @@
 #include <asm/arch-rockchip/clock.h>
 #include <asm/arch-rockchip/grf_rk3128.h>
 #include <asm/arch-rockchip/sdram.h>
+#include <asm/types.h>
 
 struct dram_info {
 	struct ram_info info;

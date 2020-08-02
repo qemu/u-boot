@@ -8,6 +8,7 @@
 #define _STM32_SYSCFG_H
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/bitops.h>
 #endif
 

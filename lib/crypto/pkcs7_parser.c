@@ -8,11 +8,13 @@
 #define pr_fmt(fmt) "PKCS7: "fmt
 #ifdef __UBOOT__
 #include <log.h>
+#include <stdbool.h>
 #include <dm/devres.h>
 #include <linux/bitops.h>
 #include <linux/compat.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #endif
 #include <linux/kernel.h>
 #ifndef __UBOOT__

@@ -8,6 +8,7 @@
 #define __MV886352_H
 
 #include <common.h>
+#include <asm/types.h>
 
 /* PHY registers */
 #define PHY(itf)	(itf)

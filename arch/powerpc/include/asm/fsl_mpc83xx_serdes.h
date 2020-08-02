@@ -23,4 +23,5 @@ extern void fsl_setup_serdes(u32 offset, char proto, u32 rfcks, char vdd);
 
 #endif /* !CONFIG_MPC83XX_SERDES */
 
+#include <asm/types.h>
 #endif /* __FSL_MPC83XX_SERDES_H */

@@ -13,6 +13,7 @@
  *
  * NOTE:
  *  This file contains two ways to pass information from the boot
+#include <asm/types.h>
  *  loader to the kernel. The old struct param_struct is deprecated,
  *  but it will be kept in the kernel for 5 years from now
  *  (2001). This will allow boot loaders to convert to the new struct

@@ -8,6 +8,8 @@
 #define __GDSYS_IOEP_H_
 
 /**
+#include <compiler.h>
+#include <asm/types.h>
  * struct io_generic_packet - header structure for GDSYS IOEP packets
  * @target_address:     Target protocol address of the packet.
  * @source_address:     Source protocol address of the packet.

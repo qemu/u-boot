@@ -11,6 +11,7 @@
 #include <command.h>
 #include <net.h>
 #include <vsprintf.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_CMD_GO
 

@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <clock_legacy.h>
+#include <compiler.h>
 #include <ns16550.h>
 #include <serial.h>
 #include <asm/global_data.h>

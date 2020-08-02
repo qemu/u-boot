@@ -384,6 +384,7 @@ static int get_features(unsigned int fpga, struct fpga_features *features)
 	u16 raw_extended_features;
 #endif
 
+#include <asm/types.h>
 	memset(features, 0, sizeof(struct fpga_features));
 
 	FPGA_GET_REG(fpga, fpga_features, &raw_features);

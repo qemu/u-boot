@@ -4,12 +4,14 @@
  * Author: Zhuoyu Zhang <Zhuoyu.Zhang@freescale.com>
  */
 #include <common.h>
+#include <compiler.h>
 #include <asm/io.h>
 #include <asm/arch-ls102xa/immap_ls102xa.h>
 #include <asm/arch-ls102xa/config.h>
 #include <linux/compiler.h>
 #include <hwconfig.h>
 #include <fsl_devdis.h>
+#include <linux/types.h>
 
 void device_disable(const struct devdis_table *tbl, uint32_t num)
 {

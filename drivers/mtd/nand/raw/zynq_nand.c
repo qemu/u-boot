@@ -7,10 +7,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <nand.h>

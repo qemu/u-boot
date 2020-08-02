@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <image.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 int spl_load_image_ext(struct spl_image_info *spl_image,
 		       struct blk_desc *block_dev, int partition,

@@ -13,6 +13,7 @@
  * the variable argument list into the format expected by the ROM code before
  * triggering the actual low-level smc entry.
  */
+#include <linux/types.h>
 u32 secure_rom_call(u32 service, u32 proc_id, u32 flag, ...);
 
 /*

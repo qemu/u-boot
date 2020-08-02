@@ -6,6 +6,7 @@
 #ifndef __ASM_ARCH_TIMER_H
 #define __ASM_ARCH_TIMER_H
 
+#include <asm/types.h>
 struct rk_timer {
 	u32 timer_load_count0;
 	u32 timer_load_count1;

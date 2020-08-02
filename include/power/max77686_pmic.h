@@ -7,6 +7,7 @@
 #ifndef __MAX77686_H_
 #define __MAX77686_H_
 
+#include <linux/types.h>
 #include <power/pmic.h>
 
 enum {

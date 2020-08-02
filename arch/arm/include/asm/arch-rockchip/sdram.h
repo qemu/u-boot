@@ -6,6 +6,7 @@
 #ifndef _ASM_ARCH_SDRAM_H
 #define _ASM_ARCH_SDRAM_H
 
+#include <linux/types.h>
 enum {
 	DDR4 = 0,
 	DDR3 = 0x3,

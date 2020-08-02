@@ -6,6 +6,7 @@
 /*
  * CPLD register set of T2080RDB board-specific.
  */
+#include <asm/types.h>
 struct cpld_data {
 	u8 chip_id1;		/* 0x00 - Chip ID1 register */
 	u8 chip_id2;		/* 0x01 - Chip ID2 register */

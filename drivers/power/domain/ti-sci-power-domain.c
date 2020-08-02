@@ -19,6 +19,7 @@
 #include <linux/errno.h>
 #include <linux/soc/ti/ti_sci_protocol.h>
 #include <dt-bindings/soc/ti,sci_pm_domain.h>
+#include <linux/types.h>
 
 /**
  * struct ti_sci_power_domain_data - pm domain controller information structure

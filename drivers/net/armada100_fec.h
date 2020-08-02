@@ -12,6 +12,7 @@
 #ifndef __ARMADA100_FEC_H__
 #define __ARMADA100_FEC_H__
 
+#include <asm/types.h>
 #include <linux/kernel.h>
 #define PORT_NUM		0x0
 

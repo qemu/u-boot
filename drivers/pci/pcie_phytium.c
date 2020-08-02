@@ -14,6 +14,7 @@
 #include <asm/io.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 /**
  * struct phytium_pcie - phytium PCIe controller state

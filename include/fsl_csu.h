@@ -7,6 +7,7 @@
 #ifndef __FSL_CSU_H__
 #define __FSL_CSU_H__
 
+#include <linux/types.h>
 enum csu_cslx_access {
 	CSU_NS_SUP_R = 0x08,
 	CSU_NS_SUP_W = 0x80,

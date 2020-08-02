@@ -17,6 +17,7 @@
 #include <stdio.h>
 #include <asm/io.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 #include <usb/ulpi.h>
 
 /* ULPI viewport control bits */

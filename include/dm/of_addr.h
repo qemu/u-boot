@@ -24,6 +24,7 @@
  * @in_addr: pointer to input address
  * @return translated address or OF_BAD_ADDR on error
  */
+#include <linux/types.h>
 u64 of_translate_address(const struct device_node *no, const __be32 *in_addr);
 
 /**

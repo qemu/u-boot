@@ -9,6 +9,7 @@
  */
 
 #include <efi_selftest.h>
+#include <asm/types.h>
 
 #define WIDTH	200
 #define HEIGHT	120

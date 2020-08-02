@@ -15,6 +15,7 @@
 #define _miiphy_h_
 
 #include <common.h>
+#include <asm/types.h>
 #include <linux/mii.h>
 #include <linux/list.h>
 #include <net.h>

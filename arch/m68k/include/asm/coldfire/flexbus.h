@@ -91,6 +91,7 @@ typedef struct fbcs {
 } fbcs_t;
 #endif
 
+#include <asm/types.h>
 #define FBCS_CSAR_BA(x)			((x) & 0xFFFF0000)
 
 #define FBCS_CSMR_BAM(x)		(((x) & 0xFFFF) << 16)

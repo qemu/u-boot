@@ -1,5 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /*
+#include <asm/types.h>
  * AM654: DDRSS Register definitions and structures.
  *
  * Copyright (C) 2018 Texas Instruments Incorporated - http://www.ti.com/

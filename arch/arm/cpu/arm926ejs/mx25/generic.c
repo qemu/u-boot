@@ -24,6 +24,7 @@
 #include <asm/arch/clock.h>
 #include <asm/u-boot.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_FSL_ESDHC_IMX
 #include <fsl_esdhc_imx.h>

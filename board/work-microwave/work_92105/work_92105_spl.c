@@ -13,6 +13,7 @@
 #include <asm/arch/emc.h>
 #include <asm/gpio.h>
 #include <spl.h>
+#include <asm/types.h>
 #include "work_92105_display.h"
 
 struct emc_dram_settings dram_64mb = {

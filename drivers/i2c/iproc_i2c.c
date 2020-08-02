@@ -4,6 +4,7 @@
  *
  */
 
+#include <compiler.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <common.h>
@@ -11,6 +12,7 @@
 #include <dm.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include "errno.h"
 #include <i2c.h>
 #include "iproc_i2c.h"

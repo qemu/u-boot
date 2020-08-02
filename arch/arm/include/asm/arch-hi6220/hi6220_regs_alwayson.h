@@ -7,6 +7,7 @@
 #ifndef __HI6220_ALWAYSON_H__
 #define __HI6220_ALWAYSON_H__
 
+#include <asm/types.h>
 #define ALWAYSON_CTRL_BASE			0xF7800000
 
 struct alwayson_sc_regs {

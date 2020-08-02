@@ -9,6 +9,7 @@
 
 #include <compiler.h>
 #include <stdbool.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/string.h>
 

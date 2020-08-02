@@ -22,6 +22,7 @@
 #include <i2c.h>
 #include <stdio.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /*
  * RTC register addresses

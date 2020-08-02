@@ -9,6 +9,7 @@
 #include <fsl_immap.h>
 #ifndef __ASSEMBLY__
 #include <linux/bitops.h>
+#include <linux/types.h>
 #endif
 
 #define CONFIG_SYS_IMMR				0x01000000

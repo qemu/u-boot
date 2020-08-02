@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
+#include <asm/types.h>
 #include <dm/test.h>
 #include <sandboxtee.h>
 #include <tee.h>

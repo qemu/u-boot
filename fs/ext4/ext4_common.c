@@ -34,6 +34,7 @@
 #include <linux/string.h>
 #include <linux/time.h>
 #include <asm/byteorder.h>
+#include <linux/types.h>
 #include "ext4_common.h"
 
 struct ext2_data *ext4fs_root;

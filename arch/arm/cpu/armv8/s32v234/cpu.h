@@ -3,5 +3,6 @@
  * (C) Copyright 2014-2016, Freescale Semiconductor, Inc.
  */
 
+#include <asm/types.h>
 u32 cpu_mask(void);
 int cpu_numcores(void);

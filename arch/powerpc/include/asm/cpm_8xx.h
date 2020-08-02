@@ -5,6 +5,7 @@
  * (C) Copyright 2000-2006
  * Wolfgang Denk, DENX Software Engineering, wd@denx.de.
  *
+#include <linux/types.h>
  * This file contains structures and information for the communication
  * processor channels.  Some CPM control and status is available
  * through the MPC8xx internal memory map.  See immap.h for details.

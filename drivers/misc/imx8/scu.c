@@ -11,6 +11,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <dm/lists.h>
 #include <dm/root.h>
 #include <dm/device-internal.h>

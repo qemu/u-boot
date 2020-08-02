@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <env.h>
 #include <env_internal.h>
 #include <part.h>
@@ -22,6 +23,7 @@
 #include <linux/errno.h>
 #include <linux/stddef.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_SPL_BUILD
 /* TODO(sjg@chromium.org): Figure out why this is needed */

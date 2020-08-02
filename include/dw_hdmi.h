@@ -11,6 +11,7 @@
 
 #include <edid.h>
 #include <stdbool.h>
+#include <linux/types.h>
 
 #define HDMI_EDID_BLOCK_SIZE            128
 

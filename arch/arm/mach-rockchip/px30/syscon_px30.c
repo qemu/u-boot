@@ -8,6 +8,7 @@
 #include <log.h>
 #include <syscon.h>
 #include <asm/arch-rockchip/clock.h>
+#include <linux/types.h>
 
 static const struct udevice_id px30_syscon_ids[] = {
 	{ .compatible = "rockchip,px30-pmu", .data = ROCKCHIP_SYSCON_PMU },

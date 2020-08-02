@@ -19,6 +19,7 @@
 #include <stdbool.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 struct mipi_dsi_host;
 struct mipi_dsi_device;

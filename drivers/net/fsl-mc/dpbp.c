@@ -8,6 +8,7 @@
 #include <fsl-mc/fsl_mc_sys.h>
 #include <fsl-mc/fsl_mc_cmd.h>
 #include <fsl-mc/fsl_dpbp.h>
+#include <linux/types.h>
 
 int dpbp_open(struct fsl_mc_io *mc_io,
 	      uint32_t cmd_flags,

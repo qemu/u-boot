@@ -25,6 +25,7 @@
 #include <asm/global_data.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <malloc.h>
 #include <linux/string.h>

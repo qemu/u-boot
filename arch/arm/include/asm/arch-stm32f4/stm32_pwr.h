@@ -8,6 +8,7 @@
 #define __STM32_PWR_H_
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/bitops.h>
 #endif
 

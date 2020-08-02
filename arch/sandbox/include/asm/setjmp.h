@@ -7,6 +7,7 @@
 #ifndef _SETJMP_H_
 #define _SETJMP_H_
 
+#include <linux/types.h>
 struct jmp_buf_data {
 	/*
 	 * We're not sure how long this should be:

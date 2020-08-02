@@ -7,6 +7,7 @@
 #include <asm/sections.h>
 #include <asm/string.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 int clear_bss(void)
 {

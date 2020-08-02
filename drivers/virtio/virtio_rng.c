@@ -12,6 +12,7 @@
 #include <virtio_ring.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define BUFFER_SIZE	16UL
 

@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <display_options.h>
 #include <stdio.h>
 #include <asm/bitops.h>
@@ -17,6 +18,7 @@
 #include <addr_map.h>
 #endif
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include <linux/log2.h>
 

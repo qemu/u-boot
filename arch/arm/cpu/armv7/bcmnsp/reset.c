@@ -6,6 +6,7 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 #define CRU_RESET_OFFSET	0x1803F184
 

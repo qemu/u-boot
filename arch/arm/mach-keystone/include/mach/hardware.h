@@ -11,6 +11,7 @@
 #include <config.h>
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/bitops.h>
 
 #include <linux/sizes.h>

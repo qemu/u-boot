@@ -6,6 +6,7 @@
 #ifndef __SOCFPGA_SCU_H__
 #define __SOCFPGA_SCU_H__
 
+#include <asm/types.h>
 struct scu_registers {
 	u32	ctrl;			/* 0x00 */
 	u32	cfg;

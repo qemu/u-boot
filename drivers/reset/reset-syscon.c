@@ -8,10 +8,12 @@
 #include <regmap.h>
 #include <reset.h>
 #include <reset-uclass.h>
+#include <stdbool.h>
 #include <syscon.h>
 #include <linux/bitops.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 struct syscon_reset_priv {
 	struct regmap *regmap;

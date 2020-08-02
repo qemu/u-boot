@@ -8,6 +8,7 @@
 #define _ASM_MRCCACHE_H
 
 #include <compiler.h>
+#include <asm/types.h>
 
 #define MRC_DATA_ALIGN		0x100
 #define MRC_DATA_SIGNATURE	(('M' << 0) | ('R' << 8) | \

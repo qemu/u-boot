@@ -18,6 +18,7 @@
 #ifdef CONFIG_X86
 #include <asm/acpi_nhlt.h>
 #endif
+#include <asm/types.h>
 #include <dt-bindings/sound/nhlt.h>
 #include <dm/acpi.h>
 #include <linux/errno.h>

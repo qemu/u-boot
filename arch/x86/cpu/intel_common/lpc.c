@@ -9,6 +9,7 @@
 #include <fdtdec.h>
 #include <pch.h>
 #include <pci.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <asm/intel_regs.h>
 #include <asm/io.h>
@@ -16,6 +17,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -11,6 +11,7 @@
 #ifndef __CLK_RENESAS_RCAR_GEN2_CPG_H__
 #define __CLK_RENESAS_RCAR_GEN2_CPG_H__
 
+#include <compiler.h>
 enum rcar_gen2_clk_types {
 	CLK_TYPE_GEN2_MAIN = CLK_TYPE_CUSTOM,
 	CLK_TYPE_GEN2_PLL0,

@@ -14,6 +14,7 @@
 #include <dm/device_compat.h>
 #include <dm/lists.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/stpmic1.h>
 

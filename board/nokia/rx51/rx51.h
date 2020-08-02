@@ -13,6 +13,7 @@
 #define _RX51_H_
 
 /* Needed for ROM SMC call */
+#include <asm/types.h>
 struct emu_hal_params_rx51 {
 	u32 num_params;
 	u32 param1;

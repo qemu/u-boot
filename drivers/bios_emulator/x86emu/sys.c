@@ -40,6 +40,7 @@
 ****************************************************************************/
 
 #include <common.h>
+#include <asm/types.h>
 #include <linux/printk.h>
 #include "x86emu/x86emui.h"
 

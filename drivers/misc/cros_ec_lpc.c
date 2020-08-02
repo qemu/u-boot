@@ -21,6 +21,7 @@
 #include <time.h>
 #include <asm/io.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #ifdef DEBUG_TRACE
 #define debug_trace(fmt, b...)	debug(fmt, ##b)

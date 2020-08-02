@@ -9,6 +9,7 @@
  * large portions are copied verbatim) as distributed in OSKit 0.97.  A few
  * changes were necessary to adapt the code to Etherboot and to fix several
  * inconsistencies.  Also the RPC message preparation is done "by hand" to
+#include <linux/types.h>
  * avoid adding netsprintf() which I find hard to understand and use.  */
 
 /* NOTE 2: Etherboot does not care about things beyond the kernel image, so

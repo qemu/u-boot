@@ -20,6 +20,7 @@
 #include <dm/uclass-internal.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 extern bool usb_started; /* flag for the started/stopped USB status */
 static bool asynch_allowed;

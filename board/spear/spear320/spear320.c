@@ -11,6 +11,7 @@
 #include <netdev.h>
 #include <nand.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/mtd/fsmc_nand.h>
 #include <asm/mach-types.h>

@@ -13,6 +13,7 @@
 #define __FSL_DPBP_H
 
 /* DPBP Version */
+#include <linux/types.h>
 #define DPBP_VER_MAJOR				3
 #define DPBP_VER_MINOR				3
 

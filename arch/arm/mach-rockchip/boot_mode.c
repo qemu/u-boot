@@ -6,6 +6,7 @@
 #include <common.h>
 #include <adc.h>
 #include <command.h>
+#include <compiler.h>
 #include <env.h>
 #include <log.h>
 #include <stdbool.h>

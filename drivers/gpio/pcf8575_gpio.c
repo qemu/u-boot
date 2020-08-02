@@ -30,6 +30,7 @@
 #include <stdio.h>
 #include <asm-generic/gpio.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 
 DECLARE_GLOBAL_DATA_PTR;

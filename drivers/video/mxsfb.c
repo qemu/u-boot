@@ -6,6 +6,7 @@
  */
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <env.h>
 #include <log.h>
@@ -21,6 +22,7 @@
 #include <video_fb.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <asm/arch/clock.h>
 #include <asm/arch/imx-regs.h>

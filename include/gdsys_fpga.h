@@ -36,6 +36,7 @@ extern struct ihs_fpga *fpga_ptr[];
 		     val)
 #endif
 
+#include <linux/types.h>
 struct ihs_gpio {
 	u16 read;
 	u16 clear;

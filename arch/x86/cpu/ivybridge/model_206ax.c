@@ -12,6 +12,7 @@
 #include <fdtdec.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <asm/cpu.h>
 #include <asm/cpu_common.h>
 #include <asm/cpu_x86.h>
@@ -25,6 +26,7 @@
 #include <asm/arch/model_206ax.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

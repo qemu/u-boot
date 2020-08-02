@@ -14,6 +14,7 @@
 #include <net.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <net/pfe_eth/pfe_eth.h>
 #include <net/pfe_eth/pfe_mdio.h>
 

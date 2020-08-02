@@ -10,6 +10,7 @@
 #include <common.h>
 #include <eeprom.h>
 #include <image.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
@@ -32,6 +33,7 @@
 #include <asm/omap_common.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "../common/board_detect.h"
 #include "board.h"
 #include <power/pmic.h>

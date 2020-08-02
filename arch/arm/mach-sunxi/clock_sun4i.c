@@ -16,6 +16,7 @@
 #include <asm/arch/gpio.h>
 #include <asm/arch/sys_proto.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_SPL_BUILD
 void clock_init_safe(void)

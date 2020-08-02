@@ -12,6 +12,7 @@
 #include <acpi/acpi_device.h>
 #include <asm/test.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /**
  * struct sandbox_irq_priv - private data for this driver

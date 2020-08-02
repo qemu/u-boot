@@ -10,6 +10,7 @@
 #include <log.h>
 #include <pch.h>
 #include <pci.h>
+#include <stdbool.h>
 #include <asm/cpu.h>
 #include <asm/global_data.h>
 #include <asm/gpio.h>
@@ -22,6 +23,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

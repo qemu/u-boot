@@ -12,6 +12,7 @@
 #include <linux/errno.h>
 #include <asm/io.h>
 #include <asm/mach-imx/regs-common.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

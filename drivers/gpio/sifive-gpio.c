@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <stdbool.h>
 #include <vsprintf.h>
@@ -16,6 +17,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static int sifive_gpio_probe(struct udevice *dev)
 {

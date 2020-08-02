@@ -11,6 +11,7 @@
 #include <asm/arch/clock.h>
 #include <asm/arch/ddr_defs.h>
 #include <asm/gpio.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 #include <power/pmic.h>
 #include <power/tps65218.h>

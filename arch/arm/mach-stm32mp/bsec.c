@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <asm/arch/bsec.h>
 #include <asm/arch/stm32mp1_smc.h>
+#include <asm/types.h>
 #include <linux/arm-smccc.h>
 #include <linux/errno.h>
 #include <linux/iopoll.h>

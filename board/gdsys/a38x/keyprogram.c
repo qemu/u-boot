@@ -13,6 +13,7 @@
 #include <linux/ctype.h>
 #include <asm/unaligned.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "hre.h"
 

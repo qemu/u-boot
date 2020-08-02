@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include "crypto.h"
 #include "uboot_aes.h"

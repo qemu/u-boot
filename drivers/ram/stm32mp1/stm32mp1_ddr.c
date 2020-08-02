@@ -5,14 +5,17 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <log.h>
 #include <ram.h>
 #include <reset.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <timer.h>
 #include <vsprintf.h>
 #include <asm/io.h>
 #include <asm/arch/ddr.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

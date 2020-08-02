@@ -7,7 +7,9 @@
 #ifndef __PIC32_REGS_H__
 #define __PIC32_REGS_H__
 
+#include <compiler.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 /* System Configuration */
 #define PIC32_CFG_BASE		0x1f800000

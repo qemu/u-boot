@@ -14,6 +14,7 @@
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/compiler.h>
+#include <linux/types.h>
 
 #include <cavium/atf.h>
 #include <asm/armv8/mmu.h>

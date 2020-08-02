@@ -5,6 +5,7 @@
 #ifndef _ASM_ARCH_GRF_RV1108_H
 #define _ASM_ARCH_GRF_RV1108_H
 
+#include <asm/types.h>
 #include <linux/kernel.h>
 struct rv1108_grf {
 	u32 reserved[4];

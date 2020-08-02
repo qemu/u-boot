@@ -20,6 +20,7 @@
 #include <watchdog.h>
 #include <debug_uart.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <dm/ofnode.h>
 #include <power/pmic.h>
 #include <power/regulator.h>

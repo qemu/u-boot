@@ -8,6 +8,7 @@
 #ifndef __R8A66597_H__
 #define __R8A66597_H__
 
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/string.h>
 #define SYSCFG0		0x00

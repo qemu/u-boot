@@ -7,11 +7,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/cache.h>
+#include <asm/types.h>
 
 #include <linux/errno.h>
 #include <asm/io.h>

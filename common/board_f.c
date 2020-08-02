@@ -13,6 +13,7 @@
 #include <bloblist.h>
 #include <bootstage.h>
 #include <clock_legacy.h>
+#include <compiler.h>
 #include <console.h>
 #include <cpu.h>
 #include <cpu_func.h>
@@ -38,6 +39,7 @@
 #include <spl.h>
 #endif
 #include <status_led.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <sysreset.h>
 #include <timer.h>
@@ -59,6 +61,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * Pointer to initial global data area

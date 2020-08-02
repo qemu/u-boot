@@ -10,6 +10,7 @@
 #include <log.h>
 #include <misc.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/err.h>
 #include <linux/errno.h>
 

@@ -8,11 +8,13 @@
 
 #include <clk.h>
 #include <common.h>
+#include <compiler.h>
 #include <div64.h>
 #include <dm.h>
 #include <errno.h>
 #include <log.h>
 #include <serial.h>
+#include <stdbool.h>
 #include <watchdog.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

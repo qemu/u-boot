@@ -27,6 +27,7 @@
 #include <asm/proc-armv/ptrace.h>
 #include <asm/ptrace.h>
 #include <asm/u-boot-arm.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

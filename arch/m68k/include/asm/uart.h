@@ -12,6 +12,7 @@
 /****************************************************************************/
 
 /* UART module registers */
+#include <asm/types.h>
 /* Register read/write struct */
 typedef struct uart {
 	u8 umr;			/* 0x00 Mode Register */

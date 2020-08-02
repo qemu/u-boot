@@ -4,12 +4,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <pci.h>
 #include <generic-phy.h>
 #include <power-domain.h>
 #include <regmap.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <syscon.h>
 #include <time.h>
@@ -22,6 +24,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

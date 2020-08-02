@@ -15,6 +15,7 @@
 #include <asm/arch-tegra/clk_rst.h>
 #include <asm/arch-tegra/pmc.h>
 #include <asm/arch-tegra/warmboot.h>
+#include <asm/types.h>
 #include "warmboot_avp.h"
 
 #define DEBUG_RESET_CORESIGHT

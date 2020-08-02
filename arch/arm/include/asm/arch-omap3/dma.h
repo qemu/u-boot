@@ -7,6 +7,7 @@
  */
 
 /* Functions */
+#include <linux/types.h>
 void omap3_dma_init(void);
 int omap3_dma_conf_transfer(uint32_t chan, uint32_t *src, uint32_t *dst,
 		uint32_t sze);

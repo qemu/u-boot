@@ -10,6 +10,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdbool.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/libfdt.h>
@@ -18,6 +19,7 @@
 #include <dm/of_access.h>
 #include <linux/err.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static void *unflatten_dt_alloc(void **mem, unsigned long size,
 				unsigned long align)

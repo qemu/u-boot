@@ -71,6 +71,7 @@ static inline phys_addr_t map_to_sysmem(const void *ptr)
 #define __arch_putw(v, a)		(*(unsigned short *)(a) = (v))
 #define __arch_putl(v, a)		(*(unsigned int *)(a) = (v))
 
+#include <compiler.h>
 extern void __raw_writesb(unsigned int addr, const void *data, int bytelen);
 extern void __raw_writesw(unsigned int addr, const void *data, int wordlen);
 extern void __raw_writesl(unsigned int addr, const void *data, int longlen);

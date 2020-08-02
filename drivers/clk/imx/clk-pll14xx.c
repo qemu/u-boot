@@ -6,6 +6,8 @@
  */
 
 #include <common.h>
+#include <compiler.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <malloc.h>
 #include <clk-uclass.h>
@@ -21,6 +23,7 @@
 #include <div64.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #include "clk.h"
 

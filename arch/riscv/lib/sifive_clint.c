@@ -8,6 +8,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <regmap.h>
 #include <syscon.h>
@@ -15,6 +16,7 @@
 #include <asm/io.h>
 #include <asm/syscon.h>
 #include <linux/err.h>
+#include <linux/types.h>
 
 /* MSIP registers */
 #define MSIP_REG(base, hart)		((ulong)(base) + (hart) * 4)

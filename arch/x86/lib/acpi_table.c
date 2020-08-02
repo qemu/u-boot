@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu.h>
 #include <dm.h>
 #include <log.h>
@@ -29,6 +30,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * IASL compiles the dsdt entries and writes the hex values

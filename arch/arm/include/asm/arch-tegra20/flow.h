@@ -7,6 +7,7 @@
 #ifndef _FLOW_H_
 #define _FLOW_H_
 
+#include <asm/types.h>
 struct flow_ctlr {
 	u32	halt_cpu_events;
 	u32	halt_cop_events;

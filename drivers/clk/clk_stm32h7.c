@@ -15,6 +15,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #include <dt-bindings/clock/stm32h7-clks.h>
 

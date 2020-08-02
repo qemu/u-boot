@@ -7,6 +7,7 @@
 #include <fm_eth.h>
 #include <asm/io.h>
 #include <asm/arch/fsl_serdes.h>
+#include <asm/types.h>
 
 #define FSL_CHASSIS2_RCWSR13_EC1		0xe0000000 /* bits 416..418 */
 #define FSL_CHASSIS2_RCWSR13_EC1_DTSEC3_RGMII	0x00000000

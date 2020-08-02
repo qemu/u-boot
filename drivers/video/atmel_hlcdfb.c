@@ -25,6 +25,7 @@
 #include <linux/bug.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_LCD_LOGO)
 #include <bmp_logo.h>

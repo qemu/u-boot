@@ -12,6 +12,7 @@
 #include <asm/global_data.h>
 #include <dm/device.h>
 #include <fdt_support.h>
+#include <linux/types.h>
 
 #define BCM2711_RPI4_PCIE_XHCI_MMIO_PHYS	0x600000000UL
 #define BCM2711_RPI4_PCIE_XHCI_MMIO_SIZE	0x800000UL

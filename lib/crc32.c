@@ -15,6 +15,7 @@
 #include <common.h>
 #include <efi_loader.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #endif
 #include <compiler.h>
 #include <u-boot/crc.h>

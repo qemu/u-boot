@@ -8,6 +8,7 @@
 #include <command.h>
 #include <net.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <net/pcap.h>
 
 static int do_pcap_init(struct cmd_tbl *cmdtp, int flag, int argc,

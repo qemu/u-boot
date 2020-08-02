@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <errno.h>
 #include <stdbool.h>
@@ -15,6 +16,7 @@
 #include <serial.h>
 #include <linux/compiler.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /* UART Control Register Bit Fields.*/
 #define URXD_CHARRDY	(1<<15)

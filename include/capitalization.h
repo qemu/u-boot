@@ -3,6 +3,7 @@
  * Capitalization tables
  */
 
+#include <asm/types.h>
 struct capitalization_table {
 	u16 upper;
 	u16 lower;

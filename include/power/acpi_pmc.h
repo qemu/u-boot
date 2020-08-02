@@ -197,4 +197,5 @@ int pmc_gpe_init(struct udevice *dev);
 #endif /* !__ACPI__ */
 
 #include <stdbool.h>
+#include <linux/types.h>
 #endif

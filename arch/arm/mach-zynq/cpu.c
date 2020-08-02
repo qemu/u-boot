@@ -15,6 +15,7 @@
 #include <asm/arch/ps7_init_gpl.h>
 #include <asm/arch/sys_proto.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define ZYNQ_SILICON_VER_MASK	0xF0000000
 #define ZYNQ_SILICON_VER_SHIFT	28

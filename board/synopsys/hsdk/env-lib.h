@@ -10,6 +10,7 @@
 #include <common.h>
 #include <config.h>
 #include <stdbool.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 
 enum env_type {

@@ -12,6 +12,7 @@
 #include <asm/intel_regs.h>
 #include <asm/io.h>
 #include <asm/arch/pch.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 

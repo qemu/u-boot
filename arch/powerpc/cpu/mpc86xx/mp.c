@@ -14,6 +14,7 @@
 #include <asm/io.h>
 #include <asm/mp.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

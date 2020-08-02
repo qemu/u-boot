@@ -9,6 +9,7 @@
 #ifndef __handoff_h
 #define __handoff_h
 
+#include <linux/types.h>
 #define TEST_HANDOFF_MAGIC	0x14f93c7b
 
 struct arch_spl_handoff {

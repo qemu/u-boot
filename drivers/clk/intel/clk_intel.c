@@ -9,6 +9,7 @@
 #include <clk-uclass.h>
 #include <dt-bindings/clock/intel-clock.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 static ulong intel_clk_get_rate(struct clk *clk)
 {

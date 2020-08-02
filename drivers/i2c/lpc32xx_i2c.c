@@ -16,6 +16,7 @@
 #include <dm.h>
 #include <mapmem.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * Provide default speed and slave if target did not

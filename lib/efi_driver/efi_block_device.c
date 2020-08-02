@@ -37,6 +37,7 @@
 #include <dm/device-internal.h>
 #include <dm/root.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /*
  * EFI attributes of the udevice handled by this driver.

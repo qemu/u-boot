@@ -9,6 +9,7 @@
 #ifndef __TEST_DM_ACPI_H
 #define __TEST_DM_ACPI_H
 
+#include <asm/types.h>
 #define ACPI_TEST_DEV_NAME	"ABCD"
 #define ACPI_TEST_CHILD_NAME	"EFGH"
 

@@ -19,6 +19,7 @@
 #include <i2c.h>
 #include <linux/errno.h>
 #include <linux/libfdt.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

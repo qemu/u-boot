@@ -55,6 +55,7 @@ extern void invalidate_icache(void);
 #ifdef CONFIG_SYS_INIT_RAM_LOCK
 extern void unlock_ram_in_cache(void);
 #endif /* CONFIG_SYS_INIT_RAM_LOCK */
+#include <linux/types.h>
 #endif /* __ASSEMBLY__ */
 
 #if defined(__KERNEL__) && !defined(__ASSEMBLY__)

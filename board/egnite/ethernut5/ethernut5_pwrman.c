@@ -20,6 +20,7 @@
  * which allows to manually deal with the PMC.
  *
  * Two distinct registers are provided by the PMC for enabling
+#include <asm/types.h>
  * and disabling specific features. This avoids the often seen
  * read-modify-write cycle or shadow register requirement.
  * Additional registers are available to query the board

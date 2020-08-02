@@ -5,11 +5,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/ptrace.h>
 #include <irq_func.h>
+#include <asm/types.h>
 #include <linux/compiler.h>
 #include <efi_loader.h>
 

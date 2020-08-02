@@ -18,6 +18,7 @@
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "../common/qixis.h"
 #include "t208xqds_qixis.h"
 #include "../common/spl.h"

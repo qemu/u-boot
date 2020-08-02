@@ -4,6 +4,7 @@
 #include <eeprom.h>
 #include <stdio.h>
 #include <asm/ic/ssi.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 
 /*

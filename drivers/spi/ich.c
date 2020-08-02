@@ -22,6 +22,7 @@
 #include <spi_flash.h>
 #include <spi-mem.h>
 #include <spl.h>
+#include <stdbool.h>
 #include <time.h>
 #include <asm/fast_spi.h>
 #include <asm/io.h>
@@ -33,6 +34,7 @@
 #include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "ich.h"
 

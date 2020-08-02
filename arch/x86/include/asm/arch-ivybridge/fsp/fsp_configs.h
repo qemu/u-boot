@@ -6,6 +6,7 @@
 #ifndef __FSP_CONFIGS_H__
 #define __FSP_CONFIGS_H__
 
+#include <asm/types.h>
 struct platform_config {
 	u8 enable_ht;
 	u8 enable_turbo;

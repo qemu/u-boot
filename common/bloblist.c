@@ -9,10 +9,12 @@
 #include <log.h>
 #include <mapmem.h>
 #include <spl.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 
 DECLARE_GLOBAL_DATA_PTR;

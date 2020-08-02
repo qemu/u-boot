@@ -4,6 +4,7 @@
  * Copyright 2017 NXP
  */
 #include <common.h>
+#include <compiler.h>
 #include <display_options.h>
 #include <env.h>
 #include <init.h>
@@ -29,6 +30,7 @@
 #include <asm/arch/ppa.h>
 #include <fsl_sec.h>
 #include <asm/arch-fsl-layerscape/fsl_icid.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_FSL_QIXIS
 #include "../common/qixis.h"

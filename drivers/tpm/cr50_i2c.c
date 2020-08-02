@@ -13,6 +13,7 @@
 #include <irq.h>
 #include <log.h>
 #include <spl.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <tpm-v2.h>
@@ -25,6 +26,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 enum {
 	TIMEOUT_INIT_MS		= 30000, /* Very long timeout for TPM init */

@@ -17,6 +17,7 @@
 #include <mm_communication.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define OPTEE_PAGE_SIZE BIT(12)
 extern struct efi_var_file __efi_runtime_data *efi_var_buf;

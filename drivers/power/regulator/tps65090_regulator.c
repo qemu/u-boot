@@ -11,6 +11,7 @@
 #include <time.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/regulator.h>
 #include <power/tps65090.h>

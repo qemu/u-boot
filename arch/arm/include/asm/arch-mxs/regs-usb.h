@@ -9,6 +9,7 @@
 #ifndef __REGS_USB_H__
 #define __REGS_USB_H__
 
+#include <linux/types.h>
 struct mxs_usb_regs {
 	uint32_t		hw_usbctrl_id;			/* 0x000 */
 	uint32_t		hw_usbctrl_hwgeneral;		/* 0x004 */

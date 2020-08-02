@@ -13,4 +13,5 @@ void dm9000_write_srom_word(int offset, u16 val);
 void dm9000_read_srom_word(int offset, u8 *to);
 #endif
 
+#include <asm/types.h>
 #endif /* __DM9000_H__ */

@@ -11,6 +11,7 @@
 #define _MACH_STM32_H_
 
 #include <asm/arch-stm32/stm32f.h>
+#include <asm/types.h>
 
 /*
  * Peripheral memory map

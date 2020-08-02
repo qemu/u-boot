@@ -7,12 +7,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <config.h>
 #include <hang.h>
 #include <log.h>
 #include <asm/io.h>
 #include <asm/arch/imx-regs.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include "mxs_init.h"
 

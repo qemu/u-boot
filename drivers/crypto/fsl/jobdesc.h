@@ -9,6 +9,7 @@
 
 #include <common.h>
 #include <asm/io.h>
+#include <linux/types.h>
 #include "rsa_caam.h"
 
 #define KEY_IDNFR_SZ_BYTES		16

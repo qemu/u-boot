@@ -8,6 +8,8 @@
 #define __FSP_FFS_H__
 
 /* Used to verify the integrity of the file */
+#include <compiler.h>
+#include <asm/types.h>
 union __packed ffs_integrity {
 	struct {
 		/*

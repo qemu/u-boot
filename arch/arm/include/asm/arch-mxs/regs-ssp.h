@@ -86,6 +86,7 @@ static inline int mxs_ssp_clock_by_bus(unsigned int clock)
 #endif
 }
 
+#include <linux/types.h>
 static inline struct mxs_ssp_regs *mxs_ssp_regs_by_bus(unsigned int port)
 {
 	switch (port) {

@@ -16,6 +16,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 struct syscon_reboot_priv {
 	struct regmap *regmap;

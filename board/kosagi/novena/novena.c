@@ -41,6 +41,7 @@
 #include <mmc.h>
 #include <netdev.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/pfuze100_pmic.h>
 #include <stdio_dev.h>

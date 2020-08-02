@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * The environment variables are written to just after the u-boot image

@@ -15,6 +15,7 @@
 #include <asm/io.h>
 #include <asm/gpio.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "cpld.h"
 
 #define SCLK			(92 + 24)

@@ -6,6 +6,7 @@
 #ifndef __DM_PCI_H
 #define __DM_PCI_H
 
+#include <asm/types.h>
 struct udevice;
 
 /**

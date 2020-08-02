@@ -5,6 +5,7 @@
  */
 
 #include <fpga.h>
+#include <linux/types.h>
 
 #ifndef _ALTERA_H_
 #define _ALTERA_H_

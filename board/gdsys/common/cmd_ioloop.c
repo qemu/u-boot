@@ -6,12 +6,14 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <console.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <gdsys_fpga.h>
 

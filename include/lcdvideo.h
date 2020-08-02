@@ -8,6 +8,7 @@
 
 /* LCD Controller Configuration Register.
 */
+#include <linux/types.h>
 #define LCCR_BNUM	((uint)0xfffe0000)
 #define LCCR_EIEN	((uint)0x00010000)
 #define LCCR_IEN	((uint)0x00008000)

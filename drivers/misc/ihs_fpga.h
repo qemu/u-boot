@@ -5,6 +5,7 @@
  */
 
 /**
+#include <asm/types.h>
  * struct ihs_fpga_regs - IHS FPGA register map structure
  * @reflection_low:	  Lower reflection register
  * @versions:		  PCB versions register

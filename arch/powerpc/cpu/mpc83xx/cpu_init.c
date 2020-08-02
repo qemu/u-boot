@@ -16,6 +16,7 @@
 #endif
 #include <linux/delay.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include "lblaw/lblaw.h"
 #include "elbc/elbc.h"

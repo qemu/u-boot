@@ -11,10 +11,12 @@
 #include <common.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <wdt.h>
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/io.h>
+#include <linux/types.h>
 
 #define XWT_CSR0_WRS_MASK	0x00000008 /* Reset status Mask */
 #define XWT_CSR0_WDS_MASK	0x00000004 /* Timer state Mask */

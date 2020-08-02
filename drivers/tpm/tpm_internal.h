@@ -6,6 +6,7 @@
 #ifndef __tpm_internal_h
 #define __tpm_internal_h
 
+#include <asm/types.h>
 enum {
 	TPM_MAX_ORDINAL			= 243,
 	TPM_MAX_PROTECTED_ORDINAL	= 12,

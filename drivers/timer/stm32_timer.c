@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <fdtdec.h>
 #include <timer.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>

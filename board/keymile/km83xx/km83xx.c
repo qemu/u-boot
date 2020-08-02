@@ -14,6 +14,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <env.h>
 #include <fdt_support.h>
 #include <init.h>
@@ -33,6 +34,7 @@
 #include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <post.h>
+#include <linux/types.h>
 
 #include "../common/common.h"
 

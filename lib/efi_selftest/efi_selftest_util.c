@@ -8,6 +8,7 @@
  */
 
 #include <efi_selftest.h>
+#include <asm/types.h>
 
 struct efi_st_translate {
 	u16 code;

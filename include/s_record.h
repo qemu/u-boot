@@ -75,6 +75,7 @@
  *--------------------------------------------------------------------------
  */
 
+#include <linux/types.h>
 #define SREC_START	0	/* Start Record (module name)		    */
 #define SREC_DATA2	1	/* Data  Record with 2 byte address	    */
 #define SREC_DATA3	2	/* Data  Record with 3 byte address	    */

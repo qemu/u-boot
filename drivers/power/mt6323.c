@@ -7,6 +7,7 @@
 #include <command.h>
 #include <stdio.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 
 #define PWRAP_BASE		0x1000d000

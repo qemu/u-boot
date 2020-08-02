@@ -15,6 +15,7 @@
  *  Code copied from maemo kernel 2.6.28 file
  *  arch/arm/plat-omap/include/mach/board.h
  *
+#include <asm/types.h>
  *  Information structures for board-specific data
  *
  *  Copyright (C) 2004	Nokia Corporation

@@ -20,6 +20,7 @@
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/ltc3676_pmic.h>
 #include <power/pfuze100_pmic.h>

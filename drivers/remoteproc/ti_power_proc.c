@@ -14,6 +14,7 @@
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <mach/psc_defs.h>
 
 DECLARE_GLOBAL_DATA_PTR;

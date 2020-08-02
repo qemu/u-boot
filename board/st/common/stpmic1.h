@@ -3,4 +3,5 @@
  * Copyright (C) 2020, STMicroelectronics - All Rights Reserved
  */
 
+#include <asm/types.h>
 void stpmic1_init(u32 voltage_mv);

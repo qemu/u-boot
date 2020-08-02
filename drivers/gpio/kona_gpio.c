@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/sysmap.h>
+#include <asm/types.h>
 
 #define GPIO_BASE				(void *)GPIO2_BASE_ADDR
 

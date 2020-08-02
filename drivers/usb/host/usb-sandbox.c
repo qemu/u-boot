@@ -10,6 +10,7 @@
 #include <stdbool.h>
 #include <usb.h>
 #include <dm/root.h>
+#include <linux/types.h>
 
 struct sandbox_usb_ctrl {
 	int rootdev;

@@ -10,9 +10,11 @@
 #include <dm.h>
 #include <i2c.h>
 #include <log.h>
+#include <stdbool.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/regulator.h>
 #include <power/da9063_pmic.h>

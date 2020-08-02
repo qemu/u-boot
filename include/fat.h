@@ -11,6 +11,7 @@
 
 #include <asm/byteorder.h>
 #include <fs.h>
+#include <linux/types.h>
 
 struct disk_partition;
 

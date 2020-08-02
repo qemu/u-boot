@@ -31,8 +31,10 @@
  */
 #include <clk.h>
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <mmc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <asm/arch/msg.h>
@@ -48,6 +50,7 @@
 #include <linux/iopoll.h>
 #include <linux/kernel.h>
 #include <linux/sizes.h>
+#include <linux/types.h>
 #include <mach/gpio.h>
 #include <power/regulator.h>
 

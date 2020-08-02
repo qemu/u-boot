@@ -4,6 +4,7 @@
  */
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <debug_uart.h>
 #include <env.h>
@@ -24,6 +25,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 /* RCC register */
 #define RCC_TZCR		(STM32_RCC_BASE + 0x00)

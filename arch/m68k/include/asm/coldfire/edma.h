@@ -14,6 +14,7 @@
 *********************************************************************/
 
 /* eDMA module registers */
+#include <asm/types.h>
 typedef struct edma_ctrl {
 	u32 cr;			/* 0x00 Control Register */
 	u32 es;			/* 0x04 Error Status Register */

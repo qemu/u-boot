@@ -6,6 +6,7 @@
 #ifndef __spi_coldfire_h
 #define __spi_coldfire_h
 
+#include <linux/types.h>
 #define MAX_CTAR_REGS		8
 #define MAX_CTAR_FIELDS		8
 

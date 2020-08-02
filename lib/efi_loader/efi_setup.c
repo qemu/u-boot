@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <bootm.h>
+#include <compiler.h>
 #include <efi_loader.h>
 #include <efi_variable.h>
 #include <stdio.h>

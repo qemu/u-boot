@@ -9,6 +9,7 @@
 #include <fsl-mc/fsl_mc_sys.h>
 #include <fsl-mc/fsl_mc_cmd.h>
 #include <fsl-mc/fsl_dprc.h>
+#include <linux/types.h>
 
 int dprc_get_container_id(struct fsl_mc_io *mc_io,
 			  uint32_t cmd_flags,

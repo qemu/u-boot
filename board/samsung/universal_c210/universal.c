@@ -18,6 +18,7 @@
 #include <asm/arch/pinmux.h>
 #include <asm/arch/watchdog.h>
 #include <ld9040.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <power/pmic.h>

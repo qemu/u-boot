@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include "ddr3_cfg.h"
 #include <asm/arch/ddr3.h>
 

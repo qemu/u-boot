@@ -10,6 +10,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <dm.h>
 #include <log.h>
@@ -26,6 +27,7 @@
 #include <asm/cache.h>
 #include <wait_bit.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* register offsets */
 #define	MODER		0x00

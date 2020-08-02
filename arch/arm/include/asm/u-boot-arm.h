@@ -15,6 +15,7 @@
 #ifndef __ASSEMBLY__
 
 /* for the following variables, see start.S */
+#include <linux/types.h>
 extern ulong IRQ_STACK_START;	/* top of IRQ stack */
 extern ulong FIQ_STACK_START;	/* top of FIQ stack */
 extern ulong _datarel_start_ofs;

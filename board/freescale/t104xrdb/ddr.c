@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <i2c.h>
 #include <hwconfig.h>
 #include <init.h>
@@ -18,6 +19,7 @@
 #include <asm/fsl_law.h>
 #include <asm/mpc85xx_gpio.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 #include "ddr.h"
 
 DECLARE_GLOBAL_DATA_PTR;

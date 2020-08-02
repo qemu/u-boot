@@ -10,9 +10,11 @@
 #include <errno.h>
 #include <fdtdec.h>
 #include <log.h>
+#include <stdbool.h>
 #include <watchdog.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/compiler.h>
 #include <serial.h>
 #include <linux/err.h>

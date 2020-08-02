@@ -13,6 +13,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/pcc.h>
 #include <asm/arch/sys_proto.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 

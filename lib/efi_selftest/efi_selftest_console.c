@@ -9,6 +9,7 @@
 #include <net.h>
 #include <stdarg.h>
 #include <vsprintf.h>
+#include <linux/types.h>
 
 struct efi_simple_text_output_protocol *con_out;
 struct efi_simple_text_input_protocol *con_in;

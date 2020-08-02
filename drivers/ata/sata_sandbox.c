@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <blk.h>
+#include <linux/types.h>
 
 int init_sata(int dev)
 {

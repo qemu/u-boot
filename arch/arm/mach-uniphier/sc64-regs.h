@@ -10,6 +10,7 @@
 #define SC64_REGS_H
 
 #ifndef __ASSEMBLY__
+#include <compiler.h>
 #include <linux/compiler.h>
 extern void __iomem *sc_base;
 #endif

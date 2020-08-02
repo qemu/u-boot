@@ -8,6 +8,7 @@
 
 #include <errno.h>
 #include <image.h>
+#include <linux/types.h>
 
 /**
  * struct key_prop - holder for a public key properties

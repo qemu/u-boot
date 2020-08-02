@@ -11,6 +11,7 @@
 #include <asm/test.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /**
  * struct sandbox_pci_ep_priv - private data for driver

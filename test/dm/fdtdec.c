@@ -8,6 +8,7 @@
 #include <asm/global_data.h>
 #include <dm/of_extra.h>
 #include <dm/test.h>
+#include <linux/types.h>
 #include <test/ut.h>
 
 DECLARE_GLOBAL_DATA_PTR;

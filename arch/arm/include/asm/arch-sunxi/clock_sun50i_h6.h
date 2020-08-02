@@ -10,6 +10,7 @@
 #define _SUNXI_CLOCK_SUN50I_H6_H
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/bitops.h>
 #endif
 

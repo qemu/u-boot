@@ -27,6 +27,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define CFGWDTH_32	1
 #define MIN_BITSTREAM_SIZECHECK	230

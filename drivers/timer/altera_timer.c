@@ -12,6 +12,7 @@
 #include <errno.h>
 #include <timer.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 
 /* control register */

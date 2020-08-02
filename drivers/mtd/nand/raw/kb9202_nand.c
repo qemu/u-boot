@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <asm/arch/AT91RM9200.h>
 #include <asm/arch/hardware.h>
+#include <linux/types.h>
 
 #include <nand.h>
 

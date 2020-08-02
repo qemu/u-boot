@@ -12,6 +12,7 @@
 #include <ubi_uboot.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "ubi.h"
 
 /**

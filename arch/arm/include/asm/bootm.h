@@ -8,6 +8,7 @@
 #ifndef ARM_BOOTM_H
 #define ARM_BOOTM_H
 
+#include <asm/types.h>
 extern void udc_disconnect(void);
 
 #if defined(CONFIG_SETUP_MEMORY_TAGS) || \

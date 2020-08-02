@@ -7,6 +7,8 @@
  */
 
 #include <common.h>
+#include <asm/types.h>
+#include <linux/stddef.h>
 
 union overlay64 {
 	u64 longw;

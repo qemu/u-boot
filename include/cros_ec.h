@@ -14,6 +14,7 @@
 #include <asm/gpio.h>
 #include <dm/of_extra.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 /* Our configuration information */
 struct cros_ec_dev {

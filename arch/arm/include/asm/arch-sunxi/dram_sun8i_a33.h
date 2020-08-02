@@ -12,6 +12,7 @@
 #define _SUNXI_DRAM_SUN8I_A33_H
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/bitops.h>
 #endif
 

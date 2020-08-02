@@ -10,6 +10,7 @@
 #define _MSMC_H_
 
 #include <asm/arch/hardware.h>
+#include <asm/types.h>
 
 enum mpax_seg_size {
 	MPAX_SEG_4K = 0x0b,

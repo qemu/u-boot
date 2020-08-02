@@ -14,6 +14,7 @@
 #include <errno.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <dm/devres.h>
@@ -22,6 +23,7 @@
 #include <linux/clk-provider.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 static inline const struct clk_ops *clk_dev_ops(struct udevice *dev)
 {

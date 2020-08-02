@@ -169,6 +169,7 @@ long int spd_sdram()
 
 	/* Read SPD parameters with I2C */
 	CONFIG_SYS_READ_SPD(SPD_EEPROM_ADDRESS, SPD_EEPROM_OFFSET,
+#include <linux/types.h>
 		SPD_EEPROM_ADDR_LEN, (uchar *) &spd, sizeof(spd));
 #ifdef SPD_DEBUG
 	spd_debug(&spd);

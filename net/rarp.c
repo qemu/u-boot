@@ -10,6 +10,7 @@
 #include <net.h>
 #include <stdio.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <net/tftp.h>
 #include "nfs.h"
 #include "bootp.h"

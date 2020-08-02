@@ -13,6 +13,7 @@
 #include <asm/armv8/mmu.h>
 #include <asm/io.h>
 #include <asm/arch/mc_me_regs.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include "cpu.h"
 

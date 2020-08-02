@@ -18,6 +18,7 @@
 #include <asm/byteorder.h>
 #include <reiserfs.h>
 #include <part.h>
+#include <linux/types.h>
 
 #if !CONFIG_IS_ENABLED(DOS_PARTITION)
 #error DOS partition support must be selected

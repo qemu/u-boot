@@ -1,3 +1,4 @@
+#include <linux/types.h>
 #define SPCR_PCIHPE_MASK	0x10000000
 #define SPCR_PCIPR_MASK		0x03000000
 #define SPCR_OPT_MASK		0x00800000

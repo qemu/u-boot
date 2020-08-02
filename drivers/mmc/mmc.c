@@ -7,12 +7,14 @@
  * Based vaguely on the Linux code
  */
 
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <blk.h>
 #include <command.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <vsprintf.h>
@@ -27,6 +29,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 #include <malloc.h>
 #include <memalign.h>

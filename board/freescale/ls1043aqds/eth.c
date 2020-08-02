@@ -14,6 +14,7 @@
 #include <fm_eth.h>
 #include <fsl_mdio.h>
 #include <fsl_dtsec.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/libfdt.h>
 #include <malloc.h>

@@ -12,6 +12,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #include <linux/sizes.h>
 

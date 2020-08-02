@@ -18,6 +18,7 @@
 #include <p2sb.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 /**
  * struct p2sb_emul_platdata - platform data for this device

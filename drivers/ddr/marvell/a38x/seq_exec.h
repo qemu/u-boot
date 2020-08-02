@@ -6,6 +6,7 @@
 #ifndef _SEQ_EXEC_H
 #define _SEQ_EXEC_H
 
+#include <asm/types.h>
 #define NA			0xff
 #define DEFAULT_PARAM		0
 #define MV_BOARD_TCLK_ERROR	0xffffffff

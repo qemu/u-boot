@@ -8,6 +8,7 @@
 #include <config.h>
 #include <stdio.h>
 #include <asm/arch/cpu.h>
+#include <asm/types.h>
 
 void spl_board_init(void)
 {

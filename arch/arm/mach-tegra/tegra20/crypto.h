@@ -14,6 +14,7 @@
  * \param length	Size of source data
  * \param signature	Destination address for signature, AES_KEY_LENGTH bytes
  */
+#include <asm/types.h>
 int sign_data_block(u8 *source, unsigned length, u8 *signature);
 
 #endif /* #ifndef _CRYPTO_H_ */

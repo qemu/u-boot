@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/imx-regs.h>
@@ -17,6 +18,7 @@
 #include <linux/errno.h>
 #include <linux/iopoll.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 static struct anamix_pll *ana_pll = (struct anamix_pll *)ANATOP_BASE_ADDR;
 

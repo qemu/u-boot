@@ -7,12 +7,14 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <dt-structs.h>
 #include <init.h>
 #include <log.h>
 #include <ram.h>
 #include <regmap.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <syscon.h>
 #include <asm/io.h>
@@ -23,6 +25,7 @@
 #include <asm/arch-rockchip/hardware.h>
 #include <asm/arch-rockchip/sdram.h>
 #include <asm/arch-rockchip/sdram_rk3399.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/err.h>
 #include <time.h>

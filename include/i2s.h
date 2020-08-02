@@ -13,6 +13,7 @@
  * Describes the physical PCM data formating and clocking. Add new formats
  * to the end.
  */
+#include <linux/types.h>
 #define SND_SOC_DAIFMT_I2S		1 /* I2S mode */
 #define SND_SOC_DAIFMT_RIGHT_J		2 /* Right Justified mode */
 #define SND_SOC_DAIFMT_LEFT_J		3 /* Left Justified mode */

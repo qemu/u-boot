@@ -7,6 +7,7 @@
 #ifndef _STV0991_CGU_H
 #define _STV0991_CGU_H
 
+#include <asm/types.h>
 struct stv0991_cgu_regs {
 	u32 cpu_freq;		/* offset 0x0 */
 	u32 icn2_freq;		/* offset 0x4 */

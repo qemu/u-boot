@@ -11,6 +11,7 @@
 #include <dm/device.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #include "clk-lib.h"
 

@@ -16,6 +16,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <irq_func.h>
 #include <asm/system.h>

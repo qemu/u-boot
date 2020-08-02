@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "sntp.h"
 

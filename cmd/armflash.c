@@ -13,6 +13,7 @@
 #include <vsprintf.h>
 #include <asm/io.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define MAX_REGIONS 4
 #define MAX_IMAGES 32

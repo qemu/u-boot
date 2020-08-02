@@ -9,6 +9,7 @@
 #include <errno.h>
 #include <i2c.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/max8998_pmic.h>
 

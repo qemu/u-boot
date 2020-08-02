@@ -10,7 +10,9 @@
 #define _EDMA3_H_
 
 #ifndef __ASSEMBLY__
+#include <compiler.h>
 #include <linux/bitops.h>
+#include <linux/types.h>
 #endif
 #include <linux/stddef.h>
 

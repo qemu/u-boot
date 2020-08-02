@@ -12,6 +12,7 @@
 #include <asm/io.h>
 #include <asm/arch/nexell.h>
 #include <asm/arch/reset.h>
+#include <asm/types.h>
 
 struct	nx_rstcon_registerset {
 	u32	regrst[(NUMBER_OF_RESET_MODULE_PIN + 31) >> 5];

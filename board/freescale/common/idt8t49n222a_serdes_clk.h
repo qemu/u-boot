@@ -9,6 +9,7 @@
 
 #include <common.h>
 #include <i2c.h>
+#include <asm/types.h>
 #include "qixis.h"
 #include "../b4860qds/b4860qds_qixis.h"
 #include <errno.h>

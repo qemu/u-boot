@@ -10,6 +10,7 @@
 #include <asm/io.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 #ifdef CONFIG_DM_ETH
 #include <dm.h>

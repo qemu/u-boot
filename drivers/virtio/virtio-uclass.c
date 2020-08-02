@@ -22,6 +22,7 @@
 #include <virtio_types.h>
 #include <virtio.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <dm/lists.h>
 #include <linux/bug.h>
 #include <linux/errno.h>

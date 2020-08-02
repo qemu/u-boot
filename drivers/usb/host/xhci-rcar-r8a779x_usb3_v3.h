@@ -48,6 +48,7 @@
 #ifndef __FIRMWARE_R8A779X_USB3_V3__
 #define __FIRMWARE_R8A779X_USB3_V3__
 
+#include <asm/types.h>
 static const u32 firmware_r8a779x_usb3_v3[] = {
 	0xf4c455aa, 0x00d20014, 0x00000000, 0x23dc00e8,
 	0x00000000, 0x1a5c2007, 0x0001ff63, 0x001eff80,

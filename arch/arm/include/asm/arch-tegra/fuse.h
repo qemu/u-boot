@@ -8,6 +8,7 @@
 #define _FUSE_H_
 
 /* FUSE registers */
+#include <asm/types.h>
 struct fuse_regs {
 	u32 reserved0[64];		/* 0x00 - 0xFC: */
 	u32 production_mode;		/* 0x100: FUSE_PRODUCTION_MODE */

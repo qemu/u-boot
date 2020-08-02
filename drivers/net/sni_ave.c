@@ -14,6 +14,7 @@
 #include <net.h>
 #include <regmap.h>
 #include <reset.h>
+#include <stdbool.h>
 #include <syscon.h>
 #include <vsprintf.h>
 #include <asm/cache.h>
@@ -28,6 +29,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define AVE_GRST_DELAY_MSEC	40
 #define AVE_MIN_XMITSIZE	60

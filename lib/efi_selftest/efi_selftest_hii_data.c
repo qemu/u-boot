@@ -19,6 +19,7 @@
  */
 
 #include <efi.h>
+#include <asm/types.h>
 
 #ifdef NOT_USED
 /*

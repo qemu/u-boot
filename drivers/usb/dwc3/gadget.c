@@ -17,6 +17,7 @@
 #include <cpu_func.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <dm/device_compat.h>
 #include <dm/devres.h>
@@ -28,6 +29,7 @@
 #include <linux/list.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <linux/usb/ch9.h>
 #include <linux/usb/gadget.h>

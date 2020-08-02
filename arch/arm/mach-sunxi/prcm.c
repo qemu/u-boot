@@ -19,6 +19,7 @@
 #include <asm/arch/cpu.h>
 #include <asm/arch/prcm.h>
 #include <asm/arch/sys_proto.h>
+#include <asm/types.h>
 
 /* APB0 clock gate and reset bit offsets are the same. */
 void prcm_apb0_enable(u32 flags)

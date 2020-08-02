@@ -10,6 +10,7 @@
 #include <asm/io.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/gpio.h>
+#include <linux/types.h>
 
 #define TRICORDER_STATUS_LED_YELLOW 42
 #define TRICORDER_STATUS_LED_GREEN  43

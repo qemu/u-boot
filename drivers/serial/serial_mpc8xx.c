@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <dm.h>
 #include <serial.h>
 #include <stdbool.h>
@@ -14,6 +15,7 @@
 #include <asm/global_data.h>
 #include <asm/ppc.h>
 #include <linux/compiler.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -5,6 +5,8 @@
  */
 
 #include <common.h>
+#include <compiler.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <div64.h>
 #include <malloc.h>
@@ -15,6 +17,7 @@
 #include <clk.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "clk.h"
 #include <linux/err.h>
 

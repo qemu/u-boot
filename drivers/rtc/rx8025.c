@@ -15,6 +15,7 @@
 #include <rtc.h>
 #include <stdio.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /*---------------------------------------------------------------------*/
 #undef DEBUG_RTC

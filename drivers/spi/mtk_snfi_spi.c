@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <errno.h>
 #include <spi.h>
@@ -20,6 +21,7 @@
 #include <linux/io.h>
 #include <linux/iopoll.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define SNFI_MAC_CTL			0x500
 #define MAC_XIO_SEL			BIT(4)

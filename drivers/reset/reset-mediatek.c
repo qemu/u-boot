@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
+#include <asm/types.h>
 #include <dm/lists.h>
 #include <regmap.h>
 #include <reset-uclass.h>

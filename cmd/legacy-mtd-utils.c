@@ -8,6 +8,7 @@
 #include <linux/mtd/partitions.h>
 #include <linux/string.h>
 #include <mtd.h>
+#include <linux/types.h>
 
 static int get_part(const char *partname, int *idx, loff_t *off, loff_t *size,
 	     loff_t *maxsize, int devtype)

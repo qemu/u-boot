@@ -7,6 +7,7 @@
 #include <clk-uclass.h>
 #include <dm.h>
 #include <linux/clk-provider.h>
+#include <linux/types.h>
 
 static ulong clk_fixed_rate_get_rate(struct clk *clk)
 {

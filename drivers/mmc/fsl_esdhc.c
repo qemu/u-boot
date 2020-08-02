@@ -9,6 +9,7 @@
  * Kyle Harris, Nexus Technologies, Inc. kharris@nexus-tech.net
  */
 
+#include <compiler.h>
 #include <config.h>
 #include <common.h>
 #include <command.h>
@@ -20,6 +21,7 @@
 #include <malloc.h>
 #include <fsl_esdhc.h>
 #include <fdt_support.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <vsprintf.h>
@@ -36,6 +38,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

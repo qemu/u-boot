@@ -5,6 +5,7 @@
  #include <common.h>
 #include <bitfield.h>
 #include <clk-uclass.h>
+#include <compiler.h>
 #include <dm.h>
 #include <errno.h>
 #include <log.h>
@@ -15,6 +16,7 @@
 #include <div64.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 static struct rockchip_pll_rate_table rockchip_auto_table;
 

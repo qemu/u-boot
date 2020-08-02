@@ -11,6 +11,7 @@
 #include <time.h>
 #include <asm/global_data.h>
 #include <asm/ppc.h>
+#include <linux/types.h>
 
 #include "lblaw/lblaw.h"
 #include "elbc/elbc.h"

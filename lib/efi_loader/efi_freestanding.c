@@ -10,6 +10,7 @@
 
 #include <common.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /**
  * memcmp() - compare memory areas

@@ -21,6 +21,7 @@
 #include <test/test.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include <test/ut.h>
 
 DECLARE_GLOBAL_DATA_PTR;

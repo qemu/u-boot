@@ -18,6 +18,7 @@
 #include <asm/gpio.h>
 #include <env.h>
 #include <twl6030.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 
 #include "panda_mux_data.h"

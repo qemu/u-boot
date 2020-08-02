@@ -8,6 +8,7 @@
 #ifndef __U_BOOT_BTRFS_H__
 #define __U_BOOT_BTRFS_H__
 
+#include <linux/types.h>
 struct blk_desc;
 struct disk_partition;
 

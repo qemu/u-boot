@@ -23,6 +23,7 @@
 #include <asm/io.h>
 #include <wait_bit.h>
 #include <linux/bitops.h>
+#include <linux/types.h>
 
 /*
  * [0]: http://www.xilinx.com/support/documentation

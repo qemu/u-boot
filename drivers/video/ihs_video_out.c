@@ -19,6 +19,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static const uint MAX_X_CHARS = 53;
 static const uint MAX_Y_CHARS = 26;

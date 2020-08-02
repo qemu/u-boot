@@ -7,6 +7,7 @@
 #ifndef ATMEL_NAND_ECC_H
 #define ATMEL_NAND_ECC_H
 
+#include <asm/types.h>
 #define ATMEL_ECC_CR		0x00			/* Control register */
 #define		ATMEL_ECC_RST		(1 << 0)		/* Reset parity */
 

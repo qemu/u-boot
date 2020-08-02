@@ -11,6 +11,7 @@
 
 #include <common.h>
 #include <compiler.h>
+#include <asm/types.h>
 #include "btrfs_tree.h"
 
 #define BTRFS_MAGIC 0x4D5F53665248425FULL /* ascii _BHRfS_M, no null */

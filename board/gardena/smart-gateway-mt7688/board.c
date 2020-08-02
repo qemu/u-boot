@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <env.h>
 #include <env_internal.h>
 #include <flash.h>
@@ -18,6 +19,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 #include <linux/stringify.h>

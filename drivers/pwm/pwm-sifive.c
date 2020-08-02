@@ -14,16 +14,19 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <div64.h>
 #include <dm.h>
 #include <pwm.h>
 #include <regmap.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/kernel.h>
 #include <linux/log2.h>
 #include <linux/bitfield.h>
+#include <linux/types.h>
 
 /* PWMCFG fields */
 #define PWM_SIFIVE_PWMCFG_SCALE         GENMASK(3, 0)

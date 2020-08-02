@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <clock_legacy.h>
+#include <compiler.h>
 #include <spi.h>
 #include <dm.h>
 #include <div64.h>

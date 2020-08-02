@@ -13,6 +13,7 @@
  * Those offsets must be multiplied by 4 before adding them to the base address
  * to get the right value
  */
+#include <linux/types.h>
 #define SCR				0x2C /* 0x0b offset in data sheet */
 #define TIMEOUT_VALUE			0x3c /* 0x0f offset in data sheet */
 

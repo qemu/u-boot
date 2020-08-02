@@ -10,6 +10,7 @@
 #include <fdt_support.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
@@ -20,6 +21,7 @@
 #include <linux/err.h>
 #include <linux/ioport.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 int ofnode_read_u32(ofnode node, const char *propname, u32 *outp)
 {

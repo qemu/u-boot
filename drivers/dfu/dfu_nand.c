@@ -21,6 +21,7 @@
 #include <jffs2/load_kernel.h>
 #include <nand.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static int nand_block_op(enum dfu_op op, struct dfu_entity *dfu,
 			u64 offset, void *buf, long *len)

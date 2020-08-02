@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <pci.h>
 #include <asm/pci.h>
+#include <linux/types.h>
 
 static int _pci_x86_read_config(const struct udevice *bus, pci_dev_t bdf,
 				uint offset, ulong *valuep,

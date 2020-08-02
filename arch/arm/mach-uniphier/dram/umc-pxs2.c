@@ -7,6 +7,8 @@
  * Copyright (C) 2015 Socionext Inc.
  */
 
+#include <compiler.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <clk-uclass.h>
+#include <compiler.h>
 #include <dm.h>
 #include <stdbool.h>
 #include <dm/device_compat.h>
@@ -14,6 +15,7 @@
 #include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/sizes.h>
+#include <linux/types.h>
 
 #include "clk-uniphier.h"
 

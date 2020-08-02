@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <uuid.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <mtd/cfi_flash.h>
 

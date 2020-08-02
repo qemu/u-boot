@@ -9,6 +9,7 @@
 /*
 * Register - Host to Device FIS
 */
+#include <asm/types.h>
 typedef struct sata_fis_h2d {
 	u8 fis_type;
 	u8 pm_port_c;

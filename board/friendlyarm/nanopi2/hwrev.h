@@ -7,6 +7,7 @@
 #ifndef __BD_HW_REV_H__
 #define __BD_HW_REV_H__
 
+#include <asm/types.h>
 extern void bd_hwrev_init(void);
 extern void bd_base_rev_init(void);
 extern u32 get_board_rev(void);

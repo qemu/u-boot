@@ -3,6 +3,7 @@
 #include <common.h>
 #include <exports.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 /*
  * Author: Arun Dharankar <ADharankar@ATTBI.Com>

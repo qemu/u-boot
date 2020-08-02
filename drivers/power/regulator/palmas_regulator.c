@@ -13,6 +13,7 @@
 #include <i2c.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/string.h>
 #include <power/pmic.h>

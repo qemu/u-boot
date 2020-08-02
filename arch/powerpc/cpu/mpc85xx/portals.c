@@ -6,6 +6,7 @@
 #include <common.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <linux/libfdt.h>
 #include <fdt_support.h>
 #include <linux/string.h>

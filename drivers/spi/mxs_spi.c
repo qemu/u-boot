@@ -32,6 +32,7 @@
 #include <asm/mach-imx/dma.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define	MXS_SPI_MAX_TIMEOUT	1000000
 #define	MXS_SPI_PORT_OFFSET	0x2000

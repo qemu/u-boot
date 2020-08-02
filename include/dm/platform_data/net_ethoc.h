@@ -7,6 +7,7 @@
 #define _ETHOC_H
 
 #include <net.h>
+#include <asm/types.h>
 
 #ifdef CONFIG_DM_ETH
 

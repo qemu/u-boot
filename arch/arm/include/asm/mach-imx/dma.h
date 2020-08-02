@@ -14,6 +14,7 @@
 #define __DMA_H__
 
 #include <asm/cache.h>
+#include <asm/types.h>
 #include <linux/list.h>
 #include <linux/compiler.h>
 

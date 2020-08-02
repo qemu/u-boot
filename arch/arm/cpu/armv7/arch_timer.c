@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <div64.h>
 #include <bootstage.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

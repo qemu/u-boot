@@ -17,6 +17,7 @@
 #include <reset.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/kernel.h>
 #include "sdram_s10.h"

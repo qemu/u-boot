@@ -9,6 +9,7 @@
 #include <common.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <wdt.h>
 #include <clk.h>
 #include <div64.h>
@@ -16,6 +17,7 @@
 #include <linux/err.h>
 #include <linux/io.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 struct cdns_regs {
 	u32 zmr;	/* WD Zero mode register, offset - 0x0 */

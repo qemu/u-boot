@@ -20,6 +20,7 @@
 #include <linux/ctype.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define BS systab.boottime
 

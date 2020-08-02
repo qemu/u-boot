@@ -12,6 +12,7 @@
 #include <log.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/s2mps11.h>
 

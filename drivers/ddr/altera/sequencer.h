@@ -7,6 +7,7 @@
 #define _SEQUENCER_H_
 
 #include <stdbool.h>
+#include <linux/types.h>
 #define RW_MGR_NUM_DM_PER_WRITE_GROUP (seq->rwcfg->mem_data_mask_width \
 	/ seq->rwcfg->mem_if_write_dqs_width)
 #define RW_MGR_NUM_TRUE_DM_PER_WRITE_GROUP ( \

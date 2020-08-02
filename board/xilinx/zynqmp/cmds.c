@@ -17,6 +17,7 @@
 #include <asm/io.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 static int do_zynqmp_verify_secure(struct cmd_tbl *cmdtp, int flag, int argc,
 				   char *const argv[])

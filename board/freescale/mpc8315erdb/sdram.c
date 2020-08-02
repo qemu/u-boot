@@ -13,6 +13,7 @@
 #include <spd_sdram.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 

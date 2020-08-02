@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <env.h>
 #include <errno.h>
 #include <log.h>
@@ -15,6 +16,7 @@
 #include <fat.h>
 #include <dfu.h>
 #include <hash.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/errno.h>
@@ -23,6 +25,7 @@
 #include <linux/compiler.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static LIST_HEAD(dfu_list);
 static int dfu_alt_num;

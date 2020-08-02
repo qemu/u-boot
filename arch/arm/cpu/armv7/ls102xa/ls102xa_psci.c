@@ -5,12 +5,14 @@
  * This file implements LS102X platform PSCI SYSTEM-SUSPEND function
  */
 
+#include <compiler.h>
 #include <config.h>
 #include <cpu_func.h>
 #include <asm/io.h>
 #include <asm/psci.h>
 #include <asm/arch/immap_ls102xa.h>
 #include <fsl_immap.h>
+#include <asm/types.h>
 #include "fsl_epu.h"
 
 #define __secure __attribute__((section("._secure.text")))

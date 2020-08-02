@@ -6,6 +6,7 @@
 #define _ASM_ARCH_SDRAM_RK322X_H
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/kernel.h>
 #endif

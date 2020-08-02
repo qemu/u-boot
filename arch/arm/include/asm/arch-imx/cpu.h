@@ -3,6 +3,7 @@
  * (C) Copyright 2014 Freescale Semiconductor, Inc.
  */
 
+#include <linux/types.h>
 #define MXC_CPU_MX23		0x23
 #define MXC_CPU_MX25		0x25
 #define MXC_CPU_MX27		0x27

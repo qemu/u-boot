@@ -13,6 +13,7 @@
 #include <mapmem.h>
 #include <lcd.h>
 #include <net.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/errno.h>
@@ -21,6 +22,7 @@
 #include <linux/ctype.h>
 #include <errno.h>
 #include <linux/list.h>
+#include <linux/types.h>
 
 #include <splash.h>
 #include <asm/io.h>

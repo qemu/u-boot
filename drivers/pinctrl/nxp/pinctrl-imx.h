@@ -12,6 +12,8 @@
  * @flags: flags specific for each soc
  * @mux_mask: Used when SHARE_MUX_CONF_REG flag is added
  */
+#include <compiler.h>
+#include <asm/types.h>
 struct imx_pinctrl_soc_info {
 	void __iomem *base;
 	void __iomem *input_sel_base;

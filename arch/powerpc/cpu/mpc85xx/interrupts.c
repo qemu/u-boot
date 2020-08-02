@@ -11,6 +11,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <irq_func.h>
 #include <log.h>
 #include <time.h>
@@ -23,6 +24,7 @@
 #endif
 #include <asm/ptrace.h>
 #include <asm/ppc.h>
+#include <linux/types.h>
 
 void interrupt_init_cpu(unsigned *decrementer_count)
 {

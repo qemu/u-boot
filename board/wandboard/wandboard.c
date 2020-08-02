@@ -10,6 +10,7 @@
 #include <image.h>
 #include <init.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/crm_regs.h>
@@ -37,6 +38,7 @@
 #include <phy.h>
 #include <i2c.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/pfuze100_pmic.h>
 

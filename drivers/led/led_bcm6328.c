@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <errno.h>
 #include <led.h>
@@ -12,6 +13,7 @@
 #include <asm/io.h>
 #include <dm/lists.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define LEDS_MAX			24
 

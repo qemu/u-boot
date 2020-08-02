@@ -15,9 +15,11 @@
 #include <log.h>
 #include <part.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 struct efi_system_partition efi_system_partition;
 

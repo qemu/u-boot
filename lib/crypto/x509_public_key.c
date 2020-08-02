@@ -9,12 +9,14 @@
 #ifdef __UBOOT__
 #include <common.h>
 #include <image.h>
+#include <stdbool.h>
 #include <dm/devres.h>
 #include <linux/compat.h>
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #else
 #include <linux/module.h>
 #endif

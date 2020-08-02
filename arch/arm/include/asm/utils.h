@@ -7,6 +7,7 @@
 #ifndef _UTILS_H_
 #define _UTILS_H_
 
+#include <asm/types.h>
 static inline s32 log_2_n_round_up(u32 n)
 {
 	s32 log2n = -1;

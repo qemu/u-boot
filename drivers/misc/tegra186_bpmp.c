@@ -21,6 +21,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define BPMP_IVC_FRAME_COUNT 1
 #define BPMP_IVC_FRAME_SIZE 128

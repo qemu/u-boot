@@ -11,10 +11,12 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <log.h>
 #include <malloc.h>
 #include <part.h>
 #include <mmc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <asm/global_data.h>
@@ -24,6 +26,7 @@
 #include <asm/byteorder.h>
 #include <faraday/ftsdc010.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "ftsdc010_mci.h"
 #include <dm.h>
 #include <dt-structs.h>

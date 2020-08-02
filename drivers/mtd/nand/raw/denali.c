@@ -25,6 +25,7 @@
 #include <linux/mtd/mtd.h>
 #include <linux/mtd/rawnand.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "denali.h"
 

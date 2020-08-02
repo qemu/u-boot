@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <fdtdec.h>
+#include <asm/types.h>
 #include <dm/ofnode.h>
 
 #include <asm/io.h>

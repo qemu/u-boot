@@ -12,6 +12,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 struct clk_boston {
 	struct regmap *regmap;

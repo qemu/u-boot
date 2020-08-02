@@ -30,6 +30,7 @@
 #if 0	/* XXX###XXX */
 #include <asm/arch/hardware.h>
 #endif	/* XXX###XXX */
+#include <compiler.h>
 #include <linux/string.h>
 
 static inline void sync(void)

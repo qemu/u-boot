@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <fdtdec.h>
 #include <log.h>
@@ -17,6 +18,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include <usb/xhci.h>
 #include "xhci-rcar-r8a779x_usb3_v3.h"

@@ -505,6 +505,7 @@ int get_clocks(void)
  * get_bus_freq
  * return system bus freq in Hz
  *********************************************/
+#include <linux/types.h>
 ulong get_bus_freq(ulong dummy)
 {
 	return gd->arch.csb_clk;

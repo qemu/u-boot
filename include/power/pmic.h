@@ -13,6 +13,7 @@
 #include <dm/ofnode.h>
 #include <i2c.h>
 #include <linux/list.h>
+#include <linux/types.h>
 #include <power/power_chrg.h>
 
 enum { PMIC_I2C, PMIC_SPI, PMIC_NONE};

@@ -11,6 +11,7 @@
 /* Simple U-Boot driver for the PrimeCell PL010/PL011 UARTs */
 
 #include <common.h>
+#include <compiler.h>
 #include <stdbool.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>

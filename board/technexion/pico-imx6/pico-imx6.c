@@ -30,6 +30,7 @@
 #include <miiphy.h>
 #include <netdev.h>
 #include <phy.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

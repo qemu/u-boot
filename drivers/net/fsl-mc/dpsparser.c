@@ -4,6 +4,7 @@
  *
  * Copyright 2018 NXP
  */
+#include <asm/types.h>
 #include <fsl-mc/fsl_mc_sys.h>
 #include <fsl-mc/fsl_mc_cmd.h>
 #include <fsl-mc/fsl_dpsparser.h>

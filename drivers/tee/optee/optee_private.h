@@ -8,6 +8,7 @@
 
 #include <tee.h>
 #include <log.h>
+#include <linux/types.h>
 
 /**
  * struct optee_private - OP-TEE driver private data

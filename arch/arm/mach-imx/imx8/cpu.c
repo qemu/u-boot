@@ -5,14 +5,17 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <cpu.h>
 #include <cpu_func.h>
 #include <dm.h>
 #include <init.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <dm/device-internal.h>
 #include <dm/lists.h>
 #include <dm/uclass.h>

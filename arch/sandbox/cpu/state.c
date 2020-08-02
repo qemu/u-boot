@@ -14,6 +14,7 @@
 #include <asm/state.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* Main state record for the sandbox */
 static struct sandbox_state main_state;

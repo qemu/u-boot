@@ -8,6 +8,7 @@
 
 #include <stdbool.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 #define ROCKCHIP_CPU_MASK       0xffff0000
 #define ROCKCHIP_CPU_RK3288     0x32880000

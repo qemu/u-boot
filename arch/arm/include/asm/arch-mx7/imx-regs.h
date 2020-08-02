@@ -226,6 +226,7 @@
 #include <asm/mach-imx/regs-lcdif.h>
 #include <asm/types.h>
 #include <linux/bitops.h>
+#include <linux/types.h>
 
 extern void imx_get_mac_from_fuse(int dev_id, unsigned char *mac);
 

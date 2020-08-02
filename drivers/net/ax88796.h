@@ -8,6 +8,7 @@
 #ifndef __DRIVERS_AX88796L_H__
 #define __DRIVERS_AX88796L_H__
 
+#include <linux/types.h>
 #define DP_DATA		(0x10 << 1)
 #define START_PG	0x40	/* First page of TX buffer */
 #define START_PG2	0x48

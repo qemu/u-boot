@@ -4,6 +4,7 @@
  * Corscience GmbH & Co. KG - Simon Schwarz <schwarz@corscience.de>
  */
 #include <common.h>
+#include <compiler.h>
 #include <config.h>
 #include <fdt_support.h>
 #include <image.h>
@@ -14,6 +15,7 @@
 #include <nand.h>
 #include <linux/libfdt_env.h>
 #include <fdt.h>
+#include <linux/types.h>
 
 uint32_t __weak spl_nand_get_uboot_raw_page(void)
 {

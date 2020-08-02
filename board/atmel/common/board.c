@@ -11,6 +11,7 @@
 #include <vsprintf.h>
 #include <w1.h>
 #include <w1-eeprom.h>
+#include <asm/types.h>
 #include <dm/device-internal.h>
 
 #define AT91_PDA_EEPROM_ID_OFFSET		15

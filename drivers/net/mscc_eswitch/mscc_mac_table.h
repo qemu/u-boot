@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 
 #define ETH_LEN 6
 #define MAC_VID 1

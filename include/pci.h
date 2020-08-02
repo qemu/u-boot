@@ -503,6 +503,7 @@
 #ifndef __ASSEMBLY__
 
 #include <dm/pci.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_SYS_PCI_64BIT
 typedef u64 pci_addr_t;

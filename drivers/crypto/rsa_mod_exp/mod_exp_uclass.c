@@ -9,6 +9,7 @@
 #include <stdbool.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <u-boot/rsa-mod-exp.h>
 #include <errno.h>
 #include <fdtdec.h>

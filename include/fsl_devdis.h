@@ -6,6 +6,7 @@
 #ifndef __FSL_DEVDIS_H_
 #define __FSL_DEVDIS_H_
 
+#include <linux/types.h>
 struct devdis_table {
 	char name[32];
 	u32 offset;

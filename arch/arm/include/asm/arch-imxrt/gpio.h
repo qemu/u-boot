@@ -16,4 +16,5 @@ struct gpio_regs {
 };
 #endif
 
+#include <asm/types.h>
 #endif /* __ASM_ARCH_GPIO_H__ */

@@ -23,6 +23,7 @@
 #include <fsl_mdio.h>
 #include <tsec.h>
 #include <netdev.h>
+#include <linux/types.h>
 
 #include "../common/sgmii_riser.h"
 

@@ -12,6 +12,7 @@
 #include <asm/global_data.h>
 #include <linux/errno.h>
 #include <linux/stddef.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 
 #ifdef ENV_IS_EMBEDDED

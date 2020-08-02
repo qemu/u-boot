@@ -23,6 +23,7 @@
 #include <linux/ctype.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_POST)
 #include "post.h"

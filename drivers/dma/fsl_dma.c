@@ -13,6 +13,7 @@
 #include <asm/io.h>
 #include <asm/fsl_dma.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 /* Controller can only transfer 2^26 - 1 bytes at a time */
 #define FSL_DMA_MAX_SIZE	(0x3ffffff)

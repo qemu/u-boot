@@ -14,6 +14,7 @@
 #include <asm/io.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define MC_CMD_HDR_READ_CMDID(_hdr) \
 	((uint16_t)mc_dec((_hdr), MC_CMD_HDR_CMDID_O, MC_CMD_HDR_CMDID_S))

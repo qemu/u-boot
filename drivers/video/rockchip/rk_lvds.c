@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <display.h>
 #include <dm.h>
 #include <edid.h>
@@ -18,6 +19,7 @@
 #include <asm/arch-rockchip/grf_rk3288.h>
 #include <asm/arch-rockchip/hardware.h>
 #include <asm/arch-rockchip/lvds_rk3288.h>
+#include <asm/types.h>
 #include <dt-bindings/clock/rk3288-cru.h>
 #include <dt-bindings/video/rk3288.h>
 #include <linux/errno.h>

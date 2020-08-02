@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <clock_legacy.h>
+#include <compiler.h>
 #include <display_options.h>
 #include <dm.h>
 #include <init.h>
@@ -34,6 +35,7 @@
 #include <asm/arch/fsl_serdes.h>
 #include <asm/arch/soc.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "../common/qixis.h"
 #include "../common/vid.h"
 #include <fsl_immap.h>

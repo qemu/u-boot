@@ -13,9 +13,11 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <clk.h>
 #include <log.h>
+#include <stdbool.h>
 #include <wdt.h>
 #include <asm/global_data.h>
 #include <linux/bitops.h>
@@ -24,6 +26,7 @@
 #include <asm/io.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/soc.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

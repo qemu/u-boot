@@ -13,10 +13,12 @@
 #ifndef __TSEC_H
 #define __TSEC_H
 
+#include <compiler.h>
 #include <net.h>
 #include <config.h>
 #include <phy.h>
 #include <asm/u-boot.h>
+#include <linux/types.h>
 
 #define TSEC_MDIO_REGS_OFFSET	0x520
 

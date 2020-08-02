@@ -18,6 +18,7 @@
 #include <asm/io.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/at91_st.h>
+#include <linux/types.h>
 
 void  __attribute__((weak)) board_reset(void)
 {

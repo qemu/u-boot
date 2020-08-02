@@ -7,6 +7,7 @@
 #ifndef __AST_I2C_H_
 #define __AST_I2C_H_
 
+#include <asm/types.h>
 struct ast_i2c_regs {
 	u32 fcr;
 	u32 cactcr1;

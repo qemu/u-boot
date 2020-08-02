@@ -3,6 +3,7 @@
  * Copyright (c) 2019, Linaro Limited
  */
 
+#include <compiler.h>
 #include <cpu_func.h>
 #include <log.h>
 #include <malloc.h>
@@ -20,6 +21,7 @@
 #include <reset.h>
 #include <wait_bit.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define STATION_ADDR_LOW		0x0000
 #define STATION_ADDR_HIGH		0x0004

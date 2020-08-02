@@ -12,6 +12,7 @@
 #include <asm/cache.h>
 #include <asm/unaligned.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "part_iso.h"
 
 #ifdef CONFIG_HAVE_BLOCK_DEVICE

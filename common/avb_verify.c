@@ -11,11 +11,13 @@
 #include <image.h>
 #include <malloc.h>
 #include <part.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <tee.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <tee/optee_ta_avb.h>
 
 static const unsigned char avb_root_pub[1032] = {

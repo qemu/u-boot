@@ -13,6 +13,7 @@
 #include <asm/smp.h>
 #include <asm/u-boot.h>
 #include <compiler.h>
+#include <linux/types.h>
 
 /* Architecture-specific global data */
 struct arch_global_data {

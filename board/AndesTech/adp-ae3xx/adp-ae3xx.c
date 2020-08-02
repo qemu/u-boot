@@ -18,6 +18,7 @@
 #include <asm/u-boot.h>
 #include <linux/io.h>
 #include <faraday/ftsmc020.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

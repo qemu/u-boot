@@ -30,6 +30,7 @@
 #include <i2c.h>
 #include <mb862xx.h>
 #include <video_fb.h>
+#include <linux/types.h>
 #include "upm_table.h"
 
 DECLARE_GLOBAL_DATA_PTR;

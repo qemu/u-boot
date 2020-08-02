@@ -12,6 +12,7 @@
 #include <asm/gpio.h>
 #include <asm/mach-imx/video.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #define CX9020_DVI_PWD	IMX_GPIO_NR(6, 1)
 

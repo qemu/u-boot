@@ -7,6 +7,7 @@
 #define _WINBOND_W83627_H_
 
 /* I/O address of Winbond Super IO chip */
+#include <linux/types.h>
 #define WINBOND_IO_PORT		0x2e
 
 /* Logical device number */

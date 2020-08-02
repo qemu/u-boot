@@ -19,6 +19,7 @@
 #include <asm/io.h>
 #include <asm/byteorder.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #define P_ID_AMD_STD CFI_CMDSET_AMD_LEGACY
 

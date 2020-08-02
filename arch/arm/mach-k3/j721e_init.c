@@ -16,6 +16,7 @@
 #include <asm/arch/hardware.h>
 #include <asm/arch/sysfw-loader.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "common.h"
 #include <asm/arch/sys_proto.h>
 #include <linux/soc/ti/ti_sci_protocol.h>

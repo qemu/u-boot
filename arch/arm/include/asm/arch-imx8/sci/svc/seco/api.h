@@ -9,6 +9,7 @@
 /* Includes */
 
 #include <asm/arch/sci/types.h>
+#include <asm/types.h>
 
 /* Defines */
 #define SC_SECO_AUTH_CONTAINER          0U   /* Authenticate container */

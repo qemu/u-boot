@@ -13,6 +13,7 @@
 #include <asm/arch/clk.h>
 #include <asm/arch/periph.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #define PLL_DIV_1024	1024
 #define PLL_DIV_65535	65535

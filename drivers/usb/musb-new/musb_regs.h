@@ -94,6 +94,8 @@
 #define MUSB_CSR0_H_SETUPPKT		0x0008
 #define MUSB_CSR0_H_RXSTALL		0x0004
 
+#include <compiler.h>
+#include <asm/types.h>
 /* CSR0 bits to avoid zeroing (write zero clears, write 1 ignored) */
 #define MUSB_CSR0_P_WZC_BITS	\
 	(MUSB_CSR0_P_SENTSTALL)

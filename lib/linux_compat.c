@@ -5,6 +5,7 @@
 #include <asm/cache.h>
 #include <linux/compat.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 struct p_current cur = {
 	.pid = 1,

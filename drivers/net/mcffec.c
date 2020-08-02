@@ -26,6 +26,7 @@
 #include <linux/errno.h>
 #include <linux/mii.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #undef	ET_DEBUG
 #undef	MII_DEBUG

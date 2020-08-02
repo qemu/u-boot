@@ -10,6 +10,7 @@
 #ifndef _ZIO_H
 #define	_ZIO_H
 
+#include <linux/types.h>
 #include <zfs/spa.h>
 
 #define	ZEC_MAGIC	0x210da7ab10c7a11ULL	/* zio data bloc tail */

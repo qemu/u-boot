@@ -9,6 +9,7 @@
 #ifndef __ASSEMBLY__
 
 /* This is a declaration for ucode_base in start.S */
+#include <asm/types.h>
 extern u32 ucode_base;
 extern u32 ucode_size;
 

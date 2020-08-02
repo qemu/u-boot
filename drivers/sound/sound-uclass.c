@@ -12,6 +12,7 @@
 #include <sound.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define SOUND_BITS_IN_BYTE 8
 

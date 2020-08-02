@@ -10,6 +10,7 @@
 #include <asm/io.h>
 #include <asm/arch/pinctrl.h>
 #include <asm/arch/scu_ast2500.h>
+#include <asm/types.h>
 #include <dm/pinctrl.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>

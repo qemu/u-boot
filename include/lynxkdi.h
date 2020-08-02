@@ -8,6 +8,7 @@
 #define __LYNXKDI_H__
 
 
+#include <linux/types.h>
 /* Boot parameter struct passed to kernel
  */
 typedef struct lynxos_bootparms_t {

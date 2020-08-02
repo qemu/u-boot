@@ -10,6 +10,7 @@
 #include <asm/arch/soc.h>
 #include <asm/arch/mpp.h>
 #include <nand.h>
+#include <asm/types.h>
 
 /* NAND Flash Soc registers */
 struct kwnandf_registers {

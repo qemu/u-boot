@@ -62,4 +62,5 @@ void arch_lmb_reserve(struct lmb *lmb);
 
 #endif /* __KERNEL__ */
 
+#include <linux/types.h>
 #endif /* _LINUX_LMB_H */

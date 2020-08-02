@@ -7,6 +7,7 @@
 #ifndef	_FIREWALL_H_
 #define	_FIREWALL_H_
 
+#include <asm/types.h>
 #include <linux/bitops.h>
 
 struct socfpga_firwall_l4_per {

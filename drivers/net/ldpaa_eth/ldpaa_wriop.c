@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <asm/io.h>
 #include <asm/types.h>
 #include <malloc.h>

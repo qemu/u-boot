@@ -21,6 +21,7 @@
 #include <linux/log2.h>
 #include <clk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define SIFIVE_SPI_MAX_CS		32
 

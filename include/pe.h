@@ -1,5 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /*
+#include <linux/types.h>
  *  Portable Executable binary format structures
  *
  *  Copyright (c) 2016 Alexander Graf

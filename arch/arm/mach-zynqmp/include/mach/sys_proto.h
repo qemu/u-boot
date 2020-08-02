@@ -8,6 +8,7 @@
 #define _ASM_ARCH_SYS_PROTO_H
 
 #include <stdbool.h>
+#include <linux/types.h>
 #define PAYLOAD_ARG_CNT		5
 
 #define ZYNQMP_CSU_SILICON_VER_MASK	0xF

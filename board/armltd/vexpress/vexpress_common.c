@@ -33,6 +33,7 @@
 #include <asm/u-boot.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "../drivers/mmc/arm_pl180_mmci.h"
 
 static struct systimer *systimer_base = (struct systimer *)V2M_TIMER01;

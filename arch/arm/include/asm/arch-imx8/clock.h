@@ -7,6 +7,7 @@
 #define __ASM_ARCH_IMX8_CLOCK_H__
 
 /* Mainly for compatible to imx common code. */
+#include <asm/types.h>
 enum mxc_clock {
 	MXC_ARM_CLK = 0,
 	MXC_AHB_CLK,

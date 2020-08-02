@@ -12,12 +12,14 @@
 #include <malloc.h>
 #include <pci.h>
 #include <reset.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <asm/io.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "designware_i2c.h"
 #include <dm/device_compat.h>
 #include <linux/err.h>

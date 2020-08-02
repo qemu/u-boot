@@ -32,6 +32,7 @@ void draw_logo(void);
 char *get_dfu_alt_system(char *interface, char *devstr);
 char *get_dfu_alt_boot(char *interface, char *devstr);
 #endif
+#include <asm/types.h>
 void set_board_type(void);
 void set_board_revision(void);
 const char *get_board_type(void);

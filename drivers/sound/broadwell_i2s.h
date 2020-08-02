@@ -10,6 +10,7 @@
 #ifndef __BROADWELL_I2S_H__
 #define __BROADWELL_I2S_H__
 
+#include <asm/types.h>
 enum {
 	SSP_FIFO_SIZE = 7,
 };

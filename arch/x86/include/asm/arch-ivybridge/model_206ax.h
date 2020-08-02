@@ -9,6 +9,7 @@
 #define _ASM_ARCH_MODEL_206AX_H
 
 #include <stdbool.h>
+#include <asm/types.h>
 #define  CPUID_VMX			(1 << 5)
 #define  CPUID_SMX			(1 << 6)
 #define MSR_FEATURE_CONFIG		0x13c

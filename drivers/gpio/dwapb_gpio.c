@@ -12,6 +12,7 @@
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <dm/device-internal.h>
 #include <dm/device_compat.h>
 #include <dm/devres.h>

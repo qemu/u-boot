@@ -18,6 +18,7 @@
 #ifndef __USB_ULPI_H__
 #define __USB_ULPI_H__
 
+#include <linux/types.h>
 #define ULPI_ERROR	(1 << 8) /* overflow from any register value */
 
 #ifndef CONFIG_USB_ULPI_TIMEOUT

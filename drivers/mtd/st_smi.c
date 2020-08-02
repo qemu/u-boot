@@ -13,6 +13,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/mtd/st_smi.h>
+#include <linux/types.h>
 
 #include <asm/io.h>
 #include <asm/arch/hardware.h>

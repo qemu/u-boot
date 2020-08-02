@@ -7,6 +7,7 @@
 #ifndef _STM32_GPIO_H_
 #define _STM32_GPIO_H_
 #include <asm/gpio.h>
+#include <asm/types.h>
 
 #define STM32_GPIOS_PER_BANK		16
 

@@ -18,6 +18,7 @@
 #include <rtc.h>
 #include <i2c.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 /*
  * RTC register addresses

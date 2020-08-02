@@ -14,6 +14,7 @@
 #include <stdbool.h>
 #include <asm/sdl.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 struct sandbox_codec_priv {
 	int interface;

@@ -32,6 +32,7 @@
 #include <miiphy.h>
 #include <cpsw.h>
 #include <asm/u-boot.h>
+#include <linux/types.h>
 #include <power/tps65217.h>
 #include <power/tps65910.h>
 #include <env_internal.h>

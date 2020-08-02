@@ -9,6 +9,7 @@
 #define __MX27_REGS_RTC_H__
 
 #ifndef	__ASSEMBLY__
+#include <asm/types.h>
 struct rtc_regs {
 	u32 hourmin;
 	u32 seconds;

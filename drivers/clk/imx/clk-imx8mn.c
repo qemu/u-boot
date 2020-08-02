@@ -7,13 +7,16 @@
 #include <common.h>
 #include <clk.h>
 #include <clk-uclass.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/imx-regs.h>
 #include <dt-bindings/clock/imx8mn-clock.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include "clk.h"
 

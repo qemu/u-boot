@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
  *
+#include <linux/types.h>
  * Read FactorySet information from EEPROM into global structure.
  * (C) Copyright 2013 Siemens Schweiz AG
  */

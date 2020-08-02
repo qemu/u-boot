@@ -26,6 +26,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <fsl-mc/ldpaa_wriop.h>
 #include "ldpaa_eth.h"

@@ -8,6 +8,7 @@
 #define BLK_H
 
 #include <efi.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_SYS_64BIT_LBA
 typedef uint64_t lbaint_t;

@@ -14,9 +14,11 @@
  *	 we should connect our code as controller.
  */
 
+#include <compiler.h>
 #include <efi_selftest.h>
 #include <net.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * MAC address for broadcasts

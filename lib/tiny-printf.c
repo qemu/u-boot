@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/ctype.h>
+#include <linux/types.h>
 
 struct printf_info {
 	char *bf;	/* Digit buffer */

@@ -20,6 +20,7 @@
 #include <asm/omap_common.h>
 #include <twl4030.h>
 #include <twl6030.h>
+#include <asm/types.h>
 #include "omap3.h"
 
 static int platform_needs_initialization = 1;

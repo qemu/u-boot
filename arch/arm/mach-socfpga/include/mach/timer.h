@@ -6,6 +6,7 @@
 #ifndef _SOCFPGA_TIMER_H_
 #define _SOCFPGA_TIMER_H_
 
+#include <asm/types.h>
 struct socfpga_timer {
 	u32	load_val;
 	u32	curr_val;

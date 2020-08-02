@@ -13,6 +13,7 @@
 #include <spi.h>
 #include <stdbool.h>
 #include <linux/bitops.h>
+#include <linux/types.h>
 
 struct acpi_ctx;
 struct gpio_desc;

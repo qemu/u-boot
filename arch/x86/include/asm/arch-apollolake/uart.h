@@ -15,6 +15,7 @@
  * The UART won't actually work unless the GPIO settings are correct and the
  * signals actually exit the SoC. See board_debug_uart_init() for that.
  */
+#include <linux/types.h>
 int apl_uart_init(pci_dev_t bdf, ulong base);
 
 #endif

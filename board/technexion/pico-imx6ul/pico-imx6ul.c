@@ -21,6 +21,7 @@
 #include <common.h>
 #include <miiphy.h>
 #include <netdev.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

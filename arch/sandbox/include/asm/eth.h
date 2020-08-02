@@ -11,6 +11,7 @@
 
 #include <net.h>
 #include <stdbool.h>
+#include <linux/types.h>
 
 void sandbox_eth_disable_response(int index, bool disable);
 

@@ -22,6 +22,7 @@
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <serial.h>
+#include <asm/types.h>
 #include <dm/platform_data/serial_bcm283x_mu.h>
 #include <dm/pinctrl.h>
 #include <linux/bitops.h>

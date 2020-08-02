@@ -7,6 +7,7 @@
 #define __BTRFS_BTRFS_TREE_H__
 
 #include <common.h>
+#include <compiler.h>
 
 #define BTRFS_VOL_NAME_MAX 255
 #define BTRFS_NAME_MAX 255

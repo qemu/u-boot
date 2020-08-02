@@ -12,6 +12,7 @@
 #include <regmap.h>
 #include <misc.h>
 #include <stdbool.h>
+#include <asm/types.h>
 
 struct gdsys_rxaui_ctrl_regs {
 	u16 gen_cnt;

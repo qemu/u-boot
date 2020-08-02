@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <axi.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 int axi_read(struct udevice *dev, ulong address, void *data,
 	     enum axi_size_t size)

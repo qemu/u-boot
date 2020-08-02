@@ -4,9 +4,11 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <asm/arch/fsl_serdes.h>
 #include <asm/arch/immap_ls102xa.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <asm/io.h>
 #include "fsl_ls1_serdes.h"

@@ -14,6 +14,7 @@
 #define _SUNXI_DRAM_SUN6I_H
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 #include <linux/bitops.h>
 #endif
 

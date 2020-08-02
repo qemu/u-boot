@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <stdio_dev.h>
 #include <i2c.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 
 #define I2C_DVI_INPUT_DATA_FORMAT_REG		0x1F

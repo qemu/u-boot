@@ -12,6 +12,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 typedef struct at91_dbu {
 	u32	cr;	/* Control Register WO */
 	u32	mr;	/* Mode Register  RW */

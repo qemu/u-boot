@@ -8,8 +8,10 @@
 
 #include <common.h>
 #include <div64.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/crm_regs.h>

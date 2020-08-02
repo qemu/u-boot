@@ -7,8 +7,10 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/clock_defs.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 
 /* DEV and ARM speed definitions as specified in DEVSPEED register */

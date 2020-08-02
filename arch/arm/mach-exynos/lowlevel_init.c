@@ -36,6 +36,7 @@
 #include <asm/arch/pinmux.h>
 #include <asm/arch/system.h>
 #include <asm/armv7.h>
+#include <linux/types.h>
 #include "common_setup.h"
 #include "exynos5_setup.h"
 

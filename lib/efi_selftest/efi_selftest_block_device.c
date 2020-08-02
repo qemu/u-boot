@@ -15,6 +15,7 @@
 
 #include <efi_selftest.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "efi_selftest_disk_image.h"
 #include <asm/cache.h>
 

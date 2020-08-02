@@ -8,6 +8,7 @@
 #define __ASM_ARCH_GPIO_H
 
 #ifndef __ASSEMBLY__
+#include <asm/types.h>
 struct s5p_gpio_bank {
 	unsigned int	con;
 	unsigned int	dat;

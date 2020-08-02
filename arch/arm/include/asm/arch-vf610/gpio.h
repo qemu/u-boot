@@ -7,6 +7,7 @@
 #ifndef __ASM_ARCH_VF610_GPIO_H
 #define __ASM_ARCH_VF610_GPIO_H
 
+#include <asm/types.h>
 #define VYBRID_GPIO_COUNT		32
 #define VF610_GPIO_DIRECTION_IN	0x0
 #define VF610_GPIO_DIRECTION_OUT	0x1

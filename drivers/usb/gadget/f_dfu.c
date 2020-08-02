@@ -20,6 +20,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>

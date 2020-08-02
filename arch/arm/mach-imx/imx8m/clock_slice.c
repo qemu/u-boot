@@ -6,10 +6,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
+#include <stdbool.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/imx-regs.h>
 #include <asm/io.h>
 #include <errno.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 

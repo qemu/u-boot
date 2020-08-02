@@ -19,6 +19,7 @@
 #include <asm/arch/gpio.h>
 #include <dt-bindings/gpio/x86-gpio.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

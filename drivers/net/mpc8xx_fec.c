@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <hang.h>
 #include <malloc.h>
 #include <net.h>
@@ -21,6 +22,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <phy.h>
 #include <linux/mii.h>

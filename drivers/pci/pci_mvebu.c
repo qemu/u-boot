@@ -10,9 +10,11 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
@@ -29,6 +31,7 @@
 #include <linux/kernel.h>
 #include <linux/mbus.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

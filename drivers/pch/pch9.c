@@ -8,6 +8,7 @@
 #include <log.h>
 #include <pch.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define GPIO_BASE	0x48
 #define IO_BASE		0x4c

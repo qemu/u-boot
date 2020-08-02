@@ -17,6 +17,7 @@
 #include <asm/io.h>
 #include <serial.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /* Information about the efi console */
 struct serial_efi_priv {

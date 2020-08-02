@@ -7,6 +7,7 @@
 #ifndef _WARM_BOOT_H_
 #define _WARM_BOOT_H_
 
+#include <asm/types.h>
 #define STRAP_OPT_A_RAM_CODE_SHIFT	4
 #define STRAP_OPT_A_RAM_CODE_MASK	(0xf << STRAP_OPT_A_RAM_CODE_SHIFT)
 

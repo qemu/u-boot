@@ -7,6 +7,7 @@
 #include <command.h>
 #include <errno.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <dm/uclass-internal.h>

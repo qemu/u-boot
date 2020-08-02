@@ -9,6 +9,7 @@
 #include <log.h>
 #include <mmc.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <dm/device-internal.h>
 #include <dm/device_compat.h>
@@ -16,6 +17,7 @@
 #include <linux/compat.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "mmc_private.h"
 
 int dm_mmc_get_b_max(struct udevice *dev, void *dst, lbaint_t blkcnt)

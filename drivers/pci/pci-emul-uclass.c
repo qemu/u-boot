@@ -12,6 +12,7 @@
 #include <linux/libfdt.h>
 #include <pci.h>
 #include <dm/lists.h>
+#include <linux/types.h>
 
 struct sandbox_pci_emul_priv {
 	int dev_count;

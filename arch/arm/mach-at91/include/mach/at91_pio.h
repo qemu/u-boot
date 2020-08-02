@@ -35,6 +35,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 typedef struct at91_port {
 	u32	per;		/* 0x00 PIO Enable Register */
 	u32	pdr;		/* 0x04 PIO Disable Register */

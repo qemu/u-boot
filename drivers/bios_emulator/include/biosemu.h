@@ -44,6 +44,7 @@
 #define __BIOSEMU_H
 
 #include <bios_emul.h>
+#include <linux/types.h>
 
 #ifdef __KERNEL__
 #include "x86emu.h"

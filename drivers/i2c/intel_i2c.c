@@ -18,6 +18,7 @@
 #include <asm/io.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* PCI Configuration Space (D31:F3): SMBus */
 #define SMB_BASE		0x20

@@ -7,6 +7,8 @@
 #define	_SDRAM_SOC64_H_
 
 #include <common.h>
+#include <compiler.h>
+#include <asm/types.h>
 #include <linux/sizes.h>
 
 struct altera_sdram_priv {

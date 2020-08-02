@@ -5,6 +5,7 @@
  */
 #include <log.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/string.h>
 #include <net/pfe_eth/pfe_eth.h>

@@ -57,6 +57,7 @@
 #include <asm/coldfire/qspi.h>
 #include <asm/coldfire/rng.h>
 #include <asm/coldfire/skha.h>
+#include <asm/types.h>
 
 /* System configuration registers
 */

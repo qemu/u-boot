@@ -46,6 +46,7 @@
  */
 
 #include <config.h>
+#include <asm/types.h>
 #include <jffs2/jffs2.h>
 
 void rtime_decompress(unsigned char *data_in, unsigned char *cpage_out,

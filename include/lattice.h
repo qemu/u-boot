@@ -13,6 +13,7 @@
 #ifndef _VME_OPCODE_H
 #define _VME_OPCODE_H
 
+#include <linux/types.h>
 #define VME_VERSION_NUMBER "12.1"
 
 /* Maximum declarations. */

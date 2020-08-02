@@ -5,10 +5,12 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <malloc.h>
 #include <stdbool.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <dm/pinctrl.h>
 #include <errno.h>

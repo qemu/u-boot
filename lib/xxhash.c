@@ -14,6 +14,7 @@
 #include <linux/kernel.h>
 #include <linux/compat.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <linux/xxhash.h>
 
 /*-*************************************

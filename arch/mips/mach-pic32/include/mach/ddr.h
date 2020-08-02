@@ -8,6 +8,7 @@
 #define __MICROCHIP_PIC32_DDR_H
 
 /* called by dram_init() function */
+#include <asm/types.h>
 void ddr2_phy_init(void);
 void ddr2_ctrl_init(void);
 phys_size_t ddr2_calculate_size(void);

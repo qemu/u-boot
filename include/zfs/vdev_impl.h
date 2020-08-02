@@ -11,6 +11,7 @@
 #ifndef _SYS_VDEV_IMPL_H
 #define	_SYS_VDEV_IMPL_H
 
+#include <linux/types.h>
 #define	VDEV_SKIP_SIZE		(8 << 10)
 #define	VDEV_BOOT_HEADER_SIZE	(8 << 10)
 #define	VDEV_PHYS_SIZE		(112 << 10)

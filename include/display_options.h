@@ -10,6 +10,7 @@
 #define __DISPLAY_OPTIONS_H
 
 #include <stdbool.h>
+#include <linux/types.h>
 
 /**
  * print_size() - Print a size with a suffix

@@ -10,6 +10,7 @@ int atmel_mci_init(void *regs);
 #ifndef __ASSEMBLY__
 
 /*
+#include <asm/types.h>
  * Structure for struct SoC access.
  * Names starting with '_' are fillers.
  */

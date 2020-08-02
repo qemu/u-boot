@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 int blk_common_cmd(int argc, char *const argv[], enum if_type if_type,
 		   int *cur_devnump)

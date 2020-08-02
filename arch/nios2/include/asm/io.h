@@ -8,6 +8,7 @@
 #define __ASM_NIOS2_IO_H_
 
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <linux/string.h>
 
 static inline void sync(void)

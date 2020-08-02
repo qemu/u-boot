@@ -24,6 +24,7 @@
 #include <asm/arch/clock.h>
 #endif
 #include <linux/errno.h>
+#include <linux/types.h>
 
 struct tegra_mmc_plat {
 	struct mmc_config cfg;

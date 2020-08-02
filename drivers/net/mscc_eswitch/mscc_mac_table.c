@@ -3,6 +3,8 @@
  * Copyright (c) 2018 Microsemi Corporation
  */
 
+#include <compiler.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/io.h>

@@ -17,6 +17,7 @@
 #include <cpu_func.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/byteorder.h>
 #include <usb.h>
@@ -26,6 +27,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <usb/xhci.h>
 

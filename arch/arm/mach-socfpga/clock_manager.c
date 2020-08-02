@@ -10,6 +10,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/arch/clock_manager.h>
+#include <asm/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

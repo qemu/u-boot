@@ -7,6 +7,7 @@
 #include <asm/io.h>
 #include <asm/arch/device.h>
 #include <asm/arch/quark.h>
+#include <asm/types.h>
 
 /*
  * Intel Galileo gen2 board uses GPIO Resume Well bank pin0 as the PERST# pin.

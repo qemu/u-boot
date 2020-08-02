@@ -8,6 +8,7 @@
 #include <cpu_func.h>
 #include <asm/cache.h>
 #include <watchdog.h>
+#include <linux/types.h>
 
 void flush_cache(ulong start_addr, ulong size)
 {

@@ -18,6 +18,7 @@
 #include <malloc.h>
 #include <vsprintf.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static int do_osd_write(struct cmd_tbl *cmdtp, int flag, int argc,
 			char *const argv[])

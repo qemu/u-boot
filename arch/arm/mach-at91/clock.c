@@ -13,6 +13,7 @@
 #include <asm/arch/hardware.h>
 #include <asm/arch/at91_pmc.h>
 #include <asm/arch/at91_wdt.h>
+#include <linux/types.h>
 
 #define EN_UPLL_TIMEOUT		500
 

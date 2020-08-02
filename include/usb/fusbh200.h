@@ -9,6 +9,7 @@
 #ifndef _FUSBH200_H
 #define _FUSBH200_H
 
+#include <linux/types.h>
 struct fusbh200_regs {
 	struct {
 		uint32_t data[4];

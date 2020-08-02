@@ -7,6 +7,7 @@
 #ifndef __IPROC_SDHCI_H
 #define __IPROC_SDHCI_H
 
+#include <asm/types.h>
 int iproc_sdhci_init(int dev_index, u32 quirks);
 
 #endif

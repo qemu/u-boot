@@ -20,6 +20,7 @@
 #include <kgdb.h>
 #include <asm/ppc.h>
 #include <asm/mpc8349_pci.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

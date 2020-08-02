@@ -12,6 +12,7 @@
  * Neil Russell.
  *
  * NOTE: This driver should be converted to driver model before June 2017.
+#include <linux/types.h>
  * Please see doc/driver-model/i2c-howto.rst for instructions.
  */
 

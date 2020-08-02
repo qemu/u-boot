@@ -12,6 +12,7 @@
 
 #include <linux/errno.h>
 #include <asm/byteorder.h>
+#include <linux/types.h>
 
 /* needed for the mmc_cfg definition */
 #include <mmc.h>

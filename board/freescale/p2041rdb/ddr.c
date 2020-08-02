@@ -17,6 +17,7 @@
 #include <fsl_ddr_dimm_params.h>
 #include <asm/fsl_law.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -7,6 +7,7 @@
 #ifndef __spi_davinci_h
 #define __spi_davinci_h
 
+#include <asm/types.h>
 struct davinci_spi_platdata {
 	struct davinci_spi_regs *regs;
 	u8 num_cs;	   /* total no. of CS available */

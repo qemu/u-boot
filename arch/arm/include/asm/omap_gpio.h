@@ -21,6 +21,7 @@
 #define _GPIO_H
 
 #include <asm/arch/cpu.h>
+#include <linux/types.h>
 
 #if CONFIG_IS_ENABLED(DM_GPIO)
 

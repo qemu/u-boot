@@ -69,6 +69,7 @@
 #endif /* VIRTIO_PCI_NO_LEGACY */
 
 /* The bit of the ISR which indicates a device configuration change */
+#include <linux/types.h>
 #define VIRTIO_PCI_ISR_CONFIG		0x2
 /* Vector value used to disable MSI for queue */
 #define VIRTIO_MSI_NO_VECTOR		0xffff

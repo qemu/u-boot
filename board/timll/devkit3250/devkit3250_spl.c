@@ -12,6 +12,7 @@
 #include <asm/arch/emc.h>
 #include <asm/arch-lpc32xx/gpio.h>
 #include <spl.h>
+#include <asm/types.h>
 
 static struct gpio_regs *gpio = (struct gpio_regs *)GPIO_BASE;
 

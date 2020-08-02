@@ -11,6 +11,7 @@
  * routines (lots of read-modify-writes) would be worst-case performance whether
  * or not circumstances required them.) */
 #include <linux/kernel.h>
+#include <linux/types.h>
 struct dpaa_fd {
 	union {
 		u32 words[8];

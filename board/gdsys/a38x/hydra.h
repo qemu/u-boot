@@ -1,3 +1,4 @@
+#include <linux/types.h>
 struct ihs_fpga {
 	u32 reflection_low;		/* 0x0000 */
 	u32 versions;			/* 0x0004 */

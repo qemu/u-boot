@@ -10,6 +10,7 @@
 #include <asm/io.h>
 #include <asm/immap_86xx.h>
 #include <asm/fsl_serdes.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 
 #define SRDS1_MAX_LANES		4

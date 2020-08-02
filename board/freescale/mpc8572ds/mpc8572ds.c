@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <env.h>
 #include <image.h>
 #include <init.h>
@@ -28,6 +29,7 @@
 #include <tsec.h>
 #include <fsl_mdio.h>
 #include <netdev.h>
+#include <linux/types.h>
 
 #include "../common/sgmii_riser.h"
 

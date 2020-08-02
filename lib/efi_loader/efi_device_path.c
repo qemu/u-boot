@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <log.h>
 #include <net.h>
+#include <stdbool.h>
 #include <usb.h>
 #include <mmc.h>
 #include <nvme.h>
@@ -21,6 +22,7 @@
 #include <linux/compat.h> /* U16_MAX */
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_SANDBOX
 const efi_guid_t efi_guid_host_dev = U_BOOT_HOST_DEV_GUID;

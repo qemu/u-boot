@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <env.h>
 #include <init.h>
 #include <net.h>
@@ -15,6 +16,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/gpio.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

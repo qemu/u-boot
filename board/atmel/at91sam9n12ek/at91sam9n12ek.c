@@ -21,6 +21,7 @@
 #include <atmel_hlcdc.h>
 #include <netdev.h>
 #include <asm/u-boot.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_LCD_INFO
 #include <nand.h>

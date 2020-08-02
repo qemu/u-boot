@@ -11,6 +11,7 @@
 #include <stdbool.h>
 #include <vsprintf.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define MAC_OUTPUT_LEN 22
 #define UNKNOWN_OUTPUT_LEN 23

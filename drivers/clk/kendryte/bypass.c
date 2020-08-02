@@ -14,6 +14,7 @@
 #include <linux/clk-provider.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #define CLK_K210_BYPASS "k210_clk_bypass"
 

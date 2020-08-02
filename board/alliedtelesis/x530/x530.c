@@ -13,6 +13,7 @@
 #include <wdt.h>
 #include <asm/global_data.h>
 #include <asm/gpio.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>

@@ -14,6 +14,7 @@
 #include <serial.h>
 #include <time.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <dm/device-internal.h>
 #include <dm/device_compat.h>
 #include <dm/lists.h>

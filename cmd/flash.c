@@ -14,6 +14,7 @@
 #include <uuid.h>
 #include <vsprintf.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #if defined(CONFIG_CMD_MTDPARTS)
 #include <jffs2/jffs2.h>

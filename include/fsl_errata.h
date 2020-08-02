@@ -15,6 +15,7 @@
 #include <asm/arch/soc.h>
 #endif
 #include <stdbool.h>
+#include <asm/types.h>
 
 
 #ifdef CONFIG_SYS_FSL_ERRATUM_A006379

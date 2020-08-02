@@ -10,12 +10,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <wdt.h>
 #include <asm/global_data.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/io.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

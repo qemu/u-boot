@@ -37,6 +37,7 @@
 *
 * Description:	This file includes subroutines to implement the decoding
 *		and emulation of all the x86 extended two-byte processor
+#include <linux/types.h>
 *		instructions.
 *
 ****************************************************************************/

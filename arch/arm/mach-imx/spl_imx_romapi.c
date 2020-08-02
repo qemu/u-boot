@@ -13,6 +13,7 @@
 #include <linux/libfdt.h>
 #include <spl.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <asm/arch/sys_proto.h>
 

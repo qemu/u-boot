@@ -6,6 +6,7 @@
 #ifndef _MV_DDR_COMMON_H
 #define _MV_DDR_COMMON_H
 
+#include <linux/types.h>
 extern const char mv_ddr_build_message[];
 extern const char mv_ddr_version_string[];
 

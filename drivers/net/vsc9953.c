@@ -22,6 +22,7 @@
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 static struct vsc9953_info vsc9953_l2sw = {
 		.port[0] = VSC9953_PORT_INFO_INITIALIZER(0),

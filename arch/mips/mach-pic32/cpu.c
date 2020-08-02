@@ -6,11 +6,13 @@
  */
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <init.h>
 #include <malloc.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <linux/types.h>
 #include <mach/pic32.h>
 #include <mach/ddr.h>
 #include <dt-bindings/clock/microchip,clock.h>

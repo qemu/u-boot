@@ -10,6 +10,7 @@
  * MUX register map for LPC32xx
  */
 
+#include <asm/types.h>
 struct mux_regs {
 	u32 reserved1[10];
 	u32 p2_mux_set;

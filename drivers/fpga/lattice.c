@@ -17,6 +17,7 @@
 #include <lattice.h>
 #include <stdio.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 static lattice_board_specific_func *pfns;
 static const char *fpga_image;

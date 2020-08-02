@@ -11,6 +11,7 @@
 #define _pwm_h_
 
 #include <stdbool.h>
+#include <linux/types.h>
 struct udevice;
 
 /* struct pwm_ops: Operations for the PWM uclass */

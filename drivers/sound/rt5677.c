@@ -11,6 +11,7 @@
 #include <i2c.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "rt5677.h"
 #include <log.h>
 

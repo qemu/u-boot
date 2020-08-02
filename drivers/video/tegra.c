@@ -17,6 +17,7 @@
 #include <asm/system.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 

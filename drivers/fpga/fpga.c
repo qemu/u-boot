@@ -6,6 +6,7 @@
 
 /* Generic FPGA support */
 #include <common.h>             /* core U-Boot definitions */
+#include <compiler.h>
 #include <init.h>
 #include <log.h>
 #include <stdio.h>
@@ -14,6 +15,7 @@
 #include <lattice.h>
 #include <dm/device_compat.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* Local definitions */
 #ifndef CONFIG_MAX_FPGA_DEVICES

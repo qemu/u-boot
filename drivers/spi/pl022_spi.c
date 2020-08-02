@@ -12,6 +12,7 @@
 #include <clk.h>
 #include <common.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <dm/platform_data/spi_pl022.h>
 #include <linux/errno.h>
@@ -19,6 +20,7 @@
 #include <spi.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #define SSP_CR0		0x000
 #define SSP_CR1		0x004

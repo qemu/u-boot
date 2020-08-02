@@ -18,6 +18,7 @@
 #include <stdio.h>
 #include <asm/gpio.h>
 #include <spi.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/kernel.h>
 

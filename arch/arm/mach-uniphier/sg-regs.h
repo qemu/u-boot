@@ -11,6 +11,7 @@
 #define UNIPHIER_SG_REGS_H
 
 #ifndef __ASSEMBLY__
+#include <compiler.h>
 #include <linux/compiler.h>
 #ifdef CONFIG_ARCH_UNIPHIER_V8_MULTI
 extern void __iomem *sg_base;

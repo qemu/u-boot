@@ -31,6 +31,7 @@
 #define DMA_BASE			(EP93XX_AHB_BASE | DMA_OFFSET)
 
 #ifndef __ASSEMBLY__
+#include <linux/types.h>
 struct dma_channel {
 	uint32_t control;
 	uint32_t interrupt;

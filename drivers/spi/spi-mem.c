@@ -18,6 +18,8 @@
 #include <errno.h>
 #include <malloc.h>
 #include <spi.h>
+#include <stdbool.h>
+#include <asm/types.h>
 #include <spi.h>
 #include <spi-mem.h>
 #include <dm/device_compat.h>

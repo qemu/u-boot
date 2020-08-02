@@ -25,6 +25,7 @@
 #include <miiphy.h>
 #include <spl.h>
 #include <watchdog.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

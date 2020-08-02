@@ -3,6 +3,7 @@
  * Copyright (C) 2016 Socionext Inc.
  */
 
+#include <compiler.h>
 #include <spl.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

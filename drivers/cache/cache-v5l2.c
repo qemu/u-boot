@@ -7,6 +7,7 @@
 #include <common.h>
 #include <command.h>
 #include <cache.h>
+#include <compiler.h>
 #include <dm.h>
 #include <hang.h>
 #include <stdio.h>
@@ -15,6 +16,7 @@
 #include <dm/ofnode.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 struct l2cache {
 	volatile u64	configure;

@@ -12,6 +12,7 @@
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 int dfu_tftp_write(char *dfu_entity_name, unsigned int addr, unsigned int len,
 		   char *interface, char *devstring)

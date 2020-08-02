@@ -7,6 +7,7 @@
 #define FSL_MMDC_H
 
 /* PHY Write Leveling Configuration and Error Status Register (MPWLGCR) */
+#include <asm/types.h>
 #define MPWLGCR_HW_WL_EN		(1 << 0)
 
 /* PHY Pre-defined Compare and CA delay-line Configuration (MPPDCMPR2) */

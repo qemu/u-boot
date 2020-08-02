@@ -9,6 +9,7 @@
 #include <log.h>
 #include <syscon.h>
 #include <asm/arch-rockchip/clock.h>
+#include <linux/types.h>
 
 static const struct udevice_id rk3288_syscon_ids[] = {
 	{ .compatible = "rockchip,rk3288-noc", .data = ROCKCHIP_SYSCON_NOC },

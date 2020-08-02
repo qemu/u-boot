@@ -60,6 +60,7 @@
   malloc_stats();
      Prints brief summary statistics on stderr.
   mallinfo()
+#include <linux/types.h>
      Returns (by copy) a struct containing various summary statistics.
   mallopt(int parameter_number, int parameter_value)
      Changes one of the tunable parameters described below. Returns

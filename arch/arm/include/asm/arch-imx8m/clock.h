@@ -7,6 +7,7 @@
 
 #include <stdbool.h>
 #include <linux/bitops.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_IMX8MQ
 #include <asm/arch/clock_imx8mq.h>

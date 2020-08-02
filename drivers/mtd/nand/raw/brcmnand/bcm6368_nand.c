@@ -1,9 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0+
 
 #include <common.h>
+#include <compiler.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <memalign.h>
 #include <nand.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/io.h>

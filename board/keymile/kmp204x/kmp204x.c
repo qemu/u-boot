@@ -27,6 +27,7 @@
 #include <asm/fsl_portals.h>
 #include <asm/fsl_liodn.h>
 #include <fm_eth.h>
+#include <linux/types.h>
 
 #include "../common/common.h"
 #include "../common/qrio.h"

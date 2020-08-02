@@ -18,4 +18,5 @@
  *
  * @return	The physical address of the memory which was set.
  */
+#include <asm/types.h>
 phys_addr_t arch_phys_memset(phys_addr_t s, int c, phys_size_t n);

@@ -6,6 +6,7 @@
 #include <asm/mach-imx/sys_proto.h>
 #include <imx_sip.h>
 #include <linux/arm-smccc.h>
+#include <linux/types.h>
 
 int sc_pm_setup_uart(sc_rsrc_t uart_rsrc, sc_pm_clock_rate_t clk_rate)
 {

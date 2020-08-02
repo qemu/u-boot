@@ -11,6 +11,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /* USB Vendor Requests */
 #define USB_VENDOR_REQUEST_WRITE_REGISTER	0xA0

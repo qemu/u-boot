@@ -1,6 +1,7 @@
 #ifndef __MPC8308_H_
 #define __MPC8308_H_
 
+#include <asm/types.h>
 void setbits_gpio0_out(u32 mask);
 void clrbits_gpio0_out(u32 mask);
 

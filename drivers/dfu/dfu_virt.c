@@ -3,11 +3,13 @@
  * Copyright (C) 2019, STMicroelectronics - All Rights Reserved
  */
 #include <common.h>
+#include <compiler.h>
 #include <dfu.h>
 #include <errno.h>
 #include <log.h>
 #include <malloc.h>
 #include <vsprintf.h>
+#include <linux/types.h>
 
 int __weak dfu_write_medium_virt(struct dfu_entity *dfu, u64 offset,
 				 void *buf, long *len)

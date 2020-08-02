@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <mmc.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
@@ -21,6 +22,7 @@
 #include <linux/io.h>
 #include <linux/kernel.h>
 #include <linux/sizes.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 #include <asm/unaligned.h>
 #include "tmio-common.h"

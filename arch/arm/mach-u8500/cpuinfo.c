@@ -7,6 +7,7 @@
 #include <init.h>
 #include <stdio.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 #define U8500_BOOTROM_BASE	0x90000000
 #define U8500_ASIC_ID_LOC_V2	(U8500_BOOTROM_BASE + 0x1DBF4)

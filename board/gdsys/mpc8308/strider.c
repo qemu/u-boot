@@ -11,6 +11,7 @@
 #include <i2c.h>
 #include <init.h>
 #include <spi.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/u-boot.h>
 #include <linux/bitops.h>
@@ -27,6 +28,7 @@
 #include <asm/fsl_mpc83xx_serdes.h>
 #include <asm/ppc.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "mpc8308.h"
 

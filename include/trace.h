@@ -6,6 +6,7 @@
 #ifndef __TRACE_H
 #define __TRACE_H
 
+#include <linux/types.h>
 enum {
 	/*
 	 * This affects the granularity of our trace. We can bin function

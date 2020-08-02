@@ -19,6 +19,9 @@
 
 #else
 
+#include <compiler.h>
+#include <linux/types.h>
+
 /* Convert a symbol address to our real mode area */
 #define PTR_TO_REAL_MODE(sym)\
 	(void *)(REALMODE_BASE + ((char *)&(sym) - (char *)&asm_realmode_code))

@@ -9,6 +9,7 @@
 #ifndef _FTMAC110_H
 #define _FTMAC110_H
 
+#include <linux/types.h>
 struct ftmac110_regs {
 	uint32_t isr;    /* 0x00: Interrups Status Register */
 	uint32_t imr;    /* 0x04: Interrupt Mask Register */

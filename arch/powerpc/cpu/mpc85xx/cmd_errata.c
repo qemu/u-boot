@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <init.h>
 #include <stdio.h>
 #include <linux/compiler.h>
@@ -13,6 +14,7 @@
 #include <asm/ppc.h>
 #include <fsl_usb.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "fsl_corenet_serdes.h"
 
 #ifdef CONFIG_SYS_FSL_ERRATUM_A004849

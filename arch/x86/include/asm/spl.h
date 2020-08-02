@@ -7,6 +7,7 @@
 #ifndef __asm_spl_h
 #define __asm_spl_h
 
+#include <linux/types.h>
 #define CONFIG_SPL_BOARD_LOAD_IMAGE
 
 enum {

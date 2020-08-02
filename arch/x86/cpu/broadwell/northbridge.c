@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
 #include <stdio.h>
 #include <asm/global_data.h>
@@ -13,6 +14,7 @@
 #include <asm/arch/pch.h>
 #include <asm/arch/pei_data.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 __weak asmlinkage void sdram_console_tx_byte(unsigned char byte)
 {

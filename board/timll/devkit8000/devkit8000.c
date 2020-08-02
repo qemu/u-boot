@@ -31,6 +31,7 @@
 #include <asm/arch/mem.h>
 #include <asm/mach-types.h>
 #include <asm/u-boot.h>
+#include <linux/types.h>
 #include "devkit8000.h"
 #include <asm/gpio.h>
 #ifdef CONFIG_DRIVER_DM9000

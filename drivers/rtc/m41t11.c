@@ -17,6 +17,7 @@
 #include <rtc.h>
 #include <i2c.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 /*
 	I Don't have an example config file but this

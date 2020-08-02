@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <asm/io.h>
 #include <asm/unaligned.h>
@@ -13,6 +14,7 @@
 #include <linux/kernel.h>
 #include <linux/mtd/rawnand.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "denali.h"
 
 #define DENALI_MAP01		(1 << 26)	/* read/write pages in PIO */

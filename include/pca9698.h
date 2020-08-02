@@ -7,6 +7,7 @@
 #ifndef __PCA9698_H_
 #define __PCA9698_H_
 
+#include <asm/types.h>
 int pca9698_request(unsigned gpio, const char *label);
 void pca9698_free(unsigned gpio);
 int pca9698_direction_input(u8 addr, unsigned gpio);

@@ -11,6 +11,7 @@
 #ifndef __UTMI_ARMADA100__
 #define __UTMI_ARMADA100__
 
+#include <asm/types.h>
 #define UTMI_PHY_BASE		0xD4206000
 
 /* utmi_ctrl - bits */

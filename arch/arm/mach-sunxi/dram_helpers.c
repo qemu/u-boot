@@ -12,6 +12,7 @@
 #include <asm/barriers.h>
 #include <asm/io.h>
 #include <asm/arch/dram.h>
+#include <linux/types.h>
 
 /*
  * Wait up to 1s for value to be set in given part of reg.

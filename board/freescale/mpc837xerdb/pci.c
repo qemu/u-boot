@@ -9,6 +9,7 @@
 #include <pci.h>
 #include <asm/io.h>
 #include <asm/ppc.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 
 static struct pci_region pci_regions[] = {

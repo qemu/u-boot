@@ -4,6 +4,7 @@
  * Copyright (C) 2015-2016 Socionext Inc.
  */
 
+#include <compiler.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
@@ -11,6 +12,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <time.h>
+#include <linux/types.h>
 
 #include "ddrphy-init.h"
 #include "ddrphy-regs.h"

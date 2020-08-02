@@ -6,6 +6,7 @@
 #ifndef __DDR_H__
 #define __DDR_H__
 
+#include <asm/types.h>
 extern void erratum_a008850_post(void);
 
 struct board_specific_parameters {

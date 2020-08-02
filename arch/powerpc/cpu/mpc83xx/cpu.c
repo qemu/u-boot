@@ -32,6 +32,7 @@
 #include <linux/immap_qe.h>
 #include <asm/io.h>
 #endif
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

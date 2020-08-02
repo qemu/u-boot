@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <asm/hob.h>
+#include <asm/types.h>
 
 /**
  * A GUID to get MemoryMap info hob which is provided by Slim Bootloader

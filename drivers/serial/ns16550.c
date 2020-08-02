@@ -13,6 +13,7 @@
 #include <ns16550.h>
 #include <reset.h>
 #include <serial.h>
+#include <stdbool.h>
 #include <watchdog.h>
 #include <asm/global_data.h>
 #include <linux/err.h>

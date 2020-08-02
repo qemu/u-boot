@@ -7,11 +7,13 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <command.h>
 #include <display_options.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <misc.h>

@@ -8,6 +8,7 @@
 #include <common.h>
 #include <asm/io.h>
 #include <asm/ti-common/keystone_nav.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 

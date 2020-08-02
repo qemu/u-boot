@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <dm.h>
 #include <elf.h>
@@ -14,10 +15,12 @@
 #include <log.h>
 #include <malloc.h>
 #include <rtc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 
 /* For manual relocation support */

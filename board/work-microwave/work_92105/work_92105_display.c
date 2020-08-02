@@ -25,6 +25,7 @@
 #include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * GPO 15 in port 3 is gpio 3*32+15 = 111

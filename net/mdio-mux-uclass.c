@@ -9,6 +9,7 @@
 #include <log.h>
 #include <miiphy.h>
 #include <stdbool.h>
+#include <asm/types.h>
 #include <dm/device-internal.h>
 #include <dm/uclass-internal.h>
 #include <dm/lists.h>

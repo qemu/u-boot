@@ -12,11 +12,13 @@
 #include <power-domain.h>
 #include <regmap.h>
 #include <sdhci.h>
+#include <stdbool.h>
 #include <time.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /* CTL_CFG Registers */
 #define CTL_CFG_2		0x14

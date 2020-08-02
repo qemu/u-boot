@@ -21,6 +21,7 @@
 #include <tsec.h>
 #include <fdt_support.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 void fsl_sgmii_riser_init(struct tsec_info_struct *tsec_info, int num)
 {

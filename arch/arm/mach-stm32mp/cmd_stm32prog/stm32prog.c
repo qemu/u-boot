@@ -10,6 +10,7 @@
 #include <misc.h>
 #include <mmc.h>
 #include <part.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/arch/stm32mp1_smc.h>
@@ -24,6 +25,7 @@
 #include <linux/printk.h>
 #include <linux/sizes.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "stm32prog.h"
 

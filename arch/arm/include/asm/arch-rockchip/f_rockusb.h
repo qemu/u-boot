@@ -8,6 +8,7 @@
 #ifndef _F_ROCKUSB_H_
 #define _F_ROCKUSB_H_
 #include <blk.h>
+#include <linux/types.h>
 
 #define ROCKUSB_VERSION		"0.1"
 

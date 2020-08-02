@@ -8,6 +8,7 @@
 #include <asm/io.h>
 #include <asm/immap_85xx.h>
 #include <asm/fsl_serdes.h>
+#include <asm/types.h>
 
 static u32 port_to_devdisr[] = {
 	[FM1_DTSEC1] = MPC85xx_DEVDISR_TSEC1,

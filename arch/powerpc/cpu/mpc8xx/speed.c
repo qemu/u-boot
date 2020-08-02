@@ -6,10 +6,12 @@
 
 #include <common.h>
 #include <clock_legacy.h>
+#include <compiler.h>
 #include <mpc8xx.h>
 #include <asm/global_data.h>
 #include <asm/ppc.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

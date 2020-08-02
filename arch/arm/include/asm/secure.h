@@ -9,6 +9,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 typedef struct secure_svc_tbl {
 	u32	id;
 #ifdef CONFIG_ARMV8_PSCI

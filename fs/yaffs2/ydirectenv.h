@@ -25,6 +25,7 @@
 #include <stdio.h>
 #include <linux/compat.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "yaffs_osglue.h"
 

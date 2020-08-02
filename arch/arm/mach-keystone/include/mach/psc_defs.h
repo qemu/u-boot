@@ -8,6 +8,7 @@
 
 #include <stdbool.h>
 #include <asm/arch/hardware.h>
+#include <asm/types.h>
 
 /*
  * FILE PURPOSE: Local Power Sleep Controller definitions

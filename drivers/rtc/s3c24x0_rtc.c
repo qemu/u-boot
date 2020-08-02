@@ -11,6 +11,7 @@
 #include <common.h>
 #include <command.h>
 #include <stdio.h>
+#include <linux/types.h>
 
 #include <asm/arch/s3c24x0_cpu.h>
 

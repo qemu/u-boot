@@ -24,6 +24,7 @@
 #include <errno.h>
 #include <spi.h>
 #include <spi-mem.h>
+#include <stdbool.h>
 #include <time.h>
 #include <vsprintf.h>
 #include <dm/device_compat.h>
@@ -34,6 +35,7 @@
 #include <linux/mtd/spinand.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #endif
 
 /* SPI NAND index visible in MTD names */

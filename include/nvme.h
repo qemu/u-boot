@@ -7,6 +7,7 @@
 #ifndef __NVME_H__
 #define __NVME_H__
 
+#include <asm/types.h>
 struct nvme_dev;
 
 /**

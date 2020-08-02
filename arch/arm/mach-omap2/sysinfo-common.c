@@ -9,6 +9,7 @@
 #include <asm/arch/omap.h>
 #include <asm/io.h>
 #include <asm/omap_common.h>
+#include <asm/types.h>
 
 /**
  * Tell if device is GP/HS/EMU/TST.

@@ -3,6 +3,7 @@
  * Copyright (C) 2015 Masahiro Yamada <yamada.masahiro@socionext.com>
  */
 
+#include <asm/types.h>
 #include <linux/io.h>
 
 #include "../init.h"

@@ -10,6 +10,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <stdbool.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <tee/optee.h>
 

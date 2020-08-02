@@ -12,6 +12,7 @@
 #include <asm/arch/clock.h>
 #include <asm/io.h>
 #include <asm/arch/sys_proto.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 
 static u32 mx31_decode_pll(u32 reg, u32 infreq)

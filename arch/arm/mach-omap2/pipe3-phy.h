@@ -9,6 +9,8 @@
 #ifndef __OMAP_PIPE3_PHY_H
 #define __OMAP_PIPE3_PHY_H
 
+#include <compiler.h>
+#include <asm/types.h>
 struct pipe3_dpll_params {
 	u16     m;
 	u8      n;

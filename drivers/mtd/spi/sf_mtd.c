@@ -13,6 +13,7 @@
 #include <linux/mtd/mtd.h>
 #include <spi_flash.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static struct mtd_info sf_mtd_info;
 static bool sf_mtd_registered;

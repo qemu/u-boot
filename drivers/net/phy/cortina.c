@@ -27,6 +27,7 @@
 #elif defined(CONFIG_SYS_CORTINA_FW_IN_MMC)
 #include <mmc.h>
 #endif
+#include <linux/types.h>
 
 #ifndef CONFIG_PHYLIB_10G
 #error The Cortina PHY needs 10G support

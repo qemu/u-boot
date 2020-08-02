@@ -22,6 +22,7 @@
 #include <asm/arch/fsp/fsp_m_upd.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static int prepare_mrc_cache_type(enum mrc_type_t type,
 				  struct mrc_data_container **cachep)

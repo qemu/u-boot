@@ -11,6 +11,7 @@
 * PLL Clock Module
 *********************************************************************/
 /* Bit definitions and macros for PLL_SYNCR */
+#include <linux/types.h>
 #define PLL_SYNCR_LOLRE			(0x8000)
 #define PLL_SYNCR_MFD2			(0x4000)
 #define PLL_SYNCR_MFD1			(0x2000)

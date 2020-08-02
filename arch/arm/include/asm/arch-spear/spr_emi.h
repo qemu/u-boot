@@ -34,4 +34,5 @@ struct emi_regs {
 
 #endif
 
+#include <asm/types.h>
 #endif

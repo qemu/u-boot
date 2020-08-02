@@ -11,6 +11,7 @@
 #include <log.h>
 #include <pci.h>
 #include <usb.h>
+#include <linux/types.h>
 #include <usb/xhci.h>
 
 static void xhci_pci_init(struct udevice *dev, struct xhci_hccr **ret_hccr,

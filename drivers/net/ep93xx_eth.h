@@ -10,6 +10,7 @@
 #define _EP93XX_ETH_H
 
 #include <net.h>
+#include <linux/types.h>
 
 /**
  * #define this to dump device status and queue info during initialization and

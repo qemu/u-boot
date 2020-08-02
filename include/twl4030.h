@@ -13,6 +13,7 @@
 
 #include <common.h>
 #include <i2c.h>
+#include <asm/types.h>
 
 /* I2C chip addresses */
 

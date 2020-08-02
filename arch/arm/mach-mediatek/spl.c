@@ -9,6 +9,7 @@
 #include <hang.h>
 #include <init.h>
 #include <spl.h>
+#include <linux/types.h>
 
 #include "init.h"
 

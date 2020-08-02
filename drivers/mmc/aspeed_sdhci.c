@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <malloc.h>
 #include <sdhci.h>
+#include <asm/types.h>
 #include <linux/err.h>
 
 struct aspeed_sdhci_plat {

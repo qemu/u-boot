@@ -14,6 +14,7 @@
  */
 
 #include <config.h>
+#include <asm/types.h>
 
 #include <common.h>
 #include <asm/io.h>

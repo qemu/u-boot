@@ -11,6 +11,7 @@
  *  Richard Purdie <rpurdie@openedhand.com>
  */
 
+#include <linux/types.h>
 #define LZO_VERSION		0x2020
 #define LZO_VERSION_STRING	"2.02"
 #define LZO_VERSION_DATE	"Oct 17 2005"

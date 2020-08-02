@@ -7,6 +7,7 @@
 #define SC_PM_API_H
 
 /* Defines for sc_pm_power_mode_t */
+#include <asm/types.h>
 #define SC_PM_PW_MODE_OFF	0U /* Power off */
 #define SC_PM_PW_MODE_STBY	1U /* Power in standby */
 #define SC_PM_PW_MODE_LP	2U /* Power in low-power */

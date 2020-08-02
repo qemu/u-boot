@@ -13,6 +13,7 @@
 #include <misc.h>
 #include <p2sb.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 struct sandbox_adder_priv {
 	ulong base;

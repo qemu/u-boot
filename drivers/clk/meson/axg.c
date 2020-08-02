@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/arch/clock-axg.h>
 #include <asm/io.h>
 #include <clk-uclass.h>
@@ -18,6 +19,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 #include "clk_meson.h"
 #include <linux/err.h>
 

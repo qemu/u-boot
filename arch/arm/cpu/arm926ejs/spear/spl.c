@@ -18,6 +18,7 @@
 #include <asm/arch/spr_misc.h>
 #include <asm/arch/spr_syscntl.h>
 #include <linux/mtd/st_smi.h>
+#include <linux/types.h>
 
 /* Reserve some space to store the BootROM's stack pointer during SPL operation.
  * The BSS cannot be used for this purpose because it will be zeroed after

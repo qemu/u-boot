@@ -15,6 +15,7 @@
 #include <asm/io.h>
 #include <fsl_diu_fb.h>
 #include <asm/ppc.h>
+#include <asm/types.h>
 #include <linux/string.h>
 #include "../common/pixis.h"
 

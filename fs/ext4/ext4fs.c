@@ -31,6 +31,7 @@
 #include <uuid.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "ext4_common.h"
 
 int ext4fs_symlinknest;

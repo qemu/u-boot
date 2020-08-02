@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <asm/io.h>
 #include <mach/pic32.h>
 

@@ -20,6 +20,7 @@
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "../common/spl.h"
 
 DECLARE_GLOBAL_DATA_PTR;

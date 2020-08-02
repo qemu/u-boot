@@ -11,6 +11,7 @@
 #ifndef __UEC_PHY_H__
 #define __UEC_PHY_H__
 
+#include <asm/types.h>
 #define MII_end ((u32)-2)
 #define MII_read ((u32)-1)
 

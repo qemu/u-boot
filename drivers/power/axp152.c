@@ -7,6 +7,7 @@
 #include <command.h>
 #include <asm/arch/pmic_bus.h>
 #include <axp_pmic.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 
 static u8 axp152_mvolt_to_target(int mvolt, int min, int max, int div)

@@ -9,6 +9,7 @@
 #include <asm/io.h>
 #include <asm/arch/handoff_s10.h>
 #include <asm/arch/system_manager.h>
+#include <asm/types.h>
 
 const struct cm_config * const cm_get_default_config(void)
 {

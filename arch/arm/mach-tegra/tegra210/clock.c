@@ -24,6 +24,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /*
  * Clock types that we can use as a source. The Tegra210 has muxes for the

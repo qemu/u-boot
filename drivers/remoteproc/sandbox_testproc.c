@@ -12,6 +12,7 @@
 #include <asm/io.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 /**
  * enum sandbox_state - different device states

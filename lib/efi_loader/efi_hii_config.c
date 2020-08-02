@@ -1,5 +1,6 @@
 // SPDX-License-Identifier:     GPL-2.0+
 /*
+#include <asm/types.h>
  *  EFI Human Interface Infrastructure ... Configuration
  *
  *  Copyright (c) 2017 Leif Lindholm

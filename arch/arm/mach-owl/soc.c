@@ -16,6 +16,7 @@
 #include <asm/io.h>
 #include <asm/mach-types.h>
 #include <asm/psci.h>
+#include <linux/types.h>
 
 #define DMM_INTERLEAVE_PER_CH_CFG	0xe0290028
 

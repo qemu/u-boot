@@ -21,6 +21,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 
 /* STMFX pins = GPIO[15:0] + aGPIO[7:0] */

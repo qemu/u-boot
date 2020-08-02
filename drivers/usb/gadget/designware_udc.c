@@ -13,6 +13,7 @@
 #include <linux/delay.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <env.h>
 #include <usbdevice.h>

@@ -15,6 +15,7 @@
 #include <miiphy.h>
 #include <net.h>
 #include <netdev.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
@@ -27,6 +28,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <u-boot/crc.h>
 # include <atsha204a-i2c.h>
 

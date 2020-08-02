@@ -5,6 +5,7 @@
 
 #ifndef __DDR_H__
 #define __DDR_H__
+#include <asm/types.h>
 struct board_specific_parameters {
 	u32 n_ranks;
 	u32 datarate_mhz_high;

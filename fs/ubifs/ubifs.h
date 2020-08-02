@@ -37,6 +37,7 @@
 #include <ubifs_uboot.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #include <linux/ctype.h>
 #include <linux/time.h>

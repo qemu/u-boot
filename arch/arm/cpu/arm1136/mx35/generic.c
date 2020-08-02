@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/errno.h>
 #include <asm/arch/imx-regs.h>

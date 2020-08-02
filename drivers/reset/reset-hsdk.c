@@ -6,10 +6,12 @@
  * Author: Eugeniy Paltsev <Eugeniy.Paltsev@synopsys.com>
  */
 
+#include <compiler.h>
 #include <log.h>
 #include <asm/io.h>
 #include <common.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/iopoll.h>

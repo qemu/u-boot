@@ -3,6 +3,7 @@
  * (C) Copyright 2015 Freescale Semiconductor, Inc.
  */
 
+#include <asm/types.h>
 struct watchdog_regs {
 	u16	wcr;	/* Control */
 	u16	wsr;	/* Service */

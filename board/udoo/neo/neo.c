@@ -37,6 +37,7 @@
 #include <miiphy.h>
 #include <netdev.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <power/pmic.h>
 #include <power/pfuze3000_pmic.h>
 #include <malloc.h>

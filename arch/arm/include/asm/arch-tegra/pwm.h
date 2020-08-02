@@ -9,6 +9,7 @@
 #define __ASM_ARCH_TEGRA_PWM_H
 
 /* This is a single PWM channel */
+#include <linux/types.h>
 struct pwm_ctlr {
 	uint control;		/* Control register */
 	uint reserved[3];	/* Space space */

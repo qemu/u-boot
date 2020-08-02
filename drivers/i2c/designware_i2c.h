@@ -11,6 +11,7 @@
 #include <i2c.h>
 #include <reset.h>
 #include <stdbool.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 
 struct i2c_regs {

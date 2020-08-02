@@ -12,6 +12,7 @@
 #include <log.h>
 #include <mapmem.h>
 #include <pwrseq.h>
+#include <stdbool.h>
 #include <syscon.h>
 #include <asm/gpio.h>
 #include <asm/arch-rockchip/clock.h>
@@ -19,6 +20,7 @@
 #include <linux/delay.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 struct rockchip_mmc_plat {
 #if CONFIG_IS_ENABLED(OF_PLATDATA)

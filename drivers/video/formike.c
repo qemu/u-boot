@@ -10,6 +10,7 @@
 #include <log.h>
 #include <spi.h>
 #include <stdio.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 
 #define TAG_READ	0x80

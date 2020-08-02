@@ -4,6 +4,7 @@
  */
 #include <common.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 #include "ax88796.h"
 
 /*

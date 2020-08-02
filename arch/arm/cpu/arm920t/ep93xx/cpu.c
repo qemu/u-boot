@@ -12,6 +12,7 @@
 #include <cpu_func.h>
 #include <asm/arch/ep93xx.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 /* We reset the CPU by generating a 1-->0 transition on DeviceCfg bit 31. */
 extern void reset_cpu(ulong addr)

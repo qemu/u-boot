@@ -9,6 +9,7 @@
 #include <log.h>
 #include <miiphy.h>
 #include <i2c.h>
+#include <linux/types.h>
 
 /*
  * This driver is used for MDIO muxes driven by writing to a register of an I2C

@@ -2,9 +2,11 @@
 /*
  * Copyright (C) 2019-20 Sean Anderson <seanga2@gmail.com>
  */
+#include <stdbool.h>
 #include <kendryte/clk.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include <asm/io.h>
 #include <dt-bindings/clock/k210-sysctl.h>

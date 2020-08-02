@@ -25,6 +25,7 @@
 #define SYSRST_CNT_1SEC_VAL		(25*1000000)
 #define KW_REG_MPP_OUT_DRV_REG		(KW_MPP_BASE + 0xE0)
 
+#include <asm/types.h>
 enum memory_bank {
 	BANK0,
 	BANK1,

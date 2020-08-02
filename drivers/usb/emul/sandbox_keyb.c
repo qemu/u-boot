@@ -13,6 +13,7 @@
 #include <usb.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * This driver emulates a USB keyboard using the USB HID specification (boot

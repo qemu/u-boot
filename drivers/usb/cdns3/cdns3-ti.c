@@ -6,9 +6,11 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <asm-generic/io.h>
 #include <clk.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>

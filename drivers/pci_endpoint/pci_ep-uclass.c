@@ -17,6 +17,7 @@
 #include <linux/kernel.h>
 #include <linux/log2.h>
 #include <pci_ep.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

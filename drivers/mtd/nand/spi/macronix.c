@@ -10,6 +10,7 @@
 #include <linux/device.h>
 #include <linux/kernel.h>
 #endif
+#include <asm/types.h>
 #include <linux/bug.h>
 #include <linux/errno.h>
 #include <linux/mtd/spinand.h>

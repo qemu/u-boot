@@ -9,6 +9,7 @@
 #define NDS32_BOOTM_H
 
 #include <asm/setup.h>
+#include <asm/types.h>
 
 extern void udc_disconnect(void);
 

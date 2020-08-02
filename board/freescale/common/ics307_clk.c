@@ -6,6 +6,7 @@
 #include <common.h>
 #include <log.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/kernel.h>
 
 #include "ics307_clk.h"

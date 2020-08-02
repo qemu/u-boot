@@ -3,9 +3,12 @@
  * Copyright (C) 2019-20 Sean Anderson <seanga2@gmail.com>
  */
 #define LOG_CATEGORY UCLASS_CLK
+#include <compiler.h>
+#include <stdbool.h>
 #include <kendryte/pll.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include <common.h>
 #include <dm.h>

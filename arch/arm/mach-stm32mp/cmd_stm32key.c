@@ -14,6 +14,7 @@
 #include <dm/uclass.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define STM32_OTP_HASH_KEY_START 24
 #define STM32_OTP_HASH_KEY_SIZE 8

@@ -61,6 +61,7 @@
 #define DCD_CHECK_BITS_CLR_PARAM	0x04
 
 #ifndef __ASSEMBLY__
+#include <linux/types.h>
 enum imximage_cmd {
 	CMD_INVALID,
 	CMD_IMAGE_VERSION,

@@ -5,6 +5,7 @@
  */
 
 /*
+#include <linux/types.h>
  * this structure mirrors the layout of the five port registers in
  * the internal memory map
  */

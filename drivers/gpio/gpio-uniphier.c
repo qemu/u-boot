@@ -5,7 +5,9 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <dm.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/io.h>
 #include <linux/sizes.h>

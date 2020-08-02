@@ -9,6 +9,7 @@
  * Sricharan R <r.sricharan@ti.com>
  */
 #include <common.h>
+#include <compiler.h>
 #include <palmas.h>
 #include <stdio.h>
 #include <asm/arch/omap.h>
@@ -18,6 +19,7 @@
 #include <asm/omap_gpio.h>
 #include <asm/io.h>
 #include <asm/emif.h>
+#include <asm/types.h>
 
 struct prcm_regs const **prcm =
 			(struct prcm_regs const **) OMAP_SRAM_SCRATCH_PRCM_PTR;

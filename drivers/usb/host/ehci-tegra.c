@@ -19,6 +19,7 @@
 #include <asm/arch-tegra/clk_rst.h>
 #include <usb.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <usb/ulpi.h>
 #include <linux/libfdt.h>
 

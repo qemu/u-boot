@@ -19,6 +19,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/soc/ti/ti_sci_protocol.h>
+#include <linux/types.h>
 #include "ti_sci_proc.h"
 
 #define INVALID_ID	0xffff

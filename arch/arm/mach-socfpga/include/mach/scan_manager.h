@@ -6,6 +6,7 @@
 #ifndef	_SCAN_MANAGER_H_
 #define	_SCAN_MANAGER_H_
 
+#include <asm/types.h>
 struct socfpga_scan_manager {
 	u32	stat;
 	u32	en;

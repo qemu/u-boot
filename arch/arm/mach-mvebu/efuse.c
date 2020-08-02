@@ -10,6 +10,7 @@
 #include <asm/arch/cpu.h>
 #include <asm/arch/efuse.h>
 #include <asm/arch/soc.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

@@ -31,12 +31,14 @@
 #include <linux/slab.h>
 #include <linux/major.h>
 #else
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <linux/bug.h>
 #include <linux/errno.h>
 #include <linux/log2.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #endif
 #include <linux/err.h>
 #include <ubi_uboot.h>

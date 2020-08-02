@@ -10,6 +10,7 @@
 #include <android_image.h>
 #include <malloc.h>
 #include <errno.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/unaligned.h>
 #include <mapmem.h>
@@ -17,6 +18,7 @@
 #include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define ANDROID_IMAGE_DEFAULT_KERNEL_ADDR	0x10008000
 

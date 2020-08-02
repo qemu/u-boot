@@ -8,6 +8,8 @@
 #include <asm/arch-rockchip/sdram_common.h>
 
 #ifndef __ASSEMBLY__
+#include <compiler.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #endif
 

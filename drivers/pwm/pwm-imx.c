@@ -14,6 +14,7 @@
 #include <stdbool.h>
 #include <asm/arch/imx-regs.h>
 #include <asm/io.h>
+#include <linux/types.h>
 #include "pwm-imx-util.h"
 
 int pwm_init(int pwm_id, int div, int invert)

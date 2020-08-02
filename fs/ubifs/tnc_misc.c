@@ -20,6 +20,7 @@
 #include <dm/devres.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #endif
 #include "ubifs.h"
 

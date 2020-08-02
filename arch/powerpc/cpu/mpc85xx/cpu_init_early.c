@@ -10,6 +10,7 @@
 #include <asm/mmu.h>
 #include <asm/fsl_law.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -14,6 +14,8 @@
 #include <log.h>
 #include <malloc.h>
 #include <reset-uclass.h>
+#include <stdbool.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <linux/err.h>
 #include <linux/errno.h>

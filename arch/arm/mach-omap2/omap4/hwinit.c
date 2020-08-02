@@ -19,6 +19,7 @@
 #include <asm/emif.h>
 #include <asm/arch/gpio.h>
 #include <asm/omap_common.h>
+#include <linux/types.h>
 
 u32 *const omap_si_rev = (u32 *)OMAP_SRAM_SCRATCH_OMAP_REV;
 

@@ -39,6 +39,7 @@
  * to @c->max_write_size bytes again. We do this by temporarily shrinking
  * write-buffer size (@wbuf->size).
  *
+#include <linux/types.h>
  * Write-buffers are defined by 'struct ubifs_wbuf' objects and protected by
  * mutexes defined inside these objects. Since sometimes upper-level code
  * has to lock the write-buffer (e.g. journal space reservation code), many

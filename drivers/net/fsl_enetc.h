@@ -8,6 +8,7 @@
 #define _ENETC_H
 
 #include <linux/bitops.h>
+#include <linux/types.h>
 #define enetc_dbg(dev, fmt, args...)	debug("%s:" fmt, dev->name, ##args)
 
 /* PCI function IDs */

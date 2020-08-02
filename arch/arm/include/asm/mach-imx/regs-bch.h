@@ -17,6 +17,7 @@
 #include <asm/mach-imx/regs-common.h>
 
 #ifndef	__ASSEMBLY__
+#include <linux/types.h>
 struct mxs_bch_regs {
 	mxs_reg_32(hw_bch_ctrl)
 	mxs_reg_32(hw_bch_status0)

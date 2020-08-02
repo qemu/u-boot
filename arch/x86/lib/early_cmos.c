@@ -13,6 +13,7 @@
 #include <common.h>
 #include <asm/early_cmos.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 u8 cmos_read8(u8 addr)
 {

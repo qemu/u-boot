@@ -8,8 +8,10 @@
 #ifndef __FSL_PHY_H__
 #define __FSL_PHY_H__
 
+#include <compiler.h>
 #include <net.h>
 #include <miiphy.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 
 struct tsec_mii_mng {

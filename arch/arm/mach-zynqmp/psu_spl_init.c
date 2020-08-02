@@ -5,8 +5,10 @@
  * Michal Simek <michal.simek@xilinx.com>
  */
 #include <common.h>
+#include <compiler.h>
 #include <asm/io.h>
 #include <asm/arch/psu_init_gpl.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 
 #define PSU_MASK_POLL_TIME 1100000

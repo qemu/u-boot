@@ -24,6 +24,7 @@
 #include <linux/kernel.h>
 #include <linux/mii.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "usb_ether.h"
 
 /* SMSC LAN95xx based USB 2.0 Ethernet Devices */

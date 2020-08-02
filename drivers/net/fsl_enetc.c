@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <memalign.h>
 #include <net.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <asm/cache.h>
 #include <asm/io.h>
@@ -21,6 +22,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "fsl_enetc.h"
 

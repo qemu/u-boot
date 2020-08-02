@@ -14,6 +14,7 @@
 #include <efi_loader.h>
 #include <linker_lists.h>
 #include <stdbool.h>
+#include <asm/types.h>
 
 #define EFI_ST_SUCCESS 0
 #define EFI_ST_FAILURE 1

@@ -9,6 +9,7 @@
 #include <asm/io.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/arch/hardware.h>
+#include <asm/types.h>
 #include <linux/string.h>
 
 #ifndef CONFIG_ZYNQ_DDRC_INIT

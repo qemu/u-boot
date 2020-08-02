@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <asm/arch/clk_synthesizer.h>
 #include <i2c.h>
+#include <asm/types.h>
 
 /**
  * clk_synthesizer_reg_read - Read register from synthesizer.

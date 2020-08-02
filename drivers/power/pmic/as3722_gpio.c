@@ -6,6 +6,7 @@
 #include <common.h>
 #include <dm.h>
 #include <asm/gpio.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <power/as3722.h>

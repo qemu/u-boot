@@ -29,6 +29,7 @@
  * Monitor Command Table
  */
 
+#include <linux/types.h>
 struct cmd_tbl {
 	char		*name;		/* Command Name			*/
 	int		maxargs;	/* maximum number of arguments	*/

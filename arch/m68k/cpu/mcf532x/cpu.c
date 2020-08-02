@@ -17,6 +17,7 @@
 #include <command.h>
 #include <netdev.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 

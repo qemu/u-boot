@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <log.h>
 #include <pch.h>
+#include <stdbool.h>
 #include <asm/cpu.h>
 #include <asm/global_data.h>
 #include <asm/gpio.h>
@@ -28,6 +29,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #define BIOS_CTRL	0xdc
 

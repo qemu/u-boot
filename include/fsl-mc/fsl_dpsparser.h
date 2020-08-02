@@ -8,6 +8,7 @@
 #define _FSL_DPSPARSER_H
 
 /* DPSPARSER last supported API version */
+#include <asm/types.h>
 #define DPSPARSER_VER_MAJOR				1
 #define DPSPARSER_VER_MINOR				0
 

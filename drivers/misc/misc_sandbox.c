@@ -10,6 +10,7 @@
 #include <stdbool.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 struct misc_sandbox_priv {
 	u8 mem[128];

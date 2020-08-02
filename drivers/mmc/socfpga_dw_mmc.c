@@ -14,6 +14,7 @@
 #include <errno.h>
 #include <fdtdec.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>
 #include <linux/libfdt.h>

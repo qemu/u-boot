@@ -4,6 +4,7 @@
  *
  */
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <errno.h>
 #include <dm.h>
@@ -20,6 +21,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/mii.h>
+#include <linux/types.h>
 
 #include "pic32_eth.h"
 

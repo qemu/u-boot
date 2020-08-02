@@ -15,6 +15,7 @@
 #include <dm/device-internal.h>
 #include <clk.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 int clk_register(struct clk *clk, const char *drv_name,
 		 const char *name, const char *parent_name)

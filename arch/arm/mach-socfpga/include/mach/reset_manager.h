@@ -6,6 +6,7 @@
 #ifndef _RESET_MANAGER_H_
 #define _RESET_MANAGER_H_
 
+#include <linux/types.h>
 phys_addr_t socfpga_get_rstmgr_addr(void);
 
 void reset_cpu(ulong addr);

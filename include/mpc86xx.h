@@ -40,6 +40,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/types.h>
 typedef struct {
 	unsigned long freq_processor;
 	unsigned long freq_systembus;

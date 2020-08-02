@@ -11,6 +11,7 @@
 
 #include <asm/mach-imx/sys_proto.h>
 #include <asm/u-boot.h>
+#include <linux/types.h>
 
 int mxsmmc_initialize(struct bd_info *bis, int id, int (*wp)(int),
 		      int (*cd)(int));

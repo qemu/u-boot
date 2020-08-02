@@ -19,6 +19,7 @@
 #include <console.h>
 #include <dm.h>
 #include <init.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/processor.h>
@@ -27,6 +28,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 struct pci_reg_info {
 	const char *name;

@@ -11,6 +11,7 @@
 #include <sdhci.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <mach/pic32.h>
 

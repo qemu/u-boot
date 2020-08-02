@@ -6,6 +6,7 @@
 #ifndef AT91_ST_H
 #define AT91_ST_H
 
+#include <asm/types.h>
 typedef struct at91_st {
 
 	u32	cr;

@@ -17,7 +17,9 @@
 #ifndef __UBOOT__
 #include <linux/io.h>
 #else
+#include <compiler.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #endif
 
 #if !defined(CONFIG_ARM) && !defined(CONFIG_SUPERH) \

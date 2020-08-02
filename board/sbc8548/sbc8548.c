@@ -29,6 +29,7 @@
 #include <linux/delay.h>
 #include <linux/libfdt.h>
 #include <fdt_support.h>
+#include <linux/types.h>
 
 void local_bus_init(void);
 

@@ -11,6 +11,7 @@
 #ifndef	_SYS_FS_ZFS_ZNODE_H
 #define	_SYS_FS_ZFS_ZNODE_H
 
+#include <linux/types.h>
 #include <zfs/zfs_acl.h>
 
 #define	MASTER_NODE_OBJ	1

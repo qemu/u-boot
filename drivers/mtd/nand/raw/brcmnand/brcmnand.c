@@ -13,6 +13,8 @@
  */
 
 #include <common.h>
+#include <compiler.h>
+#include <stdbool.h>
 #include <time.h>
 #include <vsprintf.h>
 #include <asm/io.h>
@@ -32,6 +34,7 @@
 #include <asm/processor.h>
 #include <dm.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "brcmnand.h"
 #include "brcmnand_compat.h"

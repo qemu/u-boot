@@ -9,6 +9,7 @@
 #ifndef _TVE_H
 #define _TVE_H
 
+#include <asm/types.h>
 enum tve_mode {
 	tve_mode_vga,
 	tve_mode_composite_pal,

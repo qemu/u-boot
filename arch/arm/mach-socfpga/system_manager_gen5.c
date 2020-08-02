@@ -7,6 +7,7 @@
 #include <asm/io.h>
 #include <asm/arch/system_manager.h>
 #include <asm/arch/fpga_manager.h>
+#include <asm/types.h>
 
 /*
  * Populate the value for SYSMGR.FPGAINTF.MODULE based on pinmux setting.

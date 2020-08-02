@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <log.h>
 #include <asm/axi.h>
+#include <asm/types.h>
 #include <dm/test.h>
 #include <linux/kernel.h>
 #include <test/test.h>

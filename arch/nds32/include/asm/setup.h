@@ -13,6 +13,7 @@
 #ifndef __ASMNDS32_SETUP_H
 #define __ASMNDS32_SETUP_H
 
+#include <asm/types.h>
 #define COMMAND_LINE_SIZE 256
 
 /* The list ends with an ATAG_NONE node. */

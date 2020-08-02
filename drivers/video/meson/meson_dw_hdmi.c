@@ -5,10 +5,12 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <display.h>
 #include <dm.h>
 #include <edid.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <dw_hdmi.h>
 #include <dm/device-internal.h>
@@ -17,6 +19,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 #include <power/regulator.h>
 #include <clk.h>
 #include <linux/delay.h>

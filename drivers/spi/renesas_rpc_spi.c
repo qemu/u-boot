@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
@@ -21,6 +22,7 @@
 #include <wait_bit.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define RPC_CMNCR		0x0000	/* R/W */
 #define RPC_CMNCR_MD		BIT(31)

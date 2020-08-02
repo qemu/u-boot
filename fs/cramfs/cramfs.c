@@ -34,6 +34,7 @@
 #include <jffs2/load_kernel.h>
 #include <cramfs/cramfs_fs.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* These two macros may change in future, to provide better st_ino
    semantics. */

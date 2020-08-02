@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <miiphy.h>
 #include <phy.h>
 #include <fsl_mdio.h>
@@ -14,6 +15,7 @@
 #include <asm/u-boot.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_DM_MDIO
 struct tsec_mdio_priv {

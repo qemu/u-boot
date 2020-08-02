@@ -19,6 +19,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/sizes.h>
+#include <linux/types.h>
 #include "cadence_qspi.h"
 
 #define CQSPI_STIG_READ			0

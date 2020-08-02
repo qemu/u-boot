@@ -10,6 +10,7 @@
  * Format from "JEDEC Standard No. 21-C,
  * Appendix D: Rev 1.0: SPD's for DDR SDRAM
  */
+#include <linux/types.h>
 typedef struct ddr1_spd_eeprom_s {
 	unsigned char info_size;   /*  0 # bytes written into serial memory */
 	unsigned char chip_size;   /*  1 Total # bytes of SPD memory device */

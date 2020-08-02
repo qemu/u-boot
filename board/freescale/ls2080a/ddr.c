@@ -13,6 +13,7 @@
 #include <asm/arch/clock.h>
 #include <asm/global_data.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "ddr.h"
 
 DECLARE_GLOBAL_DATA_PTR;

@@ -32,6 +32,7 @@
 * Environment:  Any
 * Developer:    Kendall Bennett
 *
+#include <linux/types.h>
 * Description:  Header file for instruction decoding logic.
 *
 ****************************************************************************/

@@ -30,6 +30,8 @@
  * This driver:
  *
  * - Reads out the SDRAM address decoding windows at initialization
+#include <compiler.h>
+#include <linux/types.h>
  *   time, and fills the mbus_dram_info structure with these
  *   informations. The exported function mv_mbus_dram_info() allow
  *   device drivers to get those informations related to the SDRAM

@@ -13,6 +13,7 @@
  *	Rajendra Nayak <rnayak@ti.com>
  */
 #include <common.h>
+#include <compiler.h>
 #include <hang.h>
 #include <i2c.h>
 #include <init.h>
@@ -22,6 +23,7 @@
 #include <asm/gpio.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/sys_proto.h>
+#include <asm/types.h>
 #include <asm/utils.h>
 #include <asm/omap_gpio.h>
 #include <asm/emif.h>

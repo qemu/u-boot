@@ -16,6 +16,7 @@
 #include <i2c.h>
 #include <linux/ctype.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "ventana_eeprom.h"
 #include "gsc.h"

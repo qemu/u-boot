@@ -11,6 +11,7 @@
 #ifndef	_SYS_DMU_OBJSET_H
 #define	_SYS_DMU_OBJSET_H
 
+#include <linux/types.h>
 #include <zfs/zil.h>
 
 #define OBJSET_PHYS_SIZE	2048

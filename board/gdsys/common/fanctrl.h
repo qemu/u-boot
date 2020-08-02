@@ -7,6 +7,7 @@
 #ifndef _FANCTRL_H_
 #define _FANCTRL_H_
 
+#include <asm/types.h>
 void init_fan_controller(u8 addr);
 
 #endif

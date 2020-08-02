@@ -6,6 +6,7 @@
 #include <common.h>
 #include <errno.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 #define PCI_DEV_CONFIG(segbus, dev, fn) ( \
 		(((segbus) & 0xfff) << 20) | \

@@ -9,6 +9,7 @@
 
 #include <stdbool.h>
 #include <time.h>
+#include <linux/types.h>
 
 /**
  * Go into the command loop

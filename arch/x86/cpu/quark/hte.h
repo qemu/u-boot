@@ -10,6 +10,7 @@
 #ifndef _HTE_H_
 #define _HTE_H_
 
+#include <asm/types.h>
 enum {
 	MRC_MEM_INIT,
 	MRC_MEM_TEST

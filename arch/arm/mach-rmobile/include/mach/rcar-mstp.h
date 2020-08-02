@@ -9,6 +9,7 @@
 #ifndef __ASM_ARCH_RCAR_MSTP_H
 #define __ASM_ARCH_RCAR_MSTP_H
 
+#include <asm/types.h>
 #define mstp_setbits(type, addr, saddr, set) \
 		out_##type((saddr), in_##type(addr) | (set))
 #define mstp_clrbits(type, addr, saddr, clear) \

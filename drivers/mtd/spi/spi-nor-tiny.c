@@ -11,6 +11,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <dm/device_compat.h>
@@ -22,6 +23,7 @@
 #include <linux/printk.h>
 #include <linux/sizes.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <linux/mtd/mtd.h>
 #include <linux/mtd/spi-nor.h>

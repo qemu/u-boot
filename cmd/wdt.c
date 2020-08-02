@@ -12,6 +12,7 @@
 #include <vsprintf.h>
 #include <wdt.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 static struct udevice *currdev;
 

@@ -18,6 +18,7 @@
 #include <asm/arch/sys_proto.h>
 #include <watchdog.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 #include <linux/string.h>
 

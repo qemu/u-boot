@@ -6,6 +6,7 @@
 #ifndef __ASM_FSP_API_H
 #define __ASM_FSP_API_H
 
+#include <asm/types.h>
 #include <linux/linkage.h>
 
 enum fsp_phase {

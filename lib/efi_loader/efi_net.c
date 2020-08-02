@@ -19,9 +19,11 @@
 #include <efi_loader.h>
 #include <malloc.h>
 #include <net.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static const efi_guid_t efi_net_guid = EFI_SIMPLE_NETWORK_PROTOCOL_GUID;
 static const efi_guid_t efi_pxe_base_code_protocol_guid =

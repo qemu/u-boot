@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/io.h>
@@ -19,6 +20,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* Ethernet chip registers. */
 #define SCB_STATUS		0	/* Rx/Command Unit Status *Word* */

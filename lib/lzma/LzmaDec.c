@@ -4,6 +4,7 @@
 #include <config.h>
 #include <common.h>
 #include <watchdog.h>
+#include <linux/types.h>
 #include "LzmaDec.h"
 
 #include <linux/string.h>

@@ -30,6 +30,8 @@
  * VIDEO_HW_RECTFILL	      - graphic driver supports hardware rectangle fill
  * VIDEO_HW_BITBLT	      - graphic driver supports hardware bit blt
  *
+#include <compiler.h>
+#include <stdbool.h>
  * Console Parameters are set by graphic drivers global struct:
  *
  * VIDEO_VISIBLE_COLS	      - x resolution

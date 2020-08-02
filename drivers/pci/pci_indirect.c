@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <asm/types.h>
 
 #if !defined(__I386__) && !defined(CONFIG_DM_PCI)
 

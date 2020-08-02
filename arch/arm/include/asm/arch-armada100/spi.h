@@ -12,6 +12,7 @@
 #define __ARMADA100_SPI_H_
 
 #include <asm/arch/armada100.h>
+#include <asm/types.h>
 
 #define CAT_BASE_ADDR(x)	ARMD1_SSP ## x ## _BASE
 #define SSP_REG_BASE(x)		CAT_BASE_ADDR(x)

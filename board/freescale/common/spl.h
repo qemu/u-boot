@@ -6,6 +6,7 @@
 #ifndef __FREESCALE_BOARD_SPL_H
 #define __FREESCALE_BOARD_SPL_H
 
+#include <linux/types.h>
 void fsl_spi_spl_load_image(uint32_t offs, unsigned int size, void *vdst);
 void fsl_spi_boot(void) __noreturn;
 

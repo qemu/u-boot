@@ -7,6 +7,7 @@
 #define _WDT_H_
 
 /* Watchdog timer (SP805) register base address */
+#include <asm/types.h>
 #define WDT_BASE	0x100E5000
 
 #define WDT_EN		0x2

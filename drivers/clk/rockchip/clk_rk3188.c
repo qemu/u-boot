@@ -12,6 +12,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <mapmem.h>
+#include <stdbool.h>
 #include <syscon.h>
 #include <asm/io.h>
 #include <asm/arch-rockchip/clock.h>
@@ -28,6 +29,7 @@
 #include <linux/kernel.h>
 #include <linux/log2.h>
 #include <linux/stringify.h>
+#include <linux/types.h>
 
 enum rk3188_clk_type {
 	RK3188_CRU,

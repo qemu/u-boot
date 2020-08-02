@@ -9,6 +9,7 @@
 #define _NAND_H_
 
 #include <config.h>
+#include <linux/types.h>
 
 /*
  * All boards using a given driver must convert to self-init

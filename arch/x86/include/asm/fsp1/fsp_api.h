@@ -7,6 +7,7 @@
 #ifndef __FSP1_API_H__
 #define __FSP1_API_H__
 
+#include <asm/types.h>
 #include <linux/linkage.h>
 #include <asm/fsp/fsp_api.h>
 /*

@@ -9,6 +9,7 @@
 #include <stdbool.h>
 #include <vsprintf.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 /* - phase defines ------------------------------------------------*/
 #define PHASE_FLASHLAYOUT	0x00

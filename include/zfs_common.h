@@ -23,6 +23,7 @@
 #define __ZFS_COMMON__
 
 #include <part.h>
+#include <linux/types.h>
 
 #define SECTOR_SIZE			0x200
 #define SECTOR_BITS			9

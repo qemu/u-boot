@@ -7,7 +7,9 @@
 #ifndef TRICORDER_EEPROM_H_
 #define TRICORDER_EEPROM_H_
 
+#include <compiler.h>
 #include <linux/compiler.h>
+#include <linux/types.h>
 
 #define TRICORDER_EEPROM_MAGIC 0xc2a94f52
 #define TRICORDER_EEPROM_VERSION 1

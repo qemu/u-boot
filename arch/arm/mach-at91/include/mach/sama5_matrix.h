@@ -9,6 +9,7 @@
 #ifndef __SAMA5_MATRIX_H
 #define __SAMA5_MATRIX_H
 
+#include <asm/types.h>
 struct atmel_matrix {
 	u32 mcfg[16];	/* 0x00 ~ 0x3c: Master Configuration Register */
 	u32 scfg[16];	/* 0x40 ~ 0x7c: Slave Configuration Register */

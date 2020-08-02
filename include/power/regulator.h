@@ -8,6 +8,7 @@
 #define _INCLUDE_REGULATOR_H_
 
 #include <stdbool.h>
+#include <asm/types.h>
 struct udevice;
 
 /**

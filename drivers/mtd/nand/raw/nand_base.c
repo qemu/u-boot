@@ -34,6 +34,7 @@
 #endif
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <time.h>
 #include <watchdog.h>
 #include <asm/global_data.h>
@@ -55,6 +56,7 @@
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /* Define default oob placement schemes for large and small page devices */
 #ifndef CONFIG_SYS_NAND_DRIVER_ECC_LAYOUT

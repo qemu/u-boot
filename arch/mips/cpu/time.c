@@ -8,6 +8,7 @@
 #include <compiler.h>
 #include <time.h>
 #include <asm/mipsregs.h>
+#include <linux/types.h>
 
 unsigned long notrace timer_read_counter(void)
 {

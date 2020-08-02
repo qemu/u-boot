@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <dm/test.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <test/test.h>
 #include <test/ut.h>
 

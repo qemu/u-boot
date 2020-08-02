@@ -9,6 +9,7 @@
 
 #include <common.h>
 #include <linux/bitops.h>
+#include <linux/types.h>
 
 enum clk_ctl_ops {
 	CLK_SET		= BIT(0), /* set frequency */

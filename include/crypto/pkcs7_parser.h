@@ -13,6 +13,7 @@
 #include <crypto/pkcs7.h>
 #include <crypto/x509_parser.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #define kenter(FMT, ...) \
 	pr_devel("==> %s("FMT")\n", __func__, ##__VA_ARGS__)

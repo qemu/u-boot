@@ -4,11 +4,13 @@
 // Author: Vignesh Raghavendra <vigneshr@ti.com>
 
 #include <common.h>
+#include <compiler.h>
 #include <stdbool.h>
 #include <asm/io.h>
 #include <dm.h>
 #include <regmap.h>
 #include <syscon.h>
+#include <asm/types.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>
 

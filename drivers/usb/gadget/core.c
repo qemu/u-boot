@@ -19,6 +19,7 @@
 #include <malloc.h>
 #include <serial.h>
 #include <usbdevice.h>
+#include <asm/types.h>
 
 #define MAX_INTERFACES 2
 

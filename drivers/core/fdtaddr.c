@@ -15,6 +15,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <dm/device-internal.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

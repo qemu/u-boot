@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <stdio.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static struct capitalization_table capitalization_table[] =
 #ifdef CONFIG_EFI_UNICODE_CAPITALIZATION

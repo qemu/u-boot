@@ -13,6 +13,7 @@
 #include <asm/io.h>
 #include <asm/setjmp.h>
 #include <asm/system.h>
+#include <asm/types.h>
 
 /*
  * Force the jmp_buf to the data-section, as .bss will not be valid

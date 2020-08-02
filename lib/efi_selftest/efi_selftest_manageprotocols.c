@@ -14,6 +14,7 @@
 #include <efi_selftest.h>
 #include <stdio.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * The test currently does not actually call the interface function.

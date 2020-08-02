@@ -84,4 +84,5 @@ struct ca_i2c {
 #define I2C_STOPDET_TO		(CONFIG_SYS_HZ / 500)
 #define I2C_BYTE_TO_BB		(10)
 
+#include <asm/types.h>
 #endif							/* __CA_I2C_H_ */

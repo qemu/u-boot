@@ -17,6 +17,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "eeprom.h"
 
 #ifndef CONFIG_SYS_I2C_EEPROM_ADDR

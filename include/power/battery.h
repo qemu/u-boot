@@ -7,6 +7,7 @@
 #ifndef __POWER_BATTERY_H_
 #define __POWER_BATTERY_H_
 
+#include <linux/types.h>
 struct battery {
 	unsigned int version;
 	unsigned int state_of_chrg;

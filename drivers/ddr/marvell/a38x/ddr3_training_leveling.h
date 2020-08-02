@@ -6,6 +6,7 @@
 #ifndef _DDR3_TRAINING_LEVELING_H_
 #define _DDR3_TRAINING_LEVELING_H_
 
+#include <asm/types.h>
 #define MAX_DQ_READ_LEVELING_DELAY 15
 
 int ddr3_tip_print_wl_supp_result(u32 dev_num);

@@ -12,6 +12,7 @@
 #include <spl.h>
 #include <stdio.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 #include <asm/io.h>
 #include <asm/spl.h>

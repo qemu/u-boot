@@ -9,6 +9,7 @@
 #ifndef _SUNXI_WATCHDOG_H_
 #define _SUNXI_WATCHDOG_H_
 
+#include <asm/types.h>
 #define WDT_CTRL_RESTART	(0x1 << 0)
 #define WDT_CTRL_KEY		(0x0a57 << 1)
 

@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "part_amiga.h"
 #include <part.h>
 

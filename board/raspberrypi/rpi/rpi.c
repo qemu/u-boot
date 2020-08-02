@@ -14,6 +14,7 @@
 #include <lcd.h>
 #include <memalign.h>
 #include <mmc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/gpio.h>
@@ -29,6 +30,7 @@
 #include <watchdog.h>
 #include <dm/pinctrl.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -12,6 +12,7 @@
 #include <log.h>
 #include <stdbool.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include <power/tps65090.h>
 
 static int cros_ec_ldo_set_bus_speed(struct udevice *dev, unsigned int speed)

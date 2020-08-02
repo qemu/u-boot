@@ -33,6 +33,7 @@
 #include <malloc.h>
 #include <stdio_dev.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #include "novena.h"
 

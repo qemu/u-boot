@@ -16,10 +16,12 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <asm/cpm_85xx.h>
 #include <serial.h>
 #include <asm/global_data.h>
 #include <linux/compiler.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

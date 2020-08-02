@@ -12,6 +12,7 @@
 #include <linux/kernel.h>
 #include <linux/string.h>
 #include <rng.h>
+#include <linux/types.h>
 
 #define RK_HW_RNG_MAX 32
 

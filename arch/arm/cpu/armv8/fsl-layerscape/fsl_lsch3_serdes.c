@@ -5,12 +5,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <env.h>
 #include <log.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/io.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

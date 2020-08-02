@@ -8,16 +8,19 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <efi_loader.h>
 #include <malloc.h>
 #include <pe.h>
 #include <sort.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <crypto/pkcs7_parser.h>
 #include <linux/err.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 const efi_guid_t efi_global_variable_guid = EFI_GLOBAL_VARIABLE_GUID;
 const efi_guid_t efi_guid_device_path = EFI_DEVICE_PATH_PROTOCOL_GUID;

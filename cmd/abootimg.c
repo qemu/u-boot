@@ -13,6 +13,7 @@
 #include <vsprintf.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #define abootimg_addr() \
 	(_abootimg_addr == -1 ? image_load_addr : _abootimg_addr)

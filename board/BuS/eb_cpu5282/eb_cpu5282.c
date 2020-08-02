@@ -13,6 +13,7 @@
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include "asm/m5282.h"
 #include <bmp_layout.h>
 #include <env.h>

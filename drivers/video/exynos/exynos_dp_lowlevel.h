@@ -8,6 +8,7 @@
 #ifndef _EXYNOS_EDP_LOWLEVEL_H
 #define _EXYNOS_EDP_LOWLEVEL_H
 
+#include <asm/types.h>
 void exynos_dp_enable_video_bist(struct exynos_dp *dp_regs,
 				 unsigned int enable);
 void exynos_dp_enable_video_mute(struct exynos_dp *dp_regs,

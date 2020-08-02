@@ -37,6 +37,7 @@
 */
 
 #include <efi.h>
+#include <linux/types.h>
 
 #include <elf.h>
 

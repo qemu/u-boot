@@ -10,6 +10,7 @@
 #include <miiphy.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <mv88e6352.h>

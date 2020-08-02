@@ -11,6 +11,7 @@
 #include <asm/arch/clock.h>
 #include <asm/arch-tegra/clk_rst.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 static int tegra_car_clk_request(struct clk *clk)
 {

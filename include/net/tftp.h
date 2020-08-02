@@ -16,6 +16,7 @@
  */
 
 /* tftp.c */
+#include <linux/types.h>
 void tftp_start(enum proto_t protocol);	/* Begin TFTP get/put */
 
 #ifdef CONFIG_CMD_TFTPSRV

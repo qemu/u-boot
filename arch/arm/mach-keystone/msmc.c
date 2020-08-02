@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <asm/arch/msmc.h>
+#include <asm/types.h>
 
 struct mpax {
 	u32	mpaxl;

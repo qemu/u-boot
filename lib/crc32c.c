@@ -12,6 +12,7 @@
 
 #include <common.h>
 #include <compiler.h>
+#include <linux/types.h>
 
 uint32_t crc32c_cal(uint32_t crc, const char *data, int length,
 		    uint32_t *crc32c_table)

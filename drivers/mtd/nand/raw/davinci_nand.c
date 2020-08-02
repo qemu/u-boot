@@ -29,6 +29,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <log.h>
 #include <asm/io.h>
 #include <nand.h>
@@ -37,6 +38,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 /* Definitions for 4-bit hardware ECC */
 #define NAND_TIMEOUT			10240

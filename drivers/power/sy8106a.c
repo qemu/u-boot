@@ -6,6 +6,7 @@
 #include <common.h>
 #include <i2c.h>
 #include <sy8106a.h>
+#include <asm/types.h>
 
 #define SY8106A_I2C_ADDR 0x65
 #define SY8106A_VOUT1_SEL 1

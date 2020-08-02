@@ -20,6 +20,7 @@
 #include <asm/arch/adsp.h>
 #include <asm/arch/pch.h>
 #include <asm/arch/rcb.h>
+#include <asm/types.h>
 #include <linux/errno.h>
 
 enum pci_type_t {

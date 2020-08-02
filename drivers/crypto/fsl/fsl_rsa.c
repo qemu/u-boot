@@ -11,6 +11,7 @@
 #include <asm/types.h>
 #include <malloc.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include "jobdesc.h"
 #include "desc.h"
 #include "jr.h"

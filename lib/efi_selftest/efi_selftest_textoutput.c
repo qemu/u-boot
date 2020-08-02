@@ -11,6 +11,7 @@
  */
 
 #include <efi_selftest.h>
+#include <linux/types.h>
 
 /*
  * Execute unit test.

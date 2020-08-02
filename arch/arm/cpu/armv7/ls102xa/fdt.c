@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <clock_legacy.h>
+#include <compiler.h>
 #include <net.h>
 #include <stdio.h>
 #include <vsprintf.h>
@@ -25,6 +26,7 @@
 #include <fsl_sec.h>
 #include <dm.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

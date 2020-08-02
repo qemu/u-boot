@@ -28,6 +28,7 @@
 #define MMAP_USB	(CONFIG_SYS_MBAR + 0x00001000)
 
 #include <asm/coldfire/pwm.h>
+#include <linux/types.h>
 
 /* System configuration registers */
 typedef struct sys_ctrl {

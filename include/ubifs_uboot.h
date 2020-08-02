@@ -14,6 +14,7 @@
 #ifndef __UBIFS_UBOOT_H__
 #define __UBIFS_UBOOT_H__
 
+#include <linux/types.h>
 struct blk_desc;
 struct disk_partition;
 

@@ -10,6 +10,7 @@
 #define _TEGRA124_CLOCK_H_
 
 #include <asm/arch-tegra/clock.h>
+#include <asm/types.h>
 
 /* CLK_RST_CONTROLLER_OSC_CTRL_0 */
 #define OSC_FREQ_SHIFT          28

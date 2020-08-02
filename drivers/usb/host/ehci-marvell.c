@@ -12,6 +12,7 @@
 #include <usb.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 #include "ehci.h"
 #include <linux/mbus.h>
 #include <asm/arch/cpu.h>

@@ -55,6 +55,7 @@
 #include <linux/kernel.h>
 #include <linux/mbus.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include <asm/arch/soc.h>
 #if defined(CONFIG_ARCH_KIRKWOOD)

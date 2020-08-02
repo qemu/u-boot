@@ -8,6 +8,7 @@
 #include <init.h>
 #include <net.h>
 #include <asm/global_data.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/io.h>

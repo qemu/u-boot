@@ -8,6 +8,7 @@
 #include <asm/arch/siul.h>
 #include <asm/arch/lpddr2.h>
 #include <asm/arch/mmdc.h>
+#include <linux/types.h>
 
 volatile int mscr_offset_ck0;
 

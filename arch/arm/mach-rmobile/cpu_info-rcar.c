@@ -6,6 +6,7 @@
  */
 #include <common.h>
 #include <asm/io.h>
+#include <asm/types.h>
 
 #define PRR_MASK		0x7fff
 #define R8A7796_REV_1_0		0x5200

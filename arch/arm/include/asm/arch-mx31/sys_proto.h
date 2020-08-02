@@ -8,6 +8,7 @@
 #define _MX31_SYS_PROTO_H_
 
 #include <asm/mach-imx/sys_proto.h>
+#include <asm/types.h>
 #include <asm/u-boot.h>
 
 struct mxc_weimcs {

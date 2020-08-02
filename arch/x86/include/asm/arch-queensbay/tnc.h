@@ -7,6 +7,7 @@
 #define _X86_ARCH_TNC_H_
 
 /* IGD Function Disable Register */
+#include <asm/types.h>
 #define IGD_FD		0xc4
 #define FUNC_DISABLE	0x00000001
 

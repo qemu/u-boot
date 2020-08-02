@@ -17,6 +17,7 @@
 #include <palmas.h>
 #include <sata.h>
 #include <serial.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <usb.h>
 #include <errno.h>
@@ -39,6 +40,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <linux/usb/gadget.h>
 #include <dwc3-uboot.h>
 #include <dwc3-omap-uboot.h>

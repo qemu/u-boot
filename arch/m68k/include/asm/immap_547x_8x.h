@@ -45,6 +45,7 @@
 #include <asm/coldfire/flexbus.h>
 #include <asm/coldfire/flexcan.h>
 #include <asm/coldfire/intctrl.h>
+#include <asm/types.h>
 
 typedef struct siu {
 	u32 mbar;		/* 0x00 */

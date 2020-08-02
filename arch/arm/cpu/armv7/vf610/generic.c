@@ -6,6 +6,7 @@
 #include <common.h>
 #include <clock_legacy.h>
 #include <command.h>
+#include <compiler.h>
 #include <cpu_func.h>
 #include <init.h>
 #include <net.h>
@@ -22,6 +23,7 @@
 #ifdef CONFIG_FSL_ESDHC_IMX
 #include <fsl_esdhc_imx.h>
 #endif
+#include <asm/types.h>
 #include <asm/u-boot.h>
 #include <linux/errno.h>
 #include <linux/string.h>

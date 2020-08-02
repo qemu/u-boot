@@ -11,6 +11,7 @@
 #include <efi_selftest.h>
 #include <stdbool.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static const struct efi_boot_services *boottime;
 static const struct efi_runtime_services *runtime;

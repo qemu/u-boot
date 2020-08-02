@@ -19,6 +19,7 @@
 #include <asm/gpio.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/at91_pio.h>
+#include <linux/types.h>
 
 #define GPIO_PER_BANK	32
 

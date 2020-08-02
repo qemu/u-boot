@@ -6,6 +6,7 @@
 #ifndef _EVM_H_
 #define _EVM_H_
 
+#include <asm/types.h>
 const omap3_sysinfo sysinfo = {
 	DDR_DISCRETE,
 	"OMAP3 EVM board",

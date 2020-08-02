@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <init.h>
 #include <log.h>
 #include <net.h>
@@ -21,6 +22,7 @@
 #include <linux/libfdt.h>
 #include <fdt_support.h>
 #include <netdev.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

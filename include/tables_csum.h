@@ -6,6 +6,7 @@
 #ifndef _TABLES_CSUM_H_
 #define _TABLES_CSUM_H_
 
+#include <asm/types.h>
 static inline u8 table_compute_checksum(void *v, int len)
 {
 	u8 *bytes = v;

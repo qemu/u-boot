@@ -9,6 +9,7 @@
 /*
  * CPLD register set of LS1043ARDB board-specific.
  */
+#include <asm/types.h>
 struct cpld_data {
 	u8 cpld_ver;		/* 0x0 - CPLD Major Revision Register */
 	u8 cpld_ver_sub;	/* 0x1 - CPLD Minor Revision Register */

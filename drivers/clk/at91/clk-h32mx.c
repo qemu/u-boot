@@ -11,6 +11,7 @@
 #include <dm/device_compat.h>
 #include <dm/util.h>
 #include <linux/io.h>
+#include <linux/types.h>
 #include <mach/at91_pmc.h>
 #include "pmc.h"
 

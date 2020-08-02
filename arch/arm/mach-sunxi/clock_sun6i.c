@@ -17,6 +17,7 @@
 #include <asm/arch/sys_proto.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_SPL_BUILD
 void clock_init_safe(void)

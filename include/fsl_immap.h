@@ -9,6 +9,7 @@
 #define __FSL_IMMAP_H
 /*
  * DDR memory controller registers
+#include <asm/types.h>
  * This structure works for mpc83xx (DDR2 and DDR3), mpc85xx, mpc86xx.
  */
 struct ccsr_ddr {

@@ -5,12 +5,14 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <env.h>
 #include <hwconfig.h>
 #include <fsl_ddr_sdram.h>
 #include <log.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/types.h>
 
 #include <fsl_ddr.h>
 /* For get_ddr_freq() */

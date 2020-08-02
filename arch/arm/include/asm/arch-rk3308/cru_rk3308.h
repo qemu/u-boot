@@ -6,6 +6,7 @@
 #define _ASM_ARCH_CRU_RK3308_H
 
 #include <linux/kernel.h>
+#include <linux/types.h>
 #define MHz		1000000
 #define OSC_HZ		(24 * MHz)
 

@@ -9,6 +9,7 @@
 #include <hwconfig.h>
 #include <fsl_errata.h>
 #include <stdbool.h>
+#include <asm/types.h>
 #include<fsl_usb.h>
 #if defined(CONFIG_FSL_LSCH2) || defined(CONFIG_FSL_LSCH3) || \
 	defined(CONFIG_ARM)

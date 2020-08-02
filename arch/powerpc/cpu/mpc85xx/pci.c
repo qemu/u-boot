@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <asm/bitops.h>
 #include <asm/cpm_85xx.h>
+#include <asm/types.h>
 #include <pci.h>
 
 #if !defined(CONFIG_FSL_PCI_INIT) && !defined(CONFIG_DM_PCI)

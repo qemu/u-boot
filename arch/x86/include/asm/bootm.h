@@ -7,6 +7,7 @@
 #define ARM_BOOTM_H
 
 #include <stdbool.h>
+#include <linux/types.h>
 void bootm_announce_and_cleanup(void);
 
 /**

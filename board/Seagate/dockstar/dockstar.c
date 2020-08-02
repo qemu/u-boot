@@ -20,6 +20,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/mach-types.h>
+#include <asm/types.h>
 #include "dockstar.h"
 
 DECLARE_GLOBAL_DATA_PTR;

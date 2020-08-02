@@ -3,6 +3,7 @@
 
 #include <memalign.h>
 #include <asm/io.h>
+#include <linux/types.h>
 
 /*
  * dma_alloc_coherent() return cache-line aligned allocation which is mapped

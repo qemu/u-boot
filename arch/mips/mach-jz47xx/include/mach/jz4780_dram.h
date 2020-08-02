@@ -12,6 +12,7 @@
 /*
  * DDR
  */
+#include <asm/types.h>
 #include <linux/bitops.h>
 #define DDRC_ST				0x0
 #define DDRC_CFG			0x4

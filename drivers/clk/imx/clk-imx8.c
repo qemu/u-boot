@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <clk-uclass.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
@@ -17,6 +18,7 @@
 #include <dt-bindings/soc/imx_rsrc.h>
 #include <misc.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 #include "clk-imx8.h"
 

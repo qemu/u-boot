@@ -7,6 +7,7 @@
 #include <common.h>
 #include <asm/encoding.h>
 #include <asm/sbi.h>
+#include <linux/types.h>
 
 int riscv_init_ipi(void)
 {

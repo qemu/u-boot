@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <malloc.h>
+#include <asm/types.h>
 #include <dm/device-internal.h>
 #include <dm/lists.h>
 #include <linux/errno.h>

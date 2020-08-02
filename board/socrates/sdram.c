@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <init.h>
 #include <asm/processor.h>
 #include <asm/immap_85xx.h>
@@ -13,6 +14,7 @@
 #include <asm/mmu.h>
 #include <spd_sdram.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 
 #if !defined(CONFIG_SPD_EEPROM)

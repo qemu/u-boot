@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
@@ -13,6 +14,7 @@
 #include <linux/delay.h>
 #include <misc.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 /* OTP Register Offsets */
 #define OTPC_SBPI_CTRL			0x0020

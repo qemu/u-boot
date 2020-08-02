@@ -10,6 +10,7 @@
 #include <phy.h>
 #include <fm_eth.h>
 #include <fsl_fman.h>
+#include <linux/types.h>
 
 /* Port ID */
 #define OH_PORT_ID_BASE		0x01

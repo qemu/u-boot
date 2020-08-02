@@ -47,6 +47,7 @@
  *
  * 				    offset, pull,pF, drv,dF, edge,eF ,afn,aF
  */
+#include <asm/types.h>
 #define MFP_OFFSET_MASK		MFP(0xffff,    0,    0,   0,   0,   0,   0)
 #define MFP_REG(x)		MFP(x,         0,    0,   0,   0,   0,   0)
 #define MFP_REG_GET_OFFSET(x)	((x & MFP_OFFSET_MASK) >> 16)

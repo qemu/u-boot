@@ -7,6 +7,7 @@
 #ifndef _STV0991_CREG_H
 #define _STV0991_CREG_H
 
+#include <asm/types.h>
 struct stv0991_creg {
 	u32 version;		/* offset 0x0 */
 	u32 hdpctl;		/* offset 0x4 */

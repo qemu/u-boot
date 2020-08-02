@@ -9,6 +9,7 @@
 
 #include <fsl_sec.h>
 #include <hash.h>
+#include <linux/types.h>
 #include "jr.h"
 
 /* We support at most 32 Scatter/Gather Entries.*/

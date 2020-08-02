@@ -11,6 +11,7 @@
 
 #include <stdbool.h>
 #include <virtio_types.h>
+#include <linux/types.h>
 
 /* This marks a buffer as continuing via the next field */
 #define VRING_DESC_F_NEXT		1

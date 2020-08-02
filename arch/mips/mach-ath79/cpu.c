@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <init.h>
 #include <stdio.h>
 #include <asm/global_data.h>

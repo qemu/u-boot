@@ -17,6 +17,7 @@
 #include <asm/arch/tieoff.h>
 #include <cpu_func.h>
 #include <linux/delay.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

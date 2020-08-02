@@ -10,6 +10,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <mapmem.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdio_dev.h>
 #include <time.h>
@@ -27,6 +28,7 @@
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 /*
  * Theory of operation:

@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/stm32.h>
+#include <linux/types.h>
 #include "stm32_flash.h"
 
 flash_info_t flash_info[CONFIG_SYS_MAX_FLASH_BANKS];

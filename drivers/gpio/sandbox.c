@@ -20,6 +20,7 @@
 #include <dt-bindings/gpio/gpio.h>
 #include <dt-bindings/gpio/sandbox-gpio.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 
 struct gpio_state {

@@ -9,6 +9,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <miiphy.h>
+#include <asm/types.h>
 #include <dm/device-internal.h>
 #include <dm/device_compat.h>
 #include <dm/uclass-internal.h>

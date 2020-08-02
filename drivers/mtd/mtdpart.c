@@ -21,6 +21,7 @@
 
 #include <common.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/bug.h>

@@ -4,6 +4,7 @@
 #include <asm/io.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/at91_gpbr.h>
+#include <linux/types.h>
 
 /*
  * We combine the CONFIG_SYS_BOOTCOUNT_MAGIC and bootcount in one 32-bit

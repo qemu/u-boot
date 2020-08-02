@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <asm/arch/clock_manager.h>
 #include <wait_bit.h>
+#include <linux/types.h>
 
 /*
  * function to write the bypass register which requires a poll of the

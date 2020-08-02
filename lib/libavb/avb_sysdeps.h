@@ -21,6 +21,7 @@ extern "C" {
  */
 #include <common.h>
 #include <stdbool.h>
+#include <linux/types.h>
 
 /* If you don't have gcc or clang, these attribute macros may need to
  * be adjusted.

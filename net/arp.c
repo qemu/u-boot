@@ -19,6 +19,7 @@
 #include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 #include "arp.h"
 

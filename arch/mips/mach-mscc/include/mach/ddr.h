@@ -6,10 +6,12 @@
 #ifndef __ASM_MACH_DDR_H
 #define __ASM_MACH_DDR_H
 
+#include <compiler.h>
 #include <stdbool.h>
 #include <asm/cacheops.h>
 #include <asm/io.h>
 #include <asm/reboot.h>
+#include <asm/types.h>
 #include <linux/bitops.h>
 #include <mach/common.h>
 

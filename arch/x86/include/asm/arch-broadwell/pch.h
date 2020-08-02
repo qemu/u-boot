@@ -7,6 +7,7 @@
 #define __ASM_ARCH_PCH_H
 
 #include <stdbool.h>
+#include <asm/types.h>
 
 #define PMBASE			0x40
 #define ACPI_CNTL		0x44

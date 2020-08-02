@@ -10,6 +10,7 @@
 #include <linux/bug.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
+#include <linux/types.h>
 
 #define TEGRA_IVC_ALIGN 64
 

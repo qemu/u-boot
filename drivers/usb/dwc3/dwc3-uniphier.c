@@ -6,12 +6,14 @@
  *   Author: Masahiro Yamada <yamada.masahiro@socionext.com>
  */
 
+#include <compiler.h>
 #include <dm.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/sizes.h>
+#include <linux/types.h>
 
 #define UNIPHIER_PRO4_DWC3_RESET	0x40
 #define   UNIPHIER_PRO4_DWC3_RESET_XIOMMU	BIT(5)

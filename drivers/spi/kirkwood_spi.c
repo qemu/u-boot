@@ -20,6 +20,7 @@
 #include <asm/arch/mpp.h>
 #endif
 #include <asm/arch-mvebu/spi.h>
+#include <linux/types.h>
 
 struct mvebu_spi_dev {
 	bool			is_errata_50mhz_ac;

@@ -12,6 +12,7 @@
 #include <keys/asymmetric-subtype.h>
 #include <keys/asymmetric-parser.h>
 #endif
+#include <stdbool.h>
 #include <crypto/public_key.h>
 #ifdef __UBOOT__
 #include <linux/bug.h>
@@ -22,6 +23,7 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #else
 #include <linux/seq_file.h>
 #include <linux/module.h>

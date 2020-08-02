@@ -16,6 +16,7 @@
 #include <asm/io.h>
 #include <linux/errno.h>
 #include <asm/arch/sys_proto.h>
+#include <linux/types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

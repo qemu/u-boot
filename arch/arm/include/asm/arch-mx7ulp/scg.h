@@ -8,6 +8,7 @@
 
 #include <stdbool.h>
 #include <stdio.h>
+#include <asm/types.h>
 
 #ifdef CONFIG_CLK_DEBUG
 #define clk_debug(fmt, args...)	printf(fmt, ##args)

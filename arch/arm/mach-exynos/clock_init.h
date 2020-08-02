@@ -8,6 +8,7 @@
 #ifndef __EXYNOS_CLOCK_INIT_H
 #define __EXYNOS_CLOCK_INIT_H
 
+#include <linux/types.h>
 enum {
 #ifdef CONFIG_EXYNOS5420
 	MEM_TIMINGS_MSR_COUNT	= 5,

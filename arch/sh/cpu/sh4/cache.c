@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <asm/processor.h>
 #include <asm/system.h>
+#include <asm/types.h>
 
 #define CACHE_VALID       1
 #define CACHE_UPDATED     2

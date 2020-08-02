@@ -5,16 +5,19 @@
 
 #include <common.h>
 #include <bmp_layout.h>
+#include <compiler.h>
 #include <dm.h>
 #include <log.h>
 #include <mapmem.h>
 #include <splash.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <video.h>
 #include <watchdog.h>
 #include <asm/unaligned.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_VIDEO_BMP_RLE8
 #define BMP_RLE8_ESCAPE		0

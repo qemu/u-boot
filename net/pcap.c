@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <linux/errno.h>
 #include <linux/string.h>
+#include <linux/types.h>
 #include <net/pcap.h>
 #include <time.h>
 #include <asm/io.h>

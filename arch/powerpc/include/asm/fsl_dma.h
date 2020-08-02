@@ -9,6 +9,7 @@
 #define _ASM_FSL_DMA_H_
 
 #include <asm/types.h>
+#include <linux/types.h>
 
 #ifdef CONFIG_MPC83xx
 typedef struct fsl_dma {

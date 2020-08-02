@@ -9,6 +9,7 @@
 */
 
 #include <linux/string.h>
+#include <linux/types.h>
 
 /**************************************
 *  Reading and writing into memory

@@ -14,6 +14,7 @@
 #include <stdbool.h>
 #include <dm/device-internal.h>
 #include <linux/errno.h>
+#include <linux/types.h>
 
 int irq_route_pmc_gpio_gpe(struct udevice *dev, uint pmc_gpe_num)
 {

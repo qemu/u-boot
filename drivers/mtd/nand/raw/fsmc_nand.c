@@ -8,6 +8,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <nand.h>
 #include <stdio.h>
 #include <time.h>
@@ -20,6 +21,7 @@
 #include <linux/mtd/fsmc_nand.h>
 #include <asm/arch/hardware.h>
 #include <linux/string.h>
+#include <linux/types.h>
 
 static u32 fsmc_version;
 static struct fsmc_regs *const fsmc_regs_p = (struct fsmc_regs *)
