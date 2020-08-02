@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <i2c.h>
 #include <log.h>
+#include <linux/errno.h>
 #include <power/tps65090.h>
 
 static int cros_ec_ldo_set_bus_speed(struct udevice *dev, unsigned int speed)

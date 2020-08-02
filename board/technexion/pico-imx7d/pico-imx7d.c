@@ -19,6 +19,7 @@
 #include <common.h>
 #include <i2c.h>
 #include <miiphy.h>
+#include <linux/errno.h>
 #include <power/pmic.h>
 #include <power/pfuze3000_pmic.h>
 #include "../../freescale/common/pfuze.h"

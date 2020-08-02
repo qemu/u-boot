@@ -16,6 +16,7 @@
 #include <dm/device-internal.h>
 #include <asm/arch/sci/sci.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/iopoll.h>
 #include <misc.h>
 

@@ -13,6 +13,7 @@
 #include <dm/devres.h>
 #include <dm/uclass.h>
 #include <clk.h>
+#include <linux/errno.h>
 #include "clk.h"
 #include <linux/err.h>
 

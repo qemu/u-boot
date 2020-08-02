@@ -26,6 +26,7 @@
 #include <asm/arch/spi.h>
 #include <dm/uclass-internal.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 #define BIOS_CTRL	0xdc
 

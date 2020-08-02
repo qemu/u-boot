@@ -19,6 +19,7 @@
 #include <asm/io.h>
 #include <dm/devres.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/iopoll.h>
 #include <linux/list.h>
 #include <linux/printk.h>

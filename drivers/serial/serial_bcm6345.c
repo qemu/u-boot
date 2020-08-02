@@ -14,6 +14,7 @@
 #include <serial.h>
 #include <asm/io.h>
 #include <asm/types.h>
+#include <linux/errno.h>
 
 /* UART Control register */
 #define UART_CTL_REG			0x0

@@ -10,6 +10,7 @@
 #include <rtc.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 /*
  * RTC register addresses

@@ -10,6 +10,7 @@
 #include <asm/io.h>
 #include <wdt.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 #define CA_WDT_CTRL		0x00
 #define CA_WDT_PS		0x04

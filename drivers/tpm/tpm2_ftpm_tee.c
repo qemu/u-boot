@@ -19,6 +19,7 @@
 #include <tpm-v2.h>
 #include <tee.h>
 #include <vsprintf.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #include "tpm_tis.h"

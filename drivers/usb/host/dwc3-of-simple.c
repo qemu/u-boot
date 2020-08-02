@@ -14,6 +14,7 @@
 #include <dm.h>
 #include <reset.h>
 #include <clk.h>
+#include <linux/errno.h>
 
 struct dwc3_of_simple {
 	struct clk_bulk		clks;

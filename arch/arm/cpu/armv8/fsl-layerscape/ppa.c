@@ -24,6 +24,7 @@
 #ifdef CONFIG_CHAIN_OF_TRUST
 #include <fsl_validate.h>
 #endif
+#include <linux/errno.h>
 
 #ifdef CONFIG_SYS_LS_PPA_FW_IN_NAND
 #include <nand.h>

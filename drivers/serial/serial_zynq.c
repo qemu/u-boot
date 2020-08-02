@@ -18,6 +18,7 @@
 #include <linux/compiler.h>
 #include <serial.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 #define ZYNQ_UART_SR_TXACTIVE	BIT(11) /* TX active */
 #define ZYNQ_UART_SR_TXFULL	BIT(4) /* TX FIFO full */

@@ -13,6 +13,7 @@
 #include <linux/bitops.h>
 #include <linux/compat.h>
 #include <linux/compiler.h>
+#include <linux/errno.h>
 
 /* GPIO Register Map */
 #define CORTINA_GPIO_CFG	0x00

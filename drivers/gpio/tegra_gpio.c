@@ -22,6 +22,7 @@
 #include <asm/gpio.h>
 #include <dm/device-internal.h>
 #include <dt-bindings/gpio/gpio.h>
+#include <linux/errno.h>
 
 static const int CONFIG_SFIO = 0;
 static const int CONFIG_GPIO = 1;

@@ -17,6 +17,7 @@
 #include <spi.h>
 #include <os.h>
 #include <stdio.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #include <spi_flash.h>

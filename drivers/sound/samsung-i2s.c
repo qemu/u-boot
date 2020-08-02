@@ -14,6 +14,7 @@
 #include <asm/arch/pinmux.h>
 #include <asm/arch/i2s-regs.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 
 #define FIC_TX2COUNT(x)		(((x) >>  24) & 0xf)
 #define FIC_TX1COUNT(x)		(((x) >>  16) & 0xf)

@@ -15,6 +15,7 @@
 #include <spl.h>
 #include <asm/io.h>
 #include <dm/uclass-internal.h>
+#include <linux/errno.h>
 
 #define PCR_COMMON_IOSF_1_0	1
 

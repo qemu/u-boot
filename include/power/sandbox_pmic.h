@@ -7,6 +7,7 @@
 #ifndef _SANDBOX_PMIC_H_
 #define  _SANDBOX_PMIC_H_
 
+#include <linux/errno.h>
 #define SANDBOX_LDO_DRIVER		"sandbox_ldo"
 #define SANDBOX_OF_LDO_PREFIX		"ldo"
 #define SANDBOX_BUCK_DRIVER		"sandbox_buck"

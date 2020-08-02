@@ -10,6 +10,7 @@
 #include <time.h>
 #include <linux/delay.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/mtd/st_smi.h>
 
 #include <asm/io.h>

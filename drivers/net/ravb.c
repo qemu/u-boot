@@ -22,6 +22,7 @@
 #include <asm/global_data.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/mii.h>
 #include <wait_bit.h>
 #include <asm/io.h>

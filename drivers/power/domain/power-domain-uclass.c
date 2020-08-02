@@ -10,6 +10,7 @@
 #include <power-domain.h>
 #include <power-domain-uclass.h>
 #include <dm/device-internal.h>
+#include <linux/errno.h>
 
 static inline struct power_domain_ops *power_domain_dev_ops(struct udevice *dev)
 {

@@ -17,6 +17,7 @@
 #include <timer.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 #define MTU_NUM_TIMERS		4
 

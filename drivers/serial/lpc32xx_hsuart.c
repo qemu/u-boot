@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <serial.h>
 #include <dm/platform_data/lpc32xx_hsuart.h>
+#include <linux/errno.h>
 
 #include <asm/arch/uart.h>
 #include <linux/compiler.h>

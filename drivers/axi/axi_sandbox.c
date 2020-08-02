@@ -8,6 +8,7 @@
 #include <axi.h>
 #include <dm.h>
 #include <asm/axi.h>
+#include <linux/errno.h>
 
 /*
  * This driver implements a AXI bus for the sandbox architecture for testing

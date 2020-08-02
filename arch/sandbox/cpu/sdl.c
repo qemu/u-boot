@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdbool.h>
+#include <linux/errno.h>
 #include <linux/input.h>
 #include <SDL2/SDL.h>
 #include <asm/state.h>

@@ -95,6 +95,7 @@
 #else
 #include <ubi_uboot.h>
 #include <vsprintf.h>
+#include <linux/errno.h>
 #endif
 
 #include "ubi.h"

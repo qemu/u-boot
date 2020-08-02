@@ -17,6 +17,7 @@
 #include <video_font.h>		/* Bitmap font for code page 437 */
 #include <vsprintf.h>
 #include <linux/ctype.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /*

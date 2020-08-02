@@ -12,6 +12,7 @@
 #include <log.h>
 #include <asm/gpio.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <power/fan53555.h>
 #include <power/pmic.h>

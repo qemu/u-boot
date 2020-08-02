@@ -17,6 +17,7 @@
 #include <vsprintf.h>
 #include <dm/device-internal.h>
 #include <dm/uclass-internal.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #if !defined(CONFIG_DM_SCSI)

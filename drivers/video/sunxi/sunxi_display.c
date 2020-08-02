@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #include <asm/arch/clock.h>

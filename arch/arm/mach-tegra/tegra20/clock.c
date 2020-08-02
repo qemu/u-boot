@@ -20,6 +20,7 @@
 #include <div64.h>
 #include <fdtdec.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 
 /*

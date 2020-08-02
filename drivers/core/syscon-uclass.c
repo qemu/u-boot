@@ -15,6 +15,7 @@
 #include <dm/lists.h>
 #include <dm/root.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 /*
  * Caution:

@@ -16,6 +16,7 @@
 #include <asm/io.h>
 #include <dm/device.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 /* USBH Swap Control register */
 #define USBH_SWAP_REG		0x00

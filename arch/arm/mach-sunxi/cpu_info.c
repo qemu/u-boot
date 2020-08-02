@@ -13,6 +13,7 @@
 #include <asm/arch/clock.h>
 #include <axp_pmic.h>
 #include <errno.h>
+#include <linux/errno.h>
 
 #ifdef CONFIG_MACH_SUN6I
 int sunxi_get_ss_bonding_id(void)

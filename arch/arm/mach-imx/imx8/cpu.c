@@ -27,6 +27,7 @@
 #include <asm/setup.h>
 #include <asm/mach-imx/boot_mode.h>
 #include <spl.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

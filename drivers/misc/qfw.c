@@ -14,6 +14,7 @@
 #ifdef CONFIG_GENERATE_ACPI_TABLE
 #include <asm/tables.h>
 #endif
+#include <linux/errno.h>
 #include <linux/list.h>
 #include <linux/string.h>
 

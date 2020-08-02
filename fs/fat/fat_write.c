@@ -17,6 +17,7 @@
 #include <asm/cache.h>
 #include <linux/ctype.h>
 #include <div64.h>
+#include <linux/errno.h>
 #include <linux/math64.h>
 #include <linux/string.h>
 #include "fat.c"

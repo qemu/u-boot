@@ -19,6 +19,7 @@
 #include <asm/mpspec.h>
 #include <asm/tables.h>
 #include <dm/uclass-internal.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;

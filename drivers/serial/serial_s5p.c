@@ -18,6 +18,7 @@
 #include <asm/arch/uart.h>
 #include <serial.h>
 #include <clk.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

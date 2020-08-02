@@ -7,6 +7,7 @@
 #include <vsprintf.h>
 #include <wait_bit.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include "mscc_miim.h"
 
 #define MIIM_STATUS			0x0

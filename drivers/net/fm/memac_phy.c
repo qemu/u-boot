@@ -13,6 +13,7 @@
 #include <fsl_memac.h>
 #include <fm_eth.h>
 #include <asm/u-boot.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #ifdef CONFIG_SYS_MEMAC_LITTLE_ENDIAN

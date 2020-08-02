@@ -15,6 +15,7 @@
 #include <miiphy.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 #include "ks8851_mll.h"
 

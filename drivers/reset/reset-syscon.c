@@ -11,6 +11,7 @@
 #include <syscon.h>
 #include <linux/bitops.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 struct syscon_reset_priv {
 	struct regmap *regmap;

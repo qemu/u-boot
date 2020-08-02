@@ -14,6 +14,7 @@
 #include <errno.h>
 #include <misc.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 #define CLK_FUNCTION		BIT(20)
 

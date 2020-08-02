@@ -9,6 +9,7 @@
 #include <dm/device_compat.h>
 #include <linux/bug.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/ioport.h>
 #include <linux/printk.h>

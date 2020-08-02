@@ -11,6 +11,7 @@
 #include <pci.h>
 #include <dm.h>
 #include <asm/fsl_law.h>
+#include <linux/errno.h>
 
 struct mpc85xx_pci_priv {
 	void __iomem		*cfg_addr;

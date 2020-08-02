@@ -16,6 +16,7 @@
 #include <power-domain.h>
 #include <asm/arch/sys_proto.h>
 #include <dm/device_compat.h>
+#include <linux/errno.h>
 #include <power/regulator.h>
 #include "k3-am654-ddrss.h"
 

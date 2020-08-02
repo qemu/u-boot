@@ -9,6 +9,7 @@
 #include <part.h>
 #include <stdio.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 struct blk_driver *blk_driver_lookup_type(int if_type)

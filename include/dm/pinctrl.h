@@ -6,6 +6,7 @@
 #ifndef __PINCTRL_H
 #define __PINCTRL_H
 
+#include <linux/errno.h>
 #define PINNAME_SIZE	10
 #define PINMUX_SIZE	40
 

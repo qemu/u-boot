@@ -23,6 +23,7 @@
 #include <rtc.h>
 #include <stdio.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 /*---------------------------------------------------------------------*/
 /* #undef DEBUG_RTC */

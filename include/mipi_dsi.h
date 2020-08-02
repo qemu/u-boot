@@ -17,6 +17,7 @@
 
 #include <mipi_display.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 struct mipi_dsi_host;
 struct mipi_dsi_device;

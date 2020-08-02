@@ -19,6 +19,7 @@
 #include <asm/arch/sdram_ast2500.h>
 #include <asm/arch/wdt.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/kernel.h>
 #include <dt-bindings/clock/ast2500-scu.h>
 

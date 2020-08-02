@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <dm/uclass-internal.h>
+#include <linux/errno.h>
 #include <power/pmic.h>
 
 #define LIMIT_DEV	32

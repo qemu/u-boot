@@ -7,6 +7,7 @@
 #include <common.h>
 #include <dm.h>
 #include <pch.h>
+#include <linux/errno.h>
 
 int pch_get_spi_base(struct udevice *dev, ulong *sbasep)
 {

@@ -17,6 +17,7 @@
 #include <linux/compiler.h>
 #include <dm/platform_data/serial_sh.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include "serial_sh.h"
 
 DECLARE_GLOBAL_DATA_PTR;

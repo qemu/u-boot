@@ -20,6 +20,7 @@
 #include <dm/pinctrl.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/sizes.h>
 

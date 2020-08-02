@@ -12,6 +12,7 @@
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 
 #include <dm.h>

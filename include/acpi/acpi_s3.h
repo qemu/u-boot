@@ -6,6 +6,7 @@
 #ifndef __ASM_ACPI_S3_H__
 #define __ASM_ACPI_S3_H__
 
+#include <linux/errno.h>
 #define WAKEUP_BASE	0x600
 
 /* PM1_STATUS register */

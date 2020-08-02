@@ -10,6 +10,7 @@
 #include <reset-uclass.h>
 #include <asm/arch/clock.h>
 #include <asm/arch-tegra/clk_rst.h>
+#include <linux/errno.h>
 
 static int tegra_car_reset_request(struct reset_ctl *reset_ctl)
 {

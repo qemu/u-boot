@@ -14,6 +14,7 @@
 #include <wdt.h>
 #include <asm/global_data.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 
 DECLARE_GLOBAL_DATA_PTR;

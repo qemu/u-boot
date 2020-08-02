@@ -13,6 +13,7 @@
 #include <linux/clk-provider.h>
 #include <clk.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 #include "clk.h"
 

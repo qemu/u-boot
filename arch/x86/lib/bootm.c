@@ -20,6 +20,7 @@
 #include <errno.h>
 #include <fdt_support.h>
 #include <image.h>
+#include <linux/errno.h>
 #include <u-boot/zlib.h>
 #include <asm/bootparam.h>
 #include <asm/cpu.h>

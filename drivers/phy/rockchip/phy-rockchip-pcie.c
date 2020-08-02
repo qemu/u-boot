@@ -17,6 +17,7 @@
 #include <syscon.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 #include <linux/iopoll.h>
 #include <asm/arch-rockchip/clock.h>
 

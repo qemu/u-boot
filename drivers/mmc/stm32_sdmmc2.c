@@ -16,6 +16,7 @@
 #include <asm/cache.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <mmc.h>
 #include <reset.h>

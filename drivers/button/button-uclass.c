@@ -9,6 +9,7 @@
 #include <button.h>
 #include <dm.h>
 #include <dm/uclass-internal.h>
+#include <linux/errno.h>
 
 int button_get_by_label(const char *label, struct udevice **devp)
 {

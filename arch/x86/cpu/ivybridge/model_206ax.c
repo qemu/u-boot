@@ -23,6 +23,7 @@
 #include <asm/speedstep.h>
 #include <asm/turbo.h>
 #include <asm/arch/model_206ax.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

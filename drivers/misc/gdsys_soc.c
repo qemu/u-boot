@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <log.h>
 #include <dm/lists.h>
+#include <linux/errno.h>
 
 #include "gdsys_soc.h"
 

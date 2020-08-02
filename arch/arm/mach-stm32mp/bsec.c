@@ -11,6 +11,7 @@
 #include <asm/arch/bsec.h>
 #include <asm/arch/stm32mp1_smc.h>
 #include <linux/arm-smccc.h>
+#include <linux/errno.h>
 #include <linux/iopoll.h>
 #include <linux/printk.h>
 

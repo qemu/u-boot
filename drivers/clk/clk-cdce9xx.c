@@ -15,6 +15,7 @@
 #include <i2c.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 #define MAX_NUMBER_OF_PLLS		4
 #define MAX_NUMER_OF_OUTPUTS		9

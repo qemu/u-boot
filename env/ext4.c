@@ -21,6 +21,7 @@
 #include <common.h>
 #include <part.h>
 #include <stdio.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #include <command.h>

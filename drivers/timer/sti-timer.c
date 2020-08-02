@@ -9,6 +9,7 @@
 #include <clk.h>
 #include <timer.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 #include <asm/io.h>
 #include <asm/arch-armv7/globaltimer.h>

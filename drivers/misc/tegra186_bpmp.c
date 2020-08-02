@@ -17,6 +17,7 @@
 #include <asm/arch-tegra/ivc.h>
 #include <linux/bitops.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

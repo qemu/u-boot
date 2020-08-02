@@ -3,15 +3,16 @@
  * Copyright 2016 General Electric Company
  */
 
-#include "vpd_reader.h"
-#include <malloc.h>
-
+#include <common.h>
+#include <hexdump.h>
 #include <i2c.h>
-#include <linux/bch.h>
+#include <i2c_eeprom.h>
+#include <malloc.h>
 #include <stdlib.h>
 #include <dm/uclass.h>
-#include <i2c_eeprom.h>
-#include <hexdump.h>
+#include <linux/bch.h>
+#include <linux/errno.h>
+#include "vpd_reader.h"
 
 /* BCH configuration */
 

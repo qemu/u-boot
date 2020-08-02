@@ -8,6 +8,7 @@
 #include <dm/device_compat.h>
 #include <linux/compat.h>
 #include <dm/pinctrl.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /**

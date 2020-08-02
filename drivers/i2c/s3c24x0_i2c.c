@@ -20,6 +20,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <i2c.h>
+#include <linux/errno.h>
 #include "s3c24x0_i2c.h"
 
 #ifndef CONFIG_SYS_I2C_S3C24X0_SLAVE

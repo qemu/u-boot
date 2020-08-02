@@ -13,6 +13,7 @@
 #include <wait_bit.h>
 #include <asm/io.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "pic32_eth.h"
 

@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <log.h>
 #include <malloc.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "membuff.h"
 

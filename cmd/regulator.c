@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <dm/uclass-internal.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 #include <power/regulator.h>

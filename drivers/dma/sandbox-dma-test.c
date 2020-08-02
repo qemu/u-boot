@@ -16,6 +16,7 @@
 #include <dma-uclass.h>
 #include <dt-structs.h>
 #include <errno.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

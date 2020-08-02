@@ -21,6 +21,7 @@
 #include <ext_common.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "ext4_common.h"
 

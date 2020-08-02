@@ -8,6 +8,7 @@
 #include <log.h>
 #include <mapmem.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <test/suites.h>
 #include <test/test.h>
 #include <test/ut.h>

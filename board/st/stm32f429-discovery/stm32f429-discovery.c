@@ -17,6 +17,7 @@
 #include <log.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 
 #include <asm/io.h>
 #include <asm/arch/stm32.h>

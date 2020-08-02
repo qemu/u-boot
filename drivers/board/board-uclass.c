@@ -7,6 +7,7 @@
 #include <common.h>
 #include <dm.h>
 #include <board.h>
+#include <linux/errno.h>
 
 int board_get(struct udevice **devp)
 {

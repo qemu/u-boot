@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 static int test_get_timer(void)
 {

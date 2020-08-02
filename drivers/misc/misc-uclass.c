@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <misc.h>
+#include <linux/errno.h>
 
 /*
  * Implement a  miscellaneous uclass for those do not fit other more

@@ -37,6 +37,7 @@
 #include <dwc3-uboot.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <samsung/misc.h>
 #include <dm/pinctrl.h>
 #include <dm.h>

@@ -21,6 +21,7 @@
 #include <asm/arch/watchdog.h>
 #include <asm/arch/power.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <power/pmic.h>
 #include <usb/dwc2_udc.h>
 #include <power/max8997_pmic.h>

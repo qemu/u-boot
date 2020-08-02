@@ -22,6 +22,7 @@
 #include <dm/device-internal.h>
 #include <dm/uclass-internal.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "simplefb_common.h"
 

@@ -12,6 +12,7 @@
 #include <asm/io.h>
 #include <asm/arch/pch.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 #define IOBP_RETRY 1000
 

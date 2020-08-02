@@ -17,6 +17,7 @@
 #endif
 #include <fsl_wdog.h>
 #include <div64.h>
+#include <linux/errno.h>
 
 #define TIMEOUT_MAX	128000
 #define TIMEOUT_MIN	500

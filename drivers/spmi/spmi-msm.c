@@ -15,6 +15,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <dm/device_compat.h>
+#include <linux/errno.h>
 #include <spmi/spmi.h>
 
 DECLARE_GLOBAL_DATA_PTR;

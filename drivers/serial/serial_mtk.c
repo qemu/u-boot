@@ -18,6 +18,7 @@
 #include <asm/io.h>
 #include <asm/types.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 
 struct mtk_serial_regs {

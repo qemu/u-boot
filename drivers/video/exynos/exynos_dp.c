@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <malloc.h>
 #include <video_bridge.h>

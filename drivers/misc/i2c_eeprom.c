@@ -7,6 +7,7 @@
 #include <eeprom.h>
 #include <linux/delay.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/kernel.h>
 #include <dm.h>
 #include <dm/device-internal.h>

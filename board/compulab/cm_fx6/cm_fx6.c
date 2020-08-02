@@ -39,6 +39,7 @@
 #include <dm/device-internal.h>
 #include <jffs2/load_kernel.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "common.h"
 #include "../common/eeprom.h"

@@ -24,6 +24,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <wdt.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -13,6 +13,7 @@
 #include <init.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/errno.h>
 #include <linux/sizes.h>
 #include <log.h>
 #include <asm/arch/fsl_serdes.h>

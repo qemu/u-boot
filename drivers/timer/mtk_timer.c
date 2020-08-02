@@ -12,6 +12,7 @@
 #include <timer.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 #define MTK_GPT4_CTRL	0x40
 #define MTK_GPT4_CLK	0x44

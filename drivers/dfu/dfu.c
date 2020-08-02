@@ -17,6 +17,7 @@
 #include <hash.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/errno.h>
 #include <linux/list.h>
 #include <linux/compiler.h>
 #include <linux/printk.h>

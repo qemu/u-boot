@@ -81,6 +81,7 @@
 #include <div64.h>
 #include <linux/bug.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 #endif

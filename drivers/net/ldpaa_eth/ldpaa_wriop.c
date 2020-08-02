@@ -11,6 +11,7 @@
 #include <linux/compat.h>
 #include <asm/arch/fsl_serdes.h>
 #include <fsl-mc/ldpaa_wriop.h>
+#include <linux/errno.h>
 
 struct wriop_dpmac_info dpmac_info[NUM_WRIOP_PORTS];
 

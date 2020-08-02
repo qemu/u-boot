@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <asm/arch/nexell.h>
 #include <asm/arch/clk.h>
+#include <linux/errno.h>
 
 /*
  * clock generator macros

@@ -40,6 +40,7 @@
 #include <errno.h>
 #include <usb.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #define USB_BUFSIZ	512

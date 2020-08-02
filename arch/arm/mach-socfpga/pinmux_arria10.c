@@ -8,6 +8,7 @@
 #include <asm/io.h>
 #include <common.h>
 #include <fdtdec.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 static int do_pinctr_pin(const void *blob, int child, const char *node_name)

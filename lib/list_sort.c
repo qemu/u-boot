@@ -8,6 +8,7 @@
 #include <linux/compat.h>
 #include <common.h>
 #include <malloc.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 #endif

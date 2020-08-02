@@ -16,6 +16,7 @@
 #include <time.h>
 #include <vsprintf.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /* PCI Configuration Space (D31:F3): SMBus */

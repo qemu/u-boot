@@ -22,6 +22,7 @@
 #include <dm/device.h>
 #include <dm/uclass.h>
 #include <versalpl.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "../common/board.h"
 

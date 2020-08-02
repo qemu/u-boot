@@ -17,6 +17,7 @@
 #include <time.h>
 #include <unistd.h>
 #include <vsprintf.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include <sys/mman.h>
 #include <sys/stat.h>

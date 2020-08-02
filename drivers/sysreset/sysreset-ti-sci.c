@@ -13,6 +13,7 @@
 #include <sysreset.h>
 #include <dm/device_compat.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/soc/ti/ti_sci_protocol.h>
 
 /**

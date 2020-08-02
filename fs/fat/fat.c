@@ -23,6 +23,7 @@
 #include <asm/cache.h>
 #include <linux/compiler.h>
 #include <linux/ctype.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /*

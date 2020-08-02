@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <log.h>
 #include <rtc.h>
+#include <linux/errno.h>
 
 static const u8 bootcount_magic = 0xbc;
 

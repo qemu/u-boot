@@ -19,6 +19,7 @@
 #include <zynqpl.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/sys_proto.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "../common/board.h"
 

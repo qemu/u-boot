@@ -38,6 +38,7 @@
 #include <watchdog.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include "board.h"
 #include "../common/factoryset.h"
 #include <nand.h>

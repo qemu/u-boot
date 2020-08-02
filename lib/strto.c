@@ -13,6 +13,7 @@
 #include <errno.h>
 #include <vsprintf.h>
 #include <linux/ctype.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /* from lib/kstrtox.c */

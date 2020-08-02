@@ -12,6 +12,7 @@
 #include <asm/global_data.h>
 #include <linux/compiler.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include <usb/ehci-ci.h>
 #include <asm/io.h>

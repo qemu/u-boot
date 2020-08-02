@@ -17,6 +17,7 @@
 #include <asm/io.h>
 #include <linux/bitfield.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /* register map */

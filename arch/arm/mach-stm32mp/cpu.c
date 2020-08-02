@@ -21,6 +21,7 @@
 #include <dm/device.h>
 #include <dm/uclass.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 
 /* RCC register */

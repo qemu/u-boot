@@ -16,6 +16,7 @@
 #include <linux/compiler.h>
 #include <serial.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

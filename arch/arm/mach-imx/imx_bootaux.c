@@ -15,6 +15,7 @@
 #include <linux/arm-smccc.h>
 #include <linux/compiler.h>
 #include <cpu_func.h>
+#include <linux/errno.h>
 
 int arch_auxiliary_core_up(u32 core_id, ulong addr)
 {

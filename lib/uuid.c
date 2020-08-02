@@ -17,6 +17,7 @@
 #include <asm/io.h>
 #include <part_efi.h>
 #include <malloc.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /*

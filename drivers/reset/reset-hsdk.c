@@ -11,6 +11,7 @@
 #include <common.h>
 #include <dm.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/iopoll.h>
 #include <reset-uclass.h>
 

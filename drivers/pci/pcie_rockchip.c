@@ -19,6 +19,7 @@
 #include <generic-phy.h>
 #include <pci.h>
 #include <power-domain.h>
+#include <linux/errno.h>
 #include <power/regulator.h>
 #include <reset.h>
 #include <syscon.h>

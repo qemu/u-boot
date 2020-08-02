@@ -16,6 +16,7 @@
 #include <dm/lists.h>
 #include <dm/uclass-internal.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 static const char *if_typename_str[IF_TYPE_COUNT] = {

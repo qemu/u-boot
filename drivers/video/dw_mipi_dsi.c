@@ -22,6 +22,7 @@
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/iopoll.h>
 #include <video_bridge.h>
 #include <linux/string.h>

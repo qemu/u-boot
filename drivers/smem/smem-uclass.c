@@ -6,6 +6,7 @@
 #include <common.h>
 #include <dm.h>
 #include <smem.h>
+#include <linux/errno.h>
 
 int smem_alloc(struct udevice *dev, unsigned int host,
 		unsigned int item, size_t size)

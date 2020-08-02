@@ -12,6 +12,7 @@
 #include <sdhci.h>
 #include <asm/arch/sdhci.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

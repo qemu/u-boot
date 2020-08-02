@@ -14,6 +14,7 @@
 #include <asm/global_data.h>
 #include <dm/device-internal.h>
 #include <dm/lists.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -13,6 +13,7 @@
 #include <asm/io.h>
 #include <dt-bindings/interrupt-controller/irq.h>
 #include <dt-bindings/interrupt-controller/x86-irq.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /**

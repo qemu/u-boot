@@ -10,6 +10,7 @@
 #include <common.h>
 #include <log.h>
 #include <dm/devres.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 /*#include <asm/io.h>*/

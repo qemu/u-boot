@@ -12,6 +12,7 @@
 #include <log.h>
 #include <sound.h>
 #include <asm/sdl.h>
+#include <linux/errno.h>
 
 struct sandbox_codec_priv {
 	int interface;

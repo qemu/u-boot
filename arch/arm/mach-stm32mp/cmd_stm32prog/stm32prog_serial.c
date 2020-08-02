@@ -16,6 +16,7 @@
 #include <dm/lists.h>
 #include <dm/device-internal.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 #include "stm32prog.h"

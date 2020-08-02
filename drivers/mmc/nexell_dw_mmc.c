@@ -14,6 +14,7 @@
 #include <syscon.h>
 #include <asm/arch/reset.h>
 #include <asm/arch/clk.h>
+#include <linux/errno.h>
 
 #define DWMCI_CLKSEL			0x09C
 #define DWMCI_SHIFT_0			0x0

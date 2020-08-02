@@ -16,6 +16,7 @@
 #include <dm/device.h>
 #include <imx_sip.h>
 #include <linux/arm-smccc.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

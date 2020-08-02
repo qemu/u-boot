@@ -11,6 +11,7 @@
 #include <image.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

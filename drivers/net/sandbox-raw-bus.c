@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <dm/device-internal.h>
 #include <dm/lists.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 static int eth_raw_bus_post_bind(struct udevice *dev)

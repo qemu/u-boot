@@ -44,6 +44,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 
 #include <asm/io.h>

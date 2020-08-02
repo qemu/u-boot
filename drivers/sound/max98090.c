@@ -15,6 +15,7 @@
 #include <sound.h>
 #include <asm/gpio.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include "maxim_codec.h"
 #include "max98090.h"
 

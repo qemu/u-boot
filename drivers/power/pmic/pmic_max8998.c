@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <stdio.h>
+#include <linux/errno.h>
 #include <power/pmic.h>
 #include <power/max8998_pmic.h>
 #include <errno.h>

@@ -19,6 +19,7 @@
 #include <dm/util.h>
 #include <fdtdec.h>
 #include <linux/compiler.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 struct driver *lists_driver_lookup_name(const char *name)

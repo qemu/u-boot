@@ -24,6 +24,7 @@
 #ifdef CONFIG_SANDBOX
 #include <asm/sdl.h>
 #endif
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /*

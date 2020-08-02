@@ -22,6 +22,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/clock.h>
 #include <asm/u-boot.h>
+#include <linux/errno.h>
 
 #ifdef CONFIG_FSL_ESDHC_IMX
 #include <fsl_esdhc_imx.h>

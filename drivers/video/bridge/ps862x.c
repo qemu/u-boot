@@ -12,6 +12,7 @@
 #include <video_bridge.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <power/regulator.h>
 
 DECLARE_GLOBAL_DATA_PTR;

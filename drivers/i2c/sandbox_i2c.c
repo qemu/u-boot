@@ -14,6 +14,7 @@
 #include <dm/acpi.h>
 #include <dm/lists.h>
 #include <dm/device-internal.h>
+#include <linux/errno.h>
 
 struct sandbox_i2c_priv {
 	bool test_mode;

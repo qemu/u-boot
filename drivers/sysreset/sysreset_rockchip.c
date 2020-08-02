@@ -12,6 +12,7 @@
 #include <asm/arch-rockchip/cru_rk3328.h>
 #include <asm/arch-rockchip/hardware.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 int rockchip_sysreset_request(struct udevice *dev, enum sysreset_t type)
 {

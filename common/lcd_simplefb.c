@@ -11,6 +11,7 @@
 #include <lcd.h>
 #include <fdt_support.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <video.h>
 

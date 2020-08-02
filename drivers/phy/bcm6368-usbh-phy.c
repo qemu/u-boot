@@ -19,6 +19,7 @@
 #include <dm/device.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 /* USBH PLL Control register */
 #define USBH_PLL_REG		0x18

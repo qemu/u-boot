@@ -9,6 +9,7 @@
 #include <blk.h>
 #include <flash.h>
 #include <stdio.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

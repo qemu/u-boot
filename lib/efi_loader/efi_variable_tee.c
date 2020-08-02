@@ -14,6 +14,7 @@
 #include <tee.h>
 #include <malloc.h>
 #include <mm_communication.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #define OPTEE_PAGE_SIZE BIT(12)

@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <log.h>
 #include <asm/arch/fsp_bindings.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /**

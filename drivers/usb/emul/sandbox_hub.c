@@ -9,6 +9,7 @@
 #include <log.h>
 #include <usb.h>
 #include <dm/device-internal.h>
+#include <linux/errno.h>
 
 /* We only support up to 8 */
 #define SANDBOX_NUM_PORTS	4

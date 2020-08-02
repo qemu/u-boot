@@ -16,6 +16,7 @@
 #include <asm/global_data.h>
 #include <dm/uclass.h>
 #include <jffs2/load_kernel.h>
+#include <linux/errno.h>
 #include <linux/list.h>
 #include <linux/list_sort.h>
 #include <linux/mtd/mtd.h>

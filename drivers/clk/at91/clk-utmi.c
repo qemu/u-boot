@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <stdio.h>
 #include <syscon.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <mach/at91_pmc.h>
 #include <mach/at91_sfr.h>

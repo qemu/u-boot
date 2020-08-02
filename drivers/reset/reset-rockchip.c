@@ -9,6 +9,7 @@
 #include <malloc.h>
 #include <reset-uclass.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <asm/arch-rockchip/hardware.h>
 #include <dm/lists.h>

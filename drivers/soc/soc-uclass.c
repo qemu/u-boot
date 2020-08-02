@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <dm/lists.h>
 #include <dm/root.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 int soc_get(struct udevice **devp)

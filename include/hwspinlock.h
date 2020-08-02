@@ -12,6 +12,7 @@
  * critical sections and synchronisation between multiprocessors.
  */
 
+#include <linux/errno.h>
 struct udevice;
 
 /**

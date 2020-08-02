@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <linux/errno.h>
 #include <mach/sdhci.h>
 #include <malloc.h>
 #include <sdhci.h>

@@ -19,6 +19,7 @@
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <power/pmic.h>
 #include <power/pfuze3000_pmic.h>
 #include <asm/mach-imx/mxc_i2c.h>

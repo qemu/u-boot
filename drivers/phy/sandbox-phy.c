@@ -7,6 +7,7 @@
 #include <common.h>
 #include <dm.h>
 #include <generic-phy.h>
+#include <linux/errno.h>
 
 struct sandbox_phy_priv {
 	bool initialized;

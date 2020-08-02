@@ -10,6 +10,7 @@
 #include <dm/ofnode.h>
 #include <dm/read.h>
 #include <dm/util.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <vsprintf.h>
 

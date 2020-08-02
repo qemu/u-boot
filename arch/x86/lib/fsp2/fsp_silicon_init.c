@@ -18,6 +18,7 @@
 #include <asm/fsp/fsp_infoheader.h>
 #include <asm/fsp2/fsp_internal.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 int fsp_silicon_init(bool s3wake, bool use_spi_flash)

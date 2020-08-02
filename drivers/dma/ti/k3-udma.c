@@ -26,6 +26,7 @@
 #include <linux/delay.h>
 #include <linux/bitmap.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/soc/ti/k3-navss-ringacc.h>
 #include <linux/soc/ti/cppi5.h>

@@ -14,6 +14,7 @@
 #include <net.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 static const char *ethsw_name;

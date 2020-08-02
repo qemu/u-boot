@@ -15,6 +15,7 @@
 #include <linux/clk-provider.h>
 #include <linux/delay.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/iopoll.h>
 #include <clk.h>
 #include <div64.h>

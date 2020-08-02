@@ -17,6 +17,7 @@
 #include <asm/arch/clock.h>
 #include <asm/arch-tegra/dc.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include "displayport.h"
 #include "sor.h"

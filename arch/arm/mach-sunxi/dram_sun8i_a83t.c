@@ -15,6 +15,7 @@
 #include <asm/arch/dram.h>
 #include <asm/arch/prcm.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 #define DRAM_CLK_MUL 2
 #define DRAM_CLK_DIV 1

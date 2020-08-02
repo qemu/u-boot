@@ -20,6 +20,7 @@
 #include <asm/arch/clk.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/sys_proto.h>
+#include <linux/errno.h>
 
 /* Register bitfield defines */
 #define PLLCTRL_FBDIV_MASK	0x7f000

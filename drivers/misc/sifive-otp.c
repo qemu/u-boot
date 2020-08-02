@@ -23,6 +23,7 @@
 #include <dm/read.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <misc.h>
 #include <linux/printk.h>

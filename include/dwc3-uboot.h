@@ -10,6 +10,7 @@
 #define __DWC3_UBOOT_H_
 
 #include <generic-phy.h>
+#include <linux/errno.h>
 #include <linux/usb/otg.h>
 #include <linux/usb/phy.h>
 

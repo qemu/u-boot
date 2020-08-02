@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <soc.h>
 #include <vsprintf.h>
+#include <linux/errno.h>
 
 #include <asm/io.h>
 

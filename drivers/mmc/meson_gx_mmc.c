@@ -16,6 +16,7 @@
 #include <asm/gpio.h>
 #include <asm/arch/sd_emmc.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/log2.h>
 #include <linux/string.h>
 

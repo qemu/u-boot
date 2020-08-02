@@ -19,6 +19,7 @@
 #include <asm/arch/adsp.h>
 #include <asm/arch/pch.h>
 #include <asm/arch/rcb.h>
+#include <linux/errno.h>
 
 enum pci_type_t {
 	LYNX_POINT,

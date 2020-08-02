@@ -25,6 +25,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <div64.h>
+#include <linux/errno.h>
 #include <linux/math64.h>
 #include <efi_loader.h>
 #include <squashfs.h>

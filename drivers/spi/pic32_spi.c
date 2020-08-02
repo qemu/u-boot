@@ -17,6 +17,7 @@
 #include <linux/compat.h>
 #include <malloc.h>
 #include <spi.h>
+#include <linux/errno.h>
 
 #include <asm/types.h>
 #include <asm/io.h>

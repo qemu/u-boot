@@ -9,6 +9,7 @@
 #include <nand.h>
 #include <errno.h>
 #include <vsprintf.h>
+#include <linux/errno.h>
 #include <linux/mtd/concat.h>
 
 #ifndef CONFIG_SYS_NAND_BASE_LIST

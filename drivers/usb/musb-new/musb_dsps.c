@@ -35,6 +35,7 @@
 #include <time.h>
 #include <vsprintf.h>
 #include <asm/omap_musb.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include "linux-compat.h"
 #endif

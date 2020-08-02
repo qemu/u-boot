@@ -6,6 +6,7 @@
 #include <fs.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "pxe_utils.h"
 

@@ -10,6 +10,7 @@
 #include <tee.h>
 #include <dm/device-internal.h>
 #include <dm/uclass-internal.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /**

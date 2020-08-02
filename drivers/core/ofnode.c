@@ -12,6 +12,7 @@
 #include <malloc.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <dm/of_access.h>
 #include <dm/of_addr.h>

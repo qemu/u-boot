@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <errno.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 static int hi6220_gpio_direction_input(struct udevice *dev, unsigned int gpio)

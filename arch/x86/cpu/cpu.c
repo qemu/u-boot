@@ -49,6 +49,7 @@
 #include <asm/interrupt.h>
 #include <asm/tables.h>
 #include <linux/compiler.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

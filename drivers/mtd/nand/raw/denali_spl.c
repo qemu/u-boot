@@ -9,6 +9,7 @@
 #include <asm/io.h>
 #include <asm/unaligned.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/mtd/rawnand.h>
 #include <linux/string.h>
 #include "denali.h"

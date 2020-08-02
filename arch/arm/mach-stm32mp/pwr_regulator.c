@@ -12,6 +12,7 @@
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <power/pmic.h>
 #include <power/regulator.h>
 

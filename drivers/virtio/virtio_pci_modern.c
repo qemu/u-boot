@@ -19,6 +19,7 @@
 #include <linux/compat.h>
 #include <linux/delay.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/string.h>
 #include "virtio_pci.h"

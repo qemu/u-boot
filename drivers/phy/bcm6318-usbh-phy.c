@@ -19,6 +19,7 @@
 #include <dm/device.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 /* USBH Setup register */
 #define USBH_SETUP_REG		0x00

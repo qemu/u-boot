@@ -10,6 +10,7 @@
 #include <net.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/errno.h>
 
 #include "pxe_utils.h"
 

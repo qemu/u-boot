@@ -17,6 +17,7 @@
 #include <errno.h>
 #include <fat.h>
 #include <image.h>
+#include <linux/errno.h>
 
 #ifndef CONFIG_SYS_SATA_FAT_BOOT_PARTITION
 #define CONFIG_SYS_SATA_FAT_BOOT_PARTITION	1

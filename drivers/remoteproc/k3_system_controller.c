@@ -13,6 +13,7 @@
 #include <errno.h>
 #include <mailbox.h>
 #include <dm/device_compat.h>
+#include <linux/errno.h>
 #include <linux/soc/ti/k3-sec-proxy.h>
 #include <linux/string.h>
 

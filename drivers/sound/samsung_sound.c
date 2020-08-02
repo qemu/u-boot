@@ -12,6 +12,7 @@
 #include <sound.h>
 #include <asm/gpio.h>
 #include <asm/arch/power.h>
+#include <linux/errno.h>
 
 static int samsung_sound_setup(struct udevice *dev)
 {

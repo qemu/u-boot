@@ -14,6 +14,7 @@
 #include <dm/test.h>
 #include <errno.h>
 #include <fdtdec.h>
+#include <linux/errno.h>
 #include <power/regulator.h>
 #include <power/sandbox_pmic.h>
 #include <sandbox-adc.h>

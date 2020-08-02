@@ -16,6 +16,7 @@
 #include <asm/io.h>
 #include <linux/bug.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/ioport.h>
 #include <linux/io.h>
 #include <smem.h>

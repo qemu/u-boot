@@ -23,6 +23,7 @@
 #include <fsl_esdhc_imx.h>
 #endif
 #include <asm/u-boot.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #ifdef CONFIG_FSL_ESDHC_IMX

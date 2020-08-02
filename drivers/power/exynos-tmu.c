@@ -25,6 +25,7 @@
 #include <tmu.h>
 #include <asm/arch/tmu.h>
 #include <asm/arch/power.h>
+#include <linux/errno.h>
 
 #define TRIMINFO_RELOAD		1
 #define CORE_EN			1

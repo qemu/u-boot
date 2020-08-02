@@ -12,6 +12,7 @@
 #include <asm/arch/clock.h>
 #include <asm/arch/soc.h>
 #include <asm/u-boot.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>
 #include "pcie_layerscape_fixup_common.h"

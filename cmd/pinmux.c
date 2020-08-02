@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <dm/pinctrl.h>
 #include <dm/uclass-internal.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #define LIMIT_DEVNAME	30

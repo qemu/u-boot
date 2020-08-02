@@ -12,6 +12,7 @@
 #include <asm/arch/reset.h>
 #include <asm/arch/nexell.h>
 #include <asm/arch/display.h>
+#include <linux/errno.h>
 
 #include "soc/s5pxx18_soc_disptop.h"
 #include "soc/s5pxx18_soc_dpc.h"

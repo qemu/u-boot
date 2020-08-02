@@ -9,6 +9,7 @@
 #include <regmap.h>
 #include <syscon.h>
 #include <dm/device_compat.h>
+#include <linux/errno.h>
 
 #define FSS_SYSC_REG	0x4
 

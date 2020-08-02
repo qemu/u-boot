@@ -12,6 +12,7 @@
 #include <errno.h>
 #include <bouncebuf.h>
 #include <asm/cache.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 static int addr_aligned(struct bounce_buffer *state)

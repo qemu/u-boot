@@ -10,6 +10,7 @@
 #include <regmap.h>
 #include <syscon.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 #include "pinctrl-rockchip.h"
 

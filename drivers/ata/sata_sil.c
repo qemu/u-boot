@@ -20,6 +20,7 @@
 #include <libata.h>
 #include <sata.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #if CONFIG_IS_ENABLED(BLK)

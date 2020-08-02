@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <dm/uclass-internal.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #define LED_TOGGLE LEDST_COUNT

@@ -11,6 +11,7 @@
 #include <common.h>
 #include <dm.h>
 #include <scsi.h>
+#include <linux/errno.h>
 
 int scsi_exec(struct udevice *dev, struct scsi_cmd *pccb)
 {

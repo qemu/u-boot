@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <sound.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 #define SOUND_BITS_IN_BYTE 8
 

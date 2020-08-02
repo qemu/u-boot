@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 #include "pinctrl-nexell.h"
 #include "pinctrl-s5pxx18.h"
 

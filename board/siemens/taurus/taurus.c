@@ -31,6 +31,7 @@
 #include <asm/arch/clk.h>
 #include <asm/gpio.h>
 #include <asm/u-boot.h>
+#include <linux/errno.h>
 #include <linux/mtd/rawnand.h>
 #include <atmel_mci.h>
 #include <asm/arch/at91_spi.h>

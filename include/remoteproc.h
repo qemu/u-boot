@@ -14,6 +14,7 @@
  * platforms have moved to dm/fdt.
  */
 #include <dm/platdata.h>	/* For platform data support - non dt world */
+#include <linux/errno.h>
 
 /**
  * enum rproc_mem_type - What type of memory model does the rproc use

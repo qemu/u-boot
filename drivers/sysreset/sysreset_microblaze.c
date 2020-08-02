@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <sysreset.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 static int microblaze_sysreset_request(struct udevice *dev,
 				       enum sysreset_t type)

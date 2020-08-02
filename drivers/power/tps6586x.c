@@ -10,6 +10,7 @@
 #include <asm/io.h>
 #include <i2c.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 static struct udevice *tps6586x_dev;
 

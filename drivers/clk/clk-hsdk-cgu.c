@@ -17,6 +17,7 @@
 #include <linux/bitops.h>
 #include <linux/bug.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <asm/arcregs.h>
 #include <linux/printk.h>

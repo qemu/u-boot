@@ -18,6 +18,7 @@
 #include <asm/global_data.h>
 #include <asm/gpio.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/mii.h>
 
 #include "pic32_eth.h"

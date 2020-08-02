@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <sound.h>
 #include <dm/test.h>
+#include <linux/errno.h>
 #include <test/ut.h>
 #include <test/test.h>
 #include <asm/test.h>

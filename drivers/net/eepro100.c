@@ -16,6 +16,7 @@
 #include <pci.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /* Ethernet chip registers. */

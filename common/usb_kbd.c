@@ -19,6 +19,7 @@
 #include <time.h>
 #include <watchdog.h>
 #include <asm/byteorder.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #include <usb.h>

@@ -22,6 +22,7 @@
 #include <asm/arch/pch.h>
 #include <asm/arch/rcb.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 struct cpu_broadwell_priv {
 	bool ht_disabled;

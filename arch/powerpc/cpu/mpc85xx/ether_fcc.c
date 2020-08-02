@@ -33,6 +33,7 @@
 #include <config.h>
 #include <net.h>
 #include <asm/u-boot.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #if defined(CONFIG_MII) || defined(CONFIG_CMD_MII)

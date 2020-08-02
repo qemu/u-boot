@@ -10,6 +10,7 @@
  */
 
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <linux/math64.h>
 #include <common.h>
 #include <dm.h>

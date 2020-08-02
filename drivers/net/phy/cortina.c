@@ -15,6 +15,7 @@
 #include <vsprintf.h>
 #include <linux/ctype.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include <linux/err.h>
 #include <phy.h>

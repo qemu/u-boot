@@ -18,6 +18,7 @@
 #include <errno.h>
 #include <malloc.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/math64.h>
 #include <thermal.h>
 #include <imx_thermal.h>

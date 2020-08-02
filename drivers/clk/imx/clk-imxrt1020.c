@@ -11,6 +11,7 @@
 #include <asm/arch/clock.h>
 #include <asm/arch/imx-regs.h>
 #include <dt-bindings/clock/imxrt1020-clock.h>
+#include <linux/errno.h>
 
 #include "clk.h"
 

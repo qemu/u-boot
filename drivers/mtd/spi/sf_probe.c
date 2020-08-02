@@ -15,6 +15,7 @@
 #include <spi.h>
 #include <spi_flash.h>
 #include <stdio.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #include "sf_internal.h"

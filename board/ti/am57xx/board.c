@@ -36,6 +36,7 @@
 #include <asm/arch/omap.h>
 #include <usb.h>
 #include <asm/u-boot.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include <linux/usb/gadget.h>
 #include <dwc3-uboot.h>

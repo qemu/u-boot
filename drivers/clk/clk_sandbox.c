@@ -9,6 +9,7 @@
 #include <errno.h>
 #include <malloc.h>
 #include <asm/clk.h>
+#include <linux/errno.h>
 
 struct sandbox_clk_priv {
 	bool probed;

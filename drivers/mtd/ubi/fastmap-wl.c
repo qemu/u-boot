@@ -6,6 +6,8 @@
  *
  */
 
+#include <linux/errno.h>
+
 /**
  * update_fastmap_work_fn - calls ubi_update_fastmap from a work queue
  * @wrk: the work description object

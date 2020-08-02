@@ -13,6 +13,7 @@
 #include <malloc.h>
 #include <asm/io.h>
 #include <dm/test.h>
+#include <linux/errno.h>
 #include <test/test.h>
 #include <test/ut.h>
 

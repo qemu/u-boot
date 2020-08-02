@@ -6,6 +6,7 @@
 #include <common.h>
 #include <dm.h>
 #include <rng.h>
+#include <linux/errno.h>
 
 int dm_rng_read(struct udevice *dev, void *buffer, size_t size)
 {

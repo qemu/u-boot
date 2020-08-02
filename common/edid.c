@@ -16,6 +16,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <linux/ctype.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 int edid_check_info(struct edid1_info *edid_info)

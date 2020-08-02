@@ -9,6 +9,7 @@
 
 #include <time.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 /**
  * DOC: Overview

@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/u-boot.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/delay.h>
 #include <linux/string.h>

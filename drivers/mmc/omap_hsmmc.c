@@ -57,6 +57,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <power/regulator.h>
 #include <thermal.h>
 

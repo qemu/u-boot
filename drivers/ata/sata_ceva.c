@@ -9,6 +9,7 @@
 #include <log.h>
 #include <scsi.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 #include <linux/ioport.h>
 
 /* Vendor Specific Register Offsets */

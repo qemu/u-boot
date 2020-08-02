@@ -23,6 +23,7 @@
 #include <dm/devres.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/ioport.h>
 #include <asm/io.h>
 #include <asm/arch/sys_proto.h>

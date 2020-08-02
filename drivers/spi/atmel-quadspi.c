@@ -20,6 +20,7 @@
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/iopoll.h>
 #include <linux/ioport.h>

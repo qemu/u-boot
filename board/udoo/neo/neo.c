@@ -29,6 +29,7 @@
 #include <spl.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/sizes.h>
 #include <common.h>
 #include <i2c.h>

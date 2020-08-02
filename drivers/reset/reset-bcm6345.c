@@ -15,6 +15,7 @@
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 #define MAX_RESETS	32
 

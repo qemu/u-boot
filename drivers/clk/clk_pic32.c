@@ -17,6 +17,7 @@
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>
+#include <linux/errno.h>
 #include <mach/pic32.h>
 #include <dt-bindings/clock/microchip,clock.h>
 

@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <env.h>
 #include <net.h>
+#include <linux/errno.h>
 #include <linux/mtd/spi-nor.h>
 #include <netdev.h>
 #include <linux/string.h>

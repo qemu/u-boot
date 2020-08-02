@@ -23,6 +23,7 @@
 #include <asm/mtrr.h>
 #include <asm/post.h>
 #include <asm/microcode.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

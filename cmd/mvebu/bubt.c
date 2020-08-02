@@ -15,6 +15,7 @@
 #include <vsprintf.h>
 #include <errno.h>
 #include <dm.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #include <spi_flash.h>

@@ -13,6 +13,7 @@
 #include <dm.h>
 #include <log.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 
 int pci_map_physmem(phys_addr_t paddr, unsigned long *lenp,
 		    struct udevice **devp, void **ptrp)

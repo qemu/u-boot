@@ -11,6 +11,7 @@
 #include <dm/device-internal.h>
 #include <dm/lists.h>
 #include <dm/uclass-internal.h>
+#include <linux/errno.h>
 
 static int bind_by_class_index(const char *uclass, int index,
 			       const char *drv_name)

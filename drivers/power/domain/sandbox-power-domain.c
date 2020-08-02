@@ -10,6 +10,7 @@
 #include <power-domain-uclass.h>
 #include <asm/io.h>
 #include <asm/power-domain.h>
+#include <linux/errno.h>
 
 #define SANDBOX_POWER_DOMAINS 3
 

@@ -20,6 +20,7 @@
 #include <stdio.h>
 #include <linux/compat.h>
 #include <android_image.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

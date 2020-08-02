@@ -21,6 +21,7 @@
 #include <vsprintf.h>
 #include <asm/io.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #define PREFIX "lpc_tpm: "

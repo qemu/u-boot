@@ -14,6 +14,7 @@
 #include <dt-bindings/clock/imx8qxp-clock.h>
 #include <dt-bindings/soc/imx_rsrc.h>
 #include <misc.h>
+#include <linux/errno.h>
 
 #include "clk-imx8.h"
 

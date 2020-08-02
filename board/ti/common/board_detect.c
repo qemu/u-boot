@@ -21,6 +21,7 @@
 #include <mmc.h>
 #include <errno.h>
 #include <malloc.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

@@ -10,6 +10,7 @@
 #include <tee.h>
 #include <linux/arm-smccc.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/string.h>
 

@@ -41,6 +41,7 @@
 #include <dm.h>
 #include <clk.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <linux/iopoll.h>

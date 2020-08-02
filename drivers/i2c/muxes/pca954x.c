@@ -12,6 +12,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 
 #include <asm-generic/gpio.h>
 

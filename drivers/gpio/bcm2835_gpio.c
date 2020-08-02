@@ -11,6 +11,7 @@
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <fdtdec.h>
+#include <linux/errno.h>
 
 struct bcm2835_gpios {
 	struct bcm2835_gpio_regs *reg;

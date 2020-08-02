@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <dm/lists.h>
 #include <dm/root.h>
+#include <linux/errno.h>
 
 int ram_get_info(struct udevice *dev, struct ram_info *info)
 {

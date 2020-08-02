@@ -12,6 +12,7 @@
 #include <clk-uclass.h>
 #include <dm.h>
 #include <errno.h>
+#include <linux/errno.h>
 
 struct msm_clk_priv {
 	phys_addr_t base;

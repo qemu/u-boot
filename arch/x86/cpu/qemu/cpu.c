@@ -9,6 +9,7 @@
 #include <errno.h>
 #include <qfw.h>
 #include <asm/cpu.h>
+#include <linux/errno.h>
 
 int cpu_qemu_get_desc(const struct udevice *dev, char *buf, int size)
 {

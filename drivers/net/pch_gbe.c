@@ -17,6 +17,7 @@
 #include <pci.h>
 #include <miiphy.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "pch_gbe.h"
 

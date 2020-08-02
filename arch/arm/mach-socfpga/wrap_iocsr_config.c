@@ -6,6 +6,7 @@
 #include <common.h>
 #include <errno.h>
 #include <asm/arch/clock_manager.h>
+#include <linux/errno.h>
 
 /* Board-specific header. */
 #include <qts/iocsr_config.h>

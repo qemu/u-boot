@@ -9,6 +9,7 @@
 #include <dm/pinctrl.h>
 #include <dm/platform_data/serial_pl01x.h>
 #include <serial.h>
+#include <linux/errno.h>
 #include "serial_pl01x_internal.h"
 
 /*

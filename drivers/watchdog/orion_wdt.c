@@ -19,6 +19,7 @@
 #include <wdt.h>
 #include <asm/global_data.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/kernel.h>
 #include <asm/io.h>
 #include <asm/arch/cpu.h>

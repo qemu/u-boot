@@ -22,6 +22,7 @@
 #include <asm/arch/crm_regs.h>
 #include <netdev.h>
 #include <asm/u-boot.h>
+#include <linux/errno.h>
 #include <power/pmic.h>
 #include <power/pfuze3000_pmic.h>
 #include "../freescale/common/pfuze.h"

@@ -20,6 +20,7 @@
 #include <asm/arch-rockchip/lvds_rk3288.h>
 #include <dt-bindings/clock/rk3288-cru.h>
 #include <dt-bindings/video/rk3288.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

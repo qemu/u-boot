@@ -20,6 +20,7 @@
 #include <pci.h>
 #include <asm/io.h>
 #include <linux/bitfield.h>
+#include <linux/errno.h>
 #include <linux/log2.h>
 #include <linux/iopoll.h>
 

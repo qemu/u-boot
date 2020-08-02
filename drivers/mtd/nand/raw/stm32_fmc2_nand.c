@@ -14,6 +14,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/iopoll.h>
 #include <linux/ioport.h>
 #include <linux/printk.h>

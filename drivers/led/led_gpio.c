@@ -12,6 +12,7 @@
 #include <malloc.h>
 #include <asm/gpio.h>
 #include <dm/lists.h>
+#include <linux/errno.h>
 
 struct led_gpio_priv {
 	struct gpio_desc gpio;

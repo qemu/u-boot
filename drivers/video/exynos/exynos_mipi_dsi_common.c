@@ -13,6 +13,7 @@
 #include <linux/err.h>
 #include <asm/arch/dsim.h>
 #include <asm/arch/mipi_dsim.h>
+#include <linux/errno.h>
 
 #include "exynos_mipi_dsi_lowlevel.h"
 

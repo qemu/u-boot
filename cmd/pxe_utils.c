@@ -15,6 +15,7 @@
 #include <net.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include <linux/ctype.h>
 #include <errno.h>

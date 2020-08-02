@@ -11,6 +11,7 @@
 #include <reset.h>
 #include <reset-uclass.h>
 #include <dm/devres.h>
+#include <linux/errno.h>
 
 static inline struct reset_ops *reset_dev_ops(struct udevice *dev)
 {

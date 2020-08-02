@@ -24,6 +24,7 @@
 #include <asm/types.h>
 #include <linux/delay.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;

@@ -15,6 +15,7 @@
 #include <linux/module.h>
 #endif
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/mtd/nand.h>
 #include <linux/printk.h>
 

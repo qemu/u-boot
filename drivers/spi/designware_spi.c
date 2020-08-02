@@ -23,6 +23,7 @@
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/compat.h>
+#include <linux/errno.h>
 #include <linux/iopoll.h>
 #include <asm/io.h>
 

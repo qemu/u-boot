@@ -13,6 +13,7 @@
 #include <stm32_rcc.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 /* reset clear offset for STM32MP RCC */
 #define RCC_CL 0x4

@@ -25,6 +25,7 @@
 #include <fsl_esdhc_imx.h>
 #include <jffs2/load_kernel.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/sizes.h>
 #include <mmc.h>
 #include <miiphy.h>

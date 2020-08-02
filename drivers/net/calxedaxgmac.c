@@ -13,6 +13,7 @@
 #include <linux/delay.h>
 #include <linux/err.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #define TX_NUM_DESC			1

@@ -11,6 +11,7 @@
 #include <dt-bindings/reset/ti-syscon.h>
 #include <reset-uclass.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 struct hisi_reset_priv {
 	void __iomem *base;

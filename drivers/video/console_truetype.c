@@ -9,6 +9,7 @@
 #include <malloc.h>
 #include <video.h>
 #include <video_console.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /* Functions needed by stb_truetype.h */

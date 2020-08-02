@@ -19,6 +19,7 @@
 #include <i2c.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <power/pmic.h>
 #include <fsl_pmic.h>
 #include <mc34704.h>

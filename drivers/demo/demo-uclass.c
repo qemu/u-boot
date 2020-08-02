@@ -15,6 +15,7 @@
 #include <malloc.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 #include <linux/list.h>
 
 DECLARE_GLOBAL_DATA_PTR;

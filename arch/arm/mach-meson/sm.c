@@ -17,6 +17,7 @@
 #include <asm/ptrace.h>
 #include <linux/bitops.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/kernel.h>
 #include <dm.h>
 #include <linux/bitfield.h>

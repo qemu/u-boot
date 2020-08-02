@@ -17,6 +17,7 @@
 #include <asm/io.h>
 #include <dm/device.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 #define USBH_SETUP_PORT1_EN	BIT(0)
 

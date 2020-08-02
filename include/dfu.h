@@ -12,6 +12,7 @@
 
 #include <common.h>
 #include <stdio.h>
+#include <linux/errno.h>
 #include <linux/list.h>
 #include <mmc.h>
 #include <spi_flash.h>

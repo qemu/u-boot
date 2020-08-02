@@ -10,6 +10,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <ubi_uboot.h>
+#include <linux/errno.h>
 #include "ubi.h"
 
 /**

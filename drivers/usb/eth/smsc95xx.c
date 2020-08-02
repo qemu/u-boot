@@ -20,6 +20,7 @@
 #include <asm/u-boot.h>
 #include <asm/unaligned.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/mii.h>
 #include <linux/string.h>
 #include "usb_ether.h"

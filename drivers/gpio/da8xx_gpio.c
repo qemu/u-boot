@@ -15,6 +15,7 @@
 #include <asm/io.h>
 #include <asm/gpio.h>
 #include <dt-bindings/gpio/gpio.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #include "da8xx_gpio.h"

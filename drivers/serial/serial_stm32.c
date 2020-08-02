@@ -15,6 +15,7 @@
 #include <asm/arch/stm32.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include "serial_stm32.h"
 #include <dm/device_compat.h>
 

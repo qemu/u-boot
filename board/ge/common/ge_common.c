@@ -7,6 +7,7 @@
 #include <env.h>
 #include <dm/uclass.h>
 #include <rtc.h>
+#include <linux/errno.h>
 
 void check_time(void)
 {

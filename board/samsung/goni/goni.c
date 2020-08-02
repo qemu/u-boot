@@ -15,6 +15,7 @@
 #include <dm.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <power/pmic.h>
 #include <usb/dwc2_udc.h>

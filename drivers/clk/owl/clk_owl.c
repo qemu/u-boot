@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <linux/errno.h>
 #include "clk_owl.h"
 #include <asm/io.h>
 #if defined(CONFIG_MACH_S900)

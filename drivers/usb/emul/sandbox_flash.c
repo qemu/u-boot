@@ -10,6 +10,7 @@
 #include <os.h>
 #include <scsi.h>
 #include <usb.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /*

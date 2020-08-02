@@ -8,6 +8,7 @@
 #include <common.h>
 #include <dm.h>
 #include <dsi_host.h>
+#include <linux/errno.h>
 
 int dsi_host_init(struct udevice *dev,
 		  struct mipi_dsi_device *device,

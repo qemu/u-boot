@@ -27,6 +27,7 @@
 #include <memalign.h>
 #include <linux/compat.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/sizes.h>
 #include <stdlib.h>
 #include <linux/string.h>

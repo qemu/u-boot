@@ -20,6 +20,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 
 #ifdef DEBUG_TRACE
 #define debug_trace(fmt, b...)	debug(fmt, ##b)

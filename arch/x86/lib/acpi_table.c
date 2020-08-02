@@ -26,6 +26,7 @@
 #include <asm/arch/global_nvs.h>
 #include <dm/acpi.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /*

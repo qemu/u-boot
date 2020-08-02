@@ -13,6 +13,7 @@
 
 #include <errno.h>
 #include <image.h>
+#include <linux/errno.h>
 
 /**
  * struct rsa_public_key - holder for a public key

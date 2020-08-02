@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <log.h>
 #include <pch.h>
+#include <linux/errno.h>
 
 #define GPIO_BASE	0x44
 #define BIOS_CTRL	0xd8

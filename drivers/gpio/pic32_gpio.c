@@ -14,6 +14,7 @@
 #include <asm/gpio.h>
 #include <linux/bitops.h>
 #include <linux/compat.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include <mach/pic32.h>
 

@@ -18,6 +18,7 @@
 #include <asm/arch/image.h>
 #include <console.h>
 #include <asm/u-boot.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;

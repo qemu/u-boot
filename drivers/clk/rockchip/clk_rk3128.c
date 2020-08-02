@@ -19,6 +19,7 @@
 #include <dm/lists.h>
 #include <dt-bindings/clock/rk3128-cru.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/log2.h>
 
 enum {

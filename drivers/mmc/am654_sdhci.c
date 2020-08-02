@@ -16,6 +16,7 @@
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 /* CTL_CFG Registers */
 #define CTL_CFG_2		0x14

@@ -20,6 +20,7 @@
 #include <asm/gpio.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

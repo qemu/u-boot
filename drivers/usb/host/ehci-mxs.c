@@ -12,6 +12,7 @@
 #include <asm/arch/imx-regs.h>
 #include <errno.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 #include "ehci.h"
 

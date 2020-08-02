@@ -28,6 +28,7 @@
 #include <part.h>
 #include <stddef.h>
 #include <stdio.h>
+#include <linux/errno.h>
 #include <linux/stat.h>
 #include <linux/string.h>
 #include <linux/time.h>

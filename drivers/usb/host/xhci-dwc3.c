@@ -15,6 +15,7 @@
 #include <usb.h>
 #include <dwc3-uboot.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #include <usb/xhci.h>

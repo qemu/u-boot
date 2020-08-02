@@ -20,6 +20,7 @@
 #include <errno.h>
 #include <reset.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 #define GPIO_SWPORT_DR(p)	(0x00 + (p) * 0xc)
 #define GPIO_SWPORT_DDR(p)	(0x04 + (p) * 0xc)

@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <log.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 #include <power/bd71837.h>

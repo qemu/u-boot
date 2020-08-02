@@ -8,6 +8,7 @@
 #include <display.h>
 #include <edid.h>
 #include <errno.h>
+#include <linux/errno.h>
 
 int display_read_edid(struct udevice *dev, u8 *buf, int buf_size)
 {

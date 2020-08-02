@@ -11,6 +11,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <usb.h>
+#include <linux/errno.h>
 #include <power/regulator.h>
 #include <asm/gpio.h>
 

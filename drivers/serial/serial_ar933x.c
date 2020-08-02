@@ -14,6 +14,7 @@
 #include <asm/types.h>
 #include <dm/pinctrl.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <mach/ar71xx_regs.h>
 
 #define AR933X_UART_DATA_REG            0x00

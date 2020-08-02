@@ -20,6 +20,7 @@
 #include <asm/global_data.h>
 #include <dm/acpi.h>
 #include <dm/test.h>
+#include <linux/errno.h>
 #include <test/ut.h>
 #include "acpi.h"
 

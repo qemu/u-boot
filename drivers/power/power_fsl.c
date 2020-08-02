@@ -7,6 +7,7 @@
 #include <common.h>
 #include <spi.h>
 #include <stdio.h>
+#include <linux/errno.h>
 #include <power/pmic.h>
 #include <fsl_pmic.h>
 #include <errno.h>

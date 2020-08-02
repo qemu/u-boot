@@ -26,6 +26,7 @@
 #include <dm/device_compat.h>
 #include <linux/delay.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/ioport.h>
 #include <linux/mdio.h>
 #include <linux/mii.h>

@@ -18,6 +18,7 @@
 #include <linux/bug.h>
 #include <linux/compat.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include "virtio_pci.h"
 

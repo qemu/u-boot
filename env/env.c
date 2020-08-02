@@ -12,6 +12,7 @@
 #include <asm/global_data.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

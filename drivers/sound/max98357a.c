@@ -20,6 +20,7 @@
 #endif
 #include <dt-bindings/sound/nhlt.h>
 #include <dm/acpi.h>
+#include <linux/errno.h>
 
 struct max98357a_priv {
 	struct gpio_desc sdmode_gpio;

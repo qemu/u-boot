@@ -11,6 +11,7 @@
 #include <asm/arch/fsp_bindings.h>
 #include <asm/fsp2/fsp_internal.h>
 #include <dm/uclass-internal.h>
+#include <linux/errno.h>
 
 int fspm_update_config(struct udevice *dev, struct fspm_upd *upd)
 {

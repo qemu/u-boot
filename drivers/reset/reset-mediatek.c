@@ -16,6 +16,7 @@
 #include <syscon.h>
 #include <linux/bitops.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 struct mediatek_reset_priv {
 	struct regmap *regmap;

@@ -30,6 +30,7 @@
 #include <netdev.h>
 #include <fsl_sec.h>
 #include <asm/u-boot.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;

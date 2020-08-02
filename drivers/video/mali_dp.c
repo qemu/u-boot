@@ -21,6 +21,7 @@
 #include <clk.h>
 #include <dm/device_compat.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/sizes.h>
 #include <linux/string.h>
 

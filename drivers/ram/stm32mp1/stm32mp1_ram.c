@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <syscon.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 #include "stm32mp1_ddr.h"

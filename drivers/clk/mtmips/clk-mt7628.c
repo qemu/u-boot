@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <dt-bindings/clock/mt7628-clk.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 
 /* SYSCFG0 */

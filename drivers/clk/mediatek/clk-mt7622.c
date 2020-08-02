@@ -13,6 +13,7 @@
 #include <asm/io.h>
 #include <dt-bindings/clock/mt7622-clk.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 #include "clk-mtk.h"
 

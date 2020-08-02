@@ -26,6 +26,7 @@
 #include <fsl_esdhc_imx.h>
 #include <mmc.h>
 #include <spl.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;

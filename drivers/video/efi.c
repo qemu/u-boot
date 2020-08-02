@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <vbe.h>
 #include <video.h>
+#include <linux/errno.h>
 
 struct pixel {
 	u8 pos;

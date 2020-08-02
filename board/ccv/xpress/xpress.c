@@ -29,6 +29,7 @@
 #include <usb.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <usb/ehci-ci.h>
 
 DECLARE_GLOBAL_DATA_PTR;

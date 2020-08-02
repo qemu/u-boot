@@ -20,6 +20,7 @@
 #include <asm/sfi.h>
 #include <asm/tables.h>
 #include <dm/uclass-internal.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 struct table_info {

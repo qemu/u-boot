@@ -14,6 +14,7 @@
 #include <i2c.h>
 #include <rtc.h>
 #include <stdio.h>
+#include <linux/errno.h>
 
 /*---------------------------------------------------------------------*/
 #undef DEBUG_RTC

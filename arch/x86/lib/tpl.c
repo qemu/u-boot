@@ -18,6 +18,7 @@
 #include <asm/mtrr.h>
 #include <asm/processor.h>
 #include <asm-generic/sections.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

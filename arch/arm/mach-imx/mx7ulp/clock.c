@@ -13,6 +13,7 @@
 #include <errno.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/sys_proto.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

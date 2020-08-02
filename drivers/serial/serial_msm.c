@@ -19,6 +19,7 @@
 #include <asm/io.h>
 #include <linux/compiler.h>
 #include <dm/pinctrl.h>
+#include <linux/errno.h>
 
 /* Serial registers - this driver works in uartdm mode*/
 

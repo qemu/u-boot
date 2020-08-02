@@ -18,6 +18,7 @@
 #include <miiphy.h>
 #include <linux/bug.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #include "fsl_enetc.h"

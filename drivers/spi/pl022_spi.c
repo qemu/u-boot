@@ -14,6 +14,7 @@
 #include <dm.h>
 #include <asm/global_data.h>
 #include <dm/platform_data/spi_pl022.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <spi.h>
 #include <linux/printk.h>

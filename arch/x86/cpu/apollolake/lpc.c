@@ -13,6 +13,7 @@
 #include <asm/pci.h>
 #include <asm/arch/iomap.h>
 #include <asm/arch/lpc.h>
+#include <linux/errno.h>
 #include <linux/log2.h>
 
 void lpc_enable_fixed_io_ranges(uint io_enables)

@@ -10,6 +10,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/io.h>
 #include <errno.h>
+#include <linux/errno.h>
 
 static struct ccm_reg *ccm_reg = (struct ccm_reg *)CCM_BASE_ADDR;
 

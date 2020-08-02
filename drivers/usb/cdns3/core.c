@@ -20,6 +20,7 @@
 #include <dm/devres.h>
 #include <dm/lists.h>
 #include <linux/bug.h>
+#include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/io.h>
 #include <usb.h>

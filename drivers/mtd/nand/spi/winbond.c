@@ -13,6 +13,7 @@
 #include <linux/kernel.h>
 #endif
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/mtd/spinand.h>
 
 #define SPINAND_MFR_WINBOND		0xEF

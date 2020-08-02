@@ -14,6 +14,7 @@
 #include <misc.h>
 #include <sound.h>
 #include <asm/gpio.h>
+#include <linux/errno.h>
 #include "tegra_i2s_priv.h"
 
 static int tegra_sound_setup(struct udevice *dev)

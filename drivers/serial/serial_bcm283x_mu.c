@@ -25,6 +25,7 @@
 #include <dm/pinctrl.h>
 #include <linux/bitops.h>
 #include <linux/compiler.h>
+#include <linux/errno.h>
 
 struct bcm283x_mu_regs {
 	u32 io;

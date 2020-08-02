@@ -12,6 +12,7 @@
 #include <dm/of_addr.h>
 #include <fdt_support.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/ioport.h>
 #include <miiphy.h>

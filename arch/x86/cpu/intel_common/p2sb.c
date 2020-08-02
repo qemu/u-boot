@@ -15,6 +15,7 @@
 #include <spl.h>
 #include <asm/pci.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 #define PCH_P2SB_E0		0xe0
 #define HIDE_BIT		BIT(0)

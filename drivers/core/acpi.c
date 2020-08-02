@@ -18,6 +18,7 @@
 #include <dm/acpi.h>
 #include <dm/device-internal.h>
 #include <dm/root.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #define MAX_ACPI_ITEMS	100

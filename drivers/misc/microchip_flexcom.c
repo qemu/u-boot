@@ -11,6 +11,7 @@
 #include <misc.h>
 #include <asm/io.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 struct microchip_flexcom_regs {
 	u32 cr;

@@ -7,6 +7,7 @@
 #include <hang.h>
 #include <stdio.h>
 #include <wait_bit.h>
+#include <linux/errno.h>
 
 #include <asm/io.h>
 #include <linux/bitops.h>

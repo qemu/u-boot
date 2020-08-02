@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <dm/device.h>
 #include <dm/uclass.h>
+#include <linux/errno.h>
 #include <power/stpmic1.h>
 
 #define STM32MP_OTP_BANK	0

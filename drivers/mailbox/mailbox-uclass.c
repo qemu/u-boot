@@ -10,6 +10,7 @@
 #include <mailbox-uclass.h>
 #include <malloc.h>
 #include <time.h>
+#include <linux/errno.h>
 
 static inline struct mbox_ops *mbox_dev_ops(struct udevice *dev)
 {

@@ -14,6 +14,7 @@
 #include <asm/intel_pinctrl.h>
 #endif
 #include <asm/io.h>
+#include <linux/errno.h>
 #include <power/acpi_pmc.h>
 
 struct tco_regs {

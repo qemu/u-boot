@@ -14,6 +14,7 @@
 #include <linux/bitops.h>
 #include <linux/compiler.h>
 #include <serial.h>
+#include <linux/errno.h>
 
 #define SR_TX_FIFO_FULL		BIT(3) /* transmit FIFO full */
 #define SR_TX_FIFO_EMPTY	BIT(2) /* transmit FIFO empty */

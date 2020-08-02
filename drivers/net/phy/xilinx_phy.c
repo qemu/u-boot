@@ -10,6 +10,7 @@
 #include <log.h>
 #include <phy.h>
 #include <dm.h>
+#include <linux/errno.h>
 
 #define MII_PHY_STATUS_SPD_MASK		0x0C00
 #define MII_PHY_STATUS_FULLDUPLEX	0x1000

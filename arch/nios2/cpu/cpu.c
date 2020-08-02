@@ -16,6 +16,7 @@
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <asm/system.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;

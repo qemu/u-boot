@@ -18,6 +18,7 @@
 #include <asm/arch/soc.h>
 #include <asm/ppc.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 #include "mpc83xx_clk.h"
 

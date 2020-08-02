@@ -7,6 +7,7 @@
 #define _TEGRA_CBOOT_H_
 
 #include <net.h>
+#include <linux/errno.h>
 
 #ifdef CONFIG_ARM64
 

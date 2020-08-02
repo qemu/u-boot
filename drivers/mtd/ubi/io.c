@@ -83,6 +83,7 @@
 #else
 #include <hexdump.h>
 #include <ubi_uboot.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #endif
 

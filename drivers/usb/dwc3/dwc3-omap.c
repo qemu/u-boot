@@ -20,6 +20,7 @@
 #include <dwc3-omap-uboot.h>
 #include <dm/device_compat.h>
 #include <dm/devres.h>
+#include <linux/errno.h>
 #include <linux/usb/dwc3-omap.h>
 #include <linux/ioport.h>
 

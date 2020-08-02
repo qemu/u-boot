@@ -22,6 +22,7 @@
 #include <asm/arch/gpio.h>
 #include <dm/acpi.h>
 #include <dt-bindings/gpio/x86-gpio.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 static int intel_gpio_direction_input(struct udevice *dev, uint offset)

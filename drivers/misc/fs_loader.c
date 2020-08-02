@@ -12,6 +12,7 @@
 #include <fs_loader.h>
 #include <log.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include <mapmem.h>
 #include <malloc.h>

@@ -18,6 +18,7 @@
 #include <dm/device-internal.h>
 #include <dm/uclass-internal.h>
 #include <test/test.h>
+#include <linux/errno.h>
 #include <test/ut.h>
 
 #define DM_TEST_ETH_NUM		4

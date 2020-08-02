@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <sysreset.h>
 #include <asm/scu.h>
+#include <linux/errno.h>
 
 static int tangier_sysreset_request(struct udevice *dev, enum sysreset_t type)
 {

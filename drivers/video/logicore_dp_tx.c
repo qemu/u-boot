@@ -16,6 +16,7 @@
 #include <errno.h>
 #include <stdio.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #include "axi.h"

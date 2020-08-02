@@ -8,6 +8,7 @@
 #include <cpu_func.h>
 #include <asm/cache.h>
 #include <linux/compiler.h>
+#include <linux/errno.h>
 
 #if !defined(CONFIG_DM_BOOTCOUNT)
 /* Now implement the generic default functions */

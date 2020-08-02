@@ -14,6 +14,7 @@
 #include <sound.h>
 #include <asm/io.h>
 #include <asm/arch-tegra/tegra_i2s.h>
+#include <linux/errno.h>
 #include "tegra_i2s_priv.h"
 
 int tegra_i2s_set_cif_tx_ctrl(struct udevice *dev, u32 value)

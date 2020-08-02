@@ -29,6 +29,7 @@
 #include <part.h>
 #include <stdio.h>
 #include <uuid.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "ext4_common.h"
 

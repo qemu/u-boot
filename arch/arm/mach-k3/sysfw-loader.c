@@ -16,6 +16,7 @@
 #include <vsprintf.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <linux/soc/ti/ti_sci_protocol.h>
 #include <g_dnl.h>
 #include <usb.h>

@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 
 /* PWM registers and bits definitions */

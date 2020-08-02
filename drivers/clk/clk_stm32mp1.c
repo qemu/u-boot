@@ -17,6 +17,7 @@
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/iopoll.h>
 #include <asm/arch/sys_proto.h>

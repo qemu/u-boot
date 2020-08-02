@@ -8,6 +8,7 @@
 #include <env.h>
 #include <log.h>
 #include <vsprintf.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 
 #define MAX_CMD_LEN	25

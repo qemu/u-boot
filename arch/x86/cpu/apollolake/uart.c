@@ -16,6 +16,7 @@
 #include <asm/io.h>
 #include <asm/pci.h>
 #include <asm/lpss.h>
+#include <linux/errno.h>
 
 /* Low-power Subsystem (LPSS) clock register */
 enum {

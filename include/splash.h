@@ -23,6 +23,7 @@
 #define _SPLASH_H_
 
 #include <errno.h>
+#include <linux/errno.h>
 
 enum splash_storage {
 	SPLASH_STORAGE_NAND,

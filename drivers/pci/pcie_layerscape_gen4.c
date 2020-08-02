@@ -16,6 +16,7 @@
 #include <errno.h>
 #include <malloc.h>
 #include <dm.h>
+#include <linux/errno.h>
 #include <linux/sizes.h>
 
 #include "pcie_layerscape_gen4.h"

@@ -17,6 +17,7 @@
 #include <asm/pci.h>
 #include <asm/pirq_routing.h>
 #include <asm/tables.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

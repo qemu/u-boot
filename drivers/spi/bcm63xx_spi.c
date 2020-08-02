@@ -17,6 +17,7 @@
 #include <stdio.h>
 #include <wait_bit.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 
 /* BCM6348 SPI core */
 #define SPI_6348_CLK			0x06

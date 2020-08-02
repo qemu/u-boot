@@ -18,6 +18,7 @@
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include <linux/types.h>
 #include <efi.h>

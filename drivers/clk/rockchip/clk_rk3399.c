@@ -23,6 +23,7 @@
 #include <dt-bindings/clock/rk3399-cru.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

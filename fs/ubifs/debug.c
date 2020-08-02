@@ -20,6 +20,7 @@
 #include <time.h>
 #include <vsprintf.h>
 #include <dm/devres.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

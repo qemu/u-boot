@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <asm/malloc.h>
 #include <asm/state.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /* Main state record for the sandbox */

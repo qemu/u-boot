@@ -23,6 +23,7 @@
 #include <phy.h>
 #include <power-domain.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/soc/ti/ti-udma.h>
 

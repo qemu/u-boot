@@ -16,6 +16,7 @@
 #include <watchdog.h>
 #include <asm/global_data.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/types.h>
 #include <asm/io.h>
 

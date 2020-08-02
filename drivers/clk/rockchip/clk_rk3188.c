@@ -24,6 +24,7 @@
 #include <dm/uclass-internal.h>
 #include <linux/delay.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/log2.h>
 #include <linux/stringify.h>
 

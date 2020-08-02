@@ -9,6 +9,7 @@
 #include <reset-uclass.h>
 #include <asm/arch/msg.h>
 #include <dt-bindings/reset/raspberrypi,firmware-reset.h>
+#include <linux/errno.h>
 
 static int raspberrypi_reset_request(struct reset_ctl *reset_ctl)
 {

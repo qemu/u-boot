@@ -8,6 +8,7 @@
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <dm/device_compat.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <linux/err.h>
 #include <linux/list.h>

@@ -11,6 +11,7 @@
 #include <vsprintf.h>
 #include <asm/arch/stm32prog.h>
 #include <asm/arch/sys_proto.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 #include "stm32prog.h"

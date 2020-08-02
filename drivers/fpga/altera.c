@@ -16,6 +16,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <stratixII.h>
+#include <linux/errno.h>
 
 /* Define FPGA_DEBUG to 1 to get debug printf's */
 #define FPGA_DEBUG	0

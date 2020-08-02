@@ -27,6 +27,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #define REG_ISCR			0x00

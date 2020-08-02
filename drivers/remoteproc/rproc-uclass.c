@@ -16,6 +16,7 @@
 #include <dm.h>
 #include <dm/uclass.h>
 #include <dm/uclass-internal.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

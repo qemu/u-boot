@@ -13,6 +13,7 @@
 #include <asm/mach-imx/iomux-v3.h>
 #include <asm/io.h>
 #include <malloc.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

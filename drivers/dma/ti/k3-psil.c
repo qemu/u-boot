@@ -4,6 +4,7 @@
  *  Author: Peter Ujfalusi <peter.ujfalusi@ti.com>
  */
 
+#include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/err.h>
 

@@ -12,6 +12,7 @@
 #include <linux/bitops.h>
 #include <dm.h>
 #include <phy.h>
+#include <linux/errno.h>
 
 /* This function is provided to cope with the possible failures of this phy
  * during aneg process. When aneg fails, the PHY reports that aneg is done

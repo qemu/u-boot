@@ -12,6 +12,7 @@
 #include <errno.h>
 #include <stdio.h>
 #include <usb.h>
+#include <linux/errno.h>
 #include <usb/ehci-ci.h>
 #include <usb/ulpi.h>
 #include <wait_bit.h>

@@ -8,6 +8,7 @@
 #include <errno.h>
 #include <i2c.h>
 #include <stdio.h>
+#include <linux/errno.h>
 #include <power/pmic.h>
 #include <power/ltc3676_pmic.h>
 

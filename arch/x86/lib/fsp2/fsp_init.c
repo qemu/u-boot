@@ -17,6 +17,7 @@
 #include <asm/intel_pinctrl.h>
 #include <dm/uclass-internal.h>
 #include <asm/fsp2/fsp_internal.h>
+#include <linux/errno.h>
 
 int arch_cpu_init_dm(void)
 {

@@ -13,6 +13,7 @@
 #include <errno.h>
 #include <fdtdec.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <altera.h>
 #include <miiphy.h>

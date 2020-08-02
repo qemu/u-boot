@@ -17,6 +17,7 @@
 #include <usb.h>
 #include <vsprintf.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include <usb/ulpi.h>
 #include <errno.h>

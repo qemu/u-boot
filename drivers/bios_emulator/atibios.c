@@ -54,6 +54,7 @@
 #include <stdio.h>
 #include <vbe.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "biosemui.h"
 

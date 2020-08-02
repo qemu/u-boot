@@ -23,6 +23,7 @@
 #include <reset.h>
 #include <time.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

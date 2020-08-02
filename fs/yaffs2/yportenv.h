@@ -18,6 +18,7 @@
 #define __YPORTENV_H__
 
 #include <linux/bug.h>
+#include <linux/errno.h>
 #include <linux/types.h>
 
 /* Definition of types */

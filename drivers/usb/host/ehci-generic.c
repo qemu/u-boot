@@ -13,6 +13,7 @@
 #include <reset.h>
 #include <asm/io.h>
 #include <dm.h>
+#include <linux/errno.h>
 #include "ehci.h"
 #include <power/regulator.h>
 

@@ -13,6 +13,7 @@
 
 #include <div64.h>
 #include <stdio.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "yaffsfs.h"
 #include "yaffs_guts.h"

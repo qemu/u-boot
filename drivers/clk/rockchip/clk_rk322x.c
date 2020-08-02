@@ -18,6 +18,7 @@
 #include <dt-bindings/clock/rk3228-cru.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/log2.h>
 #include <linux/string.h>
 #include <linux/stringify.h>

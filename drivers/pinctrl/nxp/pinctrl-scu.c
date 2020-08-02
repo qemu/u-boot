@@ -10,6 +10,7 @@
 #include <asm/io.h>
 #include <asm/arch/sci/sci.h>
 #include <misc.h>
+#include <linux/errno.h>
 
 #include "pinctrl-imx.h"
 

@@ -10,6 +10,7 @@
 #include <serial.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 /* data register */
 #define ALTERA_JTAG_RVALID	BIT(15)	/* Read valid */

@@ -14,6 +14,7 @@
 #include <acpi/acpigen.h>
 #include <acpi/acpi_dp.h>
 #include <dm/acpi.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 static void acpi_dp_write_array(struct acpi_ctx *ctx,

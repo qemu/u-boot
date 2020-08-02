@@ -12,6 +12,7 @@
 #include <asm/arch/sys_proto.h>
 #include <asm/global_data.h>
 #include <linux/arm-smccc.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

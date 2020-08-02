@@ -16,6 +16,7 @@
 #include <acpi/acpi_device.h>
 #include <acpi/acpi_table.h>
 #include <dm/acpi.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 u8 *acpigen_get_current(struct acpi_ctx *ctx)

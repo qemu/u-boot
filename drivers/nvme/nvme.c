@@ -18,6 +18,7 @@
 #include <vsprintf.h>
 #include <dm/device-internal.h>
 #include <linux/compat.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "nvme.h"
 

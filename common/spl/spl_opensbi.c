@@ -14,6 +14,7 @@
 #include <asm/global_data.h>
 #include <asm/smp.h>
 #include <opensbi.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <linux/printk.h>
 

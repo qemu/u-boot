@@ -23,6 +23,7 @@
 #include <linux/delay.h>
 #include <linux/dma-mapping.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/ioport.h>
 #include <dm.h>
 #include <generic-phy.h>

@@ -18,6 +18,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 #include <linux/usb/ch9.h>

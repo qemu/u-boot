@@ -17,6 +17,7 @@
 #include <asm/gpio.h>
 #endif
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 
 /*

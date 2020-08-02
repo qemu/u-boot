@@ -29,6 +29,7 @@
 #include <linux/compiler.h>
 #include <linux/delay.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/kernel.h>
 #include <asm/io.h>
 #include <linux/printk.h>

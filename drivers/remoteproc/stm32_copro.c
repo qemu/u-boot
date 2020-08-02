@@ -15,6 +15,7 @@
 #include <asm/io.h>
 #include <dm/device_compat.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 
 #define RCC_GCR_HOLD_BOOT	0

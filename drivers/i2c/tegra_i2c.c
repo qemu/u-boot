@@ -21,6 +21,7 @@
 #include <asm/arch-tegra/tegra_i2c.h>
 #include <linux/delay.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

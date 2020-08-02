@@ -10,6 +10,7 @@
 #include <log.h>
 #include <asm/types.h>
 #include <malloc.h>
+#include <linux/errno.h>
 #include "jobdesc.h"
 #include "desc.h"
 #include "jr.h"

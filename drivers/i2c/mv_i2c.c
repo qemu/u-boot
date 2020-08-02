@@ -23,6 +23,7 @@
 #include <stdio.h>
 #include <asm/io.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "mv_i2c.h"
 

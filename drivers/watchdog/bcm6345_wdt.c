@@ -13,6 +13,7 @@
 #include <wdt.h>
 #include <clk.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 
 /* WDT Value register */
 #define WDT_VAL_REG		0x0

@@ -12,6 +12,7 @@
 #include <asm/u-boot.h>
 #include <dm/ofnode.h>
 #include <fdt_support.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <linux/printk.h>
 #include <linux/string.h>

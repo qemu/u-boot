@@ -26,6 +26,7 @@
 #include <linux/err.h>
 #include <w1-eeprom.h>
 #include <w1.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #define DS2502_PAGE_SIZE	32

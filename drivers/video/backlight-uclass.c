@@ -7,6 +7,7 @@
 #include <common.h>
 #include <dm.h>
 #include <backlight.h>
+#include <linux/errno.h>
 
 int backlight_enable(struct udevice *dev)
 {

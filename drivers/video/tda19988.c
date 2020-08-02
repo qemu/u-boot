@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 /*
  * TDA19988 uses paged registers. We encode the page# in the upper

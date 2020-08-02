@@ -9,6 +9,7 @@
 #include <fdtdec.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <malloc.h>
 #include <errno.h>

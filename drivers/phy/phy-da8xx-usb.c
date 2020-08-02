@@ -16,6 +16,7 @@
 #include <asm/arch/da8xx-usb.h>
 #include <asm/io.h>
 #include <generic-phy.h>
+#include <linux/errno.h>
 
 static int da8xx_usb_phy_power_on(struct phy *phy)
 {

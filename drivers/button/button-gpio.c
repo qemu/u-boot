@@ -10,6 +10,7 @@
 #include <dm/uclass-internal.h>
 #include <log.h>
 #include <asm/gpio.h>
+#include <linux/errno.h>
 
 struct button_gpio_priv {
 	struct gpio_desc gpio;

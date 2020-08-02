@@ -23,6 +23,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 #define CMU_R07C		0x7c
 #define CMU_MASTER_CDN_O	BIT(24)

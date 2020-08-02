@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <button.h>
 #include <dm/uclass-internal.h>
+#include <linux/errno.h>
 
 static const char *const state_label[] = {
 	[BUTTON_OFF]	= "off",

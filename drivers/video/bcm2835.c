@@ -10,6 +10,7 @@
 #include <asm/arch/mbox.h>
 #include <asm/arch/msg.h>
 #include <asm/cache.h>
+#include <linux/errno.h>
 
 static int bcm2835_video_probe(struct udevice *dev)
 {

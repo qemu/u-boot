@@ -13,6 +13,7 @@
 #include <log.h>
 #include <asm/global_data.h>
 #include <asm/mtrr.h>
+#include <linux/errno.h>
 
 int misc_init_r(void)
 {

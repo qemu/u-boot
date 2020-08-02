@@ -21,6 +21,7 @@
 #define LPDDR4_SANITY_H
 
 #include <errno.h>
+#include <linux/errno.h>
 #include <linux/types.h>
 #include "lpddr4_if.h"
 

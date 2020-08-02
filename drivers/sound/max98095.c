@@ -16,6 +16,7 @@
 #include <log.h>
 #include <sound.h>
 #include <asm/gpio.h>
+#include <linux/errno.h>
 #include "i2s.h"
 #include "max98095.h"
 

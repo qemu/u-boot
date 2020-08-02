@@ -24,6 +24,7 @@
 #include <watchdog.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #define CFGWDTH_32	1

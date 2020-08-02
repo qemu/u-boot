@@ -10,6 +10,7 @@
 #include <asm/clk.h>
 #include <dm/device_compat.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 struct sandbox_clk_test {
 	struct clk clks[SANDBOX_CLK_TEST_NON_DEVM_COUNT];

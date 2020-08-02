@@ -12,6 +12,7 @@
 #include <linux/bitfield.h>
 #include <linux/bitops.h>
 #include <dt-bindings/net/qca-ar803x.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #define AR803x_PHY_DEBUG_ADDR_REG	0x1d

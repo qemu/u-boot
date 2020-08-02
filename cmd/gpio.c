@@ -16,6 +16,7 @@
 #include <vsprintf.h>
 #include <asm/gpio.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 __weak int name_to_gpio(const char *name)

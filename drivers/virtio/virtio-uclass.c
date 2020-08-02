@@ -24,6 +24,7 @@
 #include <vsprintf.h>
 #include <dm/lists.h>
 #include <linux/bug.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 static const char *const virtio_drv_name[VIRTIO_ID_MAX_NUM] = {

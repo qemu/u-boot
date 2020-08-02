@@ -21,6 +21,7 @@
 #include <asm/e820.h>
 #include <linux/linkage.h>
 #endif
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /* Allow ports to override the default behavior */

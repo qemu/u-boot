@@ -14,6 +14,7 @@
 #include <dm/uclass-internal.h>
 #include <adc.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <power/regulator.h>
 

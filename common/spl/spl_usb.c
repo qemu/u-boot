@@ -16,6 +16,7 @@
 #include <errno.h>
 #include <usb.h>
 #include <fat.h>
+#include <linux/errno.h>
 
 static int usb_stor_curr_dev = -1; /* current device */
 

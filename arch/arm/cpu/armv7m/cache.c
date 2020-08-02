@@ -13,6 +13,7 @@
 #include <asm/cache.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 /* Cache maintenance operation registers */
 

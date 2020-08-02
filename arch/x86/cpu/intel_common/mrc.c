@@ -20,6 +20,7 @@
 #include <asm/post.h>
 #include <asm/arch/me.h>
 #include <asm/report_platform.h>
+#include <linux/errno.h>
 
 static const char *const ecc_decoder[] = {
 	"inactive",

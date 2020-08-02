@@ -13,6 +13,7 @@
 #include <asm/armv8/mmu.h>
 #include <asm/arch-bcmns3/bl33_info.h>
 #include <dt-bindings/memory/bcm-ns3-mc.h>
+#include <linux/errno.h>
 
 /* Default reset-level = 3 and strap-val = 0 */
 #define L3_RESET	30

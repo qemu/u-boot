@@ -16,6 +16,7 @@
 #include <asm/io.h>
 #include <zynqmp_firmware.h>
 #include <asm/cache.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #define ZYNQ_SILICON_VER_MASK	0xF000

@@ -16,6 +16,7 @@
 #include <asm/arch-imx/cpu.h>
 #include <asm/armv8/cpu.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;

@@ -7,6 +7,7 @@
 #include <asm/eth-raw-os.h>
 #include <errno.h>
 #include <fcntl.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include <net/if.h>
 #include <netinet/in.h>

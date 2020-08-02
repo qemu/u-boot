@@ -9,6 +9,7 @@
 #include <errno.h>
 #include <log.h>
 #include <rtc.h>
+#include <linux/errno.h>
 
 int dm_rtc_get(struct udevice *dev, struct rtc_time *time)
 {

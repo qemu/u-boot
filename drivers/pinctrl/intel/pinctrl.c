@@ -32,6 +32,7 @@
 #include <dm/device-internal.h>
 #include <dt-bindings/gpio/gpio.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 #define GPIO_DW_SIZE(x)			(sizeof(u32) * (x))
 #define PAD_CFG_OFFSET(x, dw_num)	((x) + GPIO_DW_SIZE(dw_num))

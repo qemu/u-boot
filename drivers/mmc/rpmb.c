@@ -14,6 +14,7 @@
 #include <mmc.h>
 #include <sdhci.h>
 #include <stdio.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include <u-boot/sha256.h>
 #include "mmc_private.h"

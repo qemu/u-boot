@@ -11,6 +11,7 @@
 #include <asm/arch/clk.h>
 #include <i2c.h>
 #include <pwm.h>
+#include <linux/errno.h>
 
 #include <irq_func.h>
 

@@ -11,6 +11,7 @@
 #include <dm/device-internal.h>
 #include <dm/uclass-internal.h>
 #include <dm/lists.h>
+#include <linux/errno.h>
 
 #define MDIO_MUX_CHILD_DRV_NAME	"mdio-mux-bus-drv"
 

@@ -13,6 +13,7 @@
 #include <linux/bitops.h>
 #include <linux/ctype.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /* registers */

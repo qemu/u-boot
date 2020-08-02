@@ -14,6 +14,7 @@
 #include <asm/io.h>
 #include <dm/ofnode.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 struct l2cache {
 	volatile u64	configure;

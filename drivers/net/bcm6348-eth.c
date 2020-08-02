@@ -19,6 +19,7 @@
 #include <vsprintf.h>
 #include <wait_bit.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 
 #define ETH_RX_DESC			PKTBUFSRX

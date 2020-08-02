@@ -12,6 +12,7 @@
 #include <clk.h>
 #include <dm.h>
 #include <generic-phy.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <power/regulator.h>
 #include <regmap.h>

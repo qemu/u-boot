@@ -29,6 +29,7 @@
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <linux/sizes.h>
 #include <linux/iopoll.h>

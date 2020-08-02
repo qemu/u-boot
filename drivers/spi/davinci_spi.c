@@ -20,6 +20,7 @@
 #include <dm/platform_data/spi_davinci.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 /* SPIGCR0 */
 #define SPIGCR0_SPIENA_MASK	0x1

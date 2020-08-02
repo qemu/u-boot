@@ -18,6 +18,7 @@
 #include <wait_bit.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 #define HSSPI_PP			0
 

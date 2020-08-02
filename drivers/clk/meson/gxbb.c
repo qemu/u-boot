@@ -16,6 +16,7 @@
 #include <syscon.h>
 #include <dt-bindings/clock/gxbb-clkc.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include "clk_meson.h"
 #include <linux/err.h>
 

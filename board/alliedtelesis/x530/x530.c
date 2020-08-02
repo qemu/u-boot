@@ -14,6 +14,7 @@
 #include <asm/global_data.h>
 #include <asm/gpio.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/mbus.h>
 #include <linux/io.h>
 #include <asm/arch/cpu.h>

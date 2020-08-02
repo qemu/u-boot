@@ -23,6 +23,7 @@
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <dm/device-internal.h>
+#include <linux/errno.h>
 #include <u-boot/crc.h>
 
 #ifndef CONFIG_SPL_BUILD

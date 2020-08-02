@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <asm/arch/reset_manager.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 struct socfpga_sysreset_data {
 	void __iomem *rstmgr_base;

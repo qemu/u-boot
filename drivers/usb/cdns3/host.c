@@ -12,6 +12,7 @@
 #include <dm/devres.h>
 #include <linux/compat.h>
 #include <usb.h>
+#include <linux/errno.h>
 #include <usb/xhci.h>
 
 #include "core.h"

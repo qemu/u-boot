@@ -12,6 +12,7 @@
 #include <dm/ofnode.h>
 #include <generic-phy.h>
 #include <reset.h>
+#include <linux/errno.h>
 #include "ohci.h"
 
 #if !defined(CONFIG_USB_OHCI_NEW)

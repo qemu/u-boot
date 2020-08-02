@@ -17,6 +17,7 @@
 #include <linux/compat.h>
 #include <linux/delay.h>
 #include <linux/dma-direction.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/sizes.h>
 #include <power/regulator.h>

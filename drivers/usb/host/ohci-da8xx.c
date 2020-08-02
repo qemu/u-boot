@@ -14,6 +14,7 @@
 #include <dm/ofnode.h>
 #include <generic-phy.h>
 #include <reset.h>
+#include <linux/errno.h>
 #include "ohci.h"
 #include <asm/arch/da8xx-usb.h>
 

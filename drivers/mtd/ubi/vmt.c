@@ -20,6 +20,7 @@
 #include <div64.h>
 #include <ubi_uboot.h>
 #include <vsprintf.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #endif
 #include <linux/math64.h>

@@ -12,6 +12,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <mapmem.h>
+#include <linux/errno.h>
 
 /**
  * struct binman_info - Information needed by the binman library

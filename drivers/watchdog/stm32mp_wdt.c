@@ -11,6 +11,7 @@
 #include <wdt.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/iopoll.h>
 #include <linux/printk.h>
 

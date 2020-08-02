@@ -19,6 +19,7 @@
 #include <asm/arch-rockchip/periph.h>
 #include <dm/pinctrl.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/sizes.h>
 
 /* i2c timerout */

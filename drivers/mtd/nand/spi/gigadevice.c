@@ -11,6 +11,7 @@
 #include <linux/device.h>
 #include <linux/kernel.h>
 #endif
+#include <linux/errno.h>
 #include <linux/mtd/spinand.h>
 
 #define SPINAND_MFR_GIGADEVICE			0xC8

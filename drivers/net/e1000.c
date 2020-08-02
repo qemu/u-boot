@@ -43,6 +43,7 @@ tested on both gig copper and gig fiber boards
 #include <vsprintf.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "e1000.h"
 #include <asm/cache.h>

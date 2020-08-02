@@ -16,6 +16,7 @@
 #include <asm/global_data.h>
 #include <linux/compiler.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 #include <asm/io.h>
 #ifdef CONFIG_DM_SERIAL

@@ -15,6 +15,7 @@
 #include <log.h>
 #include <time.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 #include "broadwell_i2s.h"
 
 enum {

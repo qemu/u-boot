@@ -9,6 +9,7 @@
 #include <power-domain-uclass.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 #define MAX_DOMAINS	32
 

@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/setup.h>
+#include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/string.h>
 #include "eeprom.h"

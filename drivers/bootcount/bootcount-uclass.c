@@ -8,6 +8,7 @@
 #include <errno.h>
 #include <bootcount.h>
 #include <log.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 
 int dm_bootcount_get(struct udevice *dev, u32 *bootcount)

@@ -9,6 +9,7 @@
 #include <i2c.h>
 #include <log.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <power/pmic.h>
 #include <power/regulator.h>

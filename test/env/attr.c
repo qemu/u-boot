@@ -7,6 +7,7 @@
 #include <common.h>
 #include <command.h>
 #include <env_attr.h>
+#include <linux/errno.h>
 #include <test/env.h>
 #include <test/ut.h>
 

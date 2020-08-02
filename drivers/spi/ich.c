@@ -29,6 +29,7 @@
 #include <asm/mtrr.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/sizes.h>
 #include <linux/string.h>
 

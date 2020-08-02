@@ -23,6 +23,7 @@
 #if defined(CONFIG_TEGRA30) || defined(CONFIG_TEGRA210)
 #include <asm/arch/clock.h>
 #endif
+#include <linux/errno.h>
 
 struct tegra_mmc_plat {
 	struct mmc_config cfg;

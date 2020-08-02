@@ -13,6 +13,7 @@
 #include <clk.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 
 #define I2C_CONTROL_REG		0x00

@@ -36,6 +36,7 @@
 #include <vsprintf.h>
 #include <dm/device-internal.h>
 #include <dm/root.h>
+#include <linux/errno.h>
 
 /*
  * EFI attributes of the udevice handled by this driver.

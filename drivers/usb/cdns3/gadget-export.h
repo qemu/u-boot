@@ -25,4 +25,5 @@ static inline void cdns3_gadget_exit(struct cdns3 *cdns) { }
 
 #endif
 
+#include <linux/errno.h>
 #endif /* __LINUX_CDNS3_GADGET_EXPORT */

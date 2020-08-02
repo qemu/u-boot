@@ -9,6 +9,7 @@
 #include <regmap.h>
 #include <reset.h>
 #include <syscon.h>
+#include <linux/errno.h>
 #include <test/ut.h>
 #include <asm/test.h>
 #include <linux/bitops.h>

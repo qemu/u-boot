@@ -22,6 +22,7 @@
 #include <asm/io.h>
 #include <dm.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/sizes.h>
 #include <errno.h>
 #include <asm/arch/sys_proto.h>

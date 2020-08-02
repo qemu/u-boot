@@ -17,6 +17,7 @@
 #include <k3-avs.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <power/regulator.h>
 
 #define AM6_VTM_DEVINFO(i)	(priv->base + 0x100 + 0x20 * (i))

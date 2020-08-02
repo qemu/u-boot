@@ -14,6 +14,7 @@
 #include <wait_bit.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 struct cpsw_mdio_regs {
 	u32	version;

@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <usb.h>
 #include <vsprintf.h>
+#include <linux/errno.h>
 #include <linux/ethtool.h>
 #include <linux/mii.h>
 #include <linux/string.h>

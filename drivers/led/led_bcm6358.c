@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <dm/lists.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 #define LEDS_MAX		32
 #define LEDS_WAIT		100

@@ -24,6 +24,7 @@
 #include <spl.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/u-boot.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

@@ -31,6 +31,7 @@
 #include <linux/compiler.h>
 #include <serial.h>
 #include <watchdog.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

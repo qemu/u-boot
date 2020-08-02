@@ -8,6 +8,7 @@
 
 #include <errno.h>
 #include <image.h>
+#include <linux/errno.h>
 
 #if IMAGE_ENABLE_ENCRYPT
 int image_aes_encrypt(struct image_cipher_info *info,

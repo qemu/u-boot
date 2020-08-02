@@ -17,6 +17,7 @@
 #include <reset-uclass.h>
 #include <syscon.h>
 #include <usb.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 
 #include <linux/usb/dwc3.h>

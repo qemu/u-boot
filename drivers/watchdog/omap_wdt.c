@@ -46,6 +46,7 @@
 #include <wdt.h>
 #include <dm.h>
 #include <errno.h>
+#include <linux/errno.h>
 
 /* Hardware timeout in seconds */
 #define WDT_HW_TIMEOUT 60

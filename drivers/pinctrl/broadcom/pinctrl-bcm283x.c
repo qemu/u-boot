@@ -23,6 +23,7 @@
 #include <asm/system.h>
 #include <asm/io.h>
 #include <asm/gpio.h>
+#include <linux/errno.h>
 
 struct bcm283x_pinctrl_priv {
 	u32 *base_reg;

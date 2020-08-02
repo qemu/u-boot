@@ -3,6 +3,7 @@
  * Copyright (C) 2019-20 Sean Anderson <seanga2@gmail.com>
  */
 #include <kendryte/clk.h>
+#include <linux/errno.h>
 
 #include <asm/io.h>
 #include <dt-bindings/clock/k210-sysctl.h>

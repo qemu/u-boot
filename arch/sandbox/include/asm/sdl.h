@@ -7,6 +7,7 @@
 #define __SANDBOX_SDL_H
 
 #include <errno.h>
+#include <linux/errno.h>
 
 #ifdef CONFIG_SANDBOX_SDL
 

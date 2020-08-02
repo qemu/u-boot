@@ -64,6 +64,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/ctype.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #include "videomodes.h"

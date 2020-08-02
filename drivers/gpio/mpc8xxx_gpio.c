@@ -13,6 +13,7 @@
 #include <mapmem.h>
 #include <vsprintf.h>
 #include <asm/gpio.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 struct ccsr_gpio {

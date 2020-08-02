@@ -13,6 +13,7 @@
 #include <init.h>
 #include <ram.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 
 #define SDRAM_CFG_REG		0x0
 #define SDRAM_CFG_COL_SHIFT	4

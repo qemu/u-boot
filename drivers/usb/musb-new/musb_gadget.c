@@ -25,6 +25,7 @@
 #include <common.h>
 #include <vsprintf.h>
 #include <linux/bug.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 #include <linux/usb/ch9.h>

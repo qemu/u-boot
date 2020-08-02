@@ -13,6 +13,7 @@
 #include <dm/device_compat.h>
 #include <dm/uclass-internal.h>
 #include <linux/compat.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /* DT node properties for MAC-PHY interface */

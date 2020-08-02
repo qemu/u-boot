@@ -22,6 +22,7 @@
 #include <dm/devres.h>
 #include <linux/clk-provider.h>
 #include <clk.h>
+#include <linux/errno.h>
 #include "clk.h"
 #include <linux/err.h>
 

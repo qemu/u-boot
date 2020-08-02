@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 #define PHY_AUTONEGOTIATE_TIMEOUT 5000
 

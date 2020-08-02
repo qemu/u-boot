@@ -11,6 +11,7 @@
 #include <timer.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 #include <asm/io.h>
 

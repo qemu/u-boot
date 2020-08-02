@@ -18,6 +18,7 @@
 #include <dt-bindings/sound/azalia.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 /**
  * struct hda_regs - HDA registers

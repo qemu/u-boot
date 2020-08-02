@@ -13,6 +13,7 @@
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <errno.h>
+#include <linux/errno.h>
 
 static int gpio_direction(unsigned gpio,
 			  enum gpio_direction direction)

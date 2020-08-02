@@ -7,6 +7,7 @@
 #include <common.h>
 #include <dm.h>
 #include <i2s.h>
+#include <linux/errno.h>
 
 int i2s_tx_data(struct udevice *dev, void *data, uint data_size)
 {

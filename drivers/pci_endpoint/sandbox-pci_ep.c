@@ -9,6 +9,7 @@
 #include <pci.h>
 #include <pci_ep.h>
 #include <asm/test.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /**

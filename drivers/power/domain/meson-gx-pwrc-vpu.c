@@ -18,6 +18,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 enum {
 	VPU_PWRC_COMPATIBLE_GX		= 0,

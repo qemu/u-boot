@@ -15,6 +15,7 @@
 #include <linux/bitops.h>
 #include <linux/compat.h>
 #include <linux/asn1.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 #include <u-boot/rsa-checksum.h>

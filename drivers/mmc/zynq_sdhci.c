@@ -11,6 +11,7 @@
 #include <fdtdec.h>
 #include <stdio.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include "mmc_private.h"
 #include <log.h>
 #include <dm/device_compat.h>

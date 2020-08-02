@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <asm/arch/clock.h>
 #include <linux/bug.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "qbman_portal.h"
 

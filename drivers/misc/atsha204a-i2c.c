@@ -18,6 +18,7 @@
 #include <log.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>
 

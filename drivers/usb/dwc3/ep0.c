@@ -16,6 +16,7 @@
 #include <cpu_func.h>
 #include <dm/device_compat.h>
 #include <linux/bug.h>
+#include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/list.h>
 #include <linux/string.h>

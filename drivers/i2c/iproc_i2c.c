@@ -9,6 +9,7 @@
 #include <common.h>
 #include <config.h>
 #include <dm.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include "errno.h"
 #include <i2c.h>

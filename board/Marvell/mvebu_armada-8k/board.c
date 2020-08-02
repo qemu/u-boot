@@ -13,6 +13,7 @@
 #include <asm/arch/cpu.h>
 #include <asm/arch/soc.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

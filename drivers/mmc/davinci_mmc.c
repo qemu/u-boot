@@ -19,6 +19,7 @@
 #include <asm-generic/gpio.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #define WATCHDOG_COUNT		(100000)

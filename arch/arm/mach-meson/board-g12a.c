@@ -17,6 +17,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/armv8/mmu.h>
+#include <linux/errno.h>
 #include <linux/sizes.h>
 #include <usb.h>
 #include <linux/usb/otg.h>

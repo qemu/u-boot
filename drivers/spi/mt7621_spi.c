@@ -16,6 +16,7 @@
 #include <stdio.h>
 #include <wait_bit.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/printk.h>
 

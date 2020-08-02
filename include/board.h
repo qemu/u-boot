@@ -4,6 +4,7 @@
  * Mario Six,  Guntermann & Drunck GmbH, mario.six@gdsys.cc
  */
 
+#include <linux/errno.h>
 struct udevice;
 
 /*

@@ -20,6 +20,7 @@
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/compiler.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>
 

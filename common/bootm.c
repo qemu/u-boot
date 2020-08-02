@@ -25,6 +25,7 @@
 #if defined(CONFIG_CMD_USB)
 #include <usb.h>
 #endif
+#include <linux/errno.h>
 #include <linux/string.h>
 #else
 #include "mkimage.h"

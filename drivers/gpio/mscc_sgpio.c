@@ -17,6 +17,7 @@
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 #define MSCC_SGPIOS_PER_BANK	32
 #define MSCC_SGPIO_BANK_DEPTH	4

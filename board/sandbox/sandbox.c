@@ -18,6 +18,7 @@
 #include <asm/test.h>
 #include <asm/u-boot-sandbox.h>
 #include <asm/u-boot.h>
+#include <linux/errno.h>
 
 /*
  * Pointer to initial global data area

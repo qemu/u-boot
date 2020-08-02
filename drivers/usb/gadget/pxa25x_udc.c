@@ -32,6 +32,7 @@
 #include <asm/io.h>
 #include <asm/arch/pxa.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #include <linux/usb/ch9.h>

@@ -13,6 +13,7 @@
 #include <fdtdec.h>
 #include <malloc.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <asm/io.h>
 #include <asm/gpio.h>

@@ -11,6 +11,7 @@
 #include <acpi/acpi_device.h>
 #include <asm/test.h>
 #include <dm/test.h>
+#include <linux/errno.h>
 #include <test/ut.h>
 
 /* Base test of the irq uclass */

@@ -12,6 +12,7 @@
 #include <asm/state.h>
 #include <asm/unaligned.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>
 

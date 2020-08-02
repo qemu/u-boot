@@ -11,6 +11,7 @@
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 #define P(bank)			(0x0000 + (bank) * 4)
 #define PSR(bank)		(0x0100 + (bank) * 4)

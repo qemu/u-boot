@@ -13,6 +13,7 @@
 #include <acpi/acpi_s3.h>
 #include <asm/io.h>
 #include <asm/processor.h>
+#include <linux/errno.h>
 
 struct x86_sysreset_platdata {
 	struct udevice *pch;

@@ -25,4 +25,5 @@ static inline void cdns3_host_exit(struct cdns3 *cdns) { }
 
 #endif /* CONFIG_USB_CDNS3_HOST */
 
+#include <linux/errno.h>
 #endif /* __LINUX_CDNS3_HOST_EXPORT */

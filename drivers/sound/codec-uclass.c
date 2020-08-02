@@ -7,6 +7,7 @@
 #include <common.h>
 #include <dm.h>
 #include <audio_codec.h>
+#include <linux/errno.h>
 
 int audio_codec_set_params(struct udevice *dev, int interface, int rate,
 			   int mclk_freq, int bits_per_sample, uint channels)

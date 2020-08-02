@@ -8,6 +8,7 @@
 #include <errno.h>
 #include <sysreset.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 
 #define RST_SOFT_RST		0x0080
 

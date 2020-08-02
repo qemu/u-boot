@@ -10,6 +10,7 @@
 #include <log.h>
 #include <remoteproc.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 
 /**

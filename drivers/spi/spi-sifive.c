@@ -16,6 +16,7 @@
 #include <wait_bit.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/log2.h>
 #include <clk.h>
 #include <linux/string.h>

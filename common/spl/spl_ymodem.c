@@ -16,6 +16,7 @@
 #include <stdio.h>
 #include <xyzModem.h>
 #include <asm/u-boot.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>
 

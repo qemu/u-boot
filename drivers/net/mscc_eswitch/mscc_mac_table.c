@@ -4,6 +4,7 @@
  */
 
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include "mscc_mac_table.h"
 

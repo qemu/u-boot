@@ -9,6 +9,7 @@
 #include <malloc.h>
 #include <spl.h>
 #include <stdio.h>
+#include <linux/errno.h>
 
 #include <lzma/LzmaTypes.h>
 #include <lzma/LzmaDec.h>

@@ -25,6 +25,7 @@
 #include <linux/bitrev.h>
 #include <rtc.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 #define S35390A_CHIP_ADDR	0x30
 

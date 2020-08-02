@@ -16,6 +16,7 @@
 #include <asm/arch/gpio.h>
 #include <asm/arch/pmic_bus.h>
 #include <axp_pmic.h>
+#include <linux/errno.h>
 
 static u8 axp809_mvolt_to_cfg(int mvolt, int min, int max, int div)
 {

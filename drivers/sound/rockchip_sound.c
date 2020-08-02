@@ -16,6 +16,7 @@
 #include <sound.h>
 #include <asm/arch-rockchip/periph.h>
 #include <dm/pinctrl.h>
+#include <linux/errno.h>
 
 static int rockchip_sound_setup(struct udevice *dev)
 {

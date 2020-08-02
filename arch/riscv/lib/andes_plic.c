@@ -19,6 +19,7 @@
 #include <asm/syscon.h>
 #include <cpu.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /* pending register */

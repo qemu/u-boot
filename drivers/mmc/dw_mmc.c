@@ -18,6 +18,7 @@
 #include <wait_bit.h>
 #include <asm/cache.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <power/regulator.h>
 
 #define PAGE_SIZE 4096

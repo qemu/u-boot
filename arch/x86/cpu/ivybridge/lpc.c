@@ -21,6 +21,7 @@
 #include <asm/lpc_common.h>
 #include <asm/pci.h>
 #include <asm/arch/pch.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

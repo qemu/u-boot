@@ -22,6 +22,7 @@
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/mii.h>
 #include <asm/immap.h>
 #include <asm/fsl_mcdmafec.h>

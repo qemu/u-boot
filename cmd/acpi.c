@@ -13,6 +13,7 @@
 #include <asm/acpi_table.h>
 #include <asm/global_data.h>
 #include <dm/acpi.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;

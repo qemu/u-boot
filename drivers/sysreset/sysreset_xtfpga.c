@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <sysreset.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 
 static int xtfpga_reset_request(struct udevice *dev, enum sysreset_t type)
 {

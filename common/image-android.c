@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <asm/unaligned.h>
 #include <mapmem.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>
 

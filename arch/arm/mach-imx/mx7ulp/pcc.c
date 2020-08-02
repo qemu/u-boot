@@ -12,6 +12,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/pcc.h>
 #include <asm/arch/sys_proto.h>
+#include <linux/errno.h>
 
 #define PCC_CLKSRC_TYPES 2
 #define PCC_CLKSRC_NUM 7

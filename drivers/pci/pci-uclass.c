@@ -22,6 +22,7 @@
 #include <asm/fsp/fsp_support.h>
 #endif
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 #include "pci_internal.h"

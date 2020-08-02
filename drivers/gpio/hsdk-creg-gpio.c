@@ -16,6 +16,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 
 #define DRV_NAME	"gpio_creg"

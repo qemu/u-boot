@@ -13,6 +13,7 @@
 #include <kendryte/bypass.h>
 #include <linux/clk-provider.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 #define CLK_K210_BYPASS "k210_clk_bypass"
 

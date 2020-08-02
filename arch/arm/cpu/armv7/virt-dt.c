@@ -20,6 +20,7 @@
 #include <log.h>
 #include <stdio_dev.h>
 #include <linux/ctype.h>
+#include <linux/errno.h>
 #include <linux/types.h>
 #include <asm/global_data.h>
 #include <linux/libfdt.h>

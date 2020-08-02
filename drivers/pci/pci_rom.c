@@ -41,6 +41,7 @@
 #include <video_fb.h>
 #include <acpi/acpi_s3.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <linux/screen_info.h>
 #include <linux/string.h>
 

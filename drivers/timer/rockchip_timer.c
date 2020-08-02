@@ -15,6 +15,7 @@
 #include <dt-structs.h>
 #include <timer.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

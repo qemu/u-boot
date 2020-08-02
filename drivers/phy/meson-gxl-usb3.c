@@ -16,6 +16,7 @@
 #include <generic-phy.h>
 #include <regmap.h>
 #include <clk.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/usb/otg.h>
 

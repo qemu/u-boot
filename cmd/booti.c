@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <linux/string.h>

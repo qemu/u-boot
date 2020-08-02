@@ -15,6 +15,7 @@
 #include <mapmem.h>
 #include <misc.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #include "mpc83xx_serdes.h"

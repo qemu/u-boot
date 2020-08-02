@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "tdx-cfg-block.h"
 #include "tdx-eeprom.h"

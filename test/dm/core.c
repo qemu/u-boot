@@ -19,6 +19,7 @@
 #include <dm/test.h>
 #include <dm/uclass-internal.h>
 #include <test/test.h>
+#include <linux/errno.h>
 #include <test/ut.h>
 
 DECLARE_GLOBAL_DATA_PTR;

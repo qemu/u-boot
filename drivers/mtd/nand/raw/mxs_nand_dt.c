@@ -13,6 +13,7 @@
  */
 
 #include <dm.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/ioport.h>
 #include <linux/printk.h>

@@ -17,6 +17,7 @@
 #include <asm/system.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 
 #include <asm/arch/clock.h>
 #include <asm/arch/funcmux.h>

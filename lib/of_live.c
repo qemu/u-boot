@@ -10,6 +10,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <of_live.h>
 #include <malloc.h>

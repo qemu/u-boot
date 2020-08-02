@@ -23,6 +23,7 @@
 #include <asm/ti-common/ti-edma3.h>
 #include <linux/bitops.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/kernel.h>
 #include <regmap.h>
 #include <syscon.h>

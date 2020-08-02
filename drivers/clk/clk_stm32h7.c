@@ -13,6 +13,7 @@
 #include <asm/io.h>
 #include <dm/root.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 
 #include <dt-bindings/clock/stm32h7-clks.h>

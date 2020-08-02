@@ -7,6 +7,7 @@
 #include <asm/io.h>
 #include <errno.h>
 #include <smsc_sio1007.h>
+#include <linux/errno.h>
 
 static inline u8 sio1007_read(int port, int reg)
 {

@@ -31,6 +31,7 @@
 #include <asm/arch/sysctrl.h>
 #include <asm/arch/wdt.h>
 #include <asm/u-boot.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "../drivers/mmc/arm_pl180_mmci.h"
 

@@ -16,6 +16,7 @@
 #include <acpi/acpi_dp.h>
 #include <asm-generic/gpio.h>
 #include <dm/acpi.h>
+#include <linux/errno.h>
 
 struct pci_mmc_plat {
 	struct mmc_config cfg;

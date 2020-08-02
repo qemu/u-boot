@@ -14,6 +14,7 @@
 #include <asm/io.h>
 #include <dm/device_compat.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/iopoll.h>
 #include <linux/string.h>
 #include <power/regulator.h>

@@ -18,6 +18,7 @@
 #include <vsprintf.h>
 #include <asm/u-boot.h>
 #include <dm/platform_data/net_ethoc.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <malloc.h>
 #include <net.h>

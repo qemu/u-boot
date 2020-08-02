@@ -28,6 +28,7 @@
 #include <memalign.h>
 #include <part.h>
 #include <stdio.h>
+#include <linux/errno.h>
 #include <linux/stat.h>
 #include <div64.h>
 #include <linux/string.h>

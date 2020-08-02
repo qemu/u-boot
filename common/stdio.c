@@ -21,6 +21,7 @@
 #include <splash.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #if defined(CONFIG_SYS_I2C)

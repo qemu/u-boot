@@ -10,6 +10,7 @@
 #include <log.h>
 #include <asm/io.h>
 #include <dm/lists.h>
+#include <linux/errno.h>
 
 #define LEDS_MAX			24
 

@@ -10,6 +10,7 @@
 
 #include <asm/atomic.h>
 #include <asm/cache.h>
+#include <linux/errno.h>
 
 struct udevice;
 

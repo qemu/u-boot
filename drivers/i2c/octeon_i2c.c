@@ -13,6 +13,7 @@
 #include <linux/bitfield.h>
 #include <linux/compat.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 #define TWSI_SW_TWSI		0x00
 #define TWSI_TWSI_SW		0x08

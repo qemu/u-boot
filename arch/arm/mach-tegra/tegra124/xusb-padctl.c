@@ -13,6 +13,7 @@
 #include <dm/of_access.h>
 #include <dm/ofnode.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 
 #include "../xusb-padctl-common.h"

@@ -9,6 +9,7 @@
 #include <audio_codec.h>
 #include <dm.h>
 #include <i2c.h>
+#include <linux/errno.h>
 #include "rt5677.h"
 #include <log.h>
 

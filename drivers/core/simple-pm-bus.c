@@ -6,6 +6,7 @@
 #include <common.h>
 #include <clk.h>
 #include <dm.h>
+#include <linux/errno.h>
 
 /*
  * Power domains are taken care of by driver_probe, so we just have to enable

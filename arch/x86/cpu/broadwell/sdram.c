@@ -25,6 +25,7 @@
 #include <asm/arch/pch.h>
 #include <asm/arch/pei_data.h>
 #include <asm/arch/pm.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 ulong board_get_usable_ram_top(ulong total_size)

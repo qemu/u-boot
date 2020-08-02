@@ -9,6 +9,7 @@
 #include <malloc.h>
 #include <errno.h>
 #include <dfu.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

@@ -15,6 +15,7 @@
 #include <dm/device.h>
 #include <asm/arch/sci/sci.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>
 

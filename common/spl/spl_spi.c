@@ -17,6 +17,7 @@
 #include <spl.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

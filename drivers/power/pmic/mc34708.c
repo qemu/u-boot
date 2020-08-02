@@ -12,6 +12,7 @@
 #include <i2c.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <power/pmic.h>
 
 DECLARE_GLOBAL_DATA_PTR;

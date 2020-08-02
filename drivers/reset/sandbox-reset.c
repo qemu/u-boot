@@ -10,6 +10,7 @@
 #include <reset-uclass.h>
 #include <asm/io.h>
 #include <asm/reset.h>
+#include <linux/errno.h>
 
 #define SANDBOX_RESET_SIGNALS 101
 

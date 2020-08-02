@@ -16,6 +16,7 @@
 #include <vsprintf.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/mii.h>
 #include <linux/bitops.h>
 #include <linux/string.h>

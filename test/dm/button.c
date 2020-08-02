@@ -10,6 +10,7 @@
 #include <button.h>
 #include <asm/gpio.h>
 #include <dm/test.h>
+#include <linux/errno.h>
 #include <test/ut.h>
 
 /* Base test of the button uclass */

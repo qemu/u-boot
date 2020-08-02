@@ -16,6 +16,7 @@
 #include <asm/io.h>
 #include <asm/arch-tegra/tegra_ahub.h>
 #include <asm/arch-tegra/tegra_i2s.h>
+#include <linux/errno.h>
 #include "tegra_i2s_priv.h"
 
 struct tegra_ahub_priv {

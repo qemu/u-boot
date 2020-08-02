@@ -18,6 +18,7 @@
 #include <asm/arch-rockchip/periph.h>
 #include <linux/delay.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 
 struct rockchip_mmc_plat {
 #if CONFIG_IS_ENABLED(OF_PLATDATA)

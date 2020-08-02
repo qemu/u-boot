@@ -12,6 +12,7 @@
 #include <asm/io.h>
 #include <asm-generic/gpio.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 #include "pinctrl-mtk-common.h"
 

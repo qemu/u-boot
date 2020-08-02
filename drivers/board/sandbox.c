@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <board.h>
 #include <vsprintf.h>
+#include <linux/errno.h>
 
 #include "sandbox.h"
 

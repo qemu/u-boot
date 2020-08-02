@@ -10,6 +10,7 @@
 #include <asm/gic-v3.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/sizes.h>
 

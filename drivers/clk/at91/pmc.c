@@ -11,6 +11,7 @@
 #include <asm/global_data.h>
 #include <dm/lists.h>
 #include <dm/util.h>
+#include <linux/errno.h>
 #include "pmc.h"
 
 DECLARE_GLOBAL_DATA_PTR;

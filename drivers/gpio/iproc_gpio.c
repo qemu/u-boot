@@ -11,6 +11,7 @@
 #include <dm/device_compat.h>
 #include <dm/devres.h>
 #include <dm/pinctrl.h>
+#include <linux/errno.h>
 
 /*
  * There are five GPIO bank register. Each bank can configure max of 32 gpios.

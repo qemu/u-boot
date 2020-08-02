@@ -14,7 +14,6 @@
 
 #ifndef __ASSEMBLY__		/* put C only stuff in this section */
 #include <config.h>
-#include <errno.h>
 #include <linux/types.h>
 #include <linux/kernel.h>
 #endif	/* __ASSEMBLY__ */

@@ -12,6 +12,7 @@
 #include <dm/platform_data/pfe_dm_eth.h>
 #include <net.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <net/pfe_eth/pfe_eth.h>
 
 extern struct gemac_s gem_info[];

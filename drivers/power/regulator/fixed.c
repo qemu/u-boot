@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <log.h>
 #include <asm/gpio.h>
+#include <linux/errno.h>
 #include <power/pmic.h>
 #include <power/regulator.h>
 #include "regulator_common.h"

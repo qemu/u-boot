@@ -19,6 +19,7 @@
 #include <asm/io.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/gpio.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 /* EMAC register  */

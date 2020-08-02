@@ -8,6 +8,7 @@
 #include <errno.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include "usb_ether.h"
 #include "r8152.h"
 

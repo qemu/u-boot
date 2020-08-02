@@ -16,6 +16,7 @@
 #include <regmap.h>
 #include <video_osd.h>
 #include <asm/gpio.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 static const uint MAX_X_CHARS = 53;

@@ -16,6 +16,7 @@
 #include <sort.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/stddef.h>
 #include <search.h>

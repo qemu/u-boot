@@ -12,6 +12,7 @@
 #include <asm/state.h>
 #include <dm/test.h>
 #include <test/test.h>
+#include <linux/errno.h>
 #include <test/ut.h>
 
 DECLARE_GLOBAL_DATA_PTR;

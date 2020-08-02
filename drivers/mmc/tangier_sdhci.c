@@ -5,6 +5,7 @@
 #include <common.h>
 #include <dm.h>
 #include <dm/device.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/sizes.h>
 #include <malloc.h>

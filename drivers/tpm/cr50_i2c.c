@@ -22,6 +22,7 @@
 #include <asm/arch/iomap.h>
 #include <asm/arch/pm.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 enum {

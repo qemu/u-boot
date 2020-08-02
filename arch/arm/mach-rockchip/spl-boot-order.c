@@ -9,6 +9,7 @@
 #include <mmc.h>
 #include <spl.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #if CONFIG_IS_ENABLED(OF_LIBFDT)

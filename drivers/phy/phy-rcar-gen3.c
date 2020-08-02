@@ -17,6 +17,7 @@
 #include <usb.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #include <power/regulator.h>
 

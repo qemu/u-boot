@@ -13,6 +13,7 @@
 #include <dm.h>
 #include <i2s.h>
 #include <sound.h>
+#include <linux/errno.h>
 
 static int broadwell_sound_probe(struct udevice *dev)
 {

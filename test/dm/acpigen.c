@@ -18,6 +18,7 @@
 #include <dm/acpi.h>
 #include <dm/test.h>
 #include <dm/uclass-internal.h>
+#include <linux/errno.h>
 #include <test/ut.h>
 #include "acpi.h"
 

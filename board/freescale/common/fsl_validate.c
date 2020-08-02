@@ -15,6 +15,7 @@
 #include <malloc.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include <u-boot/rsa-mod-exp.h>
 #include <hash.h>

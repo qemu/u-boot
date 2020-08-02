@@ -11,6 +11,7 @@
 #include <mapmem.h>
 #include <asm/types.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 
 int dev_read_u32(const struct udevice *dev, const char *propname, u32 *outp)
 {

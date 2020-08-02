@@ -9,6 +9,7 @@
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 #define RWTM_BASE		(MVEBU_REGISTER(0xb0000))
 #define RWTM_CMD_PARAM(i)	(size_t)(RWTM_BASE + (i) * 4)

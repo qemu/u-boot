@@ -10,6 +10,7 @@
 #include <malloc.h>
 #include <phy.h>
 #include <stdio.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include <net/ncsi.h>
 #include <net/ncsi-pkt.h>

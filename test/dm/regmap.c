@@ -13,6 +13,7 @@
 #include <asm/test.h>
 #include <dm/test.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <test/test.h>
 #include <test/ut.h>
 

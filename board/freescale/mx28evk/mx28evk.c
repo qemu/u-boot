@@ -24,6 +24,7 @@
 #include <asm/arch/sys_proto.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/mii.h>
 #include <miiphy.h>
 #include <netdev.h>

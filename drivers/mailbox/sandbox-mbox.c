@@ -10,6 +10,7 @@
 #include <malloc.h>
 #include <asm/io.h>
 #include <asm/mbox.h>
+#include <linux/errno.h>
 
 #define SANDBOX_MBOX_CHANNELS 2
 

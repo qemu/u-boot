@@ -27,6 +27,7 @@
 #endif
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #include "../../../arch/powerpc/cpu/mpc83xx/hrcw/hrcw.h"

@@ -20,6 +20,7 @@
 #include <dm/uclass.h>
 #include <dm/uclass-internal.h>
 #include <dm/util.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;

@@ -8,6 +8,7 @@
 #include <clk-uclass.h>
 #include <dm.h>
 #include <asm/global_data.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <mach/at91_pmc.h>
 #include "pmc.h"

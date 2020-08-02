@@ -8,6 +8,7 @@
 #include <malloc.h>
 #include <dm/test.h>
 #include <asm/mbox.h>
+#include <linux/errno.h>
 #include <test/test.h>
 #include <test/ut.h>
 

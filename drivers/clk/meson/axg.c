@@ -16,6 +16,7 @@
 #include <div64.h>
 #include <dt-bindings/clock/axg-clkc.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include "clk_meson.h"
 #include <linux/err.h>
 

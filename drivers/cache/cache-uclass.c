@@ -6,6 +6,7 @@
 #include <common.h>
 #include <cache.h>
 #include <dm.h>
+#include <linux/errno.h>
 
 int cache_get_info(struct udevice *dev, struct cache_info *info)
 {

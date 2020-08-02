@@ -17,6 +17,7 @@
 #include <fdt_support.h>
 #include <linux/bitops.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/libfdt.h>
 #include <linux/sizes.h>

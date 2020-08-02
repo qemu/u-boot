@@ -10,6 +10,7 @@
 #include <dm/device-internal.h>
 #include <dm/uclass-internal.h>
 #include <dm/lists.h>
+#include <linux/errno.h>
 
 struct eth_phy_device_priv {
 	struct mii_dev *mdio_bus;

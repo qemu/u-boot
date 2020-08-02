@@ -14,6 +14,7 @@
 #include <regmap.h>
 #include <wdt.h>
 #include <linux/compat.h>
+#include <linux/errno.h>
 #include <linux/io.h>
 
 /* Refresh Register Masks */

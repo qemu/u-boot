@@ -33,6 +33,7 @@
 #include <linux/bug.h>
 #include <linux/err.h>
 #include <ubi_uboot.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 #endif
 

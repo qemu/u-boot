@@ -7,6 +7,7 @@
 #include <vsprintf.h>
 #include <dm/device_compat.h>
 #include <dm/pinctrl.h>
+#include <linux/errno.h>
 
 #define BCM6838_CMD_LOAD_MUX            0x21
 

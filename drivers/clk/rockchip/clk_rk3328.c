@@ -21,6 +21,7 @@
 #include <dt-bindings/clock/rk3328-cru.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 struct pll_div {

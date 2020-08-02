@@ -16,6 +16,7 @@
 #include <dm/devres.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 #include <dt-bindings/phy/phy.h>
 

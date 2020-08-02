@@ -14,6 +14,7 @@
  * Ported to U-Boot by: Thomas Smits <ts.smits@gmail.com> and
  *                      Remy Bohmer <linux@bohmer.net>
  */
+#include <linux/errno.h>
 #include <linux/string.h>
 
 #ifdef CONFIG_USB_GADGET_NET2280

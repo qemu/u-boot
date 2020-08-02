@@ -10,6 +10,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <dm/pinctrl.h>
+#include <linux/errno.h>
 #include <mach/ar71xx_regs.h>
 
 DECLARE_GLOBAL_DATA_PTR;

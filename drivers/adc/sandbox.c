@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <adc.h>
 #include <sandbox-adc.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 
 /**

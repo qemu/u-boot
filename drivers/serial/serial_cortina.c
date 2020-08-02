@@ -13,6 +13,7 @@
 #include <serial.h>
 #include <linux/bitops.h>
 #include <linux/compiler.h>
+#include <linux/errno.h>
 
 /* Register definitions */
 #define UCFG			0x00	/* UART config register */

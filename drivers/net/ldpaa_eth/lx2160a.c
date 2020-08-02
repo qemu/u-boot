@@ -8,6 +8,7 @@
 #include <asm/io.h>
 #include <asm/arch/fsl_serdes.h>
 #include <asm/arch/soc.h>
+#include <linux/errno.h>
 #include <linux/mii.h>
 
 u32 dpmac_to_devdisr[] = {

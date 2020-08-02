@@ -17,6 +17,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/compiler.h>
+#include <linux/errno.h>
 #include <linux/kconfig.h>
 #include <common.h>
 #include <errno.h>

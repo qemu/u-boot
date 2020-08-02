@@ -42,6 +42,7 @@
  * by which power domains are managed.
  */
 
+#include <linux/errno.h>
 struct udevice;
 
 /**

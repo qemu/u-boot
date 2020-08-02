@@ -9,6 +9,7 @@
 #include <asm/arch/sdram.h>
 #include <errno.h>
 #include <hang.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "sequencer.h"
 

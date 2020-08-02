@@ -7,6 +7,7 @@
 #define __STM32MP1_SMC_H__
 
 #include <linux/arm-smccc.h>
+#include <linux/errno.h>
 #include <linux/printk.h>
 
 /*

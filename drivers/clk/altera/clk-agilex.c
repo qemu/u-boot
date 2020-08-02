@@ -13,6 +13,7 @@
 #include <dm/util.h>
 #include <dt-bindings/clock/agilex-clock.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 
 #include <asm/arch/clock_manager.h>
 

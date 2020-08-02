@@ -8,6 +8,7 @@
 #include <malloc.h>
 #include <stdio.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include <net/pfe_eth/pfe_eth.h>
 #include <net/pfe_eth/pfe_firmware.h>

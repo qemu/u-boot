@@ -40,6 +40,7 @@
 #include <netdev.h>
 #include <pci.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>
 #include <power/pmic.h>

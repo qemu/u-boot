@@ -15,6 +15,7 @@
 #include <asm/processor.h>
 #include <linux/bitops.h>
 #include <linux/err.h>
+#include <linux/errno.h>
 #include <linux/iopoll.h>
 
 #include <dt-bindings/power/mt7623-power.h>

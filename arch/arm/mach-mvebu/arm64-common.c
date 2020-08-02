@@ -10,6 +10,7 @@
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <asm/ptrace.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <linux/sizes.h>
 #include <pci.h>

@@ -12,6 +12,7 @@
 #include <linux/kernel.h>
 #endif
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <linux/mtd/spinand.h>
 
 #define SPINAND_MFR_MICRON		0x2c

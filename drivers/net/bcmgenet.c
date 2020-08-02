@@ -33,6 +33,7 @@
 #include <net.h>
 #include <dm/of_access.h>
 #include <dm/ofnode.h>
+#include <linux/errno.h>
 #include <linux/iopoll.h>
 #include <linux/sizes.h>
 #include <asm/dma-mapping.h>

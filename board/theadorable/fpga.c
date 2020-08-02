@@ -13,6 +13,7 @@
 #include <asm/arch/cpu.h>
 #include <asm/arch/soc.h>
 #include <asm/arch-mvebu/spi.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include "theadorable.h"
 

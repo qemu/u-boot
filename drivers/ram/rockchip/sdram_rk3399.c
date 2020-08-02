@@ -26,6 +26,7 @@
 #include <linux/delay.h>
 #include <linux/err.h>
 #include <time.h>
+#include <linux/errno.h>
 
 #define PRESET_SGRF_HOLD(n)	((0x1 << (6 + 16)) | ((n) << 6))
 #define PRESET_GPIO0_HOLD(n)	((0x1 << (7 + 16)) | ((n) << 7))

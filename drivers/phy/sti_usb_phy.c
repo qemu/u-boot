@@ -13,6 +13,7 @@
 #include <errno.h>
 #include <fdtdec.h>
 #include <generic-phy.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <regmap.h>
 #include <reset-uclass.h>

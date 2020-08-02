@@ -23,6 +23,7 @@
 #include <malloc.h>
 #include <asm/coldfire/dspi.h>
 #include <asm/io.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 
 struct coldfire_spi_priv {

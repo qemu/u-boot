@@ -11,6 +11,7 @@
 #include <dm/devres.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>
+#include <linux/errno.h>
 #include <linux/string.h>
 #include <linux/usb/composite.h>
 

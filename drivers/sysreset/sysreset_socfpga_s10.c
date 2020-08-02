@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <sysreset.h>
 #include <asm/arch/mailbox_s10.h>
+#include <linux/errno.h>
 
 static int socfpga_sysreset_request(struct udevice *dev,
 				    enum sysreset_t type)

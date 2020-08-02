@@ -20,6 +20,7 @@
 #include <asm/arch-tegra/pmc.h>
 #include <asm/arch-tegra/timer.h>
 #include <linux/delay.h>
+#include <linux/errno.h>
 
 /*
  * This is our record of the current clock rate of each clock. We don't

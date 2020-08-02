@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <stdio.h>
+#include <linux/errno.h>
 #include <linux/libfdt.h>
 #include <asm/spin_table.h>
 #include <linux/string.h>

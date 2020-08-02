@@ -13,6 +13,7 @@
 #include <asm/lpc_common.h>
 #include <asm/pci.h>
 #include <asm/arch/pch.h>
+#include <linux/errno.h>
 
 #define SIO1007_RUNTIME_IOPORT	0x180
 

@@ -9,6 +9,7 @@
 #include <errno.h>
 #include <pwm.h>
 #include <asm/test.h>
+#include <linux/errno.h>
 
 enum {
 	NUM_CHANNELS	= 3,

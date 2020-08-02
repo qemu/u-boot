@@ -16,6 +16,7 @@
 #include <wait_bit.h>
 #include <asm/io.h>
 #include <dm/device_compat.h>
+#include <linux/errno.h>
 
 struct xilinx_xiic_priv {
 	void __iomem		*base;

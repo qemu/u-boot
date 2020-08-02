@@ -22,6 +22,7 @@
 #include <mtd.h>
 #include <wait_bit.h>
 #include <linux/bitops.h>
+#include <linux/errno.h>
 #include <mtd/cfi_flash.h>
 
 #define RPC_CMNCR		0x0000	/* R/W */
