@@ -14,6 +14,7 @@
 #include <memalign.h>
 #include <mmc.h>
 #include <dwmmc.h>
+#include <time.h>
 #include <wait_bit.h>
 #include <asm/cache.h>
 #include <linux/delay.h>

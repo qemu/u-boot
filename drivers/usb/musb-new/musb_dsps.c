@@ -32,6 +32,7 @@
 #include <plat/usb.h>
 #else
 #include <common.h>
+#include <time.h>
 #include <asm/omap_musb.h>
 #include <linux/printk.h>
 #include "linux-compat.h"

@@ -3,6 +3,7 @@
  * Copyright (C) 2018, 2019 Marvell International Ltd.
  */
 
+#include <time.h>
 #include <asm/global_data.h>
 #include <mach/clock.h>
 

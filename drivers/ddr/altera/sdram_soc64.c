@@ -15,6 +15,7 @@
 #include <log.h>
 #include <ram.h>
 #include <reset.h>
+#include <time.h>
 #include <asm/global_data.h>
 #include "sdram_soc64.h"
 #include <wait_bit.h>

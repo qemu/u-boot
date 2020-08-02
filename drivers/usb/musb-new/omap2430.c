@@ -12,6 +12,7 @@
 #include <dm.h>
 #include <log.h>
 #include <serial.h>
+#include <time.h>
 #include <asm/global_data.h>
 #include <dm/device-internal.h>
 #include <dm/device_compat.h>

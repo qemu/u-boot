@@ -17,6 +17,7 @@
 #include <memalign.h>
 #include <miiphy.h>
 #include <net.h>
+#include <time.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <linux/dma-mapping.h>

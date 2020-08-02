@@ -20,6 +20,7 @@
 #include <log.h>
 #include <mmc.h>
 #include <part.h>
+#include <time.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <dm/device_compat.h>

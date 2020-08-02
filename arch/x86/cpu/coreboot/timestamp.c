@@ -9,6 +9,7 @@
 #include <bootstage.h>
 #include <asm/arch/timestamp.h>
 #include <asm/arch/sysinfo.h>
+#include <asm/u-boot-x86.h>
 #include <linux/compiler.h>
 
 struct timestamp_entry {

@@ -15,6 +15,7 @@
 #include <malloc.h>
 #include <mmc.h>
 #include <sdhci.h>
+#include <time.h>
 #include <asm/cache.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

@@ -4,6 +4,7 @@
  */
 #include <image.h>
 #include <log.h>
+#include <time.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/arch/fpga_manager.h>

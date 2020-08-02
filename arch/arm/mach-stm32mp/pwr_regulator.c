@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <syscon.h>
+#include <time.h>
 #include <asm/io.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>

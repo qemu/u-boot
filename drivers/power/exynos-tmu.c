@@ -21,6 +21,7 @@
 #include <errno.h>
 #include <fdtdec.h>
 #include <log.h>
+#include <time.h>
 #include <tmu.h>
 #include <asm/arch/tmu.h>
 #include <asm/arch/power.h>

@@ -16,6 +16,7 @@
 #include <regmap.h>
 #include <reset.h>
 #include <syscon.h>
+#include <time.h>
 #include <wait_bit.h>
 #include <asm/cache.h>
 #include <asm/gpio.h>

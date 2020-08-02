@@ -9,6 +9,7 @@
 #include <dm/device-internal.h>
 #include <malloc.h>
 #include <part.h>
+#include <time.h>
 
 #include <asm/armv8/mmu.h>
 #include <asm/io.h>

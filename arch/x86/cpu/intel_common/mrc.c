@@ -8,6 +8,7 @@
 #include <init.h>
 #include <log.h>
 #include <syscon.h>
+#include <time.h>
 #include <asm/cpu.h>
 #include <asm/global_data.h>
 #include <asm/gpio.h>

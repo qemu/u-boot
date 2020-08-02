@@ -11,6 +11,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <spi.h>
+#include <time.h>
 #include <asm/mpc8xxx_spi.h>
 #include <asm-generic/gpio.h>
 #include <dm/device_compat.h>

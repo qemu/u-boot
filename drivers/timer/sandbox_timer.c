@@ -6,6 +6,7 @@
 #include <common.h>
 #include <dm.h>
 #include <errno.h>
+#include <time.h>
 #include <timer.h>
 #include <os.h>
 

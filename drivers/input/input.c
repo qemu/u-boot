@@ -17,6 +17,7 @@
 #ifdef CONFIG_DM_KEYBOARD
 #include <keyboard.h>
 #endif
+#include <time.h>
 #include <linux/input.h>
 
 enum {

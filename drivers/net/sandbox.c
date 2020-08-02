@@ -11,6 +11,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <net.h>
+#include <time.h>
 #include <asm/eth.h>
 #include <asm/global_data.h>
 #include <asm/test.h>

@@ -14,6 +14,7 @@
 #include <i2c.h>
 #include <log.h>
 #include <rtc.h>
+#include <time.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

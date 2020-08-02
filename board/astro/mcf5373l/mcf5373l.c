@@ -8,6 +8,7 @@
 #include <common.h>
 #include <init.h>
 #include <serial.h>
+#include <time.h>
 #include <watchdog.h>
 #include <command.h>
 #include <asm/global_data.h>

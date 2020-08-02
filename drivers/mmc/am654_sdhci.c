@@ -12,6 +12,7 @@
 #include <power-domain.h>
 #include <regmap.h>
 #include <sdhci.h>
+#include <time.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/err.h>

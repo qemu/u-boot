@@ -8,6 +8,7 @@
  * Copyright (C) 2009 Jean-Christophe PLAGNIOL-VILLARD <plagnioj@jcrosoft.com>
  */
 #include <common.h>
+#include <time.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/arch/hardware.h>

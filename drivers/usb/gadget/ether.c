@@ -12,6 +12,7 @@
 #include <env.h>
 #include <log.h>
 #include <part.h>
+#include <time.h>
 #include <linux/errno.h>
 #include <linux/netdevice.h>
 #include <linux/printk.h>

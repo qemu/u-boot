@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <rand.h>
 #include <rng.h>
+#include <time.h>
 
 #include <linux/string.h>
 

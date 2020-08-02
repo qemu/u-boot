@@ -29,6 +29,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <memalign.h>
+#include <time.h>
 #include <asm/processor.h>
 #include <asm/unaligned.h>
 #include <linux/ctype.h>

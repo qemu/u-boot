@@ -13,6 +13,7 @@
 #include <irq.h>
 #include <log.h>
 #include <spl.h>
+#include <time.h>
 #include <tpm-v2.h>
 #include <asm/gpio.h>
 #include <asm/io.h>

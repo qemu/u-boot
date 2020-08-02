@@ -11,6 +11,7 @@
 #include <power-domain.h>
 #include <regmap.h>
 #include <syscon.h>
+#include <time.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm-generic/gpio.h>

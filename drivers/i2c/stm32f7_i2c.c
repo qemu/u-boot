@@ -11,6 +11,7 @@
 #include <regmap.h>
 #include <reset.h>
 #include <syscon.h>
+#include <time.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/printk.h>

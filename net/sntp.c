@@ -11,6 +11,7 @@
 #include <log.h>
 #include <net.h>
 #include <rtc.h>
+#include <time.h>
 
 #include "sntp.h"
 

@@ -14,6 +14,7 @@
 #include <malloc.h>
 #include <memalign.h>
 #include <phys2bus.h>
+#include <time.h>
 #include <usb.h>
 #include <usbroothubdes.h>
 #include <wait_bit.h>

@@ -13,6 +13,7 @@
  */
 
 #include <common.h>
+#include <time.h>
 #include <asm/io.h>
 #include <memalign.h>
 #include <nand.h>

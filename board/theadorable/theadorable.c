@@ -13,6 +13,7 @@
 #if !defined(CONFIG_SPL_BUILD)
 #include <bootcount.h>
 #endif
+#include <time.h>
 #include <asm/global_data.h>
 #include <asm/gpio.h>
 #include <asm/io.h>

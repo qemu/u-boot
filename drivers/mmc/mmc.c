@@ -13,6 +13,7 @@
 #include <command.h>
 #include <dm.h>
 #include <log.h>
+#include <time.h>
 #include <dm/device-internal.h>
 #include <errno.h>
 #include <mmc.h>

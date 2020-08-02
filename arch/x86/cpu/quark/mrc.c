@@ -34,6 +34,7 @@
 
 #include <common.h>
 #include <version.h>
+#include <asm/u-boot-x86.h>
 #include <asm/arch/mrc.h>
 #include <asm/arch/msg_port.h>
 #include "mrc_util.h"

@@ -9,6 +9,7 @@
 #include <cpu_func.h>
 #include <flash.h>
 #include <irq_func.h>
+#include <time.h>
 #include <uuid.h>
 #include <linux/delay.h>
 

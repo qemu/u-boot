@@ -7,6 +7,8 @@
 #ifndef __CLI_H
 #define __CLI_H
 
+#include <time.h>
+
 /**
  * Go into the command loop
  *

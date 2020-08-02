@@ -12,6 +12,7 @@
 #include <malloc.h>
 #include <pci.h>
 #include <reset.h>
+#include <time.h>
 #include <asm/io.h>
 #include <linux/delay.h>
 #include "designware_i2c.h"

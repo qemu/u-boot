@@ -9,6 +9,7 @@
 
 #include <common.h>
 #include <nand.h>
+#include <time.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/err.h>

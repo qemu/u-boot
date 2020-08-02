@@ -14,6 +14,7 @@
 #include <panel.h>
 #include <regmap.h>
 #include <syscon.h>
+#include <time.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <asm/arch-rockchip/clock.h>

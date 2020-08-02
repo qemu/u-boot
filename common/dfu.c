@@ -13,6 +13,7 @@
 #include <common.h>
 #include <command.h>
 #include <log.h>
+#include <time.h>
 #include <watchdog.h>
 #include <dfu.h>
 #include <console.h>

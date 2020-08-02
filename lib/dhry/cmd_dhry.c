@@ -6,6 +6,7 @@
 #include <common.h>
 #include <command.h>
 #include <div64.h>
+#include <time.h>
 #include "dhry.h"
 
 static int do_dhry(struct cmd_tbl *cmdtp, int flag, int argc,

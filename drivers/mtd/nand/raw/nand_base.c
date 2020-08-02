@@ -34,6 +34,7 @@
 #endif
 #include <log.h>
 #include <malloc.h>
+#include <time.h>
 #include <watchdog.h>
 #include <asm/global_data.h>
 #include <dm/devres.h>

@@ -7,6 +7,7 @@
 #include <altera.h>
 #include <errno.h>
 #include <log.h>
+#include <time.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <asm/arch/cpu.h>

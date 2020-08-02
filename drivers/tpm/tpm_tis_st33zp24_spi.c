@@ -17,6 +17,7 @@
 #include <fdtdec.h>
 #include <log.h>
 #include <spi.h>
+#include <time.h>
 #include <tpm-v1.h>
 #include <errno.h>
 #include <linux/delay.h>

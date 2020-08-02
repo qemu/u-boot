@@ -21,6 +21,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <time.h>
 #include <watchdog.h>
 #include <dm/devres.h>
 #include <linux/bitops.h>

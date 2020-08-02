@@ -16,6 +16,7 @@
 #include <log.h>
 #include <net.h>
 #include <rand.h>
+#include <time.h>
 #include "arp.h"
 #include "net_rand.h"
 

@@ -8,6 +8,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <spi.h>
+#include <time.h>
 #include <asm/global_data.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>

@@ -12,6 +12,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <qfw.h>
+#include <time.h>
 #include <asm/atomic.h>
 #include <asm/cpu.h>
 #include <asm/global_data.h>

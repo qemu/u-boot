@@ -15,6 +15,7 @@
 #include <malloc.h>
 #include <memalign.h>
 #include <stdio_dev.h>
+#include <time.h>
 #include <watchdog.h>
 #include <asm/byteorder.h>
 

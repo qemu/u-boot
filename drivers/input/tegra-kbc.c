@@ -13,6 +13,7 @@
 #include <log.h>
 #include <stdio_dev.h>
 #include <tegra-kbc.h>
+#include <time.h>
 #include <asm/io.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/funcmux.h>

@@ -16,6 +16,7 @@
 #include <log.h>
 #include <net.h>
 #include <rand.h>
+#include <time.h>
 #include <uuid.h>
 #include <linux/delay.h>
 #include <net/tftp.h>

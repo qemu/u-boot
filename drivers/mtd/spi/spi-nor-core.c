@@ -12,6 +12,7 @@
 #include <common.h>
 #include <display_options.h>
 #include <log.h>
+#include <time.h>
 #include <dm/device_compat.h>
 #include <dm/devres.h>
 #include <linux/bitops.h>

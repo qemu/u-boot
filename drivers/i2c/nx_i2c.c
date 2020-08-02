@@ -3,6 +3,7 @@
 #include <dm.h>
 #include <i2c.h>
 #include <log.h>
+#include <time.h>
 #include <asm/arch/nexell.h>
 #include <asm/arch/reset.h>
 #include <asm/arch/clk.h>

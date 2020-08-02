@@ -4,6 +4,7 @@
  */
 #include <common.h>
 #include <log.h>
+#include <time.h>
 #include <asm/io.h>
 #include <clk.h>
 #include <dm.h>

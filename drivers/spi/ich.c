@@ -22,6 +22,7 @@
 #include <spi_flash.h>
 #include <spi-mem.h>
 #include <spl.h>
+#include <time.h>
 #include <asm/fast_spi.h>
 #include <asm/io.h>
 #include <dm/uclass-internal.h>

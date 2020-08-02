@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <i2c.h>
 #include <pci_ids.h>
+#include <time.h>
 #include <asm/io.h>
 #include <linux/bitfield.h>
 #include <linux/compat.h>

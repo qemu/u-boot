@@ -9,6 +9,7 @@
 #include <nand.h>
 #include <malloc.h>
 #include <mxs_nand.h>
+#include <time.h>
 #include <asm/cache.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

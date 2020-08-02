@@ -13,6 +13,7 @@
  */
 #include <common.h>
 #include <command.h>
+#include <time.h>
 
 static int do_gettime(struct cmd_tbl *cmdtp, int flag, int argc,
 		      char *const argv[])

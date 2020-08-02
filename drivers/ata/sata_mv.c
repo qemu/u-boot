@@ -37,6 +37,7 @@
 #include <cpu_func.h>
 #include <dm.h>
 #include <log.h>
+#include <time.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <dm/device-internal.h>

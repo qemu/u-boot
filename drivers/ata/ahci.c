@@ -12,6 +12,7 @@
 #include <blk.h>
 #include <cpu_func.h>
 #include <log.h>
+#include <time.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 

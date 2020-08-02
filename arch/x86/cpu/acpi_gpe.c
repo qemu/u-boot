@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <irq.h>
 #include <log.h>
+#include <time.h>
 #include <acpi/acpi_device.h>
 #include <asm/io.h>
 #include <dt-bindings/interrupt-controller/irq.h>

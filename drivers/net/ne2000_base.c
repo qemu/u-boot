@@ -78,6 +78,7 @@ Add SNMP
 #include <log.h>
 #include <net.h>
 #include <malloc.h>
+#include <time.h>
 #include <linux/compiler.h>
 
 /* forward definition of function used for the uboot interface */

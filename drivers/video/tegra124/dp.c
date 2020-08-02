@@ -10,6 +10,7 @@
 #include <div64.h>
 #include <errno.h>
 #include <log.h>
+#include <time.h>
 #include <video_bridge.h>
 #include <asm/io.h>
 #include <asm/arch-tegra/dc.h>

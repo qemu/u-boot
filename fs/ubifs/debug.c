@@ -17,6 +17,7 @@
 
 #include <hexdump.h>
 #include <log.h>
+#include <time.h>
 #include <dm/devres.h>
 #include <linux/printk.h>
 

@@ -21,6 +21,7 @@
 #include <pci_tegra.h>
 #include <power-domain.h>
 #include <reset.h>
+#include <time.h>
 #include <linux/delay.h>
 #include <linux/printk.h>
 
