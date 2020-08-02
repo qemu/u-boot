@@ -10,6 +10,7 @@
  */
 
 #include <common.h>
+#include <display_options.h>
 #include <init.h>
 #include <log.h>
 #include <net.h>

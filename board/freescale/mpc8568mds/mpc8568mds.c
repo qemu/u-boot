@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <display_options.h>
 #include <flash.h>
 #include <init.h>
 #include <log.h>

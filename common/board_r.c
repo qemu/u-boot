@@ -13,6 +13,7 @@
 #include <api.h>
 #include <bootstage.h>
 #include <cpu_func.h>
+#include <display_options.h>
 #include <exports.h>
 #include <flash.h>
 #include <hang.h>

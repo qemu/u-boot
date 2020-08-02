@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <display_options.h>
 #include <version.h>
 #include <linux/compiler.h>
 #ifdef CONFIG_SYS_COREBOOT

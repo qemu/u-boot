@@ -10,6 +10,7 @@
  */
 
 #include <common.h>
+#include <display_options.h>
 #include <log.h>
 #include <dm/device_compat.h>
 #include <dm/devres.h>

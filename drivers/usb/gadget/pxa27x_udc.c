@@ -9,6 +9,7 @@
 
 
 #include <common.h>
+#include <display_options.h>
 #include <asm/arch/hardware.h>
 #include <asm/byteorder.h>
 #include <asm/io.h>

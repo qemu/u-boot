@@ -3,6 +3,7 @@
  * Copyright 2017-2018 NXP
  */
 #include <common.h>
+#include <display_options.h>
 #include <env.h>
 #include <i2c.h>
 #include <init.h>

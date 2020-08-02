@@ -16,6 +16,7 @@
 #include <cli.h>
 #include <command.h>
 #include <console.h>
+#include <display_options.h>
 #include <flash.h>
 #include <hash.h>
 #include <log.h>

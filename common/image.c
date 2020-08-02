@@ -10,6 +10,7 @@
 #include <common.h>
 #include <bootstage.h>
 #include <cpu_func.h>
+#include <display_options.h>
 #include <env.h>
 #include <lmb.h>
 #include <log.h>

@@ -13,6 +13,7 @@
 #include <common.h>
 #include <bootstage.h>
 #include <command.h>
+#include <display_options.h>
 #include <dm.h>
 #include <env.h>
 #include <hang.h>

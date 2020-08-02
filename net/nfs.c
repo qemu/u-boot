@@ -28,6 +28,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <display_options.h>
 #include <flash.h>
 #include <image.h>
 #include <log.h>

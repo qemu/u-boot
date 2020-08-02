@@ -4,6 +4,7 @@
  * Copyright 2017 NXP
  */
 #include <common.h>
+#include <display_options.h>
 #include <env.h>
 #include <init.h>
 #include <malloc.h>
