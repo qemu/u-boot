@@ -14,6 +14,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/iopoll.h>
+#include <linux/printk.h>
 #include "stm32mp1_ddr.h"
 #include "stm32mp1_ddr_regs.h"
 

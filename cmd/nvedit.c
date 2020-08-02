@@ -37,6 +37,7 @@
 #include <mapmem.h>
 #include <asm/global_data.h>
 #include <linux/bitops.h>
+#include <linux/printk.h>
 #include <u-boot/crc.h>
 #include <watchdog.h>
 #include <linux/stddef.h>

@@ -34,6 +34,7 @@
 #include <nand.h>
 #include <dm/uclass.h>
 #include <asm/ti-common/davinci_nand.h>
+#include <linux/printk.h>
 
 /* Definitions for 4-bit hardware ECC */
 #define NAND_TIMEOUT			10240

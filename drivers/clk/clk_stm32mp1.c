@@ -21,6 +21,7 @@
 #include <asm/arch/sys_proto.h>
 #include <dt-bindings/clock/stm32mp1-clks.h>
 #include <dt-bindings/clock/stm32mp1-clksrc.h>
+#include <linux/printk.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

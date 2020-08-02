@@ -16,6 +16,7 @@
 #include <linux/bitops.h>
 #include <linux/clk-provider.h>
 #include <clk.h>
+#include <linux/printk.h>
 #include "clk.h"
 #include <linux/err.h>
 

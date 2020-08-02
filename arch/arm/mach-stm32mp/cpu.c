@@ -19,6 +19,7 @@
 #include <dm/device.h>
 #include <dm/uclass.h>
 #include <linux/bitops.h>
+#include <linux/printk.h>
 
 /* RCC register */
 #define RCC_TZCR		(STM32_RCC_BASE + 0x00)

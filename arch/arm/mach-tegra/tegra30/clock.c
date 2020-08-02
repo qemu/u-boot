@@ -18,6 +18,7 @@
 #include <div64.h>
 #include <fdtdec.h>
 #include <linux/delay.h>
+#include <linux/printk.h>
 
 /*
  * Clock types that we can use as a source. The Tegra30 has muxes for the

@@ -12,6 +12,7 @@
 #include <regmap.h>
 #include <syscon.h>
 #include <asm/io.h>
+#include <linux/printk.h>
 #include "stm32mp1_ddr.h"
 
 static const char *const clkname[] = {

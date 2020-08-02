@@ -22,6 +22,7 @@
 #include <phy.h>
 #include <power-domain.h>
 #include <linux/bitops.h>
+#include <linux/printk.h>
 #include <linux/soc/ti/ti-udma.h>
 
 #include "cpsw_mdio.h"

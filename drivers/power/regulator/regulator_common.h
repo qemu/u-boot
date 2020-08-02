@@ -7,8 +7,6 @@
 #ifndef _REGULATOR_COMMON_H
 #define _REGULATOR_COMMON_H
 
-#include <asm/gpio.h>
-
 struct regulator_common_platdata {
 	struct gpio_desc gpio; /* GPIO for regulator enable control */
 	unsigned int startup_delay_us;

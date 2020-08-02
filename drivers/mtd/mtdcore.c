@@ -32,6 +32,7 @@
 #include <linux/bug.h>
 #include <linux/err.h>
 #include <ubi_uboot.h>
+#include <linux/printk.h>
 #endif
 
 #include <linux/log2.h>

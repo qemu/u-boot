@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <i2c.h>
 #include <linux/delay.h>
+#include <linux/printk.h>
 #include <power/pmic.h>
 #include <power/regulator.h>
 #include <power/s2mps11.h>

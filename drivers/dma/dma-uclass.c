@@ -19,6 +19,7 @@
 #include <dma-uclass.h>
 #include <dt-structs.h>
 #include <errno.h>
+#include <linux/printk.h>
 
 #ifdef CONFIG_DMA_CHANNELS
 static inline struct dma_ops *dma_dev_ops(struct udevice *dev)

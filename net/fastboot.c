@@ -7,6 +7,7 @@
 #include <command.h>
 #include <fastboot.h>
 #include <net.h>
+#include <linux/printk.h>
 #include <net/fastboot.h>
 
 /* Fastboot port # defined in spec */

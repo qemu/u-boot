@@ -8,6 +8,7 @@
 #include <errno.h>
 #include <sysreset.h>
 #include <wdt.h>
+#include <linux/printk.h>
 
 struct wdt_reboot_priv {
 	struct udevice *wdt;

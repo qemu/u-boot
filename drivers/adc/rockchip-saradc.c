@@ -13,6 +13,7 @@
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/err.h>
+#include <linux/printk.h>
 
 #define SARADC_CTRL_CHN_MASK		GENMASK(2, 0)
 #define SARADC_CTRL_POWER_CTRL		BIT(3)

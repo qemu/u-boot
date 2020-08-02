@@ -11,6 +11,7 @@
 #define _DM_DEVICE_COMPAT_H
 
 #include <linux/compat.h>
+#include <linux/printk.h>
 
 /*
  * REVISIT:

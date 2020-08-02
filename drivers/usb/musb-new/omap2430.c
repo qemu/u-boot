@@ -17,6 +17,7 @@
 #include <dm/device_compat.h>
 #include <dm/lists.h>
 #include <linux/err.h>
+#include <linux/printk.h>
 #include <linux/usb/otg.h>
 #include <asm/omap_common.h>
 #include <asm/omap_musb.h>

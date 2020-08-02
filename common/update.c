@@ -9,6 +9,7 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <image.h>
+#include <linux/printk.h>
 
 #if !(defined(CONFIG_FIT) && defined(CONFIG_OF_LIBFDT))
 #error "CONFIG_FIT and CONFIG_OF_LIBFDT are required for auto-update feature"

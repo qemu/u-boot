@@ -9,6 +9,7 @@
 #include <malloc.h>
 #include <errno.h>
 #include <dfu.h>
+#include <linux/printk.h>
 
 int dfu_tftp_write(char *dfu_entity_name, unsigned int addr, unsigned int len,
 		   char *interface, char *devstring)

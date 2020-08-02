@@ -16,6 +16,7 @@
 #include <fat.h>
 #include <mmc.h>
 #include <part.h>
+#include <linux/printk.h>
 
 static unsigned char *dfu_file_buf;
 static u64 dfu_file_buf_len;

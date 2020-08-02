@@ -25,6 +25,7 @@
 #include <linux/errno.h>
 #include <linux/ioport.h>
 #include <linux/mbus.h>
+#include <linux/printk.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

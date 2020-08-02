@@ -31,6 +31,7 @@
 #include <linux/err.h>
 #include <linux/list.h>
 #include <power-domain.h>
+#include <linux/printk.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 
