@@ -14,6 +14,7 @@
 #if !defined(CONFIG_PANIC_HANG)
 #include <command.h>
 #endif
+#include <stdarg.h>
 #include <stdio.h>
 #include <linux/delay.h>
 

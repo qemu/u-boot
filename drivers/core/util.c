@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <stdarg.h>
 #include <stdio.h>
 #include <dm/device.h>
 #include <dm/ofnode.h>

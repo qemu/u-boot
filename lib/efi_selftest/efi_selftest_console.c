@@ -7,6 +7,7 @@
 
 #include <efi_selftest.h>
 #include <net.h>
+#include <stdarg.h>
 #include <vsprintf.h>
 
 struct efi_simple_text_output_protocol *con_out;

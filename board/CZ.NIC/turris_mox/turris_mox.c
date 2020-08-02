@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <stdarg.h>
 #include <stdio.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/soc.h>

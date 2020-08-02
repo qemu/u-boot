@@ -2,6 +2,7 @@
 #define __EXPORTS_H__
 
 #include <irq_func.h>
+#include <stdarg.h>
 #include <stdio.h>
 #include <time.h>
 #include <asm/global_data.h>

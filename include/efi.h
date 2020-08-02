@@ -16,6 +16,7 @@
 #ifndef _EFI_H
 #define _EFI_H
 
+#include <stdarg.h>
 #include <linux/linkage.h>
 #include <linux/string.h>
 #include <linux/types.h>
