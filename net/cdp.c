@@ -14,6 +14,7 @@
 #if defined(CONFIG_CDP_VERSION)
 #include <timestamp.h>
 #endif
+#include <stdio.h>
 #include <linux/string.h>
 
 #include "cdp.h"

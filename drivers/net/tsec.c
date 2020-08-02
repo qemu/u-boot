@@ -13,6 +13,7 @@
 #include <malloc.h>
 #include <net.h>
 #include <command.h>
+#include <stdio.h>
 #include <tsec.h>
 #include <fsl_mdio.h>
 #include <asm/u-boot.h>

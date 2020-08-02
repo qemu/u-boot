@@ -12,6 +12,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <spi.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/soc.h>
 #ifdef CONFIG_ARCH_KIRKWOOD

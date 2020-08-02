@@ -9,6 +9,7 @@
 #include <errno.h>
 #include <memalign.h>
 #include <nvme.h>
+#include <stdio.h>
 #include "nvme.h"
 
 static void print_optional_admin_cmd(u16 oacs, int devnum)

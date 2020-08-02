@@ -9,6 +9,7 @@
 #include <env.h>
 #include <mapmem.h>
 #include <smbios.h>
+#include <stdio.h>
 #include <tables_csum.h>
 #include <version.h>
 #ifdef CONFIG_CPU

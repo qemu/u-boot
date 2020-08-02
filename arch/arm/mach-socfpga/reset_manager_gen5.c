@@ -5,6 +5,7 @@
 
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/fpga_manager.h>
 #include <asm/arch/reset_manager.h>

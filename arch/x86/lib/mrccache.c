@@ -15,6 +15,7 @@
 #include <net.h>
 #include <spi.h>
 #include <spi_flash.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/mrccache.h>
 #include <dm/device-internal.h>

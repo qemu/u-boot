@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/ehci-rmobile.h>
 #include <linux/delay.h>

@@ -7,6 +7,7 @@
 #include <common.h>
 #include <hang.h>
 #include <log.h>
+#include <stdio.h>
 #include <linux/delay.h>
 #include <linux/types.h>
 #include <asm/arch/clock.h>

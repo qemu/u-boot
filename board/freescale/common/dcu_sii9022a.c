@@ -4,6 +4,7 @@
  * Copyright 2019 NXP
  */
 
+#include <stdio.h>
 #include <asm/io.h>
 #include <common.h>
 #include <fsl_dcu_fb.h>

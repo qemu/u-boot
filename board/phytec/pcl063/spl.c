@@ -9,6 +9,7 @@
 #include <common.h>
 #include <init.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm/arch/clock.h>
 #include <asm/io.h>
 #include <asm/arch/mx6-ddr.h>

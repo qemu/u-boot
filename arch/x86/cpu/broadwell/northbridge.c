@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/mrc_common.h>

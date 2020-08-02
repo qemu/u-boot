@@ -8,6 +8,7 @@
 #include <errno.h>
 #include <image.h>
 #include <log.h>
+#include <stdio.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>
 

@@ -7,6 +7,7 @@
 #include <common.h>
 #include <clk.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm-generic/io.h>
 #include <dm.h>
 #include <fdtdec.h>

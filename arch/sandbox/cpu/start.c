@@ -10,6 +10,7 @@
 #include <os.h>
 #include <cli.h>
 #include <sort.h>
+#include <stdio.h>
 #include <asm/getopt.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

@@ -17,6 +17,7 @@
 #define _I2C_H_
 
 #include <linker_lists.h>
+#include <stdio.h>
 
 /*
  * For now there are essentially two parts to this file - driver model

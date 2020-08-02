@@ -11,6 +11,7 @@
 #include <flash.h>
 #include <image.h>
 #include <net.h>
+#include <stdio.h>
 #include <vsprintf.h>
 #include <errno.h>
 #include <dm.h>

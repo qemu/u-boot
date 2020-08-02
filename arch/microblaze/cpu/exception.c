@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <hang.h>
+#include <stdio.h>
 #include <asm/asm.h>
 
 void _hw_exception_handler (void)

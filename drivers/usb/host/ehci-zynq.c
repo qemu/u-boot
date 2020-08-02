@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <stdio.h>
 #include <usb.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/sys_proto.h>

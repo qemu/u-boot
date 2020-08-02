@@ -10,6 +10,7 @@
 #include <i2c.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/global_data.h>
 #include <asm/gpio.h>

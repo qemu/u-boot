@@ -7,6 +7,7 @@
  */
 
 #include <log.h>
+#include <stdio.h>
 #include <asm/eth-raw-os.h>
 #include <common.h>
 #include <dm.h>

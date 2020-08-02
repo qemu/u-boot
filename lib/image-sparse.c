@@ -43,6 +43,7 @@
 #include <malloc.h>
 #include <part.h>
 #include <sparse_format.h>
+#include <stdio.h>
 #include <asm/cache.h>
 
 #include <linux/math64.h>

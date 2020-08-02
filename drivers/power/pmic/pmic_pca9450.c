@@ -6,6 +6,7 @@
 #include <common.h>
 #include <errno.h>
 #include <i2c.h>
+#include <stdio.h>
 #include <power/pmic.h>
 #include <power/pca9450.h>
 

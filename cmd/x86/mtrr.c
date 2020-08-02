@@ -6,6 +6,7 @@
 #include <common.h>
 #include <command.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/msr.h>
 #include <asm/mp.h>
 #include <asm/mtrr.h>

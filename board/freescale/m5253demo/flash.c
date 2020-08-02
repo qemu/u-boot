@@ -11,6 +11,7 @@
 #include <flash.h>
 #include <init.h>
 #include <irq_func.h>
+#include <stdio.h>
 #include <time.h>
 
 #include <asm/immap.h>

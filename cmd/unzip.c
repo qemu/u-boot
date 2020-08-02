@@ -9,6 +9,7 @@
 #include <env.h>
 #include <gzip.h>
 #include <part.h>
+#include <stdio.h>
 
 static int do_unzip(struct cmd_tbl *cmdtp, int flag, int argc,
 		    char *const argv[])

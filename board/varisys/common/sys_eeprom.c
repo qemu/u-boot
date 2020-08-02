@@ -14,6 +14,7 @@
 #include <command.h>
 #include <env.h>
 #include <i2c.h>
+#include <stdio.h>
 #include <linux/ctype.h>
 #include <linux/delay.h>
 #include <linux/string.h>

@@ -11,6 +11,7 @@
 #include <bootstage.h>
 #include <hang.h>
 #include <os.h>
+#include <stdio.h>
 
 /**
  * hang - stop processing by staying in an endless loop

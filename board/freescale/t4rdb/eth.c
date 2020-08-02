@@ -10,6 +10,7 @@
 #include <fdt_support.h>
 #include <net.h>
 #include <netdev.h>
+#include <stdio.h>
 #include <asm/mmu.h>
 #include <asm/processor.h>
 #include <asm/cache.h>

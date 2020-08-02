@@ -6,6 +6,7 @@
  */
 
 #include "btrfs.h"
+#include <stdio.h>
 
 static void read_root_item(struct btrfs_path *p, struct btrfs_root_item *item)
 {

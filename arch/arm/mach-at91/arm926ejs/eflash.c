@@ -46,6 +46,7 @@
 #include <display_options.h>
 #include <flash.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/at91_common.h>

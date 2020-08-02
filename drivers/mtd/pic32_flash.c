@@ -12,6 +12,7 @@
 #include <flash.h>
 #include <init.h>
 #include <irq_func.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/bitops.h>
 #include <linux/string.h>

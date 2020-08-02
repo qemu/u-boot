@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/ddr_defs.h>
 #include <asm/arch/sys_proto.h>

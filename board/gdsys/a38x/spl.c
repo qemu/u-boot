@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <config.h>
+#include <stdio.h>
 #include <asm/arch/cpu.h>
 
 void spl_board_init(void)

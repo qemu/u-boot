@@ -9,6 +9,7 @@
 #include <i2c.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <dm/device-internal.h>
 #include <dm/lists.h>
 #include <dm/pinctrl.h>

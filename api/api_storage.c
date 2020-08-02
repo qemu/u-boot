@@ -9,6 +9,7 @@
 #include <common.h>
 #include <api_public.h>
 #include <part.h>
+#include <stdio.h>
 
 #if defined(CONFIG_CMD_USB) && defined(CONFIG_USB_STORAGE)
 #include <usb.h>

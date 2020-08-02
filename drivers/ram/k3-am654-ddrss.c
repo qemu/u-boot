@@ -11,6 +11,7 @@
 #include <dm.h>
 #include <log.h>
 #include <ram.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <power-domain.h>
 #include <asm/arch/sys_proto.h>

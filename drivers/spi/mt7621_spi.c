@@ -13,6 +13,7 @@
 #include <dm.h>
 #include <log.h>
 #include <spi.h>
+#include <stdio.h>
 #include <wait_bit.h>
 #include <linux/bitops.h>
 #include <linux/io.h>

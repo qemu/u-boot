@@ -7,6 +7,7 @@
 #include <errno.h>
 #include <log.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm/arch/image.h>
 #include <asm/arch/sci/sci.h>
 #include <linux/string.h>

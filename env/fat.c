@@ -17,6 +17,7 @@
 #include <errno.h>
 #include <fat.h>
 #include <mmc.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <linux/stddef.h>
 #include <linux/string.h>

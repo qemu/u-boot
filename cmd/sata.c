@@ -16,6 +16,7 @@
 #include <command.h>
 #include <part.h>
 #include <sata.h>
+#include <stdio.h>
 #include <dm/device-internal.h>
 #include <dm/uclass-internal.h>
 #include <linux/string.h>

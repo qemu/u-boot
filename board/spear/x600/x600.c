@@ -15,6 +15,7 @@
 #include <netdev.h>
 #include <phy.h>
 #include <rtc.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/mach-types.h>
 #include <asm/arch/hardware.h>

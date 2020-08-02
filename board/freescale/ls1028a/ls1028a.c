@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <fsl_ddr.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <hwconfig.h>

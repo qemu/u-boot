@@ -7,6 +7,7 @@
 #include <common.h>
 #include <bmp_layout.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/io.h>
 
 vu_char  *vcxk_bws      = ((vu_char *) (CONFIG_SYS_VCXK_BASE));

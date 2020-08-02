@@ -16,6 +16,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/ptrace.h>
 #include <command.h>
 #include <asm/processor.h>

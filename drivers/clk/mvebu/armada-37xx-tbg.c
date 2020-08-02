@@ -12,6 +12,7 @@
 #include <clk-uclass.h>
 #include <clk.h>
 #include <dm.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/cpu.h>
 #include <dm/device_compat.h>

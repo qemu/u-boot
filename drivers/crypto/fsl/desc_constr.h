@@ -7,6 +7,7 @@
  * Based on desc_constr.h file in linux drivers/crypto/caam
  */
 
+#include <stdio.h>
 #include <linux/compat.h>
 #include <linux/string.h>
 #include "desc.h"

@@ -42,6 +42,7 @@
 #include <log.h>
 #include <net.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/mii.h>

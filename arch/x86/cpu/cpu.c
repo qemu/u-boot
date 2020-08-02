@@ -28,6 +28,7 @@
 #include <irq.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <syscon.h>
 #include <acpi/acpi_s3.h>
 #include <acpi/acpi_table.h>

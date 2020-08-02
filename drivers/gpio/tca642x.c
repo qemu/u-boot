@@ -23,6 +23,7 @@
 #include <common.h>
 #include <command.h>
 #include <i2c.h>
+#include <stdio.h>
 #include <tca642x.h>
 
 /* tca642x register address definitions */

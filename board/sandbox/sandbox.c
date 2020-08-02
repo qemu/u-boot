@@ -11,6 +11,7 @@
 #include <init.h>
 #include <led.h>
 #include <os.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/global_data.h>
 #include <asm/test.h>

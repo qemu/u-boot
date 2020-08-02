@@ -7,6 +7,7 @@
 #include <console.h>
 #include <dm.h>
 #include <part.h>
+#include <stdio.h>
 #include <usb.h>
 #include <asm/io.h>
 #include <asm/state.h>

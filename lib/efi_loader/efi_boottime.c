@@ -11,6 +11,7 @@
 #include <irq_func.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/global_data.h>
 #include <linux/libfdt_env.h>

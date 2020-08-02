@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <fdtdec.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/gpio.h>

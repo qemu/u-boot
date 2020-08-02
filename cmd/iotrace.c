@@ -6,6 +6,7 @@
 #include <common.h>
 #include <command.h>
 #include <iotrace.h>
+#include <stdio.h>
 
 static void do_print_stats(void)
 {

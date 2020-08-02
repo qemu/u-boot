@@ -503,5 +503,6 @@ U_BOOT_CMD(
 	") size_y(max. " __stringify(MAX_Y_CHARS) ")\n"
 );
 
+#include <stdio.h>
 #include <linux/string.h>
 #endif /* CONFIG_GDSYS_LEGACY_DRIVERS */

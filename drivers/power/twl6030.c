@@ -4,6 +4,7 @@
  * Texas Instruments, <www.ti.com>
  */
 #include <config.h>
+#include <stdio.h>
 #include <linux/delay.h>
 #include <linux/printk.h>
 

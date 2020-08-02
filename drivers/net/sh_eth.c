@@ -17,6 +17,7 @@
 #include <net.h>
 #include <netdev.h>
 #include <miiphy.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>

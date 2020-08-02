@@ -2,6 +2,7 @@
 #include <command.h>
 #include <console.h> /* ctrlc */
 #include <pci.h>
+#include <stdio.h>
 #include <asm/io.h>
 
 #include "hydra.h"

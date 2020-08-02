@@ -17,6 +17,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/io.h>
 
 #include <asm/arch/db8500_gpio.h>

@@ -11,6 +11,7 @@
 #include <dm.h>
 #include <dm-demo.h>
 #include <mapmem.h>
+#include <stdio.h>
 #include <asm/io.h>
 
 struct udevice *demo_dev;

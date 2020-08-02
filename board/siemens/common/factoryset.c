@@ -17,6 +17,7 @@
 #if !CONFIG_IS_ENABLED(TARGET_GIEDI) && !CONFIG_IS_ENABLED(TARGET_DENEB)
 #include <asm/arch/cpu.h>
 #endif
+#include <stdio.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/unaligned.h>
 #include <net.h>

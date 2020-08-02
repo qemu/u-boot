@@ -14,6 +14,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <spl.h>
+#include <stdio.h>
 #include <syscon.h>
 #include <asm/cpu.h>
 #include <asm/cpu_common.h>

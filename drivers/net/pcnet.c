@@ -14,6 +14,7 @@
 #include <memalign.h>
 #include <net.h>
 #include <netdev.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <asm/io.h>
 #include <pci.h>

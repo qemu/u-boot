@@ -13,6 +13,7 @@
 #include <log.h>
 #include <pci.h>
 #include <sound.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <dt-bindings/sound/azalia.h>
 #include <linux/bitops.h>

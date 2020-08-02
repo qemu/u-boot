@@ -5,6 +5,7 @@
 #include <common.h>
 #include <dm.h>
 #include <sandboxtee.h>
+#include <stdio.h>
 #include <tee.h>
 #include <linux/string.h>
 #include <tee/optee_ta_avb.h>

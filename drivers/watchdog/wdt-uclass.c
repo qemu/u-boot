@@ -8,6 +8,7 @@
 #include <errno.h>
 #include <hang.h>
 #include <log.h>
+#include <stdio.h>
 #include <time.h>
 #include <wdt.h>
 #include <asm/global_data.h>

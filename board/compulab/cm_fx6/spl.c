@@ -12,6 +12,7 @@
 #include <hang.h>
 #include <init.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/gpio.h>
 #include <asm/arch/mx6-ddr.h>

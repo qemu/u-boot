@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <mmc.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/string.h>
 

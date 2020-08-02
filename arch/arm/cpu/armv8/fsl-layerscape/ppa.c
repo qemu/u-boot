@@ -7,6 +7,7 @@
 #include <malloc.h>
 #include <config.h>
 #include <errno.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <asm/system.h>

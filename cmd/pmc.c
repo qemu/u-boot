@@ -8,6 +8,7 @@
 #include <common.h>
 #include <command.h>
 #include <dm.h>
+#include <stdio.h>
 #include <power/acpi_pmc.h>
 
 static int get_pmc_dev(struct udevice **devp)

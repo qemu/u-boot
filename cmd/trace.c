@@ -7,6 +7,7 @@
 #include <command.h>
 #include <env.h>
 #include <mapmem.h>
+#include <stdio.h>
 #include <trace.h>
 #include <asm/io.h>
 

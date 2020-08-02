@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <mapmem.h>
 #include <pci.h>
+#include <stdio.h>
 #include <asm/immap_85xx.h>
 #include <asm/fsl_pci.h>
 #include <asm/fsl_serdes.h>

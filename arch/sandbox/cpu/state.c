@@ -8,6 +8,7 @@
 #include <fdtdec.h>
 #include <log.h>
 #include <os.h>
+#include <stdio.h>
 #include <asm/malloc.h>
 #include <asm/state.h>
 #include <linux/string.h>

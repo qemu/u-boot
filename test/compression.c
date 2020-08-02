@@ -12,6 +12,7 @@
 #include <lz4.h>
 #include <malloc.h>
 #include <mapmem.h>
+#include <stdio.h>
 #include <asm/io.h>
 
 #include <u-boot/zlib.h>

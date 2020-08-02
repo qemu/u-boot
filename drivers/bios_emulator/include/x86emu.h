@@ -41,6 +41,7 @@
 #ifndef __X86EMU_X86EMU_H
 #define __X86EMU_X86EMU_H
 
+#include <stdio.h>
 #include <asm/types.h>
 #include <common.h>
 #include <pci.h>

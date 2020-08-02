@@ -17,6 +17,7 @@
 #include <log.h>
 #include <memalign.h>
 #include <ide.h>
+#include <stdio.h>
 #include "part_mac.h"
 #include <part.h>
 

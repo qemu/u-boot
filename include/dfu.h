@@ -11,6 +11,7 @@
 #define __DFU_ENTITY_H_
 
 #include <common.h>
+#include <stdio.h>
 #include <linux/list.h>
 #include <mmc.h>
 #include <spi_flash.h>

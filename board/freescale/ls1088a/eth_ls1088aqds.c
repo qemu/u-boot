@@ -9,6 +9,7 @@
 #include <log.h>
 #include <net.h>
 #include <netdev.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/fsl_serdes.h>
 #include <hwconfig.h>

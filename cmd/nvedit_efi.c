@@ -16,6 +16,7 @@
 #include <malloc.h>
 #include <mapmem.h>
 #include <rtc.h>
+#include <stdio.h>
 #include <uuid.h>
 #include <linux/kernel.h>
 #include <linux/string.h>

@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/arch/mux.h>
 #include "../common/board_detect.h"

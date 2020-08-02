@@ -10,6 +10,7 @@
 #include <env.h>
 #include <init.h>
 #include <log.h>
+#include <stdio.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>
 #include <linux/delay.h>

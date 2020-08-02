@@ -6,6 +6,7 @@
 #include <common.h>
 #include <dfu.h>
 #include <g_dnl.h>
+#include <stdio.h>
 #include <usb.h>
 #include <asm/arch/stm32prog.h>
 #include <asm/arch/sys_proto.h>

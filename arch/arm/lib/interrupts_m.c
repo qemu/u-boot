@@ -7,6 +7,7 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <irq_func.h>
+#include <stdio.h>
 
 /*
  * Upon exception entry ARMv7-M processors automatically save stack

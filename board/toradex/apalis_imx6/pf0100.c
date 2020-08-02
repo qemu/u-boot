@@ -10,6 +10,7 @@
 #include <common.h>
 #include <command.h>
 #include <i2c.h>
+#include <stdio.h>
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/iomux.h>
 #include <asm/arch/mx6-pins.h>

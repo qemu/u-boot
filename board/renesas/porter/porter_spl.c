@@ -9,6 +9,7 @@
 #include <cpu_func.h>
 #include <init.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <dm/platform_data/serial_sh.h>
 #include <asm/processor.h>
 #include <asm/mach-types.h>

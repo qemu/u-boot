@@ -8,6 +8,7 @@
 #include <errno.h>
 #include <dm.h>
 #include <log.h>
+#include <stdio.h>
 #include <dm/uclass-internal.h>
 #include <linux/delay.h>
 #include <linux/string.h>

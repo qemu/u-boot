@@ -33,6 +33,7 @@
  */
 #include <common.h>
 #include <command.h>
+#include <stdio.h>
 #include <asm/arch/at91sam9260.h>
 #include <asm/arch/at91_common.h>
 #include <asm/arch/gpio.h>

@@ -6,6 +6,7 @@
 #include <common.h>
 #include <command.h>
 #include <dm.h>
+#include <stdio.h>
 #include <dm/device-internal.h>
 #include <dm/lists.h>
 #include <dm/uclass-internal.h>

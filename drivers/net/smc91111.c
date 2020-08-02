@@ -51,6 +51,7 @@
 #include <command.h>
 #include <config.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>

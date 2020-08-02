@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <env.h>
 #include <init.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch-rockchip/uart.h>
 #include <asm/arch-rockchip/sdram_rk3036.h>

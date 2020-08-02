@@ -7,6 +7,7 @@
 #include <common.h>
 #include <clk-uclass.h>
 #include <log.h>
+#include <stdio.h>
 #include <dm/device.h>
 #include <dm/uclass.h>
 #include <dm/lists.h>

@@ -16,6 +16,7 @@
 #include <command.h>
 #include <env.h>
 #include <mapmem.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 #include <asm/io.h>

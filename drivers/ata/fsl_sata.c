@@ -11,6 +11,7 @@
 #include <console.h>
 #include <cpu_func.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/ppc.h>
 #include <asm/fsl_serdes.h>

@@ -13,6 +13,7 @@
 #include <blk.h>
 #include <log.h>
 #include <part.h>
+#include <stdio.h>
 #include <uuid.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>

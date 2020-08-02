@@ -9,6 +9,7 @@
 #include <command.h>
 #include <cpu_func.h>
 #include <env.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/string.h>

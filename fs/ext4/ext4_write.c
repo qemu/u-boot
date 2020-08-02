@@ -27,6 +27,7 @@
 #include <malloc.h>
 #include <memalign.h>
 #include <part.h>
+#include <stdio.h>
 #include <linux/stat.h>
 #include <div64.h>
 #include <linux/string.h>

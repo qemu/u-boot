@@ -7,6 +7,7 @@
 #include <command.h>
 #include <dm.h>
 #include <errno.h>
+#include <stdio.h>
 #include <dm/pinctrl.h>
 #include <dm/uclass-internal.h>
 #include <linux/string.h>

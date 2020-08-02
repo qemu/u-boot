@@ -6,6 +6,7 @@
 #include <common.h>
 #include <i2c.h>
 #include <init.h>
+#include <stdio.h>
 #include <winbond_w83627.h>
 #include <asm/gpio.h>
 #include <asm/ibmpc.h>

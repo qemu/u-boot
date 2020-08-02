@@ -6,6 +6,7 @@
 #include <common.h>
 #include <fdt_support.h>
 #include <i2c.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <init.h>
 #include <asm/global_data.h>

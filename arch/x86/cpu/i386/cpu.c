@@ -24,6 +24,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm/control_regs.h>
 #include <asm/coreboot_tables.h>
 #include <asm/cpu.h>

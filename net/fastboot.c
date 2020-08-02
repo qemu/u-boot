@@ -7,6 +7,7 @@
 #include <command.h>
 #include <fastboot.h>
 #include <net.h>
+#include <stdio.h>
 #include <time.h>
 #include <linux/printk.h>
 #include <linux/string.h>

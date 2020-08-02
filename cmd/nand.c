@@ -22,6 +22,7 @@
 #include <common.h>
 #include <bootstage.h>
 #include <image.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <linux/mtd/mtd.h>
 #include <command.h>

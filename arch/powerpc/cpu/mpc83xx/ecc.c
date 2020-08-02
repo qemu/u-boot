@@ -10,6 +10,7 @@
 #include <irq_func.h>
 #include <mpc83xx.h>
 #include <command.h>
+#include <stdio.h>
 #include <asm/ppc.h>
 #include <linux/string.h>
 

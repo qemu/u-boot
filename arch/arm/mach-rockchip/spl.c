@@ -12,6 +12,7 @@
 #include <log.h>
 #include <ram.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm/arch-rockchip/bootrom.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

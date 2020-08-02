@@ -12,6 +12,7 @@
  */
 
 #include <cpu_func.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <linux/list.h>
 #include <linux/string.h>

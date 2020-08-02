@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <status_led.h>
+#include <stdio.h>
 #include <asm/gpio.h>
 
 #ifndef CONFIG_GPIO_LED_INVERTED_TABLE

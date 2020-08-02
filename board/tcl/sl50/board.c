@@ -14,6 +14,7 @@
 #include <net.h>
 #include <serial.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/omap.h>

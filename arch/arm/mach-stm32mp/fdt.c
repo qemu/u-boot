@@ -7,6 +7,7 @@
 #include <fdtdec.h>
 #include <fdt_support.h>
 #include <log.h>
+#include <stdio.h>
 #include <tee.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/u-boot.h>

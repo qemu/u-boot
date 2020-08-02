@@ -7,6 +7,7 @@
 
 #include <dm.h>
 #include <fdt_support.h>
+#include <stdio.h>
 #include <linux/ctype.h>
 #include <linux/delay.h>
 #include <linux/io.h>

@@ -11,6 +11,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdio.h>
 #include <time.h>
 #include <dm/device_compat.h>
 #include <linux/err.h>

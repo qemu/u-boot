@@ -27,6 +27,7 @@
 #include <common.h>
 #include <dm.h>
 #include <pci.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm-generic/gpio.h>
 #include <dm/device_compat.h>

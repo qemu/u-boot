@@ -16,6 +16,7 @@
 #include <image.h>
 #include <malloc.h>
 #include <mapmem.h>
+#include <stdio.h>
 #include <linux/list.h>
 #include <linux/ctype.h>
 #include <jffs2/jffs2.h>

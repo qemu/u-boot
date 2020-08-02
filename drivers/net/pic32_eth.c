@@ -12,6 +12,7 @@
 #include <net.h>
 #include <miiphy.h>
 #include <console.h>
+#include <stdio.h>
 #include <time.h>
 #include <wait_bit.h>
 #include <asm/global_data.h>

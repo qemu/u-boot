@@ -11,6 +11,7 @@
 #include <log.h>
 #include <mapmem.h>
 #include <net.h>
+#include <stdio.h>
 #include <stdio_dev.h>
 #include <linux/ctype.h>
 #include <linux/string.h>

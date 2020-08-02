@@ -7,6 +7,7 @@
 #include <common.h>
 #include <clk-uclass.h>
 #include <dm.h>
+#include <stdio.h>
 #include <syscon.h>
 #include <linux/io.h>
 #include <mach/at91_pmc.h>

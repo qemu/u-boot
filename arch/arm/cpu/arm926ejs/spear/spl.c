@@ -9,6 +9,7 @@
 #include <common.h>
 #include <init.h>
 #include <spl.h>
+#include <stdio.h>
 #include <version.h>
 #include <asm/io.h>
 #include <asm/ptrace.h>

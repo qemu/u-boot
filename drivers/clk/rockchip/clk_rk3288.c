@@ -13,6 +13,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <mapmem.h>
+#include <stdio.h>
 #include <syscon.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

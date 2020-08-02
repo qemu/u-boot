@@ -7,6 +7,7 @@
 #include <config.h>
 #include <dm.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <dm/of_access.h>
 #include <dm/of_addr.h>
 #include <fdt_support.h>

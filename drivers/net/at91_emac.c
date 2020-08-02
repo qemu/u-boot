@@ -9,6 +9,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/at91_emac.h>

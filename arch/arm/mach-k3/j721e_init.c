@@ -9,6 +9,7 @@
 #include <common.h>
 #include <init.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/armv7_mpu.h>
 #include <asm/arch/hardware.h>

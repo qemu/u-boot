@@ -10,6 +10,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <stdio.h>
 
 #include <asm/arch/s3c24x0_cpu.h>
 

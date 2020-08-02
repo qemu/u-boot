@@ -12,6 +12,7 @@
 #include <log.h>
 #include <net.h>
 #include <netdev.h>
+#include <stdio.h>
 #include <asm/mmu.h>
 #include <asm/processor.h>
 #include <asm/immap_85xx.h>

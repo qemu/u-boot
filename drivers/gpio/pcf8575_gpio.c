@@ -27,6 +27,7 @@
 #include <dm.h>
 #include <i2c.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm-generic/gpio.h>
 #include <asm/global_data.h>
 #include <linux/bitops.h>

@@ -19,6 +19,7 @@
 #include <i2c.h>
 #include <miiphy.h>
 #include <command.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/ppc.h>
 #include <asm/u-boot.h>

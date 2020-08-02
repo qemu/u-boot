@@ -6,6 +6,7 @@
 #include <common.h>
 #include <env.h>
 #include <log.h>
+#include <stdio.h>
 #include <time.h>
 #ifdef CONFIG_SYS_P4080_ERRATUM_SERDES8
 #include <hwconfig.h>

@@ -10,6 +10,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <mapmem.h>
+#include <stdio.h>
 #include <stdio_dev.h>
 #include <time.h>
 #include <video.h>

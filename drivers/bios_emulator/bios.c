@@ -43,6 +43,7 @@
 
 #define __io
 #include <common.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include "biosemui.h"
 

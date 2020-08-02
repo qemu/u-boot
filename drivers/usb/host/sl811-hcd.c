@@ -20,6 +20,7 @@
 
 #include <common.h>
 #include <mpc8xx.h>
+#include <stdio.h>
 #include <time.h>
 #include <usb.h>
 #include <linux/delay.h>

@@ -7,6 +7,7 @@
 #include <common.h>
 #include <div64.h>
 #include <init.h>
+#include <stdio.h>
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/clock.h>
 #include <asm/io.h>

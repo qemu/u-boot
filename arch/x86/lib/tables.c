@@ -7,6 +7,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <smbios.h>
+#include <stdio.h>
 #include <acpi/acpi_table.h>
 #include <asm/global_data.h>
 #include <asm/sfi.h>

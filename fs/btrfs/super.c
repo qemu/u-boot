@@ -9,6 +9,7 @@
 #include <log.h>
 #include <memalign.h>
 #include <part.h>
+#include <stdio.h>
 #include <linux/compat.h>
 #include <linux/string.h>
 #include "btrfs.h"

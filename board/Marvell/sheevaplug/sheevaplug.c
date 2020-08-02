@@ -9,6 +9,7 @@
 #include <init.h>
 #include <miiphy.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/mach-types.h>
 #include <asm/arch/cpu.h>

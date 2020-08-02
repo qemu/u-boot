@@ -7,6 +7,7 @@
 #include <adc.h>
 #include <log.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/arch/stm32.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/global_data.h>

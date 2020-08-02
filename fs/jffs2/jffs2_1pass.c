@@ -116,6 +116,7 @@
 #include <flash.h>
 #include <malloc.h>
 #include <div64.h>
+#include <stdio.h>
 #include <linux/compiler.h>
 #include <linux/stat.h>
 #include <linux/string.h>

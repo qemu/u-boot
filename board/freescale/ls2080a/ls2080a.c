@@ -11,6 +11,7 @@
 #include <netdev.h>
 #include <fsl_ifc.h>
 #include <fsl_ddr.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <fdt_support.h>

@@ -5,6 +5,7 @@
  */
 #include <dm.h>
 #include <hang.h>
+#include <stdio.h>
 #include <wait_bit.h>
 
 #include <asm/io.h>

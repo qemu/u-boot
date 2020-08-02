@@ -12,6 +12,7 @@
 #include <common.h>
 #include <clk.h>
 #include <dm.h>
+#include <stdio.h>
 #include <dm/lists.h>
 #include <dm/root.h>
 #include <linux/delay.h>

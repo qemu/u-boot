@@ -9,6 +9,7 @@
 #include <common.h>
 #include <efi_loader.h>
 #include <efi_variable.h>
+#include <stdio.h>
 
 enum efi_secure_mode {
 	EFI_MODE_SETUP,

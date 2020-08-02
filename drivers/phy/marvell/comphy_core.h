@@ -7,6 +7,7 @@
 #define _COMPHY_CORE_H_
 
 #include <fdtdec.h>
+#include <stdio.h>
 #include <mvebu/comphy.h>
 
 #if defined(DEBUG)

@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <stdio.h>
 #include <dm/device_compat.h>
 #include <malloc.h>
 #include <spi.h>

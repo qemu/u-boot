@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <dm/lists.h>
 #include <dm/pinctrl.h>

@@ -106,6 +106,7 @@ are GPL, so this is, of course, GPL.
 #endif
 
 /* timeout for tx/rx in s */
+#include <stdio.h>
 #include <linux/delay.h>
 #define TOUT 5
 /* Ether MAC address size */

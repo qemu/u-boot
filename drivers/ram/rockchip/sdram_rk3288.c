@@ -16,6 +16,7 @@
 #include <log.h>
 #include <ram.h>
 #include <regmap.h>
+#include <stdio.h>
 #include <syscon.h>
 #include <asm/io.h>
 #include <asm/arch-rockchip/clock.h>

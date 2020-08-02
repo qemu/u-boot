@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdio.h>
 #include <time.h>
 
 #include <miiphy.h>

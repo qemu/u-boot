@@ -13,6 +13,7 @@
 #include <command.h>
 #include <dm.h>
 #include <hexdump.h>
+#include <stdio.h>
 #include <video_osd.h>
 #include <malloc.h>
 #include <linux/string.h>

@@ -8,6 +8,7 @@
 #include <miiphy.h>
 #include <cpsw.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/gpio.h>
 #include <asm/arch/sys_proto.h>

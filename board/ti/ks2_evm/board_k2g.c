@@ -11,6 +11,7 @@
 #include <hang.h>
 #include <image.h>
 #include <init.h>
+#include <stdio.h>
 #include <asm/arch/clock.h>
 #include <asm/ti-common/keystone_net.h>
 #include <asm/arch/psc_defs.h>

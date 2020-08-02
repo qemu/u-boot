@@ -21,6 +21,7 @@
 #include <miiphy.h>
 #include <net.h>
 #include <reset.h>
+#include <stdio.h>
 #include <wait_bit.h>
 #include <asm/cache.h>
 #include <asm/io.h>

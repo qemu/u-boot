@@ -10,6 +10,7 @@
 
 #include <common.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <linux/stat.h>
 #include <linux/time.h>
 #include <linux/ctype.h>

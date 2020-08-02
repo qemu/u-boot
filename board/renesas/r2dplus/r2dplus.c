@@ -9,6 +9,7 @@
 #include <init.h>
 #include <net.h>
 #include <netdev.h>
+#include <stdio.h>
 #include <asm/processor.h>
 #include <asm/io.h>
 #include <asm/u-boot.h>

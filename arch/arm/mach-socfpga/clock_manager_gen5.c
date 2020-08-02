@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/io.h>
 #include <dm.h>

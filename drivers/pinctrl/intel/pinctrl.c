@@ -23,6 +23,7 @@
 #include <malloc.h>
 #include <p2sb.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm-generic/gpio.h>
 #include <asm/intel_pinctrl.h>
 #include <asm/intel_pinctrl_defs.h>

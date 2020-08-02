@@ -10,6 +10,7 @@
 #include <common.h>
 #include <command.h>
 #include <log.h>
+#include <stdio.h>
 #include <uuid.h>
 #include <linux/string.h>
 

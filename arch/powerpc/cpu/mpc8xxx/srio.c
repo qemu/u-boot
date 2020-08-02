@@ -6,6 +6,7 @@
 #include <common.h>
 #include <config.h>
 #include <log.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/fsl_law.h>
 #include <asm/fsl_serdes.h>

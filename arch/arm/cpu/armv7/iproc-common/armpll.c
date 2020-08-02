@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/iproc-common/armpll.h>
 #include <asm/iproc-common/sysmap.h>

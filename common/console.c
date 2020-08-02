@@ -16,6 +16,7 @@
 #include <mapmem.h>
 #include <os.h>
 #include <serial.h>
+#include <stdio.h>
 #include <stdio_dev.h>
 #include <exports.h>
 #include <env_internal.h>

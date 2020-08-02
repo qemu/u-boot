@@ -26,6 +26,7 @@
 
 #include <common.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/cpm_85xx.h>
 #include <command.h>
 #include <config.h>

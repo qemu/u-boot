@@ -16,6 +16,7 @@
 #include <ioports.h>
 #include <ppc_asm.tmpl>
 #include <miiphy.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/string.h>
 

@@ -13,6 +13,7 @@
 #include <command.h>
 #include <part.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/sdmmc_defs.h>
 #include <asm-generic/gpio.h>

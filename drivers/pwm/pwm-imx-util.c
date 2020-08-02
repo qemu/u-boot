@@ -12,6 +12,7 @@
 
 #include <common.h>
 #include <div64.h>
+#include <stdio.h>
 #include <asm/arch/imx-regs.h>
 
 /* pwm_id from 0..7 */

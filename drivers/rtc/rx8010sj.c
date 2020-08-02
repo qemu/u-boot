@@ -21,6 +21,7 @@
 #include <dm.h>
 #include <i2c.h>
 #include <rtc.h>
+#include <stdio.h>
 #include <linux/bitops.h>
 
 /*---------------------------------------------------------------------*/

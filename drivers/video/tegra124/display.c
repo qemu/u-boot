@@ -15,6 +15,7 @@
 #include <lcd.h>
 #include <log.h>
 #include <part.h>
+#include <stdio.h>
 #include <time.h>
 #include <video.h>
 #include <asm/gpio.h>

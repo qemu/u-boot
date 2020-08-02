@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <stdio.h>
 #include <asm/fsp/fsp_support.h>
 #include <asm/global_data.h>
 

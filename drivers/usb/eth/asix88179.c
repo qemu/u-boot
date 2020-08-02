@@ -8,6 +8,7 @@
 #include <common.h>
 #include <dm.h>
 #include <log.h>
+#include <stdio.h>
 #include <usb.h>
 #include <net.h>
 #include <asm/u-boot.h>

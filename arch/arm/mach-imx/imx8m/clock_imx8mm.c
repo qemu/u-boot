@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/sys_proto.h>

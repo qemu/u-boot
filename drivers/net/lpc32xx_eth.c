@@ -11,6 +11,7 @@
 #include <net.h>
 #include <malloc.h>
 #include <miiphy.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>

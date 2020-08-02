@@ -9,6 +9,7 @@
 
 #include <common.h>
 #include <fsl_mmdc.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <linux/delay.h>
 

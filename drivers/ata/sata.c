@@ -15,6 +15,7 @@
 #include <dm.h>
 #include <part.h>
 #include <sata.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 #ifndef CONFIG_AHCI

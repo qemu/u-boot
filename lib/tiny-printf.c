@@ -11,6 +11,7 @@
 #include <common.h>
 #include <stdarg.h>
 #include <serial.h>
+#include <stdio.h>
 #include <linux/ctype.h>
 
 struct printf_info {

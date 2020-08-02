@@ -14,6 +14,7 @@
 #include <display.h>
 #include <dm.h>
 #include <errno.h>
+#include <stdio.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 

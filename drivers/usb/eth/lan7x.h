@@ -4,6 +4,7 @@
  */
 
 #include <console.h>
+#include <stdio.h>
 #include <time.h>
 #include <watchdog.h>
 #include <linux/bitops.h>

@@ -13,6 +13,7 @@
 #ifndef __IPU_REGS_INCLUDED__
 #define __IPU_REGS_INCLUDED__
 
+#include <stdio.h>
 #define IPU_DISP0_BASE		0x00000000
 #define IPU_MCU_T_DEFAULT	8
 #define IPU_DISP1_BASE		(IPU_MCU_T_DEFAULT << 25)

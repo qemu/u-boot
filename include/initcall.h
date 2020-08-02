@@ -12,6 +12,7 @@ typedef int (*init_fnc_t)(void);
 #ifdef CONFIG_EFI_APP
 #include <efi.h>
 #endif
+#include <stdio.h>
 
 /*
  * To enable debugging. add #define DEBUG at the top of the including file.

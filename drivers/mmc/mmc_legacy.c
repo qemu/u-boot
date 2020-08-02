@@ -9,6 +9,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <mmc.h>
+#include <stdio.h>
 #include "mmc_private.h"
 
 static struct list_head mmc_devices;

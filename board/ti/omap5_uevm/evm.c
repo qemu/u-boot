@@ -9,6 +9,7 @@
 #include <init.h>
 #include <net.h>
 #include <palmas.h>
+#include <stdio.h>
 #include <asm/arch/omap.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/arch/mmc_host_def.h>

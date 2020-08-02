@@ -19,6 +19,7 @@
 #include <malloc.h>
 #include <mapmem.h>
 #include <splash.h>
+#include <stdio.h>
 #include <video.h>
 #include <asm/byteorder.h>
 #include <linux/string.h>

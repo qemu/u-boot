@@ -9,6 +9,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/regs-mmc.h>
 #include <linux/delay.h>

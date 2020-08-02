@@ -11,6 +11,7 @@
 #include <mpc83xx.h>
 #include <i2c.h>
 #include <miiphy.h>
+#include <stdio.h>
 #include <vsc7385.h>
 #ifdef CONFIG_PCI
 #include <asm/mpc8349_pci.h>

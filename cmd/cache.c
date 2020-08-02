@@ -10,6 +10,7 @@
 #include <common.h>
 #include <command.h>
 #include <cpu_func.h>
+#include <stdio.h>
 #include <linux/compiler.h>
 #include <linux/string.h>
 

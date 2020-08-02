@@ -8,6 +8,7 @@
 #include <command.h>
 #include <env.h>
 #include <part.h>
+#include <stdio.h>
 
 static int do_ab_select(struct cmd_tbl *cmdtp, int flag, int argc,
 			char *const argv[])

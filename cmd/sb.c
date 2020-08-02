@@ -8,6 +8,7 @@
 #include <command.h>
 #include <dm.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/state.h>
 

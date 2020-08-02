@@ -9,6 +9,7 @@
 #include <errno.h>
 #include <malloc.h>
 #include <sdhci.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
 #include <linux/string.h>

@@ -13,6 +13,7 @@
 #include <spl.h>
 #include <dm.h>
 #include <miiphy.h>
+#include <stdio.h>
 #include <asm/arch/crm_regs.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/arch/iomux.h>

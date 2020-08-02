@@ -10,6 +10,7 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <fsl_sec.h>
+#include <stdio.h>
 #include <linux/string.h>
 #include "desc_constr.h"
 #include "jobdesc.h"

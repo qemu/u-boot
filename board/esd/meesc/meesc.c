@@ -14,6 +14,7 @@
 #include <init.h>
 #include <net.h>
 #include <serial.h>
+#include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

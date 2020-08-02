@@ -6,6 +6,7 @@
 #include <common.h>
 #include <malloc.h>
 #include <mpc83xx.h>
+#include <stdio.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <asm/ppc.h>

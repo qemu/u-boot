@@ -10,6 +10,7 @@
 #include <cpu_func.h>
 #include <init.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/arch/mmc.h>
 #include <asm/arch/rcar-mstp.h>
 #include <asm/arch/rmobile.h>

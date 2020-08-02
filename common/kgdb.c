@@ -88,6 +88,7 @@
  ****************************************************************************/
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/ptrace.h>
 #include <linux/string.h>
 

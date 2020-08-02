@@ -8,6 +8,7 @@
 #include <cli_hush.h>
 #include <env.h>
 #include <i2c.h>
+#include <stdio.h>
 #include <linux/string.h>
 #include "common.h"
 

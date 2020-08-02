@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <fsl_dcu_fb.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/string.h>
 #include "div64.h"

@@ -13,6 +13,7 @@
 #include <part.h>
 #include <pci.h>
 #include <scsi.h>
+#include <stdio.h>
 #include <dm/device-internal.h>
 #include <dm/uclass-internal.h>
 #include <linux/string.h>

@@ -18,6 +18,7 @@
 #include <init.h>
 #include <log.h>
 #include <pch.h>
+#include <stdio.h>
 #include <asm/cpu.h>
 #include <asm/cpu_common.h>
 #include <asm/global_data.h>

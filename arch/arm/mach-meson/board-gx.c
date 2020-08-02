@@ -7,6 +7,7 @@
 #include <common.h>
 #include <init.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/arch/boot.h>
 #include <asm/arch/eth.h>
 #include <asm/arch/gx.h>

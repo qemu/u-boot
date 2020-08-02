@@ -11,6 +11,7 @@
 #include <log.h>
 #include <ram.h>
 #include <spl.h>
+#include <stdio.h>
 #include <version.h>
 #include <asm/io.h>
 #include <asm/arch-rockchip/bootrom.h>

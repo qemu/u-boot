@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <fsl_sec_mon.h>
+#include <stdio.h>
 #ifdef CONFIG_PPC
 #include <asm/ppc.h>
 #endif

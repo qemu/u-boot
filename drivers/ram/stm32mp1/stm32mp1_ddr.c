@@ -8,6 +8,7 @@
 #include <log.h>
 #include <ram.h>
 #include <reset.h>
+#include <stdio.h>
 #include <timer.h>
 #include <asm/io.h>
 #include <asm/arch/ddr.h>

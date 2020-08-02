@@ -7,6 +7,7 @@
 #include <cpu_func.h>
 #include <init.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

@@ -19,6 +19,7 @@
 #include <div64.h>
 #include <hexdump.h>
 #include <stdarg.h>
+#include <stdio.h>
 #include <uuid.h>
 #include <vsprintf.h>
 #include <linux/ctype.h>

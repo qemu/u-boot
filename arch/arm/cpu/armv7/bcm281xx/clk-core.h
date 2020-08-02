@@ -3,6 +3,7 @@
  * Copyright 2013 Broadcom Corporation.
  */
 
+#include <stdio.h>
 #include <linux/stddef.h>
 #include <linux/stringify.h>
 

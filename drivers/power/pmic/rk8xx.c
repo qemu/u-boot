@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <log.h>
+#include <stdio.h>
 #include <power/rk8xx_pmic.h>
 #include <power/pmic.h>
 

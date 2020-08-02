@@ -7,6 +7,7 @@
 #include <env.h>
 #include <g_dnl.h>
 #include <init.h>
+#include <stdio.h>
 #include <asm/u-boot.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>

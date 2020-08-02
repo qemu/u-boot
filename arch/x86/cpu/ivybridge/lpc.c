@@ -12,6 +12,7 @@
 #include <log.h>
 #include <rtc.h>
 #include <pci.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/intel_regs.h>
 #include <asm/interrupt.h>

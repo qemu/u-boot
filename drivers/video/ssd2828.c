@@ -12,6 +12,7 @@
 #include <common.h>
 #include <malloc.h>
 #include <mipi_display.h>
+#include <stdio.h>
 #include <asm/arch/gpio.h>
 #include <asm/gpio.h>
 #include <linux/delay.h>

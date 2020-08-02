@@ -7,6 +7,7 @@
 #include <clk.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <dm/device.h>
 #include <linux/printk.h>
 

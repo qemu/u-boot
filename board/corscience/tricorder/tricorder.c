@@ -12,6 +12,7 @@
 #include <common.h>
 #include <init.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <twl4030.h>
 #include <status_led.h>
 #include <asm/global_data.h>

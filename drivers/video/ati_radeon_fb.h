@@ -8,6 +8,7 @@
 /*
  * Chip families. Must fit in the low 16 bits of a long word
  */
+#include <stdio.h>
 enum radeon_family {
 	CHIP_FAMILY_UNKNOW,
 	CHIP_FAMILY_LEGACY,

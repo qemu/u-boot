@@ -6,6 +6,7 @@
 #include <common.h>
 #include <command.h>
 #include <efi.h>
+#include <stdio.h>
 #include <uuid.h>
 #include <asm/global_data.h>
 #include <asm/hob.h>

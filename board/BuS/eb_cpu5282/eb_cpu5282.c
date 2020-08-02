@@ -9,6 +9,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/string.h>
 #include "asm/m5282.h"

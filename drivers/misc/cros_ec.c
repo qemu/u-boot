@@ -25,6 +25,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <spi.h>
+#include <stdio.h>
 #include <time.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

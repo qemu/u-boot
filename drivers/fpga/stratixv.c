@@ -7,6 +7,7 @@
 #include <altera.h>
 #include <log.h>
 #include <spi.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

@@ -7,6 +7,7 @@
 #include <common.h>
 #include <i2c.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/arch/gpio.h>
 #include <asm/arch/pinmux.h>
 #include <asm/gpio.h>

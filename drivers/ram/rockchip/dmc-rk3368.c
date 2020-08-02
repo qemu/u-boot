@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <hang.h>
 #include <log.h>
+#include <stdio.h>
 #include <time.h>
 #include <dt-bindings/memory/rk3368-dmc.h>
 #include <dt-structs.h>

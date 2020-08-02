@@ -10,6 +10,7 @@
 #include <command.h>
 #include <dm.h>
 #include <log.h>
+#include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <dm/lists.h>

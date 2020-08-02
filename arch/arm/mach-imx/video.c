@@ -2,6 +2,7 @@
 
 #include <common.h>
 #include <env.h>
+#include <stdio.h>
 #include <linux/errno.h>
 #include <asm/mach-imx/video.h>
 #include <linux/string.h>

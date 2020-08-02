@@ -13,6 +13,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <spi.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 /*-----------------------------------------------------------------------

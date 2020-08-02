@@ -7,6 +7,7 @@
  */
 #include <common.h>
 #include <phy.h>
+#include <stdio.h>
 #include <linux/delay.h>
 
 #ifndef CONFIG_PHYLIB_10G

@@ -10,6 +10,7 @@
 #include <common.h>
 #include <command.h>
 #include <cpu_func.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/gpio.h>
 #include <linux/string.h>

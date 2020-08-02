@@ -9,6 +9,7 @@
  *
  */
 #include <log.h>
+#include <stdio.h>
 #include <version.h>
 #include <common.h>
 #include <env.h>

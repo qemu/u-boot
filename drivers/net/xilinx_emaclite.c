@@ -13,6 +13,7 @@
 #include <dm.h>
 #include <console.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

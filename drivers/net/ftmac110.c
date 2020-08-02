@@ -11,6 +11,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <net.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/cache.h>
 #include <asm/u-boot.h>

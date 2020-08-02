@@ -18,6 +18,7 @@
 #include <fdtdec.h>
 #include <hang.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/string.h>
 

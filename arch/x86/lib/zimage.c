@@ -17,6 +17,7 @@
 #include <env.h>
 #include <irq_func.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <acpi/acpi_table.h>
 #include <asm/io.h>
 #include <asm/ptrace.h>

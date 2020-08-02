@@ -21,6 +21,7 @@
 #include <net.h>
 #include <netdev.h>
 #include <status_led.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/mach-types.h>

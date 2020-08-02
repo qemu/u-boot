@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <efi_loader.h>
+#include <stdio.h>
 
 /* Conversion factor from seconds to multiples of 100ns */
 #define EFI_SECONDS_TO_100NS 10000000ULL

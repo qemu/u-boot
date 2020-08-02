@@ -6,6 +6,7 @@
 #include <common.h>
 #include <fdtdec.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <dm.h>
 #include <clk.h>

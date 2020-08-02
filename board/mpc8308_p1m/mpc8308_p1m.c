@@ -8,6 +8,7 @@
 #include <i2c.h>
 #include <init.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/ppc.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>

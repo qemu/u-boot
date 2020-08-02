@@ -9,6 +9,7 @@
 #include <log.h>
 #include <reset.h>
 #include <rng.h>
+#include <stdio.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/string.h>

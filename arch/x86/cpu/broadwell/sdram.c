@@ -10,6 +10,7 @@
 #include <init.h>
 #include <log.h>
 #include <pci.h>
+#include <stdio.h>
 #include <syscon.h>
 #include <asm/cpu.h>
 #include <asm/global_data.h>

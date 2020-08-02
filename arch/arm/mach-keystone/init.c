@@ -10,6 +10,7 @@
 #include <cpu_func.h>
 #include <init.h>
 #include <ns16550.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <asm/io.h>
 #include <asm/arch/msmc.h>

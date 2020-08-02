@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <init.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/arch/clk.h>
 #include <asm/global_data.h>
 

@@ -12,6 +12,7 @@
 #include <bootretry.h>
 #include <cli.h>
 #include <command.h>
+#include <stdio.h>
 #include <time.h>
 #include <watchdog.h>
 #include <asm/global_data.h>

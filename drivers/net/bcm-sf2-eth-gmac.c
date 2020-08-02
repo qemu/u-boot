@@ -8,6 +8,7 @@
 #define DEBUG
 #include <linux/printk.h>
 #endif
+#include <stdio.h>
 #include <linux/string.h>
 #endif
 

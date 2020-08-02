@@ -7,6 +7,7 @@
 #include <common.h>
 #include <fdtdec.h>
 #include <init.h>
+#include <stdio.h>
 #include <asm/armv8/mmu.h>
 #include <asm/cache.h>
 

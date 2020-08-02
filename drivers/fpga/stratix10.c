@@ -6,6 +6,7 @@
 #include <common.h>
 #include <altera.h>
 #include <log.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/arch/mailbox_s10.h>
 #include <linux/delay.h>

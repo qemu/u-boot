@@ -13,6 +13,7 @@
 #include <command.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <linux/string.h>
 #include <u-boot/rsa-mod-exp.h>
 #include <hash.h>

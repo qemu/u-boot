@@ -8,6 +8,7 @@
 #include <command.h>
 #include <log.h>
 #include <net.h>
+#include <stdio.h>
 #include <linux/string.h>
 #include <net/tftp.h>
 #include "nfs.h"

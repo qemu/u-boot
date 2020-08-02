@@ -3,6 +3,7 @@
  *  Copyright (C) 2015 Linaro
  *  Peter Griffin <peter.griffin@linaro.org>
  */
+#include <stdio.h>
 #include <asm/io.h>
 #include <common.h>
 #include <linux/delay.h>

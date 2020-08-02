@@ -8,6 +8,7 @@
 #include <env.h>
 #include <init.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/arch-tegra/ap.h>
 #include <asm/gpio.h>
 #include <asm/io.h>

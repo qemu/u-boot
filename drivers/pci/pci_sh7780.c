@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <linux/delay.h>
 
 #include <pci.h>

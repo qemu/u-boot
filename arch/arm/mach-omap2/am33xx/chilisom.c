@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <init.h>
+#include <stdio.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/clk_synthesizer.h>
 #include <asm/arch/cpu.h>

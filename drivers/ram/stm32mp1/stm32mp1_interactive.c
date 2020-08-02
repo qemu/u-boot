@@ -12,6 +12,7 @@
 #include <malloc.h>
 #include <ram.h>
 #include <reset.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/global_data.h>
 #include <linux/string.h>

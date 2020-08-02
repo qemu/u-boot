@@ -13,6 +13,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <linux/errno.h>
 #include <linux/mtd/omap_elm.h>

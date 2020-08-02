@@ -11,6 +11,7 @@
 #include <command.h>
 #include <env.h>
 #include <image.h>
+#include <stdio.h>
 #include <linux/ctype.h>
 #include <linux/string.h>
 #include <linux/types.h>

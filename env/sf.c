@@ -18,6 +18,7 @@
 #include <spi_flash.h>
 #include <search.h>
 #include <errno.h>
+#include <stdio.h>
 #include <uuid.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>

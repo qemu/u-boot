@@ -3,6 +3,7 @@
  * Copyright (C) 2020 Marvell International Ltd.
  */
 
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/bitfield.h>
 #include <linux/bitops.h>

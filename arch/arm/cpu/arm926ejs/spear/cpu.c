@@ -7,6 +7,7 @@
 #include <common.h>
 #include <command.h>
 #include <init.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/spr_misc.h>

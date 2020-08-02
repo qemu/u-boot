@@ -9,6 +9,7 @@
 #include <cache.h>
 #include <dm.h>
 #include <hang.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <dm/ofnode.h>

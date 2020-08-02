@@ -8,6 +8,7 @@
 #include <errno.h>
 #include <i2c.h>
 #include <log.h>
+#include <stdio.h>
 #include <power/pmic.h>
 #include <power/mc34vr500_pmic.h>
 

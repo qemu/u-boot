@@ -8,6 +8,7 @@
 #include <init.h>
 #include <net.h>
 #include <netdev.h>
+#include <stdio.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/clk.h>
 #include <asm/arch/wdt.h>

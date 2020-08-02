@@ -9,6 +9,7 @@
 #include <errno.h>
 #include <malloc.h>
 #include <remoteproc.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 /**

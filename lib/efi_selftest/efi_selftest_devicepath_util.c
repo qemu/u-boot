@@ -8,6 +8,7 @@
  */
 
 #include <efi_selftest.h>
+#include <stdio.h>
 
 static struct efi_boot_services *boottime;
 

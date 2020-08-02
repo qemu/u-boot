@@ -12,6 +12,7 @@
 #include <dm.h>
 #include <i2c.h>
 #include <log.h>
+#include <stdio.h>
 #include <power/pmic.h>
 #include <power/regulator.h>
 #include <power/lp87565.h>

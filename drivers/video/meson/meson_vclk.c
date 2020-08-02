@@ -9,6 +9,7 @@
 #include <common.h>
 #include <dm.h>
 #include <edid.h>
+#include <stdio.h>
 #include <linux/bitops.h>
 #include <linux/printk.h>
 #include "meson_vpu.h"

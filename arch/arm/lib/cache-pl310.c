@@ -4,6 +4,7 @@
  * Texas Instruments, <www.ti.com>
  * Aneesh V <aneesh@ti.com>
  */
+#include <stdio.h>
 #include <linux/types.h>
 #include <asm/io.h>
 #include <asm/armv7.h>

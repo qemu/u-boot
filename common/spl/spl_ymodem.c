@@ -13,6 +13,7 @@
 #include <image.h>
 #include <log.h>
 #include <spl.h>
+#include <stdio.h>
 #include <xyzModem.h>
 #include <asm/u-boot.h>
 #include <linux/libfdt.h>

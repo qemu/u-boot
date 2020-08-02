@@ -7,6 +7,7 @@
 #include <env.h>
 #include <init.h>
 #include <mmc.h>
+#include <stdio.h>
 #include <u-boot/md5.h>
 #include <usb.h>
 #include <watchdog.h>

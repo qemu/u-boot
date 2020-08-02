@@ -11,6 +11,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm-generic/gpio.h>
 #include <clk.h>
 #include <dm.h>

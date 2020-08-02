@@ -11,6 +11,7 @@
 #include <fdtdec.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/bitops.h>
 #include <asm/cache.h>
 #include <linux/bitops.h>

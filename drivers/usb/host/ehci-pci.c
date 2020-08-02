@@ -10,6 +10,7 @@
 #include <init.h>
 #include <log.h>
 #include <pci.h>
+#include <stdio.h>
 #include <usb.h>
 #include <asm/io.h>
 

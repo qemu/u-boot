@@ -7,6 +7,7 @@
 #include <common.h>
 #include <command.h>
 #include <console.h>
+#include <stdio.h>
 #include <test/suites.h>
 #include <test/test.h>
 

@@ -13,6 +13,7 @@
 #include <cpu_func.h>
 #include <irq_func.h>
 #include <net.h>
+#include <stdio.h>
 #include <time.h>
 #include <vsprintf.h>
 #include <watchdog.h>

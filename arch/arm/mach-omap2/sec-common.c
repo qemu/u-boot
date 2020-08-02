@@ -19,6 +19,7 @@
 #include <init.h>
 #include <log.h>
 #include <stdarg.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 #include <asm/arch/sys_proto.h>

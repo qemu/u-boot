@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <mapmem.h>
+#include <stdio.h>
 #include <time.h>
 #include <trace.h>
 #include <asm/global_data.h>

@@ -12,6 +12,7 @@
 #include <log.h>
 #include <spi_flash.h>
 #include <spl.h>
+#include <stdio.h>
 #include <syscon.h>
 #include <acpi/acpi_s3.h>
 #include <asm/cpu.h>

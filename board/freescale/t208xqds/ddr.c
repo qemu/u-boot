@@ -8,6 +8,7 @@
 #include <hwconfig.h>
 #include <init.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/mmu.h>
 #include <asm/ppc.h>

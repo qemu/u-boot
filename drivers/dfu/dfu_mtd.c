@@ -10,6 +10,7 @@
 #include <common.h>
 #include <dfu.h>
 #include <mtd.h>
+#include <stdio.h>
 #include <jffs2/load_kernel.h>
 #include <linux/err.h>
 #include <linux/string.h>

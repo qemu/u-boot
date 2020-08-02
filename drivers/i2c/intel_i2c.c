@@ -12,6 +12,7 @@
 #include <i2c.h>
 #include <log.h>
 #include <pci.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/io.h>
 #include <linux/string.h>

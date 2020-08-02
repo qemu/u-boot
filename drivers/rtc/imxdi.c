@@ -14,6 +14,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <stdio.h>
 #include <linux/compat.h>
 #include <rtc.h>
 #include <linux/delay.h>

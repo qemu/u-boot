@@ -9,6 +9,7 @@
 #include <cli.h>
 #include <env.h>
 #include <errno.h>
+#include <stdio.h>
 #include <time.h>
 #include <watchdog.h>
 

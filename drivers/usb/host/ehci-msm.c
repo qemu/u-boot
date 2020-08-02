@@ -10,6 +10,7 @@
 #include <common.h>
 #include <dm.h>
 #include <errno.h>
+#include <stdio.h>
 #include <usb.h>
 #include <usb/ehci-ci.h>
 #include <usb/ulpi.h>

@@ -7,6 +7,7 @@
 
 #include "btrfs.h"
 #include <malloc.h>
+#include <stdio.h>
 
 static int get_subvol_name(u64 subvolid, char *name, int max_len)
 {

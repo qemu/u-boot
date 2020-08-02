@@ -6,6 +6,7 @@
 #include <hang.h>
 #include <malloc.h>
 #include <stdarg.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <linux/string.h>
 

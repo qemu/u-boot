@@ -7,6 +7,7 @@
 #include <common.h>
 #include <bootstage.h>
 #include <image.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <linux/string.h>
 

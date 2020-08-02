@@ -16,6 +16,7 @@
 #include <command.h>
 #include <console.h>
 #include <dm.h>
+#include <stdio.h>
 #include <dm/uclass-internal.h>
 #include <memalign.h>
 #include <asm/byteorder.h>

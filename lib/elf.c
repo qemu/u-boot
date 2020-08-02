@@ -9,6 +9,7 @@
 #include <elf.h>
 #include <env.h>
 #include <net.h>
+#include <stdio.h>
 #include <vxworks.h>
 #ifdef CONFIG_X86
 #include <vbe.h>

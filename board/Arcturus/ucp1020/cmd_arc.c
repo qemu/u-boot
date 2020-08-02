@@ -17,6 +17,7 @@
 #include <malloc.h>
 #include <spi_flash.h>
 #include <mmc.h>
+#include <stdio.h>
 #include <version.h>
 #include <asm/io.h>
 #include <linux/string.h>

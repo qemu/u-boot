@@ -8,6 +8,7 @@
 #include <blk.h>
 #include <command.h>
 #include <dm.h>
+#include <stdio.h>
 
 static int do_lsblk(struct cmd_tbl *cmdtp, int flag, int argc, char * const argv[])
 {

@@ -9,6 +9,7 @@
 #include <env.h>
 #include <errno.h>
 #include <i2c.h>
+#include <stdio.h>
 #include <dm/uclass.h>
 #include <linux/delay.h>
 #include "br_resetc.h"

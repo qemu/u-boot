@@ -33,6 +33,7 @@
 #include <common.h>
 #include <dm.h>
 #include <mmc.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/arch/msg.h>
 #include <asm/arch/mbox.h>

@@ -12,6 +12,7 @@
 #include <common.h>
 #include <net.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/immap_qe.h>

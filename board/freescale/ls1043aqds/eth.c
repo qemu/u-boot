@@ -7,6 +7,7 @@
 #include <common.h>
 #include <log.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <netdev.h>
 #include <fdt_support.h>

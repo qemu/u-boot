@@ -8,6 +8,7 @@
 #include <common.h>
 #include <command.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/fsl_serdes.h>
 #include <fm_eth.h>

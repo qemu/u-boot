@@ -34,6 +34,7 @@
 #if defined(CONFIG_OMAP54XX) || defined(CONFIG_OMAP44XX)
 #include <palmas.h>
 #endif
+#include <stdio.h>
 #include <time.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>

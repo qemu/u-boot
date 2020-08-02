@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <efi_api.h>
 #include <log.h>
+#include <stdio.h>
 #include <vbe.h>
 #include <video.h>
 

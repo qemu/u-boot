@@ -12,6 +12,7 @@
 #include <common.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <linux/compat.h>
 #include <linux/kernel.h>
 #include <linux/list.h>

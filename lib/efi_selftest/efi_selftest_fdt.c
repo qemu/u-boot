@@ -11,6 +11,7 @@
  */
 
 #include <efi_selftest.h>
+#include <stdio.h>
 #include <linux/libfdt.h>
 
 static const struct efi_system_table *systemtab;

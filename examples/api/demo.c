@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <env.h>
+#include <stdio.h>
 #include <linux/string.h>
 #include <linux/types.h>
 #include <api_public.h>

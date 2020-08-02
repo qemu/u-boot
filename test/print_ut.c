@@ -12,6 +12,7 @@
 #endif
 #include <display_options.h>
 #include <log.h>
+#include <stdio.h>
 #include <version.h>
 
 #define FAKE_BUILD_TAG	"jenkins-u-boot-denx_uboot_dm-master-build-aarch64" \

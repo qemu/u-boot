@@ -11,6 +11,7 @@
 #include <command.h>
 #include <env.h>
 #include <image.h>
+#include <stdio.h>
 #include <asm/byteorder.h>
 #include <asm/zimage.h>
 #include <linux/string.h>

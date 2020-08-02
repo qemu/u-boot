@@ -6,6 +6,7 @@
 #include <command.h>
 #include <common.h>
 #include <cpu_func.h>
+#include <stdio.h>
 
 __weak void reset_cpu(ulong addr)
 {

@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <errno.h>
+#include <stdio.h>
 #include <linux/bitops.h>
 #include <asm/io.h>
 #include <asm/arch/sci/sci.h>

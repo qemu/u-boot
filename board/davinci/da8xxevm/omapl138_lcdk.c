@@ -13,6 +13,7 @@
 #include <i2c.h>
 #include <init.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/arch/hardware.h>
 #include <asm/global_data.h>
 #include <asm/ti-common/davinci_nand.h>

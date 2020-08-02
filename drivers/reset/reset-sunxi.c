@@ -10,6 +10,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <reset-uclass.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <dm/lists.h>
 #include <linux/bitops.h>

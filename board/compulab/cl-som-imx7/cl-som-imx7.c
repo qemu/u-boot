@@ -15,6 +15,7 @@
 #include <phy.h>
 #include <netdev.h>
 #include <fsl_esdhc_imx.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>

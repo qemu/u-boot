@@ -13,6 +13,7 @@
 #include <cpu_func.h>
 #include <dm.h>
 #include <log.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/u-boot.h>
 #include <dm/platform_data/net_ethoc.h>

@@ -5,6 +5,7 @@
  */
 #include <config.h>
 #include <palmas.h>
+#include <stdio.h>
 #include <linux/printk.h>
 
 void palmas_init_settings(void)

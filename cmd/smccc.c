@@ -3,6 +3,7 @@
  * Copyright 2018
  * Michalis Pappas <mpappas@fastmail.fm>
  */
+#include <stdio.h>
 #include <asm/psci.h>
 #include <common.h>
 #include <command.h>

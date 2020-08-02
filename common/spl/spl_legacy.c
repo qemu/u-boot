@@ -8,6 +8,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <spl.h>
+#include <stdio.h>
 
 #include <lzma/LzmaTypes.h>
 #include <lzma/LzmaDec.h>

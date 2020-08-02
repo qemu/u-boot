@@ -9,6 +9,7 @@
 #include <env.h>
 #include <i2c.h>
 #include <init.h>
+#include <stdio.h>
 #include <wdt.h>
 #include <asm/global_data.h>
 #include <asm/gpio.h>

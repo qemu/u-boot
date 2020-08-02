@@ -2,6 +2,7 @@
 
 #include <common.h>
 #include <exports.h>
+#include <stdio.h>
 
 /*
  * Author: Arun Dharankar <ADharankar@ATTBI.Com>

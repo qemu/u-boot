@@ -10,6 +10,7 @@
 #include <console.h>
 #include <malloc.h>
 #include <spi.h>
+#include <stdio.h>
 #include <wait_bit.h>
 #include <asm/arch/rmobile.h>
 #include <asm/io.h>

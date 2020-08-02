@@ -9,6 +9,7 @@
 #include <config.h>
 #include <common.h>
 #include <command.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 static char *start_addr, *last_addr;

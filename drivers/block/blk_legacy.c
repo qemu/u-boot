@@ -7,6 +7,7 @@
 #include <common.h>
 #include <blk.h>
 #include <part.h>
+#include <stdio.h>
 #include <linux/err.h>
 #include <linux/string.h>
 

@@ -16,6 +16,7 @@
 #include <errno.h>
 #include <malloc.h>
 #include <ns16550.h>
+#include <stdio.h>
 #include <asm/cpu.h>
 #include <asm/io.h>
 #include <linux/err.h>

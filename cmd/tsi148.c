@@ -11,6 +11,7 @@
 #include <command.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <pci.h>
 #include <linux/string.h>

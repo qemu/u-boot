@@ -11,6 +11,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/emif.h>
 #include <asm/arch/sys_proto.h>
 

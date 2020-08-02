@@ -34,6 +34,7 @@
 #include <malloc.h>
 #include <pci.h>
 #include <pci_rom.h>
+#include <stdio.h>
 #include <time.h>
 #include <vbe.h>
 #include <video.h>

@@ -13,6 +13,7 @@
 #include <mapmem.h>
 #include <lcd.h>
 #include <net.h>
+#include <stdio.h>
 #include <linux/string.h>
 #include <linux/ctype.h>
 #include <errno.h>

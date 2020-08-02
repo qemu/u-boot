@@ -9,6 +9,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <linux/bitops.h>

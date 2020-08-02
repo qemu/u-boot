@@ -2,6 +2,7 @@
 #include <console.h>
 #include <dm.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <time.h>
 #include <watchdog.h>
 #include <linux/delay.h>

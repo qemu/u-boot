@@ -7,6 +7,7 @@
 #define DEBUG
 #include <common.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <video.h>
 #include <dm.h>
 #ifdef CONFIG_DISPLAY

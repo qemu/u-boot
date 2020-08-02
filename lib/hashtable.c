@@ -16,6 +16,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <sort.h>
+#include <stdio.h>
 
 #ifdef USE_HOSTCC		/* HOST build */
 # include <string.h>

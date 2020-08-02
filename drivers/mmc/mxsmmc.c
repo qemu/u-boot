@@ -24,6 +24,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <mmc.h>
+#include <stdio.h>
 #include <asm/u-boot.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

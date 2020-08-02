@@ -8,6 +8,7 @@
 #include <command.h>
 #include <env.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch-rockchip/boot_mode.h>
 #include <dm/device.h>

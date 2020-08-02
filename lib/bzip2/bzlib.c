@@ -1,6 +1,7 @@
 #include <config.h>
 #include <common.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <watchdog.h>
 #include <linux/string.h>
 

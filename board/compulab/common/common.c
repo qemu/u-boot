@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/bootm.h>
 #include <asm/gpio.h>
 #include <asm/setup.h>

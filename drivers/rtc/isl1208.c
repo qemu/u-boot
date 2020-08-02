@@ -16,6 +16,7 @@
 #include <dm.h>
 #include <rtc.h>
 #include <i2c.h>
+#include <stdio.h>
 
 /*---------------------------------------------------------------------*/
 #ifdef DEBUG_RTC

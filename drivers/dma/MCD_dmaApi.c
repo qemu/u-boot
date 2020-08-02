@@ -6,6 +6,7 @@
 /*Main C file for multi-channel DMA API. */
 
 #include <common.h>
+#include <stdio.h>
 
 #include <MCD_dma.h>
 #include <MCD_tasksInit.h>

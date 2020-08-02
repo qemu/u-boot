@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <stdio.h>
 #include <time.h>
 #include <wdt.h>
 #include <asm/io.h>

@@ -12,6 +12,7 @@
 #if defined(CONFIG_FTMAC100) && !defined(CONFIG_DM_ETH)
 #include <netdev.h>
 #endif
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/io.h>

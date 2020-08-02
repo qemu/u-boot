@@ -8,6 +8,7 @@
 #include <clk-uclass.h>
 #include <dm.h>
 #include <div64.h>
+#include <stdio.h>
 #include <time.h>
 #include <wait_bit.h>
 #include <asm/global_data.h>

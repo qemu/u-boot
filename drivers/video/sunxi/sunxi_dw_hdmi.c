@@ -11,6 +11,7 @@
 #include <dw_hdmi.h>
 #include <edid.h>
 #include <log.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/io.h>
 #include <asm/arch/clock.h>

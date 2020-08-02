@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <linux/errno.h>
 #include <asm/arch/fpga_manager.h>

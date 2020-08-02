@@ -17,6 +17,7 @@
 #include <init.h>
 #include <spi.h>
 #include <spi_flash.h>
+#include <stdio.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/pinmux_defs.h>
 #include <asm/global_data.h>

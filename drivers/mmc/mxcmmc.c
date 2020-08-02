@@ -23,6 +23,7 @@
 #include <part.h>
 #include <malloc.h>
 #include <mmc.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/u-boot.h>
 #include <linux/errno.h>

@@ -18,6 +18,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <dm/device.h>
 #include <dm/read.h>
 #include <linux/bitops.h>

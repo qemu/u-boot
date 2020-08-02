@@ -15,6 +15,7 @@
 #include <miiphy.h>
 #include <malloc.h>
 #include <net.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>

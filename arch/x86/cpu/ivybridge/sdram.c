@@ -20,6 +20,7 @@
 #include <rtc.h>
 #include <spi.h>
 #include <spi_flash.h>
+#include <stdio.h>
 #include <syscon.h>
 #include <sysreset.h>
 #include <asm/cpu.h>

@@ -11,6 +11,7 @@
 #include <log.h>
 #include <net.h>
 #include <pci.h>
+#include <stdio.h>
 #include <asm/processor.h>
 #include <asm/mmu.h>
 #include <asm/cache.h>

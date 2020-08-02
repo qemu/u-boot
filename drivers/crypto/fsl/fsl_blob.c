@@ -10,6 +10,7 @@
 #include <malloc.h>
 #include <memalign.h>
 #include <fsl_sec.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <linux/errno.h>
 #include "jobdesc.h"

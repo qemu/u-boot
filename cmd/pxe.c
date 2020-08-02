@@ -8,6 +8,7 @@
 #include <command.h>
 #include <fs.h>
 #include <net.h>
+#include <stdio.h>
 
 #include "pxe_utils.h"
 

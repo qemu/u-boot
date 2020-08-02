@@ -20,6 +20,7 @@
 #include <miiphy.h>
 #include <spi.h>
 #include <spi_flash.h>
+#include <stdio.h>
 #include <asm/arch/soc.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/mpp.h>

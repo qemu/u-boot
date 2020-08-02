@@ -5,6 +5,7 @@
  */
 
 #include <bootcount.h>
+#include <stdio.h>
 #include <linux/compiler.h>
 #include <i2c.h>
 

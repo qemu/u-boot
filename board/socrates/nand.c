@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 
 #if defined(CONFIG_SYS_NAND_BASE)
 #include <nand.h>

@@ -8,6 +8,7 @@
 #include <command.h>
 #include <env.h>
 #include <ide.h>
+#include <stdio.h>
 #include <linux/string.h>
 #include "part_amiga.h"
 #include <part.h>

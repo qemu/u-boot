@@ -13,6 +13,7 @@
 #include <mapmem.h>
 #include <fs.h>
 #include <part.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 /* GUID for file system information */

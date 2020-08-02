@@ -10,6 +10,7 @@
 #include <fsl_sleep.h>
 #endif
 #include <log.h>
+#include <stdio.h>
 #include <asm/arch/clock.h>
 #include <asm/global_data.h>
 #include "ddr.h"

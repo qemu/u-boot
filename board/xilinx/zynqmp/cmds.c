@@ -9,6 +9,7 @@
 #include <cpu_func.h>
 #include <env.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <zynqmp_firmware.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/sys_proto.h>

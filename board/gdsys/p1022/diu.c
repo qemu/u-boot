@@ -10,6 +10,7 @@
 #include <clock_legacy.h>
 #include <command.h>
 #include <log.h>
+#include <stdio.h>
 #include <linux/ctype.h>
 #include <asm/io.h>
 #include <asm/ppc.h>

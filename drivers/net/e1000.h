@@ -18,6 +18,7 @@
 #ifndef _E1000_HW_H_
 #define _E1000_HW_H_
 
+#include <stdio.h>
 #include <linux/list.h>
 #include <malloc.h>
 #include <net.h>

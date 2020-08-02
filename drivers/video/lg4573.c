@@ -10,6 +10,7 @@
 #include <display.h>
 #include <dm.h>
 #include <log.h>
+#include <stdio.h>
 #include <dm/read.h>
 #include <dm/uclass-internal.h>
 #include <errno.h>

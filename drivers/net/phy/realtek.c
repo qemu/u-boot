@@ -7,6 +7,7 @@
  * Copyright 2016 Karsten Merker <merker@debian.org>
  */
 #include <common.h>
+#include <stdio.h>
 #include <linux/bitops.h>
 #include <phy.h>
 #include <linux/delay.h>

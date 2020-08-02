@@ -19,6 +19,7 @@
 #include <net.h>
 #include <netdev.h>
 #include <errno.h>
+#include <stdio.h>
 #include <usb.h>
 #include <fdt_support.h>
 #include <sata.h>

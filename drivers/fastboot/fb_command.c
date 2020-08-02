@@ -12,6 +12,7 @@
 #include <fb_nand.h>
 #include <flash.h>
 #include <part.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <linux/printk.h>
 #include <linux/string.h>

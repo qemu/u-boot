@@ -9,6 +9,7 @@
 #include <image.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>
 #include <tee/optee.h>

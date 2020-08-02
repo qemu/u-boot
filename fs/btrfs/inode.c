@@ -7,6 +7,7 @@
 
 #include "btrfs.h"
 #include <malloc.h>
+#include <stdio.h>
 
 u64 btrfs_lookup_inode_ref(struct btrfs_root *root, u64 inr,
 			   struct btrfs_inode_ref *refp, char *name)

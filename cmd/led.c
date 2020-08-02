@@ -8,6 +8,7 @@
 #include <command.h>
 #include <dm.h>
 #include <led.h>
+#include <stdio.h>
 #include <dm/uclass-internal.h>
 #include <linux/string.h>
 

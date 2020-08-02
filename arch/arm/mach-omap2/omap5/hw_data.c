@@ -10,6 +10,7 @@
  */
 #include <common.h>
 #include <palmas.h>
+#include <stdio.h>
 #include <asm/arch/omap.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/omap_common.h>

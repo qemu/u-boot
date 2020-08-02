@@ -22,6 +22,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <malloc.h>
 #include <clk-uclass.h>

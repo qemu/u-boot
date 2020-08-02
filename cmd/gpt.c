@@ -19,6 +19,7 @@
 #include <part.h>
 #include <part_efi.h>
 #include <exports.h>
+#include <stdio.h>
 #include <uuid.h>
 #include <linux/ctype.h>
 #include <div64.h>

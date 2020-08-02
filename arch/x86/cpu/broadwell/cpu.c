@@ -10,6 +10,7 @@
 #include <cpu.h>
 #include <init.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/cpu.h>
 #include <asm/cpu_x86.h>
 #include <asm/cpu_common.h>

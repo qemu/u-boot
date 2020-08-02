@@ -7,6 +7,7 @@
 #include <common.h>
 #include <command.h>
 #include <init.h>
+#include <stdio.h>
 #include <vsprintf.h>
 #include <asm/immap.h>
 #include <asm/io.h>

@@ -6,6 +6,7 @@
 #include <common.h>
 #include <hang.h>
 #include <init.h>
+#include <stdio.h>
 #include <asm/fsl_lbc.h>
 
 #ifdef CONFIG_MPC83xx

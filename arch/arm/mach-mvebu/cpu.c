@@ -7,6 +7,7 @@
 #include <ahci.h>
 #include <cpu_func.h>
 #include <init.h>
+#include <stdio.h>
 #include <asm/u-boot.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

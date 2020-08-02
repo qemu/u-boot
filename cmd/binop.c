@@ -6,6 +6,7 @@
 #include <hexdump.h>
 #include <malloc.h>
 #include <mapmem.h>
+#include <stdio.h>
 #include <linux/ctype.h>
 #include <linux/string.h>
 

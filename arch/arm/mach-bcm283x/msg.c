@@ -6,6 +6,7 @@
 #include <common.h>
 #include <memalign.h>
 #include <phys2bus.h>
+#include <stdio.h>
 #include <asm/arch/mbox.h>
 #include <linux/delay.h>
 

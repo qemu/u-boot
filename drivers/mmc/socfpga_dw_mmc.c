@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/arch/clock_manager.h>
 #include <asm/arch/system_manager.h>
 #include <clk.h>

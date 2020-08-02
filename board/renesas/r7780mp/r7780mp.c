@@ -8,6 +8,7 @@
 #include <ide.h>
 #include <init.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/processor.h>
 #include <asm/io.h>
 #include <asm/pci.h>

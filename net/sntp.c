@@ -11,6 +11,7 @@
 #include <log.h>
 #include <net.h>
 #include <rtc.h>
+#include <stdio.h>
 #include <time.h>
 #include <linux/string.h>
 

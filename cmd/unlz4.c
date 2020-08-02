@@ -8,6 +8,7 @@
 #include <command.h>
 #include <env.h>
 #include <lz4.h>
+#include <stdio.h>
 
 static int do_unlz4(struct cmd_tbl *cmdtp, int flag, int argc,
 		    char *const argv[])

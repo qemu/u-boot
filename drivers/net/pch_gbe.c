@@ -11,6 +11,7 @@
 #include <errno.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/io.h>
 #include <pci.h>

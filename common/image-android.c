@@ -10,6 +10,7 @@
 #include <android_image.h>
 #include <malloc.h>
 #include <errno.h>
+#include <stdio.h>
 #include <asm/unaligned.h>
 #include <mapmem.h>
 #include <linux/libfdt.h>

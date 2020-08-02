@@ -9,6 +9,7 @@
 #include <common.h>
 #include <init.h>
 #include <pci.h>
+#include <stdio.h>
 #include <asm/bitops.h>
 #include <asm/global_data.h>
 #include <asm/ppc.h>

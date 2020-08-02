@@ -8,6 +8,7 @@
 #include <command.h>
 #include <dm.h>
 #include <log.h>
+#include <stdio.h>
 #include <sysreset.h>
 #include <wait_bit.h>
 #include <asm/global_data.h>

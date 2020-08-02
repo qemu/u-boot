@@ -15,6 +15,7 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <log.h>
+#include <stdio.h>
 #include <time.h>
 #include <vsprintf.h>
 #include <asm/ppc.h>

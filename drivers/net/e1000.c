@@ -39,6 +39,7 @@ tested on both gig copper and gig fiber boards
 #include <memalign.h>
 #include <net.h>
 #include <pci.h>
+#include <stdio.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>

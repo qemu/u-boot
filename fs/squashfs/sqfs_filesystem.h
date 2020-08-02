@@ -10,6 +10,7 @@
 
 #include <asm/unaligned.h>
 #include <stdint.h>
+#include <stdbool.h>
 #include <fs.h>
 
 #define SQFS_UNCOMPRESSED_DATA 0x0002

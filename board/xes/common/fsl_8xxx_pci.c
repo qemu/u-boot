@@ -7,6 +7,7 @@
 #include <common.h>
 #include <init.h>
 #include <pci.h>
+#include <stdio.h>
 #include <asm/fsl_pci.h>
 #include <asm/fsl_serdes.h>
 #include <asm/io.h>

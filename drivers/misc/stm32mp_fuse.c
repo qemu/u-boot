@@ -8,6 +8,7 @@
 #include <fuse.h>
 #include <misc.h>
 #include <errno.h>
+#include <stdio.h>
 #include <dm/device.h>
 #include <dm/uclass.h>
 #include <power/stpmic1.h>

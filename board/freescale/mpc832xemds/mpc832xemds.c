@@ -16,6 +16,7 @@
 #if defined(CONFIG_PCI)
 #include <pci.h>
 #endif
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/mmu.h>
 #include <asm/ppc.h>

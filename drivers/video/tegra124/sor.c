@@ -9,6 +9,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <panel.h>
+#include <stdio.h>
 #include <syscon.h>
 #include <time.h>
 #include <video_bridge.h>

@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <init.h>
 #include <log.h>
+#include <stdio.h>
 #include <syscon.h>
 #include <time.h>
 #include <asm/cpu.h>

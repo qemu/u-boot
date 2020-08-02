@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <log.h>
 #include <reset.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/ccu.h>
 #include <linux/bitops.h>

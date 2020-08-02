@@ -10,6 +10,7 @@
 #include <fs.h>
 #include <i2c.h>
 #include <mmc.h>
+#include <stdio.h>
 #include <tpm-v1.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>

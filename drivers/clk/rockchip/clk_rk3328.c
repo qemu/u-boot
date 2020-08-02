@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <syscon.h>
 #include <asm/arch-rockchip/clock.h>
 #include <asm/arch-rockchip/cru_rk3328.h>

@@ -17,6 +17,7 @@
 #include <i2c.h>
 #include <cros_ec.h>
 #include <log.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 #ifdef DEBUG_TRACE

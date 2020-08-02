@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <fsl_ddr_sdram.h>
 #include <asm/ppc.h>

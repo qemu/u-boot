@@ -10,6 +10,7 @@
 #include <fuse.h>
 #include <mapmem.h>
 #include <image.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/system.h>
 #include <asm/arch/clock.h>

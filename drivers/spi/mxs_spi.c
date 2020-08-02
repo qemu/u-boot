@@ -21,6 +21,7 @@
 #include <malloc.h>
 #include <memalign.h>
 #include <spi.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>

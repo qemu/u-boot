@@ -15,6 +15,7 @@
 #include <env.h>
 #include <init.h>
 #include <pci.h>
+#include <stdio.h>
 #include <uuid.h>
 #include <asm/global_data.h>
 #include <asm/processor.h>

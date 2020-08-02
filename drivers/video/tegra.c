@@ -10,6 +10,7 @@
 #include <panel.h>
 #include <part.h>
 #include <pwm.h>
+#include <stdio.h>
 #include <video.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>

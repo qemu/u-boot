@@ -12,6 +12,7 @@
 #include <init.h>
 #include <spl.h>
 #include <fsl_esdhc_imx.h>
+#include <stdio.h>
 #include <asm/mach-imx/iomux-v3.h>
 #include <asm/arch-mx7/mx7-pins.h>
 #include <asm/arch-mx7/clock.h>

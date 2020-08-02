@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <hang.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/at91_common.h>
 #include <asm/arch/at91_wdt.h>

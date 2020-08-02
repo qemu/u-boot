@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <sata.h>
+#include <stdio.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/io.h>

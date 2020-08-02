@@ -19,6 +19,7 @@
 #include <log.h>
 #include <mpc86xx.h>
 #include <command.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/ppc.h>
 #ifdef CONFIG_POST

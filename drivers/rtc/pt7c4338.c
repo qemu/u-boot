@@ -24,6 +24,7 @@
 #include <log.h>
 #include <rtc.h>
 #include <i2c.h>
+#include <stdio.h>
 
 /* RTC register addresses */
 #define RTC_SEC_REG_ADDR        0x0

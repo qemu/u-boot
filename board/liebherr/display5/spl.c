@@ -12,6 +12,7 @@
 #include <log.h>
 #include <serial.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>

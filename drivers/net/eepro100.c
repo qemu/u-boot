@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <cpu_func.h>
 #include <malloc.h>

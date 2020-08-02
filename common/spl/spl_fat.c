@@ -12,6 +12,7 @@
 #include <env.h>
 #include <log.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm/u-boot.h>
 #include <fat.h>
 #include <errno.h>

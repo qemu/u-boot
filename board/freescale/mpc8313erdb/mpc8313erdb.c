@@ -14,6 +14,7 @@
 #endif
 #include <pci.h>
 #include <mpc83xx.h>
+#include <stdio.h>
 #include <vsc7385.h>
 #include <ns16550.h>
 #include <nand.h>

@@ -13,6 +13,7 @@
 #include <image.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <linux/bitops.h>
 #include <linux/string.h>
 #include <net/pfe_eth/pfe_eth.h>

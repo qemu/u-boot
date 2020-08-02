@@ -20,6 +20,7 @@
 
 /* Trace the 3 different classes of read/write access to QBMan. #undef as
  * required. */
+#include <stdio.h>
 #include <linux/bug.h>
 #include <linux/printk.h>
 #include <linux/string.h>

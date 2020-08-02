@@ -9,6 +9,7 @@
 #include <i2c.h>
 #include <init.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/bitops.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

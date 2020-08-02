@@ -12,6 +12,7 @@
 #include <env.h>
 #include <malloc.h>
 #include <net.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>

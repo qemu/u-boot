@@ -10,6 +10,7 @@
 #include <common.h>
 #include <dm.h>
 #include <log.h>
+#include <stdio.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/types.h>

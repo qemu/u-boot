@@ -39,6 +39,8 @@
 #ifndef __X86EMU_DEBUG_H
 #define __X86EMU_DEBUG_H
 
+#include <stdio.h>
+
 /*---------------------- Macros and type definitions ----------------------*/
 
 /* checks to be enabled for "runtime" */

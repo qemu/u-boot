@@ -7,6 +7,7 @@
 #include <common.h>
 #include <init.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/arch/chilisom.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/hardware.h>

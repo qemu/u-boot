@@ -9,6 +9,7 @@
 #ifndef _SPI_FLASH_H_
 #define _SPI_FLASH_H_
 
+#include <stdio.h>
 #include <linux/string.h>
 #include <linux/types.h>
 #include <linux/mtd/spi-nor.h>

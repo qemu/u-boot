@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdio.h>
 #include <linux/bitops.h>
 #include <linux/log2.h>
 #include <malloc.h>

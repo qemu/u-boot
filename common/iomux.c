@@ -8,6 +8,7 @@
 #include <console.h>
 #include <serial.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 #if CONFIG_IS_ENABLED(CONSOLE_MUX)

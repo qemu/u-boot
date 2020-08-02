@@ -12,6 +12,7 @@
 #include <init.h>
 #include <log.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/printk.h>
 #include <linux/string.h>

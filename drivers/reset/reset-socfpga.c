@@ -16,6 +16,7 @@
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <dm/lists.h>
 #include <dm/of_access.h>
 #include <env.h>

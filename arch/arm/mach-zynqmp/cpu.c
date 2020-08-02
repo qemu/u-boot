@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <init.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/sys_proto.h>

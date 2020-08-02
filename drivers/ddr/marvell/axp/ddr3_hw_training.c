@@ -7,6 +7,7 @@
 #include <i2c.h>
 #include <log.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/soc.h>

@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 #include <i2c.h>

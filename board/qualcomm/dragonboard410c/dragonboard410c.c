@@ -11,6 +11,7 @@
 #include <env.h>
 #include <init.h>
 #include <net.h>
+#include <stdio.h>
 #include <usb.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>

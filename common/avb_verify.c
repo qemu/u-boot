@@ -11,6 +11,7 @@
 #include <image.h>
 #include <malloc.h>
 #include <part.h>
+#include <stdio.h>
 #include <tee.h>
 #include <linux/string.h>
 #include <tee/optee_ta_avb.h>

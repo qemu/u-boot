@@ -28,6 +28,7 @@
 #include <command.h>
 #include <cpu_func.h>
 #include <irq_func.h>
+#include <stdio.h>
 #include <asm/arch/tegra.h>
 #include <asm/arch-tegra/pmc.h>
 #include <linux/delay.h>

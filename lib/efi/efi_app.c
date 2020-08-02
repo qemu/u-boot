@@ -15,6 +15,7 @@
 #include <errno.h>
 #include <init.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/err.h>
 #include <linux/string.h>

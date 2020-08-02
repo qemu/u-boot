@@ -14,6 +14,7 @@
 #include <common.h>
 #include <flash.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/processor.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>

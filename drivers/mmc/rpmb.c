@@ -13,6 +13,7 @@
 #include <memalign.h>
 #include <mmc.h>
 #include <sdhci.h>
+#include <stdio.h>
 #include <linux/string.h>
 #include <u-boot/sha256.h>
 #include "mmc_private.h"

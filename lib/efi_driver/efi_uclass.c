@@ -22,6 +22,7 @@
 #include <efi_driver.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 
 /**
  * check_node_type() - check node type

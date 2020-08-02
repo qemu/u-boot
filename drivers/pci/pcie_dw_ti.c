@@ -10,6 +10,7 @@
 #include <generic-phy.h>
 #include <power-domain.h>
 #include <regmap.h>
+#include <stdio.h>
 #include <syscon.h>
 #include <time.h>
 #include <asm/global_data.h>

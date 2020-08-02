@@ -6,6 +6,7 @@
 #include <common.h>
 #include <env.h>
 #include <part.h>
+#include <stdio.h>
 #include <asm/setup.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/omap_common.h>

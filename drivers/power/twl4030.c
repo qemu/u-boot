@@ -23,6 +23,7 @@
  */
 
 #include <command.h>
+#include <stdio.h>
 #include <twl4030.h>
 #include <linux/delay.h>
 #include <linux/printk.h>

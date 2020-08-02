@@ -14,6 +14,7 @@
 #include <linux/libfdt.h>
 #include <u-boot/crc.h>
 #else
+#include <stdio.h>
 #include <linux/compiler.h>
 #include <linux/kconfig.h>
 #include <common.h>

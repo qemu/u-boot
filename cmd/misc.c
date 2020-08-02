@@ -10,6 +10,7 @@
 #include <common.h>
 #include <command.h>
 #include <console.h>
+#include <stdio.h>
 #include <time.h>
 #include <linux/delay.h>
 #include <linux/string.h>

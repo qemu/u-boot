@@ -16,6 +16,7 @@
 #include <fat.h>
 #include <mmc.h>
 #include <part.h>
+#include <stdio.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

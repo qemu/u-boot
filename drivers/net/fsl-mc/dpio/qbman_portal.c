@@ -5,6 +5,7 @@
 
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/arch/clock.h>
 #include <linux/bug.h>
 #include <linux/string.h>

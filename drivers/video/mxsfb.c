@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <env.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <dm/device_compat.h>

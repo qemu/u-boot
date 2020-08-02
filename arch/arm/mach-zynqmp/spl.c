@@ -10,6 +10,7 @@
 #include <init.h>
 #include <log.h>
 #include <spl.h>
+#include <stdio.h>
 #include <linux/delay.h>
 
 #include <asm/io.h>

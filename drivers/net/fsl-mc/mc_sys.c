@@ -6,6 +6,7 @@
  * Author: German Rivera <German.Rivera@freescale.com>
  */
 
+#include <stdio.h>
 #include <fsl-mc/fsl_mc_sys.h>
 #include <fsl-mc/fsl_mc_cmd.h>
 #include <common.h>

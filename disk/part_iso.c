@@ -8,6 +8,7 @@
 #include <blk.h>
 #include <command.h>
 #include <part.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <asm/unaligned.h>
 #include <linux/string.h>

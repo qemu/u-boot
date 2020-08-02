@@ -15,6 +15,7 @@
 
 #include <common.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/gpio.h>
 #include <spi.h>
 #include <linux/delay.h>

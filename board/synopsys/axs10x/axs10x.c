@@ -8,6 +8,7 @@
 #include <dwmmc.h>
 #include <init.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/arcregs.h>
 #include <asm/global_data.h>
 #include "axs10x.h"

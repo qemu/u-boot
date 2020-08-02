@@ -6,6 +6,7 @@
 #include <common.h>
 #include <fdtdec.h>
 #include <init.h>
+#include <stdio.h>
 #include <linux/io.h>
 
 #ifdef CONFIG_ARM64

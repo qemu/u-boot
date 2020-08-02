@@ -12,6 +12,7 @@
 #include <errno.h>
 #include <log.h>
 #include <mmc.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/gpio.h>
 #include <asm/io.h>

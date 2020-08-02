@@ -14,6 +14,7 @@
 #include <command.h>
 #include <env.h>
 #include <image.h>
+#include <stdio.h>
 #include <linux/ctype.h>
 #include <asm/byteorder.h>
 #include <zfs_common.h>

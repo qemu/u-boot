@@ -15,6 +15,7 @@
 #include <lmb.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <asm/u-boot.h>
 #include <linux/string.h>

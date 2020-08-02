@@ -12,6 +12,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <net.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <asm/global_data.h>

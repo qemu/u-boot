@@ -17,7 +17,6 @@
 #include <errno.h>
 #include <linux/types.h>
 #include <stdarg.h>
-#include <stdio.h>
 #include <linux/kernel.h>
 #include <vsprintf.h>
 #endif	/* __ASSEMBLY__ */

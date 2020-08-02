@@ -10,6 +10,7 @@
 #include <clock_legacy.h>
 #include <env.h>
 #include <log.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>

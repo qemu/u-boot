@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <errno.h>
+#include <stdio.h>
 #include <asm/intel_regs.h>
 #include <asm/io.h>
 #include <asm/arch/pch.h>

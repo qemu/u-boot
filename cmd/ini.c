@@ -14,6 +14,7 @@
 #include <common.h>
 #include <command.h>
 #include <env.h>
+#include <stdio.h>
 #include <linux/ctype.h>
 #include <linux/string.h>
 

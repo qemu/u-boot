@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <dm-demo.h>
 #include <mapmem.h>
+#include <stdio.h>
 #include <asm/io.h>
 
 static int simple_hello(struct udevice *dev, int ch)

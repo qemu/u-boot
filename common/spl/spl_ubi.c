@@ -9,6 +9,7 @@
 #include <image.h>
 #include <nand.h>
 #include <onenand_uboot.h>
+#include <stdio.h>
 #include <ubispl.h>
 #include <spl.h>
 #include <linux/string.h>

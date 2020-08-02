@@ -23,6 +23,7 @@
 #include <malloc.h>
 #include <phy-sun4i-usb.h>
 #include <reset.h>
+#include <stdio.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/gpio.h>

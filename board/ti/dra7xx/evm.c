@@ -19,6 +19,7 @@
 #include <palmas.h>
 #include <sata.h>
 #include <serial.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/string.h>

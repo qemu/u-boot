@@ -22,6 +22,7 @@
 
 #include <common.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <watchdog.h>
 #include <u-boot/zlib.h>
 

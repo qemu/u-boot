@@ -13,6 +13,7 @@
 #include <init.h>
 #include <miiphy.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/arch/soc.h>
 #include <asm/arch/mpp.h>
 #include <asm/arch/cpu.h>

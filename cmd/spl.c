@@ -10,6 +10,7 @@
 #include <env.h>
 #include <image.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/libfdt.h>
 

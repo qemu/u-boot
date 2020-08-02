@@ -9,6 +9,7 @@
 #include <env.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <stdio_dev.h>
 #include <time.h>
 #include <watchdog.h>

@@ -31,6 +31,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <memalign.h>
+#include <stdio.h>
 #include <asm/processor.h>
 #include <linux/compiler.h>
 #include <linux/ctype.h>

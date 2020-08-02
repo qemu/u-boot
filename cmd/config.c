@@ -7,6 +7,7 @@
 #include <command.h>
 #include <gzip.h>
 #include <malloc.h>
+#include <stdio.h>
 
 #include "config_data_gz.h"
 #include "config_data_size.h"

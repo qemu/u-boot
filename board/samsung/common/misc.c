@@ -9,6 +9,7 @@
 #include <env.h>
 #include <lcd.h>
 #include <libtizen.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
 #include <linux/printk.h>

@@ -11,6 +11,7 @@
 #include <clock_legacy.h>
 #include <command.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <fsl_diu_fb.h>
 #include <asm/ppc.h>

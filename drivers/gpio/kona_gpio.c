@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/sysmap.h>
 

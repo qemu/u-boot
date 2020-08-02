@@ -8,6 +8,7 @@
 #include <hang.h>
 #include <init.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm/u-boot.h>
 #include <asm/utils.h>
 #include <nand.h>

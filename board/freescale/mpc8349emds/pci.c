@@ -4,6 +4,7 @@
  */
 
 #include <init.h>
+#include <stdio.h>
 #include <asm/mmu.h>
 #include <asm/io.h>
 #include <asm/ppc.h>

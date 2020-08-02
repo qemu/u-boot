@@ -10,6 +10,7 @@
 #include <hwconfig.h>
 #include <i2c.h>
 #include <init.h>
+#include <stdio.h>
 #include <asm/bitops.h>
 #include <asm/global_data.h>
 #include <asm/ppc.h>

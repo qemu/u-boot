@@ -8,6 +8,7 @@
 #include <malloc.h>
 #include <os.h>
 #include <sandboxfs.h>
+#include <stdio.h>
 
 int sandbox_fs_set_blk_dev(struct blk_desc *rbdd, struct disk_partition *info)
 {

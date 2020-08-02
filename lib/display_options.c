@@ -9,6 +9,7 @@
 #include <console.h>
 #include <display_options.h>
 #include <div64.h>
+#include <stdio.h>
 #include <version.h>
 #include <linux/ctype.h>
 #include <asm/io.h>

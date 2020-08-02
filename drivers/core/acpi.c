@@ -13,6 +13,7 @@
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <acpi/acpi_device.h>
 #include <dm/acpi.h>
 #include <dm/device-internal.h>

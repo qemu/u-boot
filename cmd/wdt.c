@@ -8,6 +8,7 @@
 #include <common.h>
 #include <command.h>
 #include <dm.h>
+#include <stdio.h>
 #include <wdt.h>
 
 static struct udevice *currdev;

@@ -11,6 +11,7 @@
 #include <i2c.h>
 #include <init.h>
 #include <spi.h>
+#include <stdio.h>
 #include <asm/u-boot.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

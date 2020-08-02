@@ -9,6 +9,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <power-domain-uclass.h>
+#include <stdio.h>
 #include <asm/arch/power-domain.h>
 #include <asm/arch/sci/sci.h>
 

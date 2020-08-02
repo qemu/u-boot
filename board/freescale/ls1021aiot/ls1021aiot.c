@@ -8,6 +8,7 @@
 #include <fdt_support.h>
 #include <init.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/arch/immap_ls102xa.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/fsl_serdes.h>

@@ -26,6 +26,7 @@
 #include <phy.h>
 #include <remoteproc.h>
 #include <reset.h>
+#include <stdio.h>
 #include <syscon.h>
 #include <usb.h>
 #include <watchdog.h>

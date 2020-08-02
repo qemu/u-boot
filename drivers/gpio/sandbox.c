@@ -8,6 +8,7 @@
 #include <fdtdec.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <acpi/acpi_device.h>
 #include <asm/gpio.h>
 #include <dm/acpi.h>

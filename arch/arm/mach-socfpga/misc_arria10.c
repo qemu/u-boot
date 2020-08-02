@@ -11,6 +11,7 @@
 #include <miiphy.h>
 #include <netdev.h>
 #include <ns16550.h>
+#include <stdio.h>
 #include <watchdog.h>
 #include <asm/arch/misc.h>
 #include <asm/arch/pinmux.h>

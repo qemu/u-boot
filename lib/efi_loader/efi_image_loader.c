@@ -13,6 +13,7 @@
 #include <malloc.h>
 #include <pe.h>
 #include <sort.h>
+#include <stdio.h>
 #include <crypto/pkcs7_parser.h>
 #include <linux/err.h>
 #include <linux/string.h>

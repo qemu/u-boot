@@ -20,6 +20,7 @@
 #include <log.h>
 #include <mmc.h>
 #include <part.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>

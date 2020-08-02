@@ -8,6 +8,7 @@
 #include <common.h>
 #include <charset.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <time.h>
 #include <dm/device.h>
 #include <efi_loader.h>

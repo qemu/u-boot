@@ -17,6 +17,7 @@
 #include <part.h>
 #include <mmc.h>
 #include <div64.h>
+#include <stdio.h>
 #include <linux/compat.h>
 #include <android_image.h>
 #include <linux/printk.h>

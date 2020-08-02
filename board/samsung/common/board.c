@@ -14,6 +14,7 @@
 #include <log.h>
 #include <net.h>
 #include <spi.h>
+#include <stdio.h>
 #include <tmu.h>
 #include <netdev.h>
 #include <asm/global_data.h>

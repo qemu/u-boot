@@ -13,6 +13,7 @@
 #include <cpu_func.h>
 #include <net.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/byteorder.h>
 #include <asm/cache.h>
 #include <linux/delay.h>

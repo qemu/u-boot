@@ -9,6 +9,7 @@
 #include <display_options.h>
 #include <eeprom.h>
 #include <i2c.h>
+#include <stdio.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>
 

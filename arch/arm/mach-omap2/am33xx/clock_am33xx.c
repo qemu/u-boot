@@ -8,6 +8,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/arch/clock.h>

@@ -4,6 +4,7 @@
 #include <env.h>
 #include <part.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm/u-boot.h>
 #include <ext4fs.h>
 #include <errno.h>

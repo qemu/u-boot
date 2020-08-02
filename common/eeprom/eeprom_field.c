@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <linux/string.h>
 #include <eeprom_field.h>
 

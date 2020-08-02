@@ -4,6 +4,7 @@
  * Copyright (c) 2015, AW-SOM Technologies <www.aw-som.com>
  */
 
+#include <stdio.h>
 #include <asm/arch/clock.h>
 #include <asm/io.h>
 #include <common.h>

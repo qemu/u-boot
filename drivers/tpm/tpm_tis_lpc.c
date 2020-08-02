@@ -16,6 +16,7 @@
 #include <dm.h>
 #include <log.h>
 #include <mapmem.h>
+#include <stdio.h>
 #include <tpm-v1.h>
 #include <asm/io.h>
 #include <linux/delay.h>

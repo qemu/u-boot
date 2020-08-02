@@ -7,6 +7,7 @@
  * PCI Configuration space access support for MPC83xx PCI Bridge
  */
 #include <init.h>
+#include <stdio.h>
 #include <asm/mmu.h>
 #include <asm/io.h>
 #include <common.h>

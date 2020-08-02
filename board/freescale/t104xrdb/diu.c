@@ -5,6 +5,7 @@
  */
 
 #include <clock_legacy.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <common.h>
 #include <command.h>

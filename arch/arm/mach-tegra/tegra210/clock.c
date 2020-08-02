@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <init.h>
 #include <log.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/cache.h>
 #include <asm/io.h>

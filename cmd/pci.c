@@ -19,6 +19,7 @@
 #include <console.h>
 #include <dm.h>
 #include <init.h>
+#include <stdio.h>
 #include <asm/processor.h>
 #include <asm/io.h>
 #include <pci.h>

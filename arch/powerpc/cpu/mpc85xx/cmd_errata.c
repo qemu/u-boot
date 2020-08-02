@@ -6,6 +6,7 @@
 #include <common.h>
 #include <command.h>
 #include <init.h>
+#include <stdio.h>
 #include <linux/compiler.h>
 #include <fsl_errata.h>
 #include <asm/immap_85xx.h>

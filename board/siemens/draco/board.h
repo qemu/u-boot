@@ -15,6 +15,7 @@
 #ifndef _BOARD_H_
 #define _BOARD_H_
 
+#include <stdio.h>
 #define PARGS(x)	#x , /* Parameter Name */ \
 			settings.ddr3.x, /* EEPROM Value */ \
 			ddr3_default.x, /* Default Value */ \

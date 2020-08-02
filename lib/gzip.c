@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <watchdog.h>
 #include <command.h>
 #include <gzip.h>

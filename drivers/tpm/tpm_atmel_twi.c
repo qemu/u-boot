@@ -8,6 +8,7 @@
 #include <common.h>
 #include <display_options.h>
 #include <dm.h>
+#include <stdio.h>
 #include <time.h>
 #include <tpm-v1.h>
 #include <i2c.h>

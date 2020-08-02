@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/ptrace.h>
 #include <irq_func.h>

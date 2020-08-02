@@ -15,6 +15,7 @@
 #include <malloc.h>
 #include <miiphy.h>
 #include <netdev.h>
+#include <stdio.h>
 #include <asm/types.h>
 #include <asm/byteorder.h>
 #include <asm/u-boot.h>

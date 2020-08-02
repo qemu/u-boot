@@ -158,4 +158,5 @@ int dp501_probe(unsigned screen, bool power)
 	return 0;
 }
 
+#include <stdio.h>
 #endif /* CONFIG_GDSYS_LEGACY_DRIVERS */

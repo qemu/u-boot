@@ -6,6 +6,7 @@
 #include <common.h>
 #include <fsl_ddr_sdram.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/bitops.h>
 #include <linux/string.h>
 

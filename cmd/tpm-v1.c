@@ -7,6 +7,7 @@
 #include <command.h>
 #include <env.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/unaligned.h>
 #include <tpm-common.h>
 #include <tpm-v1.h>

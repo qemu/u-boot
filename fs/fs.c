@@ -17,6 +17,7 @@
 #include <fat.h>
 #include <fs.h>
 #include <sandboxfs.h>
+#include <stdio.h>
 #include <time.h>
 #include <ubifs_uboot.h>
 #include <btrfs.h>

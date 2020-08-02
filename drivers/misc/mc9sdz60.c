@@ -6,6 +6,7 @@
 
 #include <config.h>
 #include <common.h>
+#include <stdio.h>
 #include <linux/errno.h>
 #include <linux/types.h>
 #include <i2c.h>

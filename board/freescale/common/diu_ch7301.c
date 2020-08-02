@@ -10,6 +10,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <stdio_dev.h>
 #include <i2c.h>
 #include <linux/delay.h>

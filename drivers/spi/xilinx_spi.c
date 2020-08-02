@@ -19,6 +19,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <spi.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <wait_bit.h>
 #include <linux/bitops.h>

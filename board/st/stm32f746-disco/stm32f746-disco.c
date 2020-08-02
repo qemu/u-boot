@@ -16,6 +16,7 @@
 #include <spl.h>
 #include <splash.h>
 #include <st_logo_data.h>
+#include <stdio.h>
 #include <video.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

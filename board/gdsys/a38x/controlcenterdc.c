@@ -10,6 +10,7 @@
 #include <init.h>
 #include <miiphy.h>
 #include <net.h>
+#include <stdio.h>
 #include <tpm-v1.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

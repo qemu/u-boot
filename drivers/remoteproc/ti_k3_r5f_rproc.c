@@ -14,6 +14,7 @@
 #include <errno.h>
 #include <clk.h>
 #include <reset.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <dm/device_compat.h>
 #include <linux/err.h>

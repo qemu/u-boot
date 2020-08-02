@@ -17,6 +17,7 @@
 #include <fsl_ddr.h>
 #include <init.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/bitops.h>
 #include <linux/string.h>
 

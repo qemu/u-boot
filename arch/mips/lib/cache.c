@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <cpu_func.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <asm/cacheops.h>
 #include <asm/cm.h>

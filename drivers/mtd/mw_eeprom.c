@@ -2,6 +2,7 @@
 
 #include <common.h>
 #include <eeprom.h>
+#include <stdio.h>
 #include <asm/ic/ssi.h>
 #include <linux/delay.h>
 

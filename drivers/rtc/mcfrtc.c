@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 
 #include <command.h>
 #include <rtc.h>

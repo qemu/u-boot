@@ -12,6 +12,7 @@
  */
 
 #include <efi_selftest.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 /*

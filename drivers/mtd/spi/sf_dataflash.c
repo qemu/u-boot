@@ -16,6 +16,7 @@
 #include <spi.h>
 #include <spi_flash.h>
 #include <div64.h>
+#include <stdio.h>
 #include <time.h>
 #include <linux/delay.h>
 #include <linux/err.h>

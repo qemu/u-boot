@@ -11,6 +11,7 @@
 #include <console.h>
 #include <ioports.h>
 #include <mpc83xx.h>
+#include <stdio.h>
 #include <asm/mpc8349_pci.h>
 #include <pci.h>
 #include <asm/mmu.h>

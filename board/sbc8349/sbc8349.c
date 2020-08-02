@@ -12,6 +12,7 @@
 #include <init.h>
 #include <ioports.h>
 #include <mpc83xx.h>
+#include <stdio.h>
 #include <asm/bitops.h>
 #include <asm/global_data.h>
 #include <asm/ppc.h>

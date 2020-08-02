@@ -22,6 +22,7 @@
 #include <env.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

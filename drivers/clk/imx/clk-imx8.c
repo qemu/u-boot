@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/arch/sci/sci.h>
 #include <asm/arch/clock.h>
 #include <dt-bindings/clock/imx8qxp-clock.h>

@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <exports.h>
+#include <stdio.h>
 
 int hello_world(int argc, char *const argv[])
 {

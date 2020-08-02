@@ -7,6 +7,7 @@
 #include <fsl_ddr_sdram.h>
 #include <fsl_ddr_dimm_params.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/arch/soc.h>
 #include <asm/arch/clock.h>
 #include <asm/global_data.h>

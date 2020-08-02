@@ -11,6 +11,7 @@
 #include <display_options.h>
 #include <dm.h>
 #include <errno.h>
+#include <stdio.h>
 
 static const char *cpu_feature_name[CPU_FEAT_COUNT] = {
 	"L1 cache",

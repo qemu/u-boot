@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <stdio.h>
 
 int arch_misc_init(void)
 {

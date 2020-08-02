@@ -12,6 +12,7 @@
 #include <command.h>
 #include <console.h>
 #include <fuse.h>
+#include <stdio.h>
 #include <linux/errno.h>
 #include <linux/string.h>
 

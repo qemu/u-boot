@@ -11,6 +11,7 @@
 #include <dm.h>
 #include <init.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/pxa.h>
 #include <asm/arch/regs-mmc.h>

@@ -12,6 +12,7 @@
 #include <dm.h>
 #include <malloc.h>
 #include <sdhci.h>
+#include <stdio.h>
 #include <wait_bit.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

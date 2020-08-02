@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <init.h>
+#include <stdio.h>
 #include <asm/armv8/mmu.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>

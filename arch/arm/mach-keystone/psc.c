@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <asm/io.h>

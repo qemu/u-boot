@@ -9,6 +9,7 @@
 #include <common.h>
 #include <exports.h>
 #include <spi.h>
+#include <stdio.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 

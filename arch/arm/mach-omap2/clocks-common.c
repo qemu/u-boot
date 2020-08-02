@@ -17,6 +17,7 @@
 #include <i2c.h>
 #include <init.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/omap_common.h>
 #include <asm/gpio.h>
 #include <asm/arch/clock.h>

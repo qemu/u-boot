@@ -9,6 +9,7 @@
 #include <fdt_support.h>
 #include <init.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <dm/platform_data/serial_pl01x.h>

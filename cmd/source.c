@@ -21,6 +21,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <mapmem.h>
+#include <stdio.h>
 #include <asm/byteorder.h>
 #include <asm/io.h>
 

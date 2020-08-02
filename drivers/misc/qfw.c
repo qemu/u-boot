@@ -9,6 +9,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <qfw.h>
+#include <stdio.h>
 #include <asm/io.h>
 #ifdef CONFIG_GENERATE_ACPI_TABLE
 #include <asm/tables.h>

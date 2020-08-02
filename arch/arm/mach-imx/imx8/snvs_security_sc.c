@@ -15,6 +15,7 @@
 #include <log.h>
 #include <stddef.h>
 #include <common.h>
+#include <stdio.h>
 #include <asm/arch/sci/sci.h>
 #include <asm/arch-imx8/imx8-pins.h>
 #include <asm/arch-imx8/snvs_security_sc.h>

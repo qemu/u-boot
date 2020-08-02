@@ -6,6 +6,7 @@
 #include <bootcount.h>
 #include <fs.h>
 #include <mapmem.h>
+#include <stdio.h>
 
 #define BC_MAGIC	0xbd
 #define BC_VERSION	1

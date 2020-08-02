@@ -16,6 +16,7 @@
 #include <mapmem.h>
 #include <spi.h>
 #include <spi_flash.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/cache.h>
 #include <jffs2/jffs2.h>

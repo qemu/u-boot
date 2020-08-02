@@ -15,6 +15,7 @@
 #include <command.h>
 #include <env.h>
 #include <log.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 #define SYSOPEN		0x01

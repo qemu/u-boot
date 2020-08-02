@@ -7,6 +7,7 @@
 #include <common.h>
 #include <i2c.h>
 #include <log.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/io.h>
 #include <dm.h>

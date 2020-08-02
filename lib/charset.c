@@ -9,6 +9,7 @@
 #include <charset.h>
 #include <capitalization.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 static struct capitalization_table capitalization_table[] =

@@ -14,6 +14,7 @@
 #include <init.h>
 #include <log.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/arch/hardware.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

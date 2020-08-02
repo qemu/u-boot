@@ -15,6 +15,7 @@
 #include <fat.h>
 #include <fs.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/byteorder.h>
 #include <part.h>
 #include <malloc.h>

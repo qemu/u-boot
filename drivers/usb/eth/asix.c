@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <log.h>
 #include <net.h>
+#include <stdio.h>
 #include <usb.h>
 #include <malloc.h>
 #include <memalign.h>

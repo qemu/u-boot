@@ -11,6 +11,7 @@
 #include <common.h>
 #include <dm.h>
 #include <log.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/io.h>
 #include <asm/arch/am35x_def.h>

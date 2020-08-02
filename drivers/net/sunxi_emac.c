@@ -9,6 +9,7 @@
 #include <clk.h>
 #include <dm.h>
 #include <log.h>
+#include <stdio.h>
 #include <dm/device_compat.h>
 #include <linux/delay.h>
 #include <linux/err.h>

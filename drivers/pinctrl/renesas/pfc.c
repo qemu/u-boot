@@ -14,6 +14,7 @@
 #include <common.h>
 #include <dm.h>
 #include <errno.h>
+#include <stdio.h>
 #include <dm/device_compat.h>
 #include <dm/devres.h>
 #include <dm/pinctrl.h>

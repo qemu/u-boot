@@ -10,6 +10,7 @@
 #include <init.h>
 #include <malloc.h>
 #include <mapmem.h>
+#include <stdio.h>
 #include <watchdog.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>

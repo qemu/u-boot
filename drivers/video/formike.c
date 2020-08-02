@@ -9,6 +9,7 @@
 #include <errno.h>
 #include <log.h>
 #include <spi.h>
+#include <stdio.h>
 #include <linux/delay.h>
 
 #define TAG_READ	0x80

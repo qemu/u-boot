@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <asm/io.h>
 #include <asm/ptrace.h>

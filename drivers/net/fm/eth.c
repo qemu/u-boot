@@ -7,6 +7,7 @@
 #include <common.h>
 #include <log.h>
 #include <part.h>
+#include <stdio.h>
 #include <asm/io.h>
 #ifdef CONFIG_DM_ETH
 #include <dm.h>

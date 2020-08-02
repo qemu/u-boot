@@ -17,6 +17,7 @@
 #include <command.h>
 #include <cros_ec.h>
 #include <log.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/io.h>
 

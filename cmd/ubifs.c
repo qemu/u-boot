@@ -15,6 +15,7 @@
 #include <config.h>
 #include <command.h>
 #include <log.h>
+#include <stdio.h>
 #include <ubifs_uboot.h>
 
 static int ubifs_initialized;

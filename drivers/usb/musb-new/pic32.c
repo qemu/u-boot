@@ -11,6 +11,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>

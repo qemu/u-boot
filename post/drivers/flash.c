@@ -10,6 +10,7 @@
 #include <malloc.h>
 #include <post.h>
 #include <flash.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 #if CONFIG_POST & CONFIG_SYS_POST_FLASH

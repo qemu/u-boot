@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <lcd.h>
+#include <stdio.h>
 #include <video_font.h>		/* Get font data, width and height */
 
 static void lcd_putc_xy90(struct console_t *pcons, ushort x, ushort y, char c)

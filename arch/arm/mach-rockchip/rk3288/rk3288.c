@@ -9,6 +9,7 @@
 #include <clk.h>
 #include <init.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/armv7.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

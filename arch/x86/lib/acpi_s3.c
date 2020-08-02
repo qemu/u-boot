@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <acpi/acpi_s3.h>
 #include <acpi/acpi_table.h>
 #include <asm/acpi.h>

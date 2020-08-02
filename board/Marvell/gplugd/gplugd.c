@@ -15,6 +15,7 @@
 #include <init.h>
 #include <log.h>
 #include <mvmfp.h>
+#include <stdio.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/mfp.h>
 #include <asm/arch/armada100.h>

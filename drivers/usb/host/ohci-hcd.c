@@ -29,6 +29,7 @@
 
 #include <common.h>
 #include <cpu_func.h>
+#include <stdio.h>
 #include <asm/byteorder.h>
 #include <dm.h>
 #include <errno.h>

@@ -6,6 +6,7 @@
 #include <common.h>
 #include <init.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <vsprintf.h>
 #include <asm/arcregs.h>
 #include <asm/cache.h>

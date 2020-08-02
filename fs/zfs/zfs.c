@@ -13,6 +13,7 @@
 #include <common.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <linux/stat.h>
 #include <linux/string.h>
 #include <linux/time.h>

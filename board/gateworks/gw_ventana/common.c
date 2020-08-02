@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/mx6-pins.h>
 #include <asm/arch/sys_proto.h>

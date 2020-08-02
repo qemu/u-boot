@@ -9,6 +9,7 @@
 #include <command.h>
 #include <hexdump.h>
 #include <rand.h>
+#include <stdio.h>
 #include <uboot_aes.h>
 #include <test/lib.h>
 #include <test/test.h>

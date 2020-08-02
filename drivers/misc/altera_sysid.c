@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <misc.h>
+#include <stdio.h>
 #include <linux/time.h>
 #include <asm/io.h>
 

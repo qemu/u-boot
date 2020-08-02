@@ -9,6 +9,7 @@
 #include <miiphy.h>
 #include <phy.h>
 #include <fsl_mdio.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/u-boot.h>
 #include <linux/errno.h>

@@ -15,6 +15,7 @@
 #include <fdtdec.h>
 #include <init.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/global_data.h>
 #include <linux/sizes.h>

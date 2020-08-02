@@ -10,6 +10,7 @@
 #include <cpu_func.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
 

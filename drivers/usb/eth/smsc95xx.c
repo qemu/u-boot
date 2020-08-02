@@ -13,6 +13,7 @@
 #include <malloc.h>
 #include <memalign.h>
 #include <net.h>
+#include <stdio.h>
 #include <time.h>
 #include <usb.h>
 #include <asm/u-boot.h>

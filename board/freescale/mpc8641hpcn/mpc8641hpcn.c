@@ -8,6 +8,7 @@
 #include <log.h>
 #include <net.h>
 #include <pci.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/processor.h>
 #include <asm/immap_86xx.h>

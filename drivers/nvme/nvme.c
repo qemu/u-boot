@@ -13,6 +13,7 @@
 #include <malloc.h>
 #include <memalign.h>
 #include <pci.h>
+#include <stdio.h>
 #include <time.h>
 #include <dm/device-internal.h>
 #include <linux/compat.h>

@@ -10,6 +10,7 @@
 
 #include <common.h>
 #include <cpu_func.h>
+#include <stdio.h>
 #include <linux/libfdt.h>
 #include <fdt_support.h>
 #include <asm/mp.h>

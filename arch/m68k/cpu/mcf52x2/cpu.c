@@ -16,6 +16,7 @@
 #include <common.h>
 #include <init.h>
 #include <net.h>
+#include <stdio.h>
 #include <vsprintf.h>
 #include <watchdog.h>
 #include <command.h>

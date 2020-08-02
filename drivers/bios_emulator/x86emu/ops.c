@@ -73,6 +73,7 @@
 ****************************************************************************/
 
 #include <common.h>
+#include <stdio.h>
 #include <linux/printk.h>
 #include "x86emu/x86emui.h"
 

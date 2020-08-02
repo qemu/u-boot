@@ -1,6 +1,7 @@
 #ifndef __UBOOT_SL811_H
 #define __UBOOT_SL811_H
 
+#include <stdio.h>
 #undef SL811_DEBUG
 
 #ifdef SL811_DEBUG

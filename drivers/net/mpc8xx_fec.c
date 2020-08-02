@@ -10,6 +10,7 @@
 #include <malloc.h>
 #include <net.h>
 #include <netdev.h>
+#include <stdio.h>
 #include <asm/cpm_8xx.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

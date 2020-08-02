@@ -26,6 +26,7 @@
 #include <errno.h>
 #include <fdt_support.h>
 #include <reset.h>
+#include <stdio.h>
 #include <wait_bit.h>
 #include <asm/global_data.h>
 #include <dm/device_compat.h>

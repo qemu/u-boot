@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/arch/dsim.h>
 #include <asm/arch/mipi_dsim.h>
 #include <asm/arch/power.h>

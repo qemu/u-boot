@@ -17,6 +17,7 @@
 #include <net.h>
 #include <malloc.h>
 #include <miiphy.h>
+#include <stdio.h>
 #include <wait_bit.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

@@ -23,6 +23,7 @@
 
 #include <common.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <time.h>
 #include <dm/device_compat.h>
 #include <linux/printk.h>

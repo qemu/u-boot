@@ -8,6 +8,7 @@
 
 #include <errno.h>
 #include <common.h>
+#include <stdio.h>
 #include <asm/ti-common/keystone_serdes.h>
 #include <linux/bitops.h>
 

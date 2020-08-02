@@ -12,6 +12,7 @@
 #include <common.h>
 #include <init.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/arch/crm_regs.h>
 #include <asm/arch/mx6-ddr.h>
 #include <asm/global_data.h>

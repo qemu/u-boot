@@ -6,6 +6,7 @@
 #include <common.h>
 #include <init.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/funcmux.h>
 #include <asm/arch/pinmux.h>

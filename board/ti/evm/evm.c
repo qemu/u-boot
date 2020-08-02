@@ -17,6 +17,7 @@
 #include <net.h>
 #include <ns16550.h>
 #include <serial.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/arch/mem.h>

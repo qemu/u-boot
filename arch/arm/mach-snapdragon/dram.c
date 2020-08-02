@@ -12,6 +12,7 @@
 #include <part.h>
 #include <smem.h>
 #include <fdt_support.h>
+#include <stdio.h>
 #include <asm/arch/dram.h>
 
 #define SMEM_USABLE_RAM_PARTITION_TABLE 402

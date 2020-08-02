@@ -11,6 +11,7 @@
 #include <common.h>
 #include <command.h>
 #include <part.h>
+#include <stdio.h>
 
 int do_read(struct cmd_tbl *cmdtp, int flag, int argc, char *const argv[])
 {

@@ -11,6 +11,7 @@
 #include <log.h>
 #include <regmap.h>
 #include <spl.h>
+#include <stdio.h>
 #include <syscon.h>
 #include <time.h>
 #include <vsprintf.h>

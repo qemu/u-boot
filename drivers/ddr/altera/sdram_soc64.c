@@ -15,6 +15,7 @@
 #include <log.h>
 #include <ram.h>
 #include <reset.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>

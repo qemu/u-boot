@@ -602,4 +602,5 @@ U_BOOT_CMD(clocks, 1, 0, do_clocks,
 	"    clocks"
 );
 
+#include <stdio.h>
 #endif

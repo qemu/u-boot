@@ -444,6 +444,7 @@ static int get_features(unsigned int fpga, struct fpga_features *features)
 	return 0;
 }
 
+#include <stdio.h>
 #include <linux/bitops.h>
 #include <linux/string.h>
 #endif

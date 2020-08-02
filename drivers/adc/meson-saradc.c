@@ -13,6 +13,7 @@
 #include <dm.h>
 #include <regmap.h>
 #include <errno.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

@@ -9,6 +9,7 @@
 #include <cpu_func.h>
 #include <fdtdec.h>
 #include <init.h>
+#include <stdio.h>
 #include <usb.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

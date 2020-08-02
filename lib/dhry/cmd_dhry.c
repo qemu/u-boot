@@ -6,6 +6,7 @@
 #include <common.h>
 #include <command.h>
 #include <div64.h>
+#include <stdio.h>
 #include <time.h>
 #include "dhry.h"
 

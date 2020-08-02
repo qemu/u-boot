@@ -15,6 +15,7 @@
 #include <common.h>
 #include <net.h>
 #include <netdev.h>
+#include <stdio.h>
 #include <asm/fsl_serdes.h>
 #include <fm_eth.h>
 #include <fsl_mdio.h>

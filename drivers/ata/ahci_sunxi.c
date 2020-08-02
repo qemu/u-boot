@@ -4,6 +4,7 @@
 #include <log.h>
 #include <scsi.h>
 #include <errno.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/gpio.h>
 #include <linux/delay.h>

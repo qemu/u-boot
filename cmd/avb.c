@@ -11,6 +11,7 @@
 #include <image.h>
 #include <malloc.h>
 #include <mmc.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 #define AVB_BOOTARGS	"avb_bootargs"

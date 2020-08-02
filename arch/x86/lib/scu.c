@@ -12,6 +12,7 @@
 #include <common.h>
 #include <dm.h>
 #include <regmap.h>
+#include <stdio.h>
 #include <syscon.h>
 #include <asm/cpu.h>
 #include <asm/scu.h>

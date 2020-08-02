@@ -15,6 +15,7 @@
 #include <fat.h>
 #include <dfu.h>
 #include <hash.h>
+#include <stdio.h>
 #include <linux/list.h>
 #include <linux/compiler.h>
 #include <linux/printk.h>

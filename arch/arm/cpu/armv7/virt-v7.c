@@ -10,6 +10,7 @@
 
 #include <common.h>
 #include <cpu_func.h>
+#include <stdio.h>
 #include <asm/armv7.h>
 #include <asm/cache.h>
 #include <asm/gic.h>

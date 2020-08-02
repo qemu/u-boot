@@ -9,6 +9,7 @@
 #include <i2c.h>
 #include <irq_func.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/io.h>
 #ifdef CONFIG_FSL_LSCH2
 #include <asm/arch/immap_lsch2.h>

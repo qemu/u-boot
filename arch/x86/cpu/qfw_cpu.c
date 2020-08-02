@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <malloc.h>
 #include <qfw.h>
+#include <stdio.h>
 #include <dm/lists.h>
 #include <dm/uclass-internal.h>
 #include <dm/root.h>

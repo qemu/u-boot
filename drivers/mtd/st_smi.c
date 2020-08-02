@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <flash.h>
+#include <stdio.h>
 #include <time.h>
 #include <linux/delay.h>
 #include <linux/err.h>

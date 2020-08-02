@@ -10,6 +10,7 @@
 
 #include <common.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm/u-boot.h>
 #include <sata.h>
 #include <scsi.h>

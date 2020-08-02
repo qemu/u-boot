@@ -11,6 +11,7 @@
 #include <common.h>
 #include <fdt_support.h>
 #include <init.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/ppc.h>
 #include <asm/u-boot.h>

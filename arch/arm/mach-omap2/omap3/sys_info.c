@@ -12,6 +12,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/mem.h>	/* get mem tables */
 #include <asm/arch/sys_proto.h>

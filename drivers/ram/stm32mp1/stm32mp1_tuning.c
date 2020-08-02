@@ -9,6 +9,7 @@
 #include <ram.h>
 #include <rand.h>
 #include <reset.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

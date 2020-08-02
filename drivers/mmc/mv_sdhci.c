@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <malloc.h>
 #include <sdhci.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/mbus.h>
 #include <linux/string.h>

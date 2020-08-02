@@ -7,6 +7,7 @@
 
 #include <cpu_func.h>
 #include <init.h>
+#include <stdio.h>
 #include <asm/arch/sysmap-apq8096.h>
 #include <env.h>
 #include <asm/cache.h>

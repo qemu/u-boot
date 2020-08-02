@@ -12,6 +12,7 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <irq_func.h>
+#include <stdio.h>
 #include <asm/ptrace.h>
 #include <asm/system.h>
 #undef INTERRUPT_MODE

@@ -16,6 +16,7 @@
 #include <log.h>
 #include <rtc.h>
 #include <i2c.h>
+#include <stdio.h>
 #include <linux/bitops.h>
 
 /*

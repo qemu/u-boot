@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/ti-common/ti-aemif.h>
 
 #define AEMIF_WAITCYCLE_CONFIG		(CONFIG_AEMIF_CNTRL_BASE + 0x4)

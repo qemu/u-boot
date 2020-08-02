@@ -19,6 +19,7 @@
 #ifndef CONFIG_DM_ETH
 #include <netdev.h>
 #endif
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/gpio.h>
 #include <asm/io.h>

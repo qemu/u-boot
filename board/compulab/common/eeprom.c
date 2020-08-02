@@ -11,6 +11,7 @@
 #include <i2c.h>
 #include <eeprom_layout.h>
 #include <eeprom_field.h>
+#include <stdio.h>
 #include <asm/setup.h>
 #include <linux/kernel.h>
 #include <linux/string.h>

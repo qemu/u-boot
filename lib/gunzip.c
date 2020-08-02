@@ -13,6 +13,7 @@
 #include <image.h>
 #include <malloc.h>
 #include <memalign.h>
+#include <stdio.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>
 #include <watchdog.h>

@@ -9,6 +9,7 @@
 #include <cpu_func.h>
 #include <display_options.h>
 #include <log.h>
+#include <stdio.h>
 #include <time.h>
 #include <vsprintf.h>
 #include <watchdog.h>

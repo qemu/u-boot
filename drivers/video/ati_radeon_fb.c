@@ -16,6 +16,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 

@@ -15,6 +15,7 @@
 #include <dm.h>
 #include <lcd.h>
 #include <log.h>
+#include <stdio.h>
 #include <video.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/hardware.h>

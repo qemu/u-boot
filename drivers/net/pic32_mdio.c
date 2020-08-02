@@ -9,6 +9,7 @@
 #include <phy.h>
 #include <miiphy.h>
 #include <errno.h>
+#include <stdio.h>
 #include <wait_bit.h>
 #include <asm/io.h>
 #include <linux/delay.h>

@@ -7,6 +7,7 @@
 
 #include <hexdump.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <ubi_uboot.h>
 #include <linux/printk.h>
 #include <linux/string.h>

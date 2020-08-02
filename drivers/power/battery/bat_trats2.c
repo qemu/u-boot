@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdio.h>
 #include <power/pmic.h>
 #include <power/battery.h>
 #include <power/max77693_pmic.h>

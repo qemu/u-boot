@@ -11,6 +11,7 @@
 #include <ide.h>
 #include <log.h>
 #include <part.h>
+#include <stdio.h>
 #include <watchdog.h>
 #include <asm/io.h>
 #include <linux/delay.h>

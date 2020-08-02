@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <errno.h>
+#include <stdio.h>
 #include <power/pmic.h>
 #include <power/pfuze100_pmic.h>
 

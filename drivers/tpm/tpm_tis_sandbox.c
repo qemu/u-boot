@@ -6,6 +6,7 @@
 #include <common.h>
 #include <display_options.h>
 #include <dm.h>
+#include <stdio.h>
 #include <tpm-v1.h>
 #include <asm/state.h>
 #include <asm/unaligned.h>

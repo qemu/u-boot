@@ -19,6 +19,7 @@
 #include <spi.h>
 #include <spi_flash.h>
 #include <splash.h>
+#include <stdio.h>
 #include <usb.h>
 #include <asm/global_data.h>
 #include <linux/string.h>

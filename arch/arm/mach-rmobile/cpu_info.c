@@ -5,6 +5,7 @@
  */
 #include <common.h>
 #include <cpu_func.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <init.h>
 #include <asm/io.h>

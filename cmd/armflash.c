@@ -9,6 +9,7 @@
 #include <command.h>
 #include <console.h>
 #include <flash.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <linux/string.h>
 

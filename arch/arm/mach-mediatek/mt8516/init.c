@@ -12,6 +12,7 @@
 #include <fdtdec.h>
 #include <init.h>
 #include <ram.h>
+#include <stdio.h>
 #include <asm/arch/misc.h>
 #include <asm/armv8/mmu.h>
 #include <asm/cache.h>

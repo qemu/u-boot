@@ -15,6 +15,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <log.h>
+#include <stdio.h>
 #include <wait_bit.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

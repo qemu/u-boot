@@ -14,6 +14,7 @@
 #include <env.h>
 #include <errno.h>
 #include <pci.h>
+#include <stdio.h>
 #include <asm/io.h>
 
 const char *pci_class_str(u8 class)

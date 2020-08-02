@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdio.h>
 #include <usb.h>
 #include <errno.h>
 #include <wait_bit.h>

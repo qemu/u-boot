@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <linux/libfdt.h>
 #include <fdt_support.h>

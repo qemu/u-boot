@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <env.h>
+#include <stdio.h>
 #include <linux/list.h>
 #include <asm/gpio.h>
 #include <asm/arch/iomux-mx51.h>

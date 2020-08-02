@@ -21,6 +21,7 @@
 
 #include <common.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <linux/bug.h>
 #include <linux/errno.h>
 #include <linux/compat.h>

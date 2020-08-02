@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <malloc.h>
 #include <power-domain-uclass.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/arch/power-domain.h>

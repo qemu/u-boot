@@ -14,6 +14,7 @@
 #include <env.h>
 #include <log.h>
 #include <mapmem.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 static ulong get_arg(char *s, int w)

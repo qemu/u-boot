@@ -22,6 +22,7 @@
 #include <common.h>
 #include <exports.h>
 #include <log.h>
+#include <stdio.h>
 #include <linux/delay.h>
 #include <usb/ulpi.h>
 

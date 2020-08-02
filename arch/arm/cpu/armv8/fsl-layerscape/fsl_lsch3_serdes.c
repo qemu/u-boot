@@ -7,6 +7,7 @@
 #include <common.h>
 #include <env.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

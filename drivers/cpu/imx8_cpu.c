@@ -6,6 +6,7 @@
 #include <common.h>
 #include <cpu.h>
 #include <dm.h>
+#include <stdio.h>
 #include <thermal.h>
 #include <asm/global_data.h>
 #include <asm/system.h>

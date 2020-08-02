@@ -11,6 +11,7 @@
 #include <i2c.h>
 #include <init.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/ppc.h>
 #include <asm/u-boot.h>

@@ -12,6 +12,7 @@
 #include <miiphy.h>
 #include <phy.h>
 #include <fm_eth.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <exports.h>
 #include <asm/arch/fsl_serdes.h>

@@ -13,6 +13,7 @@
 #include <malloc.h>
 #include <panel.h>
 #include <regmap.h>
+#include <stdio.h>
 #include <syscon.h>
 #include <time.h>
 #include <asm/gpio.h>

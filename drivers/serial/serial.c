@@ -8,6 +8,7 @@
 #include <env_internal.h>
 #include <hang.h>
 #include <serial.h>
+#include <stdio.h>
 #include <stdio_dev.h>
 #include <post.h>
 #include <asm/global_data.h>

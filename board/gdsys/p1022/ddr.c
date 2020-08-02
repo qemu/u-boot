@@ -8,6 +8,7 @@
 #include <common.h>
 #include <i2c.h>
 #include <log.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 #include <fsl_ddr_sdram.h>

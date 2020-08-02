@@ -11,6 +11,7 @@
 #include <i2c.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <asm/bitops.h>
 #include <linux/delay.h>
 #include <linux/string.h>

@@ -11,6 +11,7 @@
 #include <common.h>
 #include <log.h>
 #include <spl.h>
+#include <stdio.h>
 #include <asm/u-boot.h>
 #include <errno.h>
 #include <usb.h>

@@ -11,6 +11,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <sort.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/string.h>
 

@@ -11,6 +11,7 @@
 #include <env.h>
 #include <log.h>
 #include <pci.h>
+#include <stdio.h>
 #include <usb.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

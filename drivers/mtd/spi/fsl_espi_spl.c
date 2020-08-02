@@ -8,6 +8,7 @@
 #include <hang.h>
 #include <spi_flash.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <linux/string.h>
 
 #define ESPI_BOOT_IMAGE_SIZE	0x48

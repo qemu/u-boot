@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <init.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 
 #include <asm/io.h>

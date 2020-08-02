@@ -7,6 +7,7 @@
 #include <command.h>
 #include <log.h>
 #include <rtc.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/davinci_rtc.h>
 #include <linux/delay.h>

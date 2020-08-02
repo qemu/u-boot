@@ -9,6 +9,7 @@
 #include <errno.h>
 #include <pci.h>
 #include <miiphy.h>
+#include <stdio.h>
 #include <asm/io.h>
 #include <asm/processor.h>
 #include <miiphy.h>

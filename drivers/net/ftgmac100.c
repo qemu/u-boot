@@ -19,6 +19,7 @@
 #include <malloc.h>
 #include <miiphy.h>
 #include <net.h>
+#include <stdio.h>
 #include <wait_bit.h>
 #include <asm/cache.h>
 #include <dm/device_compat.h>

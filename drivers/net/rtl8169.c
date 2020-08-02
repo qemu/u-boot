@@ -50,6 +50,7 @@
 #ifndef CONFIG_DM_ETH
 #include <netdev.h>
 #endif
+#include <stdio.h>
 #include <time.h>
 #include <asm/cache.h>
 #include <asm/io.h>

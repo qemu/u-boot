@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <virtio_types.h>
 #include <virtio.h>
 #include <virtio_ring.h>

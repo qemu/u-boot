@@ -8,6 +8,7 @@
 #include <init.h>
 #include <malloc.h>
 #include <netdev.h>
+#include <stdio.h>
 #include <twl4030.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

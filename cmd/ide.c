@@ -11,6 +11,7 @@
 #include <common.h>
 #include <blk.h>
 #include <config.h>
+#include <stdio.h>
 #include <watchdog.h>
 #include <command.h>
 #include <image.h>

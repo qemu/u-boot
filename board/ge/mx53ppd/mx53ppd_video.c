@@ -10,6 +10,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <stdio.h>
 #include <linux/list.h>
 #include <asm/arch/iomux-mx53.h>
 #include <asm/mach-imx/video.h>

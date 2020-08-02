@@ -17,6 +17,7 @@
 #include <command.h>
 #include <env.h>
 #include <env_internal.h>
+#include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/stddef.h>
 #include <malloc.h>

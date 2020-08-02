@@ -15,6 +15,7 @@
 #include <net.h>
 #include <regmap.h>
 #include <reset.h>
+#include <stdio.h>
 #include <syscon.h>
 #include <time.h>
 #include <wait_bit.h>

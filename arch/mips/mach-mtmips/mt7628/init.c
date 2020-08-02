@@ -8,6 +8,7 @@
 #include <common.h>
 #include <clk.h>
 #include <dm.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/global_data.h>
 #include <dm/uclass.h>

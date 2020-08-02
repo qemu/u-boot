@@ -1,6 +1,7 @@
 #include <common.h>
 #include <command.h>
 #include <console.h>
+#include <stdio.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 #include "e1000.h"

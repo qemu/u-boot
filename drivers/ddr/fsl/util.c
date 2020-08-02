@@ -9,6 +9,7 @@
 #include <asm/ppc.h>
 #endif
 #include <div64.h>
+#include <stdio.h>
 #include <linux/delay.h>
 
 #include <fsl_ddr.h>

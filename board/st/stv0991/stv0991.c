@@ -10,6 +10,7 @@
 #include <init.h>
 #include <miiphy.h>
 #include <net.h>
+#include <stdio.h>
 #include <asm/arch/stv0991_periph.h>
 #include <asm/arch/stv0991_defs.h>
 #include <asm/arch/hardware.h>

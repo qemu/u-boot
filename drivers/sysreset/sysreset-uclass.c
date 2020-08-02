@@ -11,6 +11,7 @@
 #include <cpu_func.h>
 #include <hang.h>
 #include <log.h>
+#include <stdio.h>
 #include <sysreset.h>
 #include <dm.h>
 #include <errno.h>

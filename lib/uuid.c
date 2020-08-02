@@ -7,6 +7,7 @@
 #include <command.h>
 #include <env.h>
 #include <rand.h>
+#include <stdio.h>
 #include <time.h>
 #include <uuid.h>
 #include <linux/ctype.h>

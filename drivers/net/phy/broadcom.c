@@ -7,6 +7,7 @@
  */
 #include <common.h>
 #include <phy.h>
+#include <stdio.h>
 #include <linux/delay.h>
 
 /* Broadcom BCM54xx -- taken from linux sungem_phy */

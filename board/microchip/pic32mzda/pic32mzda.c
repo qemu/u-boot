@@ -12,6 +12,7 @@
 #include <clk.h>
 #include <init.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <dt-bindings/clock/microchip,clock.h>
 #include <mach/pic32.h>
 

@@ -9,6 +9,7 @@
 #include <common.h>
 #include <dm.h>
 #include <log.h>
+#include <stdio.h>
 #include <time.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

@@ -10,6 +10,7 @@
 #include <cpu_func.h>
 #include <net.h>
 #include <netdev.h>
+#include <stdio.h>
 #include <asm/processor.h>
 #include <asm/u-boot.h>
 

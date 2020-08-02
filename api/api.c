@@ -11,6 +11,7 @@
 #include <env.h>
 #include <malloc.h>
 #include <env_internal.h>
+#include <stdio.h>
 #include <time.h>
 #include <linux/delay.h>
 #include <linux/string.h>

@@ -7,6 +7,7 @@
 #include <errno.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdio.h>
 #include <linux/list.h>
 #include <asm/io.h>
 #include <asm/gpio.h>

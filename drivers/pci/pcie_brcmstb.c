@@ -15,6 +15,7 @@
 #include <common.h>
 #include <errno.h>
 #include <dm.h>
+#include <stdio.h>
 #include <dm/ofnode.h>
 #include <pci.h>
 #include <asm/io.h>

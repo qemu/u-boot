@@ -8,6 +8,7 @@
 #include <common.h>
 #include <dm.h>
 #include <log.h>
+#include <stdio.h>
 #include <acpi/acpi_s3.h>
 #ifdef CONFIG_X86
 #include <asm/intel_pinctrl.h>

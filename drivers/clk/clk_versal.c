@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdio.h>
 #include <asm/cache.h>
 #include <asm/ptrace.h>
 #include <dm/device_compat.h>

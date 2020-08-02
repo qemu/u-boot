@@ -4,6 +4,7 @@
  *
  */
 #include <common.h>
+#include <stdio.h>
 #include <wait_bit.h>
 #include <linux/kernel.h>
 #include <linux/bitops.h>
