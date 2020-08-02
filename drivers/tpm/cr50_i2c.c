@@ -16,6 +16,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <tpm-v2.h>
+#include <vsprintf.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <asm/arch/iomap.h>

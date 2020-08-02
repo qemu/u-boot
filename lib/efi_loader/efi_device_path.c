@@ -16,6 +16,7 @@
 #include <efi_loader.h>
 #include <part.h>
 #include <sandboxblockdev.h>
+#include <vsprintf.h>
 #include <asm-generic/unaligned.h>
 #include <linux/compat.h> /* U16_MAX */
 #include <linux/string.h>

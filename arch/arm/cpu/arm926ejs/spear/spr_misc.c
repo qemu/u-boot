@@ -12,6 +12,7 @@
 #include <init.h>
 #include <net.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/mtd/st_smi.h>
 #include <asm/io.h>

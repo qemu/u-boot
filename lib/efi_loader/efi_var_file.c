@@ -15,6 +15,7 @@
 #include <mapmem.h>
 #include <efi_loader.h>
 #include <efi_variable.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>
 

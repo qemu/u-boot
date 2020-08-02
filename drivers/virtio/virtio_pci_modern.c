@@ -13,6 +13,7 @@
 #include <virtio_types.h>
 #include <virtio.h>
 #include <virtio_ring.h>
+#include <vsprintf.h>
 #include <dm/device.h>
 #include <linux/bug.h>
 #include <linux/compat.h>

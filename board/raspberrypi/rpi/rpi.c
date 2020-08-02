@@ -15,6 +15,7 @@
 #include <memalign.h>
 #include <mmc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/gpio.h>
 #include <asm/arch/mbox.h>
 #include <asm/arch/msg.h>

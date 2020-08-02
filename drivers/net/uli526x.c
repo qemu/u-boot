@@ -14,6 +14,7 @@
 #include <net.h>
 #include <netdev.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <pci.h>
 #include <miiphy.h>

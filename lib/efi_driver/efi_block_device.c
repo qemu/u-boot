@@ -33,6 +33,7 @@
 #include <dm.h>
 #include <efi_driver.h>
 #include <malloc.h>
+#include <vsprintf.h>
 #include <dm/device-internal.h>
 #include <dm/root.h>
 

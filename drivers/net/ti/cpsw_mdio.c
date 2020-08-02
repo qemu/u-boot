@@ -8,6 +8,7 @@
 #include <common.h>
 #include <log.h>
 #include <malloc.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <miiphy.h>
 #include <wait_bit.h>

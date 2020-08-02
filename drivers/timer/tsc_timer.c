@@ -13,6 +13,7 @@
 #include <malloc.h>
 #include <time.h>
 #include <timer.h>
+#include <vsprintf.h>
 #include <asm/cpu.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

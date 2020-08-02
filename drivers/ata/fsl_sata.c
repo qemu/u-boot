@@ -12,6 +12,7 @@
 #include <cpu_func.h>
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <asm/ppc.h>
 #include <asm/fsl_serdes.h>

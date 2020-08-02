@@ -36,6 +36,7 @@
 #include <malloc.h>
 #include <mapmem.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 #include "nfs.h"
 #include "bootp.h"

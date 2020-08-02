@@ -14,6 +14,7 @@
 #include <env.h>
 #include <mapmem.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 
 #include <lzma/LzmaTools.h>

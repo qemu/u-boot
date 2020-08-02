@@ -16,6 +16,7 @@
 #if defined(CONFIG_LCD_LOGO)
 #include <bmp_logo.h>
 #endif
+#include <vsprintf.h>
 #include <linux/string.h>
 
 static struct console_t cons;

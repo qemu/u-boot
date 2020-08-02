@@ -4,6 +4,7 @@
 #include <dm.h>
 #include <regmap.h>
 #include <syscon.h>
+#include <vsprintf.h>
 #include <dm/device_compat.h>
 #include <dm/pinctrl.h>
 

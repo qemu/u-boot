@@ -12,6 +12,7 @@
 #include <net.h>
 #include <netdev.h>
 #include <scsi.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 

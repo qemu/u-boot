@@ -12,6 +12,7 @@
 #include <common.h>
 #include <errno.h>
 #include <init.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/dram.h>

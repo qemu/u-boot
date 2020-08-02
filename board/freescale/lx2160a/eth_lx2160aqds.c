@@ -18,6 +18,7 @@
 #include <phy.h>
 #include <fm_eth.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <exports.h>

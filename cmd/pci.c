@@ -20,6 +20,7 @@
 #include <dm.h>
 #include <init.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/processor.h>
 #include <asm/io.h>
 #include <pci.h>

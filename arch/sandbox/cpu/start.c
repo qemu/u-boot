@@ -11,6 +11,7 @@
 #include <cli.h>
 #include <sort.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/getopt.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

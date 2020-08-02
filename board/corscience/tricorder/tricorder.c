@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <twl4030.h>
 #include <status_led.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/gpio.h>

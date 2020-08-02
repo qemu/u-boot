@@ -8,6 +8,7 @@
 #include <command.h>
 #include <dm.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <w1.h>
 #include <w1-eeprom.h>
 #include <dm/device-internal.h>

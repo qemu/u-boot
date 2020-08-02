@@ -9,6 +9,7 @@
 #include <command.h>
 #include <log.h>
 #include <malloc.h>
+#include <vsprintf.h>
 #include <asm/byteorder.h>
 #include <linux/compiler.h>
 #include <fsl_sec.h>

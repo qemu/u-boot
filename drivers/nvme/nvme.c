@@ -15,6 +15,7 @@
 #include <pci.h>
 #include <stdio.h>
 #include <time.h>
+#include <vsprintf.h>
 #include <dm/device-internal.h>
 #include <linux/compat.h>
 #include <linux/string.h>

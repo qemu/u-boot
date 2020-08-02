@@ -15,6 +15,7 @@
 #include <init.h>
 #include <net.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <watchdog.h>
 #include <asm/processor.h>
 #include <ioports.h>

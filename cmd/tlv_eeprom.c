@@ -18,6 +18,7 @@
 #include <init.h>
 #include <net.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/ctype.h>
 #include <linux/string.h>

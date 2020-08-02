@@ -17,6 +17,7 @@
 #include <stdio.h>
 #include <tmu.h>
 #include <netdev.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/gpio.h>

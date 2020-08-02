@@ -10,6 +10,7 @@
 #include <env.h>
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/arch/sm.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>

@@ -9,6 +9,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/fsl_serdes.h>
 #include <asm/global_data.h>
 #include <asm/ppc.h>

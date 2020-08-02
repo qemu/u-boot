@@ -12,6 +12,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <vsprintf.h>
 #include <watchdog.h>
 #include <dfu.h>
 #include <console.h>

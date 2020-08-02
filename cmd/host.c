@@ -10,6 +10,7 @@
 #include <part.h>
 #include <sandboxblockdev.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>
 

@@ -12,6 +12,7 @@
 #include <blk.h>
 #include <command.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 
 int blk_common_cmd(int argc, char *const argv[], enum if_type if_type,

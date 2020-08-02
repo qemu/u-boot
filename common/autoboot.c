@@ -20,6 +20,7 @@
 #include <post.h>
 #include <stdio.h>
 #include <time.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
 #include <linux/string.h>

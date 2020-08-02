@@ -8,6 +8,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <dm/platform_data/pfe_dm_eth.h>
 #include <net.h>
 #include <linux/delay.h>

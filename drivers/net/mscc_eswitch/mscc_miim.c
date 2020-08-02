@@ -4,6 +4,7 @@
  */
 
 #include <miiphy.h>
+#include <vsprintf.h>
 #include <wait_bit.h>
 #include <linux/bitops.h>
 #include "mscc_miim.h"

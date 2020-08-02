@@ -26,6 +26,7 @@
 #include <i2c.h>
 #include <eeprom_layout.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 

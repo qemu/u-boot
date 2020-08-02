@@ -8,6 +8,7 @@
 #include <common.h>
 #include <dm.h>
 #include <i2c.h>
+#include <vsprintf.h>
 #include <asm/gpio.h>
 #include <dm/device.h>
 #include <dm/device-internal.h>

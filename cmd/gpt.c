@@ -21,6 +21,7 @@
 #include <exports.h>
 #include <stdio.h>
 #include <uuid.h>
+#include <vsprintf.h>
 #include <linux/ctype.h>
 #include <div64.h>
 #include <memalign.h>

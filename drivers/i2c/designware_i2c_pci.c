@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <log.h>
 #include <spl.h>
+#include <vsprintf.h>
 #include <acpi/acpigen.h>
 #include <acpi/acpi_device.h>
 #include <asm/lpss.h>

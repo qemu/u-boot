@@ -15,6 +15,7 @@
 #include <miiphy.h>
 #include <phy.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 

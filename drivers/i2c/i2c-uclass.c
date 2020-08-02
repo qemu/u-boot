@@ -10,6 +10,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <dm/device-internal.h>
 #include <dm/lists.h>
 #include <dm/pinctrl.h>

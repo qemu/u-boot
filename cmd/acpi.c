@@ -8,6 +8,7 @@
 #include <display_options.h>
 #include <mapmem.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <acpi/acpi_table.h>
 #include <asm/acpi_table.h>
 #include <asm/global_data.h>

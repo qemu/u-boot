@@ -8,6 +8,7 @@
 #include <cpu_func.h>
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/io.h>

@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <usb.h>
+#include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 #include <usb/ulpi.h>

@@ -3,6 +3,7 @@
 #include <hwspinlock.h>
 #include <log.h>
 #include <malloc.h>
+#include <vsprintf.h>
 #include <asm/arch/gpio.h>
 #include <asm/global_data.h>
 #include <asm/gpio.h>

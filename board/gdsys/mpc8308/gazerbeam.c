@@ -18,6 +18,7 @@
 #include <stdio.h>
 #include <tpm-v1.h>
 #include <video_osd.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 

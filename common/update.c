@@ -10,6 +10,7 @@
 #include <cpu_func.h>
 #include <image.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

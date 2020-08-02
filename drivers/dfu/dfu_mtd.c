@@ -11,6 +11,7 @@
 #include <dfu.h>
 #include <mtd.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <jffs2/load_kernel.h>
 #include <linux/err.h>
 #include <linux/string.h>

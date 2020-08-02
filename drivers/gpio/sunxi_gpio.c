@@ -14,6 +14,7 @@
 #include <errno.h>
 #include <fdtdec.h>
 #include <malloc.h>
+#include <vsprintf.h>
 #include <asm/arch/gpio.h>
 #include <asm/io.h>
 #include <asm/gpio.h>

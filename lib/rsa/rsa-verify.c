@@ -9,6 +9,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/types.h>
 #include <asm/byteorder.h>
 #include <linux/errno.h>

@@ -9,6 +9,7 @@
 #include <command.h>
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <common.h>

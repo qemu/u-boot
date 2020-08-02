@@ -18,6 +18,7 @@
 #include <mapmem.h>
 #include <hw_sha.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

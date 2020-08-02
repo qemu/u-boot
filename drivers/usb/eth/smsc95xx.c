@@ -16,6 +16,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <usb.h>
+#include <vsprintf.h>
 #include <asm/u-boot.h>
 #include <asm/unaligned.h>
 #include <linux/delay.h>

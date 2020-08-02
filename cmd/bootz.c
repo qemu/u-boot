@@ -12,6 +12,7 @@
 #include <lmb.h>
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/compiler.h>
 
 int __weak bootz_setup(ulong image, ulong *start, ulong *end)

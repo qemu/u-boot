@@ -17,6 +17,7 @@
 #include <malloc.h>
 #include <mapmem.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/list.h>
 #include <linux/ctype.h>
 #include <jffs2/jffs2.h>

@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <asm/post.h>
 

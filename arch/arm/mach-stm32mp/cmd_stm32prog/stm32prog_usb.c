@@ -8,6 +8,7 @@
 #include <g_dnl.h>
 #include <stdio.h>
 #include <usb.h>
+#include <vsprintf.h>
 #include <asm/arch/stm32prog.h>
 #include <asm/arch/sys_proto.h>
 #include <linux/printk.h>

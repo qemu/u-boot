@@ -11,6 +11,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <usb.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <hwconfig.h>
 #include <fsl_errata.h>

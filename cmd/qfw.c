@@ -9,6 +9,7 @@
 #include <errno.h>
 #include <qfw.h>
 #include <stdio.h>
+#include <vsprintf.h>
 
 /*
  * This function prepares kernel for zboot. It loads kernel data

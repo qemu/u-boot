@@ -6,6 +6,7 @@
 /* Perform extra checking */
 #include <common.h>
 #include <errno.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <linux/bug.h>
 #include <linux/types.h>

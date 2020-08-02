@@ -17,6 +17,7 @@
 #include <command.h>
 #include <cpu_func.h>
 #include <irq_func.h>
+#include <vsprintf.h>
 #include <watchdog.h>
 #include <asm/cache.h>
 

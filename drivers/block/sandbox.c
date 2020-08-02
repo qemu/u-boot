@@ -12,6 +12,7 @@
 #include <malloc.h>
 #include <sandboxblockdev.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>

@@ -15,6 +15,7 @@
 #include <malloc.h>
 #include <pci.h>
 #include <reset.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <dm/devres.h>
 #include <linux/bitops.h>

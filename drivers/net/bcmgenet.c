@@ -18,6 +18,7 @@
 
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/cache.h>
 #include <asm/io.h>
 #include <clk.h>

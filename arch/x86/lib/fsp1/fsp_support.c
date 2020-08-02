@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <vsprintf.h>
 #include <asm/fsp1/fsp_support.h>
 #include <asm/post.h>
 #include <linux/string.h>

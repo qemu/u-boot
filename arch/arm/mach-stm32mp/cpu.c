@@ -12,6 +12,7 @@
 #include <misc.h>
 #include <net.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/arch/bsec.h>

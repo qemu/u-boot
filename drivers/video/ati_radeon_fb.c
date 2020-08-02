@@ -30,6 +30,7 @@
 #include <malloc.h>
 #include <video_fb.h>
 #include "videomodes.h"
+#include <vsprintf.h>
 
 #include <radeon.h>
 #include "ati_ids.h"

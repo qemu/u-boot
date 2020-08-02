@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <adc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/printk.h>
 
 static int do_adc_list(struct cmd_tbl *cmdtp, int flag, int argc,

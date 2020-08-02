@@ -11,6 +11,7 @@
 #endif
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/arch/clock.h>
 #include <asm/global_data.h>
 #include "ddr.h"

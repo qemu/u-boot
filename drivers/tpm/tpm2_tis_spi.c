@@ -20,6 +20,7 @@
 #include <spi.h>
 #include <time.h>
 #include <tpm-v2.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

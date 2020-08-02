@@ -10,6 +10,7 @@
 #include <init.h>
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/arch/hardware.h>
 #include <asm/cache.h>
 #include <asm/emif.h>

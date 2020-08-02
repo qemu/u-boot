@@ -10,6 +10,7 @@
 #include <command.h>
 #include <i2c.h>
 #include <malloc.h>
+#include <vsprintf.h>
 #include <linux/stringify.h>
 
 #include "ch7301.h"
@@ -504,5 +505,6 @@ U_BOOT_CMD(
 );
 
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 #endif /* CONFIG_GDSYS_LEGACY_DRIVERS */

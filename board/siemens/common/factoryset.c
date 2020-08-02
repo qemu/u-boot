@@ -18,6 +18,7 @@
 #include <asm/arch/cpu.h>
 #endif
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/unaligned.h>
 #include <net.h>

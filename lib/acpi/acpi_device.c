@@ -11,6 +11,7 @@
 #include <irq.h>
 #include <log.h>
 #include <usb.h>
+#include <vsprintf.h>
 #include <acpi/acpigen.h>
 #include <acpi/acpi_device.h>
 #include <acpi/acpigen.h>

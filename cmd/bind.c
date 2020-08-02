@@ -7,6 +7,7 @@
 #include <command.h>
 #include <dm.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <dm/device-internal.h>
 #include <dm/lists.h>
 #include <dm/uclass-internal.h>

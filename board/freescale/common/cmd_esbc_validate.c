@@ -8,6 +8,7 @@
 #include <env.h>
 #include <fsl_validate.h>
 #include <stdio.h>
+#include <vsprintf.h>
 
 int do_esbc_halt(struct cmd_tbl *cmdtp, int flag, int argc,
 		 char *const argv[])

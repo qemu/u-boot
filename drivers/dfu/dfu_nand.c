@@ -16,6 +16,7 @@
 #include <div64.h>
 #include <dfu.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/mtd/mtd.h>
 #include <jffs2/load_kernel.h>
 #include <nand.h>

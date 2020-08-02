@@ -14,6 +14,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <time.h>
+#include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 #include <linux/types.h>

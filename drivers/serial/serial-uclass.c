@@ -12,6 +12,7 @@
 #include <serial.h>
 #include <stdio.h>
 #include <stdio_dev.h>
+#include <vsprintf.h>
 #include <watchdog.h>
 #include <asm/global_data.h>
 #include <dm/lists.h>

@@ -7,6 +7,7 @@
 #include <common.h>
 #include <dm.h>
 #include <soc.h>
+#include <vsprintf.h>
 
 #include <asm/io.h>
 

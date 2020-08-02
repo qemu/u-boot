@@ -9,6 +9,7 @@
 #include <g_dnl.h>
 #include <stdio.h>
 #include <usb.h>
+#include <vsprintf.h>
 #include <asm/arch-rockchip/f_rockusb.h>
 
 static int do_rockusb(struct cmd_tbl *cmdtp, int flag, int argc,

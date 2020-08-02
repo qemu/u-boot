@@ -11,6 +11,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <i2c.h>
 #include <k3-avs.h>

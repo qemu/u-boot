@@ -11,6 +11,7 @@
 #include <init.h>
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>
 #include <linux/delay.h>

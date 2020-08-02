@@ -15,6 +15,7 @@
 #include <timestamp.h>
 #endif
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 
 #include "cdp.h"

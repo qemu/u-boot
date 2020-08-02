@@ -81,6 +81,7 @@
 #else
 #include <common.h>
 #include <usb.h>
+#include <vsprintf.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>
 #include <linux/errno.h>

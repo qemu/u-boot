@@ -14,6 +14,7 @@
 #include <errno.h>
 #include <init.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
 

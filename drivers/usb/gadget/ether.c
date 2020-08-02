@@ -14,6 +14,7 @@
 #include <part.h>
 #include <stdio.h>
 #include <time.h>
+#include <vsprintf.h>
 #include <asm/u-boot.h>
 #include <linux/errno.h>
 #include <linux/netdevice.h>

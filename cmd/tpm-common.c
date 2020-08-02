@@ -9,6 +9,7 @@
 #include <env.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/unaligned.h>
 #include <linux/string.h>
 #include <tpm-common.h>

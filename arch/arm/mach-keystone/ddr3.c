@@ -9,6 +9,7 @@
 #include <cpu_func.h>
 #include <env.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <common.h>
 #include <asm/arch/msmc.h>

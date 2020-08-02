@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <led.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <dm/uclass-internal.h>
 #include <linux/string.h>
 

@@ -9,6 +9,7 @@
  */
 
 #include <common.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 #include <linux/usb/ch9.h>
 #include <linux/errno.h>

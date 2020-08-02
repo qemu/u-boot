@@ -18,6 +18,7 @@
 #include <log.h>
 #include <relocate.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/u-boot-x86.h>
 #include <asm/sections.h>

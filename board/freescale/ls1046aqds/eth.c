@@ -8,6 +8,7 @@
 #include <log.h>
 #include <net.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <netdev.h>
 #include <fdt_support.h>

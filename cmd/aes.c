@@ -9,6 +9,7 @@
 #include <command.h>
 #include <uboot_aes.h>
 #include <malloc.h>
+#include <vsprintf.h>
 #include <asm/byteorder.h>
 #include <linux/compiler.h>
 #include <mapmem.h>

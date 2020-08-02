@@ -15,6 +15,7 @@
 #include <hash.h>
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <dm/uclass-internal.h>
 #include <misc.h>
 #include <linux/string.h>

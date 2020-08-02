@@ -75,6 +75,7 @@
 #include <version.h>
 #include <malloc.h>
 #include <video.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/compiler.h>

@@ -14,6 +14,7 @@
 #include <net.h>
 #include <stdio.h>
 #include <usb.h>
+#include <vsprintf.h>
 #include <watchdog.h>
 #include <linux/printk.h>
 #include <linux/string.h>

@@ -13,6 +13,7 @@
 #include <usb.h>
 #include <malloc.h>
 #include <memalign.h>
+#include <vsprintf.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/mii.h>

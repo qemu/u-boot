@@ -9,6 +9,7 @@
 #include <common.h>
 #include <command.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <dm.h>

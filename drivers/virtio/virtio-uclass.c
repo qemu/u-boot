@@ -21,6 +21,7 @@
 #include <malloc.h>
 #include <virtio_types.h>
 #include <virtio.h>
+#include <vsprintf.h>
 #include <dm/lists.h>
 #include <linux/bug.h>
 #include <linux/string.h>

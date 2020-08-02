@@ -21,6 +21,7 @@
 #include <dm.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <dm/device-internal.h>
 #include <dm/device_compat.h>

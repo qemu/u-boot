@@ -16,6 +16,7 @@
 #include <init.h>
 #include <net.h>
 #include <version.h>
+#include <vsprintf.h>
 
 static void run_preboot_environment_command(void)
 {

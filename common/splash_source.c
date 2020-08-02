@@ -21,6 +21,7 @@
 #include <splash.h>
 #include <stdio.h>
 #include <usb.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/string.h>
 

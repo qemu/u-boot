@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <part.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <dm/device-internal.h>
 #include <dm/lists.h>
 #include <dm/uclass-internal.h>

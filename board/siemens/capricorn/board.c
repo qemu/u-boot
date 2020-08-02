@@ -20,6 +20,7 @@
 #include <pca953x.h>
 #include <power-domain.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/gpio.h>
 #include <asm/arch/imx8-pins.h>
 #include <asm/arch/iomux.h>

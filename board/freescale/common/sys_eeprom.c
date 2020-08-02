@@ -12,6 +12,7 @@
 #include <i2c.h>
 #include <init.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/ctype.h>
 #include <linux/delay.h>
 #include <linux/string.h>

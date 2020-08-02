@@ -25,6 +25,7 @@
 #include <i2c.h>
 #include <stdio.h>
 #include <tca642x.h>
+#include <vsprintf.h>
 
 /* tca642x register address definitions */
 struct tca642x_bank_info tca642x_regs[] = {

@@ -12,6 +12,7 @@
 #include <log.h>
 #include <part.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 
 enum bcb_cmd {

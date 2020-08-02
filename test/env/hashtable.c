@@ -9,6 +9,7 @@
 #include <log.h>
 #include <search.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <test/env.h>
 #include <test/ut.h>
 

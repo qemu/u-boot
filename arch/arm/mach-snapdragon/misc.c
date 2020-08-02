@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <mmc.h>
+#include <vsprintf.h>
 #include <asm/arch/misc.h>
 
 /* UNSTUFF_BITS macro taken from Linux Kernel: drivers/mmc/core/sd.c */

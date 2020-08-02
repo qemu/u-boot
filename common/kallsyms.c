@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 
 /* We need the weak marking as this symbol is provided specially */

@@ -11,6 +11,7 @@
 #include <errno.h>
 #include <log.h>
 #include <malloc.h>
+#include <vsprintf.h>
 #include <test/test.h>
 #include <test/suites.h>
 #include <test/ut.h>

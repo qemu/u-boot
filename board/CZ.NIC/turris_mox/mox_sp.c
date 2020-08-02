@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <vsprintf.h>
 #include <asm/arch/soc.h>
 #include <asm/io.h>
 #include <linux/bitops.h>

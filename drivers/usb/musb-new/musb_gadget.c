@@ -23,6 +23,7 @@
 #include <linux/slab.h>
 #else
 #include <common.h>
+#include <vsprintf.h>
 #include <linux/bug.h>
 #include <linux/printk.h>
 #include <linux/string.h>

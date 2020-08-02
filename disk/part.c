@@ -15,6 +15,7 @@
 #include <part.h>
 #include <stdio.h>
 #include <ubifs_uboot.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 
 #undef	PART_DEBUG

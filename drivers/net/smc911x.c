@@ -11,6 +11,7 @@
 #include <net.h>
 #include <miiphy.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/u-boot.h>
 #include <linux/io.h>
 #include <linux/delay.h>

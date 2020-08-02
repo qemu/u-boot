@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <net.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/processor.h>
 #include <asm/io.h>
 #include <asm/mmc.h>

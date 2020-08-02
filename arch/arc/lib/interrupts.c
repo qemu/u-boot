@@ -6,6 +6,7 @@
 #include <common.h>
 #include <irq_func.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/arcregs.h>
 #include <asm/ptrace.h>
 

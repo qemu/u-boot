@@ -9,6 +9,7 @@
 #include <log.h>
 #include <net.h>
 #include <stdarg.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/string.h>
 

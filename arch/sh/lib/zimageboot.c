@@ -13,6 +13,7 @@
 #include <command.h>
 #include <env.h>
 #include <irq_func.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <asm/zimage.h>
 #include <linux/string.h>

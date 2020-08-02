@@ -76,6 +76,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <jffs2/load_kernel.h>
 #include <linux/list.h>

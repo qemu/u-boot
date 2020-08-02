@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <stdio.h>
 #include <tpm-v2.h>
+#include <vsprintf.h>
 #include <asm/state.h>
 #include <asm/unaligned.h>
 #include <linux/bitops.h>

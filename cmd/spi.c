@@ -14,6 +14,7 @@
 #include <errno.h>
 #include <spi.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 
 /*-----------------------------------------------------------------------

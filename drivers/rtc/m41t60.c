@@ -22,6 +22,7 @@
 #include <rtc.h>
 #include <i2c.h>
 #include <stdio.h>
+#include <vsprintf.h>
 
 /*
  * Convert between century and "century bits" (CB1 and CB0).  These routines

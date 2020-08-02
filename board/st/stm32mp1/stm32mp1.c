@@ -29,6 +29,7 @@
 #include <stdio.h>
 #include <syscon.h>
 #include <usb.h>
+#include <vsprintf.h>
 #include <watchdog.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

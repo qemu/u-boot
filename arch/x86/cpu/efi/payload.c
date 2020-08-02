@@ -12,6 +12,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <usb.h>
+#include <vsprintf.h>
 #include <asm/bootparam.h>
 #include <asm/e820.h>
 #include <asm/global_data.h>

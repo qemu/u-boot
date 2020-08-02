@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/libfdt.h>
 #include <fdt_support.h>
 #if CONFIG_SYS_FSL_SEC_COMPAT == 2 || CONFIG_SYS_FSL_SEC_COMPAT >= 4

@@ -22,6 +22,7 @@
 #include <malloc.h>
 #include <mapmem.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/byteorder.h>
 #include <asm/io.h>
 

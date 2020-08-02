@@ -25,6 +25,7 @@
 #include <env.h>
 #include <init.h>
 #include <time.h>
+#include <vsprintf.h>
 #include <watchdog.h>
 #include <malloc.h>
 #include <twl4030.h>

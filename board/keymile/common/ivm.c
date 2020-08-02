@@ -9,6 +9,7 @@
 #include <env.h>
 #include <i2c.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 #include "common.h"
 

@@ -26,6 +26,7 @@
 #include <log.h>
 #include <time.h>
 #include <tpm-v1.h>
+#include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/compiler.h>

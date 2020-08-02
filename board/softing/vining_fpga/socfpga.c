@@ -10,6 +10,7 @@
 #include <net.h>
 #include <status_led.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/arch/reset_manager.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

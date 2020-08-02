@@ -31,6 +31,7 @@
 #include <linux/slab.h>
 #include <linux/major.h>
 #else
+#include <vsprintf.h>
 #include <linux/bug.h>
 #include <linux/log2.h>
 #include <linux/printk.h>

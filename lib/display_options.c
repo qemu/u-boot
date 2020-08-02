@@ -11,6 +11,7 @@
 #include <div64.h>
 #include <stdio.h>
 #include <version.h>
+#include <vsprintf.h>
 #include <linux/ctype.h>
 #include <asm/io.h>
 

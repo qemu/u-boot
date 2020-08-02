@@ -11,6 +11,7 @@
 #include <mapmem.h>
 #include <image.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <asm/system.h>
 #include <asm/arch/clock.h>

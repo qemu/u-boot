@@ -9,6 +9,7 @@
 #include <env.h>
 #include <init.h>
 #include <net.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <asm/arch/sm.h>
 #include <asm/arch/eth.h>

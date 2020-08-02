@@ -5,6 +5,7 @@
  */
 
 #include <log.h>
+#include <vsprintf.h>
 #include <asm/gpio.h>
 #include <common.h>
 #include <dm.h>

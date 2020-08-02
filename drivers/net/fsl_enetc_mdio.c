@@ -10,6 +10,7 @@
 #include <pci.h>
 #include <miiphy.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <asm/processor.h>
 #include <miiphy.h>

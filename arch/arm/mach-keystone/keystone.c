@@ -10,6 +10,7 @@
 #include <env.h>
 #include <init.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <asm/arch/psc_defs.h>
 #include <asm/arch/hardware.h>

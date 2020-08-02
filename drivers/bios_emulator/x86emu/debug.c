@@ -39,6 +39,7 @@
 
 #include <stdarg.h>
 #include <common.h>
+#include <vsprintf.h>
 #include <linux/ctype.h>
 #include <linux/printk.h>
 #include <linux/string.h>

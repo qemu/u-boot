@@ -17,6 +17,7 @@
 #include <sort.h>
 #include <spl.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/compiler.h>
 #include <linux/libfdt.h>

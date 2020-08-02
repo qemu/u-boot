@@ -7,6 +7,7 @@
 #include <init.h>
 #include <net.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/mx7-pins.h>

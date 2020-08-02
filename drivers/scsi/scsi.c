@@ -14,6 +14,7 @@
 #include <pci.h>
 #include <scsi.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <dm/device-internal.h>
 #include <dm/uclass-internal.h>
 #include <linux/string.h>

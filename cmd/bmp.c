@@ -21,6 +21,7 @@
 #include <splash.h>
 #include <stdio.h>
 #include <video.h>
+#include <vsprintf.h>
 #include <asm/byteorder.h>
 #include <linux/string.h>
 

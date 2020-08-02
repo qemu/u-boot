@@ -12,6 +12,7 @@
 #include <fs.h>
 #include <part.h>
 #include <version.h>
+#include <vsprintf.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

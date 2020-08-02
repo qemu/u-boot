@@ -12,6 +12,7 @@
 #include <stdarg.h>
 #include <serial.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/ctype.h>
 
 struct printf_info {

@@ -9,6 +9,7 @@
 #include <fs.h>
 #include <net.h>
 #include <stdio.h>
+#include <vsprintf.h>
 
 #include "pxe_utils.h"
 

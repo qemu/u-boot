@@ -8,6 +8,7 @@
 #include <blk.h>
 #include <errno.h>
 #include <dm.h>
+#include <vsprintf.h>
 #include <dm/device.h>
 #include "nvme.h"
 

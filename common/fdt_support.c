@@ -13,6 +13,7 @@
 #include <net.h>
 #include <stdio.h>
 #include <stdio_dev.h>
+#include <vsprintf.h>
 #include <linux/ctype.h>
 #include <linux/string.h>
 #include <linux/types.h>

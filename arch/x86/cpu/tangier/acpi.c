@@ -8,6 +8,7 @@
 #include <common.h>
 #include <cpu.h>
 #include <dm.h>
+#include <vsprintf.h>
 #include <acpi/acpi_table.h>
 #include <asm/ioapic.h>
 #include <asm/mpspec.h>

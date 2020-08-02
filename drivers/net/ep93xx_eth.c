@@ -21,6 +21,7 @@
 #include <log.h>
 #include <net.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/arch/ep93xx.h>
 #include <asm/io.h>
 #include <malloc.h>

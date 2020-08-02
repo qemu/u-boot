@@ -12,6 +12,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/ctype.h>
 #include <linux/delay.h>
 #include <linux/string.h>

@@ -19,6 +19,7 @@
 #include <i2c.h>
 #include <miiphy.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/u-boot.h>
 #include <linux/libfdt.h>
 #include <fdt_support.h>

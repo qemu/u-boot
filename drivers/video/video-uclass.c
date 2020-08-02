@@ -15,6 +15,7 @@
 #include <time.h>
 #include <video.h>
 #include <video_console.h>
+#include <vsprintf.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <dm/lists.h>

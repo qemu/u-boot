@@ -11,6 +11,7 @@
 #include <common.h>
 #include <dm.h>
 #include <mapmem.h>
+#include <vsprintf.h>
 #include <asm/gpio.h>
 #include <linux/string.h>
 

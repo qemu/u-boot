@@ -7,6 +7,7 @@
 #include <common.h>
 #include <dm.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <netdev.h>
 #include <fm_eth.h>

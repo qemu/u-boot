@@ -18,6 +18,7 @@
 #include <init.h>
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/bitops.h>
 #include <linux/string.h>
 

@@ -13,6 +13,7 @@
 #include <malloc.h>
 #include <stdio.h>
 #include <time.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/libfdt_env.h>
 #include <linux/string.h>

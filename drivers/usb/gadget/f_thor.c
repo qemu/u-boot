@@ -24,6 +24,7 @@
 #include <memalign.h>
 #include <stdio.h>
 #include <version.h>
+#include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/printk.h>
 #include <linux/string.h>

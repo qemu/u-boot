@@ -17,6 +17,7 @@
 #include <env.h>
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/bitops.h>
 #include <linux/ctype.h>
 #include <asm/types.h>

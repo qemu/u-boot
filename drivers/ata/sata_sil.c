@@ -11,6 +11,7 @@
 #include <pci.h>
 #include <command.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/byteorder.h>
 #include <malloc.h>
 #include <asm/io.h>

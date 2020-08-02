@@ -8,6 +8,7 @@
 #include <log.h>
 #include <ns16550.h>
 #include <serial.h>
+#include <vsprintf.h>
 #include <asm/arch/slimbootloader.h>
 #include <asm/global_data.h>
 

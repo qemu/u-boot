@@ -11,6 +11,7 @@
 #ifdef CONFIG_SYS_P4080_ERRATUM_SERDES8
 #include <hwconfig.h>
 #endif
+#include <vsprintf.h>
 #include <asm/fsl_serdes.h>
 #include <asm/io.h>
 #include <asm/ppc.h>

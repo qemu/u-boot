@@ -14,6 +14,7 @@
 #include <pci.h>
 #include <stdio.h>
 #include <time.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <linux/string.h>
 

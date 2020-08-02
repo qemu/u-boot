@@ -57,6 +57,7 @@
  */
 
 #include <dm.h>
+#include <vsprintf.h>
 #include <dm/device_compat.h>
 #include <dm/devres.h>
 #include <linux/bitops.h>

@@ -13,6 +13,7 @@
 #include <part.h>
 #include <mmc.h>
 #include <stdlib.h>
+#include <vsprintf.h>
 #include <linux/bitops.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>

@@ -9,6 +9,7 @@
 #include <malloc.h>
 #include <spi.h>
 #include <spi_flash.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <dm/device-internal.h>
 #include <linux/string.h>

@@ -20,6 +20,7 @@
 #include <lmb.h>
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <dm/root.h>

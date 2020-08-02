@@ -62,6 +62,7 @@
 #include <errno.h>
 #include <fdtdec.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/ctype.h>
 #include <linux/string.h>
 

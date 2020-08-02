@@ -28,6 +28,7 @@
 #include <linux/gfp.h>
 #include <linux/slab.h>
 #else
+#include <vsprintf.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>
 #include <linux/err.h>

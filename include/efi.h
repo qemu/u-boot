@@ -17,6 +17,7 @@
 #define _EFI_H
 
 #include <stdarg.h>
+#include <vsprintf.h>
 #include <linux/linkage.h>
 #include <linux/string.h>
 #include <linux/types.h>

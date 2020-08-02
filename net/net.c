@@ -99,6 +99,7 @@
 #include <net.h>
 #include <stdio.h>
 #include <time.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 #include <net/fastboot.h>
 #include <net/tftp.h>

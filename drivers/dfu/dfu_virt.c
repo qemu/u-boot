@@ -7,6 +7,7 @@
 #include <errno.h>
 #include <log.h>
 #include <malloc.h>
+#include <vsprintf.h>
 
 int __weak dfu_write_medium_virt(struct dfu_entity *dfu, u64 offset,
 				 void *buf, long *len)

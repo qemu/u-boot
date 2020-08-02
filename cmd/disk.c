@@ -11,6 +11,7 @@
 #include <log.h>
 #include <part.h>
 #include <stdio.h>
+#include <vsprintf.h>
 
 int common_diskboot(struct cmd_tbl *cmdtp, const char *intf, int argc,
 		    char *const argv[])

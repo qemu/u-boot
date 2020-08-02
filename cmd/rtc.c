@@ -9,6 +9,7 @@
 #include <mapmem.h>
 #include <rtc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 
 #define MAX_RTC_BYTES 32

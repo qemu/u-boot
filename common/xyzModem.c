@@ -23,6 +23,7 @@
  */
 #include <common.h>
 #include <time.h>
+#include <vsprintf.h>
 #include <xyzModem.h>
 #include <stdarg.h>
 #include <u-boot/crc.h>

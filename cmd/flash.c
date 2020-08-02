@@ -12,6 +12,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <uuid.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 
 #if defined(CONFIG_CMD_MTDPARTS)

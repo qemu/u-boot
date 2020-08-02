@@ -10,6 +10,7 @@
 #include <env.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <zynqmp_firmware.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/sys_proto.h>

@@ -17,6 +17,7 @@
 #include <stdio.h>
 #include <usb.h>
 #include <usb_mass_storage.h>
+#include <vsprintf.h>
 #include <watchdog.h>
 #include <linux/delay.h>
 #include <linux/printk.h>

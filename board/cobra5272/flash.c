@@ -11,6 +11,7 @@
 #include <irq_func.h>
 #include <time.h>
 #include <uuid.h>
+#include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 
@@ -77,7 +78,7 @@ unsigned long flash_init(void)
 		if (i == 0)
 			flashbase = PHYS_FLASH_1;
 		else
-			panic ("configured to many flash banks!\n");
+			panic("configured to many flash banks!\n");
 
 		for (j = 0; j < flash_info[i].sector_count; j++) {
 			if (j == 0) {

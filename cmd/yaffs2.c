@@ -15,6 +15,7 @@
 
 #include <common.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 
 #include <config.h>

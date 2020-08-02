@@ -12,6 +12,7 @@
 #include <spi.h>
 #include <spi_flash.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <jffs2/load_kernel.h>
 #include <linux/mtd/mtd.h>
 #include <linux/string.h>

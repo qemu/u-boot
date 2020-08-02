@@ -10,6 +10,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <rtc.h>
+#include <vsprintf.h>
 #include <acpi/acpi_s3.h>
 #include <asm/cmos_layout.h>
 #include <asm/early_cmos.h>

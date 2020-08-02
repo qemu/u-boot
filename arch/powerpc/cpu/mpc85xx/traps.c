@@ -21,6 +21,7 @@
 
 #include <common.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/ptrace.h>
 #include <command.h>

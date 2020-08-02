@@ -7,6 +7,7 @@
 #include <malloc.h>
 #include <net.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/u-boot.h>
 #include <linux/compiler.h>
 #include <linux/delay.h>

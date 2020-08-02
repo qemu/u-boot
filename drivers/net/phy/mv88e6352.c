@@ -9,6 +9,7 @@
 #include <log.h>
 #include <miiphy.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <mv88e6352.h>

@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <stdio_dev.h>
 #include <time.h>
+#include <vsprintf.h>
 #include <watchdog.h>
 #include <div64.h>
 #include <post.h>

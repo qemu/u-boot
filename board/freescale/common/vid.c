@@ -10,6 +10,7 @@
 #include <irq_func.h>
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #ifdef CONFIG_FSL_LSCH2
 #include <asm/arch/immap_lsch2.h>

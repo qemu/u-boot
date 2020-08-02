@@ -16,6 +16,7 @@
 #include <net.h>
 #include <phy.h>
 #include <reset.h>
+#include <vsprintf.h>
 #include <wait_bit.h>
 #include <asm/io.h>
 #include <linux/printk.h>

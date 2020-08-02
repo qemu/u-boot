@@ -11,6 +11,7 @@
 #include <mpc83xx.h>
 #include <command.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/ppc.h>
 #include <linux/string.h>
 

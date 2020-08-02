@@ -19,6 +19,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <uuid.h>
+#include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 #include <net/tftp.h>

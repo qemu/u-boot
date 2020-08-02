@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <vsprintf.h>
 #include <linux/libfdt.h>
 #include <dm/of_access.h>
 #include <dm/of_extra.h>

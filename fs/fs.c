@@ -21,6 +21,7 @@
 #include <time.h>
 #include <ubifs_uboot.h>
 #include <btrfs.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <div64.h>

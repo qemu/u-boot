@@ -13,6 +13,7 @@
 #include <log.h>
 #include <spl.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/printk.h>
 #include <linux/string.h>

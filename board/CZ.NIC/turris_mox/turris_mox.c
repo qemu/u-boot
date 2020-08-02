@@ -6,6 +6,7 @@
 #include <common.h>
 #include <stdarg.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/soc.h>
 #include <net.h>

@@ -11,6 +11,7 @@
 
 #include <common.h>
 #include <errno.h>
+#include <vsprintf.h>
 #include <linux/ctype.h>
 #include <linux/string.h>
 

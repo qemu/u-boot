@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <uuid.h>
+#include <vsprintf.h>
 #include <linux/ctype.h>
 #include <errno.h>
 #include <common.h>

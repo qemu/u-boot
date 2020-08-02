@@ -8,6 +8,7 @@
 #include <log.h>
 #include <stdarg.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <dm/device-internal.h>
 #include <dm/lists.h>

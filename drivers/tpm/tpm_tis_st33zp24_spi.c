@@ -20,6 +20,7 @@
 #include <time.h>
 #include <tpm-v1.h>
 #include <errno.h>
+#include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 #include <linux/types.h>

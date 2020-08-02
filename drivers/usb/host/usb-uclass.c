@@ -13,6 +13,7 @@
 #include <memalign.h>
 #include <stdio.h>
 #include <usb.h>
+#include <vsprintf.h>
 #include <dm/device-internal.h>
 #include <dm/lists.h>
 #include <dm/uclass-internal.h>

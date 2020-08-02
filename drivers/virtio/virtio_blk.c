@@ -11,6 +11,7 @@
 #include <virtio_types.h>
 #include <virtio.h>
 #include <virtio_ring.h>
+#include <vsprintf.h>
 #include "virtio_blk.h"
 
 struct virtio_blk_priv {

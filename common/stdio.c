@@ -19,6 +19,7 @@
 #include <stdio_dev.h>
 #include <serial.h>
 #include <splash.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/string.h>
 

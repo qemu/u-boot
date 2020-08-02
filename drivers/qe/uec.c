@@ -10,6 +10,7 @@
 #include <net.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

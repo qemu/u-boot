@@ -13,6 +13,7 @@
 #include <os.h>
 #include <stdio.h>
 #include <time.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/test.h>
 #include <asm/u-boot-sandbox.h>

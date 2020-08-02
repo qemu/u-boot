@@ -9,6 +9,7 @@
 #include <net.h>
 #include <config.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/printk.h>

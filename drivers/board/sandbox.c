@@ -7,6 +7,7 @@
 #include <common.h>
 #include <dm.h>
 #include <board.h>
+#include <vsprintf.h>
 
 #include "sandbox.h"
 

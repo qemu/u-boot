@@ -14,6 +14,7 @@
 #include <log.h>
 #include <net.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/emif.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/sys_proto.h>

@@ -9,6 +9,7 @@
 #include <malloc.h>
 #include <stdio.h>
 #include <ubi_uboot.h>
+#include <vsprintf.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 #include "ubi.h"

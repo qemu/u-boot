@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <tpm-common.h>
 #include <tpm-v2.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 #include "tpm-user-utils.h"
 

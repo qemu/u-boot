@@ -22,6 +22,7 @@
 #include <fdt_support.h>
 #include <stdio.h>
 #include <time.h>
+#include <vsprintf.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

@@ -8,6 +8,7 @@
 #include <errno.h>
 #include <dm.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <dm/uclass-internal.h>
 #include <power/pmic.h>
 

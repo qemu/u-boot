@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <rng.h>
 #include <stdio.h>
+#include <vsprintf.h>
 
 static int do_rng(struct cmd_tbl *cmdtp, int flag, int argc, char *const argv[])
 {

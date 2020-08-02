@@ -6,6 +6,7 @@
  */
 
 #ifdef __UBOOT__
+#include <vsprintf.h>
 #include <linux/compat.h>
 #else
 #include <linux/module.h>

@@ -18,6 +18,7 @@
 #include <stdio.h>
 #include <syscon.h>
 #include <time.h>
+#include <vsprintf.h>
 #include <wait_bit.h>
 #include <asm/cache.h>
 #include <asm/gpio.h>

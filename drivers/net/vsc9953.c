@@ -9,6 +9,7 @@
 #include <command.h>
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <asm/fsl_serdes.h>
 #include <fm_eth.h>

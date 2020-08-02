@@ -32,6 +32,7 @@
 #include <common.h>
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 #include <malloc.h>
 #include <lattice.h>

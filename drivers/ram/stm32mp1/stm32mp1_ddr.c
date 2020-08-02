@@ -10,6 +10,7 @@
 #include <reset.h>
 #include <stdio.h>
 #include <timer.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <asm/arch/ddr.h>
 #include <linux/bitops.h>

@@ -11,6 +11,7 @@
 #include <pwm.h>
 #include <div64.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/bitops.h>
 #include <linux/io.h>
 

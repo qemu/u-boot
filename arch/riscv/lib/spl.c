@@ -9,6 +9,7 @@
 #include <init.h>
 #include <log.h>
 #include <spl.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/smp.h>
 

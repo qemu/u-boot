@@ -9,6 +9,7 @@
 #include <common.h>
 #include <dm.h>
 #include <soc.h>
+#include <vsprintf.h>
 
 int soc_sandbox_get_family(struct udevice *dev, char *buf, int size)
 {

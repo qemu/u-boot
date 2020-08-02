@@ -10,6 +10,7 @@
 #include <rand.h>
 #include <reset.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

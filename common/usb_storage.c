@@ -41,6 +41,7 @@
 #include <mapmem.h>
 #include <memalign.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/byteorder.h>
 #include <asm/cache.h>
 #include <asm/processor.h>

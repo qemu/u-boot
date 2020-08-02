@@ -9,6 +9,7 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <linux/errno.h>
 #include <asm/arch/sys_proto.h>

@@ -11,6 +11,7 @@
 #include <common.h>
 #include <hexdump.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/ctype.h>
 #include <linux/compat.h>
 #include <linux/log2.h>

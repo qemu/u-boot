@@ -15,6 +15,7 @@
 #include <part.h>
 #include <stdio.h>
 #include <uuid.h>
+#include <vsprintf.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <asm/unaligned.h>

@@ -17,6 +17,7 @@
 #include <miiphy.h>
 #include <malloc.h>
 #include <time.h>
+#include <vsprintf.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <linux/bitops.h>

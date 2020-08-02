@@ -11,6 +11,7 @@
 #include <errno.h>
 #include <stdio.h>
 #include <time.h>
+#include <vsprintf.h>
 #include <watchdog.h>
 
 #ifndef CONFIG_BOOT_RETRY_MIN

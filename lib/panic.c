@@ -16,6 +16,7 @@
 #endif
 #include <stdarg.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/delay.h>
 
 static void panic_finish(void) __attribute__ ((noreturn));

@@ -8,6 +8,7 @@
 #include <init.h>
 #include <mmc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <u-boot/md5.h>
 #include <usb.h>
 #include <watchdog.h>

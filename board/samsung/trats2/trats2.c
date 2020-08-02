@@ -9,6 +9,7 @@
 #include <lcd.h>
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/gpio.h>
 #include <asm/arch/pinmux.h>
 #include <asm/arch/power.h>

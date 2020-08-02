@@ -14,6 +14,7 @@
 #include <command.h>
 #include <irq_func.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/ptrace.h>
 #include <asm/string.h>
 #include <asm/regs.h>

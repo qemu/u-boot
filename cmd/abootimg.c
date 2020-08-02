@@ -10,6 +10,7 @@
 #include <image.h>
 #include <mapmem.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 
 #define abootimg_addr() \

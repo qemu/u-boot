@@ -11,6 +11,7 @@
 #include <lcd.h>
 #include <log.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <asm/gpio.h>
 #include <asm/arch/cpu.h>

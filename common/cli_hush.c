@@ -87,6 +87,7 @@
 #ifndef CONFIG_SYS_PROMPT_HUSH_PS2
 #define CONFIG_SYS_PROMPT_HUSH_PS2	"> "
 #endif
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/string.h>
 #endif

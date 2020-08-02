@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <stdio.h>
 #include <video_fb.h>
+#include <vsprintf.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 

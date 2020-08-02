@@ -7,6 +7,7 @@
 #include <malloc.h>
 #include <mapmem.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/ctype.h>
 #include <linux/string.h>
 

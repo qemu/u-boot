@@ -17,6 +17,7 @@
 #include <scsi.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <wdt.h>
 #include <asm/arch/clk.h>
 #include <asm/arch/hardware.h>

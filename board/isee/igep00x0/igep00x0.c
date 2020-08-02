@@ -14,6 +14,7 @@
 #include <twl4030.h>
 #include <netdev.h>
 #include <spl.h>
+#include <vsprintf.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <asm/arch/mem.h>

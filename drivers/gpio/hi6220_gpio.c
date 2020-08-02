@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <vsprintf.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <errno.h>

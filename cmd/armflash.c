@@ -10,6 +10,7 @@
 #include <console.h>
 #include <flash.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <linux/string.h>
 

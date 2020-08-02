@@ -24,6 +24,7 @@
 #include <fdtdec.h>
 #include <i2c.h>
 #include <malloc.h>
+#include <vsprintf.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <dm/device_compat.h>

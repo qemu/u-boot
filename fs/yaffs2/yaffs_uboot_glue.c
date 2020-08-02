@@ -23,6 +23,7 @@
 #include <div64.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

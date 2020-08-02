@@ -17,6 +17,7 @@
 #include <cpu_func.h>
 #include <dm.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <dm/device-internal.h>

@@ -31,6 +31,7 @@
 #include <memalign.h>
 #include <stdio.h>
 #include <time.h>
+#include <vsprintf.h>
 #include <asm/processor.h>
 #include <asm/unaligned.h>
 #include <linux/ctype.h>

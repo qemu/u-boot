@@ -14,6 +14,7 @@
 #include <fs.h>
 #include <part.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/cache.h>
 
 int do_fat_size(struct cmd_tbl *cmdtp, int flag, int argc, char *const argv[])

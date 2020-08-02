@@ -18,6 +18,7 @@
 #include <spi_flash.h>
 #include <stdio.h>
 #include <time.h>
+#include <vsprintf.h>
 #include <asm/cache.h>
 #include <jffs2/jffs2.h>
 #include <linux/mtd/mtd.h>

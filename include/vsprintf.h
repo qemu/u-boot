@@ -8,6 +8,7 @@
 #define __VSPRINTF_H
 
 #include <stdarg.h>
+#include <stdbool.h>
 #include <linux/types.h>
 
 ulong simple_strtoul(const char *cp, char **endp, unsigned int base);

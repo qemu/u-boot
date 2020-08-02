@@ -7,6 +7,7 @@
 #include <command.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <pci.h>
 #include <linux/string.h>

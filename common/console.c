@@ -20,6 +20,7 @@
 #include <stdio_dev.h>
 #include <exports.h>
 #include <env_internal.h>
+#include <vsprintf.h>
 #include <watchdog.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>

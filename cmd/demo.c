@@ -12,6 +12,7 @@
 #include <dm-demo.h>
 #include <mapmem.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 
 struct udevice *demo_dev;

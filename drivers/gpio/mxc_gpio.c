@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <dm.h>
 #include <malloc.h>
+#include <vsprintf.h>
 #include <asm/arch/imx-regs.h>
 #include <asm/gpio.h>
 #include <asm/io.h>

@@ -8,6 +8,7 @@
 #include <common.h>
 #include <init.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/e820.h>
 #include <asm/arch/sysinfo.h>
 #include <asm/global_data.h>

@@ -14,6 +14,7 @@
 #include <init.h>
 #include <netdev.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/u-boot.h>
 #include <linux/compiler.h>
 #include <asm/mmu.h>

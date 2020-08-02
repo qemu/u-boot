@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/ppc.h>
 
 #include <fsl_ddr_sdram.h>

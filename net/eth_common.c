@@ -11,6 +11,7 @@
 #include <env.h>
 #include <miiphy.h>
 #include <net.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 #include "eth_internal.h"
 

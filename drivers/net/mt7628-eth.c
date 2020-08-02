@@ -22,6 +22,7 @@
 #include <net.h>
 #include <reset.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <wait_bit.h>
 #include <asm/cache.h>
 #include <asm/io.h>

@@ -20,6 +20,7 @@
 #include <log.h>
 #include <stdarg.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 
 #include <asm/arch/sys_proto.h>

@@ -6,8 +6,9 @@
  *
  */
 
-#include "pinctrl-snapdragon.h"
 #include <common.h>
+#include <vsprintf.h>
+#include "pinctrl-snapdragon.h"
 
 #define MAX_PIN_NAME_LEN 32
 static char pin_name[MAX_PIN_NAME_LEN];

@@ -14,6 +14,7 @@
 #include <errno.h>
 #include <log.h>
 #include <net.h>
+#include <vsprintf.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/mii.h>

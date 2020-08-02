@@ -16,6 +16,7 @@
 #include <stdio.h>
 #include <tsec.h>
 #include <fsl_mdio.h>
+#include <vsprintf.h>
 #include <asm/u-boot.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

@@ -11,6 +11,7 @@
 #include <mmc.h>
 #include <part.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/arch/stm32mp1_smc.h>
 #include <asm/global_data.h>
 #include <dm/uclass.h>

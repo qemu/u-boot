@@ -9,6 +9,7 @@
 #include <mapmem.h>
 #include <stdio.h>
 #include <trace.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 
 static int get_args(int argc, char *const argv[], char **buff,

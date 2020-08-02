@@ -17,7 +17,6 @@
 #include <errno.h>
 #include <linux/types.h>
 #include <linux/kernel.h>
-#include <vsprintf.h>
 #endif	/* __ASSEMBLY__ */
 
 /* Pull in stuff for the build system */

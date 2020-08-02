@@ -12,6 +12,7 @@
 #include <malloc.h>
 #include <errno.h>
 #include <dfu.h>
+#include <vsprintf.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

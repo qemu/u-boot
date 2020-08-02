@@ -13,6 +13,7 @@
 #include <net.h>
 #include <stdio.h>
 #include <usb.h>
+#include <vsprintf.h>
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <asm/gpio.h>

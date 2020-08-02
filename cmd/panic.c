@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <vsprintf.h>
 
 static int do_panic(struct cmd_tbl *cmdtp, int flag, int argc,
 		    char * const argv[])

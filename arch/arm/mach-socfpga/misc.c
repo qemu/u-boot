@@ -7,6 +7,7 @@
 #include <command.h>
 #include <cpu_func.h>
 #include <hang.h>
+#include <vsprintf.h>
 #include <asm/cache.h>
 #include <init.h>
 #include <asm/global_data.h>

@@ -11,6 +11,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <wait_bit.h>
 #include <watchdog.h>
 #include <asm/cache.h>

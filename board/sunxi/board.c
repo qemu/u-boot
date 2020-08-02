@@ -22,6 +22,7 @@
 #include <generic-phy.h>
 #include <phy-sun4i-usb.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/display.h>

@@ -10,6 +10,7 @@
 #include <common.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/io.h>
 #include <asm/ppc.h>
 #include <linux/string.h>

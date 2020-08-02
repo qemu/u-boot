@@ -10,6 +10,7 @@
 #include <malloc.h>
 #include <part.h>
 #include <stdio.h>
+#include <vsprintf.h>
 
 static int blkc_show(struct cmd_tbl *cmdtp, int flag,
 		     int argc, char *const argv[])

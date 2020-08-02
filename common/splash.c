@@ -26,6 +26,7 @@
 #include <splash.h>
 #include <lcd.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/string.h>
 
 static struct splash_location default_splash_locations[] = {

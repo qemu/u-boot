@@ -15,6 +15,7 @@
 #include <u-boot/crc.h>
 #else
 #include <stdio.h>
+#include <vsprintf.h>
 #include <linux/compiler.h>
 #include <linux/kconfig.h>
 #include <common.h>

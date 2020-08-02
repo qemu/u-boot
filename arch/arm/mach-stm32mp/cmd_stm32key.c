@@ -8,6 +8,7 @@
 #include <console.h>
 #include <misc.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <dm/device.h>
 #include <dm/uclass.h>
 #include <linux/printk.h>

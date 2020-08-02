@@ -16,6 +16,7 @@
 #include <fdtdec.h>
 #include <i2c.h>
 #include <lcd.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>

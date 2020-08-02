@@ -14,6 +14,7 @@
 #include <part.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <vsprintf.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

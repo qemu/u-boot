@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <log.h>
 #include <stdarg.h>
+#include <vsprintf.h>
 #include <asm/unaligned.h>
 #include <tpm-common.h>
 #include <linux/string.h>

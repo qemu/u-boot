@@ -17,6 +17,7 @@
 #include <init.h>
 #include <net.h>
 #include <stdio.h>
+#include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
