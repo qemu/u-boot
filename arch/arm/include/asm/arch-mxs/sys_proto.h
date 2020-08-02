@@ -10,6 +10,7 @@
 #define __MXS_SYS_PROTO_H__
 
 #include <asm/mach-imx/sys_proto.h>
+#include <asm/u-boot.h>
 
 int mxsmmc_initialize(struct bd_info *bis, int id, int (*wp)(int),
 		      int (*cd)(int));

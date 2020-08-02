@@ -16,6 +16,8 @@
 #include <serial.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
+#include <asm/ppc.h>
+#include <asm/u-boot.h>
 #include <dm/uclass.h>
 #include <wdt.h>
 #include <linux/delay.h>

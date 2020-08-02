@@ -19,6 +19,7 @@
 #ifdef CONFIG_ARM
 #include <asm/arch/clock.h>
 #endif
+#include <asm/u-boot.h>
 #include "pcie_layerscape.h"
 #include "pcie_layerscape_fixup_common.h"
 

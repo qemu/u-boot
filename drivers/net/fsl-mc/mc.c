@@ -12,6 +12,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <asm/global_data.h>
+#include <asm/u-boot.h>
 #include <linux/bug.h>
 #include <asm/io.h>
 #include <linux/delay.h>

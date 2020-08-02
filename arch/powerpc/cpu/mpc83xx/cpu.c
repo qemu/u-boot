@@ -19,7 +19,8 @@
 #include <command.h>
 #include <mpc83xx.h>
 #include <asm/global_data.h>
-#include <asm/processor.h>
+#include <asm/ppc.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/libfdt.h>
 #include <tsec.h>

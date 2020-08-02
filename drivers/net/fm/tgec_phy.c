@@ -10,6 +10,7 @@
 #include <asm/io.h>
 #include <fsl_tgec.h>
 #include <fm_eth.h>
+#include <asm/u-boot.h>
 #include <linux/string.h>
 
 /*

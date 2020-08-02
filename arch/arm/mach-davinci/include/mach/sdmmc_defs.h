@@ -9,6 +9,7 @@
 #define _SDMMC_DEFS_H_
 
 #include <asm/arch/hardware.h>
+#include <asm/u-boot.h>
 
 /* MMC Control Reg fields */
 #define MMCCTL_DATRST		(1 << 0)

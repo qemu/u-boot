@@ -8,6 +8,7 @@
 #include <common.h>
 #include <fdtdec.h>
 #include <i2c.h>
+#include <asm/u-boot.h>
 #include <linux/bitops.h>
 #include <linux/libfdt.h>
 #include <pca953x.h>

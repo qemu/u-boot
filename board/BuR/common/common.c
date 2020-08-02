@@ -16,6 +16,7 @@
 #include <i2c.h>
 #include <lcd.h>
 #include <asm/global_data.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 #include "bur_common.h"

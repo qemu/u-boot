@@ -7,7 +7,7 @@
 #include <common.h>
 #include <command.h>
 #include <init.h>
-#include <asm/processor.h>
+#include <asm/ppc.h>
 #include <asm/io.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>

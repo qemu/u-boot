@@ -25,6 +25,7 @@
 #include <i2c.h>
 #include <mmc.h>
 #include <spl.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 

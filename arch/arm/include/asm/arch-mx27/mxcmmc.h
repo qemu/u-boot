@@ -6,6 +6,7 @@
 #ifndef ASM_ARCH_MXCMMC_H
 #define ASM_ARCH_MXCMMC_H
 
+#include <asm/u-boot.h>
 int mxc_mmc_init(struct bd_info *bis);
 
 #endif

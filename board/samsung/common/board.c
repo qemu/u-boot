@@ -33,6 +33,7 @@
 #include <stdio_dev.h>
 #include <usb.h>
 #include <dwc3-uboot.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <samsung/misc.h>
 #include <dm/pinctrl.h>

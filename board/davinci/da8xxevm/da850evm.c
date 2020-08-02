@@ -23,6 +23,7 @@
 #include <asm/arch/pinmux_defs.h>
 #include <asm/io.h>
 #include <asm/arch/davinci_misc.h>
+#include <asm/u-boot.h>
 #include <linux/errno.h>
 #include <hwconfig.h>
 #include <asm/mach-types.h>

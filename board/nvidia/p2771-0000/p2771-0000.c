@@ -9,6 +9,7 @@
 #include <i2c.h>
 #include <log.h>
 #include <net.h>
+#include <asm/u-boot.h>
 #include <linux/libfdt.h>
 #include <asm/arch-tegra/cboot.h>
 #include <linux/string.h>

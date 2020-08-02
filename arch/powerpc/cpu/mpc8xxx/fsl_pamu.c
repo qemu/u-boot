@@ -10,6 +10,7 @@
 #include <linux/bitops.h>
 #include <linux/log2.h>
 #include <malloc.h>
+#include <asm/ppc.h>
 #include <asm/fsl_pamu.h>
 #include <linux/string.h>
 

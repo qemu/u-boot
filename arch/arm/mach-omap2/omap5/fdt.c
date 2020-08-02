@@ -6,6 +6,7 @@
 #include <common.h>
 #include <hang.h>
 #include <log.h>
+#include <asm/u-boot.h>
 #include <linux/libfdt.h>
 #include <fdt_support.h>
 #include <malloc.h>

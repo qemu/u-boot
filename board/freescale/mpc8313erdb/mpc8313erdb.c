@@ -21,6 +21,8 @@
 #include <asm/gpio.h>
 #endif
 #include <asm/global_data.h>
+#include <asm/ppc.h>
+#include <asm/u-boot.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -12,6 +12,7 @@
 #include <asm/io.h>
 #include <asm/pci.h>
 #include <netdev.h>
+#include <asm/u-boot.h>
 #include "r7780mp.h"
 
 int checkboard(void)

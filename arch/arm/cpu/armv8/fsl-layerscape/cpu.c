@@ -17,6 +17,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/ptrace.h>
+#include <asm/u-boot.h>
 #include <linux/errno.h>
 #include <asm/system.h>
 #include <fm_eth.h>

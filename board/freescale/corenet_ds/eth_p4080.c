@@ -22,6 +22,7 @@
 #include <fsl_mdio.h>
 #include <miiphy.h>
 #include <phy.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 
 #include "../common/ngpixis.h"

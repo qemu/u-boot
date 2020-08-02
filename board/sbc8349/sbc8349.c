@@ -14,6 +14,7 @@
 #include <mpc83xx.h>
 #include <asm/bitops.h>
 #include <asm/global_data.h>
+#include <asm/ppc.h>
 #include <asm/mpc8349_pci.h>
 #include <i2c.h>
 #include <spd_sdram.h>
@@ -21,6 +22,7 @@
 #if defined(CONFIG_OF_LIBFDT)
 #include <linux/libfdt.h>
 #endif
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 
 DECLARE_GLOBAL_DATA_PTR;

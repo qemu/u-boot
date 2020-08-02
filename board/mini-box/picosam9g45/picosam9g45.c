@@ -22,6 +22,7 @@
 #include <asm/arch/gpio.h>
 #include <asm/arch/clk.h>
 #include <lcd.h>
+#include <asm/u-boot.h>
 #include <linux/mtd/rawnand.h>
 #include <atmel_lcdc.h>
 #include <atmel_mci.h>

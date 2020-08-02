@@ -13,6 +13,7 @@
 #include <asm/arch/pinmux.h>
 #include <asm/arch/dwmmc.h>
 #include <asm/arch/power.h>
+#include <asm/u-boot.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

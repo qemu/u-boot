@@ -16,6 +16,7 @@
 #include <hwconfig.h>
 #include <phy.h>
 #include <miiphy.h>
+#include <asm/u-boot.h>
 #include <linux/bug.h>
 #include <linux/compat.h>
 #include <fsl-mc/fsl_dpmac.h>

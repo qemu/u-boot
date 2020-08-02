@@ -10,6 +10,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <asm/u-boot.h>
 #include <linux/types.h>
 
 #define NUM_SYS_CLKS	7

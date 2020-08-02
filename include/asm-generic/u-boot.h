@@ -24,6 +24,7 @@
 #ifndef __ASSEMBLY__
 
 #include <asm/types.h>
+#include <asm/u-boot.h>
 #include <linux/types.h>
 
 struct bd_info {

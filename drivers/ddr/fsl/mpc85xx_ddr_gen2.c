@@ -5,7 +5,7 @@
 
 #include <common.h>
 #include <asm/io.h>
-#include <asm/processor.h>
+#include <asm/ppc.h>
 #include <fsl_ddr_sdram.h>
 #include <linux/delay.h>
 

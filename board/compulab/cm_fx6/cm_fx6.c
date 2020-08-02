@@ -33,6 +33,7 @@
 #include <asm/mach-imx/video.h>
 #include <asm/io.h>
 #include <asm/gpio.h>
+#include <asm/u-boot.h>
 #include <dm/platform_data/serial_mxc.h>
 #include <dm/device-internal.h>
 #include <jffs2/load_kernel.h>

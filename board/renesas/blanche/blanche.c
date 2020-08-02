@@ -21,6 +21,7 @@
 #include <asm/mach-types.h>
 #include <asm/processor.h>
 #include <dm.h>
+#include <asm/u-boot.h>
 #include <dm/platform_data/serial_sh.h>
 #include <env.h>
 #include <hang.h>

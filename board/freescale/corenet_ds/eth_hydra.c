@@ -56,6 +56,7 @@
 #include <malloc.h>
 #include <fdt_support.h>
 #include <fsl_dtsec.h>
+#include <asm/u-boot.h>
 #include <linux/string.h>
 
 #include "../common/ngpixis.h"

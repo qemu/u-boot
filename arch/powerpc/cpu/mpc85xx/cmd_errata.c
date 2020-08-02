@@ -8,7 +8,8 @@
 #include <init.h>
 #include <linux/compiler.h>
 #include <fsl_errata.h>
-#include <asm/processor.h>
+#include <asm/immap_85xx.h>
+#include <asm/ppc.h>
 #include <fsl_usb.h>
 #include "fsl_corenet_serdes.h"
 

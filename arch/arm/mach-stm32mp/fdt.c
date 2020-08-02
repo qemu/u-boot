@@ -9,6 +9,7 @@
 #include <log.h>
 #include <tee.h>
 #include <asm/arch/sys_proto.h>
+#include <asm/u-boot.h>
 #include <dt-bindings/pinctrl/stm32-pinfunc.h>
 #include <linux/io.h>
 #include <linux/string.h>

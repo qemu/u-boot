@@ -16,6 +16,7 @@
 #include <watchdog.h>
 #include <asm/global_data.h>
 #include <asm/ptrace.h>
+#include <asm/ppc.h>
 #include <linux/bitops.h>
 
 DECLARE_GLOBAL_DATA_PTR;

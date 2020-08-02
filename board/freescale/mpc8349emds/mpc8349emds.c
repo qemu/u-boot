@@ -12,6 +12,7 @@
 #include <asm/bitops.h>
 #include <asm/global_data.h>
 #include <asm/mpc8349_pci.h>
+#include <asm/ppc.h>
 #include <i2c.h>
 #include <spi.h>
 #include <miiphy.h>
@@ -20,6 +21,7 @@
 #else
 #include <spd_sdram.h>
 #endif
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 
 #if defined(CONFIG_OF_LIBFDT)

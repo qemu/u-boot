@@ -26,6 +26,7 @@
 #include <asm/gpio.h>
 #include <twl4030.h>
 #include <asm/mach-types.h>
+#include <asm/omap_musb.h>
 #include <linux/delay.h>
 #include <linux/mtd/rawnand.h>
 #include "evm.h"

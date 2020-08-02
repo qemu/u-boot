@@ -16,6 +16,7 @@
 #include <net.h>
 #include <config.h>
 #include <phy.h>
+#include <asm/u-boot.h>
 
 #define TSEC_MDIO_REGS_OFFSET	0x520
 

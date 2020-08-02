@@ -28,6 +28,7 @@
 #include <asm/arch/gpio.h>
 #include <asm/arch/mmc_host_def.h>
 #include <asm/arch/sys_proto.h>
+#include <asm/u-boot.h>
 #include <linux/string.h>
 #include "../../../drivers/video/da8xx-fb.h"
 #include <asm/io.h>

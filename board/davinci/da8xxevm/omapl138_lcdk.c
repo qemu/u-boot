@@ -18,6 +18,7 @@
 #include <asm/ti-common/davinci_nand.h>
 #include <asm/io.h>
 #include <ns16550.h>
+#include <asm/u-boot.h>
 #include <dm/platdata.h>
 #include <linux/errno.h>
 #include <asm/mach-types.h>

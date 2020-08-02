@@ -12,6 +12,7 @@
 #include <asm/arch/mx7ulp-pins.h>
 #include <asm/arch/iomux.h>
 #include <asm/mach-imx/boot_mode.h>
+#include <asm/u-boot.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

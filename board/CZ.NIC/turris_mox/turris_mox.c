@@ -15,6 +15,7 @@
 #include <env.h>
 #include <fdt_support.h>
 #include <init.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>

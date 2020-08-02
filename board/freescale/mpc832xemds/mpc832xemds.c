@@ -18,12 +18,14 @@
 #endif
 #include <asm/global_data.h>
 #include <asm/mmu.h>
+#include <asm/ppc.h>
 #if defined(CONFIG_OF_LIBFDT)
 #include <linux/libfdt.h>
 #endif
 #if defined(CONFIG_PQ_MDS_PIB)
 #include "../common/pq-mds-pib.h"
 #endif
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 
 DECLARE_GLOBAL_DATA_PTR;

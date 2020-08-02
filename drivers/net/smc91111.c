@@ -52,6 +52,7 @@
 #include <config.h>
 #include <malloc.h>
 #include <time.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 #include "smc91111.h"

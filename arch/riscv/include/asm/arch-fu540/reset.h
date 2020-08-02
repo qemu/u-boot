@@ -8,6 +8,8 @@
 #ifndef __RESET_SIFIVE_H
 #define __RESET_SIFIVE_H
 
+struct udevice;
+
 int sifive_reset_bind(struct udevice *dev, ulong count);
 
 #endif

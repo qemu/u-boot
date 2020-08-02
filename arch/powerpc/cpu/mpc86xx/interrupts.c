@@ -20,7 +20,7 @@
 #include <mpc86xx.h>
 #include <command.h>
 #include <time.h>
-#include <asm/processor.h>
+#include <asm/ppc.h>
 #ifdef CONFIG_POST
 #include <post.h>
 #endif

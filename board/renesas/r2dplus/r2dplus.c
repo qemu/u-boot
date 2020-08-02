@@ -11,6 +11,7 @@
 #include <netdev.h>
 #include <asm/processor.h>
 #include <asm/io.h>
+#include <asm/u-boot.h>
 
 int checkboard(void)
 {

@@ -12,6 +12,7 @@
 #ifndef __FSL_ESDHC_IMX_H__
 #define __FSL_ESDHC_IMX_H__
 
+#include <asm/u-boot.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <asm/byteorder.h>

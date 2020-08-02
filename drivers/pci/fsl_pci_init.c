@@ -10,6 +10,7 @@
 #include <malloc.h>
 #include <asm/fsl_serdes.h>
 #include <asm/global_data.h>
+#include <asm/ppc.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 

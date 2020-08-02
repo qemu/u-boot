@@ -15,6 +15,7 @@
 #include <asm/fsl_dma.h>
 #include <asm/fsl_lbc.h>
 #include <asm/fsl_i2c.h>
+#include <asm/ppc.h>
 
 /* Local-Access Registers and MCM Registers(0x0000-0x2000) */
 typedef struct ccsr_local_mcm {

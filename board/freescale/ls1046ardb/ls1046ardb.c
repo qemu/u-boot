@@ -21,6 +21,7 @@
 #include <fm_eth.h>
 #include <fsl_csu.h>
 #include <fsl_esdhc.h>
+#include <asm/u-boot.h>
 #include <power/mc34vr500_pmic.h>
 #include "cpld.h"
 #include <fsl_sec.h>

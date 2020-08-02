@@ -16,6 +16,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <asm/cache.h>
+#include <asm/u-boot.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>
 #include <watchdog.h>

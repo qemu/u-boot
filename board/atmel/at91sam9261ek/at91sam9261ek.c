@@ -25,6 +25,7 @@
 #include <netdev.h>
 #endif
 #include <asm/mach-types.h>
+#include <asm/u-boot.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -21,6 +21,7 @@
 #include <fsl_esdhc.h>
 #include <fsl_ifc.h>
 #include <fsl_sec.h>
+#include <asm/u-boot.h>
 #include "cpld.h"
 #ifdef CONFIG_U_QE
 #include <fsl_qe.h>

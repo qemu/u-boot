@@ -15,6 +15,7 @@
 #include <asm/arch/pinmux.h>
 #include <env_internal.h>
 #include <pci_tegra.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/printk.h>
 #include <linux/string.h>

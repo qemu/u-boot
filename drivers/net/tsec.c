@@ -15,6 +15,7 @@
 #include <command.h>
 #include <tsec.h>
 #include <fsl_mdio.h>
+#include <asm/u-boot.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

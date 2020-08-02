@@ -11,6 +11,7 @@
 #include <mpc8xx.h>
 #include <asm/cpm_8xx.h>
 #include <asm/io.h>
+#include <asm/ppc.h>
 
 /*
  * Breath some life into the CPU...

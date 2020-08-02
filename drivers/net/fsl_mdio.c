@@ -10,6 +10,7 @@
 #include <phy.h>
 #include <fsl_mdio.h>
 #include <asm/io.h>
+#include <asm/u-boot.h>
 #include <linux/errno.h>
 #include <linux/string.h>
 

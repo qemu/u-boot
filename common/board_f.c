@@ -53,6 +53,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/sections.h>
+#include <asm/u-boot.h>
 #include <dm/root.h>
 #include <linux/errno.h>
 #include <linux/string.h>

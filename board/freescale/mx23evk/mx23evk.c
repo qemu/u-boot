@@ -19,6 +19,7 @@
 #include <asm/arch/clock.h>
 #include <asm/arch/iomux-mx23.h>
 #include <asm/arch/sys_proto.h>
+#include <asm/u-boot.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

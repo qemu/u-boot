@@ -15,6 +15,7 @@
 #include <dm/lists.h>
 #include <dt-bindings/clk/mpc83xx-clk.h>
 #include <asm/arch/soc.h>
+#include <asm/ppc.h>
 #include <linux/bitops.h>
 
 #include "mpc83xx_clk.h"

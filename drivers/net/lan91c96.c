@@ -49,6 +49,7 @@
 #include <env.h>
 #include <malloc.h>
 #include <time.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 #include "lan91c96.h"

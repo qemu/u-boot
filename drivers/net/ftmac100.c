@@ -14,6 +14,7 @@
 #include <net.h>
 #include <time.h>
 #include <asm/global_data.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/io.h>
 #include <linux/string.h>

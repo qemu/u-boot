@@ -10,6 +10,7 @@
 #include <fsl_dtsec.h>
 #include <fsl_mdio.h>
 #include <malloc.h>
+#include <asm/u-boot.h>
 
 #include "../common/fman.h"
 

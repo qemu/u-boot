@@ -13,6 +13,7 @@
 #include <asm/arch/wdt.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/io.h>
+#include <asm/u-boot.h>
 
 static struct clk_pm_regs *clk = (struct clk_pm_regs *)CLK_PM_BASE;
 static struct wdt_regs  *wdt = (struct wdt_regs *)WDT_BASE;

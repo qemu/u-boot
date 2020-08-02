@@ -9,6 +9,7 @@
 #include <log.h>
 #include <net.h>
 #include <malloc.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <asm/io.h>

@@ -11,8 +11,9 @@
 #include <irq_func.h>
 #include <mpc83xx.h>
 #include <asm/global_data.h>
-#include <asm/processor.h>
+#include <asm/ppc.h>
 #include <asm/ptrace.h>
+#include <asm/u-boot.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

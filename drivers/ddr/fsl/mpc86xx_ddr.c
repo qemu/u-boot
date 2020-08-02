@@ -7,6 +7,7 @@
 #include <log.h>
 #include <asm/io.h>
 #include <fsl_ddr_sdram.h>
+#include <asm/ppc.h>
 #include <linux/delay.h>
 
 #if (CONFIG_CHIP_SELECTS_PER_CTRL > 4)

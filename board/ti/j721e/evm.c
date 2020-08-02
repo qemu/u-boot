@@ -22,6 +22,7 @@
 #include <spl.h>
 #include <asm/arch/sys_proto.h>
 #include <dm.h>
+#include <asm/u-boot.h>
 #include <dm/uclass-internal.h>
 #include <linux/printk.h>
 #include <linux/string.h>

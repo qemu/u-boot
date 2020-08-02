@@ -24,10 +24,12 @@
 #endif
 #include <asm/io.h>
 #include <asm/mmu.h>
+#include <asm/ppc.h>
 #include <spd.h>
 #include <spd_sdram.h>
 #include <i2c.h>
 #include <netdev.h>
+#include <asm/u-boot.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;

@@ -11,6 +11,7 @@
 #ifndef _NETDEV_H_
 #define _NETDEV_H_
 #include <phy_interface.h>
+#include <asm/u-boot.h>
 
 struct udevice;
 

@@ -24,7 +24,11 @@
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
+#ifdef CONFIG_ARCH_MPC830X
+#include <asm/ppc.h>
+#endif
 #include <dm.h>
+#include <asm/u-boot.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

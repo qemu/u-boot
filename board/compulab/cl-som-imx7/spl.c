@@ -16,6 +16,7 @@
 #include <asm/arch-mx7/mx7-pins.h>
 #include <asm/arch-mx7/clock.h>
 #include <asm/arch-mx7/mx7-ddr.h>
+#include <asm/u-boot.h>
 #include <linux/string.h>
 #include "common.h"
 

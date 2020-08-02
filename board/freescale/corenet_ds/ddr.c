@@ -11,6 +11,7 @@
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/mmu.h>
+#include <asm/ppc.h>
 #include <fsl_ddr_sdram.h>
 #include <fsl_ddr_dimm_params.h>
 #include <asm/fsl_law.h>

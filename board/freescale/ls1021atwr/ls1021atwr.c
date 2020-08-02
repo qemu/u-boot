@@ -29,6 +29,7 @@
 #include <fsl_sec.h>
 #include <fsl_devdis.h>
 #include <spl.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 #include "../common/sleep.h"

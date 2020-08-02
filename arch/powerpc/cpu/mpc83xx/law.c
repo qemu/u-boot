@@ -7,6 +7,7 @@
 #include <log.h>
 #include <asm/fsl_law.h>
 #include <asm/mmu.h>
+#include <asm/ppc.h>
 #include <linux/log2.h>
 
 int set_ddr_laws(u64 start, u64 sz, enum law_trgt_if id)

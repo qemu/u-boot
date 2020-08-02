@@ -12,6 +12,7 @@
 #include <log.h>
 #include <linux/ctype.h>
 #include <asm/io.h>
+#include <asm/ppc.h>
 #include <stdio_dev.h>
 #include <video_fb.h>
 #include <fsl_diu_fb.h>

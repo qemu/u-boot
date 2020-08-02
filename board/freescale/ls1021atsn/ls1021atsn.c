@@ -12,6 +12,7 @@
 #include <asm/arch/ls102xa_soc.h>
 #include <asm/arch/fsl_serdes.h>
 #include <asm/global_data.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 #include "../common/sleep.h"

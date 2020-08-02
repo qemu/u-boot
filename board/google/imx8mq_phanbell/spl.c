@@ -20,6 +20,7 @@
 #include <asm/mach-imx/gpio.h>
 #include <asm/mach-imx/mxc_i2c.h>
 #include <asm/sections.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <fsl_esdhc_imx.h>
 #include <mmc.h>

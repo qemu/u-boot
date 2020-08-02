@@ -23,6 +23,7 @@
 #include <asm/immap.h>
 #include <asm/io.h>
 #include <netdev.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include "cpu.h"
 

@@ -10,6 +10,7 @@
 #include <asm/fsl_pci.h>
 #include <asm/fsl_serdes.h>
 #include <asm/io.h>
+#include <asm/u-boot.h>
 #include <linux/compiler.h>
 #include <linux/libfdt.h>
 #include <fdt_support.h>

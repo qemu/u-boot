@@ -10,6 +10,7 @@
 #include <mpc8xx.h>
 #include <asm/cpm_8xx.h>
 #include <asm/io.h>
+#include <asm/ppc.h>
 #include <linux/string.h>
 
 void hw_watchdog_reset(void)

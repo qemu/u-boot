@@ -18,6 +18,7 @@
 #include <asm/mach-imx/iomux-v3.h>
 #include <asm/mach-imx/mxc_i2c.h>
 #include <asm/io.h>
+#include <asm/u-boot.h>
 #include <linux/sizes.h>
 #include <common.h>
 #include <watchdog.h>

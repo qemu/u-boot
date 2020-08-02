@@ -26,6 +26,7 @@
 #include <asm/arch/mmc_host_def.h>
 #include <asm/arch/musb.h>
 #include <asm/mach-types.h>
+#include <asm/u-boot.h>
 #include <linux/errno.h>
 #include <asm/gpio.h>
 #include <linux/usb/ch9.h>

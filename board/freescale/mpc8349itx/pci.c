@@ -8,6 +8,7 @@
 #include <linux/delay.h>
 
 #include <asm/mmu.h>
+#include <asm/ppc.h>
 #include <asm/io.h>
 #include <mpc83xx.h>
 #include <pci.h>

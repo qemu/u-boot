@@ -12,11 +12,13 @@
 #include <mpc83xx.h>
 #include <asm/global_data.h>
 #include <asm/mpc8349_pci.h>
+#include <asm/ppc.h>
 #include <i2c.h>
 #include <miiphy.h>
 #include <asm/mmu.h>
 #include <pci.h>
 #include <flash.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <mtd/cfi_flash.h>
 

@@ -19,6 +19,7 @@
 #include <asm/mach-imx/syscounter.h>
 #include <asm/ptrace.h>
 #include <asm/armv8/mmu.h>
+#include <asm/u-boot.h>
 #include <dm/uclass.h>
 #include <efi_loader.h>
 #include <env.h>

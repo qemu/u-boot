@@ -10,6 +10,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 

@@ -15,6 +15,7 @@
 #include <net.h>
 #include <netdev.h>
 #include <cpsw.h>
+#include <asm/u-boot.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/compiler.h>

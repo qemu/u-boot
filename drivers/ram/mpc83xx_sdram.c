@@ -11,6 +11,7 @@
 #include <ram.h>
 #include <asm/bitops.h>
 #include <asm/global_data.h>
+#include <asm/ppc.h>
 #include <dt-bindings/memory/mpc83xx-sdram.h>
 
 DECLARE_GLOBAL_DATA_PTR;

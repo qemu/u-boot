@@ -3,6 +3,7 @@
 #ifndef __CYRUS_H
 #define __CYRUS_H
 
+#include <asm/u-boot.h>
 void fdt_fixup_board_enet(void *blob);
 void pci_of_setup(void *blob, struct bd_info *bd);
 

@@ -23,6 +23,7 @@
 #include <fsl_esdhc_imx.h>
 #include <i2c.h>
 #include <miiphy.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/sizes.h>
 #include <mmc.h>

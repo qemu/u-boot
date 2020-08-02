@@ -4,8 +4,8 @@
  * Based on corenet_ds tlb code
  */
 
-#include <common.h>
 #include <asm/mmu.h>
+#include <asm/ppc.h>
 
 struct fsl_e_tlb_entry tlb_table[] = {
 	/* TLB 0 - for temp stack in cache */

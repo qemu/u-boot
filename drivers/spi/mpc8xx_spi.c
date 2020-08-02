@@ -24,6 +24,7 @@
 
 #include <asm/cpm_8xx.h>
 #include <asm/io.h>
+#include <asm/ppc.h>
 
 #define CPM_SPI_BASE_RX	CPM_SPI_BASE
 #define CPM_SPI_BASE_TX	(CPM_SPI_BASE + sizeof(cbd_t))

@@ -13,6 +13,7 @@
 #include <log.h>
 #include <part.h>
 #include <time.h>
+#include <asm/u-boot.h>
 #include <linux/errno.h>
 #include <linux/netdevice.h>
 #include <linux/printk.h>

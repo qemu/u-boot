@@ -18,6 +18,7 @@
 #include <netdev.h>
 #include <div64.h>
 #include <errno.h>
+#include <asm/u-boot.h>
 
 u32 get_cpu_rev(void)
 {

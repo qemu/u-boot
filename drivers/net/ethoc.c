@@ -14,6 +14,7 @@
 #include <dm.h>
 #include <log.h>
 #include <time.h>
+#include <asm/u-boot.h>
 #include <dm/platform_data/net_ethoc.h>
 #include <linux/io.h>
 #include <malloc.h>

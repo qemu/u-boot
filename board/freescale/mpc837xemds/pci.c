@@ -14,6 +14,8 @@
 #include <fdt_support.h>
 #include <asm/fsl_i2c.h>
 #include <asm/fsl_mpc83xx_serdes.h>
+#include <asm/ppc.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 

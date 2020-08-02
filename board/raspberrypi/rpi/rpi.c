@@ -19,6 +19,7 @@
 #include <asm/arch/msg.h>
 #include <asm/arch/sdhci.h>
 #include <asm/global_data.h>
+#include <asm/u-boot.h>
 #include <dm/platform_data/serial_bcm283x_mu.h>
 #ifdef CONFIG_ARM64
 #include <asm/armv8/mmu.h>

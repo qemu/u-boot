@@ -31,6 +31,7 @@
 #include <nand.h>
 #include <spi.h>
 #include <version.h>
+#include <asm/u-boot.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

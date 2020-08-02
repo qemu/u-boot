@@ -29,6 +29,7 @@
 #include <fsl_ifc.h>
 #include <fsl_sec.h>
 #include <spl.h>
+#include <asm/u-boot.h>
 
 #include "../common/vid.h"
 #include "../common/qixis.h"

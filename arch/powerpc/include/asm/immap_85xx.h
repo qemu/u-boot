@@ -11,6 +11,7 @@
 #ifndef __IMMAP_85xx__
 #define __IMMAP_85xx__
 
+#include <asm/ppc.h>
 #include <asm/types.h>
 #include <asm/fsl_dma.h>
 #include <asm/fsl_i2c.h>

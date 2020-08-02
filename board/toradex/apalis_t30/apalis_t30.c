@@ -17,6 +17,7 @@
 #include <dm.h>
 #include <i2c.h>
 #include <pci_tegra.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include "../common/tdx-common.h"
 

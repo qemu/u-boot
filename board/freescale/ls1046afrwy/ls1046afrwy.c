@@ -22,6 +22,7 @@
 #include <fsl_esdhc.h>
 #include <fsl_sec.h>
 #include <fsl_dspi.h>
+#include <asm/u-boot.h>
 
 #define LS1046A_PORSR1_REG 0x1EE0000
 #define BOOT_SRC_SD        0x20000000

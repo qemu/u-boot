@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <fsl_memac.h>
 #include <fm_eth.h>
+#include <asm/u-boot.h>
 #include <linux/string.h>
 
 #ifdef CONFIG_SYS_MEMAC_LITTLE_ENDIAN

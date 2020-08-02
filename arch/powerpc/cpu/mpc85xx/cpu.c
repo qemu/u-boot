@@ -31,6 +31,7 @@
 #include <asm/processor.h>
 #include <fsl_ddr_sdram.h>
 #include <asm/ppc.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 
 DECLARE_GLOBAL_DATA_PTR;

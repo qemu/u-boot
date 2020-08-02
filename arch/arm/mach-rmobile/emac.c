@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <net.h>
+#include <asm/u-boot.h>
 #include <linux/errno.h>
 #include <netdev.h>
 

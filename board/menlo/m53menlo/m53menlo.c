@@ -27,6 +27,7 @@
 #include <gzip.h>
 #include <i2c.h>
 #include <ipu_pixfmt.h>
+#include <asm/u-boot.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/fb.h>

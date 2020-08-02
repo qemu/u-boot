@@ -20,6 +20,7 @@
 #include <spl.h>
 #include <asm/arch/atmel_mpddrc.h>
 #include <asm/arch/at91_wdt.h>
+#include <asm/u-boot.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;

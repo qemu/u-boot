@@ -21,6 +21,7 @@
 #include <reset.h>
 #include <time.h>
 #include <asm/cache.h>
+#include <asm/u-boot.h>
 #include <dm/device_compat.h>
 #include <dm/devres.h>
 #include <linux/compiler.h>

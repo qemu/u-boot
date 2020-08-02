@@ -19,6 +19,7 @@
 #include <asm/io.h>
 #include <common.h>
 #include <fsl_esdhc_imx.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/sizes.h>
 #include <mmc.h>

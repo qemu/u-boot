@@ -207,6 +207,7 @@ void fdt_fixup_esdhc(void *blob, struct bd_info *bd);
 static inline int fsl_esdhc_execute_tuning(struct udevice *dev,
 					   uint32_t opcode) {return 0; }
 #endif
+#include <asm/u-boot.h>
 #else
 static inline int fsl_esdhc_mmc_init(struct bd_info *bis) { return -ENOSYS; }
 static inline void fdt_fixup_esdhc(void *blob, struct bd_info *bd) {}

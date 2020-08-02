@@ -22,6 +22,7 @@
 #include <asm/gpio.h>
 #include <asm/mach-imx/iomux-v3.h>
 #include <asm/mach-imx/boot_mode.h>
+#include <asm/u-boot.h>
 
 #include "platinum.h"
 

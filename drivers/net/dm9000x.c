@@ -55,6 +55,7 @@ TODO: external MII is not functional, only internal at the moment.
 #include <time.h>
 #include <asm/io.h>
 #include <dm9000.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 

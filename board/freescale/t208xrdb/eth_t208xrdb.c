@@ -24,6 +24,7 @@
 #include <phy.h>
 #include <fsl_dtsec.h>
 #include <asm/fsl_serdes.h>
+#include <asm/u-boot.h>
 
 int board_eth_init(struct bd_info *bis)
 {

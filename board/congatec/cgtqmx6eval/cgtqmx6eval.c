@@ -28,6 +28,7 @@
 #include <fsl_esdhc_imx.h>
 #include <i2c.h>
 #include <input.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 #include <power/pmic.h>

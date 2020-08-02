@@ -11,6 +11,7 @@
 #include <init.h>
 #include <pci.h>
 #include <asm/fsl_pci.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/libfdt.h>
 #include <fdt_support.h>

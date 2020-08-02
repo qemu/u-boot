@@ -29,6 +29,7 @@
 #include <asm/arch/sys_proto.h>
 #include <asm/arch/mem.h>
 #include <asm/mach-types.h>
+#include <asm/u-boot.h>
 #include "devkit8000.h"
 #include <asm/gpio.h>
 #ifdef CONFIG_DRIVER_DM9000

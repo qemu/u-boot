@@ -22,6 +22,7 @@
 #include <asm/global_data.h>
 #include <asm/psci.h>
 #include <asm/spin_table.h>
+#include <asm/u-boot.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

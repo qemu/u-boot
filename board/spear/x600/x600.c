@@ -20,6 +20,7 @@
 #include <asm/arch/hardware.h>
 #include <asm/arch/spr_defs.h>
 #include <asm/arch/spr_misc.h>
+#include <asm/u-boot.h>
 #include <linux/mtd/fsmc_nand.h>
 #include "fpga.h"
 

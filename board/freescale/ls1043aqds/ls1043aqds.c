@@ -28,6 +28,7 @@
 #include <fsl_esdhc.h>
 #include <fsl_ifc.h>
 #include <spl.h>
+#include <asm/u-boot.h>
 
 #include "../common/qixis.h"
 #include "ls1043aqds_qixis.h"

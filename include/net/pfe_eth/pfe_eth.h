@@ -7,6 +7,7 @@
 #ifndef __PFE_ETH_H__
 #define __PFE_ETH_H__
 
+#include <asm/u-boot.h>
 #include <linux/bitops.h>
 #include <linux/sizes.h>
 #include <asm/io.h>

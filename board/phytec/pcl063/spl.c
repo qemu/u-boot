@@ -16,6 +16,7 @@
 #include <asm/arch/crm_regs.h>
 #include <asm/arch/sys_proto.h>
 #include <fsl_esdhc_imx.h>
+#include <asm/u-boot.h>
 
 /* Configuration for Micron MT41K256M16TW-107 IT:P, 32M x 16 x 8 -> 256MiB */
 

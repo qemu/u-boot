@@ -7,6 +7,7 @@
 #define __FSL_MC_H__
 
 #include <common.h>
+#include <asm/u-boot.h>
 #include <linux/bitops.h>
 
 #define MC_CCSR_BASE_ADDR \

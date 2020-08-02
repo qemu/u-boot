@@ -15,6 +15,7 @@
 #include <fsl_dtsec.h>
 #include <malloc.h>
 #include <asm/arch/fsl_serdes.h>
+#include <asm/u-boot.h>
 
 #include "../common/qixis.h"
 #include "../common/fman.h"

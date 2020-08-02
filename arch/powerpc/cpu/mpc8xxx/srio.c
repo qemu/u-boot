@@ -10,6 +10,7 @@
 #include <asm/fsl_law.h>
 #include <asm/fsl_serdes.h>
 #include <asm/fsl_srio.h>
+#include <asm/ppc.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 

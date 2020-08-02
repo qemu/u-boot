@@ -13,6 +13,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <net.h>
+#include <asm/u-boot.h>
 #include <dm/of_extra.h>
 #include <env.h>
 #include <errno.h>

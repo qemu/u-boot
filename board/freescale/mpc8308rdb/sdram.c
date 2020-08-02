@@ -19,7 +19,7 @@
 #include <asm/bitops.h>
 #include <asm/io.h>
 
-#include <asm/processor.h>
+#include <asm/ppc.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

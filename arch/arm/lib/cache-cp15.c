@@ -10,6 +10,7 @@
 #include <asm/global_data.h>
 #include <asm/system.h>
 #include <asm/cache.h>
+#include <asm/u-boot.h>
 #include <linux/compiler.h>
 #include <asm/armv7_mpu.h>
 

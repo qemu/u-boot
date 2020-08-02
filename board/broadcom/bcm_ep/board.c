@@ -14,6 +14,7 @@
 #include <netdev.h>
 #include <asm/system.h>
 #include <asm/iproc-common/armpll.h>
+#include <asm/u-boot.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

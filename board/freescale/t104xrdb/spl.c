@@ -15,6 +15,7 @@
 #include <fsl_esdhc.h>
 #include <spi_flash.h>
 #include <asm/global_data.h>
+#include <asm/u-boot.h>
 #include <linux/string.h>
 #include "../common/sleep.h"
 #include "../common/spl.h"

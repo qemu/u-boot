@@ -6,7 +6,7 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <asm/global_data.h>
-#include <asm/processor.h>
+#include <asm/ppc.h>
 #include <asm/mmu.h>
 #include <ioports.h>
 #include <lmb.h>

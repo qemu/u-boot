@@ -6,6 +6,7 @@
 #include <common.h>
 #ifdef CONFIG_PPC
 #include <asm/fsl_law.h>
+#include <asm/ppc.h>
 #endif
 #include <div64.h>
 #include <linux/delay.h>

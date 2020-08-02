@@ -24,6 +24,7 @@
 #include <asm/io.h>
 #include <malloc.h>
 #include <miiphy.h>
+#include <asm/u-boot.h>
 #include <linux/bug.h>
 #include <linux/printk.h>
 #include <linux/string.h>

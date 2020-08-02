@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <asm/mmu.h>
+#include <asm/ppc.h>
 #ifdef CONFIG_PCA953X
 #include <pca953x.h>
 

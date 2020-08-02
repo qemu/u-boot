@@ -23,6 +23,7 @@
 #include <micrel.h>
 #include <miiphy.h>
 #include <netdev.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 
 DECLARE_GLOBAL_DATA_PTR;

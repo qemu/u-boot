@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <asm/io.h>
+#include <asm/ppc.h>
 
 /*
  * Return SYSCLK input frequency - 50 MHz or 66 MHz depending on POR config

@@ -13,6 +13,7 @@
 #include <netdev.h>
 #endif
 #include <asm/global_data.h>
+#include <asm/u-boot.h>
 #include <linux/io.h>
 #include <asm/io.h>
 #include <asm/mach-types.h>

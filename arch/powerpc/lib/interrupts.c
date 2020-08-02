@@ -16,6 +16,7 @@
 #include <status_led.h>
 #endif
 #include <asm/ptrace.h>
+#include <asm/ppc.h>
 
 #ifndef CONFIG_MPC83XX_TIMER
 #ifndef CONFIG_SYS_WATCHDOG_FREQ
@@ -43,13 +44,13 @@ static __inline__ void set_dec (unsigned long val)
 
 void enable_interrupts(void)
 {
-	set_msr (get_msr () | MSR_EE);
+	set_msr(get_msr() | MSR_EE);
 }
 
 /* returns flag if MSR_EE was set before */
 int disable_interrupts(void)
 {
-	ulong msr = get_msr ();
+	ulong msr = get_msr();
 
 	set_msr (msr & ~MSR_EE);
 	return ((msr & MSR_EE) != 0);
@@ -63,7 +64,7 @@ int interrupt_init(void)
 
 	set_dec (decrementer_count);
 
-	set_msr (get_msr () | MSR_EE);
+	set_msr(get_msr() | MSR_EE);
 
 	return (0);
 }

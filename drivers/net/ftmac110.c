@@ -13,6 +13,7 @@
 #include <net.h>
 #include <time.h>
 #include <asm/cache.h>
+#include <asm/u-boot.h>
 #include <linux/errno.h>
 #include <asm/io.h>
 #include <linux/dma-mapping.h>

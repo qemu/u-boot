@@ -29,6 +29,7 @@
 #include <spl.h>
 #include <netdev.h>
 #include <fsl_sec.h>
+#include <asm/u-boot.h>
 #include <linux/string.h>
 #include "../common/qixis.h"
 #include "ls1012aqds_qixis.h"

@@ -22,6 +22,7 @@
 #include <post.h>
 #endif
 #include <asm/ptrace.h>
+#include <asm/ppc.h>
 
 void interrupt_init_cpu(unsigned *decrementer_count)
 {

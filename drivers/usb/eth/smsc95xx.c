@@ -15,6 +15,7 @@
 #include <net.h>
 #include <time.h>
 #include <usb.h>
+#include <asm/u-boot.h>
 #include <asm/unaligned.h>
 #include <linux/delay.h>
 #include <linux/mii.h>

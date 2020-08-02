@@ -34,6 +34,7 @@
 #include <cpsw.h>
 #include <video.h>
 #include <watchdog.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 #include "board.h"

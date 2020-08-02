@@ -10,6 +10,7 @@
 #include <asm/io.h>
 #include <asm/mach-imx/regs-common.h>
 #include <asm/mach-imx/module_fuse.h>
+#include <asm/u-boot.h>
 #include <linux/bitops.h>
 #include "../arch-imx/cpu.h"
 

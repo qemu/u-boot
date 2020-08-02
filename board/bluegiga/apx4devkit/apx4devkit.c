@@ -25,6 +25,7 @@
 #include <asm/arch/clock.h>
 #include <asm/arch/sys_proto.h>
 #include <env.h>
+#include <asm/u-boot.h>
 #include <linux/mii.h>
 #include <miiphy.h>
 #include <netdev.h>

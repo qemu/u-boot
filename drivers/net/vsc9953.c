@@ -17,6 +17,7 @@
 #include <malloc.h>
 #include <vsc9953.h>
 #include <ethsw.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 
 static struct vsc9953_info vsc9953_l2sw = {

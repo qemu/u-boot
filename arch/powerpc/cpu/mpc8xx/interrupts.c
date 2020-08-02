@@ -10,7 +10,7 @@
 #include <mpc8xx_irq.h>
 #include <time.h>
 #include <asm/cpm_8xx.h>
-#include <asm/processor.h>
+#include <asm/ppc.h>
 #include <asm/io.h>
 #include <asm/ptrace.h>
 

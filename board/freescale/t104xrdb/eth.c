@@ -13,6 +13,7 @@
 #include <malloc.h>
 #include <fsl_dtsec.h>
 #include <vsc9953.h>
+#include <asm/u-boot.h>
 
 #include "../common/fman.h"
 

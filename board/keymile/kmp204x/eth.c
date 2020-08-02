@@ -10,6 +10,7 @@
 #include <fm_eth.h>
 #include <fsl_mdio.h>
 #include <phy.h>
+#include <asm/u-boot.h>
 
 int board_eth_init(struct bd_info *bis)
 {

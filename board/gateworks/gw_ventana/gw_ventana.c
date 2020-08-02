@@ -24,6 +24,7 @@
 #include <asm/io.h>
 #include <asm/setup.h>
 #include <dm.h>
+#include <asm/u-boot.h>
 #include <dm/platform_data/serial_mxc.h>
 #include <env.h>
 #include <hwconfig.h>

@@ -12,6 +12,7 @@
 #include <asm/gpio.h>
 #include <asm/arch/mmc.h>
 #include <dm.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/printk.h>
 #include <power/pmic.h>

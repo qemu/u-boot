@@ -16,6 +16,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/gpio.h>
+#include <asm/u-boot.h>
 #include <linux/compiler.h>
 #include <linux/string.h>
 

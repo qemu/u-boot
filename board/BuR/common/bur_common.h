@@ -26,4 +26,5 @@ int board_eth_init(struct bd_info *bis);
 
 int brdefaultip_setup(int bus, int chip);
 
+#include <asm/u-boot.h>
 #endif

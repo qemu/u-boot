@@ -20,6 +20,7 @@
 #include <wait_bit.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <asm/types.h>

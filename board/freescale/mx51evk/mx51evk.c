@@ -10,6 +10,7 @@
 #include <asm/gpio.h>
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/iomux-mx51.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <asm/arch/sys_proto.h>

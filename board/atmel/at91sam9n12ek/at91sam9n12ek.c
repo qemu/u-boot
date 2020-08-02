@@ -20,6 +20,7 @@
 #include <lcd.h>
 #include <atmel_hlcdc.h>
 #include <netdev.h>
+#include <asm/u-boot.h>
 
 #ifdef CONFIG_LCD_INFO
 #include <nand.h>

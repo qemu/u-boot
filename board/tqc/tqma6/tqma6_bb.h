@@ -8,6 +8,7 @@
 #define __TQMA6_BB__
 
 #include <common.h>
+#include <asm/u-boot.h>
 
 int tqma6_bb_board_mmc_getwp(struct mmc *mmc);
 int tqma6_bb_board_mmc_getcd(struct mmc *mmc);

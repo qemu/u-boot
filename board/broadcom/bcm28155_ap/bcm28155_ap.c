@@ -14,6 +14,7 @@
 #include <asm/kona-common/kona_sdhci.h>
 #include <asm/kona-common/clk.h>
 #include <asm/arch/sysmap.h>
+#include <asm/u-boot.h>
 
 #include <usb.h>
 #include <usb/dwc2_udc.h>

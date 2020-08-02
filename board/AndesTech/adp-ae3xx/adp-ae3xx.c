@@ -14,6 +14,7 @@
 #if defined(CONFIG_FTMAC100) && !defined(CONFIG_DM_ETH)
 #include <netdev.h>
 #endif
+#include <asm/u-boot.h>
 #include <linux/io.h>
 #include <faraday/ftsmc020.h>
 

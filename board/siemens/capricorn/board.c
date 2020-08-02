@@ -27,6 +27,7 @@
 #ifndef CONFIG_SPL
 #include <asm/arch-imx8/clock.h>
 #endif
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 #include "../common/factoryset.h"

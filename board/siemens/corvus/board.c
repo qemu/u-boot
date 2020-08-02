@@ -31,6 +31,7 @@
 #include <netdev.h>
 #endif
 #include <spi.h>
+#include <asm/u-boot.h>
 
 #ifdef CONFIG_USB_GADGET_ATMEL_USBA
 #include <asm/arch/atmel_usba_udc.h>

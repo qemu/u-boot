@@ -19,6 +19,7 @@
 #include <asm/mpc8xxx_spi.h>
 #include <asm/fsl_lbc.h>
 #include <asm/fsl_dma.h>
+#include <asm/ppc.h>
 
 /*
  * Local Access Window

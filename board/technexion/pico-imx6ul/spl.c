@@ -15,6 +15,7 @@
 #include <asm/mach-imx/iomux-v3.h>
 #include <asm/mach-imx/boot_mode.h>
 #include <fsl_esdhc_imx.h>
+#include <asm/u-boot.h>
 #include <linux/libfdt.h>
 #include <spl.h>
 #include <linux/string.h>

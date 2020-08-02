@@ -10,6 +10,7 @@
 
 #include <net.h>
 #include <miiphy.h>
+#include <asm/u-boot.h>
 
 struct tsec_mii_mng {
 	u32 miimcfg;		/* MII management configuration reg */

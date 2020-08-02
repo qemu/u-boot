@@ -12,7 +12,7 @@
 #include <clock_legacy.h>
 #include <mpc86xx.h>
 #include <asm/global_data.h>
-#include <asm/processor.h>
+#include <asm/ppc.h>
 #include <asm/io.h>
 
 DECLARE_GLOBAL_DATA_PTR;

@@ -20,6 +20,7 @@
 #include <sata.h>
 #include <serial.h>
 #include <asm/global_data.h>
+#include <asm/u-boot.h>
 #include <linux/string.h>
 #include <asm/gpio.h>
 #include <usb.h>

@@ -26,6 +26,7 @@
 #include <asm/mach-imx/mxc_i2c.h>
 #include <asm/arch/sys_proto.h>
 #include <spl.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/sizes.h>
 #include <common.h>

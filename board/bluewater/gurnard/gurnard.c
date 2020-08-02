@@ -33,6 +33,7 @@
 #include <asm/arch/atmel_serial.h>
 #include <asm/arch/clk.h>
 #include <asm/arch/gpio.h>
+#include <asm/u-boot.h>
 #include <dm/uclass-internal.h>
 #include <linux/delay.h>
 #include <linux/string.h>

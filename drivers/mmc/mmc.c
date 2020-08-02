@@ -14,6 +14,7 @@
 #include <dm.h>
 #include <log.h>
 #include <time.h>
+#include <asm/u-boot.h>
 #include <dm/device-internal.h>
 #include <errno.h>
 #include <mmc.h>

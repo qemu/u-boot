@@ -15,6 +15,7 @@
 #include <fsl_errata.h>
 #include <fsl_usb.h>
 #include <fdt_support.h>
+#include <asm/u-boot.h>
 #include <linux/string.h>
 
 #ifndef CONFIG_USB_MAX_CONTROLLER_COUNT

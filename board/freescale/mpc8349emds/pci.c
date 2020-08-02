@@ -6,6 +6,7 @@
 #include <init.h>
 #include <asm/mmu.h>
 #include <asm/io.h>
+#include <asm/ppc.h>
 #include <common.h>
 #include <mpc83xx.h>
 #include <pci.h>

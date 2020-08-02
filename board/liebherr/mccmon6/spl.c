@@ -22,6 +22,7 @@
 #include <asm/arch/sys_proto.h>
 #include <serial.h>
 #include <spl.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 

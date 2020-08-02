@@ -22,6 +22,7 @@
 #include <asm/mach-imx/video.h>
 #include <asm/mach-imx/iomux-v3.h>
 #include <asm/io.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/sizes.h>
 #include <miiphy.h>

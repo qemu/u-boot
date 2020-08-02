@@ -20,6 +20,7 @@
 #include <asm/io.h>
 #include <asm/mach-imx/mxc_i2c.h>
 #include <env.h>
+#include <asm/u-boot.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/sizes.h>

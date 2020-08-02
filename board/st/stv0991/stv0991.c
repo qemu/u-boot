@@ -17,6 +17,7 @@
 #include <netdev.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
+#include <asm/u-boot.h>
 #include <dm/platform_data/serial_pl01x.h>
 
 DECLARE_GLOBAL_DATA_PTR;

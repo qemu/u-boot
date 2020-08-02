@@ -18,6 +18,7 @@
 #include <fdtdec.h>
 #include <i2c.h>
 #include <remoteproc.h>
+#include <asm/u-boot.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/string.h>

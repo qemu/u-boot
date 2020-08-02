@@ -18,6 +18,7 @@
 #include <fm_eth.h>
 #include <i2c.h>
 #include <miiphy.h>
+#include <asm/u-boot.h>
 #include <fsl-mc/fsl_mc.h>
 #include <fsl-mc/ldpaa_wriop.h>
 #include <linux/delay.h>

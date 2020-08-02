@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <asm/arch-tegra/gpu.h>
+#include <asm/u-boot.h>
 
 /*
  * This function is called right before the kernel is booted. "blob" is the

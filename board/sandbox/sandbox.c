@@ -15,6 +15,7 @@
 #include <asm/global_data.h>
 #include <asm/test.h>
 #include <asm/u-boot-sandbox.h>
+#include <asm/u-boot.h>
 
 /*
  * Pointer to initial global data area

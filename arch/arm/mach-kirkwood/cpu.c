@@ -18,6 +18,7 @@
 #include <asm/arch/cpu.h>
 #include <asm/arch/soc.h>
 #include <mvebu_mmc.h>
+#include <asm/u-boot.h>
 
 void reset_cpu(unsigned long ignored)
 {

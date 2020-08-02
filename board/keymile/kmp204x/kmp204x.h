@@ -5,4 +5,5 @@
  */
 
 
+#include <asm/u-boot.h>
 void pci_of_setup(void *blob, struct bd_info *bd);

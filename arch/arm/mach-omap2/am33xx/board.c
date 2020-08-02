@@ -33,6 +33,7 @@
 #include <i2c.h>
 #include <miiphy.h>
 #include <cpsw.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/compiler.h>

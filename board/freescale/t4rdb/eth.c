@@ -27,6 +27,7 @@
 #include <fsl_dtsec.h>
 #include <asm/fsl_serdes.h>
 #include <hwconfig.h>
+#include <asm/u-boot.h>
 
 #include "../common/fman.h"
 #include "t4rdb.h"

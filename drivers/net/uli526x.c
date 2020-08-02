@@ -16,6 +16,7 @@
 #include <asm/io.h>
 #include <pci.h>
 #include <miiphy.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 

@@ -18,6 +18,7 @@
 #include <fdt_support.h>
 #include <asm/arch/dram.h>
 #include <asm/arch/misc.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/string.h>
 

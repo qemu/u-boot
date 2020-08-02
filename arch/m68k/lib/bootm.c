@@ -12,6 +12,7 @@
 #include <lmb.h>
 #include <log.h>
 #include <asm/global_data.h>
+#include <asm/u-boot.h>
 #include <u-boot/zlib.h>
 #include <bzlib.h>
 #include <watchdog.h>

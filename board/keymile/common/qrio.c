@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <asm/ppc.h>
 #include <linux/bitops.h>
 
 #include "common.h"

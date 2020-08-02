@@ -11,6 +11,7 @@
 #include <lmb.h>
 #include <log.h>
 #include <malloc.h>
+#include <asm/u-boot.h>
 
 #define LMB_ALLOC_ANYWHERE	0
 

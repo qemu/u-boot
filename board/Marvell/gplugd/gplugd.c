@@ -22,6 +22,7 @@
 #include <asm/gpio.h>
 #include <miiphy.h>
 #include <asm/mach-types.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 
 #ifdef CONFIG_ARMADA100_FEC

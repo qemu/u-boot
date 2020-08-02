@@ -10,6 +10,7 @@
 #include <common.h>
 #include <phy.h>
 #include <asm/types.h>
+#include <asm/u-boot.h>
 
 enum fm_port {
 	FM1_DTSEC1,

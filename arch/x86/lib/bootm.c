@@ -13,6 +13,7 @@
 #include <hang.h>
 #include <log.h>
 #include <asm/global_data.h>
+#include <asm/u-boot.h>
 #include <dm/device.h>
 #include <dm/root.h>
 #include <errno.h>

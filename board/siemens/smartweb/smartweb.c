@@ -32,6 +32,7 @@
 #include <asm/arch/gpio.h>
 #include <asm/gpio.h>
 #include <watchdog.h>
+#include <asm/u-boot.h>
 # include <net.h>
 #ifndef CONFIG_DM_ETH
 # include <netdev.h>

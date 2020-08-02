@@ -5,6 +5,9 @@
 
 #include <common.h>
 #include <fsl_sec_mon.h>
+#ifdef CONFIG_PPC
+#include <asm/ppc.h>
+#endif
 #include <linux/delay.h>
 
 static u32 get_sec_mon_state(void)

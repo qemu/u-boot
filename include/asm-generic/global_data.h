@@ -22,6 +22,7 @@
 #ifndef __ASSEMBLY__
 #include <fdtdec.h>
 #include <membuff.h>
+#include <asm/u-boot.h>
 #include <linux/list.h>
 
 typedef struct global_data {

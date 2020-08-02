@@ -14,6 +14,7 @@
  * changes to support FDT are minimized.
  */
 
+#include <asm/u-boot.h>
 #include <linux/libfdt.h>
 #include <pci.h>
 

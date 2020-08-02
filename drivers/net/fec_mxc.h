@@ -17,6 +17,7 @@
 #define __FEC_MXC_H
 
 #include <clk.h>
+#include <asm/u-boot.h>
 
 /* Layout description of the FEC */
 struct ethernet_regs {

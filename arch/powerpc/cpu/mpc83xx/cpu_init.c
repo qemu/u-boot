@@ -9,7 +9,7 @@
 #include <ioports.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
-#include <asm/processor.h>
+#include <asm/ppc.h>
 #ifdef CONFIG_USB_EHCI_FSL
 #include <usb/ehci-ci.h>
 #endif

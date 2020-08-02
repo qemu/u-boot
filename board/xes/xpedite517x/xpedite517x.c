@@ -12,6 +12,7 @@
 #include <asm/io.h>
 #include <fdt_support.h>
 #include <pca953x.h>
+#include <asm/u-boot.h>
 #include "../common/fsl_8xxx_misc.h"
 
 DECLARE_GLOBAL_DATA_PTR;

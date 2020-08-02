@@ -19,6 +19,7 @@
 #include <asm/byteorder.h>
 #include <asm/csr.h>
 #include <asm/smp.h>
+#include <asm/u-boot-riscv.h>
 #include <dm/device.h>
 #include <dm/root.h>
 #include <u-boot/zlib.h>

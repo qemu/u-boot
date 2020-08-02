@@ -13,6 +13,7 @@
 #include <pci.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
+#include <asm/u-boot.h>
 #include <dm/device-internal.h>
 #include <dm/lists.h>
 #if defined(CONFIG_X86) && defined(CONFIG_HAVE_FSP)

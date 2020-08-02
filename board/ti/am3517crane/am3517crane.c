@@ -19,6 +19,7 @@
 #include <asm/arch/sys_proto.h>
 #include <asm/mach-types.h>
 #include <i2c.h>
+#include <asm/u-boot.h>
 #include "am3517crane.h"
 
 DECLARE_GLOBAL_DATA_PTR;

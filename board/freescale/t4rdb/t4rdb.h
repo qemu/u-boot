@@ -6,6 +6,7 @@
 #ifndef __T4RDB_H__
 #define __T4RDB_H__
 
+#include <asm/u-boot.h>
 #undef CONFIG_SYS_NUM_FM1_DTSEC
 #undef CONFIG_SYS_NUM_FM2_DTSEC
 #define CONFIG_SYS_NUM_FM1_DTSEC	4

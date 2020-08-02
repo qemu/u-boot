@@ -18,6 +18,7 @@
 #include <log.h>
 
 #include <asm/io.h>
+#include <asm/ptrace.h>
 #include <asm/xen/system.h>
 
 #include <xen/events.h>

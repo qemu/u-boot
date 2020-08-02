@@ -16,6 +16,7 @@
 #include <netdev.h>
 #include <fsl_esdhc_imx.h>
 #include <asm/global_data.h>
+#include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <power/pmic.h>
 #include <power/pfuze3000_pmic.h>

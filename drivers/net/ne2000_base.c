@@ -79,6 +79,7 @@ Add SNMP
 #include <net.h>
 #include <malloc.h>
 #include <time.h>
+#include <asm/u-boot.h>
 #include <linux/compiler.h>
 #include <linux/string.h>
 

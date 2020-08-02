@@ -7,6 +7,7 @@
 #include <net.h>
 #include <netdev.h>
 #include <pci.h>
+#include <asm/u-boot.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/string.h>

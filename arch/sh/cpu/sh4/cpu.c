@@ -11,6 +11,7 @@
 #include <net.h>
 #include <netdev.h>
 #include <asm/processor.h>
+#include <asm/u-boot.h>
 
 int checkcpu(void)
 {

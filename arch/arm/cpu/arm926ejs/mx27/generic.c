@@ -17,6 +17,7 @@
 #ifdef CONFIG_MMC_MXC
 #include <asm/arch/mxcmmc.h>
 #endif
+#include <asm/u-boot.h>
 
 /*
  *  get the system pll clock in Hz
