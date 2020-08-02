@@ -21,6 +21,7 @@
 #include <dt-bindings/sound/nhlt.h>
 #include <dm/acpi.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #define DA7219_ACPI_HID		"DLGS7219"
 

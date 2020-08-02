@@ -8,6 +8,7 @@
 #include <env.h>
 #include <log.h>
 #include <spl_gpio.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <linux/string.h>
 #include <power/regulator.h>

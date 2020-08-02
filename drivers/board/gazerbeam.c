@@ -11,6 +11,7 @@
 #include <log.h>
 #include <asm/gpio.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #include "gazerbeam.h"
 

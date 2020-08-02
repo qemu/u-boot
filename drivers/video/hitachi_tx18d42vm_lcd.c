@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #include <asm/gpio.h>
 #include <errno.h>

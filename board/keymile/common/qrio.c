@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <stdbool.h>
 #include <asm/ppc.h>
 #include <linux/bitops.h>
 

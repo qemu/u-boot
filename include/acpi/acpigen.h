@@ -10,6 +10,7 @@
 #ifndef __ACPI_ACPIGEN_H
 #define __ACPI_ACPIGEN_H
 
+#include <stdbool.h>
 #include <linux/types.h>
 
 struct acpi_ctx;

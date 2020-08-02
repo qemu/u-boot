@@ -15,6 +15,7 @@
 #include <net.h>
 #include <spi.h>
 #include <spi_flash.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/delay.h>

@@ -24,6 +24,7 @@
 #include <dm.h>
 #include <dm/device-internal.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/usb/ch9.h>
 #include <linux/usb/gadget.h>
 

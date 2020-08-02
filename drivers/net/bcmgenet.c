@@ -35,6 +35,7 @@
 #include <dm/ofnode.h>
 #include <linux/errno.h>
 #include <linux/iopoll.h>
+#include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <asm/dma-mapping.h>
 #include <wait_bit.h>

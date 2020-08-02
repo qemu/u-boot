@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <dt-structs.h>
 #include <stdio.h>
+#include <linux/kernel.h>
 
 static int sandbox_spl_probe(struct udevice *dev)
 {

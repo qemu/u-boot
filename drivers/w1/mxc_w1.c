@@ -17,6 +17,7 @@
  * Martin Fuzzey <martin.fuzzey@flowbird.group>
  */
 
+#include <stdbool.h>
 #include <asm/arch/clock.h>
 #include <common.h>
 #include <dm.h>

@@ -4,6 +4,7 @@
  * Peng Fan <peng.fan@nxp.com>
  */
 
+#include <stdbool.h>
 struct imx8_clks {
 	ulong id;
 	const char *name;

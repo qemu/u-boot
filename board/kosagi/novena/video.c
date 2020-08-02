@@ -32,6 +32,7 @@
 #include <linux/input.h>
 #include <malloc.h>
 #include <stdio_dev.h>
+#include <linux/kernel.h>
 
 #include "novena.h"
 

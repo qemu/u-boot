@@ -11,6 +11,7 @@
 #ifndef __SH_PFC_H
 #define __SH_PFC_H
 
+#include <linux/kernel.h>
 #include <linux/stringify.h>
 
 enum {

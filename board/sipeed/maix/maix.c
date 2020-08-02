@@ -9,6 +9,7 @@
 #include <fdt_support.h>
 #include <asm/io.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 phys_size_t get_effective_memsize(void)
 {

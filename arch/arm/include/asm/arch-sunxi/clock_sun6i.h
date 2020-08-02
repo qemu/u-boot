@@ -10,6 +10,7 @@
 #ifndef _SUNXI_CLOCK_SUN6I_H
 #define _SUNXI_CLOCK_SUN6I_H
 
+#include <stdbool.h>
 struct sunxi_ccm_reg {
 	u32 pll1_cfg;		/* 0x00 pll1 control */
 	u32 reserved0;

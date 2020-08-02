@@ -18,6 +18,7 @@
  * We can use a combined structure for PL010 and PL011, because they overlap
  * only in common registers.
  */
+#include <stdbool.h>
 struct pl01x_regs {
 	u32	dr;		/* 0x00 Data register */
 	u32	ecr;		/* 0x04 Error clear register (Write) */

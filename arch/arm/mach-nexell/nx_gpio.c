@@ -7,6 +7,7 @@
 /*
  * FIXME : will be remove after support pinctrl
  */
+#include <stdbool.h>
 #include <linux/types.h>
 #include <asm/io.h>
 #include <asm/arch/nexell.h>

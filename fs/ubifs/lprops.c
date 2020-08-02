@@ -21,6 +21,7 @@
 #include <malloc.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #endif
 #include "ubifs.h"

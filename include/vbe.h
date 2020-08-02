@@ -11,6 +11,7 @@
 #define _VBE_H
 
 /* these structs are for input from and output to OF */
+#include <stdbool.h>
 struct __packed vbe_screen_info {
 	u8 display_type;	/* 0=NONE, 1= analog, 2=digital */
 	u16 screen_width;

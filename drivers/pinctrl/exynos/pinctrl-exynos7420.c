@@ -14,6 +14,7 @@
 #include <fdtdec.h>
 #include <asm/arch/pinmux.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include "pinctrl-exynos.h"
 
 #define	GPD1_OFFSET	0xc0

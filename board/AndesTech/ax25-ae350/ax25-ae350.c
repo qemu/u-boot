@@ -20,6 +20,7 @@
 #include <fdtdec.h>
 #include <dm.h>
 #include <spl.h>
+#include <linux/kernel.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

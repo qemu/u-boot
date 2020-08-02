@@ -16,6 +16,7 @@
 #ifdef CONFIG_ADDR_MAP
 #include <addr_map.h>
 #endif
+#include <linux/kernel.h>
 
 #include <linux/log2.h>
 

@@ -19,6 +19,7 @@
 #include <clk-uclass.h>
 #include <dm.h>
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 
 #include <dt-bindings/clock/r8a7796-cpg-mssr.h>
 

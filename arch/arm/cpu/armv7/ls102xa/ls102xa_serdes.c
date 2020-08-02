@@ -6,6 +6,7 @@
 #include <common.h>
 #include <asm/arch/fsl_serdes.h>
 #include <asm/arch/immap_ls102xa.h>
+#include <linux/kernel.h>
 
 static u8 serdes_cfg_tbl[][SRDS_MAX_LANES] = {
 	[0x00] = {PCIE1, PCIE1, PCIE1, PCIE1},

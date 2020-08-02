@@ -26,6 +26,7 @@
 #include <env.h>
 #include <fsl_esdhc_imx.h>
 #include <asm/u-boot.h>
+#include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <linux/fb.h>
 #include <miiphy.h>

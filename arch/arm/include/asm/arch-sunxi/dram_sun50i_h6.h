@@ -12,6 +12,7 @@
 #include <stdbool.h>
 #ifndef __ASSEMBLY__
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 #endif
 
 enum sunxi_dram_type {

@@ -25,6 +25,7 @@
 #ifndef _XYZMODEM_H_
 #define _XYZMODEM_H_
 
+#include <stdbool.h>
 #include <linux/delay.h>
 
 #define xyzModem_xmodem 1

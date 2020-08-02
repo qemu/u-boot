@@ -7,6 +7,7 @@
 #ifndef __G_DOWNLOAD_H_
 #define __G_DOWNLOAD_H_
 
+#include <stdbool.h>
 #include <linux/usb/ch9.h>
 #include <linux/usb/gadget.h>
 #include <linux/usb/composite.h>

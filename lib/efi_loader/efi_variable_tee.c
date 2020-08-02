@@ -11,6 +11,7 @@
 #include <efi_api.h>
 #include <efi_loader.h>
 #include <efi_variable.h>
+#include <stdbool.h>
 #include <tee.h>
 #include <malloc.h>
 #include <mm_communication.h>

@@ -5,6 +5,7 @@
 #ifndef _ASM_ARCH_CRU_PX30_H
 #define _ASM_ARCH_CRU_PX30_H
 
+#include <linux/kernel.h>
 #define MHz		1000000
 #define KHz		1000
 #define OSC_HZ		(24 * MHz)

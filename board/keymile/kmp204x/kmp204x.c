@@ -13,6 +13,7 @@
 #include <image.h>
 #include <init.h>
 #include <netdev.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/u-boot.h>

@@ -14,6 +14,7 @@
 #include <env_internal.h>
 #include <log.h>
 #include <sort.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>

@@ -6,6 +6,7 @@
 #include <common.h>
 #include <dm.h>
 #include <serial.h>
+#include <stdbool.h>
 #include <linux/errno.h>
 
 static int nulldev_serial_setbrg(struct udevice *dev, int baudrate)

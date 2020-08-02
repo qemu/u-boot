@@ -7,6 +7,7 @@
  */
 
 #include <common.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/string.h>

@@ -21,6 +21,7 @@
 
 #include <common.h>
 #include <hang.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <asm/arch/pxa-regs.h>
 #include <asm/arch/regs-uart.h>

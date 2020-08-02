@@ -7,6 +7,7 @@
 #include <common.h>
 #include <irq_func.h>
 #include <log.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 /*

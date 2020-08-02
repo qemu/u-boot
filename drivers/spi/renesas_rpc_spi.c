@@ -19,6 +19,7 @@
 #include <linux/errno.h>
 #include <spi.h>
 #include <wait_bit.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #define RPC_CMNCR		0x0000	/* R/W */

@@ -9,6 +9,8 @@
 #ifndef __DISPLAY_OPTIONS_H
 #define __DISPLAY_OPTIONS_H
 
+#include <stdbool.h>
+
 /**
  * print_size() - Print a size with a suffix
  *

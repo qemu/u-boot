@@ -12,6 +12,7 @@
 #include <errno.h>
 #include <fdtdec.h>
 #include <log.h>
+#include <stdbool.h>
 #include <linux/compiler.h>
 #include <asm/io.h>
 #include <serial.h>

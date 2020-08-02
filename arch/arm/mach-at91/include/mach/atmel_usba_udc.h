@@ -7,6 +7,7 @@
 #ifndef __ATMEL_USBA_UDC_H__
 #define __ATMEL_USBA_UDC_H__
 
+#include <linux/kernel.h>
 #include <linux/usb/atmel_usba_udc.h>
 
 #define EP(nam, idx, maxpkt, maxbk, dma, isoc)		\

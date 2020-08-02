@@ -18,6 +18,7 @@
 #include <asm/ptrace.h>
 #include <asm/system.h>
 #include <asm/encoding.h>
+#include <linux/kernel.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

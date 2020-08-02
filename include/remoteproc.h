@@ -13,6 +13,7 @@
  * initialization *will* be eventually removed once all necessary
  * platforms have moved to dm/fdt.
  */
+#include <stdbool.h>
 #include <dm/platdata.h>	/* For platform data support - non dt world */
 #include <linux/errno.h>
 

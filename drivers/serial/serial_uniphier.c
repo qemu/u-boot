@@ -11,6 +11,7 @@
 #include <linux/bitops.h>
 #include <linux/bug.h>
 #include <linux/io.h>
+#include <linux/kernel.h>
 #include <linux/serial_reg.h>
 #include <linux/sizes.h>
 #include <linux/errno.h>

@@ -8,6 +8,7 @@
 
 #ifndef __ASSEMBLY__
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 #endif
 
 #define MHz		1000000

@@ -14,6 +14,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <log.h>
+#include <stdbool.h>
 #include <wait_bit.h>
 #include <asm/io.h>
 #include <linux/bitops.h>

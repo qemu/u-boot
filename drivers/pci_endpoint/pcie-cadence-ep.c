@@ -10,6 +10,7 @@
 #include <pci_ep.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <linux/log2.h>
 #include "pcie-cadence.h"

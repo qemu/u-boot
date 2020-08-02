@@ -8,6 +8,7 @@
 #include <log.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
+#include <linux/kernel.h>
 
 /* Memory test
  *

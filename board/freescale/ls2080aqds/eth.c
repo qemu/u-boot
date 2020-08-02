@@ -22,6 +22,7 @@
 #include <fsl-mc/fsl_mc.h>
 #include <fsl-mc/ldpaa_wriop.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #include "../common/qixis.h"

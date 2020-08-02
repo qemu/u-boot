@@ -12,6 +12,7 @@
 #ifndef LPDDR4_STRUCTS_IF_H
 #define LPDDR4_STRUCTS_IF_H
 
+#include <stdbool.h>
 #include <linux/types.h>
 #include "lpddr4_if.h"
 

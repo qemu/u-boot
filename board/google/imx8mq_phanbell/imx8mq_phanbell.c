@@ -21,6 +21,7 @@
 #include <asm/mach-imx/gpio.h>
 #include <asm/arch/clock.h>
 #include <spl.h>
+#include <linux/kernel.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <hang.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/arch-rockchip/bootrom.h>
 #include <asm/arch-rockchip/boot_mode.h>

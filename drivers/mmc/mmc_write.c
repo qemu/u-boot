@@ -13,6 +13,7 @@
 #include <part.h>
 #include <div64.h>
 #include <stdio.h>
+#include <linux/kernel.h>
 #include <linux/math64.h>
 #include "mmc_private.h"
 

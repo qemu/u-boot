@@ -22,6 +22,7 @@
 #include <asm/arch-imx8/snvs_security_sc.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 /* Access to gd */
 DECLARE_GLOBAL_DATA_PTR;

@@ -26,6 +26,7 @@
 #include <linux/errno.h>
 #include <linux/iopoll.h>
 #include <asm/io.h>
+#include <linux/kernel.h>
 
 /* Register offsets */
 #define DW_SPI_CTRL0			0x00

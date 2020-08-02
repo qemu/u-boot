@@ -7,6 +7,7 @@
 #include <command.h>
 #include <console.h>
 #include <misc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <dm/device.h>

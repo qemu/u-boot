@@ -8,6 +8,7 @@
 #include <common.h>
 #include <dm.h>
 #include <pci.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>

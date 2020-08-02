@@ -10,6 +10,7 @@
 
 #include <console.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <watchdog.h>

@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/io.h>
+#include <linux/kernel.h>
 
 struct udevice *demo_dev;
 

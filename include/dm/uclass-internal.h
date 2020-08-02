@@ -9,6 +9,7 @@
 #ifndef _DM_UCLASS_INTERNAL_H
 #define _DM_UCLASS_INTERNAL_H
 
+#include <stdbool.h>
 #include <dm/ofnode.h>
 
 /**

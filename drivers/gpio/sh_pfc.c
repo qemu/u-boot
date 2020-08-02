@@ -17,6 +17,7 @@
 #include <sh_pfc.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>
+#include <linux/kernel.h>
 
 static struct pinmux_info *gpioc;
 

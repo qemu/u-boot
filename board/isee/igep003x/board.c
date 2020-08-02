@@ -33,6 +33,7 @@
 #include <mtd_node.h>
 #include <asm/u-boot.h>
 #include <jffs2/load_kernel.h>
+#include <linux/kernel.h>
 #include "board.h"
 
 DECLARE_GLOBAL_DATA_PTR;

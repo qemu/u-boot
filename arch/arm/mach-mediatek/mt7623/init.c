@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/io.h>
+#include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <asm/arch/misc.h>
 

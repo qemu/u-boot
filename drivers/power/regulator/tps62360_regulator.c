@@ -9,6 +9,7 @@
 #include <i2c.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <power/regulator.h>
 
 #define TPS62360_REG_SET0	0

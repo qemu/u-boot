@@ -4,6 +4,7 @@
 #include <command.h>
 #include <bootcount.h>
 #include <stdio.h>
+#include <linux/kernel.h>
 
 static int do_bootcount_print(struct cmd_tbl *cmdtp, int flag, int argc,
 			      char *const argv[])

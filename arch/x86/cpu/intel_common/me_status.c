@@ -8,6 +8,7 @@
 #include <common.h>
 #include <log.h>
 #include <asm/arch/me.h>
+#include <linux/kernel.h>
 
 /* HFS1[3:0] Current Working State Values */
 static const char *const me_cws_values[] = {

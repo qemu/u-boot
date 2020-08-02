@@ -8,6 +8,7 @@
 #define __DRIVER_NVME_H__
 
 #include <asm/io.h>
+#include <linux/kernel.h>
 
 struct nvme_id_power_state {
 	__le16			max_power;	/* centiwatts */

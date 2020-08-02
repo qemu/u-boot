@@ -6,6 +6,7 @@
 #ifndef _EFI_VARIABLE_H
 #define _EFI_VARIABLE_H
 
+#include <stdbool.h>
 #include <linux/bitops.h>
 
 #define EFI_VARIABLE_READ_ONLY BIT(31)

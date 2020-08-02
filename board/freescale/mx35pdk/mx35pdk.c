@@ -19,6 +19,7 @@
 #include <asm/arch/clock.h>
 #include <asm/arch/iomux-mx35.h>
 #include <i2c.h>
+#include <linux/kernel.h>
 #include <power/pmic.h>
 #include <fsl_pmic.h>
 #include <mmc.h>

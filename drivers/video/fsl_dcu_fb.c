@@ -20,6 +20,7 @@
 #include <malloc.h>
 #include <video.h>
 #include <video_fb.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "videomodes.h"
 

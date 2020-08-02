@@ -33,6 +33,7 @@
 #include <miiphy.h>
 #include <mmc.h>
 #include <netdev.h>
+#include <linux/kernel.h>
 #include "qos.h"
 
 DECLARE_GLOBAL_DATA_PTR;

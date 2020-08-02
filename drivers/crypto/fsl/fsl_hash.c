@@ -10,6 +10,7 @@
 #include <malloc.h>
 #include <memalign.h>
 #include <stdio.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "jobdesc.h"
 #include "desc.h"

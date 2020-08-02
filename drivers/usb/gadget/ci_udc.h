@@ -6,6 +6,7 @@
 #ifndef __GADGET__CI_UDC_H__
 #define __GADGET__CI_UDC_H__
 
+#include <stdbool.h>
 #define NUM_ENDPOINTS		6
 
 #ifdef CONFIG_CI_UDC_HAS_HOSTPC

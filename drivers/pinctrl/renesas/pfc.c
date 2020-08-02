@@ -22,6 +22,7 @@
 #include <linux/bug.h>
 #include <linux/errno.h>
 #include <linux/io.h>
+#include <linux/kernel.h>
 #include <linux/sizes.h>
 
 #include "sh_pfc.h"

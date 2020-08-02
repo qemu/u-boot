@@ -7,6 +7,7 @@
 #include <common.h>
 #include <asm/fsl_law.h>
 #include <asm/mmu.h>
+#include <linux/kernel.h>
 
 struct law_entry law_table[] = {
 	SET_LAW(CONFIG_SYS_LBC0_BASE_PHYS, LAW_SIZE_64K, LAW_TRGT_IF_LBC),

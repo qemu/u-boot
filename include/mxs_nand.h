@@ -7,6 +7,7 @@
  * Stefan Agner <stefan.agner@toradex.com>
  */
 
+#include <stdbool.h>
 #include <linux/mtd/mtd.h>
 #include <asm/cache.h>
 #include <nand.h>

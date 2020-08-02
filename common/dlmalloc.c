@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #if CONFIG_IS_ENABLED(UNIT_TEST)

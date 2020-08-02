@@ -6,6 +6,7 @@
  * TC2 specific code for Versatile Express.
  */
 
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/armv7.h>
 #include <asm/io.h>

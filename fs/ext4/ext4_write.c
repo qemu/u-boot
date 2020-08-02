@@ -29,6 +29,7 @@
 #include <part.h>
 #include <stdio.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/stat.h>
 #include <div64.h>
 #include <linux/string.h>

@@ -7,6 +7,7 @@
 #ifndef _ASM_GENERIC_GPIO_H_
 #define _ASM_GENERIC_GPIO_H_
 
+#include <stdbool.h>
 #include <dm/ofnode.h>
 #include <linux/bitops.h>
 

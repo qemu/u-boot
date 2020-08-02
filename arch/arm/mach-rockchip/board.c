@@ -9,6 +9,7 @@
 #include <init.h>
 #include <log.h>
 #include <ram.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <syscon.h>
 #include <asm/cache.h>

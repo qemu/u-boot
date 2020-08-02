@@ -25,6 +25,7 @@
 #include <time.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>
 # include <atsha204a-i2c.h>

@@ -504,6 +504,7 @@ U_BOOT_CMD(
 	") size_y(max. " __stringify(MAX_Y_CHARS) ")\n"
 );
 
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/string.h>

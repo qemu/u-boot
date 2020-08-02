@@ -6,6 +6,7 @@
 #ifndef _STM32PROG_H_
 #define _STM32PROG_H_
 
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <linux/printk.h>
 

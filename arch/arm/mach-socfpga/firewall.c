@@ -8,6 +8,7 @@
 #include <common.h>
 #include <asm/arch/firewall.h>
 #include <asm/arch/system_manager.h>
+#include <linux/kernel.h>
 
 static void firewall_l4_per_disable(void)
 {

@@ -19,6 +19,7 @@
 #include <asm/arch/gpio.h>
 #include <asm/gpio.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <u-boot/crc.h>
 #include "apf27.h"
 #include "fpga.h"

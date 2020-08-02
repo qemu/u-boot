@@ -18,6 +18,7 @@
 #include <miiphy.h>
 #include <net.h>
 #include <wait_bit.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #include "mscc_xfer.h"

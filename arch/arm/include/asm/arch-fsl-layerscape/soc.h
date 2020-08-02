@@ -8,6 +8,7 @@
 #define _ASM_ARMV8_FSL_LAYERSCAPE_SOC_H_
 
 #ifndef __ASSEMBLY__
+#include <stdbool.h>
 #include <linux/types.h>
 #ifdef CONFIG_FSL_LSCH2
 #include <asm/arch/immap_lsch2.h>

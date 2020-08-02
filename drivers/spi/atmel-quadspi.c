@@ -24,6 +24,7 @@
 #include <linux/io.h>
 #include <linux/iopoll.h>
 #include <linux/ioport.h>
+#include <linux/kernel.h>
 #include <mach/clk.h>
 #include <spi.h>
 #include <spi-mem.h>

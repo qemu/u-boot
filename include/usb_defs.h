@@ -11,6 +11,7 @@
 /* USB constants */
 
 /* Device and/or Interface Class codes */
+#include <stdbool.h>
 #define USB_CLASS_PER_INTERFACE  0	/* for DeviceClass */
 #define USB_CLASS_AUDIO          1
 #define USB_CLASS_COMM           2

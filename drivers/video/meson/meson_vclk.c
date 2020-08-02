@@ -11,6 +11,7 @@
 #include <edid.h>
 #include <stdio.h>
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include "meson_vpu.h"
 #include <log.h>

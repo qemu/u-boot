@@ -27,6 +27,7 @@
 #include <hwconfig.h>
 #include <asm/mach-types.h>
 #include <asm/setup.h>
+#include <linux/kernel.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

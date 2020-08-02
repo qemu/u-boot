@@ -9,6 +9,7 @@
 
 #include <common.h>
 #include <config.h>
+#include <stdbool.h>
 #include <linux/kernel.h>
 
 enum env_type {

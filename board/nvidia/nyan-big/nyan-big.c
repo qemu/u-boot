@@ -16,6 +16,7 @@
 #include <asm/arch-tegra/clk_rst.h>
 #include <asm/arch-tegra/pmc.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <power/as3722.h>
 #include <power/pmic.h>
 #include "pinmux-config-nyan-big.h"

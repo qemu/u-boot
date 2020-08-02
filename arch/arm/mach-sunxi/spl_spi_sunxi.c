@@ -7,6 +7,7 @@
 #include <image.h>
 #include <log.h>
 #include <spl.h>
+#include <stdbool.h>
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <linux/bitops.h>

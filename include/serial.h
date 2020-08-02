@@ -1,6 +1,7 @@
 #ifndef __SERIAL_H__
 #define __SERIAL_H__
 
+#include <stdbool.h>
 #include <post.h>
 
 struct serial_device {

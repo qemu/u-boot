@@ -24,6 +24,7 @@
 #include <linux/delay.h>
 #include <linux/dma-mapping.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/list.h>
 #include <linux/printk.h>
 #include <linux/string.h>

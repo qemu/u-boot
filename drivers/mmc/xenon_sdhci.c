@@ -17,6 +17,7 @@
 #include <common.h>
 #include <dm.h>
 #include <fdtdec.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/bitops.h>

@@ -18,6 +18,7 @@
 #include <asm-generic/gpio.h>
 #include <dm/acpi.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 /**

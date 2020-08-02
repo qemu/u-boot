@@ -10,6 +10,7 @@
 #include <common.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 #include <linux/mtd/onenand_regs.h>
 #include <onenand_uboot.h>
 #include <linux/string.h>

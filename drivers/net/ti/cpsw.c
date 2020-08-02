@@ -26,6 +26,7 @@
 #include <phy.h>
 #include <asm/arch/cpu.h>
 #include <dm.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

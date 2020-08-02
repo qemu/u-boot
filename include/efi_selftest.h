@@ -13,6 +13,7 @@
 #include <efi_api.h>
 #include <efi_loader.h>
 #include <linker_lists.h>
+#include <stdbool.h>
 
 #define EFI_ST_SUCCESS 0
 #define EFI_ST_FAILURE 1

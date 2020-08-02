@@ -23,6 +23,7 @@
 #include <linux/dma-mapping.h>
 #include <phys2bus.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

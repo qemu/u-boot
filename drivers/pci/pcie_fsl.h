@@ -10,6 +10,7 @@
 #define _PCIE_FSL_H_
 
 /* GPEX CSR */
+#include <stdbool.h>
 #define CSR_CLASSCODE			0x474
 
 #ifdef CONFIG_SYS_FSL_PCI_VER_3_X

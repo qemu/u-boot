@@ -53,6 +53,7 @@
 #include <vsprintf.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "lan91c96.h"
 #include <net.h>

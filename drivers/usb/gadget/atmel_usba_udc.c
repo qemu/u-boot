@@ -8,6 +8,7 @@
  */
 
 #include <common.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>

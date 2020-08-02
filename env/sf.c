@@ -24,6 +24,7 @@
 #include <asm/global_data.h>
 #include <dm/device-internal.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <u-boot/crc.h>
 
 #ifndef CONFIG_SPL_BUILD

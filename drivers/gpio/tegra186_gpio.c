@@ -15,6 +15,7 @@
 #include <dm/device-internal.h>
 #include <dt-bindings/gpio/gpio.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include "tegra186_gpio_priv.h"
 
 struct tegra186_gpio_port_data {

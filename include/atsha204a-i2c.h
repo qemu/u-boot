@@ -12,6 +12,7 @@
 #ifndef _ATSHA204_I2C_H_
 #define _ATSHA204_I2C_H_
 
+#include <stdbool.h>
 enum atsha204a_zone
 {
 	ATSHA204A_ZONE_CONFIG	= 0,

@@ -9,6 +9,7 @@
 #include <malloc.h>
 #include <power-domain.h>
 #include <power-domain-uclass.h>
+#include <stdbool.h>
 #include <dm/device-internal.h>
 #include <linux/errno.h>
 

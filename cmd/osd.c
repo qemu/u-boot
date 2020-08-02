@@ -18,6 +18,7 @@
 #include <malloc.h>
 #include <vsprintf.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 /* Container for selected OSD device */

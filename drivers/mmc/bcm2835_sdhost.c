@@ -46,6 +46,7 @@
 #include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/iopoll.h>
+#include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <mach/gpio.h>
 #include <power/regulator.h>

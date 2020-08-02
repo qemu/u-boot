@@ -11,6 +11,7 @@
 #include <log.h>
 #include <net.h>
 #include <phy.h>
+#include <stdbool.h>
 #include <syscon.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

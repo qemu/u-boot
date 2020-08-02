@@ -17,6 +17,7 @@
 #include <dm/root.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 #include <linux/usb/musb.h>

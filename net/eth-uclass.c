@@ -11,6 +11,7 @@
 #include <env.h>
 #include <log.h>
 #include <net.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>

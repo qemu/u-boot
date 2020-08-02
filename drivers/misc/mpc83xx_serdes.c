@@ -14,6 +14,7 @@
 #include <log.h>
 #include <mapmem.h>
 #include <misc.h>
+#include <stdbool.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/string.h>

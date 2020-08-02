@@ -18,6 +18,7 @@
 #include <dm/uclass.h>
 #include <linux/bitops.h>
 #include <linux/io.h>
+#include <linux/kernel.h>
 
 #include <dt-bindings/clock/mt7629-clk.h>
 

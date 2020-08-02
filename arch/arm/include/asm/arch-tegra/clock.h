@@ -38,6 +38,7 @@ enum {
 	MASK_BITS_31_28,
 };
 
+#include <stdbool.h>
 #include <asm/arch/clock-tables.h>
 /* PLL stabilization delay in usec */
 #define CLOCK_PLL_STABLE_DELAY_US 300

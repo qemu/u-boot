@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <asm/u-boot.h>
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <pca953x.h>
 #include <asm/arch-tegra/cboot.h>

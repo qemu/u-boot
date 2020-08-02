@@ -1,6 +1,7 @@
 #ifndef _EXYNOS5_DT_H_
 #define _EXYNOS5_DT_H_
 
+#include <stdbool.h>
 enum {
 	EXYNOS5_BOARD_GENERIC,
 

@@ -27,6 +27,7 @@
 #include <dm/uclass-internal.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #define BIOS_CTRL	0xdc
 

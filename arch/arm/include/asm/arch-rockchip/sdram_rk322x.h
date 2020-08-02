@@ -7,6 +7,7 @@
 
 #ifndef __ASSEMBLY__
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 #endif
 
 struct rk322x_sdram_channel {

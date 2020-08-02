@@ -16,6 +16,7 @@
 #include <asm/arch-rockchip/clock.h>
 #include <asm/arch-rockchip/hardware.h>
 #include <asm/arch-rockchip/grf_rk3399.h>
+#include <linux/kernel.h>
 #include <power/regulator.h>
 #include "rk_hdmi.h"
 

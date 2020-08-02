@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/state.h>
+#include <linux/kernel.h>
 
 static int do_sb_handoff(struct cmd_tbl *cmdtp, int flag, int argc,
 			 char *const argv[])

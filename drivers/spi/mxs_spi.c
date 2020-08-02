@@ -30,6 +30,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/mach-imx/dma.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #define	MXS_SPI_MAX_TIMEOUT	1000000

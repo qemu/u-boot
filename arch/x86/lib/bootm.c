@@ -12,6 +12,7 @@
 #include <command.h>
 #include <hang.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>

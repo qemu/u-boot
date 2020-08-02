@@ -23,6 +23,7 @@
 #include <stdio.h>
 #include <linux/bug.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 static u8 clear_feature_num;

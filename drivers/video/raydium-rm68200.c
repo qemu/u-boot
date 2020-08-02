@@ -16,6 +16,7 @@
 #include <dm/device_compat.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <power/regulator.h>
 

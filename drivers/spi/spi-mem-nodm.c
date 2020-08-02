@@ -8,6 +8,7 @@
 #include <spi.h>
 #include <spi-mem.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 int spi_mem_exec_op(struct spi_slave *slave,

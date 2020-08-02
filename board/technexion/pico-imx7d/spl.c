@@ -19,6 +19,7 @@
 #include <fsl_esdhc_imx.h>
 #include <spl.h>
 #include <asm/u-boot.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #if defined(CONFIG_SPL_BUILD)

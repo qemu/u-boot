@@ -18,6 +18,7 @@
 #include <asm/io.h>
 #include <common.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <mmc.h>
 #include <power/pmic.h>

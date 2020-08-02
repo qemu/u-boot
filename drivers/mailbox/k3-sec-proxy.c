@@ -14,6 +14,7 @@
 #include <asm/io.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/types.h>
 #include <linux/bitops.h>
 #include <linux/soc/ti/k3-sec-proxy.h>

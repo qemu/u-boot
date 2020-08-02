@@ -22,6 +22,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #include <asm/arch/sys_proto.h>

@@ -15,6 +15,7 @@
 #include <dm/util.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #include <asm/arch/clock_manager.h>

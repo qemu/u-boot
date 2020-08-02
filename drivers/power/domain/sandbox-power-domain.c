@@ -8,6 +8,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <power-domain-uclass.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <asm/power-domain.h>
 #include <linux/errno.h>

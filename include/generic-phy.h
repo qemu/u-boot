@@ -7,6 +7,7 @@
 #ifndef __GENERIC_PHY_H
 #define __GENERIC_PHY_H
 
+#include <stdbool.h>
 #include <dm/ofnode.h>
 
 struct ofnode_phandle_args;

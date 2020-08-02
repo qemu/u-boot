@@ -18,6 +18,7 @@
 #endif
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 
 /*

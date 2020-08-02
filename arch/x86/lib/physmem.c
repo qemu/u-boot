@@ -14,6 +14,7 @@
 #include <asm/cpu.h>
 #include <asm/global_data.h>
 #include <linux/compiler.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;

@@ -6,6 +6,7 @@
 #include <common.h>
 #include <dm.h>
 #include <errno.h>
+#include <stdbool.h>
 #include <watchdog.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

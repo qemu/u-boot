@@ -8,6 +8,7 @@
 #define __CADENCE_QSPI_H__
 
 #include <reset.h>
+#include <stdbool.h>
 
 #define CQSPI_IS_ADDR(cmd_len)		(cmd_len > 1 ? 1 : 0)
 

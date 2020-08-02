@@ -4,4 +4,5 @@
  */
 
 /* check self hosted debug status = BSEC_DENABLE.DBGSWENABLE */
+#include <stdbool.h>
 bool bsec_dbgswenable(void);

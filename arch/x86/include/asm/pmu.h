@@ -5,6 +5,7 @@
 #ifndef _X86_ASM_PMU_IPC_H_
 #define _X86_ASM_PMU_IPC_H_
 
+#include <stdbool.h>
 int pmu_turn_power(unsigned int lss, bool on);
 
 #endif	/* _X86_ASM_PMU_IPC_H_ */

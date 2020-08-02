@@ -13,6 +13,7 @@
 #include <dm/devres.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/mtd/nand.h>
 #ifndef __UBOOT__
 #include <linux/slab.h>

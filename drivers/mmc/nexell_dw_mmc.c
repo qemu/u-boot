@@ -11,6 +11,7 @@
 #include <dt-structs.h>
 #include <dwmmc.h>
 #include <log.h>
+#include <stdbool.h>
 #include <syscon.h>
 #include <asm/arch/reset.h>
 #include <asm/arch/clk.h>

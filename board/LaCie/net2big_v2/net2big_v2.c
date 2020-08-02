@@ -21,6 +21,7 @@
 #include <asm/arch/soc.h>
 #include <asm/arch/mpp.h>
 #include <asm/arch/gpio.h>
+#include <linux/kernel.h>
 
 #include "net2big_v2.h"
 #include "../common/common.h"

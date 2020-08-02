@@ -8,6 +8,7 @@
 #include <wdt.h>
 #include <div64.h>
 #include <asm/scu.h>
+#include <linux/kernel.h>
 
 /* Hardware timeout in seconds */
 #define WDT_PRETIMEOUT		15

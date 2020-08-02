@@ -6,6 +6,7 @@
 #ifndef __ASM_ARCH_CPU_RK3288_H
 #define __ASM_ARCH_CPU_RK3288_H
 
+#include <stdbool.h>
 #include <asm/io.h>
 
 #define ROCKCHIP_CPU_MASK       0xffff0000

@@ -23,6 +23,7 @@
 #include <asm/arch/sys_proto.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/mtd/mtd.h>
 #include <linux/mtd/rawnand.h>
 #include <linux/mtd/onenand.h>

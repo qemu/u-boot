@@ -29,6 +29,7 @@
 #include <dm/devres.h>
 #include <linux/bug.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

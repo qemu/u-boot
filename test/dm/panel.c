@@ -10,6 +10,7 @@
 #include <backlight.h>
 #include <dm.h>
 #include <panel.h>
+#include <stdbool.h>
 #include <video.h>
 #include <asm/gpio.h>
 #include <asm/test.h>

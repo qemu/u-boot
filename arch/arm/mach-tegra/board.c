@@ -30,6 +30,7 @@
 #include <asm/arch-tegra/pmc.h>
 #include <asm/arch-tegra/sys_proto.h>
 #include <asm/arch-tegra/warmboot.h>
+#include <linux/kernel.h>
 
 void save_boot_params_ret(void);
 

@@ -9,6 +9,7 @@
 #include <linux/printk.h>
 #endif
 #include <stdio.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #endif
 

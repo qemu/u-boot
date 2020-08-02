@@ -14,6 +14,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <linux/kernel.h>
 #include <linux/stat.h>
 #include <linux/string.h>
 #include <linux/time.h>

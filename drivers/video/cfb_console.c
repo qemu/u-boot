@@ -79,6 +79,7 @@
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/compiler.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #if defined(CONFIG_VIDEO_MXS)

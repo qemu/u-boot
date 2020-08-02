@@ -13,6 +13,7 @@
 #ifndef _LINUX_LOG2_H
 #define _LINUX_LOG2_H
 
+#include <stdbool.h>
 #include <linux/types.h>
 #include <linux/bitops.h>
 

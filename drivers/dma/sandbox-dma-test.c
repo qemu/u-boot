@@ -11,6 +11,7 @@
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <dm/read.h>
 #include <dma-uclass.h>

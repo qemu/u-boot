@@ -19,6 +19,7 @@
 #include <asm/arch/mxcmmc.h>
 #endif
 #include <asm/u-boot.h>
+#include <linux/kernel.h>
 
 /*
  *  get the system pll clock in Hz

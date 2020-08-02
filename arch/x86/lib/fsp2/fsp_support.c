@@ -12,6 +12,7 @@
 #include <asm/fsp2/fsp_internal.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 /* The amount of the FSP header to probe to obtain what we need */

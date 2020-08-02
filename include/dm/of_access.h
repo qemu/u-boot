@@ -17,6 +17,7 @@
 #ifndef _DM_OF_ACCESS_H
 #define _DM_OF_ACCESS_H
 
+#include <stdbool.h>
 #include <dm/of.h>
 
 /**

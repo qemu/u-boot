@@ -6,6 +6,7 @@
 #include <asm/fsl_serdes.h>
 #include <asm/ppc.h>
 #include <asm/io.h>
+#include <linux/kernel.h>
 
 static u8 serdes_cfg_tbl[][SRDS_MAX_LANES] = {
 	[0x40] = {PCIE1, PCIE1, PCIE1, PCIE1},

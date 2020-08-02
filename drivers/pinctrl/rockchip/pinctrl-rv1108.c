@@ -11,6 +11,7 @@
 #include <syscon.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #include "pinctrl-rockchip.h"
 

@@ -12,6 +12,7 @@
 #include <asm/utils.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #define DW_WDT_CR	0x00
 #define DW_WDT_TORR	0x04

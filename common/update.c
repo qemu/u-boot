@@ -9,6 +9,7 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <image.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/errno.h>

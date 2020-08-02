@@ -25,6 +25,7 @@
 #include <asm/sdl.h>
 #endif
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 /*

@@ -11,6 +11,7 @@
 #include <common.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <uuid.h>
 #include <acpi/acpigen.h>
 #include <acpi/acpi_device.h>

@@ -76,6 +76,7 @@ Add SNMP
 #include <command.h>
 #include <stdio.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 
 /* NE2000 base header file */
 #include "ne2000_base.h"

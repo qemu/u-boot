@@ -18,6 +18,7 @@
 #include <sandbox-clk.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 /*
  * Sandbox implementation of CCF primitives necessary for clk-uclass testing

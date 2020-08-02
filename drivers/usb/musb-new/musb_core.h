@@ -21,6 +21,7 @@
 #include <linux/usb/otg.h>
 #else
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #endif
 #include <linux/usb/ch9.h>
 #include <linux/usb/gadget.h>

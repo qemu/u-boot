@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <i2c.h>
 #include <log.h>
+#include <stdbool.h>
 #include <linux/errno.h>
 #include <power/tps65090.h>
 

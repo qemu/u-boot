@@ -14,6 +14,7 @@
 #include <log.h>
 #include <pci.h>
 #include <pci_gt64120.h>
+#include <linux/kernel.h>
 
 #include <asm/io.h>
 

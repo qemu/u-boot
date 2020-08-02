@@ -19,6 +19,7 @@
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #define HSSPI_PP			0
 

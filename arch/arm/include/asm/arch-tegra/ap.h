@@ -3,6 +3,7 @@
  * (C) Copyright 2010-2015
  * NVIDIA Corporation <www.nvidia.com>
  */
+#include <stdbool.h>
 #include <asm/types.h>
 
 /* Stabilization delays, in usec */

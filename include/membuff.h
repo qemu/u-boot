@@ -9,6 +9,8 @@
 #ifndef _MEMBUFF_H
 #define _MEMBUFF_H
 
+#include <stdbool.h>
+
 /**
  * @struct membuff: holds the state of a membuff - it is used for input and
  * output buffers. The buffer extends from @start to (@start + @size - 1).

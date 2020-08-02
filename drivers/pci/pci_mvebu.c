@@ -26,6 +26,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/ioport.h>
+#include <linux/kernel.h>
 #include <linux/mbus.h>
 #include <linux/printk.h>
 

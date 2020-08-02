@@ -22,6 +22,7 @@
 #include <fsl_wdog.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 
 #include "fsl_epu.h"
 

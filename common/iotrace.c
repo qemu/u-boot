@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <mapmem.h>
+#include <stdbool.h>
 #include <time.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

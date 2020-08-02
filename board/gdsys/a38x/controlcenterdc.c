@@ -18,6 +18,7 @@
 #include <asm/arch/cpu.h>
 #include <asm-generic/gpio.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 
 #include "../drivers/ddr/marvell/a38x/ddr3_init.h"
 #include "../arch/arm/mach-mvebu/serdes/a38x/high_speed_env_spec.h"

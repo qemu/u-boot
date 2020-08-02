@@ -21,6 +21,7 @@
 #define MXC_CLK32	32768
 #endif
 
+#include <stdbool.h>
 enum mxc_clock {
 	/* PER clocks (do not change order) */
 	MXC_CSI_CLK,

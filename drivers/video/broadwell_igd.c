@@ -25,6 +25,7 @@
 #include <asm/arch/pch.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include "i915_reg.h"
 
 struct broadwell_igd_priv {

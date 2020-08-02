@@ -17,6 +17,7 @@
 #include <bmp_logo.h>
 #endif
 #include <vsprintf.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 static struct console_t cons;

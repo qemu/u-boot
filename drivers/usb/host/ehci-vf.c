@@ -22,6 +22,7 @@
 #include <asm/mach-imx/regs-usbphy.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <usb/ehci-ci.h>
 #include <linux/libfdt.h>

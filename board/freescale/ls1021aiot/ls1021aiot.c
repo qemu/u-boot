@@ -16,6 +16,7 @@
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #include <asm/arch/ls102xa_devdis.h>

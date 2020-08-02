@@ -24,6 +24,7 @@
 #include <linux/compiler.h>
 #include <asm/ti-common/ti-edma3.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 static int emif1_enabled = -1, emif2_enabled = -1;

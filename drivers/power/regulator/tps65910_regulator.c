@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <log.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include <power/pmic.h>
 #include <power/regulator.h>

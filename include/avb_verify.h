@@ -98,4 +98,5 @@ static inline int get_boot_device(AvbOps *ops)
 	return -1;
 }
 
+#include <stdbool.h>
 #endif /* _AVB_VERIFY_H */

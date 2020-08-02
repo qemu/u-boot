@@ -11,6 +11,7 @@
 #include <errno.h>
 #include <log.h>
 #include <pci.h>
+#include <linux/kernel.h>
 
 /*
  * Do not change this file. Instead, convert your board to use CONFIG_DM_PCI

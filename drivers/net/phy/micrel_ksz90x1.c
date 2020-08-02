@@ -15,6 +15,7 @@
 #include <micrel.h>
 #include <phy.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 /*
  * KSZ9021 - KSZ9031 common

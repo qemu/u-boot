@@ -8,6 +8,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <asm/u-boot.h>
+#include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <fdt_support.h>
 #include <malloc.h>

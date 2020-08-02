@@ -14,6 +14,7 @@
 #include <env.h>
 #include <init.h>
 #include <net.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <watchdog.h>

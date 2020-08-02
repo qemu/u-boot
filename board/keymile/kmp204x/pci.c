@@ -10,6 +10,7 @@
 #include <command.h>
 #include <init.h>
 #include <pci.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/fsl_pci.h>
 #include <asm/u-boot.h>

@@ -17,6 +17,7 @@
 #include <dm/device-internal.h>
 #include <dm/uclass-internal.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include "designware_i2c.h"
 
 enum {

@@ -16,6 +16,7 @@
 #include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/err.h>
+#include <linux/kernel.h>
 #include <mach/at91_pio.h>
 
 DECLARE_GLOBAL_DATA_PTR;

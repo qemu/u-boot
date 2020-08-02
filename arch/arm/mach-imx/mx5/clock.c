@@ -17,6 +17,7 @@
 #include <asm/arch/clock.h>
 #include <div64.h>
 #include <asm/arch/sys_proto.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 enum pll_clocks {

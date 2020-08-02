@@ -9,6 +9,7 @@
 
 /* TODO(sjg@chromium.org): Drop fdtdec.h include */
 #include <fdtdec.h>
+#include <stdbool.h>
 #include <dm/of.h>
 
 /* Enable checks to protect against invalid calls */

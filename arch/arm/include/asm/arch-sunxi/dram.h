@@ -11,6 +11,7 @@
 #ifndef _SUNXI_DRAM_H
 #define _SUNXI_DRAM_H
 
+#include <stdbool.h>
 #include <asm/io.h>
 #include <linux/types.h>
 

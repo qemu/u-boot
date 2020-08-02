@@ -13,6 +13,7 @@
 #include <linux/clk-provider.h>
 #endif
 #include <stdio.h>
+#include <linux/kernel.h>
 
 #if defined(CONFIG_DM) && defined(CONFIG_CLK)
 static void show_clks(struct udevice *dev, int depth, int last_flag)

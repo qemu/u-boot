@@ -9,6 +9,7 @@
 #ifndef _ASM_ARCH_CLOCK_SLICE_H
 #define _ASM_ARCH_CLOCK_SLICE_H
 
+#include <stdbool.h>
 enum root_pre_div {
 	CLK_ROOT_PRE_DIV1 = 0,
 	CLK_ROOT_PRE_DIV2,

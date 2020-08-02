@@ -13,6 +13,7 @@
 #include <mmc.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #define AVB_BOOTARGS	"avb_bootargs"

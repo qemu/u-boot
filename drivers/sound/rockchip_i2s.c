@@ -15,6 +15,7 @@
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 struct rk_i2s_regs {
 	u32 txcr;		/* I2S_TXCR, 0x00 */

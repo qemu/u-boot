@@ -90,6 +90,7 @@
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #endif
 #ifndef __U_BOOT__

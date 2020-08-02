@@ -19,6 +19,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #ifdef DEBUG_TRACE

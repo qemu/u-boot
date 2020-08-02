@@ -17,6 +17,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/ctype.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #ifdef CONFIG_INI_MAX_LINE

@@ -19,6 +19,7 @@
 #include <asm/arch/sys_proto.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
+#include <linux/kernel.h>
 #include <power/tps65910.h>
 #include <jffs2/load_kernel.h>
 #include <mtd_node.h>

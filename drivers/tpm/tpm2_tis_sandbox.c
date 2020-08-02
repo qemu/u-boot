@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <tpm-v2.h>
 #include <vsprintf.h>

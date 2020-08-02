@@ -20,6 +20,7 @@
 #include <asm/arch/crm_regs.h>
 #include <asm/arch/iomux-mx35.h>
 #include <i2c.h>
+#include <linux/kernel.h>
 #include <linux/types.h>
 #include <asm/gpio.h>
 #include <asm/arch/sys_proto.h>

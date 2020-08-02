@@ -20,6 +20,7 @@
  * @firmware_revision:	Firmware revision (not usually used).
  * @firmware_description: Firmware description (not usually used).
  */
+#include <stdbool.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 struct ti_sci_version_info {

@@ -22,6 +22,7 @@
 #include <sh_pfc.h>
 #include <asm/gpio.h>
 #include <asm/arch/irqs.h>
+#include <linux/kernel.h>
 
 #define CPU_ALL_PORT(fn, pfx, sfx)					\
 	PORT_10(fn, pfx, sfx),		PORT_90(fn, pfx, sfx),		\

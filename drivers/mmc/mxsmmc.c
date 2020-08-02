@@ -35,6 +35,7 @@
 #include <asm/arch/sys_proto.h>
 #include <asm/mach-imx/dma.h>
 #include <bouncebuf.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #define	MXSMMC_MAX_TIMEOUT	10000

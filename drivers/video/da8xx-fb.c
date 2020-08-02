@@ -16,6 +16,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <memalign.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <video_fb.h>
 #include <asm/global_data.h>

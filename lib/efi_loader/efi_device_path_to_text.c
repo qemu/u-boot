@@ -8,6 +8,7 @@
 #include <common.h>
 #include <blk.h>
 #include <efi_loader.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <linux/string.h>
 

@@ -13,6 +13,7 @@
 #include <malloc.h>
 #include <asm/test.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #ifdef DEBUG

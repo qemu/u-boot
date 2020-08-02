@@ -7,6 +7,7 @@
 #include <command.h>
 #include <dfu.h>
 #include <image.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/arch/stm32prog.h>

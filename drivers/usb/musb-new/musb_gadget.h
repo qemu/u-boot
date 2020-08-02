@@ -10,6 +10,7 @@
 #ifndef __MUSB_GADGET_H
 #define __MUSB_GADGET_H
 
+#include <linux/kernel.h>
 #include <linux/list.h>
 #ifdef __UBOOT__
 #include <asm/byteorder.h>

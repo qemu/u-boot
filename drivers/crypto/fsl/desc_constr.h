@@ -9,6 +9,7 @@
 
 #include <stdio.h>
 #include <linux/compat.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "desc.h"
 

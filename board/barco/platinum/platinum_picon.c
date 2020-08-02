@@ -15,6 +15,7 @@
 #include <i2c.h>
 #include <miiphy.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 
 #include "platinum.h"
 

@@ -6,6 +6,7 @@
 #include <compiler.h>
 #include <part.h>
 #include <sparse_format.h>
+#include <linux/kernel.h>
 
 #define ROUNDUP(x, y)	(((x) + ((y) - 1)) & ~((y) - 1))
 

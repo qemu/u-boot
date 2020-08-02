@@ -11,6 +11,7 @@
 #define _LINUX_PUBLIC_KEY_H
 
 #ifdef __UBOOT__
+#include <stdbool.h>
 #include <linux/types.h>
 #else
 #include <linux/keyctl.h>

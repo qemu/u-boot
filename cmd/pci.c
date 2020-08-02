@@ -25,6 +25,7 @@
 #include <asm/io.h>
 #include <pci.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 struct pci_reg_info {

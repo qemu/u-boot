@@ -20,6 +20,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/bitops.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 /*

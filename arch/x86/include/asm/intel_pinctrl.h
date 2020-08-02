@@ -9,6 +9,7 @@
 #ifndef __ASM_INTEL_PINCTRL_H
 #define __ASM_INTEL_PINCTRL_H
 
+#include <stdbool.h>
 #include <dm/pinctrl.h>
 #include <linux/bitops.h>
 

@@ -11,6 +11,7 @@
 #include <log.h>
 #include <usb.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "musb_hcd.h"
 

@@ -8,6 +8,7 @@
 #include <soc.h>
 #include <dm.h>
 #include <errno.h>
+#include <stdbool.h>
 #include <dm/lists.h>
 #include <dm/root.h>
 #include <linux/errno.h>

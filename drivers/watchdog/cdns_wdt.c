@@ -15,6 +15,7 @@
 #include <dm/device_compat.h>
 #include <linux/err.h>
 #include <linux/io.h>
+#include <linux/kernel.h>
 
 struct cdns_regs {
 	u32 zmr;	/* WD Zero mode register, offset - 0x0 */

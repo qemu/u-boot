@@ -19,6 +19,7 @@
 #endif
 
 /* Constants */
+#include <linux/kernel.h>
 #define INT_CAUSE_UNMASK_ALL		0x0007ffff
 #define INT_CAUSE_UNMASK_ALL_EXT	0x0011ffff
 #define MRU_MASK			0xfff1ffff

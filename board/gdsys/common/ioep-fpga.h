@@ -7,6 +7,7 @@
 #ifndef _IOEP_FPGA_H_
 #define _IOEP_FPGA_H_
 
+#include <stdbool.h>
 void ioep_fpga_print_info(unsigned int fpga);
 bool ioep_fpga_has_osd(unsigned int fpga);
 

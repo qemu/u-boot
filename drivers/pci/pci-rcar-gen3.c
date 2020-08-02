@@ -24,6 +24,7 @@
 #include <wait_bit.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #define PCIECAR			0x000010
 #define PCIECCTLR		0x000018

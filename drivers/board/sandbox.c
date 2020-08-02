@@ -9,6 +9,7 @@
 #include <board.h>
 #include <vsprintf.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #include "sandbox.h"
 

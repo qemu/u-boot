@@ -11,6 +11,7 @@
 #include <hexdump.h>
 #include <malloc.h>
 #include <crypto/pkcs7.h>
+#include <stdbool.h>
 #include <crypto/pkcs7_parser.h>
 #include <crypto/public_key.h>
 #include <linux/compat.h>

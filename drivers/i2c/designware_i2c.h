@@ -10,6 +10,7 @@
 #include <clk.h>
 #include <i2c.h>
 #include <reset.h>
+#include <stdbool.h>
 #include <linux/bitops.h>
 
 struct i2c_regs {

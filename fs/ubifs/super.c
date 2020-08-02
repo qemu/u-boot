@@ -37,6 +37,7 @@
 #include <linux/bitops.h>
 #include <linux/bug.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/log2.h>
 #include <linux/printk.h>
 #include <linux/stat.h>

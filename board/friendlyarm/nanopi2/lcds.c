@@ -9,6 +9,7 @@
 #include <fdtdec.h>
 #include <fdt_support.h>
 #include <asm/io.h>
+#include <linux/kernel.h>
 
 #include <asm/arch/nexell.h>
 #include <asm/arch/display.h>

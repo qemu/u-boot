@@ -6,6 +6,7 @@
 #ifndef __pwrseq_h
 #define __pwrseq_h
 
+#include <stdbool.h>
 struct pwrseq_ops {
 	int (*set_power)(struct udevice *dev, bool enable);
 };

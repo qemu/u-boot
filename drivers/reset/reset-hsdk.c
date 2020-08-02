@@ -14,6 +14,7 @@
 #include <linux/errno.h>
 #include <linux/iopoll.h>
 #include <reset-uclass.h>
+#include <linux/kernel.h>
 
 struct hsdk_rst {
 	void __iomem		*regs_ctl;

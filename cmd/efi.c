@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 static const char *const type_name[] = {

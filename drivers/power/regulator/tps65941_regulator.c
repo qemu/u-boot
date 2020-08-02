@@ -12,6 +12,7 @@
 #include <dm.h>
 #include <i2c.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

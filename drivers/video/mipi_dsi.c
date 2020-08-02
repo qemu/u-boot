@@ -38,6 +38,7 @@
 #include <dm.h>
 #include <mipi_display.h>
 #include <mipi_dsi.h>
+#include <stdbool.h>
 #include <dm/devres.h>
 #include <linux/errno.h>
 #include <linux/string.h>

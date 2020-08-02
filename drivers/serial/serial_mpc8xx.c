@@ -8,6 +8,7 @@
 #include <command.h>
 #include <dm.h>
 #include <serial.h>
+#include <stdbool.h>
 #include <watchdog.h>
 #include <asm/cpm_8xx.h>
 #include <asm/global_data.h>

@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <pch.h>
 #include <spl.h>
+#include <stdbool.h>
 #include <asm/lpc_common.h>
 
 #define BIOS_CTRL	0xdc

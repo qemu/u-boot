@@ -20,6 +20,7 @@
 #include <pci_tegra.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include "../common/tdx-common.h"
 
 #include "pinmux-config-apalis_t30.h"

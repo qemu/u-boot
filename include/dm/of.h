@@ -7,6 +7,7 @@
 #ifndef _DM_OF_H
 #define _DM_OF_H
 
+#include <stdbool.h>
 #include <asm/u-boot.h>
 #include <asm/global_data.h>
 #include <linux/string.h>

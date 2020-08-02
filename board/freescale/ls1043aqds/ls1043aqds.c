@@ -10,6 +10,7 @@
 #include <fsl_ddr_sdram.h>
 #include <init.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

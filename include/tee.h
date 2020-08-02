@@ -6,6 +6,7 @@
 #ifndef __TEE_H
 #define __TEE_H
 
+#include <stdbool.h>
 #include <linux/bitops.h>
 #include <linux/list.h>
 

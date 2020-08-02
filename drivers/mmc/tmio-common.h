@@ -7,6 +7,7 @@
 #ifndef __TMIO_COMMON_H__
 #define __TMIO_COMMON_H__
 
+#include <stdbool.h>
 #include <linux/bitops.h>
 #define TMIO_SD_CMD			0x000	/* command */
 #define   TMIO_SD_CMD_NOSTOP		BIT(14)	/* No automatic CMD12 issue */

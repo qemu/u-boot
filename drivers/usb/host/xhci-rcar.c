@@ -16,6 +16,7 @@
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #include <usb/xhci.h>
 #include "xhci-rcar-r8a779x_usb3_v3.h"

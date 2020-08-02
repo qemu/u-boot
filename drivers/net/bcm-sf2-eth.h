@@ -7,6 +7,7 @@
 #define _BCM_SF2_ETH_H_
 
 #include <phy.h>
+#include <stdbool.h>
 
 #define RX_BUF_SIZE	2048
 /* RX_BUF_NUM must be power of 2 */

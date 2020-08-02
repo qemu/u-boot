@@ -10,6 +10,7 @@
  * is impractical to define One True Struct, because the resulting encoding
  * routines (lots of read-modify-writes) would be worst-case performance whether
  * or not circumstances required them.) */
+#include <linux/kernel.h>
 struct dpaa_fd {
 	union {
 		u32 words[8];

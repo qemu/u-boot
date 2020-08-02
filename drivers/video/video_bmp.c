@@ -14,6 +14,7 @@
 #include <watchdog.h>
 #include <asm/unaligned.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #ifdef CONFIG_VIDEO_BMP_RLE8
 #define BMP_RLE8_ESCAPE		0

@@ -7,6 +7,7 @@
 #ifndef _CH7301_H_
 #define _CH7301_H_
 
+#include <stdbool.h>
 int ch7301_probe(unsigned screen, bool power);
 
 #endif

@@ -16,6 +16,7 @@
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #include "ks8851_mll.h"
 

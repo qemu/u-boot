@@ -22,6 +22,7 @@
 #include <linux/ctype.h>
 #include <asm/types.h>
 #include <asm/io.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #include <fsl_ddr_sdram.h>

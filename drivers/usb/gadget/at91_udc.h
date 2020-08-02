@@ -13,6 +13,7 @@
  * Based on AT91RM9200 datasheet revision E.
  */
 
+#include <linux/kernel.h>
 #define AT91_UDP_FRM_NUM	0x00		/* Frame Number Register */
 #define     AT91_UDP_NUM	(0x7ff <<  0)	/* Frame Number */
 #define     AT91_UDP_FRM_ERR	(1     << 16)	/* Frame Error */

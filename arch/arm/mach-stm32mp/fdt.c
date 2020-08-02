@@ -13,6 +13,7 @@
 #include <asm/u-boot.h>
 #include <dt-bindings/pinctrl/stm32-pinfunc.h>
 #include <linux/io.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #define ETZPC_DECPROT(n)	(STM32_ETZPC_BASE + 0x10 + 4 * (n))

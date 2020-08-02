@@ -18,6 +18,7 @@
 #include <linux/ctype.h>
 #include <div64.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/math64.h>
 #include <linux/string.h>
 #include "fat.c"

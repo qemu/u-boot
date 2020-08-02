@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <power/da9063_pmic.h>
 #include <power/pmic.h>

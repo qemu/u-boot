@@ -13,6 +13,7 @@
 #include <asm/arch/imx-regs.h>
 #include <dt-bindings/clock/imx8mm-clock.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #include "clk.h"
 

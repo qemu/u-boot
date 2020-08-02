@@ -6,6 +6,7 @@
 #ifndef _RESET_MANAGER_GEN5_H_
 #define _RESET_MANAGER_GEN5_H_
 
+#include <stdbool.h>
 #include <dt-bindings/reset/altr,rst-mgr.h>
 
 void socfpga_bridges_set_handoff_regs(bool h2f, bool lwh2f, bool f2h);

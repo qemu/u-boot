@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <dm/of_access.h>
 #include <mapmem.h>

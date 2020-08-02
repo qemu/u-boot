@@ -13,6 +13,7 @@
 #include <errno.h>
 #include <log.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <power/rk8xx_pmic.h>
 #include <power/pmic.h>
 #include <power/regulator.h>

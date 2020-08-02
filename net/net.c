@@ -97,6 +97,7 @@
 #include <image.h>
 #include <log.h>
 #include <net.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <vsprintf.h>

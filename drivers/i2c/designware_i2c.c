@@ -17,6 +17,7 @@
 #include <asm/io.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include "designware_i2c.h"
 #include <dm/device_compat.h>
 #include <linux/err.h>

@@ -21,6 +21,7 @@
 #include <malloc.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
+#include <linux/kernel.h>
 #include <u-boot/zlib.h>
 #include <bzlib.h>
 #include <asm/byteorder.h>

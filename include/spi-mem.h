@@ -13,6 +13,8 @@
 
 struct udevice;
 
+#include <stdbool.h>
+
 #define SPI_MEM_OP_CMD(__opcode, __buswidth)			\
 	{							\
 		.buswidth = __buswidth,				\

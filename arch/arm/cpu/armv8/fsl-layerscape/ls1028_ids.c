@@ -9,6 +9,7 @@
 #include <asm/arch-fsl-layerscape/immap_lsch3.h>
 #include <asm/arch-fsl-layerscape/fsl_icid.h>
 #include <asm/arch-fsl-layerscape/fsl_portals.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 struct icid_id_table icid_tbl[] = {

@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 /* For DIV_ROUND_DOWN_ULL, defined in linux/kernel.h */
 #include <div64.h>
 #include <dm/test.h>

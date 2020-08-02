@@ -12,6 +12,7 @@
 #include <hang.h>
 #include <init.h>
 #include <spl.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <asm/gpio.h>

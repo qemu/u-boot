@@ -20,6 +20,7 @@
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "sdram_soc64.h"
 #include <wait_bit.h>

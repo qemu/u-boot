@@ -19,6 +19,7 @@
 #include <mmc.h>
 #include <fsl_esdhc_imx.h>
 #include <asm/gpio.h>
+#include <linux/kernel.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

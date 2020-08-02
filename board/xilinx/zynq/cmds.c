@@ -14,6 +14,7 @@
 #include <asm/arch/sys_proto.h>
 #include <malloc.h>
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <u-boot/md5.h>
 #include <u-boot/rsa.h>

@@ -12,6 +12,7 @@
 #include <asm/intel_regs.h>
 #include <asm/pci.h>
 #include <asm/arch/systemagent.h>
+#include <linux/kernel.h>
 
 /**
  * struct apl_hostbridge_platdata - platform data for hostbridge

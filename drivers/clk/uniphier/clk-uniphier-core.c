@@ -7,6 +7,7 @@
 #include <common.h>
 #include <clk-uclass.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>

@@ -24,6 +24,7 @@
 #include <time.h>
 #include <usb.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "sl811.h"
 

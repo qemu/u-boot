@@ -9,6 +9,7 @@
 #include <mapmem.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <test/suites.h>
 #include <test/test.h>
 #include <test/ut.h>

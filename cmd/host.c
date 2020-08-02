@@ -13,6 +13,7 @@
 #include <vsprintf.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 static int host_curr_device = -1;
 

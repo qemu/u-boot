@@ -25,6 +25,7 @@
 #include <fsl_validate.h>
 #endif
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #ifdef CONFIG_SYS_LS_PPA_FW_IN_NAND
 #include <nand.h>

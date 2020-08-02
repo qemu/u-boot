@@ -11,6 +11,7 @@
 #include <dm/device.h>
 #include <linux/err.h>
 #include <linux/io.h>
+#include <linux/kernel.h>
 #include <mach/at91_pmc.h>
 #include "pmc.h"
 

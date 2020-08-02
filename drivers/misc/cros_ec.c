@@ -34,6 +34,7 @@
 #include <dm/device-internal.h>
 #include <dm/of_extra.h>
 #include <dm/uclass-internal.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #ifdef DEBUG_TRACE

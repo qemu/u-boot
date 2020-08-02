@@ -11,6 +11,7 @@
 
 #ifndef _LCD_H_
 #define _LCD_H_
+#include <compiler.h>
 #include <lcd_console.h>
 #if defined(CONFIG_CMD_BMP) || defined(CONFIG_SPLASH_SCREEN)
 #include <bmp_layout.h>

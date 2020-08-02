@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <pwm.h>
+#include <stdbool.h>
 #include <asm/test.h>
 #include <linux/errno.h>
 

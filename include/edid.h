@@ -12,6 +12,7 @@
 #ifndef __EDID_H_
 #define __EDID_H_
 
+#include <stdbool.h>
 #include <linux/types.h>
 
 /* Size of the EDID data */

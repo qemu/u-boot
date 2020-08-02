@@ -13,6 +13,7 @@
 #include <miiphy.h>
 #include <micrel.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 
 #include "platinum.h"
 

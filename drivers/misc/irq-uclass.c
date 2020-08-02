@@ -11,6 +11,7 @@
 #include <dt-structs.h>
 #include <irq.h>
 #include <log.h>
+#include <stdbool.h>
 #include <dm/device-internal.h>
 #include <linux/errno.h>
 

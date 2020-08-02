@@ -36,6 +36,7 @@
 #include <miiphy.h>
 #include <lcd.h>
 #include <led.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <power/pmic.h>
 #include <power/regulator.h>

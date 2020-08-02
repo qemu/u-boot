@@ -243,6 +243,7 @@ static inline int video_sync_copy(struct udevice *dev, void *from, void *to)
 }
 #endif
 
+#include <stdbool.h>
 #endif /* CONFIG_DM_VIDEO */
 
 #ifndef CONFIG_DM_VIDEO

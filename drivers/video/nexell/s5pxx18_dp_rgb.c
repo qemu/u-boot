@@ -8,6 +8,8 @@
 #include <config.h>
 #include <common.h>
 #include <errno.h>
+#include <stdbool.h>
+#include <stdio.h>
 
 #include <asm/arch/display.h>
 

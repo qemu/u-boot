@@ -16,6 +16,7 @@
 #else
 #include <asm/arch/s3c24x0_cpu.h>
 #endif
+#include <stdbool.h>
 #include <time.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <linux/kernel.h>
 #include <power/as3722.h>
 
 #include <asm/arch/gpio.h>

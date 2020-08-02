@@ -14,6 +14,7 @@
 #include <spi.h>
 #include <spl.h>
 #include <spi_flash.h>
+#include <stdbool.h>
 #include <asm/intel_pinctrl.h>
 #include <dm/uclass-internal.h>
 #include <asm/fsp2/fsp_internal.h>

@@ -19,6 +19,7 @@
 #include <vsprintf.h>
 #include <asm-generic/unaligned.h>
 #include <linux/compat.h> /* U16_MAX */
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #ifdef CONFIG_SANDBOX

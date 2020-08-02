@@ -11,6 +11,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <vsprintf.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "desc.h"
 #include "jr.h"

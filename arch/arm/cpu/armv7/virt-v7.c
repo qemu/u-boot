@@ -16,6 +16,7 @@
 #include <asm/gic.h>
 #include <asm/io.h>
 #include <asm/secure.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 static unsigned int read_id_pfr1(void)

@@ -1,11 +1,11 @@
 #ifndef _LINUX_ERR_H
 #define _LINUX_ERR_H
 
+#include <stdbool.h>
 #include <linux/compiler.h>
 #include <linux/compat.h>
 
 #include <linux/errno.h>
-
 
 /*
  * Kernel pointers have redundant information, so we can use a

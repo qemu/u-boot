@@ -13,6 +13,7 @@
 #include <malloc.h>
 #include <stdio.h>
 #include <asm/u-boot.h>
+#include <linux/kernel.h>
 
 #define LMB_ALLOC_ANYWHERE	0
 

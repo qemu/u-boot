@@ -16,6 +16,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <u-boot/sha256.h>
 #include <spi.h>

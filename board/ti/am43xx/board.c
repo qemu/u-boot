@@ -30,6 +30,7 @@
 #include <asm/arch/gpio.h>
 #include <asm/emif.h>
 #include <asm/omap_common.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "../common/board_detect.h"
 #include "board.h"

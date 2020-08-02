@@ -9,6 +9,7 @@
 #ifndef __MESON_VPU_H__
 #define __MESON_VPU_H__
 
+#include <stdbool.h>
 #include <video.h>
 #include "meson_registers.h"
 

@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <tee.h>
 #include <dm/device-internal.h>
 #include <dm/uclass-internal.h>

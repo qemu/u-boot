@@ -22,6 +22,7 @@
 #include <linux/clk-provider.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/log2.h>
 #include <div64.h>
 #include <clk.h>

@@ -18,6 +18,7 @@
 #include <asm/gpio.h>
 #include <asm/u-boot.h>
 #include <linux/compiler.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #include "mxs_init.h"

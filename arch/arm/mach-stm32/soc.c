@@ -8,6 +8,7 @@
 #include <init.h>
 #include <asm/io.h>
 #include <asm/armv7_mpu.h>
+#include <linux/kernel.h>
 
 int arch_cpu_init(void)
 {

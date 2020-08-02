@@ -13,6 +13,7 @@
 #include <net.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <net/pfe_eth/pfe_eth.h>
 
 extern struct gemac_s gem_info[];

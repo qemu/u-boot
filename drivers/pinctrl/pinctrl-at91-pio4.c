@@ -15,6 +15,7 @@
 #include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/err.h>
+#include <linux/kernel.h>
 #include <mach/atmel_pio4.h>
 
 DECLARE_GLOBAL_DATA_PTR;

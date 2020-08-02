@@ -6,6 +6,7 @@
 #ifndef __BOARD_SR_COMMON_H_
 #define __BOARD_SR_COMMON_H_
 
+#include <stdbool.h>
 struct tlv_data {
 	/* Store product name of both SOM and carrier */
 	char tlv_product_name[2][32];

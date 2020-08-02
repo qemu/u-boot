@@ -11,6 +11,7 @@
 #include <trace.h>
 #include <vsprintf.h>
 #include <asm/io.h>
+#include <linux/kernel.h>
 
 static int get_args(int argc, char *const argv[], char **buff,
 		    size_t *buff_ptr, size_t *buff_size)

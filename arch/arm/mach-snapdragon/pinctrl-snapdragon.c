@@ -13,6 +13,7 @@
 #include <dm/pinctrl.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include "pinctrl-snapdragon.h"
 
 struct msm_pinctrl_priv {

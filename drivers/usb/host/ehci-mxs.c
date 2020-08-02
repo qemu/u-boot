@@ -13,6 +13,7 @@
 #include <errno.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #include "ehci.h"
 

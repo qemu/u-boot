@@ -14,6 +14,7 @@
 #include <asm/arch-rockchip/hardware.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
+#include <linux/kernel.h>
 #include "rk_vop.h"
 
 DECLARE_GLOBAL_DATA_PTR;

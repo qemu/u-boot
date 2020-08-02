@@ -13,6 +13,7 @@
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include <samsung/misc.h>
 #include <errno.h>

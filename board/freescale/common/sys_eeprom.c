@@ -15,6 +15,7 @@
 #include <vsprintf.h>
 #include <linux/ctype.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>
 

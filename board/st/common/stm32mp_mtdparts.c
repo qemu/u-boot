@@ -10,6 +10,7 @@
 #include <env_internal.h>
 #include <mtd.h>
 #include <mtd_node.h>
+#include <stdbool.h>
 #include <tee.h>
 #include <asm/arch/stm32prog.h>
 #include <asm/arch/sys_proto.h>

@@ -24,6 +24,7 @@
 #include <asm/arch-rockchip/sdram.h>
 #include <asm/u-boot.h>
 #include <linux/err.h>
+#include <linux/kernel.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

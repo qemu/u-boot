@@ -6,6 +6,7 @@
 #include <common.h>
 #include <command.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <dm/device-internal.h>

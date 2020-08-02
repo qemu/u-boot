@@ -18,6 +18,7 @@
 #include <common.h>
 #include <dm.h>
 #include <serial.h>
+#include <stdbool.h>
 #include <linux/errno.h>
 
 #if defined(CONFIG_CPU_V6) || defined(CONFIG_CPU_V7A) || defined(CONFIG_CPU_V7R)

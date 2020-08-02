@@ -6,6 +6,7 @@
 #ifndef ARM_BOOTM_H
 #define ARM_BOOTM_H
 
+#include <stdbool.h>
 void bootm_announce_and_cleanup(void);
 
 /**

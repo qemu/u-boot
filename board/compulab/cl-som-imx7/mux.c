@@ -10,6 +10,7 @@
 #include <common.h>
 #include <asm/mach-imx/iomux-v3.h>
 #include <asm/arch-mx7/mx7-pins.h>
+#include <linux/kernel.h>
 
 #define PADS_SET(pads_array)						       \
 void cl_som_imx7_##pads_array##_set(void)				       \

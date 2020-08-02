@@ -10,6 +10,7 @@
 #include <image.h>
 #include <mapmem.h>
 #include <errno.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>

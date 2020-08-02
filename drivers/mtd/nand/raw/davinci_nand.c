@@ -35,6 +35,7 @@
 #include <dm/uclass.h>
 #include <asm/ti-common/davinci_nand.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 
 /* Definitions for 4-bit hardware ECC */

@@ -9,6 +9,7 @@
 #include <errno.h>
 #include <edid.h>
 #include <log.h>
+#include <stdbool.h>
 #include <video_bridge.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

@@ -28,6 +28,7 @@
 #include <linux/err.h>
 #include <linux/errno.h>
 #include <linux/ioport.h>
+#include <linux/kernel.h>
 #include <linux/mdio.h>
 #include <linux/mii.h>
 #include <linux/printk.h>

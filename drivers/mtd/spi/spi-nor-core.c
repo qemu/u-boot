@@ -19,6 +19,7 @@
 #include <linux/bitops.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/log2.h>
 #include <linux/math64.h>
 #include <linux/printk.h>

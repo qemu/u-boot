@@ -13,6 +13,7 @@
 #ifndef __ASSEMBLY__
 #include <asm/cache.h>
 #include <malloc.h>
+#include <linux/kernel.h>
 
 /*
  * The ALLOC_CACHE_ALIGN_BUFFER macro is used to allocate a buffer on the

@@ -20,6 +20,7 @@
 #include <linux/errno.h>
 #include <asm/gpio.h>
 #include <asm/mach-imx/mxc_i2c.h>
+#include <linux/kernel.h>
 
 #include <common.h>
 #include <fsl_esdhc_imx.h>

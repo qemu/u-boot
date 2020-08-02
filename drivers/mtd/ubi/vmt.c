@@ -21,6 +21,7 @@
 #include <ubi_uboot.h>
 #include <vsprintf.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #endif
 #include <linux/math64.h>

@@ -7,11 +7,13 @@
 
 #include <common.h>
 #include <config.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/dmc.h>
 #include <asm/arch/power.h>
+#include <linux/kernel.h>
 #include "common_setup.h"
 #include "exynos5_setup.h"
 #include "clock_init.h"

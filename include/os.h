@@ -11,6 +11,7 @@
 #ifndef __OS_H__
 #define __OS_H__
 
+#include <stdbool.h>
 #include <linux/types.h>
 
 struct rtc_time;

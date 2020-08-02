@@ -15,6 +15,7 @@
 #include <asm/mipsregs.h>
 #include <asm/system.h>
 #include <linux/bug.h>
+#include <linux/kernel.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

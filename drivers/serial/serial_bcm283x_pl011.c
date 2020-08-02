@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <asm/gpio.h>
 #include <dm/pinctrl.h>
 #include <dm/platform_data/serial_pl01x.h>

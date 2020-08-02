@@ -34,6 +34,7 @@
  * This is a stripped down version of struct main_stream_attributes that
  * contains only the parameters that are not set by cfg_msa_recalculate()
  */
+#include <stdbool.h>
 struct logicore_dp_tx_msa {
 	u32 pixel_clock_hz;
 	u32 bits_per_color;

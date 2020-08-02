@@ -17,6 +17,7 @@
 #include <asm/io.h>
 #include <asm/pci.h>
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <power/acpi_pmc.h>
 

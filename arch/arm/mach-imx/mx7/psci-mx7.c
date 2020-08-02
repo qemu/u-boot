@@ -5,6 +5,7 @@
  */
 
 #include <cpu_func.h>
+#include <stdbool.h>
 #include <asm/cache.h>
 #include <asm/io.h>
 #include <asm/psci.h>

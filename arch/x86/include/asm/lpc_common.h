@@ -6,6 +6,7 @@
 #ifndef __ASM_LPC_COMMON_H
 #define __ASM_LPC_COMMON_H
 
+#include <stdbool.h>
 #define PCH_RCBA_BASE		0xf0
 
 #define RC		0x3400	/* 32bit */

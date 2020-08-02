@@ -8,6 +8,7 @@
 #include <log.h>
 #include <mailbox-uclass.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <asm/mbox.h>
 #include <linux/errno.h>

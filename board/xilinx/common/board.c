@@ -12,6 +12,7 @@
 #include <dm/uclass.h>
 #include <i2c.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/sizes.h>
 #include "board.h"
 

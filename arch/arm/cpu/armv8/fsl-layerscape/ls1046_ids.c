@@ -7,6 +7,7 @@
 #include <asm/arch-fsl-layerscape/immap_lsch2.h>
 #include <asm/arch-fsl-layerscape/fsl_icid.h>
 #include <asm/arch-fsl-layerscape/fsl_portals.h>
+#include <linux/kernel.h>
 
 #ifdef CONFIG_SYS_DPAA_QBMAN
 struct qportal_info qp_info[CONFIG_SYS_QMAN_NUM_PORTALS] = {

@@ -11,6 +11,7 @@
 #include <fdtdec.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <power/pmic.h>
 #include <power/regulator.h>
 #include <power/s2mps11.h>

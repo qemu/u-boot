@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <asm/immap_85xx.h>
 #include "sleep.h"

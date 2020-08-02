@@ -17,6 +17,7 @@
 #include <i2c.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <mach/clk.h>
 
 #include "at91_i2c.h"

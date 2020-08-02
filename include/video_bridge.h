@@ -7,6 +7,7 @@
 #ifndef __VIDEO_BRIDGE
 #define __VIDEO_BRIDGE
 
+#include <stdbool.h>
 #include <asm/gpio.h>
 
 /**

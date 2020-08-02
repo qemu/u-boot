@@ -11,6 +11,7 @@
 #include <asm/arch/gp_padctrl.h>
 #include <asm/arch/gpio.h>
 #include <asm/gpio.h>
+#include <linux/kernel.h>
 #include "pinmux-config-tamonten-ng.h"
 #include <i2c.h>
 

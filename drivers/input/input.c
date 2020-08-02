@@ -19,6 +19,7 @@
 #endif
 #include <time.h>
 #include <linux/input.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 enum {

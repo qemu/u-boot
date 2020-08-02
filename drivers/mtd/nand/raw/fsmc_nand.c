@@ -15,6 +15,7 @@
 #include <linux/bitops.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/mtd/nand_ecc.h>
 #include <linux/mtd/fsmc_nand.h>
 #include <asm/arch/hardware.h>

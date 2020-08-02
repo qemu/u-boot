@@ -13,6 +13,7 @@
 /* bcd<->bin functions are needed by almost all the RTC drivers, let's include
  * it there instead of in evey single driver */
 
+#include <stdbool.h>
 #include <bcd.h>
 #include <rtc_def.h>
 

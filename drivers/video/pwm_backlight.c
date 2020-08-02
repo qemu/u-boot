@@ -12,6 +12,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <pwm.h>
+#include <stdbool.h>
 #include <asm/gpio.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

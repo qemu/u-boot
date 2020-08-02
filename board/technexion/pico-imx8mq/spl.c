@@ -23,6 +23,7 @@
 #include <fsl_esdhc_imx.h>
 #include <mmc.h>
 #include <spl.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #include "lpddr4_timing.h"

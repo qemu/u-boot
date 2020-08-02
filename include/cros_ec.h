@@ -13,6 +13,7 @@
 #include <cros_ec_message.h>
 #include <asm/gpio.h>
 #include <dm/of_extra.h>
+#include <linux/kernel.h>
 
 /* Our configuration information */
 struct cros_ec_dev {

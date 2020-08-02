@@ -4,6 +4,7 @@
 // Author: Vignesh Raghavendra <vigneshr@ti.com>
 
 #include <common.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <dm.h>
 #include <regmap.h>

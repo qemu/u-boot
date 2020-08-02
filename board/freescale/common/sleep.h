@@ -6,6 +6,7 @@
 #ifndef __SLEEP_H
 #define __SLEEP_H
 
+#include <stdbool.h>
 #define DCFG_CCSR_CRSTSR_WDRFR	(1 << 3)
 #define DDR_BUFF_LEN			128
 

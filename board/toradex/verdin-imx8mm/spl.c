@@ -24,6 +24,7 @@
 #include <dm/uclass-internal.h>
 #include <hang.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <power/bd71837.h>
 #include <power/pmic.h>

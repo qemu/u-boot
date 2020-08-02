@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <log.h>
+#include <stdbool.h>
 #include <time.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

@@ -21,6 +21,7 @@
 #include <linux/errno.h>
 #include <asm/io.h>
 #include <asm/arch/cpu.h>
+#include <linux/kernel.h>
 #include <linux/mtd/mtd.h>
 #include <linux/mtd/rawnand.h>
 #include <linux/printk.h>

@@ -21,6 +21,7 @@
 #include <dt-bindings/clock/rk3308-cru.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

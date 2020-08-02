@@ -12,6 +12,7 @@
 #include <misc.h>
 #include <mtd.h>
 #include <mtd_node.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/arch/stm32prog.h>

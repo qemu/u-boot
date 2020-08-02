@@ -25,6 +25,7 @@
 #include <memalign.h>
 #include <net.h>
 #include <reset.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>

@@ -37,6 +37,7 @@
 #else
 #include <ubi_uboot.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #endif
 

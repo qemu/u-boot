@@ -13,6 +13,7 @@
 #include <asm/arch/base.h>
 #include <asm/arch/mbox.h>
 #include <phys2bus.h>
+#include <linux/kernel.h>
 
 #define TIMEOUT 1000 /* ms */
 

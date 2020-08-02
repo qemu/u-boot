@@ -18,6 +18,7 @@
 #include <dt-bindings/clock/rk3036-cru.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/log2.h>
 #include <linux/stringify.h>
 

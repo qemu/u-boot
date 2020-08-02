@@ -14,6 +14,7 @@
 #include <asm/cache.h>
 #include <asm/ptrace.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #if defined(CONFIG_ZYNQMP_IPI)
 #include <mailbox.h>

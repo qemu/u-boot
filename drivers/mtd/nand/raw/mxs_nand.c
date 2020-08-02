@@ -18,6 +18,7 @@
 #include <dm.h>
 #include <stdio.h>
 #include <asm/cache.h>
+#include <linux/kernel.h>
 #include <linux/mtd/rawnand.h>
 #include <linux/sizes.h>
 #include <linux/string.h>

@@ -27,6 +27,7 @@
 #include <fsl_validate.h>
 #include <fsl_ddr.h>
 #include <asm/u-boot.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "../common/sleep.h"
 #include "../common/qixis.h"

@@ -20,6 +20,7 @@
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/stddef.h>
 #include <malloc.h>
 #include <memalign.h>

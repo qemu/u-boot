@@ -27,6 +27,7 @@
 #include <linux/ioport.h>
 #include <linux/completion.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/log2.h>
 #include <asm/processor.h>
 #include <dm.h>

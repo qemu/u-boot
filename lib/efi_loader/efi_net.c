@@ -20,6 +20,7 @@
 #include <malloc.h>
 #include <net.h>
 #include <stdio.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 static const efi_guid_t efi_net_guid = EFI_SIMPLE_NETWORK_PROTOCOL_GUID;

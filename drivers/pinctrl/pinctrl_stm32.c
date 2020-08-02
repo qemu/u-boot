@@ -14,6 +14,7 @@
 #include <linux/bitops.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <linux/printk.h>
 

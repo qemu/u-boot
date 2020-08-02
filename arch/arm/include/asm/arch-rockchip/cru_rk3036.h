@@ -5,6 +5,7 @@
 #ifndef _ASM_ARCH_CRU_RK3036_H
 #define _ASM_ARCH_CRU_RK3036_H
 
+#include <linux/kernel.h>
 #define OSC_HZ		(24 * 1000 * 1000)
 
 #define APLL_HZ		(600 * 1000000)

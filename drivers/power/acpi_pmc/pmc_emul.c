@@ -12,6 +12,7 @@
 #include <pci.h>
 #include <asm/test.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <power/acpi_pmc.h>
 
 /**

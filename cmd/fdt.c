@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/ctype.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <linux/types.h>
 #include <asm/global_data.h>

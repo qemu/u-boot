@@ -13,6 +13,7 @@
 #include <pci_ep.h>
 #include <asm/io.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <linux/log2.h>
 #include "pcie_layerscape.h"

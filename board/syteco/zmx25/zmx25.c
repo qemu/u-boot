@@ -23,6 +23,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/iomux-mx25.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;

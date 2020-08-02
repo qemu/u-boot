@@ -7,6 +7,7 @@
 #ifndef _MPC83XX_SOC_H_
 #define _MPC83XX_SOC_H_
 
+#include <stdbool.h>
 enum soc_type {
 	SOC_MPC8308,
 	SOC_MPC8309,

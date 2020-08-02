@@ -11,6 +11,7 @@
 #include <fs.h>
 #include <efi_loader.h>
 #include <efi_load_initrd.h>
+#include <stdbool.h>
 #include <linux/string.h>
 
 static const efi_guid_t efi_guid_load_file2_protocol =

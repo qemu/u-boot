@@ -19,6 +19,7 @@
 #include <common.h>
 #include <env.h>
 #include <fsl_esdhc_imx.h>
+#include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <mmc.h>
 #include <miiphy.h>

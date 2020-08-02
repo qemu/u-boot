@@ -40,6 +40,7 @@
 #include <asm/arch/sys_proto.h>
 #include <spl.h>
 #include <usb.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <usb/ehci-ci.h>
 

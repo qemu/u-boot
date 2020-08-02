@@ -27,6 +27,7 @@
 #include <asm/arch/cpu.h>
 #include <asm/arch/soc.h>
 #include <asm/arch/mpp.h>
+#include <linux/kernel.h>
 
 #include "../common/common.h"
 

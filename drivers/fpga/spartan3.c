@@ -11,6 +11,8 @@
 
 #include <common.h>		/* core U-Boot definitions */
 #include <spartan3.h>		/* Spartan-II device family */
+#include <stdbool.h>
+#include <stdio.h>
 #include <time.h>
 
 /* Define FPGA_DEBUG to get debug printf's */

@@ -12,6 +12,7 @@
 #include <asm/arch/gpio.h>
 #include <asm/gpio.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include "pinmux-config-cardhu.h"
 #include <i2c.h>
 

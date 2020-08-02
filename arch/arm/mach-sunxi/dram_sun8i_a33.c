@@ -16,6 +16,7 @@
 #include <asm/arch/prcm.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 /* PLL runs at 2x dram-clk, controller runs at PLL / 4 (dram-clk / 2) */
 #define DRAM_CLK_MUL 2

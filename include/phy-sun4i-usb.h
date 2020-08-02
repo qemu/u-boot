@@ -13,6 +13,7 @@
  * @phy:	USB PHY port to detect ID pin
  * @return 0 if OK, or a negative error code
  */
+#include <stdbool.h>
 int sun4i_usb_phy_id_detect(struct phy *phy);
 
 /**

@@ -4,6 +4,7 @@
  * Copyright (C) 2015-2016 Socionext Inc.
  */
 
+#include <stdbool.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/io.h>

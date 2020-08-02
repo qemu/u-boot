@@ -38,6 +38,7 @@
 #include <i2c.h>
 #include <input.h>
 #include <netdev.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <usb/ehci-ci.h>
 

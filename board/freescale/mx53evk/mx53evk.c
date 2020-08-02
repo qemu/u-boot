@@ -20,6 +20,7 @@
 #include <i2c.h>
 #include <mmc.h>
 #include <fsl_esdhc_imx.h>
+#include <linux/kernel.h>
 #include <power/pmic.h>
 #include <fsl_pmic.h>
 #include <asm/gpio.h>

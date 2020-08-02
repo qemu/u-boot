@@ -22,6 +22,7 @@
 #include <env.h>
 #include <asm/u-boot.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <asm/mach-imx/mxc_i2c.h>
 #include <asm/mach-imx/mx5_video.h>

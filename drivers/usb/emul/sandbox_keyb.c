@@ -9,6 +9,7 @@
 #include <log.h>
 #include <os.h>
 #include <scsi.h>
+#include <stdbool.h>
 #include <usb.h>
 #include <linux/errno.h>
 #include <linux/string.h>

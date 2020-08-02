@@ -14,6 +14,7 @@
 #include <asm/arch/clock_manager.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #ifdef CONFIG_SPL_BUILD

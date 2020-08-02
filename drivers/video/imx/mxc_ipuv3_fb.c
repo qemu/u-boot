@@ -17,6 +17,7 @@
 #include <asm/cache.h>
 #include <linux/errno.h>
 #include <asm/global_data.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <linux/list.h>
 #include <linux/fb.h>

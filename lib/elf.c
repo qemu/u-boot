@@ -16,6 +16,7 @@
 #include <asm/e820.h>
 #include <linux/linkage.h>
 #endif
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 /*

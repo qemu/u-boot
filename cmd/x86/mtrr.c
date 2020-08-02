@@ -6,6 +6,7 @@
 #include <common.h>
 #include <command.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/msr.h>

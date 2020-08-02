@@ -17,6 +17,7 @@
 #include <asm/arch-rockchip/grf_rk3288.h>
 #include <asm/arch-rockchip/hardware.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include "rk_vop.h"
 
 DECLARE_GLOBAL_DATA_PTR;

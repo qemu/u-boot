@@ -16,6 +16,7 @@
 #include <vsprintf.h>
 #include <dm/device-internal.h>
 #include <dm/uclass-internal.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 /* Note: depends on enum ec_current_image */

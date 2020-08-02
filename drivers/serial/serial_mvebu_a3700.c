@@ -6,6 +6,7 @@
 #include <common.h>
 #include <dm.h>
 #include <serial.h>
+#include <stdbool.h>
 #include <asm/io.h>
 
 struct mvebu_platdata {

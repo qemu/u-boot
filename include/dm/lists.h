@@ -9,6 +9,7 @@
 #ifndef _DM_LISTS_H_
 #define _DM_LISTS_H_
 
+#include <stdbool.h>
 #include <dm/ofnode.h>
 #include <dm/uclass-id.h>
 

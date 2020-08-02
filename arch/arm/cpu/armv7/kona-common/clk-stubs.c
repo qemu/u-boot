@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 
 /*
  * These weak functions are available to kona architectures that don't

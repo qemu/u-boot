@@ -10,6 +10,7 @@
 #include <image.h>
 #include <log.h>
 #include <spl.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <asm/u-boot.h>
 

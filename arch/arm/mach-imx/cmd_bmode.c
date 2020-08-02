@@ -8,6 +8,7 @@
 #include <asm/mach-imx/boot_mode.h>
 #include <malloc.h>
 #include <command.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 static const struct boot_mode *modes[2];

@@ -13,6 +13,7 @@
 #include <malloc.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <dm/acpi.h>
 #include <dm/device.h>

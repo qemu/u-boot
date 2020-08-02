@@ -20,6 +20,7 @@
 #include <errno.h>
 #include <fdtdec.h>
 #include <linux/io.h>
+#include <linux/kernel.h>
 #include "mscc-common.h"
 
 enum {

@@ -9,6 +9,7 @@
 #include <fs.h>
 #include <log.h>
 #include <vsprintf.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #define OP_INVALID	0

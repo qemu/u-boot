@@ -22,6 +22,7 @@
 #include <dt-bindings/clock/rv1108-cru.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/stringify.h>
 
 DECLARE_GLOBAL_DATA_PTR;

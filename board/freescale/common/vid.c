@@ -20,6 +20,7 @@
 #include <asm/immap_85xx.h>
 #endif
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include "vid.h"
 
 int __weak i2c_multiplexer_select_vid_channel(u8 channel)

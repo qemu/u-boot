@@ -5,6 +5,7 @@
 #define LOG_CATEGORY UCLASS_CLK
 #include <kendryte/pll.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #include <common.h>
 #include <dm.h>

@@ -16,6 +16,7 @@
 #include <dm/root.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 /*
  * Caution:

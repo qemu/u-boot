@@ -1,6 +1,7 @@
 #include <common.h>
 #include <asm/arch/dram.h>
 #include <asm/arch/cpu.h>
+#include <linux/kernel.h>
 
 void mctl_set_timing_params(uint16_t socid, struct dram_para *para)
 {

@@ -14,6 +14,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <asm/cache.h>
+#include <linux/kernel.h>
 #include <linux/soc/ti/ti_sci_protocol.h>
 #include <mach/spl.h>
 #include <spl.h>

@@ -12,6 +12,7 @@
 #include <clk.h>
 #include <dm.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <linux/sizes.h>

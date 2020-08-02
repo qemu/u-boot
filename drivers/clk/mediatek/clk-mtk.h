@@ -8,6 +8,7 @@
 #define __DRV_CLK_MTK_H
 
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 #define CLK_XTAL			0
 #define MHZ				(1000 * 1000)
 

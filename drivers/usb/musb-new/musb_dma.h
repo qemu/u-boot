@@ -10,6 +10,7 @@
 #ifndef __MUSB_DMA_H__
 #define __MUSB_DMA_H__
 
+#include <stdbool.h>
 struct musb_hw_ep;
 
 /*

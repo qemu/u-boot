@@ -7,6 +7,7 @@
 #define __MACH_IMX_CLK_H
 
 #include <linux/clk-provider.h>
+#include <linux/kernel.h>
 
 enum imx_pllv3_type {
 	IMX_PLLV3_GENERIC,

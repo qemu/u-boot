@@ -11,6 +11,7 @@
 #include <dm.h>
 #include <log.h>
 #include <pwm.h>
+#include <stdbool.h>
 #include <asm/arch/imx-regs.h>
 #include <asm/io.h>
 #include "pwm-imx-util.h"

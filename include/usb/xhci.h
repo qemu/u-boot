@@ -17,9 +17,11 @@
 #define HOST_XHCI_H_
 
 #include <reset.h>
+#include <stdbool.h>
 #include <asm/types.h>
 #include <asm/cache.h>
 #include <asm/io.h>
+#include <linux/kernel.h>
 #include <linux/list.h>
 #include <linux/compat.h>
 

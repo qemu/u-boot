@@ -6,6 +6,7 @@
 #include <common.h>
 #include <dfu.h>
 #include <g_dnl.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <usb.h>
 #include <vsprintf.h>

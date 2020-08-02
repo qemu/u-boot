@@ -16,6 +16,7 @@
 #include <asm/arch/imx-regs.h>
 #endif
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include "mxc_nand.h"
 

@@ -8,6 +8,7 @@
 #include <init.h>
 #include <pci.h>
 #include <qfw.h>
+#include <stdbool.h>
 #include <asm/irq.h>
 #include <asm/post.h>
 #include <asm/processor.h>

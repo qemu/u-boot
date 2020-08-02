@@ -3,6 +3,7 @@
 #ifndef __PXE_UTILS_H
 #define __PXE_UTILS_H
 
+#include <stdbool.h>
 #include <linux/list.h>
 
 /*

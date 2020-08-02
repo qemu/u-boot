@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 static char log_fmt_chars[LOGF_COUNT] = "clFLfm";

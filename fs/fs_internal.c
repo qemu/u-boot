@@ -12,6 +12,7 @@
 #include <part.h>
 #include <memalign.h>
 #include <stdio.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 int fs_devread(struct blk_desc *blk, struct disk_partition *partition,

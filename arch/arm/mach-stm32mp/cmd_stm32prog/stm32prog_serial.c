@@ -9,6 +9,7 @@
 #include <dfu.h>
 #include <malloc.h>
 #include <serial.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <watchdog.h>

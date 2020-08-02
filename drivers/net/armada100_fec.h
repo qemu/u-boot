@@ -12,6 +12,7 @@
 #ifndef __ARMADA100_FEC_H__
 #define __ARMADA100_FEC_H__
 
+#include <linux/kernel.h>
 #define PORT_NUM		0x0
 
 /* RX & TX descriptor command */

@@ -7,6 +7,7 @@
 #include <common.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <dm/test.h>
 #include <board.h>
 #include <test/test.h>

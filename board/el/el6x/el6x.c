@@ -33,6 +33,7 @@
 #include <asm/arch/sys_proto.h>
 #include <i2c.h>
 #include <input.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <power/pmic.h>
 #include <power/pfuze100_pmic.h>

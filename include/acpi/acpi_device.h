@@ -11,6 +11,7 @@
 
 #include <i2c.h>
 #include <spi.h>
+#include <stdbool.h>
 #include <linux/bitops.h>
 
 struct acpi_ctx;

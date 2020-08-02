@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
 #include <u-boot/rsa-mod-exp.h>

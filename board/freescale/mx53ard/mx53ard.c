@@ -20,6 +20,7 @@
 #include <mmc.h>
 #include <fsl_esdhc_imx.h>
 #include <asm/gpio.h>
+#include <linux/kernel.h>
 
 #define ETHERNET_INT		IMX_GPIO_NR(2, 31)
 

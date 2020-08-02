@@ -9,6 +9,7 @@
 #include <common.h>
 #include <efi_loader.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <asm/unaligned.h>
 #include <linux/string.h>
 

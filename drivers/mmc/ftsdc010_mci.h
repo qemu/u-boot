@@ -6,6 +6,7 @@
  * Macpaul Lin, Andes Technology Corporation <macpaul@andestech.com>
  */
 #include <mmc.h>
+#include <stdbool.h>
 
 #ifndef __FTSDC010_MCI_H
 #define __FTSDC010_MCI_H

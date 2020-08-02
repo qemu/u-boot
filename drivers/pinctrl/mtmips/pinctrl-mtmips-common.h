@@ -9,6 +9,7 @@
 #define _PINCTRL_MTMIPS_COMMON_H_
 
 #include <common.h>
+#include <linux/kernel.h>
 
 struct mtmips_pmx_func {
 	const char *name;

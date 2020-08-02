@@ -12,6 +12,8 @@
  */
 
 #include <common.h>
+#include <stdbool.h>
+#include <linux/kernel.h>
 #include <linux/lzo.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>

@@ -19,6 +19,7 @@
 #include <linux/errno.h>
 #include <asm/io.h>
 #include <linux/dma-mapping.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #if defined(CONFIG_MII) || defined(CONFIG_CMD_MII)

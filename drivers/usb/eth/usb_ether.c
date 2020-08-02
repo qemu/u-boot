@@ -9,6 +9,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <net.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <usb.h>
 #include <asm/cache.h>

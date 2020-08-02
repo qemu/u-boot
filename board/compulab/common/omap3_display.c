@@ -18,6 +18,7 @@
 #include <lcd.h>
 #include <scf0403_lcd.h>
 #include <asm/arch-omap3/dss.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 enum display_type {

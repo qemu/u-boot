@@ -13,6 +13,7 @@
 #define _SUNXI_DRAM_SUN8I_H3_H
 
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 
 struct sunxi_mctl_com_reg {
 	u32 cr;			/* 0x00 control register */

@@ -11,6 +11,7 @@
 #include <i2s.h>
 #include <log.h>
 #include <sound.h>
+#include <stdbool.h>
 #include <asm/sdl.h>
 #include <linux/errno.h>
 

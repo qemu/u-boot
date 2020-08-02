@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <asm/u-boot.h>
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <asm/arch/gpio.h>
 #include <asm/arch/pinmux.h>

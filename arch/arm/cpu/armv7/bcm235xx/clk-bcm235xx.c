@@ -14,6 +14,7 @@
 #include <linux/errno.h>
 #include <asm/arch/sysmap.h>
 #include <asm/kona-common/clk.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "clk-core.h"
 

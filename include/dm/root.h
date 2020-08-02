@@ -9,6 +9,7 @@
 #ifndef _DM_ROOT_H_
 #define _DM_ROOT_H_
 
+#include <stdbool.h>
 struct udevice;
 
 /**

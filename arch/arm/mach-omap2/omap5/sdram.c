@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <asm/emif.h>
 #include <asm/arch/sys_proto.h>
+#include <linux/kernel.h>
 
 /*
  * This file provides details of the LPDDR2 SDRAM parts used on OMAP5

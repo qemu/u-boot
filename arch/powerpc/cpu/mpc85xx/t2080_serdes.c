@@ -7,6 +7,7 @@
 
 #include <asm/fsl_serdes.h>
 #include <asm/ppc.h>
+#include <linux/kernel.h>
 #include "fsl_corenet2_serdes.h"
 
 struct serdes_config {

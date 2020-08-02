@@ -12,6 +12,7 @@
 #include <log.h>
 #include <asm/io.h>
 #include <asm/arch/imx-regs.h>
+#include <linux/kernel.h>
 
 #include "mxs_init.h"
 

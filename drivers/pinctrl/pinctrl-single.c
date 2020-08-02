@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <dm/device_compat.h>
 #include <dm/pinctrl.h>
 #include <linux/errno.h>

@@ -6,6 +6,7 @@
 #include <common.h>
 #include <asm/fsl_portals.h>
 #include <asm/fsl_liodn.h>
+#include <linux/kernel.h>
 
 #ifdef CONFIG_SYS_DPAA_QBMAN
 struct qportal_info qp_info[CONFIG_SYS_QMAN_NUM_PORTALS] = {

@@ -9,6 +9,7 @@
 #include <log.h>
 #include <pwm.h>
 #include <regmap.h>
+#include <stdbool.h>
 #include <syscon.h>
 #include <asm/global_data.h>
 #include <asm/io.h>

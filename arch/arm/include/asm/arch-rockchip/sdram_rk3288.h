@@ -8,6 +8,7 @@
 #ifndef _ASM_ARCH_RK3288_SDRAM_H__
 #define _ASM_ARCH_RK3288_SDRAM_H__
 
+#include <linux/kernel.h>
 struct rk3288_sdram_channel {
 	/*
 	 * bit width in address, eg:

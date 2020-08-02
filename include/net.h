@@ -12,6 +12,7 @@
 #ifndef __NET_H__
 #define __NET_H__
 
+#include <stdbool.h>
 #include <asm/u-boot.h>
 #include <linux/string.h>
 #include <linux/types.h>

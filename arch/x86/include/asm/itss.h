@@ -11,6 +11,7 @@
 #ifndef _ASM_ARCH_ITSS_H
 #define _ASM_ARCH_ITSS_H
 
+#include <linux/kernel.h>
 #define GPIO_IRQ_START	50
 #define GPIO_IRQ_END	ITSS_MAX_IRQ
 

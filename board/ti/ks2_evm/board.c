@@ -11,6 +11,7 @@
 #include <vsprintf.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "board.h"
 #include <env.h>

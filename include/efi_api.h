@@ -19,6 +19,7 @@
 #include <efi.h>
 #include <charset.h>
 #include <pe.h>
+#include <stdbool.h>
 
 #ifdef CONFIG_EFI_LOADER
 #include <asm/setjmp.h>

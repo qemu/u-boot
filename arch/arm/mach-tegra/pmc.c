@@ -6,6 +6,7 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 

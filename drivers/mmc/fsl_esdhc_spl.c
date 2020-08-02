@@ -9,6 +9,7 @@
 #include <mmc.h>
 #include <malloc.h>
 #include <stdio.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 /*

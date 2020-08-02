@@ -29,6 +29,7 @@
 #include <i2c.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #include <dm/platform_data/serial_mxc.h>

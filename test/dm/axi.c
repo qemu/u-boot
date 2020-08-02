@@ -10,6 +10,7 @@
 #include <log.h>
 #include <asm/axi.h>
 #include <dm/test.h>
+#include <linux/kernel.h>
 #include <test/test.h>
 #include <test/ut.h>
 

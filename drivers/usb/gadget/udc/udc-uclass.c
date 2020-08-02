@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <dm/device-internal.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/usb/gadget.h>
 

@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/types.h>
 #include <linux/io.h>
 #include <linux/errno.h>

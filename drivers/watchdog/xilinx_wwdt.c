@@ -12,6 +12,7 @@
 #include <common.h>
 #include <dm.h>
 #include <regmap.h>
+#include <stdbool.h>
 #include <wdt.h>
 #include <linux/compat.h>
 #include <linux/errno.h>

@@ -8,6 +8,7 @@
 #ifndef __irq_H
 #define __irq_H
 
+#include <stdbool.h>
 struct acpi_irq;
 struct ofnode_phandle_args;
 

@@ -5,6 +5,7 @@
  */
 
 #include <dm.h>
+#include <linux/kernel.h>
 
 #include "pinctrl-mtk-common.h"
 

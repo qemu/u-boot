@@ -10,6 +10,7 @@
 #include <common.h>
 #include <irq_func.h>
 #include <watchdog.h>
+#include <stdio.h>
 #include <asm/processor.h>
 #include <asm/immap.h>
 #include <asm/ptrace.h>

@@ -16,6 +16,7 @@
 #include <net.h>
 #include <phy.h>
 #include <reset.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <wait_bit.h>
 #include <asm/io.h>

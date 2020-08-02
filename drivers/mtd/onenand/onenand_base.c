@@ -27,6 +27,7 @@
 #include <dm/devres.h>
 #include <linux/bitops.h>
 #include <linux/compat.h>
+#include <linux/kernel.h>
 #include <linux/mtd/mtd.h>
 #include <linux/printk.h>
 #include <linux/string.h>

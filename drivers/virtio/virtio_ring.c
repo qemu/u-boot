@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <virtio_types.h>
 #include <virtio.h>

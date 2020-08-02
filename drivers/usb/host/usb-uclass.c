@@ -11,6 +11,7 @@
 #include <errno.h>
 #include <log.h>
 #include <memalign.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <usb.h>
 #include <vsprintf.h>

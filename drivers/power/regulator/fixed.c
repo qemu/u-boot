@@ -9,6 +9,7 @@
 #include <errno.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/gpio.h>
 #include <linux/errno.h>
 #include <power/pmic.h>

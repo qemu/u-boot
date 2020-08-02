@@ -8,6 +8,7 @@
 #include <errno.h>
 #include <div64.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <dm/lists.h>
 #include <dm/device-internal.h>

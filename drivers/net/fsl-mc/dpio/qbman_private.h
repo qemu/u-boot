@@ -9,6 +9,7 @@
 #include <vsprintf.h>
 #include <asm/io.h>
 #include <linux/bug.h>
+#include <linux/kernel.h>
 #include <linux/types.h>
 #include <asm/atomic.h>
 #include <malloc.h>

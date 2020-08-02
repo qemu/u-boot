@@ -6,6 +6,7 @@
 #ifndef _ASM_ARCH_SCG_H
 #define _ASM_ARCH_SCG_H
 
+#include <stdbool.h>
 #include <stdio.h>
 
 #ifdef CONFIG_CLK_DEBUG

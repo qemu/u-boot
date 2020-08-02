@@ -11,6 +11,7 @@
 #include <fdtdec.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <malloc.h>
 #include <os.h>

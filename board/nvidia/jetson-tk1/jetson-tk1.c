@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <log.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include <power/as3722.h>
 #include <power/pmic.h>

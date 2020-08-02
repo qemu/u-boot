@@ -12,6 +12,7 @@
 #include <i2c.h>
 #include <log.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <power/pmic.h>
 #include <power/regulator.h>

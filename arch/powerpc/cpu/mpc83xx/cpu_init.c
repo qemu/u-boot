@@ -15,6 +15,7 @@
 #include <usb/ehci-ci.h>
 #endif
 #include <linux/delay.h>
+#include <linux/kernel.h>
 
 #include "lblaw/lblaw.h"
 #include "elbc/elbc.h"

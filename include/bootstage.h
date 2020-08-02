@@ -11,6 +11,8 @@
 #ifndef _BOOTSTAGE_H
 #define _BOOTSTAGE_H
 
+#include <stdbool.h>
+
 /* Flags for each bootstage record */
 enum bootstage_flags {
 	BOOTSTAGEF_ERROR	= 1 << 0,	/* Error record */

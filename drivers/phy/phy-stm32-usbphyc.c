@@ -11,6 +11,7 @@
 #include <generic-phy.h>
 #include <log.h>
 #include <reset.h>
+#include <stdbool.h>
 #include <syscon.h>
 #include <usb.h>
 #include <asm/io.h>

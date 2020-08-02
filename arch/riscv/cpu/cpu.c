@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <init.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/encoding.h>
 #include <dm/uclass-internal.h>
 #include <linux/bitops.h>

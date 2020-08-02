@@ -17,6 +17,7 @@
 #include <linux/errno.h>
 #include <linux/io.h>
 #include <spi.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 
 #define SSP_CR0		0x000

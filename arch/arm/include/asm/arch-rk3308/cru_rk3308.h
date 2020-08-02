@@ -5,6 +5,7 @@
 #ifndef _ASM_ARCH_CRU_RK3308_H
 #define _ASM_ARCH_CRU_RK3308_H
 
+#include <linux/kernel.h>
 #define MHz		1000000
 #define OSC_HZ		(24 * MHz)
 

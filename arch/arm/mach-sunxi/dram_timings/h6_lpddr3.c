@@ -9,6 +9,7 @@
 #include <common.h>
 #include <asm/arch/dram.h>
 #include <asm/arch/cpu.h>
+#include <linux/kernel.h>
 
 static u32 mr_lpddr3[12] = {
 	0x00000000, 0x00000043, 0x0000001a, 0x00000001,

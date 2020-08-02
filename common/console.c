@@ -16,6 +16,7 @@
 #include <mapmem.h>
 #include <os.h>
 #include <serial.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdio_dev.h>
 #include <exports.h>

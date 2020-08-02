@@ -7,9 +7,12 @@
 #ifdef CONFIG_GDSYS_LEGACY_DRIVERS
 
 #include <common.h>
+#include <stdbool.h>
+#include <stdio.h>
 #include <string.h>
 #include <gdsys_fpga.h>
 #include <linux/bitops.h>
+#include <linux/string.h>
 
 enum pcb_video_type {
 	PCB_DVI_SL,
@@ -444,9 +447,6 @@ static int get_features(unsigned int fpga, struct fpga_features *features)
 	return 0;
 }
 
-#include <stdio.h>
-#include <linux/bitops.h>
-#include <linux/string.h>
 #endif
 
 bool ioep_fpga_has_osd(unsigned int fpga)

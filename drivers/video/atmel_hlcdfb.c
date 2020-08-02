@@ -24,6 +24,7 @@
 #include <atmel_hlcdc.h>
 #include <linux/bug.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #if defined(CONFIG_LCD_LOGO)
 #include <bmp_logo.h>

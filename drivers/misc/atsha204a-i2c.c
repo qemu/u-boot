@@ -16,6 +16,7 @@
 #include <errno.h>
 #include <atsha204a-i2c.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

@@ -19,6 +19,7 @@
 #include <hang.h>
 #include <lmb.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>

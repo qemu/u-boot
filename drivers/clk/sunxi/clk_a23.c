@@ -12,6 +12,7 @@
 #include <dt-bindings/clock/sun8i-a23-a33-ccu.h>
 #include <dt-bindings/reset/sun8i-a23-a33-ccu.h>
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 
 static struct ccu_clk_gate a23_gates[] = {
 	[CLK_BUS_MMC0]		= GATE(0x060, BIT(8)),

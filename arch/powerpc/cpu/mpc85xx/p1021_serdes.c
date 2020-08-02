@@ -11,6 +11,7 @@
 #include <asm/immap_85xx.h>
 #include <asm/fsl_serdes.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 
 typedef struct serdes_85xx {
 	u32	srdscr0;	/* 0x00 - SRDS Control Register 0 */

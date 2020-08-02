@@ -5,6 +5,7 @@
  * Author: junghyun, kim <jhkim@nexell.co.kr>
  */
 
+#include <stdbool.h>
 #include <linux/types.h>
 #include <linux/io.h>
 

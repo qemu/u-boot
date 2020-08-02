@@ -15,6 +15,7 @@
 #include <asm/io.h>
 #include <dm/root.h>
 #include <dm/util.h>
+#include <linux/kernel.h>
 
 static int do_dm_dump_all(struct cmd_tbl *cmdtp, int flag, int argc,
 			  char *const argv[])

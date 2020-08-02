@@ -9,6 +9,7 @@
 #include <i2s.h>
 #include <asm/test.h>
 #include <dm/test.h>
+#include <linux/kernel.h>
 #include <test/test.h>
 #include <test/ut.h>
 

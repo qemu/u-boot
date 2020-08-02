@@ -5,6 +5,7 @@
  * Peng Fan <peng.fan at nxp.com>
  */
 
+#include <stdbool.h>
 #include <linux/bitops.h>
 
 #ifdef CONFIG_IMX8MQ

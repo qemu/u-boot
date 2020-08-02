@@ -12,6 +12,7 @@
 #include <i2s.h>
 #include <log.h>
 #include <misc.h>
+#include <stdbool.h>
 #include <time.h>
 #include <asm/io.h>
 #include <asm/arch-tegra/tegra_ahub.h>

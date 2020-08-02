@@ -15,6 +15,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/io.h>
+#include <linux/kernel.h>
 
 /* PWM registers and bits definitions */
 #define PWMCON			0x00

@@ -6,6 +6,7 @@
 #ifndef _SOCFPGA_MISC_H_
 #define _SOCFPGA_MISC_H_
 
+#include <stdbool.h>
 #include <asm/sections.h>
 
 void dwmac_deassert_reset(const unsigned int of_reset_id, const u32 phymode);

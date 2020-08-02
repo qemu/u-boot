@@ -13,6 +13,7 @@
 #include <asm/mrccache.h>
 #include <asm/mtrr.h>
 #include <asm/post.h>
+#include <linux/kernel.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

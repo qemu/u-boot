@@ -12,6 +12,7 @@
 #ifndef __LINUX_CDNS3_GADGET
 #define __LINUX_CDNS3_GADGET
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 #include <linux/usb/gadget.h>
 
 /*

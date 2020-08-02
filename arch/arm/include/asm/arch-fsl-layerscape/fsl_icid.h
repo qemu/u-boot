@@ -6,6 +6,7 @@
 #ifndef _FSL_ICID_H_
 #define _FSL_ICID_H_
 
+#include <stdbool.h>
 #include <asm/types.h>
 #include <fsl_qbman.h>
 #include <fsl_sec.h>

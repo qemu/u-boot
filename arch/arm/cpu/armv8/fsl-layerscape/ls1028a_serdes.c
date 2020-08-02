@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <asm/arch/fsl_serdes.h>
+#include <linux/kernel.h>
 
 struct serdes_config {
 	u32 protocol;

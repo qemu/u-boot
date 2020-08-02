@@ -16,6 +16,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/iopoll.h>
+#include <linux/kernel.h>
 
 static struct anamix_pll *ana_pll = (struct anamix_pll *)ANATOP_BASE_ADDR;
 

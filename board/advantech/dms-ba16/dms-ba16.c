@@ -32,6 +32,7 @@
 #include <i2c.h>
 #include <input.h>
 #include <pwm.h>
+#include <linux/kernel.h>
 DECLARE_GLOBAL_DATA_PTR;
 
 #define NC_PAD_CTRL (PAD_CTL_PUS_100K_UP |	\

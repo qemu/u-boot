@@ -15,6 +15,7 @@
 #include <linux/delay.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 /*
  * MAC Clock Delay settings, taken from Aspeed SDK

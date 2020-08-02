@@ -19,6 +19,7 @@
 #include <mapmem.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 /* The maximum number of microseconds we will wait until another master has

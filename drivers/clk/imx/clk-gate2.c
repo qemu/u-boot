@@ -23,6 +23,7 @@
 #include <linux/clk-provider.h>
 #include <clk.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include "clk.h"
 #include <linux/err.h>
 

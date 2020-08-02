@@ -14,6 +14,7 @@
 #include <linux/compat.h>
 #include <linux/module.h>
 #endif
+#include <stdbool.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/mtd/nand.h>

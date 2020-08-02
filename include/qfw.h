@@ -6,6 +6,7 @@
 #ifndef __FW_CFG__
 #define __FW_CFG__
 
+#include <stdbool.h>
 #include <linux/list.h>
 
 enum qemu_fwcfg_items {

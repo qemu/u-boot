@@ -11,6 +11,7 @@
 #include <rand.h>
 #include <stdio.h>
 #include <uboot_aes.h>
+#include <linux/kernel.h>
 #include <test/lib.h>
 #include <test/test.h>
 #include <test/ut.h>

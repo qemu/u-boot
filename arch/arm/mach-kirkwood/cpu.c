@@ -21,6 +21,7 @@
 #include <asm/arch/soc.h>
 #include <mvebu_mmc.h>
 #include <asm/u-boot.h>
+#include <linux/kernel.h>
 
 void reset_cpu(unsigned long ignored)
 {

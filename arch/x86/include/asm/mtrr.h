@@ -9,6 +9,7 @@
 #define _ASM_MTRR_H
 
 /* MTRR region types */
+#include <stdbool.h>
 #define MTRR_TYPE_UNCACHEABLE	0
 #define MTRR_TYPE_WRCOMB	1
 #define MTRR_TYPE_WRTHROUGH	4

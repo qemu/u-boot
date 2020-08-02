@@ -21,6 +21,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 int cros_ec_spi_packet(struct udevice *udev, int out_bytes, int in_bytes)

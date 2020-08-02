@@ -21,6 +21,7 @@
 #include <linux/compiler.h>
 #include <asm/state.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;

@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <syscon.h>
 #include <vsprintf.h>
 #include <linux/errno.h>

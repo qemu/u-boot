@@ -29,6 +29,7 @@
 #include <micrel.h>
 #include <asm/mach-imx/mxc_i2c.h>
 #include <i2c.h>
+#include <linux/kernel.h>
 
 #define UART_PAD_CTRL  (PAD_CTL_PUS_100K_UP |			\
 	PAD_CTL_SPEED_MED | PAD_CTL_DSE_40ohm |			\

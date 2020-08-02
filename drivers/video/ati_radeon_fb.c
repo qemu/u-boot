@@ -18,6 +18,7 @@
 #include <common.h>
 #include <stdio.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #include <command.h>

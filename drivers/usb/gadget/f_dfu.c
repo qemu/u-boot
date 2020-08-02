@@ -21,6 +21,7 @@
 #include <malloc.h>
 #include <stdio.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #include <linux/usb/ch9.h>

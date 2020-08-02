@@ -14,6 +14,7 @@
 #include <linux/compiler.h>
 #include <asm/fsl_law.h>
 #include <asm/io.h>
+#include <linux/kernel.h>
 #include <linux/log2.h>
 
 DECLARE_GLOBAL_DATA_PTR;

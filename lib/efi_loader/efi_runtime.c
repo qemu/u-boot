@@ -16,6 +16,7 @@
 #include <rtc.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>
 

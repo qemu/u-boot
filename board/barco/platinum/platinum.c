@@ -24,6 +24,7 @@
 #include <asm/mach-imx/iomux-v3.h>
 #include <asm/mach-imx/boot_mode.h>
 #include <asm/u-boot.h>
+#include <linux/kernel.h>
 
 #include "platinum.h"
 

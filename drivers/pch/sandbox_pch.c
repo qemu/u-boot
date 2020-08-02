@@ -6,6 +6,7 @@
 #include <common.h>
 #include <dm.h>
 #include <pch.h>
+#include <stdbool.h>
 #include <linux/errno.h>
 
 struct sandbox_pch_priv {

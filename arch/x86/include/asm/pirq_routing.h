@@ -18,6 +18,7 @@
  *
  * CAUTION: If you change this, PIRQ routing will not work correctly.
  */
+#include <stdbool.h>
 #define MAX_INTX_ENTRIES	4
 
 #define PIRQ_SIGNATURE		\

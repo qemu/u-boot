@@ -21,6 +21,7 @@
 #include <asm/io.h>
 #include <fdt_support.h>
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <linux/delay.h>
 #include <fsl-mc/fsl_mc.h>

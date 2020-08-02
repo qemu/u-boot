@@ -19,6 +19,7 @@
 #include <asm/gpio.h>
 #include <spi.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 
 struct scf0403_cmd {
 	u16 cmd;

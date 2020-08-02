@@ -9,6 +9,7 @@
 
 #include <common.h>
 #include <pci.h>
+#include <stdbool.h>
 #include <asm/u-boot-x86.h>
 #include <asm/arch/device.h>
 #include <asm/arch/mrc.h>

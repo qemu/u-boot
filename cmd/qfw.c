@@ -10,6 +10,7 @@
 #include <qfw.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/kernel.h>
 
 /*
  * This function prepares kernel for zboot. It loads kernel data

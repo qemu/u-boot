@@ -12,6 +12,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/io.h>
+#include <linux/kernel.h>
 
 /* SYSCFG0 */
 #define XTAL_40M_SEL			BIT(6)

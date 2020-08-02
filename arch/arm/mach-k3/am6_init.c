@@ -16,6 +16,7 @@
 #include <asm/arch/hardware.h>
 #include <asm/arch/sysfw-loader.h>
 #include <asm/arch/sys_proto.h>
+#include <linux/kernel.h>
 #include "common.h"
 #include <dm.h>
 #include <dm/uclass-internal.h>

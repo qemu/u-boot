@@ -8,6 +8,7 @@
  */
 
 #include <efi_selftest.h>
+#include <stdbool.h>
 
 static const efi_guid_t unicode_collation_protocol_guid =
 	EFI_UNICODE_COLLATION_PROTOCOL2_GUID;

@@ -14,6 +14,7 @@
 #include <malloc.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

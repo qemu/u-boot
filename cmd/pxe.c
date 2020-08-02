@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #include "pxe_utils.h"
 

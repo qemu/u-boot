@@ -14,6 +14,7 @@
 #include <vsprintf.h>
 #include <linux/errno.h>
 #include <linux/ethtool.h>
+#include <linux/kernel.h>
 #include <linux/mii.h>
 #include <linux/string.h>
 #include "usb_ether.h"

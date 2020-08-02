@@ -19,6 +19,7 @@
 #include <dm/platform_data/pxa_mmc_gen.h>
 #include <malloc.h>
 #include <mmc.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 /* PXAMMC Generic default config for various CPUs */

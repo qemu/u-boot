@@ -12,6 +12,7 @@
 #include <log.h>
 #include <panel.h>
 #include <reset.h>
+#include <stdbool.h>
 #include <video.h>
 #include <video_bridge.h>
 #include <asm/global_data.h>

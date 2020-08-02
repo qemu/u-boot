@@ -6,6 +6,7 @@
 #include <common.h>
 #include <flash.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/errno.h>

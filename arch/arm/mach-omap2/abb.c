@@ -15,6 +15,7 @@
 #include <asm/io.h>
 #include <asm/arch/sys_proto.h>
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 
 __weak s8 abb_setup_ldovbb(u32 fuse, u32 ldovbb)
 {

@@ -10,6 +10,7 @@
 #include <log.h>
 #include <mapmem.h>
 #include <smbios.h>
+#include <linux/kernel.h>
 
 static const efi_guid_t smbios_guid = SMBIOS_TABLE_GUID;
 

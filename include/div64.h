@@ -20,6 +20,7 @@
  *       beware of side effects!
  */
 
+#include <stdbool.h>
 #include <linux/types.h>
 #include <linux/compiler.h>
 

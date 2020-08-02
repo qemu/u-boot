@@ -10,6 +10,7 @@
 #define _LCDC_H
 
 #include <fdtdec.h>
+#include <stdbool.h>
 
 struct sunxi_lcdc_reg {
 	u32 ctrl;			/* 0x00 */

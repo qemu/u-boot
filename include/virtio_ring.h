@@ -9,6 +9,7 @@
 #ifndef _LINUX_VIRTIO_RING_H
 #define _LINUX_VIRTIO_RING_H
 
+#include <stdbool.h>
 #include <virtio_types.h>
 
 /* This marks a buffer as continuing via the next field */

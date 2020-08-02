@@ -7,6 +7,7 @@
 #include <fdt_support.h>
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
+#include <linux/kernel.h>
 
 int ft_board_setup(void *blob, struct bd_info *bd)
 {

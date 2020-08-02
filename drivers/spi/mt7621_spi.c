@@ -18,6 +18,7 @@
 #include <linux/bitops.h>
 #include <linux/errno.h>
 #include <linux/io.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 
 #define MT7621_RX_FIFO_LEN	32

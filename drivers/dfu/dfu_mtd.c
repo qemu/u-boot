@@ -15,6 +15,7 @@
 #include <jffs2/load_kernel.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 static bool mtd_is_aligned_with_block_size(struct mtd_info *mtd, u64 size)

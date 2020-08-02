@@ -9,6 +9,7 @@
 #ifndef _DAVINCI_EMAC_H_
 #define _DAVINCI_EMAC_H_
 /* Ethernet Min/Max packet size */
+#include <linux/kernel.h>
 #define EMAC_MIN_ETHERNET_PKT_SIZE	60
 #define EMAC_MAX_ETHERNET_PKT_SIZE	1518
 /* Buffer size (should be aligned on 32 byte and cache line) */

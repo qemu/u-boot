@@ -16,6 +16,7 @@
 #include <asm/io.h>
 #include <dt-structs.h>
 #include <mapmem.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 enum mxc_gpio_direction {

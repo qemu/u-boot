@@ -19,6 +19,7 @@
 #include <asm/io.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include "pcie_fsl.h"
 #include <dm/device_compat.h>

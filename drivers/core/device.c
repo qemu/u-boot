@@ -30,6 +30,7 @@
 #include <dm/util.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/list.h>
 #include <power-domain.h>
 #include <linux/printk.h>

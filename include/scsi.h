@@ -6,6 +6,7 @@
  #ifndef _SCSI_H
  #define _SCSI_H
 
+#include <stdbool.h>
 #include <asm/cache.h>
 #include <linux/dma-direction.h>
 

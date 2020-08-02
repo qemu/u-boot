@@ -7,6 +7,7 @@
 #include <common.h>
 #include <cpu_func.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/arch/hardware.h>

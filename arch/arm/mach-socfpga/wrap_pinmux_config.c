@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <errno.h>
+#include <linux/kernel.h>
 
 /* Board-specific header. */
 #include <qts/pinmux_config.h>

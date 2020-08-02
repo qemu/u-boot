@@ -25,6 +25,7 @@
 #include <stdio.h>
 #include <tpm-v1.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>
 #include <u-boot/sha1.h>

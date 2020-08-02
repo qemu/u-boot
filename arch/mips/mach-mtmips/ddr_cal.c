@@ -11,6 +11,7 @@
 #include <asm/global_data.h>
 #include <linux/bitops.h>
 #include <linux/io.h>
+#include <linux/kernel.h>
 #include <mach/mc.h>
 
 DECLARE_GLOBAL_DATA_PTR;

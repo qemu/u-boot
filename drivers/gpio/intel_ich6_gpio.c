@@ -33,6 +33,7 @@
 #include <log.h>
 #include <pch.h>
 #include <pci.h>
+#include <stdbool.h>
 #include <asm/cpu.h>
 #include <asm/global_data.h>
 #include <asm/gpio.h>

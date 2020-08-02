@@ -18,6 +18,7 @@
 #include <vsprintf.h>
 #include <linux/ctype.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 /*

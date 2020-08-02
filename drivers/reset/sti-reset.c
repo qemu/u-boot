@@ -17,6 +17,7 @@
 #include <dt-bindings/reset/stih407-resets.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 
 DECLARE_GLOBAL_DATA_PTR;

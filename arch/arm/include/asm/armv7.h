@@ -56,6 +56,7 @@
 #define ARMV7_CLIDR_CTYPE_UNIFIED		4
 
 #ifndef __ASSEMBLY__
+#include <stdbool.h>
 #include <linux/types.h>
 #include <asm/io.h>
 #include <asm/barriers.h>

@@ -6,6 +6,7 @@
 #include <common.h>
 #include <div64.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <errno.h>

@@ -14,6 +14,7 @@
 #include <asm/scu.h>
 #include <linux/errno.h>
 #include <linux/io.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 
 #define BUFCFG_OFFSET				0x100

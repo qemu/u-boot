@@ -18,6 +18,7 @@
 #include <asm/arch/cpu.h>
 #include <linux/delay.h>
 #include <linux/kconfig.h>
+#include <linux/kernel.h>
 
 static void mctl_phy_init(u32 val)
 {

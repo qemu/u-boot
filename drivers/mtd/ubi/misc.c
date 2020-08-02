@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <ubi_uboot.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include "ubi.h"
 
 /**

@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <command.h>

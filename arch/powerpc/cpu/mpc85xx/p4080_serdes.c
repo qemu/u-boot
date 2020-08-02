@@ -7,6 +7,7 @@
 #include <asm/fsl_serdes.h>
 #include <asm/ppc.h>
 #include <asm/io.h>
+#include <linux/kernel.h>
 #include "fsl_corenet_serdes.h"
 
 static u8 serdes_cfg_tbl[][SRDS_MAX_LANES] = {

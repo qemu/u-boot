@@ -17,6 +17,7 @@
 #include <dm.h>
 #include <dm/uclass-internal.h>
 #endif
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 /**

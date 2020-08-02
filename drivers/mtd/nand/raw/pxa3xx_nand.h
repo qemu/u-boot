@@ -1,6 +1,7 @@
 #ifndef __ASM_ARCH_PXA3XX_NAND_H
 #define __ASM_ARCH_PXA3XX_NAND_H
 
+#include <stdbool.h>
 #include <linux/mtd/mtd.h>
 #include <linux/mtd/partitions.h>
 

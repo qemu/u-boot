@@ -6,6 +6,7 @@
 #include <common.h>
 #include <compiler.h>
 #include <tlv_eeprom.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "tlv_data.h"
 

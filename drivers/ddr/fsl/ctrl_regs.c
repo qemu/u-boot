@@ -23,6 +23,7 @@
 	defined(CONFIG_ARM)
 #include <asm/arch/clock.h>
 #endif
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 /*

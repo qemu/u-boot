@@ -8,6 +8,7 @@
 #include <tee.h>
 #include <broadcom/chimp.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #ifdef CONFIG_CHIMP_OPTEE
 

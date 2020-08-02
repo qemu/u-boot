@@ -21,6 +21,7 @@
 #include <dm/devres.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #endif
 #include "ubifs.h"
 

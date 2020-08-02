@@ -9,6 +9,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <pch.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/cpu.h>
 #include <asm/global_data.h>

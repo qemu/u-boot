@@ -6,6 +6,7 @@
  */
 
 #include <command.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 static int do_exception(struct cmd_tbl *cmdtp, int flag, int argc,

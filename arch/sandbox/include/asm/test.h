@@ -9,6 +9,7 @@
 #define __ASM_TEST_H
 
 /* The sandbox driver always permits an I2C device with this address */
+#include <stdbool.h>
 #define SANDBOX_I2C_TEST_ADDR		0x59
 
 #define SANDBOX_PCI_VENDOR_ID		0x1234

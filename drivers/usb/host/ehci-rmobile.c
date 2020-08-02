@@ -11,6 +11,7 @@
 #include <asm/io.h>
 #include <asm/arch/ehci-rmobile.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include "ehci.h"
 
 #if defined(CONFIG_R8A7740)

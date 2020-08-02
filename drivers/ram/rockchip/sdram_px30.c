@@ -18,6 +18,7 @@
 #include <asm/arch-rockchip/sdram.h>
 #include <asm/arch-rockchip/sdram_px30.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 
 struct dram_info {
 #ifdef CONFIG_TPL_BUILD

@@ -26,6 +26,7 @@
 #include <asm/u-boot.h>
 #include <fsl-mc/fsl_mc.h>
 #include <fsl-mc/ldpaa_wriop.h>
+#include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <linux/string.h>
 

@@ -11,6 +11,7 @@
 #include <virtio.h>
 #include <virtio_ring.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "virtio_net.h"
 

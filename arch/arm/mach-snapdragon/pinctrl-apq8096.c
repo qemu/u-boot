@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <vsprintf.h>
+#include <linux/kernel.h>
 #include "pinctrl-snapdragon.h"
 
 #define MAX_PIN_NAME_LEN 32

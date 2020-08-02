@@ -37,6 +37,7 @@
 #include <asm/u-boot-x86.h>
 #include <asm/arch/mrc.h>
 #include <asm/arch/msg_port.h>
+#include <linux/kernel.h>
 #include "mrc_util.h"
 #include "smc.h"
 

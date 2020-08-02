@@ -17,6 +17,7 @@
 #define _I2C_H_
 
 #include <linker_lists.h>
+#include <stdbool.h>
 #include <stdio.h>
 
 /*

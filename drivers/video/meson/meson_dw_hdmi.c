@@ -15,6 +15,7 @@
 #include <dm/uclass-internal.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include <power/regulator.h>
 #include <clk.h>

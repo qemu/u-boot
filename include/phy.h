@@ -13,6 +13,7 @@
 #include <phy_interface.h>
 #include <dm/ofnode.h>
 #include <dm/read.h>
+#include <stdbool.h>
 #include <linux/errno.h>
 #include <linux/list.h>
 #include <linux/mii.h>

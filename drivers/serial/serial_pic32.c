@@ -12,6 +12,7 @@
 #include <asm/global_data.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <mach/pic32.h>
 #include <dt-bindings/clock/microchip,clock.h>
 

@@ -20,6 +20,7 @@
 #include <command.h>
 #include <env.h>
 #include <part.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/string.h>

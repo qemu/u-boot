@@ -8,6 +8,7 @@
 #include <common.h>
 #include <efi_loader.h>
 #include <efi_variable.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>
 

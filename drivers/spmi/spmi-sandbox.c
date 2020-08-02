@@ -10,6 +10,7 @@
 #include <common.h>
 #include <dm.h>
 #include <errno.h>
+#include <stdbool.h>
 #include <linux/errno.h>
 #include <spmi/spmi.h>
 #include <asm/gpio.h>

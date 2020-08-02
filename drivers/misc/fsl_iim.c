@@ -18,6 +18,7 @@
 #if defined(CONFIG_MX51) || defined(CONFIG_MX53)
 #include <asm/arch/clock.h>
 #endif
+#include <linux/kernel.h>
 
 /* FSL IIM-specific constants */
 #define STAT_BUSY		0x80

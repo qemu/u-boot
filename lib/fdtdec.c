@@ -24,6 +24,7 @@
 #include <gzip.h>
 #include <mapmem.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <serial.h>
 #include <asm/global_data.h>

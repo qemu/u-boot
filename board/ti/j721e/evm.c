@@ -27,6 +27,7 @@
 #include <asm/u-boot.h>
 #include <dm/uclass-internal.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

@@ -20,6 +20,7 @@
 #include <dm/pinctrl.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/sizes.h>
 
 /* i2c timerout */

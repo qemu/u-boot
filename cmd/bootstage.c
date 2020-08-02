@@ -8,6 +8,7 @@
 #include <command.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 static int do_bootstage_report(struct cmd_tbl *cmdtp, int flag, int argc,

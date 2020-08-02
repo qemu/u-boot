@@ -7,6 +7,7 @@
 #ifndef _ASM_ARCH_EDP_H
 #define _ASM_ARCH_EDP_H
 
+#include <linux/kernel.h>
 struct rk3288_edp {
 	u8	res0[0x10];
 	u32	dp_tx_version;

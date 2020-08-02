@@ -16,6 +16,7 @@
 #include <i2c.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include "pinmux-config-colibri_t30.h"
 #include "../common/tdx-common.h"
 

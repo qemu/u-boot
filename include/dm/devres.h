@@ -12,6 +12,7 @@
 #define _DM_DEVRES_H
 
 #include <linux/compat.h>
+#include <linux/kernel.h>
 
 struct udevice;
 

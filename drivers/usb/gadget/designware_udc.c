@@ -11,6 +11,7 @@
 #include <serial.h>
 #include <asm/io.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #include <env.h>

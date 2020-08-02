@@ -7,6 +7,7 @@
 #include <asm/arch-fsl-layerscape/immap_lsch3.h>
 #include <asm/arch-fsl-layerscape/fsl_icid.h>
 #include <asm/arch-fsl-layerscape/fsl_portals.h>
+#include <linux/kernel.h>
 
 struct icid_id_table icid_tbl[] = {
 	SET_SDHC_ICID(1, FSL_SDMMC_STREAM_ID),

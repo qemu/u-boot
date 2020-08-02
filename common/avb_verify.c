@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <tee.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <tee/optee_ta_avb.h>
 

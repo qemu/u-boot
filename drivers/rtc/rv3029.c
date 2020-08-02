@@ -20,6 +20,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #define RTC_RV3029_PAGE_LEN             7
 

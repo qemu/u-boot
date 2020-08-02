@@ -11,6 +11,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "membuff.h"
 

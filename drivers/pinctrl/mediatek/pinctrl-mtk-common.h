@@ -6,6 +6,7 @@
 #ifndef __PINCTRL_MEDIATEK_H__
 #define __PINCTRL_MEDIATEK_H__
 
+#include <linux/kernel.h>
 #define MTK_PINCTRL_V0 0x0
 #define MTK_PINCTRL_V1 0x1
 

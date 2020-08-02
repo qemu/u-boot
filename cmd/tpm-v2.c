@@ -14,6 +14,7 @@
 #include <tpm-v2.h>
 #include <vsprintf.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "tpm-user-utils.h"
 

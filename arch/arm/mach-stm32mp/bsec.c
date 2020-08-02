@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <log.h>
 #include <misc.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <asm/arch/bsec.h>
 #include <asm/arch/stm32mp1_smc.h>

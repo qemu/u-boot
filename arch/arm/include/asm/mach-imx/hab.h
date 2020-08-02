@@ -7,6 +7,7 @@
 #ifndef __SECURE_MX6Q_H__
 #define __SECURE_MX6Q_H__
 
+#include <stdbool.h>
 #include <linux/types.h>
 #include <linux/compiler.h>
 

@@ -10,6 +10,7 @@
 #include <asm/arch/fpga_manager.h>
 #include <asm/arch/reset_manager.h>
 #include <asm/arch/system_manager.h>
+#include <linux/kernel.h>
 
 /* Timeout count */
 #define FPGA_TIMEOUT_CNT		0x1000000

@@ -14,6 +14,7 @@
 #include <dm/pinctrl.h>
 #include <dm/root.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include "pinctrl-nexell.h"
 #include "pinctrl-s5pxx18.h"
 

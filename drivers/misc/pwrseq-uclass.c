@@ -6,6 +6,7 @@
 #include <common.h>
 #include <dm.h>
 #include <pwrseq.h>
+#include <stdbool.h>
 #include <linux/errno.h>
 
 int pwrseq_set_power(struct udevice *dev, bool enable)

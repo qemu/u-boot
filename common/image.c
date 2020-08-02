@@ -19,6 +19,7 @@
 #include <vsprintf.h>
 #include <asm/cache.h>
 #include <asm/u-boot.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>
 #include <watchdog.h>

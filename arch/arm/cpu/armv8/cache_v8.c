@@ -17,6 +17,7 @@
 #include <asm/global_data.h>
 #include <asm/system.h>
 #include <asm/armv8/mmu.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;

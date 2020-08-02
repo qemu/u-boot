@@ -7,6 +7,7 @@
 #include <common.h>
 #include <dm.h>
 #include <misc.h>
+#include <stdbool.h>
 #include <linux/errno.h>
 #include <linux/string.h>
 

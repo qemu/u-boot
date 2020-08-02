@@ -9,6 +9,7 @@
 #include <fdt_support.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <linux/errno.h>
 #include <tee/optee.h>
 

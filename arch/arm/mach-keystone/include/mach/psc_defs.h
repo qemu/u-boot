@@ -6,6 +6,7 @@
 #ifndef _PSC_DEFS_H_
 #define _PSC_DEFS_H_
 
+#include <stdbool.h>
 #include <asm/arch/hardware.h>
 
 /*

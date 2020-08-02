@@ -18,6 +18,7 @@
 #include <malloc.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 static long do_fpga_get_device(char *arg)

@@ -19,6 +19,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 enum {
 	SPI_EV_NE = BIT(31 - 22),	/* Receiver Not Empty */

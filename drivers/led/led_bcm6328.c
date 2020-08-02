@@ -8,6 +8,7 @@
 #include <errno.h>
 #include <led.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <dm/lists.h>
 #include <linux/errno.h>

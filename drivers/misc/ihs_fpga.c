@@ -13,6 +13,7 @@
 #include <dm.h>
 #include <log.h>
 #include <regmap.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/gpio.h>
 #include <linux/bitops.h>

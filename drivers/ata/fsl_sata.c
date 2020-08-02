@@ -22,6 +22,7 @@
 #include <sata.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "fsl_sata.h"
 

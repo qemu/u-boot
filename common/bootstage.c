@@ -16,6 +16,7 @@
 #include <malloc.h>
 #include <sort.h>
 #include <spl.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>

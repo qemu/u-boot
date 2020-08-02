@@ -8,6 +8,7 @@
 #ifndef _INPUT_H
 #define _INPUT_H
 
+#include <stdbool.h>
 enum {
 	INPUT_MAX_MODIFIERS	= 4,
 	INPUT_BUFFER_LEN	= 16,

@@ -10,6 +10,7 @@
 #include <i2c.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/string.h>

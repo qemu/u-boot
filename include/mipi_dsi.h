@@ -16,6 +16,7 @@
 #define MIPI_DSI_H
 
 #include <mipi_display.h>
+#include <stdbool.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 

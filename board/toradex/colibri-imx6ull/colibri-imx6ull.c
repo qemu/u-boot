@@ -8,6 +8,7 @@
 #include <asm/global_data.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 
 #include <asm/arch/clock.h>
 #include <asm/arch/crm_regs.h>

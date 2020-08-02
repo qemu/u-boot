@@ -32,6 +32,7 @@
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <power/pmic.h>
 #include <power/pfuze100_pmic.h>

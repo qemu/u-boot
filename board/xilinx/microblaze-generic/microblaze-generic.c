@@ -20,6 +20,7 @@
 #include <dm/lists.h>
 #include <fdtdec.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/sizes.h>
 
 DECLARE_GLOBAL_DATA_PTR;

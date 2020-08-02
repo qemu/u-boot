@@ -18,6 +18,7 @@
 #include <asm/u-boot.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <asm/gpio.h>
 #include <asm/mach-imx/iomux-v3.h>

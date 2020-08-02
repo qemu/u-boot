@@ -18,6 +18,7 @@
 #include <asm/unaligned.h>
 #include <dm/acpi.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #define NHLT_RID		1

@@ -11,6 +11,7 @@
 #include <bootstage.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <asm/mrccache.h>

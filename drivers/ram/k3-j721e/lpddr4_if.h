@@ -13,6 +13,7 @@
 #ifndef LPDDR4_IF_H
 #define LPDDR4_IF_H
 
+#include <stdbool.h>
 #include <linux/types.h>
 
 /** @defgroup ConfigInfo  Configuration and Hardware Operation Information

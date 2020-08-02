@@ -11,6 +11,7 @@
 #include <errno.h>
 #include <dm.h>
 #include <i2c.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/errno.h>
 #include <power/pmic.h>

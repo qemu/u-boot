@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <linux/string.h>

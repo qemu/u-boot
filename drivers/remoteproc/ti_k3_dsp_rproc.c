@@ -20,6 +20,7 @@
 #include <dm/device_compat.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <linux/soc/ti/ti_sci_protocol.h>
 #include <linux/string.h>

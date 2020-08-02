@@ -19,6 +19,7 @@
 #include <log.h>
 #include <os.h>
 #include <rtc.h>
+#include <stdbool.h>
 #include <asm/rtc.h>
 #include <asm/test.h>
 #include <linux/string.h>

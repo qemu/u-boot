@@ -24,6 +24,7 @@
 #include <asm/arch-rockchip/clock.h>
 #include <asm/arch-rockchip/periph.h>
 #include <dm/pinctrl.h>
+#include <linux/kernel.h>
 #include "rk_spi.h"
 
 /* Change to 1 to output registers at the start of each transaction */

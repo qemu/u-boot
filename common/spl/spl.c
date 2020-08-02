@@ -25,6 +25,7 @@
 #include <nand.h>
 #include <fat.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <u-boot/crc.h>
 #include <version.h>

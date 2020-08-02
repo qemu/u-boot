@@ -14,6 +14,7 @@
 #include <asm/gpio.h>
 #include <asm/mach-imx/mxc_i2c.h>
 #include <watchdog.h>
+#include <linux/kernel.h>
 
 int force_idle_bus(void *priv)
 {

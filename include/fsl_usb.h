@@ -52,6 +52,7 @@ struct ccsr_usb_phy {
 #define CONFIG_SYS_FSL_USB_PLLPRG2_MFI_INTERNAL_CLK (6 << 16)
 #define CONFIG_SYS_FSL_USB_INTERNAL_SOC_CLK_EN (1 << 20)
 #endif
+#include <stdbool.h>
 #define CONFIG_SYS_FSL_USB_PLLPRG2_REF_DIV (1 << 4)
 #define CONFIG_SYS_FSL_USB_PLLPRG2_MFI (5 << 16)
 #define CONFIG_SYS_FSL_USB_PLLPRG2_PLL_EN (1 << 21)

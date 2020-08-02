@@ -18,6 +18,7 @@
 #include <asm/arch/lcdc.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 
 struct sunxi_dw_hdmi_priv {
 	struct dw_hdmi hdmi;

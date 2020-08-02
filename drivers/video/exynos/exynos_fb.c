@@ -13,6 +13,7 @@
 #include <dm.h>
 #include <fdtdec.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/global_data.h>
 #include <linux/libfdt.h>

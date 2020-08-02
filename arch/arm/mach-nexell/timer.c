@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <linux/kernel.h>
 
 #include <asm/io.h>
 #include <asm/arch/nexell.h>

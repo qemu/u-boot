@@ -13,6 +13,7 @@
 #include <spi.h>
 #include <spl.h>
 #include <spi_flash.h>
+#include <stdbool.h>
 #include <asm/fast_spi.h>
 #include <asm/spl.h>
 #include <asm/arch/cpu.h>

@@ -13,6 +13,7 @@
 #include <bootstage.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/arch/fsp/fsp_configs.h>
 #include <asm/arch/fsp/fsp_s_upd.h>
 #include <asm/fsp/fsp_infoheader.h>

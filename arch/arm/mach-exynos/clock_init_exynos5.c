@@ -12,6 +12,7 @@
 #include <asm/arch/clock.h>
 #include <asm/arch/spl.h>
 #include <asm/arch/dwmmc.h>
+#include <linux/kernel.h>
 
 #include "clock_init.h"
 #include "common_setup.h"

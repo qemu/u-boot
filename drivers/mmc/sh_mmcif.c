@@ -22,6 +22,7 @@
 #include <linux/errno.h>
 #include <linux/compat.h>
 #include <linux/io.h>
+#include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <linux/string.h>
 #include "sh_mmcif.h"

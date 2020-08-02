@@ -9,6 +9,7 @@
 #include <net.h>
 #include <stdio.h>
 #include <time.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 #include <net/fastboot.h>

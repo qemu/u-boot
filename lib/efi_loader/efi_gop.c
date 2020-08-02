@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <video.h>
 #include <asm/global_data.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;

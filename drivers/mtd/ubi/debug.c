@@ -11,6 +11,7 @@
 #include <ubi_uboot.h>
 #include <vsprintf.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 #include "ubi.h"

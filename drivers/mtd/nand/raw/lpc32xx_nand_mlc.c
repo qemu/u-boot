@@ -27,6 +27,7 @@
 #include <nand.h>
 #include <asm/arch/clk.h>
 #include <asm/arch/sys_proto.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 

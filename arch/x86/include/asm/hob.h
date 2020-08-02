@@ -9,6 +9,7 @@
 
 #include <efi.h>
 #include <efi_loader.h>
+#include <stdbool.h>
 
 /* Type of HOB Header */
 #define HOB_TYPE_MEM_ALLOC	0x0002

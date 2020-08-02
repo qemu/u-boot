@@ -8,6 +8,7 @@
 #ifndef __ASM_ARCH_GPIO
 #define __ASM_ARCH_GPIO
 
+#include <linux/kernel.h>
 #define GPIO_PER_BANK	32
 #define GPIO_BANKS	3
 

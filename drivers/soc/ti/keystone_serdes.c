@@ -12,6 +12,7 @@
 #include <asm/ti-common/keystone_serdes.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #define SERDES_CMU_REGS(x)		(0x0000 + (0x0c00 * (x)))
 #define SERDES_LANE_REGS(x)		(0x0200 + (0x200 * (x)))

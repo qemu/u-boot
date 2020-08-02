@@ -7,6 +7,7 @@
 #ifndef _INCLUDE_REGULATOR_H_
 #define _INCLUDE_REGULATOR_H_
 
+#include <stdbool.h>
 struct udevice;
 
 /**

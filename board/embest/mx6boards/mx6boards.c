@@ -42,6 +42,7 @@
 #include <linux/fb.h>
 #include <ipu_pixfmt.h>
 #include <asm/io.h>
+#include <linux/kernel.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

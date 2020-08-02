@@ -6,6 +6,7 @@
 #define K210_PLL_H
 
 #include <clk.h>
+#include <linux/kernel.h>
 #include <test/export.h>
 
 #define K210_PLL_CLKR GENMASK(3, 0)

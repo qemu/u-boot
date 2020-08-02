@@ -7,6 +7,7 @@
 #ifndef __HRE_H
 #define __HRE_H
 
+#include <stdbool.h>
 struct key_program {
 	uint32_t magic;
 	uint32_t code_crc;

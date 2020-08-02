@@ -15,6 +15,7 @@
 #include <asm/arch/rmobile.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 
 /* SH QSPI register bit masks <REG>_<BIT> */
 #define SPCR_MSTR	0x08

@@ -8,6 +8,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <asm/bitops.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #include <fsl_ddr.h>

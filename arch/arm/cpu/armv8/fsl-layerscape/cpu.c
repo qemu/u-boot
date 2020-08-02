@@ -42,6 +42,7 @@
 #include <asm/arch/clock.h>
 #include <hwconfig.h>
 #include <fsl_qbman.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #ifdef CONFIG_TFABOOT

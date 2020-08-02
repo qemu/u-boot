@@ -11,6 +11,7 @@
 #include <asm/arch/mx7ulp-pins.h>
 #include <asm/arch/iomux.h>
 #include <asm/gpio.h>
+#include <linux/kernel.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

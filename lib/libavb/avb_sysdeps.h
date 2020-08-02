@@ -20,6 +20,7 @@ extern "C" {
  * must be present.
  */
 #include <common.h>
+#include <stdbool.h>
 
 /* If you don't have gcc or clang, these attribute macros may need to
  * be adjusted.

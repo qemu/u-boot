@@ -22,6 +22,7 @@
 #include <asm/io.h>
 #include <asm/gpio.h>
 #include <asm/hardware.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 #include <mach/at91_matrix.h>

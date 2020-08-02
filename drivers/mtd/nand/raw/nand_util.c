@@ -28,6 +28,7 @@
 #include <div64.h>
 #include <asm/cache.h>
 #include <dm/devres.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #include <linux/errno.h>

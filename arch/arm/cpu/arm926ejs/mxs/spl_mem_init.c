@@ -14,6 +14,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/sys_proto.h>
 #include <linux/compiler.h>
+#include <linux/kernel.h>
 
 #include "mxs_init.h"
 

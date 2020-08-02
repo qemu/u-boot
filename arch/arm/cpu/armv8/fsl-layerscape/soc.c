@@ -11,6 +11,7 @@
 #include <fsl_immap.h>
 #include <fsl_ifc.h>
 #include <init.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/errno.h>

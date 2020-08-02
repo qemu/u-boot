@@ -11,6 +11,7 @@
 #include <mapmem.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #define abootimg_addr() \

@@ -11,6 +11,7 @@
 #include <net.h>
 #include <stdio.h>
 #include <asm/u-boot.h>
+#include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <asm/arch-tegra/cboot.h>
 #include <linux/string.h>

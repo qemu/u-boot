@@ -8,6 +8,7 @@
 #ifndef __DWC2_USB_GADGET
 #define __DWC2_USB_GADGET
 
+#include <stdbool.h>
 #include <dm/ofnode.h>
 
 #define PHY0_SLEEP              (1 << 5)

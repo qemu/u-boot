@@ -7,6 +7,7 @@
 #ifndef HEXDUMP_H
 #define HEXDUMP_H
 
+#include <stdbool.h>
 #include <linux/ctype.h>
 #include <linux/types.h>
 

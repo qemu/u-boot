@@ -10,6 +10,7 @@
 #include <cpu.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <vsprintf.h>
 #include <asm/ppc.h>
 #include <linux/bitops.h>

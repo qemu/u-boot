@@ -6,6 +6,7 @@
 #ifndef __serial_pl01x_h
 #define __serial_pl01x_h
 
+#include <stdbool.h>
 enum pl01x_type {
 	TYPE_PL010,
 	TYPE_PL011,

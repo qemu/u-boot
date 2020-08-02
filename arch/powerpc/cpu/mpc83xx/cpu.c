@@ -23,6 +23,7 @@
 #include <asm/ppc.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <tsec.h>
 #include <netdev.h>

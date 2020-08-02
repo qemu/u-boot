@@ -15,7 +15,6 @@
 #ifndef __ASSEMBLY__		/* put C only stuff in this section */
 #include <config.h>
 #include <linux/types.h>
-#include <linux/kernel.h>
 #endif	/* __ASSEMBLY__ */
 
 /* Pull in stuff for the build system */

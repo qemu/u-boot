@@ -9,6 +9,7 @@
 #ifndef _DM_READ_H
 #define _DM_READ_H
 
+#include <stdbool.h>
 #include <linux/errno.h>
 
 #include <dm/device.h>

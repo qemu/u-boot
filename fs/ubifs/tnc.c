@@ -30,6 +30,7 @@
 #include <linux/compat.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/stat.h>
 #include <linux/string.h>
 #endif

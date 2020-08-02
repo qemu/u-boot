@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <asm/cache.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include "jobdesc.h"
 #include "desc.h"
 #include "jr.h"

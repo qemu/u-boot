@@ -8,6 +8,7 @@
 #ifndef _CLK_H_
 #define _CLK_H_
 
+#include <stdbool.h>
 #include <dm/ofnode.h>
 #include <linux/err.h>
 #include <linux/errno.h>

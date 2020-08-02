@@ -8,6 +8,7 @@
 #ifndef _PKCS7_PARSER_H
 #define _PKCS7_PARSER_H
 
+#include <stdbool.h>
 #include <linux/oid_registry.h>
 #include <crypto/pkcs7.h>
 #include <crypto/x509_parser.h>

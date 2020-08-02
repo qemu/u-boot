@@ -8,6 +8,7 @@
  */
 
 #include <efi_selftest.h>
+#include <stdbool.h>
 #include <linux/string.h>
 
 static efi_guid_t loaded_image_protocol_guid =

@@ -17,6 +17,7 @@
 #include <command.h>
 #include <rtc.h>
 #include <i2c.h>
+#include <stdbool.h>
 #include <stdio.h>
 
 /*---------------------------------------------------------------------*/

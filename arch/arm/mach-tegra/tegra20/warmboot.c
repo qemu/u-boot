@@ -21,6 +21,7 @@
 #include <asm/arch-tegra/pmc.h>
 #include <asm/arch-tegra/fuse.h>
 #include <asm/arch-tegra/warmboot.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;

@@ -4,6 +4,7 @@
  */
 #include <kendryte/clk.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #include <asm/io.h>
 #include <dt-bindings/clock/k210-sysctl.h>

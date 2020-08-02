@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <asm/io.h>
 #include <linux/compiler.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include <linux/time.h>
 #include <i2c.h>

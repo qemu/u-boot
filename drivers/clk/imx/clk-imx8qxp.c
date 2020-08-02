@@ -15,6 +15,7 @@
 #include <dt-bindings/soc/imx_rsrc.h>
 #include <misc.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #include "clk-imx8.h"
 

@@ -8,6 +8,7 @@
 
 #ifndef __ASSEMBLY__
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 #endif
 
 #define OSC_HZ		(24 * 1000 * 1000)

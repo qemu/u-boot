@@ -5,6 +5,7 @@
 
 
 #include <common.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/fpga_manager.h>

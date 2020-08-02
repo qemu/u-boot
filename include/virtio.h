@@ -21,6 +21,7 @@
 #define __VIRTIO_H__
 
 #include <compiler.h>
+#include <stdbool.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>
 #include <linux/typecheck.h>

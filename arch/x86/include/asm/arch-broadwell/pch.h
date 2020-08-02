@@ -6,6 +6,8 @@
 #ifndef __ASM_ARCH_PCH_H
 #define __ASM_ARCH_PCH_H
 
+#include <stdbool.h>
+
 #define PMBASE			0x40
 #define ACPI_CNTL		0x44
 #define  ACPI_EN		(1 << 7)

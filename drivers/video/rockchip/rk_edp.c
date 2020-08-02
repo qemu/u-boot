@@ -25,6 +25,7 @@
 #include <dt-bindings/clock/rk3288-cru.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #define MAX_CR_LOOP 5

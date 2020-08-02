@@ -10,6 +10,7 @@
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 
 #include "../gadget/dwc2_udc_otg_priv.h"
 

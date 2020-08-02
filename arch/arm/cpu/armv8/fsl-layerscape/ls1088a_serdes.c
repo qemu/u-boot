@@ -7,6 +7,7 @@
 #include <asm/arch/fsl_serdes.h>
 #include <asm/arch/soc.h>
 #include <asm/io.h>
+#include <linux/kernel.h>
 
 struct serdes_config {
 	u8 ip_protocol;

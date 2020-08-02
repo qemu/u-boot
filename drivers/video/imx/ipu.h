@@ -13,6 +13,7 @@
 #ifndef __ASM_ARCH_IPU_H__
 #define __ASM_ARCH_IPU_H__
 
+#include <stdbool.h>
 #include <linux/types.h>
 #include <ipu_pixfmt.h>
 

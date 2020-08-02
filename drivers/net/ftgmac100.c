@@ -27,6 +27,7 @@
 #include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/iopoll.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 
 #include "ftgmac100.h"

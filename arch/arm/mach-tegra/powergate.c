@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <errno.h>
+#include <stdbool.h>
 #include <time.h>
 #include <linux/delay.h>
 #include <linux/errno.h>

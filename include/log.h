@@ -9,6 +9,7 @@
 #ifndef __LOG_H
 #define __LOG_H
 
+#include <stdbool.h>
 #include <stdio.h>
 #include <linker_lists.h>
 #include <dm/uclass-id.h>

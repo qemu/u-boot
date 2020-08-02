@@ -8,6 +8,7 @@
 #define __p2sb_h
 
 /* Port Id lives in bits 23:16 and register offset lives in 15:0 of address */
+#include <stdbool.h>
 #define PCR_PORTID_SHIFT	16
 
 /**

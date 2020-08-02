@@ -7,6 +7,7 @@
 #include <command.h>
 #include <display_options.h>
 #include <mapmem.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <acpi/acpi_table.h>

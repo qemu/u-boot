@@ -10,6 +10,7 @@
 #include <asm/arch/nx_gpio.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #define I2C_WRITE       0
 #define I2C_READ        1

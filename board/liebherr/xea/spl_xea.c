@@ -18,6 +18,7 @@
 #include <asm/arch/iomux-mx28.h>
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/sys_proto.h>
+#include <linux/kernel.h>
 
 #define	MUX_CONFIG_LCD	(MXS_PAD_3V3 | MXS_PAD_4MA | MXS_PAD_NOPULL)
 #define	MUX_CONFIG_BOOT	(MXS_PAD_3V3 | MXS_PAD_PULLUP)

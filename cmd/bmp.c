@@ -23,6 +23,7 @@
 #include <video.h>
 #include <vsprintf.h>
 #include <asm/byteorder.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 static int bmp_info (ulong addr);

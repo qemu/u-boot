@@ -9,6 +9,7 @@
 #include <common.h>
 #include <dm.h>
 #include <asm/global_data.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/string.h>
 #include <linux/usb/otg.h>

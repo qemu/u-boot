@@ -20,6 +20,7 @@
 #include <zynqmp_firmware.h>
 #include <linux/err.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #define MAX_PARENT			100

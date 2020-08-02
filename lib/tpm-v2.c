@@ -9,6 +9,7 @@
 #include <tpm-common.h>
 #include <tpm-v2.h>
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "tpm-utils.h"
 

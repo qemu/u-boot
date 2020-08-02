@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <compiler.h>
 #include <time.h>
 #include <asm/mipsregs.h>
 

@@ -29,6 +29,7 @@
 #include <dm/uclass-internal.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #define PCH_P2SB_E0		0xe0
 #define HIDE_BIT		BIT(0)

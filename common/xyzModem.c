@@ -22,6 +22,7 @@
  *==========================================================================
  */
 #include <common.h>
+#include <stdbool.h>
 #include <time.h>
 #include <vsprintf.h>
 #include <xyzModem.h>

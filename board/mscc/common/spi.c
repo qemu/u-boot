@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <spi.h>
 #include <linux/bitops.h>

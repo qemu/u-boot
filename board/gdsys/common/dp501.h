@@ -24,6 +24,7 @@
 #ifndef _DP501_H_
 #define _DP501_H_
 
+#include <stdbool.h>
 void dp501_powerup(u8 addr);
 void dp501_powerdown(u8 addr);
 int dp501_probe(unsigned screen, bool power);

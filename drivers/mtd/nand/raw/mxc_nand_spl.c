@@ -16,6 +16,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/io.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include "mxc_nand.h"
 
 #if defined(MXC_NFC_V1) || defined(MXC_NFC_V2_1)

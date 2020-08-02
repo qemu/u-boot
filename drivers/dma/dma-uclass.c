@@ -20,6 +20,7 @@
 #include <dt-structs.h>
 #include <errno.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 
 #ifdef CONFIG_DMA_CHANNELS

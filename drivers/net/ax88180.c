@@ -45,6 +45,7 @@
 #include <stdio.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/mii.h>
 #include <linux/string.h>
 #include "ax88180.h"

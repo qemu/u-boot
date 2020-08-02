@@ -9,6 +9,7 @@
 #define __TI_CPPI5_H__
 
 #include <hexdump.h>
+#include <stdbool.h>
 #include <linux/bitops.h>
 #include <linux/bug.h>
 #include <linux/printk.h>

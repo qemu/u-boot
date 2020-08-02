@@ -12,6 +12,7 @@
 #include <dm/pinctrl.h>
 #include <linux/errno.h>
 #include <linux/io.h>
+#include <linux/kernel.h>
 #include "pinctrl-meson-axg.h"
 
 static int meson_axg_pmx_get_bank(struct udevice *dev, unsigned int pin,

@@ -17,6 +17,7 @@
 #include <asm/armv8/mmu.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

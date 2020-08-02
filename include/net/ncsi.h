@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <phy.h>
+#include <stdbool.h>
 
 bool ncsi_active(void);
 void ncsi_receive(struct ethernet_hdr *et, struct ip_udp_hdr *ip,

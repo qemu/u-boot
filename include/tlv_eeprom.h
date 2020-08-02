@@ -8,6 +8,7 @@
 #define __TLV_EEPROM_H_
 
 #include <compiler.h>
+#include <stdbool.h>
 #include <linux/errno.h>
 #include <linux/string.h>
 

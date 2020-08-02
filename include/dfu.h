@@ -11,6 +11,7 @@
 #define __DFU_ENTITY_H_
 
 #include <common.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/errno.h>
 #include <linux/list.h>

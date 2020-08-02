@@ -9,6 +9,7 @@
 #include <efi_loader.h>
 #include <log.h>
 #include <acpi/acpi_table.h>
+#include <linux/kernel.h>
 
 static const efi_guid_t acpi_guid = EFI_ACPI_TABLE_GUID;
 

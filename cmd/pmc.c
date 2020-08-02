@@ -9,6 +9,7 @@
 #include <command.h>
 #include <dm.h>
 #include <stdio.h>
+#include <linux/kernel.h>
 #include <power/acpi_pmc.h>
 
 static int get_pmc_dev(struct udevice **devp)

@@ -33,6 +33,7 @@
 #include <div64.h>
 #include <ubi_uboot.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #endif
 #include <linux/err.h>

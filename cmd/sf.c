@@ -21,6 +21,7 @@
 #include <vsprintf.h>
 #include <asm/cache.h>
 #include <jffs2/jffs2.h>
+#include <linux/kernel.h>
 #include <linux/mtd/mtd.h>
 #include <linux/string.h>
 

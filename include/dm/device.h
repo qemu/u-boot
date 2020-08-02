@@ -10,6 +10,7 @@
 #ifndef _DM_DEVICE_H
 #define _DM_DEVICE_H
 
+#include <stdbool.h>
 #include <dm/ofnode.h>
 #include <dm/uclass-id.h>
 #include <fdtdec.h>

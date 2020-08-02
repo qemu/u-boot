@@ -13,6 +13,7 @@
 #include <keyboard.h>
 #include <key_matrix.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio_dev.h>
 #include <linux/errno.h>
 #include <linux/string.h>

@@ -9,6 +9,7 @@
 
 #ifndef __ASSEMBLY__
 
+#include <stdbool.h>
 #include <asm/processor.h>
 #include <asm/mrccache.h>
 

@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <stdbool.h>
 
 enum mscc_regs_qs {
 	MSCC_QS_XTR_RD,

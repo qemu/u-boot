@@ -37,6 +37,7 @@
 #include <linux/ctype.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/list.h>
 #include <asm/byteorder.h>
 #ifdef CONFIG_SANDBOX

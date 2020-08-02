@@ -9,6 +9,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/types.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/mx6-ddr.h>

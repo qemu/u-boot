@@ -8,6 +8,7 @@
  */
 #include <config.h>
 #include <common.h>
+#include <stdbool.h>
 #include <asm/cache.h>
 
 #include <asm/arch/cpu.h>

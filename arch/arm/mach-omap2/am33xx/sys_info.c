@@ -18,6 +18,7 @@
 #include <asm/arch/sys_proto.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/clock.h>
+#include <linux/kernel.h>
 #include <power/tps65910.h>
 #include <linux/compiler.h>
 

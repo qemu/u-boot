@@ -85,4 +85,5 @@ extern struct key *find_asymmetric_key(struct key *keyring,
  * The payload is at the discretion of the subtype.
  */
 
+#include <stdbool.h>
 #endif /* _KEYS_ASYMMETRIC_TYPE_H */

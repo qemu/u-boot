@@ -20,6 +20,7 @@
 #include <asm/io.h>
 #include <dm/device_compat.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #include "sequencer.h"

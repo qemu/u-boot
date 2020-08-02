@@ -11,6 +11,7 @@
 #include <common.h>
 #include <stdarg.h>
 #include <serial.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/ctype.h>

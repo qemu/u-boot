@@ -14,6 +14,7 @@
 #include <linux/compat.h>
 #include <linux/dma-direction.h>
 #include <linux/io.h>
+#include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <power/regulator.h>
 #include <asm/unaligned.h>

@@ -6,6 +6,7 @@
 #ifndef ARCH_DDRPHY_INIT_H
 #define ARCH_DDRPHY_INTT_H
 
+#include <stdbool.h>
 #include <linux/compiler.h>
 #include <linux/types.h>
 

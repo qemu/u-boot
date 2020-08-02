@@ -9,6 +9,7 @@
 #include <common.h>
 #include <spi.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 
 static const unsigned char SEQ_USER_SETTING[] = {
 	0xF0, 0x5A, 0x5A

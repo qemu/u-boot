@@ -6,6 +6,7 @@
 #ifndef _RESET_H
 #define _RESET_H
 
+#include <stdbool.h>
 #include <dm/ofnode.h>
 #include <linux/errno.h>
 

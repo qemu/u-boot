@@ -9,6 +9,7 @@
 #ifndef _SPI_FLASH_H_
 #define _SPI_FLASH_H_
 
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/errno.h>
 #include <linux/string.h>

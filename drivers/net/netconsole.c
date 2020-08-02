@@ -11,6 +11,7 @@
 #include <stdio_dev.h>
 #include <net.h>
 #include <vsprintf.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #ifndef CONFIG_NETCONSOLE_BUFFER_SIZE

@@ -26,6 +26,7 @@
 #include <dm/uclass-internal.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include "displayport.h"
 
 /* return in 1000ths of a Hertz */

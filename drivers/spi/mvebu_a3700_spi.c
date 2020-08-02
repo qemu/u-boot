@@ -16,6 +16,7 @@
 #include <asm/io.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -7,6 +7,7 @@
 #ifndef __pch_h
 #define __pch_h
 
+#include <stdbool.h>
 #include <linux/bitops.h>
 #define PCH_RCBA		0xf0
 

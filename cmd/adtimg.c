@@ -11,6 +11,7 @@
 #include <common.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #define OPT_INDEX	"--index"

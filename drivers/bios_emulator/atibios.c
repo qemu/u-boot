@@ -51,6 +51,7 @@
 #include <errno.h>
 #include <log.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vbe.h>
 #include <linux/delay.h>

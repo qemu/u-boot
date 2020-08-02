@@ -10,6 +10,7 @@
 #include <fuse.h>
 #include <mapmem.h>
 #include <image.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <asm/io.h>

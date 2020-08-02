@@ -6,6 +6,7 @@
 #ifndef _ARCH_IRQ_H_
 #define _ARCH_IRQ_H_
 
+#include <stdbool.h>
 #include <dt-bindings/interrupt-router/intel-irq.h>
 
 /**

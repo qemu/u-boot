@@ -9,6 +9,7 @@
 #include <common.h>
 #include <init.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/clock.h>

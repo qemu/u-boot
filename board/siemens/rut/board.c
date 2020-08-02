@@ -38,6 +38,7 @@
 #include <watchdog.h>
 #include <asm/u-boot.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "board.h"
 #include "../common/factoryset.h"

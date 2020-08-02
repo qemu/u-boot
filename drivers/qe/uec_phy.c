@@ -17,6 +17,7 @@
 #include <linux/errno.h>
 #include <linux/immap_qe.h>
 #include <asm/io.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "uccf.h"
 #include "uec.h"

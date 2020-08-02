@@ -8,6 +8,7 @@
  * Authors: Peter Chen <peter.chen@nxp.com>
  *          Pawel Laszczak <pawell@cadence.com>
  */
+#include <stdbool.h>
 #include <linux/compiler.h>
 #include <linux/types.h>
 #include <linux/usb/otg.h>

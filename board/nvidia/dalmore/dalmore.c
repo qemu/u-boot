@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <asm/arch/pinmux.h>
 #include <asm/arch/gp_padctrl.h>
+#include <linux/kernel.h>
 #include "pinmux-config-dalmore.h"
 #include <i2c.h>
 

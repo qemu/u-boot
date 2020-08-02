@@ -18,6 +18,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/math64.h>
 #include <linux/bitfield.h>
 #include <linux/printk.h>

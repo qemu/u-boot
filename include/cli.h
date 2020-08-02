@@ -7,6 +7,7 @@
 #ifndef __CLI_H
 #define __CLI_H
 
+#include <stdbool.h>
 #include <time.h>
 
 /**

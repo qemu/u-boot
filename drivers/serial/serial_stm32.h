@@ -7,6 +7,7 @@
 #ifndef _SERIAL_STM32_
 #define _SERIAL_STM32_
 
+#include <stdbool.h>
 #include <linux/bitops.h>
 #define CR1_OFFSET(x)	(x ? 0x0c : 0x00)
 #define CR3_OFFSET(x)	(x ? 0x14 : 0x08)

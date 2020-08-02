@@ -9,6 +9,7 @@
 #include <common.h>
 #include <adc.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>

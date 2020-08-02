@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <dm/devres.h>
+#include <linux/kernel.h>
 
 #include <linux/mtd/mtd.h>
 #include <linux/mtd/rawnand.h>

@@ -10,6 +10,8 @@
 #ifndef _PCI_H
 #define _PCI_H
 
+#include <stdbool.h>
+
 #define PCI_CFG_SPACE_SIZE	256
 #define PCI_CFG_SPACE_EXP_SIZE	4096
 

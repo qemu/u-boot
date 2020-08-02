@@ -7,6 +7,7 @@
 
 #include <asm-offsets.h>
 #include <config.h>
+#include <stdbool.h>
 #include <version.h>
 #include <asm/cache.h>
 #include <asm/macro.h>

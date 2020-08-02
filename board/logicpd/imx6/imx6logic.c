@@ -19,6 +19,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <asm/gpio.h>
+#include <linux/kernel.h>
 #include <linux/sizes.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/crm_regs.h>

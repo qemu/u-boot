@@ -6,6 +6,7 @@
 #ifndef _ASM_ARCH_GPIO_H
 #define _ASM_ARCH_GPIO_H
 
+#include <linux/kernel.h>
 struct rockchip_gpio_regs {
 	u32 swport_dr;
 	u32 swport_ddr;

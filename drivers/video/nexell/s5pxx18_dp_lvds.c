@@ -8,6 +8,8 @@
 #include <config.h>
 #include <common.h>
 #include <errno.h>
+#include <stdbool.h>
+#include <stdio.h>
 #include <linux/errno.h>
 
 #include <asm/arch/nexell.h>

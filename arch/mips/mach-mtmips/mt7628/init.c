@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <clk.h>
+#include <compiler.h>
 #include <dm.h>
 #include <stdio.h>
 #include <time.h>

@@ -8,6 +8,7 @@
 #include <common.h>
 #include <dm.h>
 #include <irq.h>
+#include <stdbool.h>
 #include <acpi/acpi_device.h>
 #include <asm/test.h>
 #include <linux/errno.h>

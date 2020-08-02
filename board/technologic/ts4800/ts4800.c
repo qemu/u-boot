@@ -28,6 +28,7 @@
 #include <input.h>
 #include <fsl_esdhc_imx.h>
 #include <mc13892.h>
+#include <linux/kernel.h>
 
 #include <malloc.h>
 #include <netdev.h>

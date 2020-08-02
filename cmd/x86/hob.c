@@ -10,6 +10,7 @@
 #include <uuid.h>
 #include <asm/global_data.h>
 #include <asm/hob.h>
+#include <linux/kernel.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

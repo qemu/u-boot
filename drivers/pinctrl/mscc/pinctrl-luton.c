@@ -19,6 +19,7 @@
 #include <linux/io.h>
 #include <asm/gpio.h>
 #include <asm/system.h>
+#include <linux/kernel.h>
 #include "mscc-common.h"
 
 enum {

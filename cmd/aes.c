@@ -13,6 +13,7 @@
 #include <asm/byteorder.h>
 #include <linux/compiler.h>
 #include <mapmem.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 u32 aes_get_key_len(char *command)

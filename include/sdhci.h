@@ -9,6 +9,7 @@
 #ifndef __SDHCI_HW_H
 #define __SDHCI_HW_H
 
+#include <stdbool.h>
 #include <linux/bitops.h>
 #include <linux/types.h>
 #include <asm/io.h>

@@ -11,6 +11,7 @@
 #define _MRC_UTIL_H_
 
 #include <log.h>
+#include <stdbool.h>
 
 /* Turn on this macro to enable MRC debugging output */
 #undef  MRC_DEBUG

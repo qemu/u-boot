@@ -12,6 +12,7 @@
 #include <malloc.h>
 #include <reset-uclass.h>
 #include <regmap.h>
+#include <stdbool.h>
 #include <linux/bitops.h>
 #include <linux/errno.h>
 

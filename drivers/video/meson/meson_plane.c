@@ -8,6 +8,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <linux/bitfield.h>
 #include <linux/bitops.h>

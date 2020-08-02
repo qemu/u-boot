@@ -9,6 +9,7 @@
 
 #include <asm/arch/fsp/fsp_m_upd.h>
 #include <asm/arch/fsp/fsp_s_upd.h>
+#include <linux/kernel.h>
 
 #define ARRAY_SIZE_OF_MEMBER(s, m) (ARRAY_SIZE((((s *)0)->m)))
 #define SIZE_OF_MEMBER(s, m) (sizeof((((s *)0)->m)))

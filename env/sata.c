@@ -8,6 +8,7 @@
 #include <common.h>
 #include <stdio.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 #include <command.h>
 #include <env.h>

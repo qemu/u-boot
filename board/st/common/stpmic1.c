@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <asm/io.h>
 #include <asm/arch/ddr.h>

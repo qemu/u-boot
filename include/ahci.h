@@ -7,6 +7,7 @@
 #ifndef _AHCI_H_
 #define _AHCI_H_
 
+#include <compiler.h>
 #include <pci.h>
 
 #define AHCI_PCI_BAR		0x24

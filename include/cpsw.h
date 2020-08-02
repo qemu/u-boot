@@ -16,6 +16,7 @@
 #ifndef _CPSW_H_
 #define _CPSW_H_
 
+#include <stdbool.h>
 #include <dm/ofnode.h>
 
 /* reg offset */

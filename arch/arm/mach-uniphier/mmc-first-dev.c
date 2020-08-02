@@ -7,6 +7,7 @@
 #include <command.h>
 #include <env.h>
 #include <mmc.h>
+#include <stdbool.h>
 #include <linux/errno.h>
 
 static int find_first_mmc_device(bool is_sd)

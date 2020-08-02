@@ -13,6 +13,7 @@
 #include <asm/arch/ls102xa_stream_id.h>
 #include <fsl_csu.h>
 #include <fsl_ddr_sdram.h>
+#include <linux/kernel.h>
 
 struct liodn_id_table sec_liodn_tbl[] = {
 	SET_SEC_JR_LIODN_ENTRY(0, 0x10, 0x10),

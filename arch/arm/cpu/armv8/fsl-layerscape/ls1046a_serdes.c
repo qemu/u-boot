@@ -7,6 +7,7 @@
 #include <common.h>
 #include <asm/arch/fsl_serdes.h>
 #include <asm/arch/immap_lsch2.h>
+#include <linux/kernel.h>
 
 struct serdes_config {
 	u32 protocol;

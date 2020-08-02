@@ -6,6 +6,7 @@
 #ifndef _ASM_ARCH_DDR_RK3288_H
 #define _ASM_ARCH_DDR_RK3288_H
 
+#include <linux/kernel.h>
 struct rk3288_ddr_pctl {
 	u32 scfg;
 	u32 sctl;

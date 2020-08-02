@@ -9,6 +9,7 @@
 #include <asm/ppc.h>
 #endif
 #include <div64.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/delay.h>
 

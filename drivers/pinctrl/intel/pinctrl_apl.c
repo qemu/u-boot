@@ -16,6 +16,7 @@
 #include <asm/intel_pinctrl.h>
 #include <asm-generic/gpio.h>
 #include <asm/intel_pinctrl_defs.h>
+#include <linux/kernel.h>
 
 /**
  * struct apl_gpio_platdata - platform data for each device

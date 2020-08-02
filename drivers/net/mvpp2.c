@@ -40,6 +40,7 @@
 #include <asm/arch/cpu.h>
 #include <asm/arch/soc.h>
 #include <linux/compat.h>
+#include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <linux/mbus.h>
 #include <asm-generic/gpio.h>

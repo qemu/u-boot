@@ -28,6 +28,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 static struct splash_location default_splash_locations[] = {

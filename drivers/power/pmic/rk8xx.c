@@ -10,6 +10,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <power/rk8xx_pmic.h>
 #include <power/pmic.h>
 

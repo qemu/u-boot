@@ -16,6 +16,7 @@
 #include <time.h>
 #include <vsprintf.h>
 #include <asm/global_data.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #include "stm32mp1_ddr.h"
 #include "stm32mp1_tests.h"

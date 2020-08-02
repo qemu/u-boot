@@ -23,6 +23,7 @@
 #include <netdev.h>
 #include <asm/u-boot.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <power/pmic.h>
 #include <power/pfuze3000_pmic.h>
 #include "../freescale/common/pfuze.h"

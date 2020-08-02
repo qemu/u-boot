@@ -8,6 +8,7 @@
 #include <common.h>		/* core U-Boot definitions */
 #include <altera.h>
 #include <ACEX1K.h>		/* ACEX device family */
+#include <stdbool.h>
 #include <stdio.h>
 #include <time.h>
 #include <linux/delay.h>

@@ -13,6 +13,7 @@
 #include <common.h>
 #include <dm.h>
 #include <log.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <w1.h>
 #include <w1-eeprom.h>

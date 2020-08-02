@@ -21,6 +21,7 @@
 #include <spi.h>
 #include <spi-mem.h>
 #include <dm/device_compat.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 #endif
 

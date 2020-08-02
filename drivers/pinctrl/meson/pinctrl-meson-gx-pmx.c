@@ -11,6 +11,7 @@
 #include <dm/pinctrl.h>
 #include <linux/bitops.h>
 #include <linux/io.h>
+#include <linux/kernel.h>
 #include "pinctrl-meson-gx.h"
 
 static void meson_gx_pinmux_disable_other_groups(struct meson_pinctrl *priv,

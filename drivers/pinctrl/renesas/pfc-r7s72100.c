@@ -15,6 +15,7 @@
 #include <linux/errno.h>
 #include <linux/io.h>
 #include <linux/err.h>
+#include <linux/kernel.h>
 
 #define P(bank)			(0x0000 + (bank) * 4)
 #define PSR(bank)		(0x0100 + (bank) * 4)

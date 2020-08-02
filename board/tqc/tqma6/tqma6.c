@@ -26,6 +26,7 @@
 #include <asm/mach-imx/spi.h>
 #include <common.h>
 #include <fsl_esdhc_imx.h>
+#include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <i2c.h>
 #include <mmc.h>

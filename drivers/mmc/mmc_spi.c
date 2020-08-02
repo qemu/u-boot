@@ -12,6 +12,7 @@
 #include <malloc.h>
 #include <part.h>
 #include <mmc.h>
+#include <stdbool.h>
 #include <stdlib.h>
 #include <vsprintf.h>
 #include <linux/bitops.h>

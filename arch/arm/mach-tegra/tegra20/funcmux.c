@@ -9,6 +9,7 @@
 #include <asm/arch/clock.h>
 #include <asm/arch/funcmux.h>
 #include <asm/arch/pinmux.h>
+#include <linux/kernel.h>
 
 /*
  * The PINMUX macro is used to set up pinmux tables.

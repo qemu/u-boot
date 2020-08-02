@@ -14,6 +14,7 @@
  *
  * @base: Register base address
  */
+#include <stdbool.h>
 struct bcm283x_mu_serial_platdata {
 	unsigned long base;
 	unsigned int clock;

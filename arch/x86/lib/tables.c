@@ -14,6 +14,7 @@
 #include <asm/mpspec.h>
 #include <asm/tables.h>
 #include <asm/coreboot_tables.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 /**

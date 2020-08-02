@@ -10,6 +10,7 @@
 #include <pci.h>
 #include <pci_msc01.h>
 #include <asm/io.h>
+#include <linux/kernel.h>
 
 #define PCI_ACCESS_READ  0
 #define PCI_ACCESS_WRITE 1

@@ -12,6 +12,7 @@
 #include <asm/arch/scu_ast2500.h>
 #include <dm/pinctrl.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 /*
  * This driver works with very simple configuration that has the same name

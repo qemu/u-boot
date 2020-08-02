@@ -28,6 +28,7 @@
 #include <asm/byteorder.h>
 #include <asm/cache.h>
 #include <asm/io.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #ifndef CONFIG_SYS_XIMG_LEN

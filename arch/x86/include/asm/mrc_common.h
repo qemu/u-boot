@@ -6,6 +6,7 @@
 #ifndef __ASM_MRC_COMMON_H
 #define __ASM_MRC_COMMON_H
 
+#include <stdbool.h>
 #include <linux/linkage.h>
 
 /**

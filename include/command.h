@@ -12,6 +12,8 @@
 
 #include <env.h>
 #include <linker_lists.h>
+#include <stdbool.h>
+#include <linux/kernel.h>
 
 #ifndef NULL
 #define NULL	0

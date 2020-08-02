@@ -10,6 +10,7 @@
 #include <config.h>
 #include <common.h>
 #include <dm.h>
+#include <stdbool.h>
 #include <asm/io.h>
 #include <linux/bitops.h>
 #include <linux/compiler.h>

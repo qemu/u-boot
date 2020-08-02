@@ -14,6 +14,7 @@
 #include <asm/test.h>
 #include <linux/ctype.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 /**
  * struct swap_case_platdata - platform data for this device

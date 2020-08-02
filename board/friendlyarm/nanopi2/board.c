@@ -14,6 +14,7 @@
 #endif
 #include <asm/global_data.h>
 #include <asm/io.h>
+#include <linux/kernel.h>
 
 #include <asm/arch/nexell.h>
 #include <asm/arch/nx_gpio.h>

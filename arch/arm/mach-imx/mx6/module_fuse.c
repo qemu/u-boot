@@ -12,6 +12,7 @@
 #include <asm/mach-imx/module_fuse.h>
 #include <asm/u-boot.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 static struct fuse_entry_desc mx6_fuse_descs[] = {

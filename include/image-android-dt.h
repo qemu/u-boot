@@ -7,6 +7,7 @@
 #ifndef IMAGE_ANDROID_DT_H
 #define IMAGE_ANDROID_DT_H
 
+#include <stdbool.h>
 #include <linux/types.h>
 
 bool android_dt_check_header(ulong hdr_addr);

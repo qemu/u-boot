@@ -18,6 +18,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/ctype.h>
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 #define BS systab.boottime

@@ -14,6 +14,7 @@
 #include <linux/libfdt.h>
 #include <u-boot/crc.h>
 #else
+#include <stdbool.h>
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/compiler.h>

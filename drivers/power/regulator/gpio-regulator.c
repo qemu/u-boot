@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <i2c.h>
 #include <log.h>
+#include <stdbool.h>
 #include <asm/gpio.h>
 #include <linux/errno.h>
 #include <linux/printk.h>

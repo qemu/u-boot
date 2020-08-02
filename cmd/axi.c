@@ -19,6 +19,7 @@
 #include <stdio.h>
 #include <vsprintf.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 
 /* Currently selected AXI bus device */
 static struct udevice *axi_cur_bus;

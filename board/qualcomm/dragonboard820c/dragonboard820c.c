@@ -13,6 +13,7 @@
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <linux/arm-smccc.h>
+#include <linux/kernel.h>
 #include <linux/psci.h>
 #include <common.h>
 #include <dm.h>

@@ -7,6 +7,7 @@
 #ifndef __LDPAA_ETH_H
 #define __LDPAA_ETH_H
 
+#include <stdbool.h>
 #include <linux/netdevice.h>
 #include <fsl-mc/fsl_mc.h>
 #include <fsl-mc/fsl_dpaa_fd.h>

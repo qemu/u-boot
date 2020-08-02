@@ -8,6 +8,7 @@
 #ifndef _X509_PARSER_H
 #define _X509_PARSER_H
 
+#include <stdbool.h>
 #include <linux/time.h>
 #include <crypto/public_key.h>
 #include <keys/asymmetric-type.h>

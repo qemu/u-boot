@@ -14,6 +14,7 @@
 #include <pca953x.h>
 #include <stdio.h>
 #include <vsprintf.h>
+#include <linux/kernel.h>
 
 /* Default to an address that hopefully won't corrupt other i2c devices */
 #ifndef CONFIG_SYS_I2C_PCA953X_ADDR

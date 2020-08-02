@@ -42,6 +42,7 @@
 #include <acpi/acpi_s3.h>
 #include <asm/global_data.h>
 #include <linux/errno.h>
+#include <linux/kernel.h>
 #include <linux/screen_info.h>
 #include <linux/string.h>
 

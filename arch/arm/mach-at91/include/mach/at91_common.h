@@ -8,6 +8,7 @@
 #ifndef AT91_COMMON_H
 #define AT91_COMMON_H
 
+#include <stdbool.h>
 void at91_can_hw_init(void);
 void at91_gmac_hw_init(void);
 void at91_macb_hw_init(void);

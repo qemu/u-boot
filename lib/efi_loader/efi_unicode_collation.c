@@ -10,6 +10,7 @@
 #include <cp1250.h>
 #include <cp437.h>
 #include <efi_loader.h>
+#include <stdbool.h>
 #include <linux/string.h>
 
 /* Characters that may not be used in FAT 8.3 file names */

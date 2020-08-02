@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <net.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <linux/errno.h>
 #include <linux/string.h>

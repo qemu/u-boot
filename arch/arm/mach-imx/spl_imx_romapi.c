@@ -9,6 +9,7 @@
 #include <log.h>
 #include <stdio.h>
 #include <asm/global_data.h>
+#include <linux/kernel.h>
 #include <linux/libfdt.h>
 #include <spl.h>
 #include <linux/string.h>

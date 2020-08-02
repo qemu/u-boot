@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <tpm-v1.h>
+#include <linux/kernel.h>
 #include <linux/printk.h>
 #include "tpm-user-utils.h"
 

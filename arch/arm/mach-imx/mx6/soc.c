@@ -25,6 +25,7 @@
 #include <fsl_sec.h>
 #include <imx_thermal.h>
 #include <mmc.h>
+#include <linux/kernel.h>
 
 struct scu_regs {
 	u32	ctrl;

@@ -10,6 +10,7 @@
 #include <fsl_csu.h>
 #include <asm/arch/ns_access.h>
 #include <asm/arch/fsl_serdes.h>
+#include <linux/kernel.h>
 
 #ifdef CONFIG_ARCH_LS1021A
 static struct csu_ns_dev ns_dev[] = {

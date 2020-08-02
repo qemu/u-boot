@@ -16,6 +16,7 @@
 #include <asm/arch/gpio.h>
 #include <asm/gpio.h>
 #include <linux/delay.h>
+#include <linux/kernel.h>
 
 #include "videomodes.h"
 #include "ssd2828.h"

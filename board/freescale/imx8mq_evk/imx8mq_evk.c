@@ -23,6 +23,7 @@
 #include <asm/arch/clock.h>
 #include <spl.h>
 #include <linux/bitops.h>
+#include <linux/kernel.h>
 #include <power/pmic.h>
 #include <power/pfuze100_pmic.h>
 #include "../common/pfuze.h"

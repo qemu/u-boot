@@ -29,6 +29,7 @@
 #include <mmc.h>
 #include <asm/arch/sdmmc_defs.h>
 #endif
+#include <linux/kernel.h>
 #include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
