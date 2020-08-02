@@ -20,6 +20,7 @@
 #include <asm/arch/immap_ls102xa.h>
 #include <fsl_sec.h>
 #include <dm.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

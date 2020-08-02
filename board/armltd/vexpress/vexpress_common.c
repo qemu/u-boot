@@ -29,6 +29,7 @@
 #include <asm/arch/systimer.h>
 #include <asm/arch/sysctrl.h>
 #include <asm/arch/wdt.h>
+#include <linux/string.h>
 #include "../drivers/mmc/arm_pl180_mmci.h"
 
 static struct systimer *systimer_base = (struct systimer *)V2M_TIMER01;

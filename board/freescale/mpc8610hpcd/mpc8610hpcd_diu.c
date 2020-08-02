@@ -13,6 +13,7 @@
 #include <log.h>
 #include <asm/io.h>
 #include <fsl_diu_fb.h>
+#include <linux/string.h>
 #include "../common/pixis.h"
 
 #define PX_BRDCFG0_DLINK	0x10

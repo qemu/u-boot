@@ -27,6 +27,7 @@
 #include <linux/sizes.h>
 #include <mmc.h>
 #include <netdev.h>
+#include <linux/string.h>
 #include <power/pmic.h>
 #include <power/pfuze3000_pmic.h>
 #include "../common/pfuze.h"

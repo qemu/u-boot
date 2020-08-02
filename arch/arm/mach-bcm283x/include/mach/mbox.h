@@ -6,8 +6,9 @@
 #ifndef _BCM2835_MBOX_H
 #define _BCM2835_MBOX_H
 
-#include <linux/compiler.h>
 #include <asm/arch/base.h>
+#include <linux/compiler.h>
+#include <linux/string.h>
 
 /*
  * The BCM2835 SoC contains (at least) two CPUs; the VideoCore (a/k/a "GPU")

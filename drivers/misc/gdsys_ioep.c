@@ -16,6 +16,7 @@
 #include <log.h>
 #include <misc.h>
 #include <regmap.h>
+#include <linux/string.h>
 
 #include "gdsys_ioep.h"
 

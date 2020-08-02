@@ -18,6 +18,7 @@
 #include <asm/io.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/gpio.h>
+#include <linux/string.h>
 
 /* EMAC register  */
 struct emac_regs {

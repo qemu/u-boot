@@ -12,6 +12,7 @@
 #include <common.h>
 #include <env.h>
 #include <i2c.h>
+#include <linux/string.h>
 #include "kp_id_rev.h"
 #include <net.h>
 

@@ -21,6 +21,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #include <power/regulator.h>
 #include <malloc.h>
 #include <memalign.h>

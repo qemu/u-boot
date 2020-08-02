@@ -12,6 +12,7 @@
  */
 
 #include <efi_selftest.h>
+#include <linux/string.h>
 
 /*
  * The test currently does not actually call the interface function.

@@ -20,6 +20,7 @@
 #include <linux/errno.h>
 #include <asm/processor.h>
 #include <asm/io.h>
+#include <linux/string.h>
 
 #ifndef CONFIG_DM_ETH
 /* Default initializations for TSEC controllers. */

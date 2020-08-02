@@ -57,6 +57,7 @@
 #include <asm/io.h>
 #include <pci.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 /* defines */
 #define EEPROM_SIZE 0xb /*12 16-bit chunks, or 24 bytes*/

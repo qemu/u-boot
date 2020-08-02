@@ -12,6 +12,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <misc.h>
+#include <linux/string.h>
 
 #define SYS_CFGDATA		0xa0
 

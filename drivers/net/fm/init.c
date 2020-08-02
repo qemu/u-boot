@@ -14,6 +14,7 @@
 #else
 #include <asm/fsl_serdes.h>
 #endif
+#include <linux/string.h>
 
 #include "fm.h"
 

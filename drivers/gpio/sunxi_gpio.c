@@ -19,6 +19,7 @@
 #include <asm/gpio.h>
 #include <dm/device-internal.h>
 #include <dt-bindings/gpio/gpio.h>
+#include <linux/string.h>
 
 #define SUNXI_GPIOS_PER_BANK	SUNXI_GPIO_A_NR
 

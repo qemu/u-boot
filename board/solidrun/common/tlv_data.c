@@ -6,6 +6,7 @@
 #include <common.h>
 #include <compiler.h>
 #include <tlv_eeprom.h>
+#include <linux/string.h>
 #include "tlv_data.h"
 
 #define SR_TLV_CODE_RAM_SIZE	0x81

@@ -4,6 +4,7 @@
  * Copyright (c) 2012  Samsung Electronics
  */
 #include <common.h>
+#include <linux/string.h>
 #include "ace_sha.h"
 #include <log.h>
 #include <rand.h>

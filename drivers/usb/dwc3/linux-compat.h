@@ -11,6 +11,7 @@
 #ifndef __DWC3_LINUX_COMPAT__
 #define __DWC3_LINUX_COMPAT__
 
+#include <linux/string.h>
 #define dev_WARN(dev, format, arg...)	debug(format, ##arg)
 
 static inline size_t strlcat(char *dest, const char *src, size_t n)

@@ -33,6 +33,7 @@
 #include <netdev.h>
 #include <phy.h>
 #include <i2c.h>
+#include <linux/string.h>
 #include <power/pmic.h>
 #include <power/pfuze100_pmic.h>
 

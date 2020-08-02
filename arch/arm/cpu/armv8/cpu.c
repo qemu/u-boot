@@ -18,6 +18,7 @@
 #include <asm/system.h>
 #include <asm/secure.h>
 #include <linux/compiler.h>
+#include <linux/string.h>
 
 /*
  * sdelay() - simple spin loop.

@@ -19,6 +19,7 @@
 #include <net.h>
 #include <asm/global_data.h>
 #include <linux/ctype.h>
+#include <linux/string.h>
 #include <u-boot/crc.h>
 
 #include "tlv_eeprom.h"

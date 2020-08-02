@@ -24,6 +24,7 @@
 #include <fsl_esdhc_imx.h>
 #include <i2c.h>
 #include <mmc.h>
+#include <linux/string.h>
 #include <power/pmic.h>
 #include <power/pfuze100_pmic.h>
 #include "../common/pfuze.h"

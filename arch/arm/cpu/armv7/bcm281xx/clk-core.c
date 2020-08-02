@@ -17,6 +17,7 @@
 #include <bitfield.h>
 #include <asm/arch/sysmap.h>
 #include <asm/kona-common/clk.h>
+#include <linux/string.h>
 #include "clk-core.h"
 
 #define CLK_WR_ACCESS_PASSWORD	0x00a5a501

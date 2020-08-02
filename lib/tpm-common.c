@@ -11,6 +11,7 @@
 #include <log.h>
 #include <asm/unaligned.h>
 #include <tpm-common.h>
+#include <linux/string.h>
 #include "tpm-utils.h"
 
 enum tpm_version tpm_get_version(struct udevice *dev)

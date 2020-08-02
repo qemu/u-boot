@@ -59,6 +59,7 @@
 #include <malloc.h>
 #include <ubi_uboot.h>
 #include <dm/devres.h>
+#include <linux/string.h>
 
 #include <linux/bitops.h>
 #include <linux/printk.h>

@@ -17,6 +17,7 @@
 #include <asm/i8259.h>
 #include <asm/io.h>
 #include <asm/post.h>
+#include <linux/string.h>
 #include "bios.h"
 
 /* Interrupt handlers for each interrupt the ROM can call */

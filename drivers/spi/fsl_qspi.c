@@ -38,6 +38,7 @@
 #include <linux/err.h>
 #include <spi.h>
 #include <spi-mem.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -40,6 +40,7 @@
 #include <asm/fsl_law.h>
 #include <asm/fsl_lbc.h>
 #include <asm/mp.h>
+#include <linux/string.h>
 #include "ucp1020.h"
 
 void spi_set_speed(struct spi_slave *slave, uint hz)

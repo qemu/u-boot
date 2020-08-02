@@ -4,6 +4,7 @@
 #include <env.h>
 #include <linux/errno.h>
 #include <asm/mach-imx/video.h>
+#include <linux/string.h>
 
 #ifdef CONFIG_IMX_HDMI
 #include <asm/arch/mxc_hdmi.h>

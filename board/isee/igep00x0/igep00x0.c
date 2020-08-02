@@ -27,6 +27,7 @@
 #include <jffs2/load_kernel.h>
 #include <mtd_node.h>
 #include <fdt_support.h>
+#include <linux/string.h>
 #include "igep00x0.h"
 
 static const struct ns16550_platdata igep_serial = {

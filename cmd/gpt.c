@@ -27,6 +27,7 @@
 #include <linux/err.h>
 #include <linux/sizes.h>
 #include <stdlib.h>
+#include <linux/string.h>
 
 static LIST_HEAD(disk_partitions);
 

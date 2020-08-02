@@ -12,6 +12,7 @@
 #include <time.h>
 #include <uuid.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #define PHYS_FLASH_1 CONFIG_SYS_FLASH_BASE
 #define FLASH_BANK_SIZE 0x200000
@@ -72,7 +73,7 @@ unsigned long flash_init(void)
 			(AMD_ID_PL160CB & FLASH_TYPEMASK);
 		flash_info[i].size = FLASH_BANK_SIZE;
 		flash_info[i].sector_count = CONFIG_SYS_MAX_FLASH_SECT;
-		memset (flash_info[i].protect, 0, CONFIG_SYS_MAX_FLASH_SECT);
+		memset(flash_info[i].protect, 0, CONFIG_SYS_MAX_FLASH_SECT);
 		if (i == 0)
 			flashbase = PHYS_FLASH_1;
 		else

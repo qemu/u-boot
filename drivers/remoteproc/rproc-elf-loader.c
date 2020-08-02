@@ -12,6 +12,7 @@
 #include <dm/device_compat.h>
 #include <linux/compat.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 /**
  * struct resource_table - firmware resource table header

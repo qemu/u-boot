@@ -20,6 +20,7 @@
 #include <dm/device_compat.h>
 #include <linux/delay.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #define ETH_PORT_STR			"brcm,enetsw-port"
 

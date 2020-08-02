@@ -8,6 +8,7 @@
 #include <usb.h>
 #include <linux/bitops.h>
 #include <linux/mii.h>
+#include <linux/string.h>
 #include "usb_ether.h"
 #include "lan7x.h"
 

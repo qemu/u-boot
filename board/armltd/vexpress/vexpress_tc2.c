@@ -11,6 +11,7 @@
 #include <asm/u-boot.h>
 #include <common.h>
 #include <linux/libfdt.h>
+#include <linux/string.h>
 
 #define SCC_BASE	0x7fff0000
 

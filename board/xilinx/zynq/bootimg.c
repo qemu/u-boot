@@ -10,6 +10,7 @@
 #include <asm/io.h>
 #include <asm/arch/hardware.h>
 #include <asm/arch/sys_proto.h>
+#include <linux/string.h>
 #include <u-boot/md5.h>
 #include <zynq_bootimg.h>
 

@@ -33,6 +33,7 @@
 #include <linux/bug.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/string.h>
 #include <usb/xhci.h>
 
 #ifndef CONFIG_USB_MAX_CONTROLLER_COUNT

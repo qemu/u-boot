@@ -11,6 +11,7 @@
 #include <fsl_ddr_dimm_params.h>
 #include <asm/io.h>
 #include <asm/fsl_law.h>
+#include <linux/string.h>
 
 /* CONFIG_SYS_DDR_RAW_TIMING */
 /*

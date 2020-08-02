@@ -18,6 +18,7 @@
 #include <log.h>
 #include <tpm-v2.h>
 #include <tee.h>
+#include <linux/string.h>
 
 #include "tpm_tis.h"
 #include "tpm2_ftpm_tee.h"

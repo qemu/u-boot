@@ -17,6 +17,7 @@
 #include <asm/arch/sys_proto.h>
 #include <asm/gpio.h>
 #include <linux/compiler.h>
+#include <linux/string.h>
 
 #include "mxs_init.h"
 

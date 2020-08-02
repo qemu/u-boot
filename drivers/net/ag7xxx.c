@@ -25,6 +25,7 @@
 #include <linux/mii.h>
 #include <wait_bit.h>
 #include <asm/io.h>
+#include <linux/string.h>
 
 #include <mach/ath79.h>
 

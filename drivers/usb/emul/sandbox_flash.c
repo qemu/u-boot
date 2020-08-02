@@ -10,6 +10,7 @@
 #include <os.h>
 #include <scsi.h>
 #include <usb.h>
+#include <linux/string.h>
 
 /*
  * This driver emulates a flash stick using the UFI command specification and

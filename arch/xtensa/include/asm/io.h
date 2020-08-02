@@ -9,6 +9,7 @@
 #ifndef _XTENSA_IO_H
 #define _XTENSA_IO_H
 
+#include <linux/string.h>
 #include <linux/types.h>
 #include <asm/byteorder.h>
 

@@ -16,6 +16,7 @@
 #include <linux/compat.h>
 #include <linux/asn1.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #include <u-boot/rsa-checksum.h>
 #include <crypto/public_key.h>
 #include <crypto/pkcs7_parser.h>

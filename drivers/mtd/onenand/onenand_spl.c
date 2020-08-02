@@ -12,6 +12,7 @@
 #include <linux/bitops.h>
 #include <linux/mtd/onenand_regs.h>
 #include <onenand_uboot.h>
+#include <linux/string.h>
 
 /*
  * Device geometry:

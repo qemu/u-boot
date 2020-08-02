@@ -43,6 +43,7 @@
 #include <u-boot/crc.h>
 #else
 #include <linux/err.h>
+#include <linux/string.h>
 #endif
 #include "ubifs.h"
 

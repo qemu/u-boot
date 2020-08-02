@@ -17,6 +17,7 @@
 #include <linux/bitops.h>
 #include <linux/log2.h>
 #include <clk.h>
+#include <linux/string.h>
 
 #define SIFIVE_SPI_MAX_CS		32
 

@@ -20,6 +20,7 @@
 #include <asm/arch-tegra/timer.h>
 #include <linux/delay.h>
 #include <linux/input.h>
+#include <linux/string.h>
 
 enum {
 	KBC_MAX_GPIO		= 24,

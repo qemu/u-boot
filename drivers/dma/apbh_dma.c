@@ -14,6 +14,7 @@
 #include <cpu_func.h>
 #include <asm/cache.h>
 #include <linux/list.h>
+#include <linux/string.h>
 
 #include <common.h>
 #include <malloc.h>

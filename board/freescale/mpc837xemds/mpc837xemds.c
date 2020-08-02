@@ -21,6 +21,7 @@
 #include <fsl_esdhc.h>
 #include <fsl_mdio.h>
 #include <phy.h>
+#include <linux/string.h>
 #include "pci.h"
 #include "../common/pq-mds-pib.h"
 

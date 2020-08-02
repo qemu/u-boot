@@ -1,3 +1,4 @@
+#include <linux/string.h>
 int nand_spl_load_image(uint32_t offs, unsigned int size, void *dst)
 {
 	unsigned int block, lastblock;

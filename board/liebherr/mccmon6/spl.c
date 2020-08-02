@@ -23,6 +23,7 @@
 #include <serial.h>
 #include <spl.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include <asm/arch/mx6-ddr.h>
 /*

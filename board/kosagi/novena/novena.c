@@ -39,6 +39,7 @@
 #include <malloc.h>
 #include <mmc.h>
 #include <netdev.h>
+#include <linux/string.h>
 #include <power/pmic.h>
 #include <power/pfuze100_pmic.h>
 #include <stdio_dev.h>

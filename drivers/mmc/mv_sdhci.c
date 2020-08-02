@@ -9,6 +9,7 @@
 #include <sdhci.h>
 #include <asm/global_data.h>
 #include <linux/mbus.h>
+#include <linux/string.h>
 
 #define MVSDH_NAME "mv_sdh"
 

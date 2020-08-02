@@ -5,6 +5,7 @@
 #include <time.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #ifndef __ASSEMBLY__
 #ifdef CONFIG_PHY_AQUANTIA

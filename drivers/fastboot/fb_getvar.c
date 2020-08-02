@@ -13,6 +13,7 @@
 #include <part.h>
 #include <version.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 static void getvar_version(char *var_parameter, char *response);
 static void getvar_version_bootloader(char *var_parameter, char *response);

@@ -15,6 +15,7 @@
 #include <hexdump.h>
 #include <video_osd.h>
 #include <malloc.h>
+#include <linux/string.h>
 
 /* Container for selected OSD device */
 static struct udevice *osd_cur;

@@ -11,6 +11,7 @@
 
 #include <linux/bug.h>
 #include <linux/compiler.h>
+#include <linux/string.h>
 #include <linux/types.h>
 
 #include <asm/addrspace.h>

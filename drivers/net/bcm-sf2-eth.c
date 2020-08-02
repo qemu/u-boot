@@ -10,6 +10,7 @@
 #include <config.h>
 #include <linux/delay.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #include <phy.h>
 #include <miiphy.h>

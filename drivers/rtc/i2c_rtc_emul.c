@@ -21,6 +21,7 @@
 #include <rtc.h>
 #include <asm/rtc.h>
 #include <asm/test.h>
+#include <linux/string.h>
 
 #ifdef DEBUG
 #define debug_buffer print_buffer

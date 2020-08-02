@@ -18,6 +18,7 @@
 #include <command.h>
 #include <ide.h>
 #include <memalign.h>
+#include <linux/string.h>
 #include "part_dos.h"
 #include <part.h>
 

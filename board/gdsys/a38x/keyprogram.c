@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <linux/ctype.h>
 #include <asm/unaligned.h>
+#include <linux/string.h>
 
 #include "hre.h"
 

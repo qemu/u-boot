@@ -6,6 +6,7 @@
 #include <common.h>
 #include <bootstage.h>
 #include <command.h>
+#include <linux/string.h>
 
 static int do_bootstage_report(struct cmd_tbl *cmdtp, int flag, int argc,
 			       char *const argv[])

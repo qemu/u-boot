@@ -16,6 +16,7 @@
 #include <mapmem.h>
 #include <search.h>
 #include <linux/ctype.h>
+#include <linux/string.h>
 
 #define BS systab.boottime
 

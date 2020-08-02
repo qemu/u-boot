@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <spl.h>
+#include <linux/string.h>
 
 char __data_save_start[0] __section(.__data_save_start);
 char __data_save_end[0] __section(.__data_save_end);

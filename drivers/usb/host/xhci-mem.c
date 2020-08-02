@@ -23,6 +23,7 @@
 #include <asm/cache.h>
 #include <linux/bug.h>
 #include <linux/errno.h>
+#include <linux/string.h>
 
 #include <usb/xhci.h>
 

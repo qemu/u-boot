@@ -23,6 +23,7 @@
 #include <spl.h>
 #include <asm/arch/sys_proto.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #include "../common/board_detect.h"
 

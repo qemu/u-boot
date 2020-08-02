@@ -17,6 +17,7 @@
 #include <common.h>
 #include <linux/bug.h>
 #include <linux/errno.h>
+#include <linux/string.h>
 
 #include "yportenv.h"
 #include "yaffs_trace.h"

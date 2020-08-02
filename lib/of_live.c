@@ -15,6 +15,7 @@
 #include <malloc.h>
 #include <dm/of_access.h>
 #include <linux/err.h>
+#include <linux/string.h>
 
 static void *unflatten_dt_alloc(void **mem, unsigned long size,
 				unsigned long align)

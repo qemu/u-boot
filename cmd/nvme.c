@@ -9,6 +9,7 @@
 #include <command.h>
 #include <dm.h>
 #include <nvme.h>
+#include <linux/string.h>
 
 static int nvme_curr_dev;
 

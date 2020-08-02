@@ -9,6 +9,7 @@
 #include <bootm.h>
 #include <efi_loader.h>
 #include <efi_variable.h>
+#include <linux/string.h>
 
 #define OBJ_LIST_NOT_INITIALIZED 1
 

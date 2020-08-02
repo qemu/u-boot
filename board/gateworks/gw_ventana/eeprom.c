@@ -13,6 +13,7 @@
 #include <malloc.h>
 #include <asm/bitops.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include "gsc.h"
 #include "ventana_eeprom.h"

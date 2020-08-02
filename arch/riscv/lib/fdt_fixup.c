@@ -11,6 +11,7 @@
 #include <log.h>
 #include <mapmem.h>
 #include <asm/global_data.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

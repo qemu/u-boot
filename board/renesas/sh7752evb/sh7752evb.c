@@ -16,6 +16,7 @@
 #include <spi.h>
 #include <spi_flash.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 int checkboard(void)
 {

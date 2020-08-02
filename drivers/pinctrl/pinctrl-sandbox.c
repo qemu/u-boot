@@ -10,6 +10,7 @@
 #include <log.h>
 #include <dm/pinctrl.h>
 #include <linux/bitops.h>
+#include <linux/string.h>
 
 static const char * const sandbox_pins[] = {
 	"SCL",

@@ -9,6 +9,7 @@
 #include <net.h>
 #include <time.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #include <net/fastboot.h>
 
 /* Fastboot port # defined in spec */

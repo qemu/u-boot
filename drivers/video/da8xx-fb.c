@@ -21,6 +21,7 @@
 #include <linux/delay.h>
 #include <linux/list.h>
 #include <linux/fb.h>
+#include <linux/string.h>
 
 #include <linux/errno.h>
 #include <asm/io.h>

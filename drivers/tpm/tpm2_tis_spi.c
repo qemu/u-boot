@@ -25,6 +25,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <linux/compiler.h>
+#include <linux/string.h>
 #include <linux/types.h>
 #include <linux/unaligned/be_byteshift.h>
 #include <asm-generic/gpio.h>

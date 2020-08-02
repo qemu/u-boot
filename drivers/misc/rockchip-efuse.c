@@ -14,6 +14,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <misc.h>
+#include <linux/string.h>
 
 #define RK3399_A_SHIFT          16
 #define RK3399_A_MASK           0x3ff

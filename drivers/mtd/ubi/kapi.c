@@ -16,6 +16,7 @@
 #include <asm/div64.h>
 #else
 #include <ubi_uboot.h>
+#include <linux/string.h>
 #endif
 #include <linux/err.h>
 

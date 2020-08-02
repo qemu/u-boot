@@ -15,6 +15,7 @@
 #include <asm/e820.h>
 #include <linux/linkage.h>
 #endif
+#include <linux/string.h>
 
 /*
  * A very simple ELF64 loader, assumes the image is valid, returns the

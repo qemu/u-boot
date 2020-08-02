@@ -8,6 +8,7 @@
 #include <env.h>
 #include <env_internal.h>
 #include <asm/global_data.h>
+#include <linux/string.h>
 
 #if defined(CONFIG_NEEDS_MANUAL_RELOC)
 DECLARE_GLOBAL_DATA_PTR;

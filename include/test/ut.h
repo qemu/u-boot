@@ -11,6 +11,7 @@
 #include <command.h>
 #include <hexdump.h>
 #include <linux/err.h>
+#include <linux/string.h>
 #include <test/test.h>
 
 struct unit_test_state;

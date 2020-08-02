@@ -11,6 +11,7 @@
 #include <part.h>
 #include <memalign.h>
 #include <linux/err.h>
+#include <linux/string.h>
 #include <u-boot/crc.h>
 #include <u-boot/crc.h>
 

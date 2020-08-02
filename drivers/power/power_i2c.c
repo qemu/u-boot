@@ -12,6 +12,7 @@
 
 #include <common.h>
 #include <log.h>
+#include <linux/string.h>
 #include <linux/types.h>
 #include <power/pmic.h>
 #include <i2c.h>

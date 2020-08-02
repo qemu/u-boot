@@ -17,6 +17,7 @@
 #include <ppc_asm.tmpl>
 #include <miiphy.h>
 #include <asm/global_data.h>
+#include <linux/string.h>
 
 #define BB_MII_RELOCATE(v,off) (v += (v?off:0))
 

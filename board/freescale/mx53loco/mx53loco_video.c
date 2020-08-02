@@ -11,6 +11,7 @@
 #include <asm/arch/iomux-mx53.h>
 #include <linux/fb.h>
 #include <ipu_pixfmt.h>
+#include <linux/string.h>
 
 #define MX53LOCO_LCD_POWER		IMX_GPIO_NR(3, 24)
 

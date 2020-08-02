@@ -7,6 +7,7 @@
 #include <common.h>
 #include <dm.h>
 #include <misc.h>
+#include <linux/string.h>
 
 struct misc_sandbox_priv {
 	u8 mem[128];

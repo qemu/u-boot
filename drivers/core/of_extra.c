@@ -10,6 +10,7 @@
 #include <dm/of_access.h>
 #include <dm/of_extra.h>
 #include <dm/ofnode.h>
+#include <linux/string.h>
 
 int ofnode_read_fmap_entry(ofnode node, struct fmap_entry *entry)
 {

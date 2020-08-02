@@ -18,6 +18,7 @@
 #include <rtc.h>
 #include <uuid.h>
 #include <linux/kernel.h>
+#include <linux/string.h>
 
 /*
  * From efi_variable.c,

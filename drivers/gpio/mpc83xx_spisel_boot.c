@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <mapmem.h>
 #include <asm/gpio.h>
+#include <linux/string.h>
 
 struct mpc83xx_spisel_boot {
 	u32 __iomem *spi_cs;

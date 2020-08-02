@@ -16,6 +16,7 @@
 #include <termios.h>
 #include <time.h>
 #include <unistd.h>
+#include <linux/string.h>
 #include <sys/mman.h>
 #include <sys/stat.h>
 #include <sys/time.h>

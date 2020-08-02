@@ -12,6 +12,7 @@
 #include <remoteproc.h>
 #include <asm/global_data.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #include <mach/psc_defs.h>
 
 DECLARE_GLOBAL_DATA_PTR;

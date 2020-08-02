@@ -22,6 +22,7 @@
 #include <asm/u-boot.h>
 #include <nand.h>
 #include <fat.h>
+#include <linux/string.h>
 #include <u-boot/crc.h>
 #include <version.h>
 #include <image.h>

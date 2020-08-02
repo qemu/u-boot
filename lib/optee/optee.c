@@ -10,6 +10,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <linux/libfdt.h>
+#include <linux/string.h>
 #include <tee/optee.h>
 
 #define optee_hdr_err_msg \

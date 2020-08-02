@@ -20,6 +20,7 @@
 #include <linux/compat.h>
 #include <fsl-mc/fsl_dpmac.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include <fsl-mc/ldpaa_wriop.h>
 #include "ldpaa_eth.h"

@@ -10,6 +10,7 @@
 #define __NET_RAND_H__
 
 #include <common.h>
+#include <linux/string.h>
 
 /*
  * Return a seed for the PRNG derived from the eth0 MAC address.

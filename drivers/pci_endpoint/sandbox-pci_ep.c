@@ -9,6 +9,7 @@
 #include <pci.h>
 #include <pci_ep.h>
 #include <asm/test.h>
+#include <linux/string.h>
 
 /**
  * struct sandbox_pci_ep_priv - private data for driver

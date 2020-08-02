@@ -7,6 +7,7 @@
 #include <malloc.h>
 #include <spi.h>
 #include <spi-mem.h>
+#include <linux/string.h>
 
 int spi_mem_exec_op(struct spi_slave *slave,
 		    const struct spi_mem_op *op)

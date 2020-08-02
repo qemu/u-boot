@@ -21,6 +21,7 @@
 #include <asm/u-boot-x86.h>
 #include <asm/sections.h>
 #include <elf.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -28,6 +28,7 @@
 #include <spd_sdram.h>
 #include <i2c.h>
 #include <netdev.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -14,6 +14,7 @@
  */
 
 #include <common.h>
+#include <linux/string.h>
 
 #include <config.h>
 #include <command.h>

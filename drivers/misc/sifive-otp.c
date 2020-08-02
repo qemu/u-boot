@@ -25,6 +25,7 @@
 #include <linux/io.h>
 #include <misc.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #define BYTES_PER_FUSE		4
 

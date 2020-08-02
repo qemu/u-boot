@@ -16,6 +16,7 @@
 #include <linux/libfdt.h>
 #include <malloc.h>
 #include <asm/arch/fsl_serdes.h>
+#include <linux/string.h>
 
 #include "../common/qixis.h"
 #include "../common/fman.h"

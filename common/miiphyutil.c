@@ -15,6 +15,7 @@
 #include <miiphy.h>
 #include <phy.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include <asm/types.h>
 #include <linux/list.h>

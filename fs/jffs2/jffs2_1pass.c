@@ -118,6 +118,7 @@
 #include <div64.h>
 #include <linux/compiler.h>
 #include <linux/stat.h>
+#include <linux/string.h>
 #include <linux/time.h>
 #include <u-boot/crc.h>
 #include <watchdog.h>

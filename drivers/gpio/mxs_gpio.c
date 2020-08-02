@@ -15,6 +15,7 @@
 #include <asm/io.h>
 #include <asm/arch/iomux.h>
 #include <asm/arch/imx-regs.h>
+#include <linux/string.h>
 
 #if	defined(CONFIG_MX23)
 #define	PINCTRL_BANKS		3

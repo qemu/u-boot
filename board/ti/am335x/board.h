@@ -20,6 +20,7 @@
  * REG_COS_COUNT_2 do not have any effect on current versions of
  * AM335x.
  */
+#include <linux/string.h>
 #define EMIF_OCP_CONFIG_BEAGLEBONE_BLACK       0x00141414
 #define EMIF_OCP_CONFIG_AM335X_EVM             0x003d3d3d
 

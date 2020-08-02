@@ -32,6 +32,7 @@
 #include <i2c.h>
 #include <miiphy.h>
 #include <cpsw.h>
+#include <linux/string.h>
 #include <power/tps65910.h>
 #include <watchdog.h>
 #include "board.h"

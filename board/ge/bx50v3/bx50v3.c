@@ -29,6 +29,7 @@
 #include <asm/arch/crm_regs.h>
 #include <asm/io.h>
 #include <asm/arch/sys_proto.h>
+#include <linux/string.h>
 #include <power/regulator.h>
 #include <power/da9063_pmic.h>
 #include <input.h>

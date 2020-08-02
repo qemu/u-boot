@@ -16,6 +16,7 @@
 #include <linux/errno.h>
 #include <linux/netdevice.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #include <linux/usb/ch9.h>
 #include <linux/usb/cdc.h>
 #include <linux/usb/gadget.h>

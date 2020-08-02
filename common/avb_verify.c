@@ -12,6 +12,7 @@
 #include <malloc.h>
 #include <part.h>
 #include <tee.h>
+#include <linux/string.h>
 #include <tee/optee_ta_avb.h>
 
 static const unsigned char avb_root_pub[1032] = {

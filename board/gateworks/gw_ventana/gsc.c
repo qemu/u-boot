@@ -13,6 +13,7 @@
 #include <common.h>
 #include <i2c.h>
 #include <linux/ctype.h>
+#include <linux/string.h>
 
 #include "ventana_eeprom.h"
 #include "gsc.h"

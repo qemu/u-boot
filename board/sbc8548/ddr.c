@@ -6,6 +6,7 @@
 #include <common.h>
 #include <i2c.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include <fsl_ddr_sdram.h>
 #include <fsl_ddr_dimm_params.h>

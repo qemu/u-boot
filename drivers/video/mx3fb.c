@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <video_fb.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/clock.h>

@@ -21,6 +21,7 @@
 #include <asm/arch/mux.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/arch/mem.h>
+#include <linux/string.h>
 #include "tricorder.h"
 #include "tricorder-eeprom.h"
 

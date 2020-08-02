@@ -9,6 +9,7 @@
 #include <blk.h>
 #include <flash.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #include <fastboot.h>
 #include <image-sparse.h>

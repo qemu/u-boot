@@ -11,6 +11,7 @@
 #include <common.h>
 #include <blk.h>
 #include <command.h>
+#include <linux/string.h>
 
 int blk_common_cmd(int argc, char *const argv[], enum if_type if_type,
 		   int *cur_devnump)

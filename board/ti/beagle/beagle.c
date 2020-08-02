@@ -35,6 +35,7 @@
 #include <asm/mach-types.h>
 #include <asm/omap_musb.h>
 #include <linux/errno.h>
+#include <linux/string.h>
 #include <linux/usb/ch9.h>
 #include <linux/usb/gadget.h>
 #include <linux/usb/musb.h>

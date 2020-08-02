@@ -25,6 +25,7 @@
 #include <dm/devres.h>
 #include <linux/compat.h>
 #include <linux/err.h>
+#include <linux/string.h>
 #endif
 #include "ubifs.h"
 #include <linux/bug.h>

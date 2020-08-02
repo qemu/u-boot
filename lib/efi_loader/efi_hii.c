@@ -10,6 +10,7 @@
 #include <efi_loader.h>
 #include <malloc.h>
 #include <asm/unaligned.h>
+#include <linux/string.h>
 
 const efi_guid_t efi_guid_hii_database_protocol
 		= EFI_HII_DATABASE_PROTOCOL_GUID;

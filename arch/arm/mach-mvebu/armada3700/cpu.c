@@ -18,6 +18,7 @@
 #include <asm/arch/soc.h>
 #include <asm/armv8/mmu.h>
 #include <sort.h>
+#include <linux/string.h>
 
 /* Armada 3700 */
 #define MVEBU_GPIO_NB_REG_BASE		(MVEBU_REGISTER(0x13800))

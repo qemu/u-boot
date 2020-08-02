@@ -9,6 +9,7 @@
 #include <asm/msr.h>
 #include <asm/mp.h>
 #include <asm/mtrr.h>
+#include <linux/string.h>
 
 static const char *const mtrr_type_name[MTRR_TYPE_COUNT] = {
 	"Uncacheable",

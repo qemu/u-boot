@@ -19,6 +19,7 @@
 #include <serial.h>
 #include <splash.h>
 #include <asm/global_data.h>
+#include <linux/string.h>
 
 #if defined(CONFIG_SYS_I2C)
 #include <i2c.h>

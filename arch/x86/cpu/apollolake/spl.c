@@ -19,6 +19,7 @@
 #include <asm/arch/iomap.h>
 #include <dm/device-internal.h>
 #include <dm/uclass-internal.h>
+#include <linux/string.h>
 
 /* This reads the next phase from mapped SPI flash */
 static int rom_load_image(struct spl_image_info *spl_image,

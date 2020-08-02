@@ -16,6 +16,7 @@
 #include <dt-structs.h>
 #include <errno.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #define SANDBOX_DMA_CH_CNT 3
 #define SANDBOX_DMA_BUF_SIZE 1024

@@ -44,6 +44,7 @@ char SCCSid[] = "@(#) @(#)dhry_1.c:3.4 -- 5/15/91 19:30:21";
 
 #include <common.h>
 #include <malloc.h>
+#include <string.h>
 
 #include "dhry.h"
 

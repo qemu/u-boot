@@ -17,6 +17,7 @@
 #include <time.h>
 #include <asm/global_data.h>
 #include <linux/ctype.h>
+#include <linux/string.h>
 
 /*
  * Use puts() instead of printf() to avoid printf buffer overflow

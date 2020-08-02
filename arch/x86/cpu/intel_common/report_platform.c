@@ -11,6 +11,7 @@
 #include <asm/pci.h>
 #include <asm/report_platform.h>
 #include <asm/arch/pch.h>
+#include <linux/string.h>
 
 static void report_cpu_info(void)
 {

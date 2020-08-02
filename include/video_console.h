@@ -7,6 +7,7 @@
 #define __video_console_h
 
 #include <video.h>
+#include <linux/string.h>
 
 struct video_priv;
 

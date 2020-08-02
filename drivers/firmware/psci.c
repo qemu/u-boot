@@ -19,6 +19,7 @@
 #include <linux/errno.h>
 #include <linux/printk.h>
 #include <linux/psci.h>
+#include <linux/string.h>
 
 #define DRIVER_NAME "psci"
 

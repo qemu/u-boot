@@ -29,6 +29,7 @@
 #include <linux/soc/ti/cppi5.h>
 #include <linux/soc/ti/ti-udma.h>
 #include <linux/soc/ti/ti_sci_protocol.h>
+#include <linux/string.h>
 
 #include "k3-udma-hwdef.h"
 #include "k3-psil-priv.h"

@@ -10,6 +10,7 @@
 
 #include <image.h>
 #include <inttypes.h>
+#include <linux/string.h>
 #include "imagetool.h"
 
 #define __packed   __attribute__((packed))

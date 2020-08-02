@@ -21,6 +21,7 @@
 #include <asm/fsl_serdes.h>
 #include <asm/fsl_liodn.h>
 #include <fm_eth.h>
+#include <linux/string.h>
 #include "t102xrdb.h"
 #ifdef CONFIG_TARGET_T1024RDB
 #include "cpld.h"

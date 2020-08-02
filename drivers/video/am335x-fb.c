@@ -26,6 +26,7 @@
 #include <linux/delay.h>
 #include <linux/err.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #include "am335x-fb.h"
 
 #define LCDC_FMAX				200000000

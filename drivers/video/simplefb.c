@@ -10,6 +10,7 @@
 #include <log.h>
 #include <video.h>
 #include <asm/global_data.h>
+#include <linux/string.h>
 
 static int simple_video_probe(struct udevice *dev)
 {

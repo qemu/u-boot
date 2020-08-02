@@ -9,6 +9,7 @@
 #include <linux/input.h>
 #include <SDL2/SDL.h>
 #include <asm/state.h>
+#include <linux/string.h>
 
 /**
  * struct buf_info - a data buffer holding audio data

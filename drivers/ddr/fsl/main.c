@@ -18,6 +18,7 @@
 #include <init.h>
 #include <log.h>
 #include <asm/bitops.h>
+#include <linux/string.h>
 
 /*
  * CONFIG_SYS_FSL_DDR_SDRAM_BASE_PHY is the physical address from the view

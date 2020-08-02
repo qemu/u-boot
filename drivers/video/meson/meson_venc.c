@@ -12,6 +12,7 @@
 #include <fdtdec.h>
 #include <log.h>
 #include <asm/io.h>
+#include <linux/string.h>
 #include "meson_vpu.h"
 
 enum {

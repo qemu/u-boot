@@ -15,6 +15,7 @@
 #include <asm/fsl_law.h>
 #include <asm/mpc85xx_gpio.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

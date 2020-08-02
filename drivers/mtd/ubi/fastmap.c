@@ -17,6 +17,7 @@
 #include <malloc.h>
 #include <ubi_uboot.h>
 #include <linux/bug.h>
+#include <linux/string.h>
 #endif
 
 #include <linux/compat.h>

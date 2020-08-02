@@ -35,6 +35,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/sizes.h>
+#include <linux/string.h>
 #include "../common/board.h"
 
 #include "pm_cfg_obj.h"

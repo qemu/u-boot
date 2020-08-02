@@ -8,6 +8,7 @@
 #include <dm/device_compat.h>
 #include <linux/compat.h>
 #include <dm/pinctrl.h>
+#include <linux/string.h>
 
 /**
  * pinctrl_pin_name_to_selector() - return the pin selector for a pin

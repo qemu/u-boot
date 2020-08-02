@@ -12,6 +12,7 @@
 #include <linux/bitops.h>
 #include <linux/ctype.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 /* registers */
 #define NFC_CTL                    0x00000000

@@ -19,6 +19,7 @@
 #ifdef CONFIG_DM_I2C
 #include <dm.h>
 #endif
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

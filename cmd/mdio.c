@@ -13,6 +13,7 @@
 #include <dm.h>
 #include <miiphy.h>
 #include <phy.h>
+#include <linux/string.h>
 
 static char last_op[2];
 static uint last_data;

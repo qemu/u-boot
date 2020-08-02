@@ -15,6 +15,7 @@
 #include <crypto/public_key.h>
 #include <linux/compat.h>
 #include <linux/oid_registry.h>
+#include <linux/string.h>
 #include <u-boot/rsa.h>
 #include <u-boot/sha256.h>
 

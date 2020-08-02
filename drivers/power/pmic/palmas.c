@@ -11,6 +11,7 @@
 #include <i2c.h>
 #include <log.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #include <power/pmic.h>
 #include <power/regulator.h>
 #include <power/palmas.h>

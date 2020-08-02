@@ -20,6 +20,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <linux/err.h>
+#include <linux/string.h>
 #endif
 #include "ubifs.h"
 

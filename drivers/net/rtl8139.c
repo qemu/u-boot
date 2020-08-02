@@ -79,6 +79,7 @@
 #include <pci.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include <linux/types.h>
 
 #define RTL_TIMEOUT	100000

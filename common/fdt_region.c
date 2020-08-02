@@ -12,6 +12,7 @@
 #ifndef USE_HOSTCC
 #include <fdt.h>
 #include <linux/libfdt.h>
+#include <linux/string.h>
 #else
 #include "fdt_host.h"
 #endif

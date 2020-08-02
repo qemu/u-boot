@@ -13,6 +13,7 @@
 #include <malloc.h>
 #include <memalign.h>
 #include <part.h>
+#include <linux/string.h>
 #include <linux/usb/ch9.h>
 #include <linux/usb/gadget.h>
 #include <linux/usb/composite.h>

@@ -22,6 +22,7 @@
 #include <log.h>
 #include <asm/io.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include "mv_i2c.h"
 
 /* All transfers are described by this data structure */

@@ -98,6 +98,7 @@
 #include <log.h>
 #include <net.h>
 #include <time.h>
+#include <linux/string.h>
 #include <net/fastboot.h>
 #include <net/tftp.h>
 #if defined(CONFIG_CMD_PCAP)

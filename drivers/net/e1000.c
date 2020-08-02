@@ -40,6 +40,7 @@ tested on both gig copper and gig fiber boards
 #include <net.h>
 #include <pci.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include "e1000.h"
 #include <asm/cache.h>
 

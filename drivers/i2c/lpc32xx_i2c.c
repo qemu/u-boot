@@ -15,6 +15,7 @@
 #include <asm/arch/i2c.h>
 #include <dm.h>
 #include <mapmem.h>
+#include <linux/string.h>
 
 /*
  * Provide default speed and slave if target did not

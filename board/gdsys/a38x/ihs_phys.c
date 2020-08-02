@@ -4,6 +4,7 @@
 #include <asm-generic/gpio.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include "ihs_phys.h"
 #include "dt_helpers.h"

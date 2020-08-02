@@ -15,6 +15,7 @@
 #include <net.h>
 #include <time.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include "arp.h"
 

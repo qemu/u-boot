@@ -26,6 +26,7 @@
 #include <command.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include <errno.h>
 #include <malloc.h>

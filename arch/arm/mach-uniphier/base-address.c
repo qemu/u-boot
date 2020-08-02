@@ -10,6 +10,7 @@
 #include <linux/libfdt.h>
 #include <linux/sizes.h>
 #include <asm/global_data.h>
+#include <linux/string.h>
 
 #include "base-address.h"
 #include "sc64-regs.h"

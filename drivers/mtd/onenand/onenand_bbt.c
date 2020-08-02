@@ -21,6 +21,7 @@
 #include <linux/mtd/onenand.h>
 #include <malloc.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #include <linux/errno.h>
 

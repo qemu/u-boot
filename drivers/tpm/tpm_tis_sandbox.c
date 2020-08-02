@@ -9,6 +9,7 @@
 #include <tpm-v1.h>
 #include <asm/state.h>
 #include <asm/unaligned.h>
+#include <linux/string.h>
 #include <u-boot/crc.h>
 
 /* TPM NVRAM location indices. */

@@ -17,6 +17,7 @@
 #include <miiphy.h>
 #include <linux/bitops.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

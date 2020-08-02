@@ -9,6 +9,7 @@
 #include <errno.h>
 #include <log.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #include "xusb-padctl-common.h"
 

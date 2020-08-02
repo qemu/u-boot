@@ -14,6 +14,7 @@
 #include <pci.h>
 #include <time.h>
 #include <asm/io.h>
+#include <linux/string.h>
 
 /* PCI Configuration Space (D31:F3): SMBus */
 #define SMB_BASE		0x20

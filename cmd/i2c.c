@@ -78,6 +78,7 @@
 #include <asm/byteorder.h>
 #include <linux/compiler.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include <u-boot/crc.h>
 
 /* Display values from last command.

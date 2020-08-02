@@ -11,6 +11,7 @@
 #include <blk.h>
 #include <command.h>
 #include <scsi.h>
+#include <linux/string.h>
 
 static int scsi_curr_dev; /* current device */
 

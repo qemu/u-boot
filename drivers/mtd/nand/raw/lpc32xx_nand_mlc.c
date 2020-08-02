@@ -28,6 +28,7 @@
 #include <asm/arch/clk.h>
 #include <asm/arch/sys_proto.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 /*
  * MLC NAND controller registers.

@@ -10,6 +10,7 @@
 #include <os.h>
 #include <scsi.h>
 #include <usb.h>
+#include <linux/string.h>
 
 /*
  * This driver emulates a USB keyboard using the USB HID specification (boot

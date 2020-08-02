@@ -11,6 +11,7 @@
 #include <asm/arch/iomap.h>
 #include <asm/arch/pch.h>
 #include <asm/arch/pei_data.h>
+#include <linux/string.h>
 
 __weak asmlinkage void sdram_console_tx_byte(unsigned char byte)
 {

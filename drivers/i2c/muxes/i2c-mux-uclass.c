@@ -12,6 +12,7 @@
 #include <malloc.h>
 #include <dm/lists.h>
 #include <dm/root.h>
+#include <linux/string.h>
 
 /**
  * struct i2c_mux: Information the uclass stores about an I2C mux

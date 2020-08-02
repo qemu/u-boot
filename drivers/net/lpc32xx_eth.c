@@ -19,6 +19,7 @@
 #include <asm/byteorder.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/config.h>
+#include <linux/string.h>
 
 /*
  * Notes:

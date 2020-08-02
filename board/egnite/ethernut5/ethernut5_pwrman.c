@@ -39,6 +39,7 @@
 #include <asm/io.h>
 #include <i2c.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include "ethernut5_pwrman.h"
 

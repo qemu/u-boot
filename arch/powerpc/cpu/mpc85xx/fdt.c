@@ -27,6 +27,7 @@
 #ifdef CONFIG_SYS_DPAA_FMAN
 #include <fsl_fman.h>
 #endif
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

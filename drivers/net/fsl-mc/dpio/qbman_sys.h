@@ -22,6 +22,7 @@
  * required. */
 #include <linux/bug.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #undef QBMAN_CCSR_TRACE
 #undef QBMAN_CINH_TRACE
 #undef QBMAN_CENA_TRACE

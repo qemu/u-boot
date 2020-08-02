@@ -18,6 +18,7 @@
 #include <linux/list.h>
 #include <linux/compiler.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 static LIST_HEAD(dfu_list);
 static int dfu_alt_num;

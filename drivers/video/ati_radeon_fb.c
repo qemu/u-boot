@@ -17,6 +17,7 @@
 
 #include <common.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include <command.h>
 #include <bios_emul.h>

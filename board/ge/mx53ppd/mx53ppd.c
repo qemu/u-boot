@@ -28,6 +28,7 @@
 #include <mmc.h>
 #include <fsl_esdhc_imx.h>
 #include <asm/gpio.h>
+#include <linux/string.h>
 #include <power/pmic.h>
 #include <dialog_pmic.h>
 #include <fsl_pmic.h>

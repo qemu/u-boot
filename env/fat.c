@@ -19,6 +19,7 @@
 #include <mmc.h>
 #include <asm/cache.h>
 #include <linux/stddef.h>
+#include <linux/string.h>
 
 #ifdef CONFIG_SPL_BUILD
 /* TODO(sjg@chromium.org): Figure out why this is needed */

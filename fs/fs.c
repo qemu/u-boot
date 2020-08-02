@@ -26,6 +26,7 @@
 #include <linux/math64.h>
 #include <efi_loader.h>
 #include <squashfs.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

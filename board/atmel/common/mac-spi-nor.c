@@ -11,6 +11,7 @@
 #include <net.h>
 #include <linux/mtd/spi-nor.h>
 #include <netdev.h>
+#include <linux/string.h>
 
 #define ETH_ADDR_SIZE			6
 

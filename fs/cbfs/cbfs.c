@@ -8,6 +8,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <asm/byteorder.h>
+#include <linux/string.h>
 
 /* Offset of master header from the start of a coreboot ROM */
 #define MASTER_HDR_OFFSET	0x38

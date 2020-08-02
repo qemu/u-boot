@@ -22,6 +22,7 @@
 #include <asm/processor.h>
 #include <asm/io.h>
 #include <pci.h>
+#include <linux/string.h>
 
 struct pci_reg_info {
 	const char *name;

@@ -13,6 +13,7 @@
 #include <dm/device.h>
 #include <dm/uclass.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #if (CONFIG_ROCKCHIP_BOOT_MODE_REG == 0)
 

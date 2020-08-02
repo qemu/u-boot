@@ -28,6 +28,7 @@
 #include <fsl_mmdc.h>
 #include <netdev.h>
 #include <fsl_sec.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

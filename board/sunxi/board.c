@@ -31,6 +31,7 @@
 #include <asm/global_data.h>
 #include <linux/delay.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #include <u-boot/crc.h>
 #ifndef CONFIG_ARM64
 #include <asm/armv7.h>

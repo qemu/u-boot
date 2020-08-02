@@ -12,6 +12,7 @@
 #include <asm/arch/ddr3.h>
 #include <asm/arch/hardware.h>
 #include <asm/ti-common/keystone_net.h>
+#include <linux/string.h>
 
 unsigned int get_external_clk(u32 clk)
 {

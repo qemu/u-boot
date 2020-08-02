@@ -15,6 +15,7 @@
 #include <dm/device_compat.h>
 #include <linux/errno.h>
 #include <dm/device-internal.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

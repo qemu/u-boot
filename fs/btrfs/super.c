@@ -10,6 +10,7 @@
 #include <memalign.h>
 #include <part.h>
 #include <linux/compat.h>
+#include <linux/string.h>
 #include "btrfs.h"
 
 #define BTRFS_SUPER_FLAG_SUPP	(BTRFS_HEADER_FLAG_WRITTEN	\

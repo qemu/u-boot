@@ -7,6 +7,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <linux/string.h>
 #include "cpld.h"
 
 u8 cpld_read(unsigned int reg)

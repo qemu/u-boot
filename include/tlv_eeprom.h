@@ -8,6 +8,7 @@
 #define __TLV_EEPROM_H_
 
 #include <compiler.h>
+#include <linux/string.h>
 
 /*
  *  The Definition of the TlvInfo EEPROM format can be found at onie.org or

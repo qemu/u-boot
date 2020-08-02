@@ -21,6 +21,7 @@
 #include <asm/cache.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include <power/regulator.h>
 
 #include <asm/io.h>

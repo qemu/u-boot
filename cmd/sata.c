@@ -18,6 +18,7 @@
 #include <sata.h>
 #include <dm/device-internal.h>
 #include <dm/uclass-internal.h>
+#include <linux/string.h>
 
 static int sata_curr_device = -1;
 

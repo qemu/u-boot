@@ -29,6 +29,7 @@
 #include <net.h>
 #include <time.h>
 #include <asm/unaligned.h>
+#include <linux/string.h>
 
 #include "dns.h"
 

@@ -38,6 +38,7 @@
 #include <pci.h>
 #include <linux/delay.h>
 #include <linux/libfdt.h>
+#include <linux/string.h>
 #include <power/pmic.h>
 #include <power/ltc3676_pmic.h>
 #include <power/pfuze100_pmic.h>

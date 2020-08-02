@@ -16,6 +16,7 @@
 #include <asm/global_data.h>
 #include <linux/delay.h>
 #include <linux/io.h>
+#include <linux/string.h>
 
 #include "ftmac100.h"
 #ifdef CONFIG_DM_ETH

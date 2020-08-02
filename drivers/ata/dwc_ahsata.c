@@ -26,6 +26,7 @@
 #include <linux/ctype.h>
 #include <linux/delay.h>
 #include <linux/errno.h>
+#include <linux/string.h>
 #include "dwc_ahsata_priv.h"
 
 struct sata_port_regs {

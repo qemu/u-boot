@@ -13,6 +13,7 @@
 #include <fdtdec.h>
 #include <linux/bitops.h>
 #include <linux/libfdt.h>
+#include <linux/string.h>
 
 #include "pinctrl-rockchip.h"
 

@@ -14,6 +14,7 @@
 #include <spl.h>
 #include <asm/global_data.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #include "common.h"
 #include <dm.h>
 #include <remoteproc.h>

@@ -11,6 +11,7 @@
 #include <command.h>
 #include <log.h>
 #include <uuid.h>
+#include <linux/string.h>
 
 #if defined(CONFIG_CMD_MTDPARTS)
 #include <jffs2/jffs2.h>

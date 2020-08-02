@@ -26,6 +26,7 @@
 #include <asm/system.h>
 #include <asm/byteorder.h>
 #include <asm/arch/cpu.h>
+#include <linux/string.h>
 
 #if defined(CONFIG_ARCH_KIRKWOOD)
 #include <asm/arch/soc.h>

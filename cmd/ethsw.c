@@ -12,6 +12,7 @@
 #include <env_flags.h>
 #include <ethsw.h>
 #include <net.h>
+#include <linux/string.h>
 
 static const char *ethsw_name;
 

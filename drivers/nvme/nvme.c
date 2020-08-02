@@ -16,6 +16,7 @@
 #include <time.h>
 #include <dm/device-internal.h>
 #include <linux/compat.h>
+#include <linux/string.h>
 #include "nvme.h"
 
 #define NVME_Q_DEPTH		2

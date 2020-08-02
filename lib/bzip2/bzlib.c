@@ -2,6 +2,7 @@
 #include <common.h>
 #include <malloc.h>
 #include <watchdog.h>
+#include <linux/string.h>
 
 /*
  * This file is a modified version of bzlib.c from the bzip2-1.0.2

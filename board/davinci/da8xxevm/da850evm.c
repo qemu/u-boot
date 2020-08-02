@@ -27,6 +27,7 @@
 #include <hwconfig.h>
 #include <asm/mach-types.h>
 #include <asm/gpio.h>
+#include <linux/string.h>
 
 #ifdef CONFIG_MMC_DAVINCI
 #include <mmc.h>

@@ -13,6 +13,7 @@
 #include <errno.h>
 #include <dm.h>
 #include <mapmem.h>
+#include <linux/string.h>
 
 #define SD_CLK_SEL_MASK (0x3)
 #define SD_DLL_DEFAULT  (0x143000)

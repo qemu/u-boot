@@ -8,6 +8,7 @@
 #include <dm.h>
 #include <malloc.h>
 #include <video_osd.h>
+#include <linux/string.h>
 
 #include "sandbox_osd.h"
 

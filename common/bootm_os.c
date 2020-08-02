@@ -19,6 +19,7 @@
 #include <malloc.h>
 #include <mapmem.h>
 #include <vxworks.h>
+#include <linux/string.h>
 #include <tee/optee.h>
 
 DECLARE_GLOBAL_DATA_PTR;

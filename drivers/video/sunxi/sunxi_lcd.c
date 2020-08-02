@@ -18,6 +18,7 @@
 #include <asm/arch/lcdc.h>
 #include <asm/arch/gpio.h>
 #include <asm/gpio.h>
+#include <linux/string.h>
 
 struct sunxi_lcd_priv {
 	struct display_timing timing;

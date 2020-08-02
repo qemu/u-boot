@@ -19,6 +19,7 @@
 #include <linux/math64.h>
 #include <linux/printk.h>
 #include <linux/sizes.h>
+#include <linux/string.h>
 
 #include <linux/mtd/mtd.h>
 #include <linux/mtd/spi-nor.h>

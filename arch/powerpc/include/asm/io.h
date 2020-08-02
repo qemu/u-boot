@@ -8,6 +8,7 @@
 #define _PPC_IO_H
 
 #include <asm/byteorder.h>
+#include <linux/string.h>
 
 #ifdef CONFIG_ADDR_MAP
 #include <addr_map.h>

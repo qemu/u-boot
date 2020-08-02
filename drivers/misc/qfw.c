@@ -14,6 +14,7 @@
 #include <asm/tables.h>
 #endif
 #include <linux/list.h>
+#include <linux/string.h>
 
 static bool fwcfg_present;
 static bool fwcfg_dma_present;

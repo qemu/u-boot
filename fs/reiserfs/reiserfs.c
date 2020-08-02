@@ -18,6 +18,7 @@
 #include <common.h>
 #include <malloc.h>
 #include <linux/ctype.h>
+#include <linux/string.h>
 #include <linux/time.h>
 #include <asm/byteorder.h>
 #include <reiserfs.h>

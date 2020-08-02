@@ -9,6 +9,7 @@
 #include <env.h>
 #include <image-android-dt.h>
 #include <common.h>
+#include <linux/string.h>
 
 #define OPT_INDEX	"--index"
 

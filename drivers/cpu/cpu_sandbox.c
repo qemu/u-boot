@@ -7,6 +7,7 @@
 #include <common.h>
 #include <dm.h>
 #include <cpu.h>
+#include <linux/string.h>
 
 int cpu_sandbox_get_desc(const struct udevice *dev, char *buf, int size)
 {

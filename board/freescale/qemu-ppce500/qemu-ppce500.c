@@ -23,6 +23,7 @@
 #include <fdtdec.h>
 #include <errno.h>
 #include <malloc.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -9,6 +9,7 @@
 #include <asm/arch/sdram.h>
 #include <errno.h>
 #include <hang.h>
+#include <linux/string.h>
 #include "sequencer.h"
 
 static const struct socfpga_sdr_rw_load_manager *sdr_rw_load_mgr_regs =

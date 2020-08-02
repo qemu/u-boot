@@ -11,6 +11,7 @@
 #include <log.h>
 #include <dm/devres.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 /*#include <asm/io.h>*/
 #include <linux/types.h>
 

@@ -8,6 +8,7 @@
 #define _ASM_IO_H
 
 #include <compiler.h>
+#include <linux/string.h>
 
 /*
  * This file contains the definitions for the x86 IO instructions

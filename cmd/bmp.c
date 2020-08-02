@@ -21,6 +21,7 @@
 #include <splash.h>
 #include <video.h>
 #include <asm/byteorder.h>
+#include <linux/string.h>
 
 static int bmp_info (ulong addr);
 

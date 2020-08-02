@@ -9,6 +9,7 @@
 #include <log.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 /*
  * The u-boot networking stack is a little weird.  It seems like the

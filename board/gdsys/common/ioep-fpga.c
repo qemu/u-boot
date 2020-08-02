@@ -445,6 +445,7 @@ static int get_features(unsigned int fpga, struct fpga_features *features)
 }
 
 #include <linux/bitops.h>
+#include <linux/string.h>
 #endif
 
 bool ioep_fpga_has_osd(unsigned int fpga)

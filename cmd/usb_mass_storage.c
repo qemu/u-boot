@@ -19,6 +19,7 @@
 #include <watchdog.h>
 #include <linux/delay.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 static int ums_read_sector(struct ums *ums_dev,
 			   ulong start, lbaint_t blkcnt, void *buf)

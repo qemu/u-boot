@@ -13,6 +13,7 @@
 #include <image.h>
 #include <asm/byteorder.h>
 #include <asm/zimage.h>
+#include <linux/string.h>
 
 #ifdef CONFIG_SYS_DEBUG
 static void hexdump(unsigned char *buf, int len)

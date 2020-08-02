@@ -10,6 +10,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/mach-imx/module_fuse.h>
 #include <linux/errno.h>
+#include <linux/string.h>
 
 static struct fuse_entry_desc mx6_fuse_descs[] = {
 #if defined(CONFIG_MX6ULL)

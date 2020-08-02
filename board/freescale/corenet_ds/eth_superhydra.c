@@ -57,6 +57,7 @@
 #include <malloc.h>
 #include <fdt_support.h>
 #include <fsl_dtsec.h>
+#include <linux/string.h>
 
 #include "../common/ngpixis.h"
 #include "../common/fman.h"

@@ -18,6 +18,7 @@
 #include <linux/bug.h>
 #include <linux/kernel.h>
 #include <linux/list.h>
+#include <linux/string.h>
 
 #include <linux/usb/ch9.h>
 #include <linux/usb/gadget.h>

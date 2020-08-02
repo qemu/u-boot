@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <command.h>
+#include <linux/string.h>
 
 #ifdef CONFIG_CMD_BAT
 #include <twl6030.h>

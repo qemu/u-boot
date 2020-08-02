@@ -23,6 +23,7 @@
 #include <linux/mii.h>
 #include <asm/immap.h>
 #include <asm/fsl_mcdmafec.h>
+#include <linux/string.h>
 
 #include "MCD_dma.h"
 

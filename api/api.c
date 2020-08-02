@@ -13,6 +13,7 @@
 #include <env_internal.h>
 #include <time.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include <linux/types.h>
 #include <api_public.h>
 #include <u-boot/crc.h>

@@ -16,6 +16,7 @@
 #include <acpi/acpigen.h>
 #include <asm-generic/gpio.h>
 #include <dm/acpi.h>
+#include <linux/string.h>
 
 /**
  * acpi_device_path_fill() - Find the root device and build a path from there

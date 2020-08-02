@@ -19,6 +19,7 @@
 #include <mmc.h>
 #include <version.h>
 #include <asm/io.h>
+#include <linux/string.h>
 #include <linux/stringify.h>
 
 static ulong fwenv_addr[MAX_FWENV_ADDR];

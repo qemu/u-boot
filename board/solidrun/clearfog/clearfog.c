@@ -16,6 +16,7 @@
 #include <asm/arch/soc.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include "../common/tlv_data.h"
 
 #include "../drivers/ddr/marvell/a38x/ddr3_init.h"

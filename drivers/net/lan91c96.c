@@ -50,6 +50,7 @@
 #include <malloc.h>
 #include <time.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include "lan91c96.h"
 #include <net.h>
 #include <linux/compiler.h>

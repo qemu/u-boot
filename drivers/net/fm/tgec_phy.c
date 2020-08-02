@@ -10,6 +10,7 @@
 #include <asm/io.h>
 #include <fsl_tgec.h>
 #include <fm_eth.h>
+#include <linux/string.h>
 
 /*
  * Write value to the PHY for this device to the register at regnum, waiting

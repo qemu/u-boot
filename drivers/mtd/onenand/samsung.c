@@ -17,6 +17,7 @@
 #include <linux/mtd/flashchip.h>
 #include <linux/mtd/samsung_onenand.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #include <asm/io.h>
 #include <linux/errno.h>

@@ -10,6 +10,7 @@
 #include <log.h>
 #include <linux/bitops.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #include <power/bd71837.h>
 #include <power/pmic.h>
 #include <power/regulator.h>

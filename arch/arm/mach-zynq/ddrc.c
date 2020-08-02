@@ -8,6 +8,7 @@
 #include <asm/io.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/arch/hardware.h>
+#include <linux/string.h>
 
 #ifndef CONFIG_ZYNQ_DDRC_INIT
 void zynq_ddrc_init(void) {}

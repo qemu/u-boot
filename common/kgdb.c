@@ -89,6 +89,7 @@
 
 #include <common.h>
 #include <asm/ptrace.h>
+#include <linux/string.h>
 
 #include <kgdb.h>
 #include <command.h>

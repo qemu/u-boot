@@ -10,6 +10,7 @@
 #include <asm/arch/cpu.h>
 #include <asm/arch/soc.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include "high_speed_env_spec.h"
 #include "board_env_spec.h"

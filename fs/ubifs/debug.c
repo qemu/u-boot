@@ -20,6 +20,7 @@
 #include <time.h>
 #include <dm/devres.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #ifndef __UBOOT__
 #include <linux/module.h>

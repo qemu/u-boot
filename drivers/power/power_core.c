@@ -13,6 +13,7 @@
 #include <command.h>
 #include <log.h>
 #include <malloc.h>
+#include <linux/string.h>
 #include <linux/types.h>
 #include <linux/list.h>
 #include <power/pmic.h>

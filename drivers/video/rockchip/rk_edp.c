@@ -23,6 +23,7 @@
 #include <asm/arch-rockchip/hardware.h>
 #include <dt-bindings/clock/rk3288-cru.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #define MAX_CR_LOOP 5
 #define MAX_EQ_LOOP 5

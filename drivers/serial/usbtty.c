@@ -14,6 +14,7 @@
 #include <serial.h>
 #include <stdio_dev.h>
 #include <asm/unaligned.h>
+#include <linux/string.h>
 #include "usbtty.h"
 #include "usb_cdc_acm.h"
 #include "usbdescriptors.h"

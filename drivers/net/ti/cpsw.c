@@ -25,6 +25,7 @@
 #include <asm/arch/cpu.h>
 #include <dm.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #include "cpsw_mdio.h"
 

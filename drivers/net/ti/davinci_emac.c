@@ -33,6 +33,7 @@
 #include <asm/arch/emac_defs.h>
 #include <asm/io.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include "davinci_emac.h"
 
 unsigned int	emac_dbg = 0;

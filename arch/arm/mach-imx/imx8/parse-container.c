@@ -9,6 +9,7 @@
 #include <spl.h>
 #include <asm/arch/image.h>
 #include <asm/arch/sci/sci.h>
+#include <linux/string.h>
 
 #define SEC_SECURE_RAM_BASE		0x31800000UL
 #define SEC_SECURE_RAM_END_BASE		(SEC_SECURE_RAM_BASE + 0xFFFFUL)

@@ -22,6 +22,7 @@
 #include <net.h>
 #include <errno.h>
 #include <g_dnl.h>
+#include <linux/string.h>
 #include "factoryset.h"
 
 #define EEPR_PG_SZ		0x80

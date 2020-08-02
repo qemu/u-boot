@@ -10,6 +10,7 @@
 #include <irq_func.h>
 #include <mpc83xx.h>
 #include <command.h>
+#include <linux/string.h>
 
 #if defined(CONFIG_DDR_ECC) && defined(CONFIG_DDR_ECC_CMD)
 void ecc_print_status(void)

@@ -11,6 +11,7 @@
 #include <onenand_uboot.h>
 #include <ubispl.h>
 #include <spl.h>
+#include <linux/string.h>
 
 int spl_ubi_load_image(struct spl_image_info *spl_image,
 		       struct spl_boot_device *bootdev)

@@ -20,6 +20,7 @@
 #include <errno.h>
 #include <malloc.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #include "board_detect.h"
 

@@ -16,6 +16,7 @@
 #include <spi.h>
 #include <spi_flash.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include <linux/stringify.h>
 #include <u-boot/crc.h>
 #include <uuid.h>

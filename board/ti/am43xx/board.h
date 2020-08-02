@@ -12,6 +12,7 @@
 #define _BOARD_H_
 
 #include <asm/arch/omap.h>
+#include <linux/string.h>
 
 #define DEV_ATTR_MAX_OFFSET    5
 #define DEV_ATTR_MIN_OFFSET    0

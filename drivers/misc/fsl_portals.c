@@ -8,6 +8,7 @@
 #include <log.h>
 #include <linux/libfdt.h>
 #include <fdt_support.h>
+#include <linux/string.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>

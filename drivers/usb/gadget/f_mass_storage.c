@@ -248,6 +248,7 @@
 #include <g_dnl.h>
 #include <dm/devres.h>
 #include <linux/bug.h>
+#include <linux/string.h>
 
 #include <linux/err.h>
 #include <linux/usb/ch9.h>

@@ -21,6 +21,7 @@
 #include <linux/err.h>
 #include <linux/soc/ti/k3-sec-proxy.h>
 #include <linux/soc/ti/ti_sci_protocol.h>
+#include <linux/string.h>
 
 #include "ti_sci.h"
 

@@ -20,6 +20,7 @@
 #include <asm/arch/power.h>
 #include <asm/arch/cpu.h>
 #include <asm/arch/clk.h>
+#include <linux/string.h>
 
 #include "exynos_mipi_dsi_lowlevel.h"
 #include "exynos_mipi_dsi_common.h"

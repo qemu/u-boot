@@ -16,6 +16,7 @@
  * bcc and gcc. */
 
 #include <log.h>
+#include <linux/string.h>
 #include <linux/types.h>
 #include <common.h>
 #include <exports.h>

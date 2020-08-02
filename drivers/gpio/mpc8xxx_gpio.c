@@ -12,6 +12,7 @@
 #include <dm.h>
 #include <mapmem.h>
 #include <asm/gpio.h>
+#include <linux/string.h>
 
 struct ccsr_gpio {
 	u32	gpdir;

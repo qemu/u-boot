@@ -17,6 +17,7 @@
 #include <net.h>
 #include <rand.h>
 #include <time.h>
+#include <linux/string.h>
 #include "arp.h"
 #include "net_rand.h"
 

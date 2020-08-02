@@ -29,6 +29,7 @@
 #include <i2c.h>
 #include <miiphy.h>
 #include <netdev.h>
+#include <linux/string.h>
 #include <power/pmic.h>
 #include <power/pfuze100_pmic.h>
 #include <usb.h>

@@ -28,6 +28,7 @@
 #include <malloc.h>
 #include <part.h>
 #include <uuid.h>
+#include <linux/string.h>
 #include "ext4_common.h"
 
 int ext4fs_symlinknest;

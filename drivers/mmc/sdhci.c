@@ -22,6 +22,7 @@
 #include <linux/dma-mapping.h>
 #include <phys2bus.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 static void sdhci_reset(struct sdhci_host *host, u8 mask)
 {

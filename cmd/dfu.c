@@ -18,6 +18,7 @@
 #include <g_dnl.h>
 #include <usb.h>
 #include <net.h>
+#include <linux/string.h>
 
 static int do_dfu(struct cmd_tbl *cmdtp, int flag, int argc, char *const argv[])
 {

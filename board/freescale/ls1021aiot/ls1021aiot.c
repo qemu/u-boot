@@ -14,6 +14,7 @@
 #include <asm/arch/ls102xa_stream_id.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include <asm/arch/ls102xa_devdis.h>
 #include <asm/arch/ls102xa_soc.h>

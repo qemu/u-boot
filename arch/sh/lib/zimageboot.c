@@ -15,6 +15,7 @@
 #include <irq_func.h>
 #include <asm/io.h>
 #include <asm/zimage.h>
+#include <linux/string.h>
 
 int do_sh_zimageboot(struct cmd_tbl *cmdtp, int flag, int argc,
 		     char *const argv[])

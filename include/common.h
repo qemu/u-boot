@@ -16,7 +16,6 @@
 #include <config.h>
 #include <errno.h>
 #include <linux/types.h>
-#include <linux/string.h>
 #include <stdarg.h>
 #include <stdio.h>
 #include <linux/kernel.h>

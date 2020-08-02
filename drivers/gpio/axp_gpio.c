@@ -15,6 +15,7 @@
 #include <dm/lists.h>
 #include <dm/root.h>
 #include <errno.h>
+#include <linux/string.h>
 
 static int axp_gpio_set_value(struct udevice *dev, unsigned pin, int val);
 

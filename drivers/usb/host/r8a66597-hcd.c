@@ -14,6 +14,7 @@
 #include <dm/device_compat.h>
 #include <linux/delay.h>
 #include <linux/iopoll.h>
+#include <linux/string.h>
 #include <power/regulator.h>
 
 #include "r8a66597.h"

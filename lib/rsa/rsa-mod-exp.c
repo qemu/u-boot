@@ -12,6 +12,7 @@
 #include <linux/errno.h>
 #include <asm/types.h>
 #include <asm/unaligned.h>
+#include <linux/string.h>
 #else
 #include "fdt_host.h"
 #include "mkimage.h"

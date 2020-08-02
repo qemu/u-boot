@@ -14,6 +14,7 @@
 #include <efi_loader.h>
 #include <efi_variable.h>
 #include <asm/unaligned.h>
+#include <linux/string.h>
 
 static const struct efi_boot_services *bs;
 static const struct efi_runtime_services *rs;

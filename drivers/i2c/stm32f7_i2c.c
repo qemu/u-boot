@@ -15,6 +15,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #include <dm/device.h>
 #include <linux/err.h>

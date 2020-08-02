@@ -28,6 +28,7 @@
 #include <asm/arch-imx8/clock.h>
 #endif
 #include <linux/delay.h>
+#include <linux/string.h>
 #include "../common/factoryset.h"
 
 #define GPIO_PAD_CTRL \

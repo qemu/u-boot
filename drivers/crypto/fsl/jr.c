@@ -10,6 +10,7 @@
 #include <linux/kernel.h>
 #include <log.h>
 #include <malloc.h>
+#include <linux/string.h>
 #include "fsl_sec.h"
 #include "jr.h"
 #include "jobdesc.h"

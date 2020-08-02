@@ -15,6 +15,7 @@
 #include <hexdump.h>
 #include <video_osd.h>
 #include <malloc.h>
+#include <linux/string.h>
 
 static int do_osd_write(struct cmd_tbl *cmdtp, int flag, int argc,
 			char *const argv[])

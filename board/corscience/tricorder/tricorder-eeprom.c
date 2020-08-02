@@ -9,6 +9,7 @@
 #include <display_options.h>
 #include <eeprom.h>
 #include <i2c.h>
+#include <linux/string.h>
 #include <u-boot/crc.h>
 
 #include "tricorder-eeprom.h"

@@ -21,6 +21,7 @@
 #include <miiphy.h>
 #include <asm/cache.h>
 #include <wait_bit.h>
+#include <linux/string.h>
 
 /* register offsets */
 #define	MODER		0x00

@@ -18,6 +18,7 @@
 #include <linux/compat.h>
 #include <linux/mtd/mtd.h>
 #include <linux/mtd/onenand.h>
+#include <linux/string.h>
 
 struct mtd_info onenand_mtd;
 struct onenand_chip onenand_chip;

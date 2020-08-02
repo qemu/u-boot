@@ -4,6 +4,7 @@
 #include <memalign.h>
 #include <asm/cache.h>
 #include <linux/compat.h>
+#include <linux/string.h>
 
 struct p_current cur = {
 	.pid = 1,

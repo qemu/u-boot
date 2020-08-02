@@ -6,6 +6,7 @@
 #include <relocate.h>
 #include <asm/sections.h>
 #include <asm/string.h>
+#include <linux/string.h>
 
 int clear_bss(void)
 {

@@ -9,6 +9,7 @@
 #ifndef ZSTD_OPT_H_91842398743
 #define ZSTD_OPT_H_91842398743
 
+#include <linux/string.h>
 #define ZSTD_LITFREQ_ADD 2
 #define ZSTD_FREQ_DIV 4
 #define ZSTD_MAX_PRICE (1 << 30)

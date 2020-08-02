@@ -11,6 +11,7 @@
 #include <dm/lists.h>
 #include <dm/uclass-internal.h>
 #include <dm/root.h>
+#include <linux/string.h>
 
 int qemu_cpu_fixup(void)
 {

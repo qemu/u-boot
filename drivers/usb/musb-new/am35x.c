@@ -29,6 +29,7 @@
 #include <asm/omap_musb.h>
 #include <linux/bug.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include "linux-compat.h"
 #endif
 

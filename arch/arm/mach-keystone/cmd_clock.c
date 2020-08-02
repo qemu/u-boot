@@ -11,6 +11,7 @@
 #include <asm/arch/hardware.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/psc_defs.h>
+#include <linux/string.h>
 
 struct pll_init_data cmd_pll_data = {
 	.pll = MAIN_PLL,

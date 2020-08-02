@@ -21,6 +21,7 @@
 #include <asm/io.h>
 #include <asm/fsl_serdes.h>
 #include <asm/fsl_mpc83xx_serdes.h>
+#include <linux/string.h>
 
 #include "mpc8308.h"
 

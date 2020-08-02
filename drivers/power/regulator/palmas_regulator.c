@@ -11,6 +11,7 @@
 #include <errno.h>
 #include <dm.h>
 #include <i2c.h>
+#include <linux/string.h>
 #include <power/pmic.h>
 #include <power/regulator.h>
 #include <power/palmas.h>

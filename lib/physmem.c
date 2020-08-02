@@ -13,6 +13,7 @@
 #include <mapmem.h>
 #include <physmem.h>
 #include <linux/compiler.h>
+#include <linux/string.h>
 
 phys_addr_t __weak arch_phys_memset(phys_addr_t s, int c, phys_size_t n)
 {

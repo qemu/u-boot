@@ -12,6 +12,7 @@
 #include <usb.h>
 #include <asm/cache.h>
 #include <dm/device-internal.h>
+#include <linux/string.h>
 
 #include "usb_ether.h"
 

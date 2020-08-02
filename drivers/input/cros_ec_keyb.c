@@ -14,6 +14,7 @@
 #include <key_matrix.h>
 #include <log.h>
 #include <stdio_dev.h>
+#include <linux/string.h>
 
 enum {
 	KBC_MAX_KEYS		= 8,	/* Maximum keys held down at once */

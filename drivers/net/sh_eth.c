@@ -22,6 +22,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <asm/io.h>
+#include <linux/string.h>
 
 #ifdef CONFIG_DM_ETH
 #include <clk.h>

@@ -12,6 +12,7 @@
 #include <asm/arch-lpc32xx/gpio.h>
 #include <asm-generic/gpio.h>
 #include <dm.h>
+#include <linux/string.h>
 
 /**
  * LPC32xx GPIOs work in banks but are non-homogeneous:

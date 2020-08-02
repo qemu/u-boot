@@ -19,6 +19,7 @@
 #include <asm/e820.h>
 #include <linux/linkage.h>
 #endif
+#include <linux/string.h>
 
 /* Allow ports to override the default behavior */
 static unsigned long do_bootelf_exec(ulong (*entry)(int, char * const[]),

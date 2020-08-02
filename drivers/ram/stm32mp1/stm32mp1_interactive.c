@@ -14,6 +14,7 @@
 #include <reset.h>
 #include <time.h>
 #include <asm/global_data.h>
+#include <linux/string.h>
 #include "stm32mp1_ddr.h"
 #include "stm32mp1_tests.h"
 

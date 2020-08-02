@@ -22,6 +22,7 @@
 #include <asm/global_data.h>
 #include <linux/dma-mapping.h>
 #include <asm/io.h>
+#include <linux/string.h>
 #include "altera_tse.h"
 
 DECLARE_GLOBAL_DATA_PTR;

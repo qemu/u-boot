@@ -26,6 +26,7 @@
 #include <asm/arch/imx-regs.h>
 #include <asm/arch/sys_proto.h>
 #include <linux/compiler.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

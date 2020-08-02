@@ -18,6 +18,7 @@
 #include <net.h>
 #include <reset.h>
 #include <wait_bit.h>
+#include <linux/string.h>
 
 #define STATION_ADDR_LOW		0x0000
 #define STATION_ADDR_HIGH		0x0004

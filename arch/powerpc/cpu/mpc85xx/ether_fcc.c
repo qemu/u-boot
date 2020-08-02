@@ -30,6 +30,7 @@
 #include <command.h>
 #include <config.h>
 #include <net.h>
+#include <linux/string.h>
 
 #if defined(CONFIG_MII) || defined(CONFIG_CMD_MII)
 #include <miiphy.h>

@@ -9,6 +9,7 @@
 #include <malloc.h>
 #include <errno.h>
 #include <linux/list.h>
+#include <linux/string.h>
 
 #include "menu.h"
 

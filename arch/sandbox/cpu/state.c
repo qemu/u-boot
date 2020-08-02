@@ -10,6 +10,7 @@
 #include <os.h>
 #include <asm/malloc.h>
 #include <asm/state.h>
+#include <linux/string.h>
 
 /* Main state record for the sandbox */
 static struct sandbox_state main_state;

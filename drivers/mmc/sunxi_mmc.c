@@ -23,6 +23,7 @@
 #include <asm/arch/mmc.h>
 #include <asm-generic/gpio.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #ifdef CONFIG_DM_MMC
 struct sunxi_mmc_variant {

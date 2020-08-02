@@ -10,6 +10,7 @@
 #include <common.h>
 #include <malloc.h>
 #include <asm/global_data.h>
+#include <linux/string.h>
 DECLARE_GLOBAL_DATA_PTR;
 #endif /* !USE_HOSdTCC*/
 #include <image.h>

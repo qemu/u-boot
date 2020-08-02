@@ -16,6 +16,7 @@
 #include <asm/arch/mx6-pins.h>
 #include <asm/arch/sys_proto.h>
 #include <spl.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

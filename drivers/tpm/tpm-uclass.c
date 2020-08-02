@@ -9,6 +9,7 @@
 #include <log.h>
 #include <time.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include <linux/unaligned/be_byteshift.h>
 #include <tpm-v1.h>
 #include <tpm-v2.h>

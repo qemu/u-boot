@@ -12,6 +12,7 @@
 #include <common.h>
 #include <errno.h>
 #include <linux/ctype.h>
+#include <linux/string.h>
 
 /* from lib/kstrtox.c */
 static const char *_parse_integer_fixup_radix(const char *s, unsigned int *base)

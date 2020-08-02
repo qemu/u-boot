@@ -19,6 +19,7 @@
 #include <asm/cache.h>
 #include <linux/mtd/rawnand.h>
 #include <linux/sizes.h>
+#include <linux/string.h>
 #include <linux/types.h>
 #include <malloc.h>
 #include <linux/errno.h>

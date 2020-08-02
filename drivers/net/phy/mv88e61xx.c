@@ -33,6 +33,7 @@
 #include <log.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include <bitfield.h>
 #include <errno.h>

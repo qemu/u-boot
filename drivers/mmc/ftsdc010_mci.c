@@ -22,6 +22,7 @@
 #include <linux/errno.h>
 #include <asm/byteorder.h>
 #include <faraday/ftsdc010.h>
+#include <linux/string.h>
 #include "ftsdc010_mci.h"
 #include <dm.h>
 #include <dt-structs.h>

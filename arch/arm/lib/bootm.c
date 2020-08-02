@@ -23,6 +23,7 @@
 #include <dm/root.h>
 #include <env.h>
 #include <image.h>
+#include <linux/string.h>
 #include <u-boot/zlib.h>
 #include <asm/byteorder.h>
 #include <linux/libfdt.h>

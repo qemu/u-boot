@@ -28,6 +28,7 @@
 #include <part.h>
 #include <stddef.h>
 #include <linux/stat.h>
+#include <linux/string.h>
 #include <linux/time.h>
 #include <asm/byteorder.h>
 #include "ext4_common.h"

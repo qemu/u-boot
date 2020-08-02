@@ -11,6 +11,7 @@
 #include <net.h>
 #include <linux/libfdt.h>
 #include <asm/arch-tegra/cboot.h>
+#include <linux/string.h>
 #include "../p2571/max77620_init.h"
 
 void pin_mux_mmc(void)

@@ -16,6 +16,7 @@
 #include <mtd.h>
 #include <dm/devres.h>
 #include <linux/err.h>
+#include <linux/string.h>
 
 #include <linux/ctype.h>
 

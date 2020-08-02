@@ -37,6 +37,7 @@
 #include <spi.h>
 #include <spi-mem.h>
 #include <malloc.h>
+#include <linux/string.h>
 #include "cadence_qspi.h"
 
 #define CQSPI_REG_POLL_US			1 /* 1us */

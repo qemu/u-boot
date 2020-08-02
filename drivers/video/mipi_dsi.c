@@ -39,6 +39,7 @@
 #include <mipi_display.h>
 #include <mipi_dsi.h>
 #include <dm/devres.h>
+#include <linux/string.h>
 
 /**
  * DOC: dsi helpers

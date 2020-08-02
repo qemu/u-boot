@@ -8,6 +8,7 @@
 #include <malloc.h>
 #include <asm/io.h>
 #include <pci.h>
+#include <linux/string.h>
 
 #include <universe.h>
 

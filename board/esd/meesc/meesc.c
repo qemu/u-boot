@@ -28,6 +28,7 @@
 #include <asm/arch/at91_pio.h>
 #include <asm/arch/clk.h>
 #include <netdev.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

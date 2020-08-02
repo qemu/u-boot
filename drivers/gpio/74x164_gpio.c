@@ -19,6 +19,7 @@
 #include <dm/device_compat.h>
 #include <dt-bindings/gpio/gpio.h>
 #include <spi.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

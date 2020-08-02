@@ -25,6 +25,7 @@
 #include <dwmmc.h>
 #include <malloc.h>
 #include <usb.h>
+#include <linux/string.h>
 
 #include "clk-lib.h"
 #include "env-lib.h"

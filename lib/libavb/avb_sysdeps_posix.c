@@ -7,6 +7,7 @@
 #include <malloc.h>
 #include <stdarg.h>
 #include <stdlib.h>
+#include <linux/string.h>
 
 #include "avb_sysdeps.h"
 

@@ -29,6 +29,7 @@
 #include "ext4_journal.h"
 #include "crc16.h"
 #endif
+#include <linux/string.h>
 
 #define YES		1
 #define NO		0

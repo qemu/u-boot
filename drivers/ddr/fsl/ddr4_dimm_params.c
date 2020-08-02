@@ -14,6 +14,7 @@
 #include <fsl_ddr_sdram.h>
 #include <log.h>
 #include <linux/bug.h>
+#include <linux/string.h>
 
 #include <fsl_ddr.h>
 

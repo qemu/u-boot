@@ -24,6 +24,7 @@
 #include <linux/sizes.h>
 #include <errno.h>
 #include <asm/arch/sys_proto.h>
+#include <linux/string.h>
 
 #define PCI_ACCESS_READ  0
 #define PCI_ACCESS_WRITE 1

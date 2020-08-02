@@ -27,6 +27,7 @@
 #include <fsl_dtsec.h>
 #include <asm/fsl_serdes.h>
 #include <hwconfig.h>
+#include <linux/string.h>
 #include "../common/qixis.h"
 #include "../common/fman.h"
 #include "t208xqds_qixis.h"

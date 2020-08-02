@@ -22,6 +22,7 @@
 	defined(CONFIG_ARM)
 #include <asm/arch/clock.h>
 #endif
+#include <linux/string.h>
 
 /*
  * Determine Rtt value.

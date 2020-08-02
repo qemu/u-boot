@@ -13,6 +13,7 @@
 #include <asm/gpio.h>
 #include <linux/bitops.h>
 #include <linux/compat.h>
+#include <linux/string.h>
 #include <mach/pic32.h>
 
 DECLARE_GLOBAL_DATA_PTR;

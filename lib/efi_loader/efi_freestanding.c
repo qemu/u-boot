@@ -9,6 +9,7 @@
  */
 
 #include <common.h>
+#include <linux/string.h>
 
 /**
  * memcmp() - compare memory areas

@@ -16,6 +16,7 @@
 #include <video_console.h>
 #include <video_font.h>		/* Bitmap font for code page 437 */
 #include <linux/ctype.h>
+#include <linux/string.h>
 
 /*
  * Structure to describe a console color

@@ -11,6 +11,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <linux/log2.h>
+#include <linux/string.h>
 #include "stm32mp1_tests.h"
 
 #define ADDR_INVALID	0xFFFFFFFF

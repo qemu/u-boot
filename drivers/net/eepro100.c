@@ -13,6 +13,7 @@
 #include <netdev.h>
 #include <pci.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 /* Ethernet chip registers. */
 #define SCB_STATUS		0	/* Rx/Command Unit Status *Word* */

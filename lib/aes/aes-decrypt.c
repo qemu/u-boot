@@ -6,6 +6,7 @@
 #ifndef USE_HOSTCC
 #include <common.h>
 #include <malloc.h>
+#include <linux/string.h>
 #endif
 #include <image.h>
 #include <uboot_aes.h>

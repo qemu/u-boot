@@ -17,6 +17,7 @@
 #include <asm/arch-rockchip/clock.h>
 #include <asm/arch-rockchip/periph.h>
 #include <asm/arch-rockchip/misc.h>
+#include <linux/string.h>
 #include <power/regulator.h>
 
 DECLARE_GLOBAL_DATA_PTR;

@@ -21,6 +21,7 @@
 #include <cpu_func.h>
 #include <log.h>
 #include <linux/bug.h>
+#include <linux/string.h>
 
 static u8 clear_feature_num;
 int clear_feature_flag;

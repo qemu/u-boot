@@ -14,6 +14,7 @@
 #include <linux/errno.h>
 #include <asm/arch/sysmap.h>
 #include <asm/kona-common/clk.h>
+#include <linux/string.h>
 #include "clk-core.h"
 
 #define CLOCK_1K		1000

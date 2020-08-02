@@ -9,6 +9,7 @@
 #include <asm/io.h>
 #include <asm/ti-common/keystone_nav.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 struct qm_config qm_memmap = {
 	.stat_cfg	= CONFIG_KSNAV_QM_QUEUE_STATUS_BASE,

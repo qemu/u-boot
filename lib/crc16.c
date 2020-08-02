@@ -26,6 +26,7 @@
 #include <arpa/inet.h>
 #else
 #include <common.h>
+#include <linux/string.h>
 #endif
 #include <u-boot/crc.h>
 

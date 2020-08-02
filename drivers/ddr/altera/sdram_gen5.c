@@ -18,6 +18,7 @@
 #include <asm/bitops.h>
 #include <asm/io.h>
 #include <dm/device_compat.h>
+#include <linux/string.h>
 
 #include "sequencer.h"
 

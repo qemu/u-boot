@@ -24,6 +24,7 @@
 #include <fsl_sec.h>
 #include <asm/arch/ppa.h>
 #include <asm/arch-fsl-layerscape/fsl_icid.h>
+#include <linux/string.h>
 
 
 #include "../common/qixis.h"

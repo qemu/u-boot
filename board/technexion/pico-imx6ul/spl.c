@@ -17,6 +17,7 @@
 #include <fsl_esdhc_imx.h>
 #include <linux/libfdt.h>
 #include <spl.h>
+#include <linux/string.h>
 
 #if defined(CONFIG_SPL_BUILD)
 

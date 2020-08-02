@@ -18,6 +18,7 @@
 #define __MICROBLAZE_IO_H__
 
 #include <asm/types.h>
+#include <linux/string.h>
 
 #define IO_SPACE_LIMIT 0xFFFFFFFF
 

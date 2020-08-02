@@ -11,6 +11,7 @@
 #include <asm/arch/cpu.h>
 #include <asm/arch/soc.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include "ddr3_init.h"
 #include "ddr3_hw_training.h"

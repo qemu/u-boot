@@ -37,6 +37,7 @@
 #include <linux/compat.h>
 #include <linux/mbus.h>
 #include <asm-generic/gpio.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

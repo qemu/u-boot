@@ -14,6 +14,7 @@
 #include <time.h>
 #include <asm/global_data.h>
 #include <linux/libfdt_env.h>
+#include <linux/string.h>
 #include <u-boot/crc.h>
 #include <bootm.h>
 #include <pe.h>

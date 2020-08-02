@@ -8,6 +8,7 @@
 #include <common.h>
 #include <efi_loader.h>
 #include <efi_variable.h>
+#include <linux/string.h>
 #include <u-boot/crc.h>
 
 struct efi_var_file __efi_runtime_data *efi_var_buf;

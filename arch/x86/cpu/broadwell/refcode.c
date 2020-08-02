@@ -12,6 +12,7 @@
 #include <init.h>
 #include <log.h>
 #include <asm/arch/pei_data.h>
+#include <linux/string.h>
 
 #define RMODULE_MAGIC		0xf8fe
 #define RMODULE_VERSION_1	1

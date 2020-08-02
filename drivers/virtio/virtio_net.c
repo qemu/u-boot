@@ -10,6 +10,7 @@
 #include <virtio_types.h>
 #include <virtio.h>
 #include <virtio_ring.h>
+#include <linux/string.h>
 #include "virtio_net.h"
 
 /* Amount of buffers to keep in the RX virtqueue */

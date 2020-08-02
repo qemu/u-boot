@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <linux/string.h>
 
 /* We need the weak marking as this symbol is provided specially */
 extern const char system_map[] __attribute__((weak));

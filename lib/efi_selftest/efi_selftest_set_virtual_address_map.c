@@ -9,6 +9,7 @@
  */
 
 #include <efi_selftest.h>
+#include <linux/string.h>
 
 static const struct efi_boot_services *boottime;
 static const struct efi_runtime_services *runtime;

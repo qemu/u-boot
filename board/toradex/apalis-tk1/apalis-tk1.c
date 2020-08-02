@@ -17,6 +17,7 @@
 #include <pci_tegra.h>
 #include <linux/delay.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #include <power/as3722.h>
 #include <power/pmic.h>
 

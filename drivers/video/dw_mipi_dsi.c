@@ -24,6 +24,7 @@
 #include <linux/delay.h>
 #include <linux/iopoll.h>
 #include <video_bridge.h>
+#include <linux/string.h>
 
 #define HWVER_131			0x31333100	/* IP version 1.31 */
 

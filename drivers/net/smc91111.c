@@ -53,6 +53,7 @@
 #include <malloc.h>
 #include <time.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include "smc91111.h"
 #include <net.h>
 

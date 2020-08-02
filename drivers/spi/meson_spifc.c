@@ -17,6 +17,7 @@
 #include <asm/io.h>
 #include <linux/bitfield.h>
 #include <linux/bitops.h>
+#include <linux/string.h>
 
 /* register map */
 #define REG_CMD			0x00

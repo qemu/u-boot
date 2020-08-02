@@ -11,6 +11,7 @@
 #include <mapmem.h>
 #include <tpm-common.h>
 #include <tpm-v2.h>
+#include <linux/string.h>
 #include "tpm-user-utils.h"
 
 static int do_tpm2_startup(struct cmd_tbl *cmdtp, int flag, int argc,

@@ -13,6 +13,7 @@
 #include <command.h>
 #include <log.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include <net/pfe_eth/pfe_eth.h>
 
 static inline void pfe_command_help(void)

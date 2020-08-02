@@ -19,6 +19,7 @@
 #include <time.h>
 #include <uuid.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include <net/tftp.h>
 #include "bootp.h"
 #ifdef CONFIG_LED_STATUS

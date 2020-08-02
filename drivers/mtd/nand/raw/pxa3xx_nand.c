@@ -24,6 +24,7 @@
 #include <linux/mtd/mtd.h>
 #include <linux/mtd/rawnand.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #include <linux/types.h>
 
 #include "pxa3xx_nand.h"

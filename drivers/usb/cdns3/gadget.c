@@ -63,6 +63,7 @@
 #include <linux/delay.h>
 #include <linux/err.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #include <linux/usb/gadget.h>
 #include <linux/compat.h>
 #include <linux/iopoll.h>

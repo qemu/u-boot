@@ -8,6 +8,7 @@
 #include <common.h>
 #include <command.h>
 #include <asm/io.h>
+#include <linux/string.h>
 
 #define pixis_base (u8 *)PIXIS_BASE
 

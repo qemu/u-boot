@@ -18,6 +18,7 @@
 #include <log.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include <u-boot/crc.h>
 
 #define ATSHA204A_TWLO			60

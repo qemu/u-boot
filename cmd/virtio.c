@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <virtio_types.h>
 #include <virtio.h>
+#include <linux/string.h>
 
 static int virtio_curr_dev;
 

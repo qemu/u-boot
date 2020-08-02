@@ -9,6 +9,7 @@
 
 #include <config.h>
 #include <jffs2/mini_inflate.h>
+#include <linux/string.h>
 
 /* The order that the code lengths in section 3.2.7 are in */
 static unsigned char huffman_order[] = {16, 17, 18,  0,  8,  7,  9,  6, 10,  5,

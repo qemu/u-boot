@@ -22,6 +22,7 @@
 #include <asm/immap.h>
 #include <linux/delay.h>
 #include <linux/mii.h>
+#include <linux/string.h>
 
 #undef	ET_DEBUG
 #undef	MII_DEBUG

@@ -10,6 +10,7 @@
 #include <asm/global_data.h>
 #include <asm/post.h>
 #include <linux/linkage.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

@@ -15,6 +15,7 @@
 #include <asm/io.h>
 #include <asm/arch-tegra/dc.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include "display.h"
 #include "edid.h"
 #include "sor.h"

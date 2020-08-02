@@ -17,6 +17,7 @@
 #include <log.h>
 #include <spl.h>
 #include <asm/cache.h>
+#include <linux/string.h>
 
 static struct bl2_to_bl31_params_mem bl31_params_mem;
 static struct bl31_params *bl2_to_bl31_params;

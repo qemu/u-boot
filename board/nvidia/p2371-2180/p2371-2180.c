@@ -15,6 +15,7 @@
 #include <asm/arch/gpio.h>
 #include <asm/arch/pinmux.h>
 #include <asm/arch-tegra/cboot.h>
+#include <linux/string.h>
 #include "../p2571/max77620_init.h"
 
 void pin_mux_mmc(void)

@@ -11,6 +11,7 @@
 #include <rng.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include <asm/io.h>
 #include <linux/iopoll.h>

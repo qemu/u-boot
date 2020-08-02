@@ -34,6 +34,7 @@
 #include <asm/unaligned.h>
 #include <env_internal.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include <mtd/cfi_flash.h>
 #include <watchdog.h>
 

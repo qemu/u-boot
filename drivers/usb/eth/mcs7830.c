@@ -20,6 +20,7 @@
 #include <memalign.h>
 #include <usb.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #include "usb_ether.h"
 

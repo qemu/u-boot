@@ -14,6 +14,7 @@
 #include <asm/pch_common.h>
 #include <asm/pci.h>
 #include <asm/arch/pch.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

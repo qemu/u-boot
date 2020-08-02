@@ -14,6 +14,7 @@
 #include <linux/compiler.h>
 #include <errno.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

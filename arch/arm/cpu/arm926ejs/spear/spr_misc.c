@@ -17,6 +17,7 @@
 #include <asm/arch/hardware.h>
 #include <asm/arch/spr_emi.h>
 #include <asm/arch/spr_defs.h>
+#include <linux/string.h>
 
 #define CPU		0
 #define DDR		1

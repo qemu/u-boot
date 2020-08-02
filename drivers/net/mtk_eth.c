@@ -28,6 +28,7 @@
 #include <linux/mdio.h>
 #include <linux/mii.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #include "mtk_eth.h"
 

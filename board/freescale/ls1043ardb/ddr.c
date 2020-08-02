@@ -7,6 +7,7 @@
 #include <fsl_ddr_sdram.h>
 #include <fsl_ddr_dimm_params.h>
 #include <asm/global_data.h>
+#include <linux/string.h>
 #include "ddr.h"
 #include <log.h>
 #include <vsprintf.h>

@@ -17,6 +17,7 @@
 #include <linux/ctype.h>
 #include <div64.h>
 #include <linux/math64.h>
+#include <linux/string.h>
 #include "fat.c"
 
 static void uppercase(char *str, int len)

@@ -25,6 +25,7 @@
 #include <memalign.h>
 #include <asm-generic/sections.h>
 #include <linux/linkage.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

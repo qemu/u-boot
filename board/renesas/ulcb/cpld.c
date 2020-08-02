@@ -14,6 +14,7 @@
 #include <errno.h>
 #include <linux/err.h>
 #include <sysreset.h>
+#include <linux/string.h>
 
 #define CPLD_ADDR_MODE		0x00 /* RW */
 #define CPLD_ADDR_MUX		0x02 /* RW */

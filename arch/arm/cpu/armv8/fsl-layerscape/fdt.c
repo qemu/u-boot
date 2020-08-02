@@ -31,6 +31,7 @@
 #endif
 #include <asm/arch/speed.h>
 #include <fsl_qbman.h>
+#include <linux/string.h>
 
 int fdt_fixup_phy_connection(void *blob, int offset, phy_interface_t phyc)
 {

@@ -29,6 +29,7 @@
 #endif
 #include <linux/compiler.h>
 #include <linux/libfdt.h>
+#include <linux/string.h>
 
 /*
  * Memory lay-out:

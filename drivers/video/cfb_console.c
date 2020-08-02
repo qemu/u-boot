@@ -76,6 +76,7 @@
 #include <video.h>
 #include <asm/global_data.h>
 #include <linux/compiler.h>
+#include <linux/string.h>
 
 #if defined(CONFIG_VIDEO_MXS)
 #define VIDEO_FB_16BPP_WORD_SWAP

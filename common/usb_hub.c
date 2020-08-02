@@ -40,6 +40,7 @@
 #include <asm/state.h>
 #endif
 #include <asm/unaligned.h>
+#include <linux/string.h>
 
 #include <usb.h>
 

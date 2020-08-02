@@ -19,6 +19,7 @@
 #include <spl.h>
 #include <asm/global_data.h>
 #include <asm/itss.h>
+#include <linux/string.h>
 
 struct itss_platdata {
 #if CONFIG_IS_ENABLED(OF_PLATDATA)

@@ -11,6 +11,7 @@
  */
 
 #include <efi_selftest.h>
+#include <linux/string.h>
 
 static struct efi_boot_services *boottime;
 

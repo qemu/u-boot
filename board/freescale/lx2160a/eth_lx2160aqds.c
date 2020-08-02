@@ -24,6 +24,7 @@
 #include <fsl-mc/fsl_mc.h>
 #include <fsl-mc/ldpaa_wriop.h>
 #include <linux/libfdt.h>
+#include <linux/string.h>
 
 #include "../common/qixis.h"
 

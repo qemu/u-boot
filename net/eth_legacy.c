@@ -16,6 +16,7 @@
 #include <asm/global_data.h>
 #include <linux/bug.h>
 #include <linux/errno.h>
+#include <linux/string.h>
 #include <net/pcap.h>
 #include "eth_internal.h"
 

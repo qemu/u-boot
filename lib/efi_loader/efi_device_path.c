@@ -18,6 +18,7 @@
 #include <sandboxblockdev.h>
 #include <asm-generic/unaligned.h>
 #include <linux/compat.h> /* U16_MAX */
+#include <linux/string.h>
 
 #ifdef CONFIG_SANDBOX
 const efi_guid_t efi_guid_host_dev = U_BOOT_HOST_DEV_GUID;

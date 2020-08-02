@@ -15,6 +15,7 @@
 #include <dm.h>
 #include <part.h>
 #include <sata.h>
+#include <linux/string.h>
 
 #ifndef CONFIG_AHCI
 struct blk_desc sata_dev_desc[CONFIG_SYS_SATA_MAX_DEVICE];

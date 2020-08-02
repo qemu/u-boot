@@ -15,6 +15,7 @@
 #include <asm/io.h>
 #include <part_efi.h>
 #include <malloc.h>
+#include <linux/string.h>
 
 /*
  * UUID - Universally Unique IDentifier - 128 bits unique number.

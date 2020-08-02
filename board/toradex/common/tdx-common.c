@@ -8,6 +8,7 @@
 #include <g_dnl.h>
 #include <init.h>
 #include <linux/libfdt.h>
+#include <linux/string.h>
 
 #ifdef CONFIG_DM_VIDEO
 #include <bmp_logo.h>

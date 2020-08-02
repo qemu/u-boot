@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <linux/string.h>
 
 int raise (int signum)
 {

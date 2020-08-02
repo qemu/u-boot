@@ -12,6 +12,7 @@
 #include <linux/bug.h>
 #include <linux/errno.h>
 #include <asm/gpio.h>
+#include <linux/string.h>
 
 #define RESOURCE_LABEL_SIZE	16
 

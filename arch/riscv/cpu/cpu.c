@@ -11,6 +11,7 @@
 #include <asm/encoding.h>
 #include <dm/uclass-internal.h>
 #include <linux/bitops.h>
+#include <linux/string.h>
 
 /*
  * The variables here must be stored in the data section since they are used

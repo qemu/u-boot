@@ -15,6 +15,7 @@
 #include <div64.h>
 #include <post.h>
 #include <asm/global_data.h>
+#include <linux/string.h>
 
 #ifdef CONFIG_SYS_POST_HOTKEYS_GPIO
 #include <asm/gpio.h>

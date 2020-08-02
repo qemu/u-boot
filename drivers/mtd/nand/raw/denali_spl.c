@@ -10,6 +10,7 @@
 #include <asm/unaligned.h>
 #include <linux/delay.h>
 #include <linux/mtd/rawnand.h>
+#include <linux/string.h>
 #include "denali.h"
 
 #define DENALI_MAP01		(1 << 26)	/* read/write pages in PIO */

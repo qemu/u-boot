@@ -19,6 +19,7 @@
 #include <linux/errno.h>
 #include <asm/io.h>
 #include <asm/unaligned.h>
+#include <linux/string.h>
 #include <linux/types.h>
 #include <linux/usb/ch9.h>
 #include <linux/usb/gadget.h>

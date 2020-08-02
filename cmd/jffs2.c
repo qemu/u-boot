@@ -81,6 +81,7 @@
 #include <linux/list.h>
 #include <linux/ctype.h>
 #include <cramfs/cramfs_fs.h>
+#include <linux/string.h>
 
 #if defined(CONFIG_CMD_NAND)
 #include <linux/mtd/rawnand.h>

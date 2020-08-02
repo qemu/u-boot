@@ -13,6 +13,7 @@
 #include <asm/mpspec.h>
 #include <asm/tables.h>
 #include <asm/coreboot_tables.h>
+#include <linux/string.h>
 
 /**
  * Function prototype to write a specific configuration table

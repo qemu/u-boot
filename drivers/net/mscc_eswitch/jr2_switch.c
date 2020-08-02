@@ -18,6 +18,7 @@
 #include <net.h>
 #include <wait_bit.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #include <dt-bindings/mscc/jr2_data.h>
 #include "mscc_xfer.h"

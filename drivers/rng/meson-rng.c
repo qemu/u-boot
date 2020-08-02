@@ -10,6 +10,7 @@
 #include <dm.h>
 #include <rng.h>
 #include <asm/io.h>
+#include <linux/string.h>
 
 struct meson_rng_platdata {
 	fdt_addr_t base;

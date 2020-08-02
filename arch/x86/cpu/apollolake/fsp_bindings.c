@@ -7,6 +7,7 @@
 #include <dm.h>
 #include <log.h>
 #include <asm/arch/fsp_bindings.h>
+#include <linux/string.h>
 
 /**
  * read_u8_prop() - Read an u8 property from devicetree (scalar or array)

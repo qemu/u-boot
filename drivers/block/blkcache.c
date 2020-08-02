@@ -11,6 +11,7 @@
 #include <part.h>
 #include <linux/ctype.h>
 #include <linux/list.h>
+#include <linux/string.h>
 
 #ifdef CONFIG_NEEDS_MANUAL_RELOC
 DECLARE_GLOBAL_DATA_PTR;

@@ -29,6 +29,7 @@
 #include <asm/fsl_pci.h>
 #include <hwconfig.h>
 #include <i2c.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

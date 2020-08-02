@@ -13,6 +13,7 @@
 #include <asm/arch/fsl_serdes.h>
 #include <asm/global_data.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include "../common/sleep.h"
 #include <fsl_validate.h>
 #include <fsl_immap.h>

@@ -31,6 +31,7 @@
 #include <asm/arch/sys_proto.h>
 #include <i2c.h>
 #include <input.h>
+#include <linux/string.h>
 #include <power/pmic.h>
 #include <power/pfuze100_pmic.h>
 #include <asm/arch/mx6-ddr.h>

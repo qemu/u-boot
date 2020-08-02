@@ -12,6 +12,7 @@
 #include <cpu_func.h>
 #include <asm/io.h>
 #include <asm/gpio.h>
+#include <linux/string.h>
 #include "cpld.h"
 
 #define SCLK			(92 + 24)

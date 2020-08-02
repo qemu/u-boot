@@ -23,6 +23,7 @@
 #include <command.h>
 #include <rtc.h>
 #include <i2c.h>
+#include <linux/string.h>
 
 /*
  * Reads are always done starting with register 15, which requires some

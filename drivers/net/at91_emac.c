@@ -20,6 +20,7 @@
 #include <miiphy.h>
 #include <linux/delay.h>
 #include <linux/mii.h>
+#include <linux/string.h>
 
 #undef MII_DEBUG
 #undef ET_DEBUG

@@ -14,6 +14,7 @@
 #include <linux/compat.h>
 #include <linux/err.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #else
 #include <linux/module.h>
 #include <linux/export.h>

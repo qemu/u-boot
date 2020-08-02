@@ -12,6 +12,7 @@
 #include <dm.h>
 #include <rng.h>
 #include <linux/kernel.h>
+#include <linux/string.h>
 #include "desc_constr.h"
 #include "jobdesc.h"
 #include "jr.h"

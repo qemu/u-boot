@@ -13,6 +13,7 @@
 #include <command.h>
 #include <hash.h>
 #include <linux/ctype.h>
+#include <linux/string.h>
 
 static int do_hash(struct cmd_tbl *cmdtp, int flag, int argc,
 		   char *const argv[])

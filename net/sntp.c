@@ -12,6 +12,7 @@
 #include <net.h>
 #include <rtc.h>
 #include <time.h>
+#include <linux/string.h>
 
 #include "sntp.h"
 

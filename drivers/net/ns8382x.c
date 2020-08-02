@@ -58,6 +58,7 @@
 #include <asm/io.h>
 #include <pci.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 /* defines */
 #define DSIZE     0x00000FFF

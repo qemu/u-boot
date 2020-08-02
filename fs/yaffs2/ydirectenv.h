@@ -23,6 +23,7 @@
 #include <common.h>
 #include <malloc.h>
 #include <linux/compat.h>
+#include <linux/string.h>
 
 #include "yaffs_osglue.h"
 

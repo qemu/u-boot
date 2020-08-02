@@ -25,6 +25,7 @@
 #include <wait_bit.h>
 #include <asm/io.h>
 #include <asm/gpio.h>
+#include <linux/string.h>
 
 /* Registers */
 #define RAVB_REG_CCC		0x000

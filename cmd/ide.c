@@ -16,6 +16,7 @@
 #include <image.h>
 #include <asm/byteorder.h>
 #include <asm/io.h>
+#include <linux/string.h>
 
 #include <ide.h>
 #include <ata.h>

@@ -35,6 +35,7 @@
 #include <video.h>
 #include <watchdog.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 #include "board.h"
 #include "../common/factoryset.h"
 #include "../../../drivers/video/da8xx-fb.h"

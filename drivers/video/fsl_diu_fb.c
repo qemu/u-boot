@@ -10,6 +10,7 @@
 #include <common.h>
 #include <malloc.h>
 #include <asm/io.h>
+#include <linux/string.h>
 
 #include "videomodes.h"
 #include <video_fb.h>

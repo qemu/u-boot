@@ -21,6 +21,7 @@
 #include <asm/arch/snvs_security_sc.h>
 #include <asm/arch/iomux.h>
 #include <asm/arch/sys_proto.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

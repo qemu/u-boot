@@ -22,6 +22,7 @@
 #include <asm/global_data.h>
 #include <linux/delay.h>
 #include <linux/libfdt.h>
+#include <linux/string.h>
 #include <u-boot/crc.h>
 #if defined(CONFIG_PCI)
 #include <pci.h>

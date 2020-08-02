@@ -10,6 +10,7 @@
 #include <log.h>
 #include <spl.h>
 #include <generated/dt.h>
+#include <linux/string.h>
 
 #include <asm/io.h>
 #include <asm/spl.h>

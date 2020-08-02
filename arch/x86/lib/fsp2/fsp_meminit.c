@@ -18,6 +18,7 @@
 #include <asm/fsp2/fsp_internal.h>
 #include <asm/arch/fsp/fsp_configs.h>
 #include <asm/arch/fsp/fsp_m_upd.h>
+#include <linux/string.h>
 
 static int prepare_mrc_cache_type(enum mrc_type_t type,
 				  struct mrc_data_container **cachep)

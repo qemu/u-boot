@@ -17,6 +17,7 @@
 #include <net.h>
 #include <time.h>
 #include <asm/global_data.h>
+#include <linux/string.h>
 #include <net/tftp.h>
 #include "bootp.h"
 #ifdef CONFIG_SYS_DIRECT_FLASH_TFTP

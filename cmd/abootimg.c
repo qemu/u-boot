@@ -9,6 +9,7 @@
 #include <command.h>
 #include <image.h>
 #include <mapmem.h>
+#include <linux/string.h>
 
 #define abootimg_addr() \
 	(_abootimg_addr == -1 ? image_load_addr : _abootimg_addr)

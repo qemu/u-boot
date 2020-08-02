@@ -7,6 +7,7 @@
 #include <malloc.h>
 #include <asm/arch/clock.h>
 #include <linux/bug.h>
+#include <linux/string.h>
 #include "qbman_portal.h"
 
 /* QBMan portal management command codes */

@@ -8,6 +8,7 @@
  */
 
 #include <linux/compat.h>
+#include <linux/string.h>
 #include "desc.h"
 
 #define IMMEDIATE (1 << 23)

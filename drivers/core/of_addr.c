@@ -15,6 +15,7 @@
 #include <linux/err.h>
 #include <linux/ioport.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 /* Max address size we deal with */
 #define OF_MAX_ADDR_CELLS	4

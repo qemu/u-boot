@@ -21,6 +21,7 @@
 #include <linux/libfdt.h>
 #include <mapmem.h>
 #include <asm/io.h>
+#include <linux/string.h>
 #include <tee/optee.h>
 
 #ifndef CONFIG_SYS_FDT_PAD

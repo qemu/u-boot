@@ -9,6 +9,7 @@
 #include <dm.h>
 #include <led.h>
 #include <dm/uclass-internal.h>
+#include <linux/string.h>
 
 #define LED_TOGGLE LEDST_COUNT
 

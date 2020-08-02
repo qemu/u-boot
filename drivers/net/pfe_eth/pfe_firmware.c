@@ -14,6 +14,7 @@
 #include <log.h>
 #include <malloc.h>
 #include <linux/bitops.h>
+#include <linux/string.h>
 #include <net/pfe_eth/pfe_eth.h>
 #include <net/pfe_eth/pfe_firmware.h>
 #include <spi_flash.h>

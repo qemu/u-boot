@@ -16,6 +16,7 @@
 #include <asm/arch-rockchip/gpio.h>
 #include <dm/pinctrl.h>
 #include <dt-bindings/clock/rk3288-cru.h>
+#include <linux/string.h>
 
 enum {
 	ROCKCHIP_GPIOS_PER_BANK		= 32,

@@ -41,6 +41,7 @@
 #include <efi_selftest.h>
 #include <efi_loader.h>
 #include <efi_load_initrd.h>
+#include <linux/string.h>
 
 static struct efi_boot_services *boottime;
 

@@ -10,6 +10,7 @@
 #include <sysreset.h>
 #include <asm/state.h>
 #include <asm/test.h>
+#include <linux/string.h>
 
 static int sandbox_warm_sysreset_request(struct udevice *dev,
 					 enum sysreset_t type)

@@ -28,6 +28,7 @@
 #include <linux/delay.h>
 #include <linux/err.h>
 #include <linux/log2.h>
+#include <linux/string.h>
 #include <linux/stringify.h>
 
 DECLARE_GLOBAL_DATA_PTR;

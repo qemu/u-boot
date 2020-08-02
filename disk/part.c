@@ -14,6 +14,7 @@
 #include <malloc.h>
 #include <part.h>
 #include <ubifs_uboot.h>
+#include <linux/string.h>
 
 #undef	PART_DEBUG
 

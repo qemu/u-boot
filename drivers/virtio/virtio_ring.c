@@ -15,6 +15,7 @@
 #include <virtio_ring.h>
 #include <linux/bug.h>
 #include <linux/compat.h>
+#include <linux/string.h>
 
 int virtqueue_add(struct virtqueue *vq, struct virtio_sg *sgs[],
 		  unsigned int out_sgs, unsigned int in_sgs)

@@ -34,6 +34,7 @@
 #include <cpsw.h>
 #include <watchdog.h>
 #include <asm/mach-types.h>
+#include <linux/string.h>
 #include "../common/factoryset.h"
 
 DECLARE_GLOBAL_DATA_PTR;

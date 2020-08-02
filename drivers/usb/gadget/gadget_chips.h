@@ -14,6 +14,8 @@
  * Ported to U-Boot by: Thomas Smits <ts.smits@gmail.com> and
  *                      Remy Bohmer <linux@bohmer.net>
  */
+#include <linux/string.h>
+
 #ifdef CONFIG_USB_GADGET_NET2280
 #define	gadget_is_net2280(g)	(!strcmp("net2280", (g)->name))
 #else

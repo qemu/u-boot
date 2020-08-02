@@ -46,6 +46,7 @@
 #include <linux/iopoll.h>
 #include <linux/bug.h>
 #include <linux/err.h>
+#include <linux/string.h>
 
 /*
  * The driver only uses one single LUT entry, that is updated on

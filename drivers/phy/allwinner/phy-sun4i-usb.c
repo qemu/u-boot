@@ -26,6 +26,7 @@
 #include <linux/bitops.h>
 #include <linux/delay.h>
 #include <linux/err.h>
+#include <linux/string.h>
 
 #define REG_ISCR			0x00
 #define REG_PHYCTL_A10			0x04

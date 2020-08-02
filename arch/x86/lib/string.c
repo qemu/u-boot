@@ -7,6 +7,7 @@
 
 /* From glibc-2.14, sysdeps/i386/memset.c */
 
+#include <linux/string.h>
 #include <linux/types.h>
 #include <linux/compiler.h>
 #include <asm/string.h>

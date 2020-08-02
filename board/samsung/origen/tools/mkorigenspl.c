@@ -9,6 +9,7 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <string.h>
+#include <linux/string.h>
 #include <sys/stat.h>
 
 #define BUFSIZE			(16*1024)

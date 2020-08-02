@@ -22,6 +22,7 @@
 #include <asm/unaligned.h>
 #include <part.h>
 #include <usb.h>
+#include <linux/string.h>
 
 #ifdef CONFIG_USB_STORAGE
 static int usb_stor_curr_dev = -1; /* current device */

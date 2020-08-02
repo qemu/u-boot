@@ -11,6 +11,7 @@
 #include <malloc.h>
 #include <asm/global_data.h>
 #include <linux/bitops.h>
+#include <linux/string.h>
 
 #include <asm/arcregs.h>
 

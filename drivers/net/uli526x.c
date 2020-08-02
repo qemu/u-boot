@@ -17,6 +17,7 @@
 #include <pci.h>
 #include <miiphy.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 /* some kernel function compatible define */
 

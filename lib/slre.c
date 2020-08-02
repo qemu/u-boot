@@ -26,6 +26,7 @@
 #endif /* SLRE_TEST */
 
 #include <errno.h>
+#include <linux/string.h>
 
 #include <slre.h>
 

@@ -24,6 +24,7 @@
 #include <linux/libfdt.h>
 #endif
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include "../../../arch/powerpc/cpu/mpc83xx/hrcw/hrcw.h"
 #include "../../../arch/powerpc/cpu/mpc83xx/elbc/elbc.h"

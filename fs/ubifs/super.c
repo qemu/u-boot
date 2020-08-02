@@ -38,6 +38,7 @@
 #include <linux/printk.h>
 #include <linux/stat.h>
 #include <linux/err.h>
+#include <linux/string.h>
 #include "ubifs.h"
 #include <ubi_uboot.h>
 #include <linux/stringify.h>

@@ -8,6 +8,7 @@
 #include <i2c.h>
 #include <mapmem.h>
 #include <rtc.h>
+#include <linux/string.h>
 
 #define MAX_RTC_BYTES 32
 

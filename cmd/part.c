@@ -21,6 +21,7 @@
 #include <env.h>
 #include <part.h>
 #include <vsprintf.h>
+#include <linux/string.h>
 
 enum cmd_part_info {
 	CMD_PART_INFO_START = 0,

@@ -19,6 +19,7 @@
 #include <asm/arch/dram.h>
 #include <asm/arch/misc.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

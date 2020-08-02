@@ -13,6 +13,7 @@
 #include <linux/delay.h>
 #include <linux/errno.h>
 #include <fsl_errata.h>
+#include <linux/string.h>
 #include "fsl_corenet2_serdes.h"
 
 #ifdef CONFIG_SYS_FSL_SRDS_1

@@ -82,6 +82,7 @@
 #include <linux/bug.h>
 #include <linux/err.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #endif
 
 #include <linux/math64.h>

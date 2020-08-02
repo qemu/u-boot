@@ -20,6 +20,7 @@
 #include <asm/cache.h>
 #include <jffs2/jffs2.h>
 #include <linux/mtd/mtd.h>
+#include <linux/string.h>
 
 #include <asm/io.h>
 #include <dm/device-internal.h>

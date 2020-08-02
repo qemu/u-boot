@@ -7,6 +7,7 @@
 #include <log.h>
 #include <linux/libfdt.h>
 #include <fdt_support.h>
+#include <linux/string.h>
 
 #include <asm/immap_85xx.h>
 #include <asm/io.h>

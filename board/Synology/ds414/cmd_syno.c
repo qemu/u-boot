@@ -13,6 +13,7 @@
 #include <spi.h>
 #include <spi_flash.h>
 #include <linux/mtd/mtd.h>
+#include <linux/string.h>
 
 #include <asm/io.h>
 #include "../drivers/ddr/marvell/axp/ddr3_init.h"

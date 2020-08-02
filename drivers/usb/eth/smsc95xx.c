@@ -18,6 +18,7 @@
 #include <asm/unaligned.h>
 #include <linux/delay.h>
 #include <linux/mii.h>
+#include <linux/string.h>
 #include "usb_ether.h"
 
 /* SMSC LAN95xx based USB 2.0 Ethernet Devices */

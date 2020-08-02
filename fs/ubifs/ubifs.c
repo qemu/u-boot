@@ -18,6 +18,7 @@
 #include <malloc.h>
 #include <memalign.h>
 #include <asm/global_data.h>
+#include <linux/string.h>
 #include "ubifs.h"
 #include <part.h>
 #include <dm/devres.h>

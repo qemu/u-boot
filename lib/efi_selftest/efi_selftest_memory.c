@@ -11,6 +11,7 @@
  */
 
 #include <efi_selftest.h>
+#include <linux/string.h>
 
 #define EFI_ST_NUM_PAGES 8
 

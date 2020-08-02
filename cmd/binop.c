@@ -7,6 +7,7 @@
 #include <malloc.h>
 #include <mapmem.h>
 #include <linux/ctype.h>
+#include <linux/string.h>
 
 enum {
 	OP_ID_XOR,

@@ -16,6 +16,7 @@
 #include <fsl_esdhc.h>
 #include <spi_flash.h>
 #include <asm/global_data.h>
+#include <linux/string.h>
 #include "../common/spl.h"
 
 DECLARE_GLOBAL_DATA_PTR;

@@ -10,6 +10,7 @@
 #include <malloc.h>
 #include <dm/pinctrl.h>
 #include <linux/io.h>
+#include <linux/string.h>
 
 #include "pinctrl-mtmips-common.h"
 

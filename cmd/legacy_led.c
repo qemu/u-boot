@@ -13,6 +13,7 @@
 #include <config.h>
 #include <command.h>
 #include <status_led.h>
+#include <linux/string.h>
 
 struct led_tbl_s {
 	char		*string;	/* String for use in the command */

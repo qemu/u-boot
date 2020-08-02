@@ -18,6 +18,7 @@
 #include <linux/delay.h>
 #include <linux/err.h>
 #include <linux/io.h>
+#include <linux/string.h>
 #include "virtio_pci.h"
 
 #define VIRTIO_PCI_DRV_NAME	"virtio-pci.m"

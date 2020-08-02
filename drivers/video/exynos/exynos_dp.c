@@ -24,6 +24,7 @@
 #include <asm/arch/dp.h>
 #include <asm/arch/pinmux.h>
 #include <asm/arch/power.h>
+#include <linux/string.h>
 
 #include "exynos_dp_lowlevel.h"
 

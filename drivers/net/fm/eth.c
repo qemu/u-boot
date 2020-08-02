@@ -25,6 +25,7 @@
 #include <fsl_tgec.h>
 #include <fsl_memac.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include "fm.h"
 

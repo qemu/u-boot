@@ -17,6 +17,7 @@
 #include <linux/bitops.h>
 #include <linux/io.h>
 #include <linux/iopoll.h>
+#include <linux/string.h>
 
 #define SNFI_MAC_CTL			0x500
 #define MAC_XIO_SEL			BIT(4)

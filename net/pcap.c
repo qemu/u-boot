@@ -5,6 +5,7 @@
 
 #include <common.h>
 #include <net.h>
+#include <linux/string.h>
 #include <net/pcap.h>
 #include <time.h>
 #include <asm/io.h>

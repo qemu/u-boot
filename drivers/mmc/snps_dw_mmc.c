@@ -17,6 +17,7 @@
 #include <linux/libfdt.h>
 #include <linux/err.h>
 #include <malloc.h>
+#include <linux/string.h>
 
 #define CLOCK_MIN		400000	/*  400 kHz */
 #define FIFO_MIN		8

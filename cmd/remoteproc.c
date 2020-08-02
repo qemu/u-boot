@@ -9,6 +9,7 @@
 #include <errno.h>
 #include <malloc.h>
 #include <remoteproc.h>
+#include <linux/string.h>
 
 /**
  * print_remoteproc_list() - print all the remote processor devices

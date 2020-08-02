@@ -4,6 +4,7 @@
  */
 
 #include <common.h>
+#include <string.h>
 #include <tee.h>
 #include <broadcom/chimp.h>
 

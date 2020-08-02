@@ -28,6 +28,7 @@
 #include <dm/pinctrl.h>
 #include <dt-bindings/clock/rk3288-cru.h>
 #include <linux/bitops.h>
+#include <linux/string.h>
 #include "designware.h"
 
 DECLARE_GLOBAL_DATA_PTR;

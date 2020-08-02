@@ -20,6 +20,7 @@
 #include <asm/arch-rockchip/sdram_rk3328.h>
 #include <asm/arch-rockchip/uart.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 struct dram_info {
 #ifdef CONFIG_TPL_BUILD

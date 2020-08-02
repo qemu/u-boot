@@ -32,6 +32,7 @@
 #include <asm/msr.h>
 #include <asm/mtrr.h>
 #include <asm/processor-flags.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

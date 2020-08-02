@@ -17,6 +17,7 @@
 #include <asm/arch/cpu.h>
 #include <dm/device_compat.h>
 #include <linux/bitops.h>
+#include <linux/string.h>
 
 #define TBG_SEL		0x0
 #define DIV_SEL0	0x4

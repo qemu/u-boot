@@ -29,6 +29,7 @@
 #include <linux/delay.h>
 #include <linux/err.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 /* Ethernet frame engine register */
 #define PDMA_RELATED		0x0800

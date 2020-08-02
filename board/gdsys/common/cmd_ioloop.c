@@ -9,6 +9,7 @@
 #include <console.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include <gdsys_fpga.h>
 

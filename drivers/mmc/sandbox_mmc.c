@@ -11,6 +11,7 @@
 #include <log.h>
 #include <mmc.h>
 #include <asm/test.h>
+#include <linux/string.h>
 
 struct sandbox_mmc_plat {
 	struct mmc_config cfg;

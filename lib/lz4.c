@@ -8,6 +8,7 @@
    - LZ4 public forum : https://groups.google.com/forum/#!forum/lz4c
 */
 
+#include <linux/string.h>
 
 /**************************************
 *  Reading and writing into memory

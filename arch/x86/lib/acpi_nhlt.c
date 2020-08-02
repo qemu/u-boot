@@ -17,6 +17,7 @@
 #include <asm/acpi_nhlt.h>
 #include <asm/unaligned.h>
 #include <dm/acpi.h>
+#include <linux/string.h>
 
 #define NHLT_RID		1
 #define NHLT_SSID		1

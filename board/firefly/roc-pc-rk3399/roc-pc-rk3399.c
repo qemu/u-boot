@@ -9,6 +9,7 @@
 #include <log.h>
 #include <spl_gpio.h>
 #include <asm/io.h>
+#include <linux/string.h>
 #include <power/regulator.h>
 
 #include <asm/arch-rockchip/cru.h>

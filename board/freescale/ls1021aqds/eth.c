@@ -20,6 +20,7 @@
 #include <fsl_mdio.h>
 #include <tsec.h>
 #include <malloc.h>
+#include <linux/string.h>
 
 #include "../common/sgmii_riser.h"
 #include "../common/qixis.h"

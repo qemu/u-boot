@@ -23,6 +23,7 @@
 #include <div64.h>
 #include <malloc.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #include <config.h>
 #include "nand.h"

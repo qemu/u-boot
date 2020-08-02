@@ -27,6 +27,7 @@
 #include <asm/arch/fsl_serdes.h>
 #include <asm/arch/soc.h>
 #include <asm/arch-fsl-layerscape/fsl_icid.h>
+#include <linux/string.h>
 
 #include "../common/qixis.h"
 #include "ls1088a_qixis.h"

@@ -8,6 +8,7 @@
 #include <asm/cache.h>
 #include <asm/io.h>
 #include <asm/ptrace.h>
+#include <linux/string.h>
 
 #include <asm/system.h>
 #include <cavium/thunderx_svc.h>

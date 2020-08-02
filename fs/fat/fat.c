@@ -22,6 +22,7 @@
 #include <asm/cache.h>
 #include <linux/compiler.h>
 #include <linux/ctype.h>
+#include <linux/string.h>
 
 /*
  * Convert a string to lowercase.  Converts at most 'len' characters,

@@ -5,6 +5,7 @@
  */
 
 #include <common.h>
+#include <linux/string.h>
 #include <linux/usb/ch9.h>
 
 int g_dnl_bind_fixup(struct usb_device_descriptor *dev, const char *name)

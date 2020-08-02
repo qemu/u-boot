@@ -19,6 +19,7 @@
 #include <linux/err.h>
 #include <linux/kernel.h>
 #include <linux/soc/ti/ti_sci_protocol.h>
+#include <linux/string.h>
 #include "ti_sci_proc.h"
 
 /*

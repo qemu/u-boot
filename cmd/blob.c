@@ -9,6 +9,7 @@
 #include <malloc.h>
 #include <asm/byteorder.h>
 #include <linux/compiler.h>
+#include <linux/string.h>
 
 /**
  * blob_decap() - Decapsulate the data as a blob

@@ -13,6 +13,7 @@
 #include <i2c.h>
 #include <asm/unaligned.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include "tpm_internal.h"
 

@@ -338,6 +338,7 @@ int fdt_overlay_apply_verbose(void *fdt, void *fdto);
  */
 int fdt_get_cells_len(const void *blob, char *nr_cells_name);
 
+#include <linux/string.h>
 #endif /* ifdef CONFIG_OF_LIBFDT */
 
 #ifdef USE_HOSTCC

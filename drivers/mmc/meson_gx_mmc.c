@@ -17,6 +17,7 @@
 #include <asm/arch/sd_emmc.h>
 #include <linux/delay.h>
 #include <linux/log2.h>
+#include <linux/string.h>
 
 static inline void *get_regbase(const struct mmc *mmc)
 {

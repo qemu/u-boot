@@ -10,6 +10,7 @@
 #include <asm/arch/stm32prog.h>
 #include <asm/arch/sys_proto.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #include "stm32prog.h"
 
 static int stm32prog_set_phase(struct stm32prog_data *data, u8 phase,

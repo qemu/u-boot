@@ -9,6 +9,7 @@
 #include <image.h>
 #include <asm/arch/stm32prog.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 #include "stm32prog.h"
 
 struct stm32prog_data *stm32prog_data;

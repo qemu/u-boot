@@ -12,6 +12,7 @@
 #include <asm/arch/clock.h>
 #include <asm/arch/hardware.h>
 #include <asm/ti-common/keystone_net.h>
+#include <linux/string.h>
 
 unsigned int external_clk[ext_clk_count] = {
 	[sys_clk]	=	122880000,

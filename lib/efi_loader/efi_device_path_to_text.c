@@ -8,6 +8,7 @@
 #include <common.h>
 #include <blk.h>
 #include <efi_loader.h>
+#include <linux/string.h>
 
 #define MAC_OUTPUT_LEN 22
 #define UNKNOWN_OUTPUT_LEN 23

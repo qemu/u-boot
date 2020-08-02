@@ -14,6 +14,7 @@
 #include <env.h>
 #include <stdio_dev.h>
 #include <video_console.h>
+#include <linux/string.h>
 
 #define EFI_COUT_MODE_2 2
 #define EFI_MAX_COUT_MODE 3

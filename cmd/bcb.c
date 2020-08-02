@@ -11,6 +11,7 @@
 #include <display_options.h>
 #include <log.h>
 #include <part.h>
+#include <linux/string.h>
 
 enum bcb_cmd {
 	BCB_CMD_LOAD,

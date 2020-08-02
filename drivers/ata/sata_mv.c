@@ -51,6 +51,7 @@
 #include <linux/errno.h>
 #include <asm/io.h>
 #include <linux/mbus.h>
+#include <linux/string.h>
 
 #include <asm/arch/soc.h>
 #if defined(CONFIG_ARCH_KIRKWOOD)

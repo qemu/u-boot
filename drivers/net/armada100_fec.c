@@ -22,6 +22,7 @@
 #include <linux/mii.h>
 #include <asm/io.h>
 #include <asm/arch/armada100.h>
+#include <linux/string.h>
 #include "armada100_fec.h"
 
 #define  PHY_ADR_REQ     0xFF	/* Magic number to read/write PHY address */

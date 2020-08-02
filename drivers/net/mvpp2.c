@@ -43,6 +43,7 @@
 #include <asm-generic/gpio.h>
 #include <fdt_support.h>
 #include <linux/mdio.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

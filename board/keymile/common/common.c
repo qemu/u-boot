@@ -19,6 +19,7 @@
 #include <asm/io.h>
 #include <linux/ctype.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #if defined(CONFIG_POST)
 #include "post.h"

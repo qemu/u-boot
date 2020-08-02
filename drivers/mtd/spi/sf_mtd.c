@@ -9,6 +9,7 @@
 #include <linux/errno.h>
 #include <linux/mtd/mtd.h>
 #include <spi_flash.h>
+#include <linux/string.h>
 
 static struct mtd_info sf_mtd_info;
 static bool sf_mtd_registered;

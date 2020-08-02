@@ -17,6 +17,7 @@
 #include <asm/arch/sdmmc_defs.h>
 #include <asm-generic/gpio.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #define WATCHDOG_COUNT		(100000)
 

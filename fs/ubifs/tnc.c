@@ -30,6 +30,7 @@
 #include <linux/compat.h>
 #include <linux/err.h>
 #include <linux/stat.h>
+#include <linux/string.h>
 #endif
 #include "ubifs.h"
 

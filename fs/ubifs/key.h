@@ -33,6 +33,7 @@
  * reserved for "." and "..". %2 is reserved for "end of readdir" marker. This
  * function makes sure the reserved values are not used.
  */
+#include <linux/string.h>
 static inline uint32_t key_mask_hash(uint32_t hash)
 {
 	hash &= UBIFS_S_KEY_HASH_MASK;

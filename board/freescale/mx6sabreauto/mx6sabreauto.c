@@ -32,6 +32,7 @@
 #include <asm/mach-imx/video.h>
 #include <asm/arch/crm_regs.h>
 #include <pca953x.h>
+#include <linux/string.h>
 #include <power/pmic.h>
 #include <power/pfuze100_pmic.h>
 #include "../common/pfuze.h"

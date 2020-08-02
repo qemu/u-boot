@@ -29,6 +29,7 @@
 #include <linux/log2.h>
 #include <asm/processor.h>
 #include <dm.h>
+#include <linux/string.h>
 
 #include "brcmnand.h"
 #include "brcmnand_compat.h"

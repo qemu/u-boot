@@ -11,6 +11,7 @@
 
 #include <common.h>
 #include <efi_api.h>
+#include <linux/string.h>
 
 static const efi_guid_t loaded_image_guid = EFI_LOADED_IMAGE_PROTOCOL_GUID;
 static const efi_guid_t fdt_guid = EFI_FDT_GUID;

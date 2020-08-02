@@ -18,6 +18,7 @@
 #include <asm/mach-imx/iomux-v3.h>
 #include <asm/mach-imx/mxc_i2c.h>
 #include <spl.h>
+#include <linux/string.h>
 
 #include "platinum.h"
 

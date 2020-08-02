@@ -10,6 +10,7 @@
 #include <asm/global_data.h>
 #include <linux/libfdt.h>
 #include <spl.h>
+#include <linux/string.h>
 
 #include <asm/arch/sys_proto.h>
 

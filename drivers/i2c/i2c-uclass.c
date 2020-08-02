@@ -16,6 +16,7 @@
 #include <asm/gpio.h>
 #endif
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #define I2C_MAX_OFFSET_LEN	4
 

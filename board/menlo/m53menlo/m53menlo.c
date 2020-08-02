@@ -34,6 +34,7 @@
 #include <netdev.h>
 #include <spl.h>
 #include <splash.h>
+#include <linux/string.h>
 #include <usb/ehci-ci.h>
 #include <video_console.h>
 

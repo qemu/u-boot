@@ -28,6 +28,7 @@
 #include <asm/gpio.h>
 #include <asm/omap_common.h>
 #include <linux/compiler.h>
+#include <linux/string.h>
 
 /* Declarations */
 extern omap3_sysinfo sysinfo;

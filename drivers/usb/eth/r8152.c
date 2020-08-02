@@ -15,6 +15,7 @@
 #include <linux/delay.h>
 #include <linux/mii.h>
 #include <linux/bitops.h>
+#include <linux/string.h>
 #include "usb_ether.h"
 #include "r8152.h"
 

@@ -25,6 +25,7 @@
 #include <asm/arch/global_nvs.h>
 #include <dm/acpi.h>
 #include <linux/err.h>
+#include <linux/string.h>
 
 /*
  * IASL compiles the dsdt entries and writes the hex values

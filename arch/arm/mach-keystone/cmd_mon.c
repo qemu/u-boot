@@ -9,6 +9,7 @@
 #include <common.h>
 #include <command.h>
 #include <image.h>
+#include <linux/string.h>
 #include <mach/mon.h>
 asm(".arch_extension sec\n\t");
 

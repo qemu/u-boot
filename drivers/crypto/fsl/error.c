@@ -10,6 +10,7 @@
 #include <common.h>
 #include <log.h>
 #include <malloc.h>
+#include <linux/string.h>
 #include "desc.h"
 #include "jr.h"
 

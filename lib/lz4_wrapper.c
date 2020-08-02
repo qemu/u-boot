@@ -8,6 +8,7 @@
 #include <image.h>
 #include <lz4.h>
 #include <linux/kernel.h>
+#include <linux/string.h>
 #include <linux/types.h>
 #include <asm/unaligned.h>
 

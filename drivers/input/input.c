@@ -19,6 +19,7 @@
 #endif
 #include <time.h>
 #include <linux/input.h>
+#include <linux/string.h>
 
 enum {
 	/* These correspond to the lights on the keyboard */

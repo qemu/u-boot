@@ -18,6 +18,7 @@
 #include <mmc.h>
 #include <fsl_esdhc.h>
 #include <i2c.h>
+#include <linux/string.h>
 
 #include "t4rdb.h"
 

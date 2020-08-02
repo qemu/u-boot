@@ -12,6 +12,7 @@
 #include <asm/gpio.h>
 #include <asm/io.h>
 #include <malloc.h>
+#include <linux/string.h>
 
 enum imx_rgpio2p_direction {
 	IMX_RGPIO2P_DIRECTION_IN,

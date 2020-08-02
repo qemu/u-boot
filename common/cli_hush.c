@@ -88,6 +88,7 @@
 #define CONFIG_SYS_PROMPT_HUSH_PS2	"> "
 #endif
 #include <asm/global_data.h>
+#include <linux/string.h>
 #endif
 #ifndef __U_BOOT__
 #include <ctype.h>     /* isalpha, isdigit */

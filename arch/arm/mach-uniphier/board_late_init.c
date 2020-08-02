@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <linux/io.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #include "init.h"
 

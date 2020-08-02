@@ -33,6 +33,7 @@
 #include <dm/device-internal.h>
 #include <dm/of_extra.h>
 #include <dm/uclass-internal.h>
+#include <linux/string.h>
 
 #ifdef DEBUG_TRACE
 #define debug_trace(fmt, b...)	debug(fmt, #b)

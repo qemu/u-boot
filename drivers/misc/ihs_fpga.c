@@ -16,6 +16,7 @@
 #include <asm/gpio.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include "ihs_fpga.h"
 

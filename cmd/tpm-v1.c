@@ -10,6 +10,7 @@
 #include <asm/unaligned.h>
 #include <tpm-common.h>
 #include <tpm-v1.h>
+#include <linux/string.h>
 #include "tpm-user-utils.h"
 
 static int do_tpm_startup(struct cmd_tbl *cmdtp, int flag, int argc,

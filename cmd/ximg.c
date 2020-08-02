@@ -26,6 +26,7 @@
 #include <asm/byteorder.h>
 #include <asm/cache.h>
 #include <asm/io.h>
+#include <linux/string.h>
 
 #ifndef CONFIG_SYS_XIMG_LEN
 /* use 8MByte as default max gunzip size */

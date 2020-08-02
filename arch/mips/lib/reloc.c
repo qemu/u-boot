@@ -33,6 +33,7 @@
 #include <asm/relocs.h>
 #include <asm/sections.h>
 #include <linux/bitops.h>
+#include <linux/string.h>
 
 /**
  * read_uint() - Read an unsigned integer from the buffer

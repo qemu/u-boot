@@ -11,6 +11,7 @@
 #include <dm/device-internal.h>
 #include <dm/root.h>
 #include <dm/uclass-internal.h>
+#include <linux/string.h>
 
 int led_get_by_label(const char *label, struct udevice **devp)
 {

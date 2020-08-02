@@ -16,6 +16,7 @@
 #include <log.h>
 #include <dm/uclass-internal.h>
 #include <misc.h>
+#include <linux/string.h>
 #include <u-boot/crc.h>
 #include <u-boot/sha256.h>
 

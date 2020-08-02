@@ -18,6 +18,7 @@
 #include <nand.h>
 #include <dm/devres.h>
 #include <linux/bug.h>
+#include <linux/string.h>
 
 #include <asm/io.h>
 #include <jffs2/jffs2.h>

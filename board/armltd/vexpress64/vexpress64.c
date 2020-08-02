@@ -16,6 +16,7 @@
 #include <asm/io.h>
 #include <linux/compiler.h>
 #include <dm/platform_data/serial_pl01x.h>
+#include <linux/string.h>
 #include "pcie.h"
 #include <asm/armv8/mmu.h>
 

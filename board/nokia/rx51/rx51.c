@@ -38,6 +38,7 @@
 #include <asm/arch/mux.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/arch/mmc_host_def.h>
+#include <linux/string.h>
 
 #include "rx51.h"
 #include "tag_omap.h"

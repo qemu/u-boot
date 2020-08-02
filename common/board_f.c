@@ -55,6 +55,7 @@
 #include <asm/sections.h>
 #include <dm/root.h>
 #include <linux/errno.h>
+#include <linux/string.h>
 
 /*
  * Pointer to initial global data area

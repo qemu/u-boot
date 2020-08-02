@@ -21,6 +21,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <linux/errno.h>
+#include <linux/string.h>
 #include <u-boot/crc.h>
 #else
 #include "mkimage.h"

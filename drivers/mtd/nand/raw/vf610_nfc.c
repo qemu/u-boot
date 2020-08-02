@@ -26,6 +26,7 @@
 #include <time.h>
 #include <dm/device_compat.h>
 #include <linux/printk.h>
+#include <linux/string.h>
 
 #include <linux/mtd/mtd.h>
 #include <linux/mtd/rawnand.h>

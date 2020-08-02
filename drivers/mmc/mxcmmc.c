@@ -27,6 +27,7 @@
 #include <linux/errno.h>
 #include <asm/io.h>
 #include <asm/arch/clock.h>
+#include <linux/string.h>
 
 #define DRIVER_NAME "mxc-mmc"
 

@@ -24,6 +24,8 @@
 #include <asm/dma-mapping.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
+#include <linux/string.h>
+
 #include <linux/dma-mapping.h>
 
 #include "ufs.h"

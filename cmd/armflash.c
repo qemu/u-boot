@@ -10,6 +10,7 @@
 #include <console.h>
 #include <flash.h>
 #include <asm/io.h>
+#include <linux/string.h>
 
 #define MAX_REGIONS 4
 #define MAX_IMAGES 32

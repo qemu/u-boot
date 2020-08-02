@@ -15,6 +15,7 @@
 #include <asm/arch/sci/sci.h>
 #include <linux/delay.h>
 #include <linux/libfdt.h>
+#include <linux/string.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

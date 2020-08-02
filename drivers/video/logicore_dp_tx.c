@@ -15,6 +15,7 @@
 #include <dm.h>
 #include <errno.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #include "axi.h"
 #include "logicore_dp_dpcd.h"

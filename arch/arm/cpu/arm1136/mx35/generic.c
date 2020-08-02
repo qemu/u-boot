@@ -24,6 +24,7 @@
 #endif
 #include <netdev.h>
 #include <spl.h>
+#include <linux/string.h>
 
 #define CLK_CODE(arm, ahb, sel) (((arm) << 16) + ((ahb) << 8) + (sel))
 #define CLK_CODE_ARM(c)		(((c) >> 16) & 0xFF)

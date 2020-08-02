@@ -80,6 +80,7 @@ Add SNMP
 #include <malloc.h>
 #include <time.h>
 #include <linux/compiler.h>
+#include <linux/string.h>
 
 /* forward definition of function used for the uboot interface */
 void uboot_push_packet_len(int len);

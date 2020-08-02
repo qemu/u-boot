@@ -16,6 +16,7 @@
 #include <dm.h>
 #include <dm/uclass-internal.h>
 #endif
+#include <linux/string.h>
 
 /**
  * smbios_add_string() - add a string to the string area

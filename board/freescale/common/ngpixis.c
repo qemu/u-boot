@@ -32,6 +32,7 @@
 #include <common.h>
 #include <command.h>
 #include <asm/io.h>
+#include <linux/string.h>
 
 #include "ngpixis.h"
 

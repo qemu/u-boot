@@ -8,6 +8,7 @@
 #ifndef CONFIG_SYS_COREBOOT
 #error This driver requires coreboot
 #endif
+#include <linux/string.h>
 
 #include <asm/arch/sysinfo.h>
 

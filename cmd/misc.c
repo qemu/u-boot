@@ -12,6 +12,7 @@
 #include <console.h>
 #include <time.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 static int do_sleep(struct cmd_tbl *cmdtp, int flag, int argc,
 		    char *const argv[])

@@ -26,6 +26,7 @@
 #include <netdev.h>
 #include <miiphy.h>
 #include <micrel.h>
+#include <linux/string.h>
 
 #include <common.h>
 #include <malloc.h>

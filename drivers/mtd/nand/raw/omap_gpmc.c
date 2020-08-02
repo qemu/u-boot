@@ -15,6 +15,7 @@
 #include <linux/compiler.h>
 #include <nand.h>
 #include <linux/mtd/omap_elm.h>
+#include <linux/string.h>
 
 #define BADBLOCK_MARKER_LENGTH	2
 #define SECTOR_BYTES		512
