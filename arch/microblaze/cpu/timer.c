@@ -20,7 +20,7 @@ DECLARE_GLOBAL_DATA_PTR;
 volatile int timestamp = 0;
 microblaze_timer_t *tmr;
 
-ulong get_timer (ulong base)
+ulong get_timer(ulong base)
 {
 	if (tmr)
 		return timestamp - base;

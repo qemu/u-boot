@@ -89,7 +89,7 @@ void timer_interrupt(struct pt_regs *regs)
 #endif /* CONFIG_LED_STATUS */
 }
 
-ulong get_timer (ulong base)
+ulong get_timer(ulong base)
 {
 	return (timestamp - base);
 }

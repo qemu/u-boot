@@ -39,8 +39,9 @@ unsigned long usec2ticks(unsigned long usec)
  */
 void __udelay(unsigned long usec)
 {
-	ulong ticks = usec2ticks (usec);
-	wait_ticks (ticks);
+	ulong ticks = usec2ticks(usec);
+
+	wait_ticks(ticks);
 }
 
 /* ------------------------------------------------------------------------- */

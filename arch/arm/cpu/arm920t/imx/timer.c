@@ -44,7 +44,7 @@ static ulong get_timer_masked (void)
 	return TCN1;
 }
 
-ulong get_timer (ulong base)
+ulong get_timer(ulong base)
 {
 	return get_timer_masked() - base;
 }

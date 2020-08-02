@@ -750,14 +750,14 @@ static int ne2k_send(struct eth_device *dev, void *packet, int length)
 	pkey = -1;
 
 	dp83902a_send((u8 *) packet, length, 666);
-	tmo = get_timer (0) + TOUT * CONFIG_SYS_HZ;
+	tmo = get_timer(0) + TOUT * CONFIG_SYS_HZ;
 	while(1) {
 		dp83902a_poll();
 		if (pkey != -1) {
 			PRINTK("Packet sucesfully sent\n");
 			return 0;
 		}
-		if (get_timer (0) >= tmo) {
+		if (get_timer(0) >= tmo) {
 			printf("transmission error (timoeut)\n");
 			return 0;
 		}

@@ -19,7 +19,7 @@ static ulong get_timer_masked (void)
 	return OSCR;
 }
 
-ulong get_timer (ulong base)
+ulong get_timer(ulong base)
 {
 	return get_timer_masked ();
 }

@@ -164,14 +164,14 @@ static void print_packet (byte *, int);
 
 static int poll4int (struct eth_device *dev, byte mask, int timeout)
 {
-	int tmo = get_timer (0) + timeout * CONFIG_SYS_HZ;
+	int tmo = get_timer(0) + timeout * CONFIG_SYS_HZ;
 	int is_timeout = 0;
 	word old_bank = SMC_inw(dev, LAN91C96_BANK_SELECT);
 
 	PRINTK2 ("Polling...\n");
 	SMC_SELECT_BANK(dev, 2);
 	while ((SMC_inw(dev, LAN91C96_INT_STATS) & mask) == 0) {
-		if (get_timer (0) >= tmo) {
+		if (get_timer(0) >= tmo) {
 			is_timeout = 1;
 			break;
 		}

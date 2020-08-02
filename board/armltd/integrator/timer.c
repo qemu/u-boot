@@ -119,7 +119,7 @@ static ulong get_timer_masked (void)
 	return timestamp;
 }
 
-ulong get_timer (ulong base_ticks)
+ulong get_timer(ulong base_ticks)
 {
 	return get_timer_masked () - base_ticks;
 }

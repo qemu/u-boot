@@ -140,10 +140,10 @@ static int ACEX1K_ps_load(Altera_desc *desc, const void *buf, size_t bsize)
 		udelay(2);		/* T_cf2st1 < 4us	*/
 
 		/* Wait for nSTATUS to be released (i.e. deasserted) */
-		ts = get_timer (0);		/* get current time */
+		ts = get_timer(0);		/* get current time */
 		do {
 			CONFIG_FPGA_DELAY ();
-			if (get_timer (ts) > CONFIG_SYS_FPGA_WAIT) {	/* check the time */
+			if (get_timer(ts) > CONFIG_SYS_FPGA_WAIT) {	/* check the time */
 				puts ("** Timeout waiting for STATUS to go high.\n");
 				(*fn->abort) (cookie);
 				return FPGA_FAIL;

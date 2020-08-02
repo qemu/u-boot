@@ -36,11 +36,11 @@ static int rtc_post_skip (ulong * diff)
 	ulong start2;
 
 	rtc_get (&tm1);
-	start1 = get_timer (0);
+	start1 = get_timer(0);
 
 	while (1) {
 		rtc_get (&tm2);
-		start2 = get_timer (0);
+		start2 = get_timer(0);
 		if (tm1.tm_sec != tm2.tm_sec)
 			break;
 		if (start2 - start1 > 1500)
