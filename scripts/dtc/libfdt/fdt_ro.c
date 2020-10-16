@@ -16,7 +16,7 @@ static int fdt_nodename_eq_(const void *fdt, int offset,
 	int olen;
 	const char *p = fdt_get_name(fdt, offset, &olen);
 
-	if (!p || (fdt_chk_extra() && olen < len))
+	if (!p || olen < len)
 		/* short match */
 		return 0;
 
@@ -39,7 +39,7 @@ const char *fdt_get_string(const void *fdt, int stroffset, int *lenp)
 	int err;
 	const char *s, *n;
 
-	if (!fdt_chk_extra()) {
+	if (can_assume(VALID_INPUT)) {
 		s = (const char *)fdt + fdt_off_dt_strings(fdt) + stroffset;
 
 		if (lenp)
@@ -53,25 +53,27 @@ const char *fdt_get_string(const void *fdt, int stroffset, int *lenp)
 
 	err = -FDT_ERR_BADOFFSET;
 	absoffset = stroffset + fdt_off_dt_strings(fdt);
-	if (absoffset >= totalsize)
+	if (absoffset >= (unsigned)totalsize)
 		goto fail;
 	len = totalsize - absoffset;
 
 	if (fdt_magic(fdt) == FDT_MAGIC) {
 		if (stroffset < 0)
 			goto fail;
-		if (!fdt_chk_version() || fdt_version(fdt) >= 17) {
-			if (stroffset >= fdt_size_dt_strings(fdt))
+		if (can_assume(LATEST) || fdt_version(fdt) >= 17) {
+			if ((unsigned)stroffset >= fdt_size_dt_strings(fdt))
 				goto fail;
 			if ((fdt_size_dt_strings(fdt) - stroffset) < len)
 				len = fdt_size_dt_strings(fdt) - stroffset;
 		}
 	} else if (fdt_magic(fdt) == FDT_SW_MAGIC) {
-		if ((stroffset >= 0)
-		    || (stroffset < -fdt_size_dt_strings(fdt)))
+		unsigned int sw_stroffset = -stroffset;
+
+		if ((stroffset >= 0) ||
+		    (sw_stroffset > fdt_size_dt_strings(fdt)))
 			goto fail;
-		if ((-stroffset) < len)
-			len = -stroffset;
+		if (sw_stroffset < len)
+			len = sw_stroffset;
 	} else {
 		err = -FDT_ERR_INTERNAL;
 		goto fail;
@@ -157,10 +159,10 @@ int fdt_generate_phandle(const void *fdt, uint32_t *phandle)
 
 static const struct fdt_reserve_entry *fdt_mem_rsv(const void *fdt, int n)
 {
-	int offset = n * sizeof(struct fdt_reserve_entry);
-	int absoffset = fdt_off_mem_rsvmap(fdt) + offset;
+	unsigned int offset = n * sizeof(struct fdt_reserve_entry);
+	unsigned int absoffset = fdt_off_mem_rsvmap(fdt) + offset;
 
-	if (fdt_chk_extra()) {
+	if (!can_assume(VALID_INPUT)) {
 		if (absoffset < fdt_off_mem_rsvmap(fdt))
 			return NULL;
 		if (absoffset > fdt_totalsize(fdt) -
@@ -176,7 +178,7 @@ int fdt_get_mem_rsv(const void *fdt, int n, uint64_t *address, uint64_t *size)
 
 	FDT_RO_PROBE(fdt);
 	re = fdt_mem_rsv(fdt, n);
-	if (fdt_chk_extra() && !re)
+	if (!can_assume(VALID_INPUT) && !re)
 		return -FDT_ERR_BADOFFSET;
 
 	*address = fdt64_to_cpu(re->address);
@@ -301,14 +303,13 @@ const char *fdt_get_name(const void *fdt, int nodeoffset, int *len)
 	const char *nameptr;
 	int err;
 
-	if (fdt_chk_extra() &&
-	    (((err = fdt_ro_probe_(fdt)) < 0)
-	     || ((err = fdt_check_node_offset_(fdt, nodeoffset)) < 0)))
-		goto fail;
+	if (((err = fdt_ro_probe_(fdt)) < 0)
+	    || ((err = fdt_check_node_offset_(fdt, nodeoffset)) < 0))
+			goto fail;
 
 	nameptr = nh->name;
 
-	if (fdt_chk_version() && fdt_version(fdt) < 0x10) {
+	if (!can_assume(LATEST) && fdt_version(fdt) < 0x10) {
 		/*
 		 * For old FDT versions, match the naming conventions of V16:
 		 * give only the leaf name (after all /). The actual tree
@@ -359,7 +360,8 @@ static const struct fdt_property *fdt_get_property_by_offset_(const void *fdt,
 	int err;
 	const struct fdt_property *prop;
 
-	if (fdt_chk_basic() && (err = fdt_check_prop_offset_(fdt, offset)) < 0) {
+	if (!can_assume(VALID_INPUT) &&
+	    (err = fdt_check_prop_offset_(fdt, offset)) < 0) {
 		if (lenp)
 			*lenp = err;
 		return NULL;
@@ -380,7 +382,7 @@ const struct fdt_property *fdt_get_property_by_offset(const void *fdt,
 	/* Prior to version 16, properties may need realignment
 	 * and this API does not work. fdt_getprop_*() will, however. */
 
-	if (fdt_chk_version() && fdt_version(fdt) < 0x10) {
+	if (!can_assume(LATEST) && fdt_version(fdt) < 0x10) {
 		if (lenp)
 			*lenp = -FDT_ERR_BADVERSION;
 		return NULL;
@@ -402,7 +404,7 @@ static const struct fdt_property *fdt_get_property_namelen_(const void *fdt,
 		const struct fdt_property *prop;
 
 		prop = fdt_get_property_by_offset_(fdt, offset, lenp);
-		if (fdt_chk_extra() && !prop) {
+		if (!can_assume(LIBFDT_FLAWLESS) && !prop) {
 			offset = -FDT_ERR_INTERNAL;
 			break;
 		}
@@ -427,7 +429,7 @@ const struct fdt_property *fdt_get_property_namelen(const void *fdt,
 {
 	/* Prior to version 16, properties may need realignment
 	 * and this API does not work. fdt_getprop_*() will, however. */
-	if (fdt_chk_version() && fdt_version(fdt) < 0x10) {
+	if (!can_assume(LATEST) && fdt_version(fdt) < 0x10) {
 		if (lenp)
 			*lenp = -FDT_ERR_BADVERSION;
 		return NULL;
@@ -458,7 +460,7 @@ const void *fdt_getprop_namelen(const void *fdt, int nodeoffset,
 		return NULL;
 
 	/* Handle realignment */
-	if (fdt_chk_version() && fdt_version(fdt) < 0x10 &&
+	if (!can_assume(LATEST) && fdt_version(fdt) < 0x10 &&
 	    (poffset + sizeof(*prop)) % 8 && fdt32_to_cpu(prop->len) >= 8)
 		return prop->data + 4;
 	return prop->data;
@@ -476,7 +478,7 @@ const void *fdt_getprop_by_offset(const void *fdt, int offset,
 		const char *name;
 		int namelen;
 
-		if (fdt_chk_extra()) {
+		if (!can_assume(VALID_INPUT)) {
 			name = fdt_get_string(fdt, fdt32_to_cpu(prop->nameoff),
 					      &namelen);
 			if (!name) {
@@ -491,7 +493,7 @@ const void *fdt_getprop_by_offset(const void *fdt, int offset,
 	}
 
 	/* Handle realignment */
-	if (fdt_chk_version() && fdt_version(fdt) < 0x10 &&
+	if (!can_assume(LATEST) && fdt_version(fdt) < 0x10 &&
 	    (offset + sizeof(*prop)) % 8 && fdt32_to_cpu(prop->len) >= 8)
 		return prop->data + 4;
 	return prop->data;
@@ -617,7 +619,7 @@ int fdt_supernode_atdepth_offset(const void *fdt, int nodeoffset,
 		}
 	}
 
-	if (fdt_chk_extra()) {
+	if (!can_assume(VALID_INPUT)) {
 		if ((offset == -FDT_ERR_NOTFOUND) || (offset >= 0))
 			return -FDT_ERR_BADOFFSET;
 		else if (offset == -FDT_ERR_BADOFFSET)
@@ -634,7 +636,8 @@ int fdt_node_depth(const void *fdt, int nodeoffset)
 
 	err = fdt_supernode_atdepth_offset(fdt, nodeoffset, 0, &nodedepth);
 	if (err)
-		return (!fdt_chk_extra() || err < 0) ? err : -FDT_ERR_INTERNAL;
+		return (can_assume(LIBFDT_FLAWLESS) || err < 0) ? err :
+			-FDT_ERR_INTERNAL;
 	return nodedepth;
 }
 
@@ -679,7 +682,7 @@ int fdt_node_offset_by_phandle(const void *fdt, uint32_t phandle)
 {
 	int offset;
 
-	if ((phandle == 0) || (phandle == -1))
+	if ((phandle == 0) || (phandle == ~0U))
 		return -FDT_ERR_BADPHANDLE;
 
 	FDT_RO_PROBE(fdt);
@@ -854,68 +857,3 @@ int fdt_node_offset_by_compatible(const void *fdt, int startoffset,
 
 	return offset; /* error from fdt_next_node() */
 }
-
-#if !defined(FDT_ASSUME_MASK) || FDT_ASSUME_MASK != 0xff
-int fdt_check_full(const void *fdt, size_t bufsize)
-{
-	int err;
-	int num_memrsv;
-	int offset, nextoffset = 0;
-	uint32_t tag;
-	unsigned depth = 0;
-	const void *prop;
-	const char *propname;
-
-	if (bufsize < FDT_V1_SIZE)
-		return -FDT_ERR_TRUNCATED;
-	err = fdt_check_header(fdt);
-	if (err != 0)
-		return err;
-	if (bufsize < fdt_totalsize(fdt))
-		return -FDT_ERR_TRUNCATED;
-
-	num_memrsv = fdt_num_mem_rsv(fdt);
-	if (num_memrsv < 0)
-		return num_memrsv;
-
-	while (1) {
-		offset = nextoffset;
-		tag = fdt_next_tag(fdt, offset, &nextoffset);
-
-		if (nextoffset < 0)
-			return nextoffset;
-
-		switch (tag) {
-		case FDT_NOP:
-			break;
-
-		case FDT_END:
-			if (depth != 0)
-				return -FDT_ERR_BADSTRUCTURE;
-			return 0;
-
-		case FDT_BEGIN_NODE:
-			depth++;
-			if (depth > INT_MAX)
-				return -FDT_ERR_BADSTRUCTURE;
-			break;
-
-		case FDT_END_NODE:
-			if (depth == 0)
-				return -FDT_ERR_BADSTRUCTURE;
-			depth--;
-			break;
-
-		case FDT_PROP:
-			prop = fdt_getprop_by_offset(fdt, offset, &propname,
-						     &err);
-			if (!prop)
-				return err;
-			break;
-
-		default:
-			return -FDT_ERR_INTERNAL;
-		}
-	}
-}
-#endif
