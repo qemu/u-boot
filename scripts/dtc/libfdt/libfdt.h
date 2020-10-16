@@ -9,6 +9,10 @@
 #include "libfdt_env.h"
 #include "fdt.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #define FDT_FIRST_SUPPORTED_VERSION	0x02
 #define FDT_LAST_SUPPORTED_VERSION	0x11
 
@@ -2044,5 +2048,9 @@ int fdt_overlay_apply_node(void *fdt, int target, void *fdto, int node);
 /**********************************************************************/
 
 const char *fdt_strerror(int errval);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* LIBFDT_H */
