@@ -41,6 +41,7 @@ static const char *const log_level_name[LOGL_COUNT] = {
 	"IO",
 };
 
+/* All error responses MUST begin with '<' */
 const char *log_get_cat_name(enum log_category_t cat)
 {
 	const char *name;
