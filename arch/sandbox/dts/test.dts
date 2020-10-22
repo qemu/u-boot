@@ -549,8 +549,8 @@
 			sandbox,emul = <&emul1>;
 		};
 
-		i2c_emul: emul {
-			reg = <0xff>;
+		i2c_emul: emul@77 {
+			reg = <0x77>;
 			compatible = "sandbox,i2c-emul-parent";
 			emul_eeprom: emul-eeprom {
 				compatible = "sandbox,i2c-eeprom";
@@ -565,7 +565,7 @@
 			};
 		};
 
-		sandbox_pmic: sandbox_pmic {
+		sandbox_pmic: sandbox_pmic@40 {
 			reg = <0x40>;
 			sandbox,emul = <&emul_pmic0>;
 		};
@@ -596,6 +596,7 @@
 	irq: irq {
 		compatible = "sandbox,irq";
 		interrupt-controller;
+		#address-cells = <1>;
 		#interrupt-cells = <2>;
 	};
 
@@ -1251,12 +1252,17 @@
 		};
 
 		pinctrl_i2c: i2c {
-			groups {
+			#address-cells = <1>;
+			#size-cells = <0>;
+
+			groups: groups@40 {
+				reg = <0x40>;
 				groups = "I2C_UART";
 				function = "I2C";
 			};
 
-			pins {
+			pins: pins@41 {
+				reg = <0x41>;
 				pins = "P0", "P1";
 				drive-open-drain;
 			};
@@ -1268,10 +1274,14 @@
 		};
 
 		pinctrl_spi: spi {
+			#address-cells = <1>;
+			#size-cells = <0>;
+
 			groups = "SPI_I2S";
 			function = "SPI";
 
-			cs {
+			cs: cs@50 {
+				reg = <0x50>;
 				pinmux = <SANDBOX_PINMUX(5, SANDBOX_PINMUX_CS)>,
 					 <SANDBOX_PINMUX(6, SANDBOX_PINMUX_CS)>;
 			};
