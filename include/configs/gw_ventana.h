@@ -39,9 +39,6 @@
 #define CONFIG_DM_THERMAL
 #endif
 
-/* Thermal */
-#define CONFIG_IMX_THERMAL
-
 /* Serial */
 #define CONFIG_MXC_UART_BASE	       UART2_BASE
 
