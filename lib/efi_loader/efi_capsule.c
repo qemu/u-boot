@@ -15,6 +15,10 @@
 #include <sort.h>
 
 const efi_guid_t efi_guid_capsule_report = EFI_CAPSULE_REPORT_GUID;
+static const efi_guid_t efi_guid_firmware_management_capsule_id =
+		EFI_FIRMWARE_MANAGEMENT_CAPSULE_ID_GUID;
+const efi_guid_t efi_guid_firmware_management_protocol =
+		EFI_FIRMWARE_MANAGEMENT_PROTOCOL_GUID;
 
 #ifdef CONFIG_EFI_CAPSULE_ON_DISK
 /* for file system access */
@@ -88,6 +92,218 @@ void set_capsule_result(int index, struct efi_capsule_header *capsule,
 		printf("EFI: creating %ls failed\n", variable_name16);
 }
 
+#ifdef CONFIG_EFI_CAPSULE_FIRMWARE_MANAGEMENT
+/**
+ * efi_fmp_find - search for Firmware Management Protocol drivers
+ * @image_type:		Image type guid
+ * @instance:		Instance number
+ * @handles:		Handles of FMP drivers
+ * @no_handles:		Number of handles
+ *
+ * Search for Firmware Management Protocol drivers, matching the image
+ * type, @image_type and the machine instance, @instance, from the list,
+ * @handles.
+ *
+ * Return:
+ * * Protocol instance	- on success
+ * * NULL		- on failure
+ */
+static struct efi_firmware_management_protocol *
+efi_fmp_find(efi_guid_t *image_type, u64 instance, efi_handle_t *handles,
+	     efi_uintn_t no_handles)
+{
+	efi_handle_t *handle;
+	struct efi_firmware_management_protocol *fmp;
+	struct efi_firmware_image_descriptor *image_info, *desc;
+	efi_uintn_t info_size, descriptor_size;
+	u32 descriptor_version;
+	u8 descriptor_count;
+	u32 package_version;
+	u16 *package_version_name;
+	bool found = false;
+	int i, j;
+	efi_status_t ret;
+
+	for (i = 0, handle = handles; i < no_handles; i++, handle++) {
+		ret = EFI_CALL(efi_handle_protocol(
+				*handle,
+				&efi_guid_firmware_management_protocol,
+				(void **)&fmp));
+		if (ret != EFI_SUCCESS)
+			continue;
+
+		/* get device's image info */
+		info_size = 0;
+		image_info = NULL;
+		descriptor_version = 0;
+		descriptor_count = 0;
+		descriptor_size = 0;
+		package_version = 0;
+		package_version_name = NULL;
+		ret = EFI_CALL(fmp->get_image_info(fmp, &info_size,
+						   image_info,
+						   &descriptor_version,
+						   &descriptor_count,
+						   &descriptor_size,
+						   &package_version,
+						   &package_version_name));
+		if (ret != EFI_BUFFER_TOO_SMALL)
+			goto skip;
+
+		image_info = malloc(info_size);
+		if (!image_info)
+			goto skip;
+
+		ret = EFI_CALL(fmp->get_image_info(fmp, &info_size,
+						   image_info,
+						   &descriptor_version,
+						   &descriptor_count,
+						   &descriptor_size,
+						   &package_version,
+						   &package_version_name));
+		if (ret != EFI_SUCCESS)
+			goto skip;
+
+		/* matching */
+		for (j = 0, desc = image_info; j < descriptor_count;
+		     j++, desc = (void *)desc + descriptor_size) {
+			EFI_PRINT("+++ desc[%d] index: %d, name: %ls\n",
+				  j, desc->image_index, desc->image_id_name);
+			if (!guidcmp(&desc->image_type_id, image_type) &&
+			    (!instance ||
+			     !desc->hardware_instance ||
+			     (descriptor_version >= 3 &&
+			      desc->hardware_instance == instance)))
+				found = true;
+		}
+
+skip:
+		efi_free_pool(package_version_name);
+		free(image_info);
+		EFI_CALL(efi_close_protocol(
+				(efi_handle_t)fmp,
+				&efi_guid_firmware_management_protocol,
+				NULL, NULL));
+		if (found)
+			return fmp;
+	}
+
+	return NULL;
+}
+
+/**
+ * efi_capsule_update_firmware - update firmware from capsule
+ * @capsule_data:	Capsule
+ *
+ * Update firmware, using a capsule, @capsule_data. Loading any FMP
+ * drivers embedded in a capsule is not supported.
+ *
+ * Return:		status code
+ */
+static efi_status_t efi_capsule_update_firmware(
+		struct efi_capsule_header *capsule_data)
+{
+	struct efi_firmware_management_capsule_header *capsule;
+	struct efi_firmware_management_capsule_image_header *image;
+	size_t capsule_size;
+	void *image_binary, *vendor_code;
+	efi_handle_t *handles;
+	efi_uintn_t no_handles;
+	int item;
+	struct efi_firmware_management_protocol *fmp;
+	u16 *abort_reason;
+	efi_status_t ret = EFI_SUCCESS;
+
+	/* sanity check */
+	if (capsule_data->header_size < sizeof(*capsule) ||
+	    capsule_data->header_size >= capsule_data->capsule_image_size)
+		return EFI_INVALID_PARAMETER;
+
+	capsule = (void *)capsule_data + capsule_data->header_size;
+	capsule_size = capsule_data->capsule_image_size
+			- capsule_data->header_size;
+
+	if (capsule->version != 0x00000001)
+		return EFI_INVALID_PARAMETER;
+
+	/* Drivers */
+	/* TODO: support loading drivers */
+
+	handles = NULL;
+	ret = EFI_CALL(efi_locate_handle_buffer(
+			BY_PROTOCOL,
+			&efi_guid_firmware_management_protocol,
+			NULL, &no_handles, (efi_handle_t **)&handles));
+	if (ret != EFI_SUCCESS)
+		return EFI_UNSUPPORTED;
+
+	/* Payload */
+	for (item = capsule->embedded_driver_count;
+	     item < capsule->embedded_driver_count
+		    + capsule->payload_item_count; item++) {
+		/* sanity check */
+		if ((capsule->item_offset_list[item] + sizeof(*image)
+				 >= capsule_size)) {
+			printf("EFI: A capsule has not enough size of data\n");
+			ret = EFI_INVALID_PARAMETER;
+			goto out;
+		}
+
+		image = (void *)capsule + capsule->item_offset_list[item];
+
+		if (image->version != 0x00000001 &&
+		    image->version != 0x00000002 &&
+		    image->version != 0x00000003) {
+			ret = EFI_INVALID_PARAMETER;
+			goto out;
+		}
+
+		/* find a device for update firmware */
+		/* TODO: should we pass index as well, or nothing but type? */
+		fmp = efi_fmp_find(&image->update_image_type_id,
+				   image->version == 0x1 ? 0 :
+					image->update_hardware_instance,
+				   handles, no_handles);
+		if (!fmp) {
+			printf("EFI Capsule: driver not found for firmware type: %pUl, hardware instance: %lld\n",
+			       &image->update_image_type_id,
+			       image->version == 0x1 ? 0 :
+					image->update_hardware_instance);
+			ret = EFI_UNSUPPORTED;
+			goto out;
+		}
+
+		/* do it */
+		image_binary = (void *)image + sizeof(*image);
+		vendor_code = image_binary + image->update_image_size;
+
+		abort_reason = NULL;
+		ret = EFI_CALL(fmp->set_image(fmp, image->update_image_index,
+					      image_binary,
+					      image->update_image_size,
+					      vendor_code, NULL,
+					      &abort_reason));
+		if (ret != EFI_SUCCESS) {
+			printf("EFI Capsule: firmware update failed: %ls\n",
+			       abort_reason);
+			efi_free_pool(abort_reason);
+			goto out;
+		}
+	}
+
+out:
+	efi_free_pool(handles);
+
+	return ret;
+}
+#else
+static efi_status_t efi_capsule_update_firmware(
+		struct efi_capsule_header *capsule_data)
+{
+	return EFI_UNSUPPORTED;
+}
+#endif /* CONFIG_EFI_CAPSULE_FIRMWARE_MANAGEMENT */
+
 /**
  * efi_update_capsule() - process information from operating system
  * @capsule_header_array:	Array of virtual address pointers
@@ -118,9 +334,29 @@ efi_status_t EFIAPI efi_update_capsule(
 		goto out;
 	}
 
-	ret = EFI_UNSUPPORTED;
+	ret = EFI_SUCCESS;
 	for (i = 0, capsule = *capsule_header_array; i < capsule_count;
 	     i++, capsule = *(++capsule_header_array)) {
+		/* sanity check */
+		if (capsule->header_size < sizeof(*capsule) ||
+		    capsule->capsule_image_size < sizeof(*capsule)) {
+			printf("EFI: A capsule has not enough size of data\n");
+			continue;
+		}
+
+		EFI_PRINT("Capsule[%d] (guid:%pUl)\n",
+			  i, &capsule->capsule_guid);
+		if (!guidcmp(&capsule->capsule_guid,
+			     &efi_guid_firmware_management_capsule_id)) {
+			ret  = efi_capsule_update_firmware(capsule);
+		} else {
+			printf("EFI: not support capsule type: %pUl\n",
+			       &capsule->capsule_guid);
+			ret = EFI_UNSUPPORTED;
+		}
+
+		if (ret != EFI_SUCCESS)
+			goto out;
 	}
 out:
 	return EFI_EXIT(ret);
