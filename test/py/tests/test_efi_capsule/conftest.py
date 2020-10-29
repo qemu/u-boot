@@ -51,6 +51,9 @@ def efi_capsule_data(request, u_boot_config):
         check_call('cd %s; %s/tools/mkeficapsule --fit uboot_bin_env.itb --version 1 --index 1 Test01' %
                    (data_dir, u_boot_config.build_dir),
                    shell=True)
+        check_call('cd %s; %s/tools/mkeficapsule --raw u-boot.bin.new --version 1 --index 1 Test02' %
+                   (data_dir, u_boot_config.build_dir),
+                   shell=True)
 
         # Create a disk image with EFI system partition
         check_call('virt-make-fs --partition=gpt --size=+1M --type=vfat %s %s' %
