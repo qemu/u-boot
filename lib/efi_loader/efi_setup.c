@@ -6,6 +6,7 @@
  */
 
 #include <common.h>
+#include <charset.h>
 #include <bootm.h>
 #include <efi_loader.h>
 #include <efi_variable.h>
@@ -234,4 +235,33 @@ efi_status_t efi_init_obj_list(void)
 out:
 	efi_obj_list_initialized = ret;
 	return ret;
+}
+
+/**
+ * efi_create_indexed_name - create a string name with an index
+ * @buffer:	Buffer
+ * @name:	Name string
+ * @index:	Index
+ *
+ * Create a utf-16 string with @name, appending @index.
+ * For example, L"Capsule0001"
+ * This function is expected to be called only from several places
+ * in EFI subsystem. A caller should ensure that the buffer have
+ * enough space for a resulting string, including L"\0".
+ * No strict check against the length will be done here.
+ *
+ * Return: A pointer to the next position after the created string
+ *		in @buffer, or NULL otherwise
+ */
+u16 *efi_create_indexed_name(u16 *buffer, const u16 *name, unsigned int index)
+{
+	u16 *p;
+	char index_buf[5];
+
+	u16_strcpy(buffer, name);
+	p = buffer + utf16_strnlen(name, SIZE_MAX);
+	sprintf(index_buf, "%04X", index);
+	utf8_utf16_strcpy(&p, index_buf);
+
+	return p;
 }
