@@ -9,6 +9,8 @@
 #ifndef __DM_ACPI_H__
 #define __DM_ACPI_H__
 
+struct udevice;
+
 /* Allow operations to be optional for ACPI */
 #if CONFIG_IS_ENABLED(ACPIGEN)
 #define ACPI_OPS_PTR(_ptr)	.acpi_ops	= _ptr,
