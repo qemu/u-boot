@@ -68,6 +68,11 @@ void mmu_set_region_dcache_behaviour_phys(phys_addr_t start, phys_addr_t phys,
 	unsigned long startpt, stoppt;
 	unsigned long upto, end;
 
+	if (!IS_ALIGNED(start, MMU_SECTION_SIZE) ||
+	    !IS_ALIGNED(size, MMU_SECTION_SIZE))
+		log_err("%s: start=%p or size =%zx is not aligned with MMU_SECTION_SIZE (%x)\n",
+			__func__, (void *)start, size, MMU_SECTION_SIZE);
+
 	/* div by 2 before start + size to avoid phys_addr_t overflow */
 	end = ALIGN((start / 2) + (size / 2), MMU_SECTION_SIZE / 2)
 	      >> (MMU_SECTION_SHIFT - 1);
