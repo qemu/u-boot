@@ -1098,9 +1098,7 @@ int sqfs_probe(struct blk_desc *fs_dev_desc, struct disk_partition *fs_partition
 	ctxt.sblk = sblk;
 
 	ret = sqfs_decompressor_init(&ctxt);
-
 	if (ret) {
-		ret = -EINVAL;
 		goto error;
 	}
 
