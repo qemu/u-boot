@@ -80,13 +80,14 @@ void mmu_set_region_dcache_behaviour_phys(phys_addr_t start, phys_addr_t phys,
 		log_err("%s: start=%p or size =%zx is not aligned with MMU_SECTION_SIZE (%x)\n",
 			__func__, (void *)start, size, MMU_SECTION_SIZE);
 
+	debug("%s: start=%p, phys=%p, size=%zx, option=0x" OPTIONF "\n",
+	      __func__, (void *)start, (void *)phys, size, option);
+
 	/* div by 2 before start + size to avoid phys_addr_t overflow */
 	end = ALIGN((start / 2) + (size / 2), MMU_SECTION_SIZE / 2)
 	      >> (MMU_SECTION_SHIFT - 1);
 	start = start >> MMU_SECTION_SHIFT;
 
-	debug("%s: start=%pa, size=%zu, option=0x" OPTIONF "\n",
-	      __func__, &start, size, option);
 
 	for (upto = start; upto < end; upto++, phys += MMU_SECTION_SIZE)
 		set_section_phys(upto, phys, option);
