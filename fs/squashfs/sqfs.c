@@ -1498,6 +1498,13 @@ int sqfs_read(const char *filename, void *buf, loff_t offset, loff_t len,
 		goto out;
 	}
 
+	printf("Error: reading a fragmented file is not supported yet.\n");
+	ret = -EINVAL;
+	goto out;
+
+	/*
+	 * TODO: reading a fragmented file doesn't work
+	 */
 	start = frag_entry.start / ctxt.cur_dev->blksz;
 	table_size = SQFS_BLOCK_SIZE(frag_entry.size);
 	table_offset = frag_entry.start - (start * ctxt.cur_dev->blksz);
