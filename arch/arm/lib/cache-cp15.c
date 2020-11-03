@@ -12,6 +12,13 @@
 #include <linux/compiler.h>
 #include <asm/armv7_mpu.h>
 
+/* for LPAE : enum dcache_option option is ULL*/
+#ifdef CONFIG_ARMV7_LPAE
+#define OPTIONF "%llx"
+#else
+#define OPTIONF "%x"
+#endif
+
 #if !(CONFIG_IS_ENABLED(SYS_ICACHE_OFF) && CONFIG_IS_ENABLED(SYS_DCACHE_OFF))
 
 DECLARE_GLOBAL_DATA_PTR;
@@ -78,13 +85,9 @@ void mmu_set_region_dcache_behaviour_phys(phys_addr_t start, phys_addr_t phys,
 	      >> (MMU_SECTION_SHIFT - 1);
 	start = start >> MMU_SECTION_SHIFT;
 
-#ifdef CONFIG_ARMV7_LPAE
-	debug("%s: start=%pa, size=%zu, option=%llx\n", __func__, &start, size,
-	      option);
-#else
-	debug("%s: start=%pa, size=%zu, option=0x%x\n", __func__, &start, size,
-	      option);
-#endif
+	debug("%s: start=%pa, size=%zu, option=0x" OPTIONF "\n",
+	      __func__, &start, size, option);
+
 	for (upto = start; upto < end; upto++, phys += MMU_SECTION_SIZE)
 		set_section_phys(upto, phys, option);
 
