@@ -142,7 +142,11 @@ static int add_content(int type, const char *fname)
 	return 0;
 }
 
+#ifdef CONFIG_FIT_SIGNATURE
 #define OPT_STRING "a:A:b:B:c:C:d:D:e:Ef:Fk:i:K:ln:N:p:O:rR:qstT:vVx"
+#else
+#define OPT_STRING "a:A:b:B:C:d:D:e:Ef:i:ln:O:R:qstT:vVx"
+#endif
 static void process_args(int argc, char **argv)
 {
 	char *ptr;
@@ -150,8 +154,7 @@ static void process_args(int argc, char **argv)
 	char *datafile = NULL;
 	int opt;
 
-	while ((opt = getopt(argc, argv,
-		   "a:A:b:B:c:C:d:D:e:Ef:Fk:i:K:ln:N:p:O:rR:qstT:vVx")) != -1) {
+	while ((opt = getopt(argc, argv, OPT_STRING)) != -1) {
 		switch (opt) {
 		case 'a':
 			params.addr = strtoull(optarg, &ptr, 16);
