@@ -18,6 +18,7 @@
 #include <asm/mach-imx/hab.h>
 #include <asm/mach-imx/boot_mode.h>
 #include <g_dnl.h>
+#include <linux/libfdt.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 
@@ -318,9 +319,9 @@ ulong board_spl_fit_size_align(ulong size)
 	return size;
 }
 
-void board_spl_fit_post_load(ulong load_addr, size_t length)
+void board_spl_fit_post_load(const void *fit)
 {
-	u32 offset = length - CONFIG_CSF_SIZE;
+	u32 offset = ALIGN(fdt_totalsize(fit), 0x1000);
 
 	if (imx_hab_authenticate_image(load_addr,
 				       offset + IVT_SIZE + CSF_PAD_SIZE,
