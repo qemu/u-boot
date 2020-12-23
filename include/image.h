@@ -1537,8 +1537,7 @@ bool android_image_print_dtb_contents(ulong hdr_addr);
  */
 int board_fit_config_name_match(const char *name);
 
-#if defined(CONFIG_SPL_FIT_IMAGE_POST_PROCESS) || \
-	defined(CONFIG_FIT_IMAGE_POST_PROCESS)
+#if defined(CONFIG_SPL_FIT_IMAGE_POST_PROCESS) || defined(CONFIG_FIT_IMAGE_POST_PROCESS)
 /**
  * board_fit_image_post_process() - Do any post-process on FIT binary data
  *
