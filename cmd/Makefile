@@ -203,7 +203,7 @@ endif # !CONFIG_SPL_BUILD
 obj-$(CONFIG_$(SPL_)CMD_TLV_EEPROM) += tlv_eeprom.o
 
 # core command
-obj-y += nvedit.o
+obj-$(CONFIG_$(SPL_)ENV_SUPPORT)+= nvedit.o
 
 obj-$(CONFIG_CMD_BCM_EXT_UTILS) += broadcom/
 
