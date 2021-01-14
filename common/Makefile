@@ -137,3 +137,5 @@ obj-$(CONFIG_CMD_LOADB) += xyzModem.o
 obj-$(CONFIG_$(SPL_TPL_)YMODEM_SUPPORT) += xyzModem.o
 
 obj-$(CONFIG_AVB_VERIFY) += avb_verify.o
+obj-$(CONFIG_$(SPL_TPL_)STACKPROTECTOR) += stackprot.o
+
