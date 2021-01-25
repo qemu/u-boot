@@ -1171,8 +1171,8 @@ config CMD_OSD
 
 config CMD_PART
 	bool "part"
-	select HAVE_BLOCK_DEVICE
-	select PARTITION_UUIDS
+	depends on PARTITION_UUIDS
+	default y if DISTRO_DEFAULTS
 	help
 	  Read and display information about the partition table on
 	  various media.

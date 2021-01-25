@@ -3,6 +3,7 @@ menu "Partition Types"
 
 config PARTITIONS
 	bool "Enable Partition Labels (disklabels) support"
+	depends on HAVE_BLOCK_DEVICE
 	default y
 	select SPL_SPRINTF if SPL
 	select TPL_SPRINTF if TPL
