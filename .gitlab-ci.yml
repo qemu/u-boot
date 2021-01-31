@@ -5,10 +5,12 @@
 image: trini/u-boot-gitlab-ci-runner:bionic-20200807-02Sep2020
 
 # We run some tests in different order, to catch some failures quicker.
+# 'probation' is for tests that are flaky (pass and fail on the same commit)
 stages:
   - testsuites
   - test.py
   - world build
+  - probation
 
 .buildman_and_testpy_template: &buildman_and_testpy_dfn
   tags: [ 'all' ]
@@ -177,7 +179,7 @@ Run binman, buildman, dtoc, Kconfig and patman testsuites:
 
 Run tests for Nokia RX-51 (aka N900):
   tags: [ 'all' ]
-  stage: testsuites
+  stage: probation
   script:
     - ./tools/buildman/buildman --fetch-arch arm;
       export PATH=~/.buildman-toolchains/gcc-9.2.0-nolibc/arm-linux-gnueabi/bin/:$PATH;
