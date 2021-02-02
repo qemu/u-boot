@@ -706,6 +706,22 @@ config LMB
 	help
 	  Support the library logical memory blocks.
 
+config LMB_MEMORY_REGIONS
+	int "Number of memory regions in lmb lib"
+	depends on LMB
+	default 8
+	help
+	  Define the number of supported memory regions in the library logical
+	  memory blocks.
+
+config LMB_RESERVED_REGIONS
+	int "Number of reserved regions in lmb lib"
+	depends on LMB
+	default 8
+	help
+	  Define the number of supported reserved regions in the library logical
+	  memory blocks.
+
 endmenu
 
 config PHANDLE_CHECK_SEQ
