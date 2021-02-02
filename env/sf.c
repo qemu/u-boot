@@ -67,14 +67,15 @@ static int setup_flash_device(void)
 	return 0;
 }
 
-#if defined(CONFIG_ENV_OFFSET_REDUND)
 static int env_sf_save(void)
 {
 	env_t	env_new;
-	char	*saved_buffer = NULL, flag = ENV_REDUND_OBSOLETE;
+	char	*saved_buffer = NULL;
 	u32	saved_size = 0, saved_offset = 0, sector;
 	u32	sect_size = CONFIG_ENV_SECT_SIZE;
+	ulong	offset;
 	int	ret;
+	__maybe_unused char flag = ENV_REDUND_OBSOLETE;
 
 	ret = setup_flash_device();
 	if (ret)
@@ -86,27 +87,33 @@ static int env_sf_save(void)
 	ret = env_export(&env_new);
 	if (ret)
 		return -EIO;
-	env_new.flags	= ENV_REDUND_ACTIVE;
 
-	if (gd->env_valid == ENV_VALID) {
-		env_new_offset = CONFIG_ENV_OFFSET_REDUND;
-		env_offset = CONFIG_ENV_OFFSET;
-	} else {
-		env_new_offset = CONFIG_ENV_OFFSET;
-		env_offset = CONFIG_ENV_OFFSET_REDUND;
-	}
+#if CONFIG_IS_ENABLED(SYS_REDUNDAND_ENVIRONMENT)
+		env_new.flags	= ENV_REDUND_ACTIVE;
+
+		if (gd->env_valid == ENV_VALID) {
+			env_new_offset = CONFIG_ENV_OFFSET_REDUND;
+			env_offset = CONFIG_ENV_OFFSET;
+		} else {
+			env_new_offset = CONFIG_ENV_OFFSET;
+			env_offset = CONFIG_ENV_OFFSET_REDUND;
+		}
+		offset = env_new_offset;
+#else
+		offset = CONFIG_ENV_OFFSET;
+#endif
 
 	/* Is the sector larger than the env (i.e. embedded) */
 	if (sect_size > CONFIG_ENV_SIZE) {
 		saved_size = sect_size - CONFIG_ENV_SIZE;
-		saved_offset = env_new_offset + CONFIG_ENV_SIZE;
+		saved_offset = offset + CONFIG_ENV_SIZE;
 		saved_buffer = memalign(ARCH_DMA_MINALIGN, saved_size);
 		if (!saved_buffer) {
 			ret = -ENOMEM;
 			goto done;
 		}
-		ret = spi_flash_read(env_flash, saved_offset,
-					saved_size, saved_buffer);
+		ret = spi_flash_read(env_flash, saved_offset, saved_size,
+				     saved_buffer);
 		if (ret)
 			goto done;
 	}
@@ -114,15 +121,14 @@ static int env_sf_save(void)
 	sector = DIV_ROUND_UP(CONFIG_ENV_SIZE, sect_size);
 
 	puts("Erasing SPI flash...");
-	ret = spi_flash_erase(env_flash, env_new_offset,
-				sector * sect_size);
+	ret = spi_flash_erase(env_flash, offset, sector * sect_size);
 	if (ret)
 		goto done;
 
 	puts("Writing to SPI flash...");
 
-	ret = spi_flash_write(env_flash, env_new_offset,
-		CONFIG_ENV_SIZE, &env_new);
+	ret = spi_flash_write(env_flash, offset,
+			      CONFIG_ENV_SIZE, &env_new);
 	if (ret)
 		goto done;
 
@@ -133,16 +139,20 @@ static int env_sf_save(void)
 			goto done;
 	}
 
-	ret = spi_flash_write(env_flash, env_offset + offsetof(env_t, flags),
-				sizeof(env_new.flags), &flag);
-	if (ret)
-		goto done;
+#if CONFIG_IS_ENABLED(SYS_REDUNDAND_ENVIRONMENT)
+		ret = spi_flash_write(env_flash, env_offset + offsetof(env_t, flags),
+				      sizeof(env_new.flags), &flag);
+		if (ret)
+			goto done;
 
-	puts("done\n");
+		puts("done\n");
 
-	gd->env_valid = gd->env_valid == ENV_REDUND ? ENV_VALID : ENV_REDUND;
+		gd->env_valid = gd->env_valid == ENV_REDUND ? ENV_VALID : ENV_REDUND;
 
-	printf("Valid environment: %d\n", (int)gd->env_valid);
+		printf("Valid environment: %d\n", (int)gd->env_valid);
+#else
+		puts("done\n");
+#endif
 
 done:
 	if (saved_buffer)
@@ -151,6 +161,7 @@ done:
 	return ret;
 }
 
+#if CONFIG_IS_ENABLED(SYS_REDUNDAND_ENVIRONMENT)
 static int env_sf_load(void)
 {
 	int ret;
@@ -188,70 +199,6 @@ out:
 	return ret;
 }
 #else
-static int env_sf_save(void)
-{
-	u32	saved_size = 0, saved_offset = 0, sector;
-	u32	sect_size = CONFIG_ENV_SECT_SIZE;
-	char	*saved_buffer = NULL;
-	int	ret = 1;
-	env_t	env_new;
-
-	ret = setup_flash_device();
-	if (ret)
-		return ret;
-
-	if (IS_ENABLED(CONFIG_ENV_SECT_SIZE_AUTO))
-		sect_size = env_flash->mtd.erasesize;
-
-	/* Is the sector larger than the env (i.e. embedded) */
-	if (sect_size > CONFIG_ENV_SIZE) {
-		saved_size = sect_size - CONFIG_ENV_SIZE;
-		saved_offset = CONFIG_ENV_OFFSET + CONFIG_ENV_SIZE;
-		saved_buffer = malloc(saved_size);
-		if (!saved_buffer)
-			goto done;
-
-		ret = spi_flash_read(env_flash, saved_offset,
-			saved_size, saved_buffer);
-		if (ret)
-			goto done;
-	}
-
-	ret = env_export(&env_new);
-	if (ret)
-		goto done;
-
-	sector = DIV_ROUND_UP(CONFIG_ENV_SIZE, sect_size);
-
-	puts("Erasing SPI flash...");
-	ret = spi_flash_erase(env_flash, CONFIG_ENV_OFFSET,
-		sector * sect_size);
-	if (ret)
-		goto done;
-
-	puts("Writing to SPI flash...");
-	ret = spi_flash_write(env_flash, CONFIG_ENV_OFFSET,
-		CONFIG_ENV_SIZE, &env_new);
-	if (ret)
-		goto done;
-
-	if (sect_size > CONFIG_ENV_SIZE) {
-		ret = spi_flash_write(env_flash, saved_offset,
-			saved_size, saved_buffer);
-		if (ret)
-			goto done;
-	}
-
-	ret = 0;
-	puts("done\n");
-
-done:
-	if (saved_buffer)
-		free(saved_buffer);
-
-	return ret;
-}
-
 static int env_sf_load(void)
 {
 	int ret;
@@ -267,8 +214,8 @@ static int env_sf_load(void)
 	if (ret)
 		goto out;
 
-	ret = spi_flash_read(env_flash,
-		CONFIG_ENV_OFFSET, CONFIG_ENV_SIZE, buf);
+	ret = spi_flash_read(env_flash, CONFIG_ENV_OFFSET, CONFIG_ENV_SIZE,
+			     buf);
 	if (ret) {
 		env_set_default("spi_flash_read() failed", 0);
 		goto err_read;
@@ -304,7 +251,7 @@ static int env_sf_init_addr(void)
 	env_t *env_ptr = (env_t *)env_sf_get_env_addr();
 
 	if (crc32(0, env_ptr->data, ENV_SIZE) == env_ptr->crc) {
-		gd->env_addr	= (ulong)&(env_ptr->data);
+		gd->env_addr	= (ulong)&env_ptr->data;
 		gd->env_valid	= 1;
 	} else {
 		gd->env_addr = (ulong)&default_environment[0];
