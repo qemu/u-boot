@@ -14,19 +14,48 @@
 
 #define MAX_LMB_REGIONS 8
 
+/**
+ * struct lmb_property - Description of one region.
+ *
+ * @base: Base address of the region.
+ * @size: Size of the region
+ */
 struct lmb_property {
 	phys_addr_t base;
 	phys_size_t size;
 };
 
+/**
+ * struct lmb_region - Description of a set of region.
+ *
+ * @cnt: Number of regions.
+ * @max: Size of the region array, max value of cnt.
+ * @region: Address of the region properties array
+ */
 struct lmb_region {
 	unsigned long cnt;
-	struct lmb_property region[MAX_LMB_REGIONS+1];
+	unsigned long max;
+	struct lmb_property *region;
 };
 
+/**
+ * struct lmb - Logical memory block handle.
+ *
+ * Clients provide storage for Logical memory block (lmb) handles.
+ * The content of the structure is managed by the lmb library.
+ * A lmb struct is  initialized by lmb_init() functions.
+ * The lmb struct is passed to all other lmb APIs.
+ *
+ * @memory: Description of memory regions.
+ * @reserved: Description of reserved regions.
+ * @memory_regions: Array of the memory regions (statically allocated)
+ * @reserved_regions: Array of the reserved regions (statically allocated)
+ */
 struct lmb {
 	struct lmb_region memory;
 	struct lmb_region reserved;
+	struct lmb_property memory_regions[MAX_LMB_REGIONS + 1];
+	struct lmb_property reserved_regions[MAX_LMB_REGIONS + 1];
 };
 
 extern void lmb_init(struct lmb *lmb);

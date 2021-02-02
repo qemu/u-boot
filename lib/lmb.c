@@ -95,7 +95,13 @@ static void lmb_coalesce_regions(struct lmb_region *rgn, unsigned long r1,
 
 void lmb_init(struct lmb *lmb)
 {
+	/* Hookup the initial arrays */
+	lmb->memory.region = lmb->memory_regions;
+	lmb->memory.max = ARRAY_SIZE(lmb->memory_regions) - 1;
 	lmb->memory.cnt = 0;
+
+	lmb->reserved.region = lmb->reserved_regions;
+	lmb->reserved.max = ARRAY_SIZE(lmb->reserved_regions) - 1;
 	lmb->reserved.cnt = 0;
 }
 
@@ -179,7 +185,7 @@ static long lmb_add_region(struct lmb_region *rgn, phys_addr_t base, phys_size_t
 
 	if (coalesced)
 		return coalesced;
-	if (rgn->cnt >= MAX_LMB_REGIONS)
+	if (rgn->cnt >= rgn->max)
 		return -1;
 
 	/* Couldn't coalesce the LMB, so add it to the sorted table. */
