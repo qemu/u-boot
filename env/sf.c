@@ -161,6 +161,86 @@ done:
 	return ret;
 }
 
+#if CONFIG_IS_ENABLED(CMD_ERASEENV)
+static int env_sf_erase(void)
+{
+	char	*saved_buffer = NULL;
+	u32	saved_size, saved_offset, sector;
+	ulong	offset;
+	ulong	offsets[] = {
+		CONFIG_ENV_OFFSET,
+#if CONFIG_IS_ENABLED(SYS_REDUNDAND_ENVIRONMENT)
+		CONFIG_ENV_OFFSET_REDUND
+#endif
+	};
+	int	i;
+	int	ret;
+
+	ret = setup_flash_device();
+	if (ret)
+		return ret;
+
+	/* get temporary storage if sector is larger than env (i.e. embedded) */
+	if (CONFIG_ENV_SECT_SIZE > CONFIG_ENV_SIZE) {
+		saved_size = CONFIG_ENV_SECT_SIZE - CONFIG_ENV_SIZE;
+		saved_buffer = memalign(ARCH_DMA_MINALIGN, saved_size);
+		if (!saved_buffer) {
+			ret = -ENOMEM;
+			goto done;
+		}
+	}
+
+	sector = DIV_ROUND_UP(CONFIG_ENV_SIZE, CONFIG_ENV_SECT_SIZE);
+
+	/* simply erase both environments, retaining non-env data (if any) */
+	for (i = 0; i < ARRAY_SIZE(offsets); i++) {
+		offset = offsets[i];
+
+		if (saved_buffer) {
+			saved_offset = offset + CONFIG_ENV_SIZE;
+			ret = spi_flash_read(env_flash, saved_offset,
+					     saved_size, saved_buffer);
+			if (ret)
+				goto done;
+		}
+
+		/* next print will only happen with redundant environments */
+		if (i)
+			puts("Redund:");
+
+		puts("Erasing SPI flash...");
+		ret = spi_flash_erase(env_flash, offset,
+				      sector * CONFIG_ENV_SECT_SIZE);
+		if (ret)
+			goto done;
+
+		if (saved_buffer) {
+			puts("Writing non-environment data to SPI flash...");
+			ret = spi_flash_write(env_flash, saved_offset,
+					      saved_size, saved_buffer);
+			if (ret)
+				goto done;
+		}
+
+		puts("done\n");
+	}
+
+#if CONFIG_IS_ENABLED(SYS_REDUNDAND_ENVIRONMENT)
+	/* here we know that both env sections are cleared */
+	env_new_offset = CONFIG_ENV_OFFSET;
+	env_offset = CONFIG_ENV_OFFSET_REDUND;
+
+	gd->env_valid = ENV_INVALID;
+#endif
+
+ done:
+	if (saved_buffer)
+		free(saved_buffer);
+
+	return ret;
+}
+#endif /* CONFIG_IS_ENABLED(CMD_ERASEENV) */
+
 #if CONFIG_IS_ENABLED(SYS_REDUNDAND_ENVIRONMENT)
 static int env_sf_load(void)
 {
@@ -363,4 +443,7 @@ U_BOOT_ENV_LOCATION(sf) = {
 	.load		= env_sf_load,
 	.save		= CONFIG_IS_ENABLED(SAVEENV) ? ENV_SAVE_PTR(env_sf_save) : NULL,
 	.init		= env_sf_init,
+#if CONFIG_IS_ENABLED(CMD_ERASEENV)
+	.erase		= env_sf_erase,
+#endif
 };
