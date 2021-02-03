@@ -90,10 +90,8 @@ void set_board_info(void)
 	snprintf(info, ARRAY_SIZE(info), "%x", s5p_cpu_id);
 	env_set("soc_id", info);
 
-#ifdef CONFIG_REVISION_TAG
 	snprintf(info, ARRAY_SIZE(info), "%x", get_board_rev());
 	env_set("board_rev", info);
-#endif
 #ifdef CONFIG_OF_LIBFDT
 	const char *bdtype = "";
 	const char *bdname = CONFIG_SYS_BOARD;
@@ -235,9 +233,7 @@ static void display_board_info(void)
 #ifdef CONFIG_SYS_BOARD
 	lcd_printf("\tBoard name: %s\n", CONFIG_SYS_BOARD);
 #endif
-#ifdef CONFIG_REVISION_TAG
 	lcd_printf("\tBoard rev: %u\n", get_board_rev());
-#endif
 	lcd_printf("\tDRAM banks: %u\n", CONFIG_NR_DRAM_BANKS);
 	lcd_printf("\tDRAM size: %u MB\n", gd->ram_size / SZ_1M);
 

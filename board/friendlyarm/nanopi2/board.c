@@ -294,7 +294,6 @@ static void set_ether_addr(void)
 	env_set("ethaddr", ethaddr);
 }
 
-#ifdef CONFIG_REVISION_TAG
 static void set_board_rev(void)
 {
 	char info[64] = {0, };
@@ -302,7 +301,6 @@ static void set_board_rev(void)
 	snprintf(info, ARRAY_SIZE(info), "%02x", get_board_rev());
 	env_set("board_rev", info);
 }
-#endif
 
 static void set_dtb_name(void)
 {
@@ -435,9 +433,8 @@ int board_late_init(void)
 {
 	bd_update_env();
 
-#ifdef CONFIG_REVISION_TAG
 	set_board_rev();
-#endif
+
 	set_dtb_name();
 
 	set_ether_addr();

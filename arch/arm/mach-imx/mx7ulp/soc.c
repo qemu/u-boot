@@ -49,13 +49,6 @@ u32 get_cpu_rev(void)
 	return (MXC_CPU_MX7ULP << 12) | (rom_version & 0xFF);
 }
 
-#ifdef CONFIG_REVISION_TAG
-u32 __weak get_board_rev(void)
-{
-	return get_cpu_rev();
-}
-#endif
-
 enum bt_mode get_boot_mode(void)
 {
 	u32 bt0_cfg = 0;

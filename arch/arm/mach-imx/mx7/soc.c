@@ -161,13 +161,6 @@ u32 get_cpu_rev(void)
 	return (type << 12) | reg;
 }
 
-#ifdef CONFIG_REVISION_TAG
-u32 __weak get_board_rev(void)
-{
-	return get_cpu_rev();
-}
-#endif
-
 static void imx_enet_mdio_fixup(void)
 {
 	struct iomuxc_gpr_base_regs *gpr_regs =
@@ -348,40 +341,6 @@ int arch_misc_init(void)
 #endif
 
 	return 0;
-}
-#endif
-
-#ifdef CONFIG_SERIAL_TAG
-/*
- * OCOTP_TESTER
- * i.MX 7Solo Applications Processor Reference Manual, Rev. 0.1, 08/2016
- * OCOTP_TESTER describes a unique ID based on silicon wafer
- * and die X/Y position
- *
- * OCOTOP_TESTER offset 0x410
- * 31:0 fuse 0
- * FSL-wide unique, encoded LOT ID STD II/SJC CHALLENGE/ Unique ID
- *
- * OCOTP_TESTER1 offset 0x420
- * 31:24 fuse 1
- * The X-coordinate of the die location on the wafer/SJC CHALLENGE/ Unique ID
- * 23:16 fuse 1
- * The Y-coordinate of the die location on the wafer/SJC CHALLENGE/ Unique ID
- * 15:11 fuse 1
- * The wafer number of the wafer on which the device was fabricated/SJC
- * CHALLENGE/ Unique ID
- * 10:0 fuse 1
- * FSL-wide unique, encoded LOT ID STD II/SJC CHALLENGE/ Unique ID
- */
-void get_board_serial(struct tag_serialnr *serialnr)
-{
-	struct ocotp_regs *ocotp = (struct ocotp_regs *)OCOTP_BASE_ADDR;
-	struct fuse_bank *bank = &ocotp->bank[0];
-	struct fuse_bank0_regs *fuse =
-		(struct fuse_bank0_regs *)bank->fuse_regs;
-
-	serialnr->low = fuse->tester0;
-	serialnr->high = fuse->tester1;
 }
 #endif
 

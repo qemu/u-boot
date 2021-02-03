@@ -34,9 +34,6 @@
 
 #define CONFIG_SKIP_LOWLEVEL_INIT
 
-/* Enable passing of ATAGs */
-#define CONFIG_CMDLINE_TAG
-
 /* SMP Spin Table Definitions */
 #define CPU_RELEASE_ADDR                (CONFIG_SYS_SDRAM_BASE + 0x7fff0)
 

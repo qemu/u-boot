@@ -17,12 +17,6 @@
 #define CONFIG_SPL_TARGET	"spl/u-boot-spl.scif"
 #endif
 
-/* boot option */
-
-#define CONFIG_CMDLINE_TAG
-#define CONFIG_SETUP_MEMORY_TAGS
-#define CONFIG_INITRD_TAG
-
 /* Generic Interrupt Controller Definitions */
 #define CONFIG_GICV2
 #define GICD_BASE	0xF1010000

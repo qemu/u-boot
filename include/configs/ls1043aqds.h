@@ -391,12 +391,6 @@ unsigned long get_board_ddr_clk(void);
 #define CONFIG_SYS_MONITOR_BASE CONFIG_SYS_TEXT_BASE    /* start of monitor */
 #endif
 
-/*
- * Environment
- */
-
-#define CONFIG_CMDLINE_TAG
-
 #include <asm/fsl_secure_boot.h>
 
 #endif /* __LS1043AQDS_H__ */
