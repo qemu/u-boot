@@ -1047,11 +1047,10 @@ endif
 ifeq ($(CONFIG_MMC),y)
 ifneq ($(CONFIG_DM_MMC)$(CONFIG_BLK),yy)
 	@echo >&2 "===================== WARNING ======================"
-	@echo >&2 "This board does not use CONFIG_DM_MMC. Please update"
-	@echo >&2 "the board to use CONFIG_DM_MMC before the v2019.04 release."
-	@echo >&2 "Failure to update by the deadline may result in board removal."
-	@echo >&2 "See doc/driver-model/migration.rst for more info."
+	@echo >&2 "This board does not use CONFIG_DM_MMC. The migration deadline"
+	@echo >&2 "was the v2019.04 release."
 	@echo >&2 "===================================================="
+	@exit 1
 endif
 endif
 ifeq ($(CONFIG_USB),y)
