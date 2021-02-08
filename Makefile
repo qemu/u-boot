@@ -1064,17 +1064,6 @@ ifneq ($(CONFIG_DM_USB)$(CONFIG_OF_CONTROL)$(CONFIG_BLK),yyy)
 	@echo >&2 "===================================================="
 endif
 endif
-ifeq ($(CONFIG_LIBATA),y)
-ifneq ($(CONFIG_AHCI),y)
-	@echo >&2 "===================== WARNING ======================"
-	@echo >&2 "This board does use CONFIG_LIBATA but has CONFIG_AHCI not"
-	@echo >&2 "enabled. Please update the storage controller driver to use"
-	@echo >&2 "CONFIG_AHCI before the v2019.07 release."
-	@echo >&2 "Failure to update by the deadline may result in board removal."
-	@echo >&2 "See doc/driver-model/migration.rst for more info."
-	@echo >&2 "===================================================="
-endif
-endif
 ifeq ($(CONFIG_PCI),y)
 ifneq ($(CONFIG_DM_PCI),y)
 	@echo >&2 "===================== WARNING ======================"
