@@ -8,10 +8,6 @@ choice
 	prompt "MX23 board select"
 	optional
 
-config TARGET_MX23_OLINUXINO
-	bool "Support mx23_olinuxino"
-	select BOARD_EARLY_INIT_F
-
 config TARGET_MX23EVK
 	bool "Support mx23evk"
 	select BOARD_EARLY_INIT_F
@@ -27,7 +23,6 @@ endchoice
 config SYS_SOC
 	default "mxs"
 
-source "board/olimex/mx23_olinuxino/Kconfig"
 source "board/freescale/mx23evk/Kconfig"
 source "board/sandisk/sansa_fuze_plus/Kconfig"
 
