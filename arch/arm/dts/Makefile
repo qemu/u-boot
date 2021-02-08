@@ -56,8 +56,7 @@ dtb-$(CONFIG_ARCH_KIRKWOOD) += \
 	kirkwood-ns2lite.dtb \
 	kirkwood-ns2max.dtb \
 	kirkwood-ns2mini.dtb \
-	kirkwood-pogo_e02.dtb \
-	kirkwood-sheevaplug.dtb
+	kirkwood-pogo_e02.dtb
 
 dtb-$(CONFIG_MACH_S900) += \
 	bubblegum_96.dtb
