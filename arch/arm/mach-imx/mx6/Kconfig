@@ -642,11 +642,6 @@ config TARGET_WANDBOARD
 	select BOARD_LATE_INIT
 	select SUPPORT_SPL
 
-config TARGET_WARP
-	bool "WaRP"
-	depends on MX6SL
-	select BOARD_LATE_INIT
-
 config TARGET_XPRESS
 	bool "CCV xPress"
 	depends on MX6UL
@@ -747,7 +742,6 @@ source "board/k+p/kp_imx6q_tpc/Kconfig"
 source "board/udoo/Kconfig"
 source "board/udoo/neo/Kconfig"
 source "board/wandboard/Kconfig"
-source "board/warp/Kconfig"
 source "board/BuR/brppt2/Kconfig"
 
 endif
