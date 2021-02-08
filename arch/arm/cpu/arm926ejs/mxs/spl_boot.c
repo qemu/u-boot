@@ -39,42 +39,13 @@ void early_delay(int delay)
 		;
 }
 
-#if defined(CONFIG_MX23)
-#define	MUX_CONFIG_BOOTMODE_PAD	(MXS_PAD_3V3 | MXS_PAD_4MA | MXS_PAD_NOPULL)
-static const iomux_cfg_t iomux_boot[] = {
-	MX23_PAD_LCD_D00__GPIO_1_0 | MUX_CONFIG_BOOTMODE_PAD,
-	MX23_PAD_LCD_D01__GPIO_1_1 | MUX_CONFIG_BOOTMODE_PAD,
-	MX23_PAD_LCD_D02__GPIO_1_2 | MUX_CONFIG_BOOTMODE_PAD,
-	MX23_PAD_LCD_D03__GPIO_1_3 | MUX_CONFIG_BOOTMODE_PAD,
-	MX23_PAD_LCD_D04__GPIO_1_4 | MUX_CONFIG_BOOTMODE_PAD,
-	MX23_PAD_LCD_D05__GPIO_1_5 | MUX_CONFIG_BOOTMODE_PAD,
-};
-#endif
-
 static uint8_t mxs_get_bootmode_index(void)
 {
 	uint8_t bootmode = 0;
 	int i;
 	uint8_t masked;
 
-#if defined(CONFIG_MX23)
-	/* Setup IOMUX of bootmode pads to GPIO */
-	mxs_iomux_setup_multiple_pads(iomux_boot, ARRAY_SIZE(iomux_boot));
-
-	/* Setup bootmode pins as GPIO input */
-	gpio_direction_input(MX23_PAD_LCD_D00__GPIO_1_0);
-	gpio_direction_input(MX23_PAD_LCD_D01__GPIO_1_1);
-	gpio_direction_input(MX23_PAD_LCD_D02__GPIO_1_2);
-	gpio_direction_input(MX23_PAD_LCD_D03__GPIO_1_3);
-	gpio_direction_input(MX23_PAD_LCD_D05__GPIO_1_5);
-
-	/* Read bootmode pads */
-	bootmode |= (gpio_get_value(MX23_PAD_LCD_D00__GPIO_1_0) ? 1 : 0) << 0;
-	bootmode |= (gpio_get_value(MX23_PAD_LCD_D01__GPIO_1_1) ? 1 : 0) << 1;
-	bootmode |= (gpio_get_value(MX23_PAD_LCD_D02__GPIO_1_2) ? 1 : 0) << 2;
-	bootmode |= (gpio_get_value(MX23_PAD_LCD_D03__GPIO_1_3) ? 1 : 0) << 3;
-	bootmode |= (gpio_get_value(MX23_PAD_LCD_D05__GPIO_1_5) ? 1 : 0) << 5;
-#elif defined(CONFIG_MX28)
+#if defined(CONFIG_MX28)
 	/* The global boot mode will be detected by ROM code and its value
 	 * is stored at the fixed address 0x00019BF0 in OCRAM.
 	 */

@@ -15,15 +15,7 @@
 #include <asm/arch/iomux.h>
 #include <asm/arch/imx-regs.h>
 
-#if	defined(CONFIG_MX23)
-#define	PINCTRL_BANKS		3
-#define	PINCTRL_DOUT(n)		(0x0500 + ((n) * 0x10))
-#define	PINCTRL_DIN(n)		(0x0600 + ((n) * 0x10))
-#define	PINCTRL_DOE(n)		(0x0700 + ((n) * 0x10))
-#define	PINCTRL_PIN2IRQ(n)	(0x0800 + ((n) * 0x10))
-#define	PINCTRL_IRQEN(n)	(0x0900 + ((n) * 0x10))
-#define	PINCTRL_IRQSTAT(n)	(0x0c00 + ((n) * 0x10))
-#elif	defined(CONFIG_MX28)
+#if	defined(CONFIG_MX28)
 #define	PINCTRL_BANKS		5
 #define	PINCTRL_DOUT(n)		(0x0700 + ((n) * 0x10))
 #define	PINCTRL_DIN(n)		(0x0900 + ((n) * 0x10))
@@ -32,7 +24,7 @@
 #define	PINCTRL_IRQEN(n)	(0x1100 + ((n) * 0x10))
 #define	PINCTRL_IRQSTAT(n)	(0x1400 + ((n) * 0x10))
 #else
-#error "Please select CONFIG_MX23 or CONFIG_MX28"
+#error "Please select CONFIG_MX28"
 #endif
 
 #define GPIO_INT_FALL_EDGE	0x0

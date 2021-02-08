@@ -29,10 +29,6 @@ struct mxs_lcdif_regs {
 	mxs_reg_32(hw_lcdif_cur_buf)		/* 0x30/0x40 */
 	mxs_reg_32(hw_lcdif_next_buf)		/* 0x40/0x50 */
 
-#if defined(CONFIG_MX23)
-	uint32_t	reserved1[4];
-#endif
-
 	mxs_reg_32(hw_lcdif_timing)		/* 0x60 */
 	mxs_reg_32(hw_lcdif_vdctrl0)		/* 0x70 */
 	mxs_reg_32(hw_lcdif_vdctrl1)		/* 0x80 */
@@ -52,9 +48,6 @@ struct mxs_lcdif_regs {
 	mxs_reg_32(hw_lcdif_csc_offset)		/* 0x160 */
 	mxs_reg_32(hw_lcdif_csc_limit)		/* 0x170 */
 
-#if defined(CONFIG_MX23)
-	uint32_t	reserved2[12];
-#endif
 	mxs_reg_32(hw_lcdif_data)		/* 0x1b0/0x180 */
 	mxs_reg_32(hw_lcdif_bm_error_stat)	/* 0x1c0/0x190 */
 #if defined(CONFIG_MX28) || defined(CONFIG_MX6SX) || \
@@ -214,13 +207,8 @@ struct mxs_lcdif_regs {
 #define	LCDIF_VDCTRL1_VSYNC_PERIOD_MASK				0xffffffff
 #define	LCDIF_VDCTRL1_VSYNC_PERIOD_OFFSET			0
 
-#if defined(CONFIG_MX23)
-#define	LCDIF_VDCTRL2_HSYNC_PULSE_WIDTH_MASK			(0xff << 24)
-#define	LCDIF_VDCTRL2_HSYNC_PULSE_WIDTH_OFFSET			24
-#else
 #define	LCDIF_VDCTRL2_HSYNC_PULSE_WIDTH_MASK			(0x3fff << 18)
 #define	LCDIF_VDCTRL2_HSYNC_PULSE_WIDTH_OFFSET			18
-#endif
 #define	LCDIF_VDCTRL2_HSYNC_PERIOD_MASK				0x3ffff
 #define	LCDIF_VDCTRL2_HSYNC_PERIOD_OFFSET			0
 

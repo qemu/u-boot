@@ -939,13 +939,6 @@ static void mxs_power_configure_power_source(void)
 	mxs_init_batt_bo();
 
 	mxs_switch_vddd_to_dcdc_source();
-
-#ifdef CONFIG_MX23
-	/* Fire up the VDDMEM LinReg now that we're all set. */
-	debug("SPL: Enabling mx23 VDDMEM linear regulator\n");
-	writel(POWER_VDDMEMCTRL_ENABLE_LINREG | POWER_VDDMEMCTRL_ENABLE_ILIMIT,
-		&power_regs->hw_power_vddmemctrl);
-#endif
 }
 
 /**
@@ -1065,9 +1058,7 @@ struct mxs_vddx_cfg {
 static const struct mxs_vddx_cfg mxs_vddio_cfg = {
 	.reg			= &(((struct mxs_power_regs *)MXS_POWER_BASE)->
 					hw_power_vddioctrl),
-#if defined(CONFIG_MX23)
-	.step_mV		= 25,
-#else
+#if defined(CONFIG_MX28)
 	.step_mV		= 50,
 #endif
 	.lowest_mV		= 2800,
@@ -1091,21 +1082,6 @@ static const struct mxs_vddx_cfg mxs_vddd_cfg = {
 	.bo_offset_mask		= POWER_VDDDCTRL_BO_OFFSET_MASK,
 	.bo_offset_offset	= POWER_VDDDCTRL_BO_OFFSET_OFFSET,
 };
-
-#ifdef CONFIG_MX23
-static const struct mxs_vddx_cfg mxs_vddmem_cfg = {
-	.reg			= &(((struct mxs_power_regs *)MXS_POWER_BASE)->
-					hw_power_vddmemctrl),
-	.step_mV		= 50,
-	.lowest_mV		= 1700,
-	.powered_by_linreg	= NULL,
-	.trg_mask		= POWER_VDDMEMCTRL_TRG_MASK,
-	.bo_irq			= 0,
-	.bo_enirq		= 0,
-	.bo_offset_mask		= 0,
-	.bo_offset_offset	= 0,
-};
-#endif
 
 /**
  * mxs_power_set_vddx() - Configure voltage on DC-DC converter rail
@@ -1211,24 +1187,6 @@ static void mxs_setup_batt_detect(void)
 }
 
 /**
- * mxs_ungate_power() - Ungate the POWER block
- *
- * This function ungates clock to the power block. In case the power block
- * was still gated at this point, it will not be possible to configure the
- * block and therefore the power initialization would fail. This function
- * is only needed on i.MX233, on i.MX28 the power block is always ungated.
- */
-static void mxs_ungate_power(void)
-{
-#ifdef CONFIG_MX23
-	struct mxs_power_regs *power_regs =
-		(struct mxs_power_regs *)MXS_POWER_BASE;
-
-	writel(POWER_CTRL_CLKGATE, &power_regs->hw_power_ctrl_clr);
-#endif
-}
-
-/**
  * mxs_power_init() - The power block init main function
  *
  * This function calls all the power block initialization functions in
@@ -1240,8 +1198,6 @@ void mxs_power_init(void)
 		(struct mxs_power_regs *)MXS_POWER_BASE;
 
 	debug("SPL: Initialising Power Block\n");
-
-	mxs_ungate_power();
 
 	mxs_power_clock2xtal();
 	mxs_power_set_auto_restart();
@@ -1258,10 +1214,6 @@ void mxs_power_init(void)
 
 	debug("SPL: Setting VDDD to 1V55 (brownout @ 1v400)\n");
 	mxs_power_set_vddx(&mxs_vddd_cfg, 1550, 1400);
-#ifdef CONFIG_MX23
-	debug("SPL: Setting mx23 VDDMEM to 2V5 (brownout @ 1v7)\n");
-	mxs_power_set_vddx(&mxs_vddmem_cfg, 2500, 1700);
-#endif
 	writel(POWER_CTRL_VDDD_BO_IRQ | POWER_CTRL_VDDA_BO_IRQ |
 		POWER_CTRL_VDDIO_BO_IRQ | POWER_CTRL_VDD5V_DROOP_IRQ |
 		POWER_CTRL_VBUS_VALID_IRQ | POWER_CTRL_BATT_BO_IRQ |

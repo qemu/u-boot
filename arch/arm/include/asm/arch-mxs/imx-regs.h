@@ -25,11 +25,6 @@
 #include <asm/arch/regs-usb.h>
 #include <asm/arch/regs-usbphy.h>
 
-#ifdef CONFIG_MX23
-#include <asm/arch/regs-clkctrl-mx23.h>
-#include <asm/arch/regs-power-mx23.h>
-#endif
-
 #ifdef CONFIG_MX28
 #include <asm/arch/regs-clkctrl-mx28.h>
 #include <asm/arch/regs-power-mx28.h>

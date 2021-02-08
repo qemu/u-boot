@@ -23,17 +23,9 @@
  * Includes
  */
 
-#if defined(CONFIG_MX23) && defined(CONFIG_MX28)
-#error Select either CONFIG_MX23 or CONFIG_MX28 , never both!
-#elif !defined(CONFIG_MX23) && !defined(CONFIG_MX28)
-#error Select one of CONFIG_MX23 or CONFIG_MX28 !
-#endif
-
 #include <asm/arch/regs-base.h>
 
-#if defined(CONFIG_MX23)
-#include <asm/arch/iomux-mx23.h>
-#elif defined(CONFIG_MX28)
+#if defined(CONFIG_MX28)
 #include <asm/arch/iomux-mx28.h>
 #endif
 
@@ -54,9 +46,7 @@
 
 /* OCRAM at 0x0 ; 32kB on MX23 ; 128kB on MX28 */
 #define CONFIG_SYS_INIT_RAM_ADDR	0x00000000
-#if defined(CONFIG_MX23)
-#define CONFIG_SYS_INIT_RAM_SIZE	(32 * 1024)
-#elif defined(CONFIG_MX28)
+#if defined(CONFIG_MX28)
 #define CONFIG_SYS_INIT_RAM_SIZE	(128 * 1024)
 #endif
 

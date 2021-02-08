@@ -391,15 +391,7 @@ mxsmmc_send_cmd(struct udevice *dev, struct mmc_cmd *cmd, struct mmc_data *data)
 		ctrl0 |= SSP_CTRL0_DATA_XFER;
 
 		reg = data->blocksize * data->blocks;
-#if defined(CONFIG_MX23)
-		ctrl0 |= reg & SSP_CTRL0_XFER_COUNT_MASK;
-
-		clrsetbits_le32(&ssp_regs->hw_ssp_cmd0,
-			SSP_CMD0_BLOCK_SIZE_MASK | SSP_CMD0_BLOCK_COUNT_MASK,
-			((data->blocks - 1) << SSP_CMD0_BLOCK_COUNT_OFFSET) |
-			((ffs(data->blocksize) - 1) <<
-				SSP_CMD0_BLOCK_SIZE_OFFSET));
-#elif defined(CONFIG_MX28)
+#if defined(CONFIG_MX28)
 		writel(reg, &ssp_regs->hw_ssp_xfer_size);
 
 		reg = ((data->blocks - 1) <<
@@ -595,8 +587,6 @@ static int mxsmmc_probe(struct udevice *dev)
 
 #ifdef CONFIG_MX28
 	priv->clkid = clkid - MXS_SSP_IMX28_CLKID_SSP0;
-#else /* CONFIG_MX23 */
-	priv->clkid = clkid - MXS_SSP_IMX23_CLKID_SSP0;
 #endif
 	mmc = &plat->mmc;
 	mmc->cfg = &plat->cfg;

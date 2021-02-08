@@ -71,21 +71,6 @@ __weak uint32_t mxs_dram_vals[] = {
 	0x00040004, 0x00000000, 0x00000000, 0x00000000,
 	0x00000000, 0xffffffff
 
-/*
- * i.MX23 DDR at 133MHz
- */
-#elif defined(CONFIG_MX23)
-	0x01010001, 0x00010100, 0x01000101, 0x00000001,
-	0x00000101, 0x00000000, 0x00010000, 0x01000001,
-	0x00000000, 0x00000001, 0x07000200, 0x00070202,
-	0x02020000, 0x04040a01, 0x00000201, 0x02040000,
-	0x02000000, 0x19000f08, 0x0d0d0000, 0x02021313,
-	0x02061521, 0x0000000a, 0x00080008, 0x00200020,
-	0x00200020, 0x00200020, 0x000003f7, 0x00000000,
-	0x00000000, 0x00000020, 0x00000020, 0x00c80000,
-	0x000a23cd, 0x000000c8, 0x00006665, 0x00000000,
-	0x00000101, 0x00040001, 0x00000000, 0x00000000,
-	0x00010000
 #else
 #error Unsupported memory initialization
 #endif
@@ -144,10 +129,7 @@ static void mxs_mem_init_clock(void)
 {
 	struct mxs_clkctrl_regs *clkctrl_regs =
 		(struct mxs_clkctrl_regs *)MXS_CLKCTRL_BASE;
-#if defined(CONFIG_MX23)
-	/* Fractional divider for ref_emi is 33 ; 480 * 18 / 33 = 266MHz */
-	const unsigned char divider = 33;
-#elif defined(CONFIG_MX28)
+#if defined(CONFIG_MX28)
 	/* Fractional divider for ref_emi is 21 ; 480 * 18 / 21 = 411MHz */
 	const unsigned char divider = 21;
 #endif
@@ -247,67 +229,6 @@ uint32_t mxs_mem_get_size(void)
 	return sz;
 }
 
-#ifdef CONFIG_MX23
-static void mx23_mem_setup_vddmem(void)
-{
-	struct mxs_power_regs *power_regs =
-		(struct mxs_power_regs *)MXS_POWER_BASE;
-
-	debug("SPL: Setting mx23 VDDMEM\n");
-
-	/* We must wait before and after disabling the current limiter! */
-	early_delay(10000);
-
-	clrbits_le32(&power_regs->hw_power_vddmemctrl,
-		POWER_VDDMEMCTRL_ENABLE_ILIMIT);
-
-	early_delay(10000);
-
-}
-
-static void mx23_mem_init(void)
-{
-	debug("SPL: Initialising mx23 SDRAM Controller\n");
-
-	/*
-	 * Reset/ungate the EMI block. This is essential, otherwise the system
-	 * suffers from memory instability. This thing is mx23 specific and is
-	 * no longer present on mx28.
-	 */
-	mxs_reset_block((struct mxs_register_32 *)MXS_EMI_BASE);
-
-	mx23_mem_setup_vddmem();
-
-	/*
-	 * Configure the DRAM registers
-	 */
-
-	/* Clear START and SREFRESH bit from DRAM_CTL8 */
-	clrbits_le32(MXS_DRAM_BASE + 0x20, (1 << 16) | (1 << 8));
-
-	initialize_dram_values();
-
-	/* Set START bit in DRAM_CTL8 */
-	setbits_le32(MXS_DRAM_BASE + 0x20, 1 << 16);
-
-	clrbits_le32(MXS_DRAM_BASE + 0x40, 1 << 17);
-
-	/* Wait for EMI_STAT bit DRAM_HALTED */
-	for (;;) {
-		if (!(readl(MXS_EMI_BASE + 0x10) & (1 << 1)))
-			break;
-		early_delay(1000);
-	}
-
-	/* Adjust EMI port priority. */
-	clrsetbits_le32(0x80020000, 0x1f << 16, 0x2);
-	early_delay(20000);
-
-	setbits_le32(MXS_DRAM_BASE + 0x40, 1 << 19);
-	setbits_le32(MXS_DRAM_BASE + 0x40, 1 << 11);
-}
-#endif
-
 #ifdef CONFIG_MX28
 static void mx28_mem_init(void)
 {
@@ -349,9 +270,7 @@ void mxs_mem_init(void)
 
 	mxs_mem_setup_vdda();
 
-#if defined(CONFIG_MX23)
-	mx23_mem_init();
-#elif defined(CONFIG_MX28)
+#if defined(CONFIG_MX28)
 	mx28_mem_init();
 #endif
 

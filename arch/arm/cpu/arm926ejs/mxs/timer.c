@@ -18,9 +18,7 @@
 #include <linux/delay.h>
 
 /* Maximum fixed count */
-#if defined(CONFIG_MX23)
-#define TIMER_LOAD_VAL 0xffff
-#elif defined(CONFIG_MX28)
+#if defined(CONFIG_MX28)
 #define TIMER_LOAD_VAL 0xffffffff
 #endif
 
@@ -59,9 +57,7 @@ int timer_init(void)
 	mxs_reset_block(&timrot_regs->hw_timrot_rotctrl_reg);
 
 	/* Set fixed_count to 0 */
-#if defined(CONFIG_MX23)
-	writel(0, &timrot_regs->hw_timrot_timcount0);
-#elif defined(CONFIG_MX28)
+#if defined(CONFIG_MX28)
 	writel(0, &timrot_regs->hw_timrot_fixed_count0);
 #endif
 
@@ -71,9 +67,7 @@ int timer_init(void)
 		&timrot_regs->hw_timrot_timctrl0);
 
 	/* Set fixed_count to maximal value */
-#if defined(CONFIG_MX23)
-	writel(TIMER_LOAD_VAL - 1, &timrot_regs->hw_timrot_timcount0);
-#elif defined(CONFIG_MX28)
+#if defined(CONFIG_MX28)
 	writel(TIMER_LOAD_VAL, &timrot_regs->hw_timrot_fixed_count0);
 #endif
 

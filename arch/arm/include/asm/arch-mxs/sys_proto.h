@@ -16,9 +16,7 @@ int mxsmmc_initialize(struct bd_info *bis, int id, int (*wp)(int),
 
 #ifdef CONFIG_SPL_BUILD
 
-#if defined(CONFIG_MX23)
-#include <asm/arch/iomux-mx23.h>
-#elif defined(CONFIG_MX28)
+#if defined(CONFIG_MX28)
 #include <asm/arch/iomux-mx28.h>
 #endif
 
@@ -36,18 +34,7 @@ struct mxs_pair {
 };
 
 static const struct mxs_pair mxs_boot_modes[] = {
-#if defined(CONFIG_MX23)
-	{ 0x00, 0x0f, "USB" },
-	{ 0x01, 0x1f, "I2C, master" },
-	{ 0x02, 0x1f, "SSP SPI #1, master, NOR" },
-	{ 0x03, 0x1f, "SSP SPI #2, master, NOR" },
-	{ 0x04, 0x1f, "NAND" },
-	{ 0x06, 0x1f, "JTAG" },
-	{ 0x08, 0x1f, "SSP SPI #3, master, EEPROM" },
-	{ 0x09, 0x1f, "SSP SD/MMC #0" },
-	{ 0x0a, 0x1f, "SSP SD/MMC #1" },
-	{ 0x00, 0x00, "Reserved/Unknown/Wrong" },
-#elif defined(CONFIG_MX28)
+#if defined(CONFIG_MX28)
 	{ 0x00, 0x0f, "USB #0" },
 	{ 0x01, 0x1f, "I2C #0, master, 3V3" },
 	{ 0x11, 0x1f, "I2C #0, master, 1V8" },
