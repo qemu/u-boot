@@ -551,9 +551,6 @@ config TARGET_PCL063_ULL
 	select DM_THERMAL
 	select SUPPORT_SPL
 
-config TARGET_SECOMX6
-	bool "secomx6 boards"
-
 config TARGET_SKSIMX6
 	bool "sks-imx6"
 	depends on MX6QDL
@@ -736,7 +733,6 @@ source "board/softing/vining_2000/Kconfig"
 source "board/liebherr/display5/Kconfig"
 source "board/liebherr/mccmon6/Kconfig"
 source "board/logicpd/imx6/Kconfig"
-source "board/seco/Kconfig"
 source "board/sks-kinkel/sksimx6/Kconfig"
 source "board/solidrun/mx6cuboxi/Kconfig"
 source "board/somlabs/visionsom-6ull/Kconfig"
