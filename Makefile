@@ -1054,16 +1054,6 @@ ifneq ($(CONFIG_DM_USB)$(CONFIG_OF_CONTROL)$(CONFIG_BLK),yyy)
 	@echo >&2 "===================================================="
 endif
 endif
-ifeq ($(CONFIG_MVSATA_IDE),y)
-	@echo >&2 "===================== WARNING ======================"
-	@echo >&2 "This board does use CONFIG_MVSATA_IDE which is not"
-	@echo >&2 "ported to driver-model (DM) yet. Please update the storage"
-	@echo >&2 "controller driver to use CONFIG_AHCI before the v2019.07"
-	@echo >&2 "release."
-	@echo >&2 "Failure to update by the deadline may result in board removal."
-	@echo >&2 "See doc/driver-model/migration.rst for more info."
-	@echo >&2 "===================================================="
-endif
 ifeq ($(CONFIG_LIBATA),y)
 ifneq ($(CONFIG_AHCI),y)
 	@echo >&2 "===================== WARNING ======================"
