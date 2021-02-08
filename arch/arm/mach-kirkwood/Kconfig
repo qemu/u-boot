@@ -4,9 +4,6 @@ choice
 	prompt "Marvell Kirkwood board select"
 	optional
 
-config TARGET_OPENRD
-	bool "Marvell OpenRD Board"
-
 config TARGET_DREAMPLUG
 	bool "DreamPlug Board"
 
@@ -70,7 +67,6 @@ endchoice
 config SYS_SOC
 	default "kirkwood"
 
-source "board/Marvell/openrd/Kconfig"
 source "board/Marvell/dreamplug/Kconfig"
 source "board/Synology/ds109/Kconfig"
 source "board/Marvell/guruplug/Kconfig"
