@@ -11,9 +11,6 @@ choice
 config TARGET_BG0900
 	bool "Support bg0900"
 
-config TARGET_SC_SPS_1
-	bool "Support sc_sps_1"
-
 config TARGET_TS4600
 	bool "Support TS4600"
 
@@ -27,7 +24,6 @@ config SYS_SOC
 
 source "board/liebherr/xea/Kconfig"
 source "board/ppcag/bg0900/Kconfig"
-source "board/schulercontrol/sc_sps_1/Kconfig"
 source "board/technologic/ts4600/Kconfig"
 
 endif
