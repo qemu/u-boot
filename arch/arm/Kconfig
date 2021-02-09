@@ -750,11 +750,6 @@ config ARCH_S5PC1XX
 	select DM_SERIAL
 	imply CMD_DM
 
-config ARCH_HIGHBANK
-	bool "Calxeda Highbank"
-	select CPU_V7A
-	select PL011_SERIAL
-
 config ARCH_INTEGRATOR
 	bool "ARM Ltd. Integrator family"
 	select DM
@@ -1872,8 +1867,6 @@ source "arch/arm/mach-bcmstb/Kconfig"
 source "arch/arm/mach-davinci/Kconfig"
 
 source "arch/arm/mach-exynos/Kconfig"
-
-source "arch/arm/mach-highbank/Kconfig"
 
 source "arch/arm/mach-integrator/Kconfig"
 
