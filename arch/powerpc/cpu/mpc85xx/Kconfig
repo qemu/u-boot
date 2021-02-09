@@ -45,7 +45,6 @@ config TARGET_P5040DS
 	select PHYS_64BIT
 	select ARCH_P5040
 	select BOARD_LATE_INIT if CHAIN_OF_TRUST
-	imply CMD_SATA
 	imply PANIC_HANG
 
 config TARGET_MPC8541CDS
@@ -75,7 +74,6 @@ config TARGET_P1010RDB_PA
 	select SUPPORT_SPL
 	select SUPPORT_TPL
 	imply CMD_EEPROM
-	imply CMD_SATA
 	imply PANIC_HANG
 
 config TARGET_P1010RDB_PB
@@ -85,7 +83,6 @@ config TARGET_P1010RDB_PB
 	select SUPPORT_SPL
 	select SUPPORT_TPL
 	imply CMD_EEPROM
-	imply CMD_SATA
 	imply PANIC_HANG
 
 config TARGET_P1020RDB_PC
@@ -154,7 +151,6 @@ config TARGET_T1040RDB
 	select BOARD_LATE_INIT if CHAIN_OF_TRUST
 	select SUPPORT_SPL
 	select PHYS_64BIT
-	imply CMD_SATA
 	imply PANIC_HANG
 
 config TARGET_T1040D4RDB
@@ -163,7 +159,6 @@ config TARGET_T1040D4RDB
 	select BOARD_LATE_INIT if CHAIN_OF_TRUST
 	select SUPPORT_SPL
 	select PHYS_64BIT
-	imply CMD_SATA
 	imply PANIC_HANG
 
 config TARGET_T1042RDB
@@ -172,7 +167,6 @@ config TARGET_T1042RDB
 	select BOARD_LATE_INIT if CHAIN_OF_TRUST
 	select SUPPORT_SPL
 	select PHYS_64BIT
-	imply CMD_SATA
 
 config TARGET_T1042D4RDB
 	bool "Support T1042D4RDB"
@@ -180,7 +174,6 @@ config TARGET_T1042D4RDB
 	select BOARD_LATE_INIT if CHAIN_OF_TRUST
 	select SUPPORT_SPL
 	select PHYS_64BIT
-	imply CMD_SATA
 	imply PANIC_HANG
 
 config TARGET_T1042RDB_PI
@@ -189,7 +182,6 @@ config TARGET_T1042RDB_PI
 	select BOARD_LATE_INIT if CHAIN_OF_TRUST
 	select SUPPORT_SPL
 	select PHYS_64BIT
-	imply CMD_SATA
 	imply PANIC_HANG
 
 config TARGET_T2080QDS
@@ -528,10 +520,8 @@ config ARCH_P1010
 	imply CMD_EEPROM
 	imply CMD_MTDPARTS
 	imply CMD_NAND
-	imply CMD_SATA
 	imply CMD_PCI
 	imply CMD_REGINFO
-	imply FSL_SATA
 
 config ARCH_P1011
 	bool
@@ -791,9 +781,7 @@ config ARCH_P5020
 	select SYS_FSL_SEC_COMPAT_4
 	select SYS_PPC64
 	select FSL_ELBC
-	imply CMD_SATA
 	imply CMD_REGINFO
-	imply FSL_SATA
 
 config ARCH_P5040
 	bool
@@ -816,9 +804,7 @@ config ARCH_P5040
 	select SYS_FSL_SEC_COMPAT_4
 	select SYS_PPC64
 	select FSL_ELBC
-	imply CMD_SATA
 	imply CMD_REGINFO
-	imply FSL_SATA
 
 config ARCH_QEMU_E500
 	bool
@@ -886,9 +872,7 @@ config ARCH_T1040
 	select FSL_IFC
 	imply CMD_MTDPARTS
 	imply CMD_NAND
-	imply CMD_SATA
 	imply CMD_REGINFO
-	imply FSL_SATA
 
 config ARCH_T1042
 	bool
@@ -910,9 +894,7 @@ config ARCH_T1042
 	select FSL_IFC
 	imply CMD_MTDPARTS
 	imply CMD_NAND
-	imply CMD_SATA
 	imply CMD_REGINFO
-	imply FSL_SATA
 
 config ARCH_T2080
 	bool
@@ -985,10 +967,8 @@ config ARCH_T4160
 	select SYS_FSL_SEC_COMPAT_4
 	select SYS_PPC64
 	select FSL_IFC
-	imply CMD_SATA
 	imply CMD_NAND
 	imply CMD_REGINFO
-	imply FSL_SATA
 
 config ARCH_T4240
 	bool

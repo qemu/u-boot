@@ -79,8 +79,6 @@ config TARGET_MPC837XEMDS
 	bool "Support MPC837XEMDS"
 	select ARCH_MPC837X
 	select BOARD_EARLY_INIT_F
-	imply CMD_SATA
-	imply FSL_SATA
 
 config TARGET_MPC837XERDB
 	bool "Support MPC837XERDB"

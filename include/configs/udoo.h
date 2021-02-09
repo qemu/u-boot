@@ -65,7 +65,6 @@
 
 #define BOOT_TARGET_DEVICES(func) \
 	func(MMC, mmc, 0) \
-	func(SATA, sata, 0) \
 	func(DHCP, dhcp, na)
 
 #include <config_distro_bootcmd.h>
