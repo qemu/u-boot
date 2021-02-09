@@ -61,11 +61,6 @@ config TARGET_MX53EVK
 	select BOARD_LATE_INIT
 	select MX53
 
-config TARGET_MX53LOCO
-	bool "Support mx53loco"
-	select BOARD_LATE_INIT
-	select MX53
-
 config TARGET_MX53PPD
 	bool "Support mx53ppd"
 	select MX53
@@ -93,7 +88,6 @@ source "board/beckhoff/mx53cx9020/Kconfig"
 source "board/freescale/mx51evk/Kconfig"
 source "board/freescale/mx53ard/Kconfig"
 source "board/freescale/mx53evk/Kconfig"
-source "board/freescale/mx53loco/Kconfig"
 source "board/freescale/mx53smd/Kconfig"
 source "board/ge/mx53ppd/Kconfig"
 source "board/inversepath/usbarmory/Kconfig"
