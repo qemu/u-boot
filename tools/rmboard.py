@@ -123,12 +123,14 @@ def rm_board(board):
     ## Change the messages as needed
     msg = '''arm: Remove %s board
 
-This board has not been converted to CONFIG_DM_MMC by the deadline.
-Remove it.
+This board relies on using CONFIG_LIBATA but does not enable CONFIG_AHCI.  The
+deadline for this conversion was the v2019.07 release.  The use of CONFIG_AHCI
+requires CONFIG_DM.  The deadline for this conversion was v2020.01.  Remove
+this board.
 
 ''' % board
     for name in cc:
-        msg += 'Patch-cc: %s\n' % name
+        msg += 'Cc: %s\n' % name
 
     # Create the commit
     cmd = ['git', 'commit', '-s', '-m', msg]
