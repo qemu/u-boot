@@ -121,10 +121,10 @@ def rm_board(board):
     stdout = command.RunPipe([cmd], capture=True).stdout
 
     ## Change the messages as needed
-    msg = '''arm: Remove %s board
+    msg = '''sh: Remove %s board
 
-This board has not been converted to CONFIG_DM_MMC by the deadline.
-Remove it.
+This board has not been converted to CONFIG_DM by the deadline of v2020.01
+and is missing other conversions which depend on this as well.  Remove it.
 
 ''' % board
     for name in cc:
