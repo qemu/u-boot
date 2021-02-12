@@ -8,6 +8,7 @@ config FS_EXT4
 config EXT4_WRITE
 	bool "Enable ext4 filesystem write support"
 	depends on FS_EXT4
+	select CRC32C
 	help
 	  This provides support for creating and writing new files to an
 	  existing ext4 filesystem partition.

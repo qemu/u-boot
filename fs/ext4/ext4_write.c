@@ -30,6 +30,7 @@
 #include <linux/stat.h>
 #include <div64.h>
 #include "ext4_common.h"
+#include <u-boot/crc.h>
 
 static inline void ext4fs_sb_free_inodes_inc(struct ext2_sblock *sb)
 {
@@ -67,6 +68,139 @@ static inline void ext4fs_bg_free_blocks_inc
 		bg->free_blocks_high = cpu_to_le16(free_blocks >> 16);
 }
 
+uint32_t ext4_csum(uint32_t crc, const uint8_t *data, unsigned int length)
+{
+	static uint32_t table[256];
+	static int init;
+
+	if (!init) {
+		crc32c_init(table, 0x82f63b78);
+		init = 1;
+	}
+
+	return crc32c_cal(crc, (const char *)data, length, table);
+}
+
+void ext4fs_set_superblock_csum(struct ext2_sblock *sb)
+{
+	int offset;
+
+	if (!(le32_to_cpu(sb->feature_ro_compat) & EXT4_FEATURE_RO_COMPAT_METADATA_CSUM))
+		return;
+
+	offset = offsetof(struct ext2_sblock, checksum);
+	sb->checksum = cpu_to_le32(ext4_csum(~0, (uint8_t *)sb, offset));
+}
+
+static uint32_t ext4_inode_csum(struct ext2_inode *inode, unsigned int inode_no)
+{
+	struct ext_filesystem *fs = get_fs();
+	uint32_t crc32;
+	uint16_t dummy_csum = 0;
+	unsigned int dummy_size = sizeof(dummy_csum);
+	int offset = offsetof(struct ext2_inode, checksum_lo);
+	__le32 inum = cpu_to_le32(inode_no);
+	__le32 gen = inode->generation;
+	uint32_t inode_seed;
+
+	inode_seed = ext4_csum(fs->csum_seed, (uint8_t *)&inum, sizeof(inum));
+	inode_seed = ext4_csum(inode_seed, (uint8_t *)&gen, sizeof(gen));
+
+	crc32 = ext4_csum(inode_seed, (uint8_t *)inode, offset);
+	crc32 = ext4_csum(crc32, (uint8_t *)&dummy_csum, dummy_size);
+	offset += dummy_size;
+	crc32 = ext4_csum(crc32, (uint8_t *)inode + offset, EXT4_OLD_INODE_SIZE - offset);
+
+	if (fs->inodesz > EXT4_OLD_INODE_SIZE) {
+		uint16_t extra_size;
+
+		offset = offsetof(struct ext2_inode, checksum_hi);
+		crc32 = ext4_csum(crc32, (uint8_t *)inode + EXT4_OLD_INODE_SIZE,
+				  offset - EXT4_OLD_INODE_SIZE);
+		extra_size = le16_to_cpu(inode->extra_isize);
+		if (extra_size + EXT4_OLD_INODE_SIZE >=
+		    offsetof(struct ext2_inode, checksum_hi) + sizeof(inode->checksum_hi)) {
+			crc32 = ext4_csum(crc32, (uint8_t *)&dummy_csum, dummy_size);
+			offset += dummy_size;
+		}
+		crc32 = ext4_csum(crc32, (uint8_t *)inode + offset, fs->inodesz - offset);
+	}
+
+	return crc32;
+}
+
+static void ext4fs_set_inode_csum(struct ext2_inode *inode, unsigned int inode_no)
+
+{
+	struct ext_filesystem *fs = get_fs();
+	uint32_t crc32;
+
+	if (!(le32_to_cpu(fs->sb->feature_ro_compat) & EXT4_FEATURE_RO_COMPAT_METADATA_CSUM))
+		return;
+
+	crc32 = ext4_inode_csum(inode, inode_no);
+	inode->checksum_lo = cpu_to_le16(crc32 & 0xffff);
+
+	if (fs->inodesz > EXT4_OLD_INODE_SIZE) {
+		uint16_t extra_size = le16_to_cpu(inode->extra_isize);
+
+		if (extra_size + EXT4_OLD_INODE_SIZE >=
+		    offsetof(struct ext2_inode, checksum_hi) + sizeof(inode->checksum_hi))
+			inode->checksum_hi = cpu_to_le16(crc32 >> 16);
+	}
+}
+
+static void ext4fs_set_group_descriptor_csum(uint32_t i)
+{
+	struct ext_filesystem *fs = get_fs();
+	struct ext2_block_group *desc = ext4fs_get_group_descriptor(fs, i);
+	__le32 le32_i = cpu_to_le32(i);
+	int offset = offsetof(struct ext2_block_group, bg_checksum);
+	uint16_t crc = 0;
+
+	if (le32_to_cpu(fs->sb->feature_ro_compat) & EXT4_FEATURE_RO_COMPAT_METADATA_CSUM) {
+		uint32_t crc32;
+		uint16_t dummy_csum = 0;
+		int sz;
+
+		/* inode bitmap */
+		sz = fs->sb->inodes_per_group / 8;
+		crc32 = ext4_csum(fs->csum_seed, fs->inode_bmaps[i], sz);
+		desc->bg_inode_id_csum = cpu_to_le16(crc32 & 0xFFFF);
+		if (fs->gdsize >= EXT4_BG_INODE_BITMAP_CSUM_HI_END)
+			desc->bg_inode_id_csum_high = cpu_to_le16(crc32 >> 16);
+
+		/* block bitmap */
+		sz = fs->sb->fragments_per_group / 8;
+		crc32 = ext4_csum(fs->csum_seed, fs->blk_bmaps[i], sz);
+		desc->bg_block_id_csum = cpu_to_le16(crc32 & 0xFFFF);
+		if (fs->gdsize >= EXT4_BG_BLOCK_BITMAP_CSUM_HI_END)
+			desc->bg_block_id_csum_high = cpu_to_le16(crc32 >> 16);
+
+		crc32 = ext4_csum(fs->csum_seed, (uint8_t *)&le32_i, sizeof(le32_i));
+		crc32 = ext4_csum(crc32, (uint8_t *)desc, offset);
+		crc32 = ext4_csum(crc32, (uint8_t *)&dummy_csum, sizeof(dummy_csum));
+		offset += sizeof(dummy_csum);
+		if (offset < fs->gdsize) {
+			crc32 = ext4_csum(crc32, (uint8_t *)desc + offset,
+					  fs->gdsize - offset);
+		}
+		crc = crc32 & 0xffff;
+	} else if (le32_to_cpu(fs->sb->feature_ro_compat) & EXT4_FEATURE_RO_COMPAT_GDT_CSUM) {
+		crc = ext2fs_crc16(~0, fs->sb->unique_id,
+				   sizeof(fs->sb->unique_id));
+		crc = ext2fs_crc16(crc, &le32_i, sizeof(le32_i));
+		crc = ext2fs_crc16(crc, desc, offset);
+		offset += sizeof(desc->bg_checksum);	/* skip checksum */
+		assert(offset == sizeof(*desc));
+		if (offset < fs->gdsize) {
+			crc = ext2fs_crc16(crc, (__u8 *)desc + offset,
+					   fs->gdsize - offset);
+		}
+	}
+	desc->bg_checksum = cpu_to_le16(crc);
+}
+
 static void ext4fs_update(void)
 {
 	short i;
@@ -74,14 +208,14 @@ static void ext4fs_update(void)
 	struct ext_filesystem *fs = get_fs();
 	struct ext2_block_group *bgd = NULL;
 
-	/* update  super block */
-	put_ext4((uint64_t)(SUPERBLOCK_SIZE),
-		 (struct ext2_sblock *)fs->sb, (uint32_t)SUPERBLOCK_SIZE);
+	/* update super block */
+	ext4fs_set_superblock_csum(fs->sb);
+	put_ext4(SUPERBLOCK_SIZE, fs->sb, SUPERBLOCK_SIZE);
 
 	/* update block bitmaps */
 	for (i = 0; i < fs->no_blkgrp; i++) {
 		bgd = ext4fs_get_group_descriptor(fs, i);
-		bgd->bg_checksum = cpu_to_le16(ext4fs_checksum_update(i));
+		ext4fs_set_group_descriptor_csum(i);
 		uint64_t b_bitmap_blk = ext4fs_bg_get_block_id(bgd, fs);
 		put_ext4(b_bitmap_blk * fs->blksz,
 			 fs->blk_bmaps[i], fs->blksz);
@@ -613,6 +747,11 @@ int ext4fs_init(void)
 	if (!ext4_read_superblock((char *)fs->sb))
 		goto fail;
 
+	if (le32_to_cpu(fs->sb->feature_incompat) & EXT4_FEATURE_INCOMPAT_CSUM_SEED)
+		fs->csum_seed = le32_to_cpu(fs->sb->checksum_seed);
+	else if (le32_to_cpu(fs->sb->feature_ro_compat) & EXT4_FEATURE_RO_COMPAT_METADATA_CSUM)
+		fs->csum_seed = ext4_csum(~0, fs->sb->unique_id, sizeof(fs->sb->unique_id));
+
 	/* init journal */
 	if (ext4fs_init_journal())
 		goto fail;
@@ -713,6 +852,7 @@ void ext4fs_deinit(void)
 			       temp_buff);
 		jsb = (struct journal_superblock_t *)temp_buff;
 		jsb->s_start = 0;
+		ext4fs_set_journal_superblock_csum(jsb);
 		put_ext4((uint64_t) ((uint64_t)blknr * (uint64_t)fs->blksz),
 			 (struct journal_superblock_t *)temp_buff, fs->blksz);
 		free(temp_buff);
@@ -724,8 +864,8 @@ void ext4fs_deinit(void)
 	new_feature_incompat = le32_to_cpu(fs->sb->feature_incompat);
 	new_feature_incompat &= ~EXT3_FEATURE_INCOMPAT_RECOVER;
 	fs->sb->feature_incompat = cpu_to_le32(new_feature_incompat);
-	put_ext4((uint64_t)(SUPERBLOCK_SIZE),
-		 (struct ext2_sblock *)fs->sb, (uint32_t)SUPERBLOCK_SIZE);
+	ext4fs_set_superblock_csum(fs->sb);
+	put_ext4(SUPERBLOCK_SIZE, fs->sb, SUPERBLOCK_SIZE);
 	free(fs->sb);
 	fs->sb = NULL;
 
@@ -881,17 +1021,15 @@ int ext4fs_write(const char *fname, const char *buffer,
 		return -1;
 	}
 
-	if (le32_to_cpu(fs->sb->feature_ro_compat) & EXT4_FEATURE_RO_COMPAT_METADATA_CSUM) {
-		printf("Unsupported feature metadata_csum found, not writing.\n");
-		return -1;
-	}
-
 	inodes_per_block = fs->blksz / fs->inodesz;
 	parent_inodeno = ext4fs_get_parent_inode_num(fname, filename, F_FILE);
 	if (parent_inodeno == -1)
 		goto fail;
 	if (ext4fs_iget(parent_inodeno, g_parent_inode))
 		goto fail;
+
+	g_parent_inode_no = parent_inodeno;
+
 	/* do not mess up a directory using hash trees */
 	if (le32_to_cpu(g_parent_inode->flags) & EXT4_INDEX_FL) {
 		printf("hash tree directory\n");
@@ -962,6 +1100,8 @@ int ext4fs_write(const char *fname, const char *buffer,
 			       &blks_reqd_for_file);
 	file_inode->blockcnt = cpu_to_le32((blks_reqd_for_file * fs->blksz) >>
 					   LOG2_SECTOR_SIZE);
+
+	ext4fs_set_inode_csum(file_inode, inodeno);
 
 	temp_ptr = zalloc(fs->blksz);
 	if (!temp_ptr)

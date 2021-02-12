@@ -184,6 +184,7 @@ int ext4fs_log_journal(char *journal_buffer, uint32_t blknr)
 int ext4fs_put_metadata(char *metadata_buffer, uint32_t blknr)
 {
 	struct ext_filesystem *fs = get_fs();
+
 	if (!metadata_buffer) {
 		printf("Invalid input arguments %s\n", __func__);
 		return -EINVAL;
@@ -336,6 +337,7 @@ void recover_transaction(int prev_desc_logical_no)
 	int ofs, flags;
 	int i;
 	struct ext3_journal_block_tag *tag;
+	int tag_size = fs->journal_tag_size;
 	char *temp_buff = zalloc(fs->blksz);
 	char *metadata_buff = zalloc(fs->blksz);
 	if (!temp_buff || !metadata_buff)
@@ -353,12 +355,14 @@ void recover_transaction(int prev_desc_logical_no)
 
 	do {
 		tag = (struct ext3_journal_block_tag *)(p_jdb + ofs);
-		ofs += sizeof(struct ext3_journal_block_tag);
+		ofs += tag_size;
 
 		if (ofs > fs->blksz)
 			break;
 
-		flags = be32_to_cpu(tag->flags);
+		flags = be16_to_cpu(tag->flags);
+
+		/* skip uuid */
 		if (!(flags & EXT3_JOURNAL_FLAG_SAME_UUID))
 			ofs += 16;
 
@@ -388,6 +392,15 @@ void print_jrnl_status(int recovery_flag)
 		printf("Journal Scan Completed\n");
 }
 
+void ext4fs_set_journal_superblock_csum(struct journal_superblock_t *sb)
+{
+	uint32_t csum;
+
+	sb->s_checksum = 0;
+	csum = ext4_csum(~0, (uint8_t *)sb, sizeof(struct journal_superblock_t));
+	sb->s_checksum = cpu_to_be32(csum);
+}
+
 int ext4fs_check_journal_state(int recovery_flag)
 {
 	int i;
@@ -405,9 +418,7 @@ int ext4fs_check_journal_state(int recovery_flag)
 	char *temp_buff = NULL;
 	char *temp_buff1 = NULL;
 	struct ext_filesystem *fs = get_fs();
-
-	if (le32_to_cpu(fs->sb->feature_ro_compat) & EXT4_FEATURE_RO_COMPAT_METADATA_CSUM)
-		return 0;
+	int tag_size = sizeof(struct ext3_journal_block_tag3);
 
 	temp_buff = zalloc(fs->blksz);
 	if (!temp_buff)
@@ -425,6 +436,11 @@ int ext4fs_check_journal_state(int recovery_flag)
 		       temp_buff);
 	jsb = (struct journal_superblock_t *) temp_buff;
 
+	if (be32_to_cpu(jsb->s_header.h_magic) != EXT3_JOURNAL_MAGIC_NUMBER) {
+		printf("Bad ext4 journal magic number\n");
+		return -ENODEV;
+	}
+
 	if (le32_to_cpu(fs->sb->feature_incompat) & EXT3_FEATURE_INCOMPAT_RECOVER) {
 		if (recovery_flag == RECOVER)
 			printf("Recovery required\n");
@@ -437,10 +453,23 @@ int ext4fs_check_journal_state(int recovery_flag)
 	if (be32_to_cpu(jsb->s_start) == 0)
 		goto end;
 
-	if (!(jsb->s_feature_compat &
-				cpu_to_be32(JBD2_FEATURE_COMPAT_CHECKSUM)))
-		jsb->s_feature_compat |=
-				cpu_to_be32(JBD2_FEATURE_COMPAT_CHECKSUM);
+	fs->journal_csum_seed = ext4_csum(~0, jsb->s_uuid, sizeof(jsb->s_uuid));
+
+	if (be32_to_cpu(jsb->s_feature_incompat) & JBD2_FEATURE_INCOMPAT_CSUM_V3) {
+		fs->journal_tag_size = sizeof(struct ext3_journal_block_tag3);
+		fs->journal_csum_version = 3;
+	} else {
+		fs->journal_tag_size = sizeof(struct ext3_journal_block_tag);
+		fs->journal_csum_version = 0;
+		if (be32_to_cpu(jsb->s_feature_compat) & JBD2_FEATURE_COMPAT_CHECKSUM)
+			fs->journal_csum_version = 1;
+		if (be32_to_cpu(jsb->s_feature_incompat) & JBD2_FEATURE_INCOMPAT_CSUM_V2) {
+			fs->journal_tag_size += sizeof(uint16_t);
+			fs->journal_csum_version = 2;
+		}
+		if (!(be32_to_cpu(jsb->s_feature_incompat) & JBD2_FEATURE_INCOMPAT_64BIT))
+			fs->journal_tag_size -= sizeof(uint32_t);
+	}
 
 	i = be32_to_cpu(jsb->s_first);
 	while (1) {
@@ -468,10 +497,11 @@ int ext4fs_check_journal_state(int recovery_flag)
 			do {
 				tag = (struct ext3_journal_block_tag *)
 				    (p_jdb + ofs);
-				ofs += sizeof(struct ext3_journal_block_tag);
+				ofs += tag_size;
 				if (ofs > fs->blksz)
 					break;
-				flags = be32_to_cpu(tag->flags);
+				flags = be16_to_cpu(tag->flags);
+				/* skip uuid */
 				if (!(flags & EXT3_JOURNAL_FLAG_SAME_UUID))
 					ofs += 16;
 				i++;
@@ -532,16 +562,15 @@ end:
 		fs->sb->feature_incompat = cpu_to_le32(new_feature_incompat);
 
 		/* Update the super block */
-		put_ext4((uint64_t) (SUPERBLOCK_SIZE),
-			 (struct ext2_sblock *)fs->sb,
-			 (uint32_t) SUPERBLOCK_SIZE);
+		ext4fs_set_superblock_csum(fs->sb);
+		put_ext4(SUPERBLOCK_SIZE, fs->sb, SUPERBLOCK_SIZE);
 		ext4_read_superblock((char *)fs->sb);
 
 		blknr = read_allocated_block(&inode_journal,
 					 EXT2_JOURNAL_SUPERBLOCK, NULL);
+		ext4fs_set_journal_superblock_csum(jsb);
 		put_ext4((uint64_t) ((uint64_t)blknr * (uint64_t)fs->blksz),
-			 (struct journal_superblock_t *)temp_buff,
-			 (uint32_t) fs->blksz);
+			 jsb, (uint32_t)fs->blksz);
 		ext4fs_free_revoke_blks();
 	}
 	free(temp_buff);
@@ -550,18 +579,58 @@ end:
 	return 0;
 }
 
+static void descriptor_block_csum_set(const uint8_t *block)
+{
+	struct ext_filesystem *fs = get_fs();
+	struct ext3_journal_block_tail *tail;
+	__u32 csum;
+
+	if (fs->journal_csum_version < 2)
+		return;
+
+	tail = (struct ext3_journal_block_tail *)(block + fs->blksz -
+						  sizeof(struct ext3_journal_block_tail));
+	tail->t_checksum = 0;
+	csum = ext4_csum(fs->journal_csum_seed, block, fs->blksz);
+	tail->t_checksum = cpu_to_be32(csum);
+}
+
+static void block_tag_csum_set(struct ext3_journal_block_tag3 *tag, const uint8_t *data,
+			       uint32_t sequence)
+{
+	struct ext_filesystem *fs = get_fs();
+	struct ext3_journal_block_tag *tag2 = (struct ext3_journal_block_tag *)tag;
+	uint32_t crc32;
+	__be32 seq;
+
+	if (fs->journal_csum_version < 2)
+		return;
+
+	seq = cpu_to_be32(sequence);
+	crc32 = ext4_csum(fs->journal_csum_seed, (uint8_t *)&seq, sizeof(seq));
+	crc32 = ext4_csum(crc32, data, fs->blksz);
+
+	if (fs->journal_csum_version == 3)
+		tag->checksum = cpu_to_be32(crc32);
+	else
+		tag2->checksum = cpu_to_be16(crc32 & 0xffff);
+}
+
 static void update_descriptor_block(long int blknr)
 {
 	int i;
 	long int jsb_blknr;
 	struct journal_header_t jdb;
-	struct ext3_journal_block_tag tag;
+	struct ext3_journal_block_tag3 tag;
 	struct ext2_inode inode_journal;
 	struct journal_superblock_t *jsb = NULL;
 	char *buf = NULL;
 	char *temp = NULL;
 	struct ext_filesystem *fs = get_fs();
 	char *temp_buff = zalloc(fs->blksz);
+	int tag_size = fs->journal_tag_size;
+	uint32_t sequence;
+
 	if (!temp_buff)
 		return;
 
@@ -575,6 +644,9 @@ static void update_descriptor_block(long int blknr)
 	jdb.h_blocktype = cpu_to_be32(EXT3_JOURNAL_DESCRIPTOR_BLOCK);
 	jdb.h_magic = cpu_to_be32(EXT3_JOURNAL_MAGIC_NUMBER);
 	jdb.h_sequence = jsb->s_sequence;
+
+	sequence = be32_to_cpu(jsb->s_sequence);
+
 	buf = zalloc(fs->blksz);
 	if (!buf) {
 		free(temp_buff);
@@ -589,16 +661,19 @@ static void update_descriptor_block(long int blknr)
 			break;
 
 		tag.block = cpu_to_be32(journal_ptr[i]->blknr);
-		tag.flags = cpu_to_be32(EXT3_JOURNAL_FLAG_SAME_UUID);
-		memcpy(temp, &tag, sizeof(struct ext3_journal_block_tag));
-		temp = temp + sizeof(struct ext3_journal_block_tag);
+		tag.flags = cpu_to_be16(EXT3_JOURNAL_FLAG_SAME_UUID);
+		block_tag_csum_set(&tag, (uint8_t *)journal_ptr[i]->buf, sequence);
+		memcpy(temp, &tag, tag_size);
+		temp = temp + tag_size;
 	}
 
 	tag.block = cpu_to_be32(journal_ptr[--i]->blknr);
-	tag.flags = cpu_to_be32(EXT3_JOURNAL_FLAG_LAST_TAG);
-	memcpy(temp - sizeof(struct ext3_journal_block_tag), &tag,
-	       sizeof(struct ext3_journal_block_tag));
-	put_ext4((uint64_t) ((uint64_t)blknr * (uint64_t)fs->blksz), buf, (uint32_t) fs->blksz);
+	tag.flags = cpu_to_be16(EXT3_JOURNAL_FLAG_LAST_TAG);
+	block_tag_csum_set(&tag, (uint8_t *)journal_ptr[i]->buf, sequence);
+	memcpy(temp - tag_size, &tag, tag_size);
+
+	descriptor_block_csum_set((uint8_t *)buf);
+	put_ext4((uint64_t)((uint64_t)blknr * (uint64_t)fs->blksz), buf, fs->blksz);
 
 	free(temp_buff);
 	free(buf);
@@ -606,7 +681,7 @@ static void update_descriptor_block(long int blknr)
 
 static void update_commit_block(long int blknr)
 {
-	struct journal_header_t jdb;
+	struct ext3_journal_commit_header jdb;
 	struct ext_filesystem *fs = get_fs();
 	char *buf = NULL;
 	struct ext2_inode inode_journal;
@@ -632,7 +707,15 @@ static void update_commit_block(long int blknr)
 		free(temp_buff);
 		return;
 	}
-	memcpy(buf, &jdb, sizeof(struct journal_header_t));
+
+	if (fs->journal_csum_version > 1) {
+		uint32_t csum = ext4_csum(fs->journal_csum_seed, (uint8_t *)temp_buff, fs->blksz);
+
+		jdb.h_chksum[0] = cpu_to_be32(csum);
+	}
+
+	memcpy(buf, &jdb, sizeof(struct ext3_journal_commit_header));
+
 	put_ext4((uint64_t) ((uint64_t)blknr * (uint64_t)fs->blksz), buf, (uint32_t) fs->blksz);
 
 	free(temp_buff);
