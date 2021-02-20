@@ -75,13 +75,6 @@ config TARGET_MPC8349ITX
 	select ARCH_MPC8349
 	imply CMD_IRQ
 
-config TARGET_MPC837XEMDS
-	bool "Support MPC837XEMDS"
-	select ARCH_MPC837X
-	select BOARD_EARLY_INIT_F
-	imply CMD_SATA
-	imply FSL_SATA
-
 config TARGET_MPC837XERDB
 	bool "Support MPC837XERDB"
 	select ARCH_MPC837X
@@ -321,7 +314,6 @@ source "board/freescale/mpc8323erdb/Kconfig"
 source "board/freescale/mpc832xemds/Kconfig"
 source "board/freescale/mpc8349emds/Kconfig"
 source "board/freescale/mpc8349itx/Kconfig"
-source "board/freescale/mpc837xemds/Kconfig"
 source "board/freescale/mpc837xerdb/Kconfig"
 source "board/ids/ids8313/Kconfig"
 source "board/keymile/Kconfig"
