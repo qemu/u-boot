@@ -75,13 +75,6 @@ config TARGET_MPC8349ITX
 	select ARCH_MPC8349
 	imply CMD_IRQ
 
-config TARGET_MPC837XEMDS
-	bool "Support MPC837XEMDS"
-	select ARCH_MPC837X
-	select BOARD_EARLY_INIT_F
-	imply CMD_SATA
-	imply FSL_SATA
-
 config TARGET_IDS8313
 	bool "Support ids8313"
 	select ARCH_MPC8313
@@ -251,19 +244,6 @@ config ARCH_MPC8360
 	select MPC83XX_LDP_PIN
 	select MPC83XX_SECOND_I2C_SUPPORT
 
-config ARCH_MPC837X
-	bool
-	select MPC83XX_PCI_SUPPORT
-	select MPC83XX_TSEC1_SUPPORT
-	select MPC83XX_TSEC2_SUPPORT
-	select MPC83XX_PCIE1_SUPPORT
-	select MPC83XX_PCIE2_SUPPORT
-	select MPC83XX_SDHC_SUPPORT
-	select MPC83XX_SATA_SUPPORT
-	select MPC83XX_LDP_PIN
-	select MPC83XX_SECOND_I2C_SUPPORT
-	select FSL_ELBC
-
 config SYS_IMMR
 	hex "Value for IMMR"
 	default 0xE0000000
@@ -316,7 +296,6 @@ source "board/freescale/mpc8323erdb/Kconfig"
 source "board/freescale/mpc832xemds/Kconfig"
 source "board/freescale/mpc8349emds/Kconfig"
 source "board/freescale/mpc8349itx/Kconfig"
-source "board/freescale/mpc837xemds/Kconfig"
 source "board/ids/ids8313/Kconfig"
 source "board/keymile/Kconfig"
 source "board/mpc8308_p1m/Kconfig"

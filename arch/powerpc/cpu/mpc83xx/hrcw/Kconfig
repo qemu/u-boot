@@ -7,7 +7,7 @@ config LBMC_CLOCK_MODE_1_1
 	bool "1 : 1"
 
 config LBMC_CLOCK_MODE_1_2
-	depends on ARCH_MPC8349 || ARCH_MPC8360 || ARCH_MPC837X
+	depends on ARCH_MPC8349 || ARCH_MPC8360
 	bool "1 : 2"
 
 endchoice
@@ -19,7 +19,7 @@ config DDR_MC_CLOCK_MODE_1_2
 	bool "1 : 2"
 
 config DDR_MC_CLOCK_MODE_1_1
-	depends on ARCH_MPC8315 || ARCH_MPC8349 || ARCH_MPC8360 || ARCH_MPC837X
+	depends on ARCH_MPC8315 || ARCH_MPC8349 || ARCH_MPC8360
 	bool "1 : 1"
 
 endchoice
@@ -30,7 +30,6 @@ choice
 	prompt "System PLL VCO division"
 
 config SYSTEM_PLL_VCO_DIV_1
-	depends on !ARCH_MPC837X
 	bool "1"
 
 config SYSTEM_PLL_VCO_DIV_2
@@ -67,39 +66,39 @@ config SYSTEM_PLL_FACTOR_6_1
 	bool "6 : 1"
 
 config SYSTEM_PLL_FACTOR_7_1
-	depends on ARCH_MPC8349 || ARCH_MPV8360 || ARCH_MPC837X
+	depends on ARCH_MPC8349 || ARCH_MPV8360
 	bool "7 : 1"
 
 config SYSTEM_PLL_FACTOR_8_1
-	depends on ARCH_MPC8349 || ARCH_MPV8360 || ARCH_MPC837X
+	depends on ARCH_MPC8349 || ARCH_MPV8360
 	bool "8 : 1"
 
 config SYSTEM_PLL_FACTOR_9_1
-	depends on ARCH_MPC8349 || ARCH_MPV8360 || ARCH_MPC837X
+	depends on ARCH_MPC8349 || ARCH_MPV8360
 	bool "9 : 1"
 
 config SYSTEM_PLL_FACTOR_10_1
-	depends on ARCH_MPC8349 || ARCH_MPV8360 || ARCH_MPC837X
+	depends on ARCH_MPC8349 || ARCH_MPV8360
 	bool "10 : 1"
 
 config SYSTEM_PLL_FACTOR_11_1
-	depends on ARCH_MPC8349 || ARCH_MPV8360 || ARCH_MPC837X
+	depends on ARCH_MPC8349 || ARCH_MPV8360
 	bool "11 : 1"
 
 config SYSTEM_PLL_FACTOR_12_1
-	depends on ARCH_MPC8349 || ARCH_MPV8360 || ARCH_MPC837X
+	depends on ARCH_MPC8349 || ARCH_MPV8360
 	bool "12 : 1"
 
 config SYSTEM_PLL_FACTOR_13_1
-	depends on ARCH_MPC8349 || ARCH_MPV8360 || ARCH_MPC837X
+	depends on ARCH_MPC8349 || ARCH_MPV8360
 	bool "13 : 1"
 
 config SYSTEM_PLL_FACTOR_14_1
-	depends on ARCH_MPC8349 || ARCH_MPV8360 || ARCH_MPC837X
+	depends on ARCH_MPC8349 || ARCH_MPV8360
 	bool "14 : 1"
 
 config SYSTEM_PLL_FACTOR_15_1
-	depends on ARCH_MPC8349 || ARCH_MPV8360 || ARCH_MPC837X
+	depends on ARCH_MPC8349 || ARCH_MPV8360
 	bool "15 : 1"
 
 config SYSTEM_PLL_FACTOR_16_1
@@ -430,10 +429,6 @@ config BOOT_ROM_INTERFACE_PCI2
 	depends on MPC83XX_PCI_SUPPORT && ARCH_MPC8349
 	bool "PCI2"
 
-config BOOT_ROM_INTERFACE_ON_CHIP_BOOT_ROM
-	depends on ARCH_MPC837X
-	bool "PCI2"
-
 config BOOT_ROM_INTERFACE_ESDHC
 	depends on ARCH_MPC8309
 	bool "eSDHC"
@@ -449,7 +444,7 @@ config BOOT_ROM_INTERFACE_GPCM_16BIT
 	bool "Local bus GPCM - 16-bit ROM"
 
 config BOOT_ROM_INTERFACE_GPCM_32BIT
-	depends on ARCH_MPC8349 || ARCH_MPC8360 || ARCH_MPC837X
+	depends on ARCH_MPC8349 || ARCH_MPC8360
 	bool "Local bus GPCM - 32-bit ROM"
 
 config BOOT_ROM_INTERFACE_NAND_FLASH_8BIT_SMALL
@@ -479,7 +474,7 @@ config TSEC1_MODE_RGMII
 	bool "RGMII"
 
 config TSEC1_MODE_RTBI
-	depends on ARCH_MPC831X || ARCH_MPC837X
+	depends on ARCH_MPC831X
 	bool "RTBI"
 
 config TSEC1_MODE_GMII
@@ -491,7 +486,7 @@ config TSEC1_MODE_TBI
 	bool "TBI"
 
 config TSEC1_MODE_SGMII
-	depends on ARCH_MPC831X || ARCH_MPC837X
+	depends on ARCH_MPC831X
 	bool "SGMII"
 
 endchoice
@@ -515,7 +510,7 @@ config TSEC2_MODE_RGMII
 	bool "RGMII"
 
 config TSEC2_MODE_RTBI
-	depends on ARCH_MPC831X || ARCH_MPC837X
+	depends on ARCH_MPC831X
 	bool "RTBI"
 
 config TSEC2_MODE_GMII
@@ -527,7 +522,7 @@ config TSEC2_MODE_TBI
 	bool "TBI"
 
 config TSEC2_MODE_SGMII
-	depends on ARCH_MPC831X || ARCH_MPC837X
+	depends on ARCH_MPC831X
 	bool "SGMII"
 
 endchoice
@@ -606,12 +601,12 @@ config SYSTEM_PLL_VCO_DIV
 	int
 	default 0 if ARCH_MPC8349 || ARCH_MPC832X
 	default 2 if ARCH_MPC8313
-	default 0 if SYSTEM_PLL_VCO_DIV_2 && !ARCH_MPC8360 && !ARCH_MPC837X
-	default 1 if SYSTEM_PLL_VCO_DIV_4 && !ARCH_MPC8360 && !ARCH_MPC837X
-	default 2 if SYSTEM_PLL_VCO_DIV_8 && !ARCH_MPC8360 && !ARCH_MPC837X
-	default 0 if SYSTEM_PLL_VCO_DIV_4 && (ARCH_MPC8360 || ARCH_MPC837X)
-	default 1 if SYSTEM_PLL_VCO_DIV_8 && (ARCH_MPC8360 || ARCH_MPC837X)
-	default 2 if SYSTEM_PLL_VCO_DIV_2 && (ARCH_MPC8360 || ARCH_MPC837X)
+	default 0 if SYSTEM_PLL_VCO_DIV_2 && !ARCH_MPC8360
+	default 1 if SYSTEM_PLL_VCO_DIV_4 && !ARCH_MPC8360
+	default 2 if SYSTEM_PLL_VCO_DIV_8 && !ARCH_MPC8360
+	default 0 if SYSTEM_PLL_VCO_DIV_4 && (ARCH_MPC8360)
+	default 1 if SYSTEM_PLL_VCO_DIV_8 && (ARCH_MPC8360)
+	default 2 if SYSTEM_PLL_VCO_DIV_2 && (ARCH_MPC8360)
 	default 3 if SYSTEM_PLL_VCO_DIV_1
 
 config SYSTEM_PLL_FACTOR
@@ -679,7 +674,6 @@ config BOOT_ROM_INTERFACE
 	default 0x8 if BOOT_ROM_INTERFACE_PCI2
 	default 0x8 if BOOT_ROM_INTERFACE_ESDHC
 	default 0xc if BOOT_ROM_INTERFACE_SPI
-	default 0xc if BOOT_ROM_INTERFACE_ON_CHIP_BOOT_ROM
 	default 0x14 if BOOT_ROM_INTERFACE_GPCM_8BIT
 	default 0x18 if BOOT_ROM_INTERFACE_GPCM_16BIT
 	default 0x1c if BOOT_ROM_INTERFACE_GPCM_32BIT
@@ -725,7 +719,7 @@ config TRUE_LITTLE_ENDIAN
 
 config LALE_TIMING
 	int
-	default 0 if ARCH_MPC830X || ARCH_MPC837X
+	default 0 if ARCH_MPC830X
 	default 0 if LALE_TIMING_NORMAL
 	default 1 if LALE_TIMING_EARLIER
 
