@@ -49,10 +49,6 @@
 #define CONFIG_SYS_NAND_U_BOOT_DST	0x30000000
 #define CONFIG_SYS_NAND_U_BOOT_START	0x30000000
 #define CONFIG_SYS_NAND_U_BOOT_OFFS	(256 << 10)
-#ifdef CONFIG_TARGET_T1040RDB
-#define CONFIG_SYS_FSL_PBL_RCW \
-$(SRCTREE)/board/freescale/t104xrdb/t1040_nand_rcw.cfg
-#endif
 #ifdef CONFIG_TARGET_T1042RDB_PI
 #define CONFIG_SYS_FSL_PBL_RCW \
 $(SRCTREE)/board/freescale/t104xrdb/t1042_pi_nand_rcw.cfg
@@ -60,10 +56,6 @@ $(SRCTREE)/board/freescale/t104xrdb/t1042_pi_nand_rcw.cfg
 #ifdef CONFIG_TARGET_T1042RDB
 #define CONFIG_SYS_FSL_PBL_RCW \
 $(SRCTREE)/board/freescale/t104xrdb/t1042_nand_rcw.cfg
-#endif
-#ifdef CONFIG_TARGET_T1040D4RDB
-#define CONFIG_SYS_FSL_PBL_RCW \
-$(SRCTREE)/board/freescale/t104xrdb/t1040d4_nand_rcw.cfg
 #endif
 #ifdef CONFIG_TARGET_T1042D4RDB
 #define CONFIG_SYS_FSL_PBL_RCW \
@@ -81,10 +73,6 @@ $(SRCTREE)/board/freescale/t104xrdb/t1042d4_nand_rcw.cfg
 #ifndef CONFIG_SPL_BUILD
 #define	CONFIG_SYS_MPC85XX_NO_RESETVEC
 #endif
-#ifdef CONFIG_TARGET_T1040RDB
-#define CONFIG_SYS_FSL_PBL_RCW \
-$(SRCTREE)/board/freescale/t104xrdb/t1040_spi_rcw.cfg
-#endif
 #ifdef CONFIG_TARGET_T1042RDB_PI
 #define CONFIG_SYS_FSL_PBL_RCW \
 $(SRCTREE)/board/freescale/t104xrdb/t1042_pi_spi_rcw.cfg
@@ -92,10 +80,6 @@ $(SRCTREE)/board/freescale/t104xrdb/t1042_pi_spi_rcw.cfg
 #ifdef CONFIG_TARGET_T1042RDB
 #define CONFIG_SYS_FSL_PBL_RCW \
 $(SRCTREE)/board/freescale/t104xrdb/t1042_spi_rcw.cfg
-#endif
-#ifdef CONFIG_TARGET_T1040D4RDB
-#define CONFIG_SYS_FSL_PBL_RCW \
-$(SRCTREE)/board/freescale/t104xrdb/t1040d4_spi_rcw.cfg
 #endif
 #ifdef CONFIG_TARGET_T1042D4RDB
 #define CONFIG_SYS_FSL_PBL_RCW \
@@ -112,10 +96,6 @@ $(SRCTREE)/board/freescale/t104xrdb/t1042d4_spi_rcw.cfg
 #ifndef CONFIG_SPL_BUILD
 #define	CONFIG_SYS_MPC85XX_NO_RESETVEC
 #endif
-#ifdef CONFIG_TARGET_T1040RDB
-#define CONFIG_SYS_FSL_PBL_RCW \
-$(SRCTREE)/board/freescale/t104xrdb/t1040_sd_rcw.cfg
-#endif
 #ifdef CONFIG_TARGET_T1042RDB_PI
 #define CONFIG_SYS_FSL_PBL_RCW \
 $(SRCTREE)/board/freescale/t104xrdb/t1042_pi_sd_rcw.cfg
@@ -123,10 +103,6 @@ $(SRCTREE)/board/freescale/t104xrdb/t1042_pi_sd_rcw.cfg
 #ifdef CONFIG_TARGET_T1042RDB
 #define CONFIG_SYS_FSL_PBL_RCW \
 $(SRCTREE)/board/freescale/t104xrdb/t1042_sd_rcw.cfg
-#endif
-#ifdef CONFIG_TARGET_T1040D4RDB
-#define CONFIG_SYS_FSL_PBL_RCW \
-$(SRCTREE)/board/freescale/t104xrdb/t1040d4_sd_rcw.cfg
 #endif
 #ifdef CONFIG_TARGET_T1042D4RDB
 #define CONFIG_SYS_FSL_PBL_RCW \
@@ -274,18 +250,6 @@ $(SRCTREE)/board/freescale/t104xrdb/t1042d4_sd_rcw.cfg
 #define CPLD_DIU_SEL_DFP		0x80
 #elif defined(CONFIG_TARGET_T1042D4RDB)
 #define CPLD_DIU_SEL_DFP		0xc0
-#endif
-
-#if defined(CONFIG_TARGET_T1040D4RDB)
-#define CPLD_INT_MASK_ALL		0xFF
-#define CPLD_INT_MASK_THERM		0x80
-#define CPLD_INT_MASK_DVI_DFP		0x40
-#define CPLD_INT_MASK_QSGMII1		0x20
-#define CPLD_INT_MASK_QSGMII2		0x10
-#define CPLD_INT_MASK_SGMI1		0x08
-#define CPLD_INT_MASK_SGMI2		0x04
-#define CPLD_INT_MASK_TDMR1		0x02
-#define CPLD_INT_MASK_TDMR2		0x01
 #endif
 
 #define CONFIG_SYS_CPLD_BASE	0xffdf0000
@@ -477,7 +441,6 @@ $(SRCTREE)/board/freescale/t104xrdb/t1042d4_sd_rcw.cfg
 #define I2C_MUX_CH_DEFAULT      0x8
 
 #if defined(CONFIG_TARGET_T1042RDB_PI)	|| \
-	defined(CONFIG_TARGET_T1040D4RDB)	|| \
 	defined(CONFIG_TARGET_T1042D4RDB)
 /* LDI/DVI Encoder for display */
 #define CONFIG_SYS_I2C_LDI_ADDR		0x38
@@ -654,34 +617,20 @@ $(SRCTREE)/board/freescale/t104xrdb/t1042d4_sd_rcw.cfg
 #endif /* CONFIG_NOBQFMAN */
 
 #ifdef CONFIG_FMAN_ENET
-#if defined(CONFIG_TARGET_T1040RDB) || defined(CONFIG_TARGET_T1042RDB)
+#if defined(CONFIG_TARGET_T1042RDB)
 #define CONFIG_SYS_SGMII1_PHY_ADDR             0x03
-#elif defined(CONFIG_TARGET_T1040D4RDB)
-#define CONFIG_SYS_SGMII1_PHY_ADDR             0x01
 #elif defined(CONFIG_TARGET_T1042D4RDB)
 #define CONFIG_SYS_SGMII1_PHY_ADDR             0x02
 #define CONFIG_SYS_SGMII2_PHY_ADDR             0x03
 #define CONFIG_SYS_SGMII3_PHY_ADDR             0x01
 #endif
 
-#if defined(CONFIG_TARGET_T1040D4RDB) || defined(CONFIG_TARGET_T1042D4RDB)
+#if defined(CONFIG_TARGET_T1042D4RDB)
 #define CONFIG_SYS_RGMII1_PHY_ADDR             0x04
 #define CONFIG_SYS_RGMII2_PHY_ADDR             0x05
 #else
 #define CONFIG_SYS_RGMII1_PHY_ADDR             0x01
 #define CONFIG_SYS_RGMII2_PHY_ADDR             0x02
-#endif
-
-/* Enable VSC9953 L2 Switch driver on T1040 SoC */
-#if defined(CONFIG_TARGET_T1040RDB) || defined(CONFIG_TARGET_T1040D4RDB)
-#define CONFIG_VSC9953
-#ifdef CONFIG_TARGET_T1040RDB
-#define CONFIG_SYS_FM1_QSGMII11_PHY_ADDR	0x04
-#define CONFIG_SYS_FM1_QSGMII21_PHY_ADDR	0x08
-#else
-#define CONFIG_SYS_FM1_QSGMII11_PHY_ADDR	0x08
-#define CONFIG_SYS_FM1_QSGMII21_PHY_ADDR	0x0c
-#endif
 #endif
 
 #define CONFIG_ETHPRIME		"FM1@DTSEC4"
@@ -727,14 +676,10 @@ $(SRCTREE)/board/freescale/t104xrdb/t1042d4_sd_rcw.cfg
 #define __USB_PHY_TYPE	utmi
 #define RAMDISKFILE	"t104xrdb/ramdisk.uboot"
 
-#ifdef CONFIG_TARGET_T1040RDB
-#define FDTFILE		"t1040rdb/t1040rdb.dtb"
-#elif defined(CONFIG_TARGET_T1042RDB_PI)
+#if defined(CONFIG_TARGET_T1042RDB_PI)
 #define FDTFILE		"t1042rdb_pi/t1042rdb_pi.dtb"
 #elif defined(CONFIG_TARGET_T1042RDB)
 #define FDTFILE		"t1042rdb/t1042rdb.dtb"
-#elif defined(CONFIG_TARGET_T1040D4RDB)
-#define FDTFILE		"t1042rdb/t1040d4rdb.dtb"
 #elif defined(CONFIG_TARGET_T1042D4RDB)
 #define FDTFILE		"t1042rdb/t1042d4rdb.dtb"
 #endif
