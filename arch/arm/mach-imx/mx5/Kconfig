@@ -63,10 +63,6 @@ config TARGET_MX53PPD
 	help
 	  Enable support for the GE Healthcare PPD.
 
-config TARGET_TS4800
-	bool "Support TS4800"
-	select MX51
-
 endchoice
 
 config SYS_SOC
@@ -78,6 +74,5 @@ source "board/freescale/mx53loco/Kconfig"
 source "board/ge/mx53ppd/Kconfig"
 source "board/k+p/kp_imx53/Kconfig"
 source "board/menlo/m53menlo/Kconfig"
-source "board/technologic/ts4800/Kconfig"
 
 endif
