@@ -117,18 +117,18 @@ def rm_board(board):
                 rm_kconfig_include(fname)
 
     # Remove unwanted files
-    cmd = ['git', 'rm', '-r'] + real
+    cmd = ['git', 'rm', '-rf'] + real
     stdout = command.RunPipe([cmd], capture=True).stdout
 
     ## Change the messages as needed
-    msg = '''arm: Remove %s board
+    msg = '''ppc: Remove %s board
 
 This board has not been converted to CONFIG_DM_MMC by the deadline.
 Remove it.
 
 ''' % board
     for name in cc:
-        msg += 'Patch-cc: %s\n' % name
+        msg += 'Cc: %s\n' % name
 
     # Create the commit
     cmd = ['git', 'commit', '-s', '-m', msg]
