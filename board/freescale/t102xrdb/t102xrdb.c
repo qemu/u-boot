@@ -24,9 +24,6 @@
 #include "t102xrdb.h"
 #ifdef CONFIG_TARGET_T1024RDB
 #include "cpld.h"
-#elif defined(CONFIG_TARGET_T1023RDB)
-#include <i2c.h>
-#include <mmc.h>
 #endif
 #include "../common/sleep.h"
 
