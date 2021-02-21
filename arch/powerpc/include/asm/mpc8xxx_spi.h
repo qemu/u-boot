@@ -14,8 +14,7 @@
 	defined(CONFIG_ARCH_MPC8309) || \
 	defined(CONFIG_ARCH_MPC8313) || \
 	defined(CONFIG_ARCH_MPC8315) || \
-	defined(CONFIG_ARCH_MPC834X) || \
-	defined(CONFIG_ARCH_MPC837X)
+	defined(CONFIG_ARCH_MPC834X)
 
 typedef struct spi8xxx {
 	u8 res0[0x20];	/* 0x0-0x01f reserved */

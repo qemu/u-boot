@@ -14,7 +14,7 @@ config SPCR_OPT_SPEC_READ
 
 endchoice
 
-if ARCH_MPC8308 || ARCH_MPC831X || ARCH_MPC837X
+if ARCH_MPC8308 || ARCH_MPC831X
 
 choice
 	prompt "TSEC emergency priority"
