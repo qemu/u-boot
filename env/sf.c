@@ -155,6 +155,9 @@ static int env_sf_save(void)
 #endif
 
 done:
+	spi_flash_free(env_flash);
+	env_flash = NULL;
+
 	if (saved_buffer)
 		free(saved_buffer);
 
@@ -406,6 +409,9 @@ static int env_sf_init_early(void)
 		gd->env_valid = ENV_VALID;
 		gd->env_addr = (unsigned long)&tmp_env1->data;
 	}
+
+	spi_flash_free(env_flash);
+	env_flash = NULL;
 
 	return 0;
 err_read:
