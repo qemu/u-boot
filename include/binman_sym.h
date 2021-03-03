@@ -11,6 +11,8 @@
 #ifndef __BINMAN_SYM_H
 #define __BINMAN_SYM_H
 
+#include <linux/compiler.h>
+
 #define BINMAN_SYM_MISSING	(-1UL)
 
 #ifdef CONFIG_BINMAN
