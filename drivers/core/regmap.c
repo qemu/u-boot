@@ -435,7 +435,16 @@ int regmap_raw_read(struct regmap *map, uint offset, void *valp, size_t val_len)
 
 int regmap_read(struct regmap *map, uint offset, uint *valp)
 {
-	return regmap_raw_read(map, offset, valp, map->width);
+	int res;
+
+	*valp = 0;
+	res = regmap_raw_read(map, offset, valp, map->width);
+	if (res)
+		return res;
+
+	*valp = le32_to_cpu(*valp);
+
+	return 0;
 }
 
 static inline void __write_8(u8 *addr, const u8 *val,
@@ -546,6 +555,8 @@ int regmap_raw_write(struct regmap *map, uint offset, const void *val,
 
 int regmap_write(struct regmap *map, uint offset, uint val)
 {
+	val = cpu_to_le32(val);
+
 	return regmap_raw_write(map, offset, &val, map->width);
 }
 
