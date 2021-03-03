@@ -215,8 +215,8 @@ extern const efi_guid_t efi_guid_capsule_report;
 /* GUID of firmware management protocol */
 extern const efi_guid_t efi_guid_firmware_management_protocol;
 
-extern unsigned int __efi_runtime_start, __efi_runtime_stop;
-extern unsigned int __efi_runtime_rel_start, __efi_runtime_rel_stop;
+extern char __efi_runtime_start[], __efi_runtime_stop[];
+extern char __efi_runtime_rel_start[], __efi_runtime_rel_stop[];
 
 /**
  * struct efi_open_protocol_info_item - open protocol info item
