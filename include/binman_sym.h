@@ -33,7 +33,7 @@
  * @_prop_name: Property value to get from that entry (e.g. 'pos')
  */
 #define binman_sym_declare(_type, _entry_name, _prop_name) \
-	_type binman_symname(_entry_name, _prop_name) \
+	_type binman_symname(_entry_name, _prop_name) __visible \
 		__attribute__((aligned(4), unused, section(".binman_sym")))
 
 /**
@@ -58,7 +58,7 @@
  * @_prop_name: Property value to get from that entry (e.g. 'pos')
  */
 #define binman_sym_declare_optional(_type, _entry_name, _prop_name) \
-	_type binman_symname(_entry_name, _prop_name) \
+	_type binman_symname(_entry_name, _prop_name) __visible \
 		__attribute__((aligned(4), weak, unused, \
 		section(".binman_sym")))
 

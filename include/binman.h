@@ -9,6 +9,7 @@
 #ifndef _BINMAN_H_
 #define _BINMAN_H_
 
+#include <linux/compiler.h>
 #include <dm/ofnode.h>
 
 /**
