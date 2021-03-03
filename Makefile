@@ -677,6 +677,21 @@ else
 KBUILD_CFLAGS	+= -O2
 endif
 
+LTO_CFLAGS :=
+LTO_FINAL_LDFLAGS :=
+export LTO_CFLAGS LTO_FINAL_LDFLAGS
+ifdef CONFIG_LTO
+	# use plugin aware tools
+	AR			= $(CROSS_COMPILE)gcc-ar
+	NM			= $(CROSS_COMPILE)gcc-nm
+
+	LTO_CFLAGS		:= -flto
+	LTO_FINAL_LDFLAGS	:= -fuse-linker-plugin -flto=jobserver \
+				   -fwhole-program
+
+	KBUILD_CFLAGS		+= $(LTO_CFLAGS)
+endif
+
 KBUILD_CFLAGS += $(call cc-option,-fno-stack-protector)
 KBUILD_CFLAGS += $(call cc-option,-fno-delete-null-pointer-checks)
 
@@ -1749,11 +1764,22 @@ ARCH_POSTLINK := $(wildcard $(srctree)/arch/$(ARCH)/Makefile.postlink)
 # Rule to link u-boot
 # May be overridden by arch/$(ARCH)/config.mk
 quiet_cmd_u-boot__ ?= LD      $@
+ifdef CONFIG_LTO
+      cmd_u-boot__ ?= $(CC) -nostdlib -nostartfiles				\
+		$(LTO_FINAL_CFLAGS) $(c_flags)					\
+		  $(KBUILD_LDFLAGS:%=-Wl,%) $(LDFLAGS_u-boot:%=-Wl,%)		\
+		-o $@ -T u-boot.lds $(u-boot-init)				\
+		-Wl,--whole-archive						\
+			$(u-boot-main) $(PLATFORM_LIBS)				\
+		-Wl,--no-whole-archive -Wl,-Map,u-boot.map;			\
+		$(if $(ARCH_POSTLINK), $(MAKE) -f $(ARCH_POSTLINK) $@, true)
+else
       cmd_u-boot__ ?= $(LD) $(KBUILD_LDFLAGS) $(LDFLAGS_u-boot) -o $@ \
       -T u-boot.lds $(u-boot-init)                             \
       --whole-archive $(u-boot-main) --no-whole-archive        \
       $(PLATFORM_LIBS) -Map u-boot.map;                        \
       $(if $(ARCH_POSTLINK), $(MAKE) -f $(ARCH_POSTLINK) $@, true)
+endif
 
 quiet_cmd_smap = GEN     common/system_map.o
 cmd_smap = \
