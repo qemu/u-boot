@@ -70,7 +70,8 @@
 #define ll_entry_declare(_type, _name, _list)				\
 	_type _u_boot_list_2_##_list##_2_##_name __aligned(4)		\
 			__attribute__((unused,				\
-			section(".u_boot_list_2_"#_list"_2_"#_name)))
+			section(".u_boot_list_2_"#_list"_2_"#_name)))	\
+			__visible
 
 /**
  * ll_entry_declare_list() - Declare a list of link-generated array entries
@@ -93,7 +94,8 @@
 #define ll_entry_declare_list(_type, _name, _list)			\
 	_type _u_boot_list_2_##_list##_2_##_name[] __aligned(4)		\
 			__attribute__((unused,				\
-			section(".u_boot_list_2_"#_list"_2_"#_name)))
+			section(".u_boot_list_2_"#_list"_2_"#_name)))	\
+			__visible
 
 /*
  * We need a 0-byte-size type for iterator symbols, and the compiler
