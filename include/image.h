@@ -62,13 +62,13 @@ struct fdt_region;
 #include <linux/libfdt.h>
 #include <fdt_support.h>
 # ifdef CONFIG_SPL_BUILD
-#  ifdef CONFIG_SPL_CRC32_SUPPORT
+#  ifdef CONFIG_SPL_CRC32
 #   define IMAGE_ENABLE_CRC32	1
 #  endif
-#  ifdef CONFIG_SPL_MD5_SUPPORT
+#  ifdef CONFIG_SPL_MD5
 #   define IMAGE_ENABLE_MD5	1
 #  endif
-#  ifdef CONFIG_SPL_SHA1_SUPPORT
+#  ifdef CONFIG_SPL_SHA1
 #   define IMAGE_ENABLE_SHA1	1
 #  endif
 # else
@@ -90,21 +90,21 @@ struct fdt_region;
 #endif
 
 #if defined(CONFIG_FIT_ENABLE_SHA256_SUPPORT) || \
-	defined(CONFIG_SPL_SHA256_SUPPORT)
+	defined(CONFIG_SPL_SHA256)
 #define IMAGE_ENABLE_SHA256	1
 #else
 #define IMAGE_ENABLE_SHA256	0
 #endif
 
 #if defined(CONFIG_FIT_ENABLE_SHA384_SUPPORT) || \
-	defined(CONFIG_SPL_SHA384_SUPPORT)
+	defined(CONFIG_SPL_SHA384)
 #define IMAGE_ENABLE_SHA384	1
 #else
 #define IMAGE_ENABLE_SHA384	0
 #endif
 
 #if defined(CONFIG_FIT_ENABLE_SHA512_SUPPORT) || \
-	defined(CONFIG_SPL_SHA512_SUPPORT)
+	defined(CONFIG_SPL_SHA512_ALGO)
 #define IMAGE_ENABLE_SHA512	1
 #else
 #define IMAGE_ENABLE_SHA512	0

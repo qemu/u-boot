@@ -62,9 +62,9 @@ obj-$(CONFIG_$(SPL_)ACPIGEN) += acpi/
 obj-$(CONFIG_$(SPL_)MD5) += md5.o
 obj-$(CONFIG_$(SPL_)RSA) += rsa/
 obj-$(CONFIG_FIT_SIGNATURE) += hash-checksum.o
-obj-$(CONFIG_SHA1) += sha1.o
-obj-$(CONFIG_SHA256) += sha256.o
-obj-$(CONFIG_SHA512_ALGO) += sha512.o
+obj-$(CONFIG_$(SPL_)SHA1) += sha1.o
+obj-$(CONFIG_$(SPL_)SHA256) += sha256.o
+obj-$(CONFIG_$(SPL_)SHA512_ALGO) += sha512.o
 
 obj-$(CONFIG_$(SPL_)ZLIB) += zlib/
 obj-$(CONFIG_$(SPL_)ZSTD) += zstd/

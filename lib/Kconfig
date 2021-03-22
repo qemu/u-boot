@@ -357,6 +357,18 @@ config SHA1
 	  The SHA1 algorithm produces a 160-bit (20-byte) hash value
 	  (digest).
 
+ config SPL_SHA1
+	bool "Support SHA1 in SPL"
+	default y if SHA1
+	help
+	  Enable this to support SHA1 in FIT images within SPL. A SHA1
+	  checksum is a 160-bit (20-byte) hash value used to check that the
+	  image contents have not been corrupted or maliciously altered.
+	  While SHA1 is fairly secure it is coming to the end of its life
+	  due to the expanding computing power available to brute-force
+	  attacks. For more security, consider SHA256 or SHA384.
+
+
 config SHA256
 	bool "Enable SHA256 support"
 	help
@@ -364,6 +376,14 @@ config SHA256
 	  The hash is calculated in software.
 	  The SHA256 algorithm produces a 256-bit (32-byte) hash value
 	  (digest).
+
+config SPL_SHA256
+	bool "Support SHA256 in SPL"
+	default y if SHA256
+	help
+	  Enable this to support SHA256 in FIT images within SPL. A SHA256
+	  checksum is a 256-bit (32-byte) hash value used to check that the
+	  image contents have not been corrupted.
 
 config SHA512_ALGO
 	bool "Enable SHA512 algorithm"
@@ -379,6 +399,15 @@ config SHA512
 	  The SHA512 algorithm produces a 512-bit (64-byte) hash value
 	  (digest).
 
+config SPL_SHA512_ALGO
+	bool "Support SHA512 in SPL"
+	default y if SHA512
+	help
+	  Enable this to support SHA512 in FIT images within SPL. A SHA512
+	  checksum is a 512-bit (64-byte) hash value used to check that the
+	  image contents have not been corrupted.
+
+
 config SHA384
 	bool "Enable SHA384 support"
 	depends on SHA512_ALGO
@@ -387,6 +416,16 @@ config SHA384
 	  The hash is calculated in software.
 	  The SHA384 algorithm produces a 384-bit (48-byte) hash value
 	  (digest).
+
+config SPL_SHA384
+	bool "Support SHA384 in SPL"
+	depends on SPL_SHA512_ALGO
+	default y if SHA384
+	help
+	  Enable this to support SHA384 in FIT images within SPL. A SHA384
+	  checksum is a 384-bit (48-byte) hash value used to check that the
+	  image contents have not been corrupted. Use this for the highest
+	  security.
 
 config SHA_HW_ACCEL
 	bool "Enable hashing using hardware"
