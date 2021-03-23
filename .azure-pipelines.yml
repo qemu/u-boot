@@ -145,6 +145,7 @@ jobs:
           virtualenv -p /usr/bin/python3 /tmp/venv
           . /tmp/venv/bin/activate
           pip install pyelftools pytest pygit2
+          [ -d ${UBOOT_TRAVIS_BUILD_DIR} ] && exit 100
           export UBOOT_TRAVIS_BUILD_DIR=/tmp/sandbox_spl
           export PYTHONPATH=${UBOOT_TRAVIS_BUILD_DIR}/scripts/dtc/pylibfdt
           export PATH=${UBOOT_TRAVIS_BUILD_DIR}/scripts/dtc:${PATH}
@@ -314,6 +315,7 @@ jobs:
           # the below corresponds to .gitlab-ci.yml "script"
           cd ${WORK_DIR}
           export UBOOT_TRAVIS_BUILD_DIR=/tmp/${TEST_PY_BD};
+          [ -d ${UBOOT_TRAVIS_BUILD_DIR} ] && exit 100
           tools/buildman/buildman -o ${UBOOT_TRAVIS_BUILD_DIR} -w -E -W -e --board ${TEST_PY_BD} ${OVERRIDE}
           cp ~/grub_x86.efi ${UBOOT_TRAVIS_BUILD_DIR}/
           cp ~/grub_x64.efi ${UBOOT_TRAVIS_BUILD_DIR}/

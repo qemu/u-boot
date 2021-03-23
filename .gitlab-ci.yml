@@ -34,7 +34,8 @@ stages:
   script:
     # If we've been asked to use clang only do one configuration.
     - export UBOOT_TRAVIS_BUILD_DIR=/tmp/${TEST_PY_BD}
-    - tools/buildman/buildman -o ${UBOOT_TRAVIS_BUILD_DIR} -w -E -W -e
+    - [ -d ${UBOOT_TRAVIS_BUILD_DIR} ] && exit 100;
+      tools/buildman/buildman -o ${UBOOT_TRAVIS_BUILD_DIR} -w -E -W -e
         --board ${TEST_PY_BD} ${OVERRIDE}
     - cp ~/grub_x86.efi $UBOOT_TRAVIS_BUILD_DIR/
     - cp ~/grub_x64.efi $UBOOT_TRAVIS_BUILD_DIR/
@@ -168,6 +169,7 @@ Run binman, buildman, dtoc, Kconfig and patman testsuites:
       export UBOOT_TRAVIS_BUILD_DIR=/tmp/sandbox_spl;
       export PYTHONPATH="${UBOOT_TRAVIS_BUILD_DIR}/scripts/dtc/pylibfdt";
       export PATH="${UBOOT_TRAVIS_BUILD_DIR}/scripts/dtc:${PATH}";
+      [ -d ${UBOOT_TRAVIS_BUILD_DIR} ] && exit 100;
       ./tools/buildman/buildman -T0 -o ${UBOOT_TRAVIS_BUILD_DIR} -w
         --board sandbox_spl;
       ./tools/binman/binman --toolpath ${UBOOT_TRAVIS_BUILD_DIR}/tools test;
