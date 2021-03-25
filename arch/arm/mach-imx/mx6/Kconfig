@@ -514,6 +514,9 @@ config TARGET_PCL063_ULL
 	select DM_THERMAL
 	select SUPPORT_SPL
 
+config TARGET_SECOMX6
+	bool "secomx6 boards"
+
 config TARGET_SOMLABS_VISIONSOM_6ULL
 	bool "visionsom-6ull"
 	depends on MX6ULL

@@ -42,6 +42,10 @@
 #define PCIE_CORE_DEV_CTRL_STATS_REG				0xc8
 #define     PCIE_CORE_DEV_CTRL_STATS_RELAX_ORDER_DISABLE	(0 << 4)
 #define     PCIE_CORE_DEV_CTRL_STATS_SNOOP_DISABLE		(0 << 11)
+#define     PCIE_CORE_DEV_CTRL_STATS_MAX_PAYLOAD_SIZE		0x2
+#define     PCIE_CORE_DEV_CTRL_STATS_MAX_PAYLOAD_SIZE_SHIFT	5
+#define     PCIE_CORE_DEV_CTRL_STATS_MAX_RD_REQ_SIZE		0x2
+#define     PCIE_CORE_DEV_CTRL_STATS_MAX_RD_REQ_SIZE_SHIFT	12
 #define PCIE_CORE_LINK_CTRL_STAT_REG				0xd0
 #define     PCIE_CORE_LINK_TRAINING				BIT(5)
 #define PCIE_CORE_ERR_CAPCTL_REG				0x118
@@ -101,6 +105,7 @@
 #define     LTSSM_SHIFT				24
 #define     LTSSM_MASK				0x3f
 #define     LTSSM_L0				0x10
+#define VENDOR_ID_REG				(LMI_BASE_ADDR + 0x44)
 
 /* PCIe core controller registers */
 #define CTRL_CORE_BASE_ADDR			0x18000
@@ -525,6 +530,15 @@ static int pcie_advk_setup_hw(struct pcie_advk *pcie)
 	reg |= (IS_RC_MSK << IS_RC_SHIFT);
 	advk_writel(pcie, reg, PCIE_CORE_CTRL0_REG);
 
+	/*
+	 * Replace incorrect PCI vendor id value 0x1b4b by correct value 0x11ab.
+	 * VENDOR_ID_REG contains vendor id in low 16 bits and subsystem vendor
+	 * id in high 16 bits. Updating this register changes readback value of
+	 * read-only vendor id bits in PCIE_CORE_DEV_ID_REG register. Workaround
+	 * for erratum 4.1: "The value of device and vendor ID is incorrect".
+	 */
+	advk_writel(pcie, 0x11ab11ab, VENDOR_ID_REG);
+
 	/* Set Advanced Error Capabilities and Control PF0 register */
 	reg = PCIE_CORE_ERR_CAPCTL_ECRC_CHK_TX |
 		PCIE_CORE_ERR_CAPCTL_ECRC_CHK_TX_EN |
@@ -534,6 +548,10 @@ static int pcie_advk_setup_hw(struct pcie_advk *pcie)
 
 	/* Set PCIe Device Control and Status 1 PF0 register */
 	reg = PCIE_CORE_DEV_CTRL_STATS_RELAX_ORDER_DISABLE |
+		(PCIE_CORE_DEV_CTRL_STATS_MAX_PAYLOAD_SIZE <<
+		 PCIE_CORE_DEV_CTRL_STATS_MAX_PAYLOAD_SIZE_SHIFT) |
+		(PCIE_CORE_DEV_CTRL_STATS_MAX_RD_REQ_SIZE <<
+		 PCIE_CORE_DEV_CTRL_STATS_MAX_RD_REQ_SIZE_SHIFT) |
 		PCIE_CORE_DEV_CTRL_STATS_SNOOP_DISABLE;
 	advk_writel(pcie, reg, PCIE_CORE_DEV_CTRL_STATS_REG);
 

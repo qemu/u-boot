@@ -63,6 +63,14 @@ config TARGET_MX53PPD
 	help
 	  Enable support for the GE Healthcare PPD.
 
+config TARGET_TS4800
+	bool "Support TS4800"
+	select MX51
+
+config TARGET_USBARMORY
+	bool "Support USB armory"
+	select MX53
+
 endchoice
 
 config SYS_SOC

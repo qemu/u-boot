@@ -72,7 +72,7 @@ static int do_efi_capsule_update(struct cmd_tbl *cmdtp, int flag,
 		       capsule->capsule_image_size);
 	}
 
-	ret = EFI_CALL(RT->update_capsule(&capsule, 1, (u64)NULL));
+	ret = EFI_CALL(RT->update_capsule(&capsule, 1, 0));
 	if (ret) {
 		printf("Cannot handle a capsule at %p", capsule);
 		return CMD_RET_FAILURE;
@@ -506,6 +506,10 @@ static const struct {
 	{
 		"System Partition",
 		PARTITION_SYSTEM_GUID
+	},
+	{
+		"Firmware Management",
+		EFI_FIRMWARE_MANAGEMENT_PROTOCOL_GUID
 	},
 	/* Configuration table GUIDs */
 	{

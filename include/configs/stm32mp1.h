@@ -102,11 +102,18 @@
 #define BOOT_TARGET_UBIFS(func)
 #endif
 
+#ifdef CONFIG_USB
+#define BOOT_TARGET_USB(func)	func(USB, usb, 0)
+#else
+#define BOOT_TARGET_USB(func)
+#endif
+
 #define BOOT_TARGET_DEVICES(func)	\
 	BOOT_TARGET_MMC1(func)		\
 	BOOT_TARGET_UBIFS(func)		\
 	BOOT_TARGET_MMC0(func)		\
 	BOOT_TARGET_MMC2(func)		\
+	BOOT_TARGET_USB(func)		\
 	BOOT_TARGET_PXE(func)
 
 /*
@@ -153,7 +160,6 @@
  * and the ramdisk at the end.
  */
 #define CONFIG_EXTRA_ENV_SETTINGS \
-	"bootdelay=1\0" \
 	"kernel_addr_r=0xc2000000\0" \
 	"fdt_addr_r=0xc4000000\0" \
 	"scriptaddr=0xc4100000\0" \

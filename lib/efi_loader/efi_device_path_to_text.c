@@ -67,7 +67,8 @@ static char *dp_hardware(char *s, struct efi_device_path *dp)
 
 		s += sprintf(s, "VenHw(%pUl", &vdp->guid);
 		n = (int)vdp->dp.length - sizeof(struct efi_device_path_vendor);
-		if (n > 0) {
+		/* Node must fit into MAX_NODE_LEN) */
+		if (n > 0 && n < MAX_NODE_LEN / 2 - 22) {
 			s += sprintf(s, ",");
 			for (i = 0; i < n; ++i)
 				s += sprintf(s, "%02x", vdp->vendor_data[i]);
@@ -115,6 +116,19 @@ static char *dp_msging(char *s, struct efi_device_path *dp)
 			(struct efi_device_path_scsi *)dp;
 		s += sprintf(s, "Scsi(%u,%u)", ide->target_id,
 			     ide->logical_unit_number);
+		break;
+	}
+	case DEVICE_PATH_SUB_TYPE_MSG_UART: {
+		struct efi_device_path_uart *uart =
+			(struct efi_device_path_uart *)dp;
+		s += sprintf(s, "Uart(%lld,%d,%d,", uart->baud_rate,
+			     uart->data_bits, uart->parity);
+		switch (uart->stop_bits) {
+		case 2:
+			s += sprintf(s, "1.5)");
+		default:
+			s += sprintf(s, "%d)", uart->stop_bits);
+		}
 		break;
 	}
 	case DEVICE_PATH_SUB_TYPE_MSG_USB: {
@@ -251,7 +265,8 @@ static char *dp_media(char *s, struct efi_device_path *dp)
 
 		s += sprintf(s, "VenMedia(%pUl", &vdp->guid);
 		n = (int)vdp->dp.length - sizeof(struct efi_device_path_vendor);
-		if (n > 0) {
+		/* Node must fit into MAX_NODE_LEN) */
+		if (n > 0 && n < MAX_NODE_LEN / 2 - 24) {
 			s += sprintf(s, ",");
 			for (i = 0; i < n; ++i)
 				s += sprintf(s, "%02x", vdp->vendor_data[i]);

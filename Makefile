@@ -3,7 +3,7 @@
 VERSION = 2021
 PATCHLEVEL = 04
 SUBLEVEL =
-EXTRAVERSION = -rc2
+EXTRAVERSION = -rc4
 NAME =
 
 # *DOCUMENTATION*
@@ -792,6 +792,7 @@ libs-y += drivers/usb/dwc3/
 libs-y += drivers/usb/common/
 libs-y += drivers/usb/emul/
 libs-y += drivers/usb/eth/
+libs-$(CONFIG_USB_DEVICE) += drivers/usb/gadget/
 libs-$(CONFIG_USB_GADGET) += drivers/usb/gadget/
 libs-$(CONFIG_USB_GADGET) += drivers/usb/gadget/udc/
 libs-y += drivers/usb/host/
@@ -1016,6 +1017,33 @@ quiet_cmd_cfgcheck = CFGCHK  $2
 cmd_cfgcheck = $(srctree)/scripts/check-config.sh $2 \
 		$(srctree)/scripts/config_whitelist.txt $(srctree)
 
+# Concat the value of all the CONFIGs (result is 'y' or 'yy', etc. )
+got = $(foreach cfg,$(1),$($(cfg)))
+
+# expected value 'y for each one
+expect = $(foreach cfg,$(1),y)
+
+# Show a deprecation message
+# Args:
+# 1: List of CONFIG_DM_... to migrate to (e.g. "CONFIG_DM_MMC CONFIG_BLK")
+# 2: Name of component (e.g . "Ethernet drivers")
+# 3: Release deadline (e.g. "v202.07")
+# 4: Condition to require before checking (e.g. "$(CONFIG_NET)")
+# Note: Script avoids bash construct, hence the strange double 'if'
+# (patches welcome!)
+define deprecated
+	if [ -n "$(strip $(4))" ]; then if [ "$(got)" != "$(expect)" ]; then \
+		echo >&2 "===================== WARNING ======================"; \
+		echo >&2 "This board does not use $(firstword $(1)) (Driver Model"; \
+		echo >&2 "for $(2)). Please update the board to use"; \
+		echo >&2 "$(firstword $(1)) before the $(3) release. Failure to"; \
+		echo >&2 "update by the deadline may result in board removal."; \
+		echo >&2 "See doc/driver-model/migration.rst for more info."; \
+		echo >&2 "===================================================="; \
+	fi; fi
+
+endef
+
 PHONY += inputs
 inputs: $(INPUTS-y)
 
@@ -1030,48 +1058,6 @@ endif
 
 ifeq ($(CONFIG_DEPRECATED),y)
 	$(warning "You have deprecated configuration options enabled in your .config! Please check your configuration.")
-ifeq ($(CONFIG_SPI),y)
-ifneq ($(CONFIG_DM_SPI)$(CONFIG_OF_CONTROL),yy)
-	$(warning "The relevant config item with associated code will remove in v2019.07 release.")
-endif
-endif
-endif
-ifneq ($(CONFIG_DM),y)
-	@echo >&2 "===================== WARNING ======================"
-	@echo >&2 "This board does not use CONFIG_DM. CONFIG_DM will be"
-	@echo >&2 "compulsory starting with the v2020.01 release."
-	@echo >&2 "Failure to update may result in board removal."
-	@echo >&2 "See doc/driver-model/migration.rst for more info."
-	@echo >&2 "===================================================="
-endif
-ifeq ($(CONFIG_USB),y)
-ifneq ($(CONFIG_DM_USB)$(CONFIG_OF_CONTROL)$(CONFIG_BLK),yyy)
-	@echo >&2 "===================== WARNING ======================"
-	@echo >&2 "This board does not use CONFIG_DM_USB. Please update"
-	@echo >&2 "the board to use CONFIG_DM_USB before the v2019.07 release."
-	@echo >&2 "Failure to update by the deadline may result in board removal."
-	@echo >&2 "See doc/driver-model/migration.rst for more info."
-	@echo >&2 "===================================================="
-endif
-endif
-ifeq ($(CONFIG_PCI),y)
-ifneq ($(CONFIG_DM_PCI),y)
-	@echo >&2 "===================== WARNING ======================"
-	@echo >&2 "This board does not use CONFIG_DM_PCI and the migration"
-	@echo >&2 "deadline was the v2019.07 release."
-	@echo >&2 "===================================================="
-	@exit 1
-endif
-endif
-ifneq ($(CONFIG_LCD)$(CONFIG_VIDEO),)
-ifneq ($(CONFIG_DM_VIDEO),y)
-	@echo >&2 "===================== WARNING ======================"
-	@echo >&2 "This board does not use CONFIG_DM_VIDEO Please update"
-	@echo >&2 "the board to use CONFIG_DM_VIDEO before the v2019.07 release."
-	@echo >&2 "Failure to update by the deadline may result in board removal."
-	@echo >&2 "See doc/driver-model/migration.rst for more info."
-	@echo >&2 "===================================================="
-endif
 endif
 ifeq ($(CONFIG_OF_EMBED),y)
 	@echo >&2 "===================== WARNING ======================"
@@ -1081,38 +1067,6 @@ ifeq ($(CONFIG_OF_EMBED),y)
 	@echo >&2 "See doc/README.fdt-control for more info."
 	@echo >&2 "===================================================="
 endif
-ifeq ($(CONFIG_SPI_FLASH),y)
-ifneq ($(CONFIG_DM_SPI_FLASH)$(CONFIG_OF_CONTROL),yy)
-	@echo >&2 "===================== WARNING ======================"
-	@echo >&2 "This board does not use CONFIG_DM_SPI_FLASH. Please update"
-	@echo >&2 "the board to use CONFIG_SPI_FLASH before the v2019.07 release."
-	@echo >&2 "Failure to update by the deadline may result in board removal."
-	@echo >&2 "See doc/driver-model/migration.rst for more info."
-	@echo >&2 "===================================================="
-endif
-endif
-ifneq ($(CONFIG_WATCHDOG)$(CONFIG_HW_WATCHDOG),)
-ifneq ($(CONFIG_WDT),y)
-	@echo >&2 "===================== WARNING ======================"
-	@echo >&2 "This board does not use CONFIG_WDT (DM watchdog support)."
-	@echo >&2 "Please update the board to use CONFIG_WDT before the"
-	@echo >&2 "v2019.10 release."
-	@echo >&2 "Failure to update by the deadline may result in board removal."
-	@echo >&2 "See doc/driver-model/migration.rst for more info."
-	@echo >&2 "===================================================="
-endif
-endif
-ifneq ($(CONFIG_NET),)
-ifneq ($(CONFIG_DM_ETH),y)
-	@echo >&2 "===================== WARNING ======================"
-	@echo >&2 "This board does not use CONFIG_DM_ETH (Driver Model"
-	@echo >&2 "for Ethernet drivers). Please update the board to use"
-	@echo >&2 "CONFIG_DM_ETH before the v2020.07 release. Failure to"
-	@echo >&2 "update by the deadline may result in board removal."
-	@echo >&2 "See doc/driver-model/migration.rst for more info."
-	@echo >&2 "===================================================="
-endif
-endif
 ifneq ($(CONFIG_SPL_FIT_GENERATOR),)
 	@echo >&2 "===================== WARNING ======================"
 	@echo >&2 "This board uses CONFIG_SPL_FIT_GENERATOR. Please migrate"
@@ -1120,6 +1074,27 @@ ifneq ($(CONFIG_SPL_FIT_GENERATOR),)
 	@echo >&2 "arch-specific scripts with no tests."
 	@echo >&2 "===================================================="
 endif
+ifneq ($(CONFIG_DM),y)
+	@echo >&2 "===================== WARNING ======================"
+	@echo >&2 "This board does not use CONFIG_DM. CONFIG_DM will be"
+	@echo >&2 "compulsory starting with the v2020.01 release."
+	@echo >&2 "Failure to update may result in board removal."
+	@echo >&2 "See doc/driver-model/migration.rst for more info."
+	@echo >&2 "===================================================="
+endif
+	$(call deprecated,CONFIG_DM_USB CONFIG_OF_CONTROL CONFIG_BLK,\
+		USB,v2019.07,$(CONFIG_USB))
+	$(call deprecated,CONFIG_AHCI,AHCI,v2019.07, $(CONFIG_LIBATA))
+	$(call deprecated,CONFIG_DM_PCI,PCI,v2019.07,$(CONFIG_PCI))
+	$(call deprecated,CONFIG_DM_VIDEO,video,v2019.07,\
+		$(CONFIG_LCD)$(CONFIG_VIDEO))
+	$(call deprecated,CONFIG_DM_SPI_FLASH,SPI flash,v2019.07,\
+		$(CONFIG_SPI_FLASH))
+	$(call deprecated,CONFIG_WDT,DM watchdog,v2019.10,\
+		$(CONFIG_WATCHDOG)$(CONFIG_HW_WATCHDOG))
+	$(call deprecated,CONFIG_DM_ETH,Ethernet drivers,v2020.07,$(CONFIG_NET))
+	$(call deprecated,CONFIG_DM_I2C,I2C drivers,v2020.07,$(CONFIG_I2C))
+	$(call deprecated,CONFIG_DM_GPIO,GPIO drivers,v2020.07,$(CONFIG_GPIO))
 	@# Check that this build does not use CONFIG options that we do not
 	@# know about unless they are in Kconfig. All the existing CONFIG
 	@# options are whitelisted, so new ones should not be added.
@@ -1230,11 +1205,6 @@ spl/u-boot-spl.srec: spl/u-boot-spl FORCE
 OBJCOPYFLAGS_u-boot-nodtb.bin := -O binary \
 		$(if $(CONFIG_X86_16BIT_INIT),-R .start16 -R .resetvec) \
 		$(if $(CONFIG_MPC85XX_HAVE_RESET_VECTOR),-R .bootpg -R .resetvec)
-
-OBJCOPYFLAGS_u-boot-spl.hex = $(OBJCOPYFLAGS_u-boot.hex)
-
-spl/u-boot-spl.hex: spl/u-boot-spl FORCE
-	$(call if_changed,objcopy)
 
 binary_size_check: u-boot-nodtb.bin FORCE
 	@file_size=$(shell wc -c u-boot-nodtb.bin | awk '{print $$1}') ; \
@@ -1354,6 +1324,7 @@ MKIMAGEFLAGS_u-boot.img = -f auto -A $(ARCH) -T firmware -C none -O u-boot \
 	-a $(CONFIG_SYS_TEXT_BASE) -e $(CONFIG_SYS_UBOOT_START) \
 	-p $(CONFIG_FIT_EXTERNAL_OFFSET) \
 	-n "U-Boot $(UBOOTRELEASE) for $(BOARD) board" -E \
+	$(patsubst %,-b arch/$(ARCH)/dts/%.dtb,$(subst ",,$(DEVICE_TREE))) \
 	$(patsubst %,-b arch/$(ARCH)/dts/%.dtb,$(subst ",,$(CONFIG_OF_LIST))) \
 	$(patsubst %,-b arch/$(ARCH)/dts/%.dtbo,$(subst ",,$(CONFIG_OF_OVERLAY_LIST)))
 else
@@ -1514,7 +1485,10 @@ flash.bin: spl/u-boot-spl.bin u-boot.itb FORCE
 endif
 endif
 
-u-boot-with-spl.imx u-boot-with-nand-spl.imx: SPL u-boot.bin FORCE
+u-boot.uim: u-boot.bin FORCE
+	$(Q)$(MAKE) $(build)=arch/arm/mach-imx $@
+
+u-boot-with-spl.imx u-boot-with-nand-spl.imx: SPL $(if $(CONFIG_OF_SEPARATE),u-boot.img,u-boot.uim) FORCE
 	$(Q)$(MAKE) $(build)=arch/arm/mach-imx $@
 
 MKIMAGEFLAGS_u-boot.ubl = -n $(UBL_CONFIG) -T ublimage -e $(CONFIG_SYS_TEXT_BASE)
@@ -1902,6 +1876,12 @@ u-boot.lds: $(LDSCRIPT) prepare FORCE
 spl/u-boot-spl.bin: spl/u-boot-spl
 	@:
 	$(SPL_SIZE_CHECK)
+
+spl/u-boot-spl-dtb.bin: spl/u-boot-spl
+	@:
+
+spl/u-boot-spl-dtb.hex: spl/u-boot-spl
+	@:
 
 spl/u-boot-spl: tools prepare \
 		$(if $(CONFIG_OF_SEPARATE)$(CONFIG_OF_EMBED)$(CONFIG_SPL_OF_PLATDATA),dts/dt.dtb) \

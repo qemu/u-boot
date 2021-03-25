@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0+
 
 # Grab our configured image.  The source for this is found at:
-# https://gitlab.denx.de/u-boot/gitlab-ci-runner
+# https://source.denx.de/u-boot/gitlab-ci-runner
 image: trini/u-boot-gitlab-ci-runner:bionic-20200807-02Sep2020
 
 # We run some tests in different order, to catch some failures quicker.
@@ -15,7 +15,7 @@ stages:
   stage: test.py
   before_script:
     # Clone uboot-test-hooks
-    - git clone --depth=1 git://github.com/swarren/uboot-test-hooks.git /tmp/uboot-test-hooks
+    - git clone --depth=1 https://source.denx.de/u-boot/u-boot-test-hooks /tmp/uboot-test-hooks
     - ln -s travis-ci /tmp/uboot-test-hooks/bin/`hostname`
     - ln -s travis-ci /tmp/uboot-test-hooks/py/`hostname`
     - grub-mkimage --prefix="" -o ~/grub_x86.efi -O i386-efi normal  echo lsefimmap lsefi lsefisystab efinet tftp minicmd
@@ -168,7 +168,7 @@ Run binman, buildman, dtoc, Kconfig and patman testsuites:
       export UBOOT_TRAVIS_BUILD_DIR=/tmp/sandbox_spl;
       export PYTHONPATH="${UBOOT_TRAVIS_BUILD_DIR}/scripts/dtc/pylibfdt";
       export PATH="${UBOOT_TRAVIS_BUILD_DIR}/scripts/dtc:${PATH}";
-      ./tools/buildman/buildman -o ${UBOOT_TRAVIS_BUILD_DIR} -w sandbox_spl;
+      ./tools/buildman/buildman -T0 -o ${UBOOT_TRAVIS_BUILD_DIR} -w sandbox_spl;
       ./tools/binman/binman --toolpath ${UBOOT_TRAVIS_BUILD_DIR}/tools test;
       ./tools/buildman/buildman -t;
       ./tools/dtoc/dtoc -t;
