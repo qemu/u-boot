@@ -7,6 +7,7 @@ menu "I2C support"
 config DM_I2C
 	bool "Enable Driver Model for I2C drivers"
 	depends on DM
+	default y
 	help
 	  Enable driver model for I2C. The I2C uclass interface: probe, read,
 	  write and speed, is implemented with the bus drivers operations,
