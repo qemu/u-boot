@@ -1097,6 +1097,7 @@ endif
 		$(CONFIG_WATCHDOG)$(CONFIG_HW_WATCHDOG))
 	$(call deprecated,CONFIG_DM_ETH,Ethernet drivers,v2020.07,$(CONFIG_NET))
 	$(call deprecated,CONFIG_DM_I2C,I2C drivers,v2020.07,$(CONFIG_I2C))
+	$(call deprecated,CONFIG_DM_GPIO,GPIO drivers,v2020.07,$(CONFIG_GPIO))
 	@# Check that this build does not use CONFIG options that we do not
 	@# know about unless they are in Kconfig. All the existing CONFIG
 	@# options are whitelisted, so new ones should not be added.
