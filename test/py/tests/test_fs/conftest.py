@@ -165,10 +165,6 @@ def mk_fs(config, fs_type, size, id):
             % (fs_img, count), shell=True)
         check_call('mkfs.%s %s %s'
             % (fs_lnxtype, mkfs_opt, fs_img), shell=True)
-        if fs_type == 'ext4':
-            sb_content = check_output('tune2fs -l %s' % fs_img, shell=True).decode()
-            if 'metadata_csum' in sb_content:
-                check_call('tune2fs -O ^metadata_csum %s' % fs_img, shell=True)
         return fs_img
     except CalledProcessError:
         call('rm -f %s' % fs_img, shell=True)

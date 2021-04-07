@@ -99,7 +99,7 @@ struct ext2_sblock {
 	__le32 feature_compatibility;
 	__le32 feature_incompat;
 	__le32 feature_ro_compat;
-	__le32 unique_id[4];
+	uint8_t unique_id[16];
 	char volume_name[16];
 	char last_mounted_on[64];
 	__le32 compression_info;
@@ -118,6 +118,8 @@ struct ext2_sblock {
 	__le32 first_meta_block_group;
 	__le32 mkfs_time;
 	__le32 journal_blocks[17];
+
+	/* 64 bit support */
 	__le32 total_blocks_high;
 	__le32 reserved_blocks_high;
 	__le32 free_blocks_high;
@@ -130,6 +132,43 @@ struct ext2_sblock {
 	__le32 raid_stripe_width;
 	uint8_t log2_groups_per_flex;
 	uint8_t checksum_type;
+	uint8_t encryption_level;
+	uint8_t reserved_pad;
+	__le64 kbytes_written;
+	__le32 snapshot_inum;
+	__le32 snapshot_id;
+	__le64 snapshot_r_blocks_count;
+	__le32 snapshot_list;
+	__le32 error_count;
+	__le32 first_error_time;
+	__le32 first_error_ino;
+	__le64 first_error_block;
+	uint8_t first_error_func[32];
+	__le32 first_error_line;
+	__le32 last_error_time;
+	__le32 last_error_ino;
+	__le32 last_error_line;
+	__le64 last_error_block;
+	uint8_t last_error_func[32];
+	uint8_t mount_opts[64];
+	__le32 usr_quota_inum;
+	__le32 grp_quota_inum;
+	__le32 overhead_clusters;
+	__le32 backup_bgs[2];
+	uint8_t encrypt_algos[4];
+	uint8_t encrypt_pw_salt[16];
+	__le32 lpf_ino;
+	__le32 prj_quota_inum;
+	__le32 checksum_seed;
+	uint8_t wtime_hi;
+	uint8_t mtime_hi;
+	uint8_t mkfs_time_hi;
+	uint8_t lastcheck_hi;
+	uint8_t first_error_time_hi;
+	uint8_t last_error_time_hi;
+	uint8_t pad[2];
+	__le32 reserved[96];
+	__le32 checksum;
 };
 
 struct ext2_block_group {
@@ -159,6 +198,13 @@ struct ext2_block_group {
 	__le32 bg_reserved;
 };
 
+#define EXT4_BG_INODE_BITMAP_CSUM_HI_END	\
+	(offsetof(struct ext2_block_group, bg_inode_id_csum_high) + \
+	 sizeof(__le16))
+#define EXT4_BG_BLOCK_BITMAP_CSUM_HI_END	\
+	(offsetof(struct ext2_block_group, bg_block_id_csum_high) + \
+	 sizeof(__le16))
+
 /* The ext2 inode. */
 struct ext2_inode {
 	__le16 mode;
@@ -183,11 +229,28 @@ struct ext2_inode {
 		char symlink[60];
 		char inline_data[60];
 	} b;
-	__le32 version;
+	__le32 generation;
 	__le32 acl;
 	__le32 size_high;	/* previously dir_acl, but never used */
 	__le32 fragment_addr;
-	__le32 osd2[3];
+
+	__le16 blocks_high; /* were l_i_reserved1 */
+	__le16 file_acl_high;
+	__le16 uid_high;
+	__le16 gid_high;
+	__le16 checksum_lo; /* crc32c(uuid+inum+inode) LE */
+	__le16 reserved;
+
+	/* optional part */
+	__le16 extra_isize;
+	__le16 checksum_hi; /* crc32c(uuid+inum+inode) BE */
+	__le32 ctime_extra;
+	__le32 mtime_extra;
+	__le32 atime_extra;
+	__le32 crtime;
+	__le32 crtime_extra;
+	__le32 version_hi;
+	__le32 projid;
 };
 
 /* The header of an ext2 directory entry. */
@@ -196,6 +259,14 @@ struct ext2_dirent {
 	__le16 direntlen;
 	__u8 namelen;
 	__u8 filetype;
+};
+
+struct ext4_dir_entry_tail {
+	__le32	det_reserved_zero1;	/* Pretend to be unused */
+	__le16	det_rec_len;		/* 12 */
+	__u8	det_reserved_zero2;	/* Zero name length */
+	__u8	det_reserved_ft;	/* 0xDE, fake file type */
+	__le32	det_checksum;		/* crc32c(uuid+inum+dirblock) */
 };
 
 struct ext2fs_node {

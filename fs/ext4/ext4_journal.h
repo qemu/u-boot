@@ -22,7 +22,6 @@
 #define EXT2_JOURNAL_INO		8	/* Journal inode */
 #define EXT2_JOURNAL_SUPERBLOCK	0	/* Journal  Superblock number */
 
-#define JBD2_FEATURE_COMPAT_CHECKSUM	0x00000001
 #define EXT3_JOURNAL_MAGIC_NUMBER	0xc03b3998U
 #define TRANSACTION_RUNNING		1
 #define TRANSACTION_COMPLETE		0
@@ -36,6 +35,14 @@
 #define EXT3_JOURNAL_FLAG_SAME_UUID	2
 #define EXT3_JOURNAL_FLAG_DELETED	4
 #define EXT3_JOURNAL_FLAG_LAST_TAG	8
+
+#define JBD2_FEATURE_COMPAT_CHECKSUM		0x00000001
+
+#define JBD2_FEATURE_INCOMPAT_REVOKE		0x00000001
+#define JBD2_FEATURE_INCOMPAT_64BIT		0x00000002
+#define JBD2_FEATURE_INCOMPAT_ASYNC_COMMIT	0x00000004
+#define JBD2_FEATURE_INCOMPAT_CSUM_V2		0x00000008
+#define JBD2_FEATURE_INCOMPAT_CSUM_V3		0x00000010
 
 /* Maximum entries in 1 journal transaction */
 #define MAX_JOURNAL_ENTRIES 100
@@ -90,16 +97,45 @@ struct journal_superblock_t {
 	__be32 s_max_trans_data;	/* Limit of data blocks per trans. */
 
 	/* 0x0050 */
-	__be32 s_padding[44];
+	__u8 s_checksum_type;	/* checksum type */
+	__u8 s_padding2[3];
+	__u32 s_padding[42];
+	__be32 s_checksum;	/* crc32c(superblock) */
 
 	/* 0x0100 */
 	__u8 s_users[16 * 48];	/* ids of all fs'es sharing the log */
 	/* 0x0400 */
 } ;
 
+struct ext3_journal_commit_header {
+	__be32 h_magic;
+	__be32 h_blocktype;
+	__be32 h_sequence;
+	unsigned char h_chksum_type;
+	unsigned char h_chksum_size;
+	unsigned char h_padding[2];
+	__be32 h_chksum[8];
+	__be64 h_commit_sec;
+	__be32 h_commit_nsec;
+};
+
 struct ext3_journal_block_tag {
 	__be32 block;
+	__be16 checksum;	/* truncated crc32c(uuid+seq+block) */
+	__be16 flags;
+	__be32 blocknr_high;	/* only used when INCOMPAT_64BIT is set */
+};
+
+/* Use if FEATURE_INCOMPAT_CSUM_V3 is set */
+struct ext3_journal_block_tag3 {
+	__be32 block;
 	__be32 flags;
+	__be32 blocknr_high;
+	__be32 checksum;	/* crc32c(uuid+seq+block) */
+};
+
+struct ext3_journal_block_tail {
+	__be32 t_checksum;	/* crc32c(uuid+descr_block) */
 };
 
 struct journal_revoke_header_t {

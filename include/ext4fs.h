@@ -37,6 +37,7 @@ struct disk_partition;
 #define EXT4_FEATURE_RO_COMPAT_METADATA_CSUM 0x0400
 #define EXT4_FEATURE_INCOMPAT_EXTENTS	0x0040
 #define EXT4_FEATURE_INCOMPAT_64BIT	0x0080
+#define EXT4_FEATURE_INCOMPAT_CSUM_SEED	0x2000
 #define EXT4_INDIRECT_BLOCKS		12
 
 #define EXT4_BG_INODE_UNINIT		0x0001
@@ -117,6 +118,11 @@ struct ext_filesystem {
 
 	/* Block Device Descriptor */
 	struct blk_desc *dev_desc;
+
+	uint32_t csum_seed;
+	uint32_t journal_csum_seed;
+	uint32_t journal_tag_size;
+	int journal_csum_version;
 };
 
 struct ext_block_cache {
@@ -130,6 +136,7 @@ extern struct ext2fs_node *ext4fs_file;
 
 #if defined(CONFIG_EXT4_WRITE)
 extern struct ext2_inode *g_parent_inode;
+extern int g_parent_inode_no;
 extern int gd_index;
 extern int gindex;
 
