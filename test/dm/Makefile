@@ -101,5 +101,6 @@ ifneq ($(CONFIG_EFI_PARTITION),)
 obj-$(CONFIG_FASTBOOT_FLASH_MMC) += fastboot.o
 endif
 obj-$(CONFIG_QFW) += qfw.o
+obj-$(CONFIG_SYSINFO_GPIO) += sysinfo-gpio.o
 endif
 endif # !SPL
