@@ -5,3 +5,4 @@
 obj-y += cmd_ut_env.o
 obj-y += attr.o
 obj-y += hashtable.o
+obj-y += fdt.o
