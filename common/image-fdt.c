@@ -39,7 +39,6 @@ static void fdt_error(const char *msg)
 	puts(" - must RESET the board to recover.\n");
 }
 
-#if CONFIG_IS_ENABLED(LEGACY_IMAGE_FORMAT)
 static const image_header_t *image_get_fdt(ulong fdt_addr)
 {
 	const image_header_t *fdt_hdr = map_sysmem(fdt_addr, 0);
@@ -72,7 +71,6 @@ static const image_header_t *image_get_fdt(ulong fdt_addr)
 	}
 	return fdt_hdr;
 }
-#endif
 
 static void boot_fdt_reserve_region(struct lmb *lmb, uint64_t addr,
 				    uint64_t size)
@@ -258,46 +256,49 @@ error:
 static int select_fdt(bootm_headers_t *images, const char *select, u8 arch,
 		      ulong *fdt_addrp)
 {
-	const char *buf;
-	ulong fdt_addr;
-
-#if CONFIG_IS_ENABLED(FIT)
 	const char *fit_uname_config = images->fit_uname_cfg;
 	const char *fit_uname_fdt = NULL;
-	ulong default_addr;
 	int fdt_noffset;
+	const char *buf;
+	bool processed;
+	ulong fdt_addr = 0;
 
 	if (select) {
-		/*
-		 * If the FDT blob comes from the FIT image and the
-		 * FIT image address is omitted in the command line
-		 * argument, try to use ramdisk or os FIT image
-		 * address or default load address.
-		 */
-		if (images->fit_uname_rd)
-			default_addr = (ulong)images->fit_hdr_rd;
-		else if (images->fit_uname_os)
-			default_addr = (ulong)images->fit_hdr_os;
-		else
-			default_addr = image_load_addr;
+		ulong default_addr;
+		bool done = true;
 
-		if (fit_parse_conf(select, default_addr, &fdt_addr,
-				   &fit_uname_config)) {
-			debug("*  fdt: config '%s' from image at 0x%08lx\n",
-			      fit_uname_config, fdt_addr);
-		} else if (fit_parse_subimage(select, default_addr, &fdt_addr,
-			   &fit_uname_fdt)) {
-			debug("*  fdt: subimage '%s' from image at 0x%08lx\n",
-			      fit_uname_fdt, fdt_addr);
-		} else
-#endif
-		{
+		if (CONFIG_IS_ENABLED(FIT)) {
+			/*
+			 * If the FDT blob comes from the FIT image and the
+			 * FIT image address is omitted in the command line
+			 * argument, try to use ramdisk or os FIT image
+			 * address or default load address.
+			 */
+			if (images->fit_uname_rd)
+				default_addr = (ulong)images->fit_hdr_rd;
+			else if (images->fit_uname_os)
+				default_addr = (ulong)images->fit_hdr_os;
+			else
+				default_addr = image_load_addr;
+
+			if (fit_parse_conf(select, default_addr, &fdt_addr,
+					   &fit_uname_config)) {
+				debug("*  fdt: config '%s' from image at 0x%08lx\n",
+				      fit_uname_config, fdt_addr);
+			} else if (fit_parse_subimage(select, default_addr, &fdt_addr,
+				   &fit_uname_fdt)) {
+				debug("*  fdt: subimage '%s' from image at 0x%08lx\n",
+				      fit_uname_fdt, fdt_addr);
+			} else {
+				done = false;
+			}
+		}
+		if (!done) {
 			fdt_addr = simple_strtoul(select, NULL, 16);
 			debug("*  fdt: cmdline image address = 0x%08lx\n",
 			      fdt_addr);
 		}
-#if CONFIG_IS_ENABLED(FIT)
-	} else {
+	} else if (CONFIG_IS_ENABLED(FIT)) {
 		/* use FIT configuration provided in first bootm
 		 * command argument
 		 */
@@ -309,7 +310,6 @@ static int select_fdt(bootm_headers_t *images, const char *select, u8 arch,
 		else if (fdt_noffset < 0)
 			return fdt_noffset;
 	}
-#endif
 	debug("## Checking for 'FDT'/'FDT Image' at %08lx\n",
 	      fdt_addr);
 
@@ -319,90 +319,90 @@ static int select_fdt(bootm_headers_t *images, const char *select, u8 arch,
 	 * check image type, for FIT images get a FIT node.
 	 */
 	buf = map_sysmem(fdt_addr, 0);
+	processed = false;
 	switch (genimg_get_format(buf)) {
-#if CONFIG_IS_ENABLED(LEGACY_IMAGE_FORMAT)
-	case IMAGE_FORMAT_LEGACY: {
-		const image_header_t *fdt_hdr;
-		ulong load, load_end;
-		ulong image_start, image_data, image_end;
+	case IMAGE_FORMAT_LEGACY:
+		if (CONFIG_IS_ENABLED(LEGACY_IMAGE_FORMAT)) {
+			const image_header_t *fdt_hdr;
+			ulong load, load_end;
+			ulong image_start, image_data, image_end;
 
-		/* verify fdt_addr points to a valid image header */
-		printf("## Flattened Device Tree from Legacy Image at %08lx\n",
-		       fdt_addr);
-		fdt_hdr = image_get_fdt(fdt_addr);
-		if (!fdt_hdr)
-			return -ENOPKG;
+			processed = true;
+			/* verify fdt_addr points to a valid image header */
+			printf("## Flattened Device Tree from Legacy Image at %08lx\n",
+			       fdt_addr);
+			fdt_hdr = image_get_fdt(fdt_addr);
+			if (!fdt_hdr)
+				return -ENOPKG;
 
-		/*
-		 * move image data to the load address,
-		 * make sure we don't overwrite initial image
-		 */
-		image_start = (ulong)fdt_hdr;
-		image_data = (ulong)image_get_data(fdt_hdr);
-		image_end = image_get_image_end(fdt_hdr);
+			/*
+			 * move image data to the load address,
+			 * make sure we don't overwrite initial image
+			 */
+			image_start = (ulong)fdt_hdr;
+			image_data = (ulong)image_get_data(fdt_hdr);
+			image_end = image_get_image_end(fdt_hdr);
 
-		load = image_get_load(fdt_hdr);
-		load_end = load + image_get_data_size(fdt_hdr);
+			load = image_get_load(fdt_hdr);
+			load_end = load + image_get_data_size(fdt_hdr);
 
-		if (load == image_start ||
-		    load == image_data) {
+			if (load == image_start ||
+			    load == image_data) {
+				fdt_addr = load;
+				break;
+			}
+
+			if (load < image_end && load_end > image_start) {
+				fdt_error("fdt overwritten");
+				return -EFAULT;
+			}
+
+			debug("   Loading FDT from 0x%08lx to 0x%08lx\n",
+			      image_data, load);
+
+			memmove((void *)load,
+				(void *)image_data,
+				image_get_data_size(fdt_hdr));
+
 			fdt_addr = load;
-			break;
 		}
-
-		if ((load < image_end) && (load_end > image_start)) {
-			fdt_error("fdt overwritten");
-			return -EFAULT;
-		}
-
-		debug("   Loading FDT from 0x%08lx to 0x%08lx\n",
-		      image_data, load);
-
-		memmove((void *)load,
-			(void *)image_data,
-			image_get_data_size(fdt_hdr));
-
-		fdt_addr = load;
 		break;
-	}
-#endif
 	case IMAGE_FORMAT_FIT:
 		/*
 		 * This case will catch both: new uImage format
 		 * (libfdt based) and raw FDT blob (also libfdt
 		 * based).
 		 */
-#if CONFIG_IS_ENABLED(FIT)
-		/* check FDT blob vs FIT blob */
-		if (!fit_check_format(buf, IMAGE_SIZE_INVAL)) {
-			ulong load, len;
+		if (CONFIG_IS_ENABLED(FIT)) {
+			/* check FDT blob vs FIT blob */
+			if (!fit_check_format(buf, IMAGE_SIZE_INVAL)) {
+				ulong load, len;
 
-			fdt_noffset = boot_get_fdt_fit(images, fdt_addr,
-						       &fit_uname_fdt,
-						       &fit_uname_config,
-						       arch, &load, &len);
+				fdt_noffset = boot_get_fdt_fit(images, fdt_addr,
+							       &fit_uname_fdt,
+							       &fit_uname_config,
+							       arch, &load, &len);
 
-			if (fdt_noffset < 0)
-				return -ENOENT;
+				if (fdt_noffset < 0)
+					return -ENOENT;
 
-			images->fit_hdr_fdt = map_sysmem(fdt_addr, 0);
-			images->fit_uname_fdt = fit_uname_fdt;
-			images->fit_noffset_fdt = fdt_noffset;
-			fdt_addr = load;
-
-			break;
-		} else
-#endif
-		{
-			/*
-			 * FDT blob
-			 */
+				images->fit_hdr_fdt = map_sysmem(fdt_addr, 0);
+				images->fit_uname_fdt = fit_uname_fdt;
+				images->fit_noffset_fdt = fdt_noffset;
+				fdt_addr = load;
+				processed = true;
+			}
+		}
+		if (!processed) {
+			/* FDT blob */
 			debug("*  fdt: raw FDT blob\n");
 			printf("## Flattened Device Tree blob at %08lx\n",
 			       (long)fdt_addr);
 		}
 		break;
-	default:
+	}
+
+	if (!processed) {
 		puts("ERROR: Did not find a cmdline Flattened Device Tree\n");
 		return -ENOENT;
 	}
@@ -492,8 +492,8 @@ int boot_get_fdt(int flag, int argc, char *const argv[], uint8_t arch,
 			debug("## No Flattened Device Tree\n");
 			goto no_fdt;
 		}
-#ifdef CONFIG_ANDROID_BOOT_IMAGE
-	} else if (genimg_get_format(buf) == IMAGE_FORMAT_ANDROID) {
+	} else if (IS_ENABLED(CONFIG_ANDROID_BOOT_IMAGE) &&
+		   genimg_get_format(buf) == IMAGE_FORMAT_ANDROID) {
 		struct andr_img_hdr *hdr = buf;
 		ulong		fdt_data, fdt_len;
 		u32			fdt_size, dtb_idx;
@@ -525,7 +525,6 @@ int boot_get_fdt(int flag, int argc, char *const argv[], uint8_t arch,
 
 			debug("## Using FDT at ${fdtaddr}=Ox%lx\n", fdt_addr);
 		}
-#endif
 	} else {
 		debug("## No Flattened Device Tree\n");
 		goto no_fdt;
