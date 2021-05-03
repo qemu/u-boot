@@ -24,6 +24,26 @@ config HOST_FIT_PRINT
 	help
 	  Print the content of the FIT verbosely in the host build
 
+config HOST_FIT_SHA1
+	def_bool y
+	help
+	  Support SHA256 checksum of FIT image contents in the host build
+
+config HOST_FIT_SHA256
+	def_bool y
+	help
+	  Support SHA256 checksum of FIT image contents in the host build
+
+config HOST_FIT_SHA384
+	def_bool y
+	help
+	  Support SHA384 checksum of FIT image contents in the host build
+
+config HOST_FIT_SHA512
+	def_bool y
+	help
+	  Support SHA512 checksum of FIT image contents in the host build
+
 config HOST_FIT_SIGNATURE
 	def_bool y
 	help
