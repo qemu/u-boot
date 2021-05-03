@@ -54,6 +54,11 @@ config HOST_FIT_SIGNATURE_MAX_SIZE
 	depends on HOST_FIT_SIGNATURE
 	default 0x10000000
 
+config HOST_FIT_VERBOSE
+	def_bool y
+	help
+	  Support verbose FIT output in the host build
+
 config HOST_OF_LIBFDT
 	def_bool y
 	help
