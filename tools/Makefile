@@ -53,12 +53,12 @@ hostprogs-y += mkenvimage
 mkenvimage-objs := mkenvimage.o os_support.o lib/crc32.o
 
 hostprogs-y += dumpimage mkimage
-hostprogs-$(CONFIG_FIT_SIGNATURE) += fit_info fit_check_sign
+hostprogs-$(CONFIG_HOST_FIT_SIGNATURE) += fit_info fit_check_sign
 
 hostprogs-$(CONFIG_CMD_BOOTEFI_SELFTEST) += file2include
 
-FIT_OBJS-$(CONFIG_FIT) := fit_common.o fit_image.o image-host.o common/image-fit.o
-FIT_SIG_OBJS-$(CONFIG_FIT_SIGNATURE) := common/image-sig.o common/image-fit-sig.o
+FIT_OBJS-$(CONFIG_HOST_FIT) := fit_common.o fit_image.o image-host.o common/image-fit.o
+FIT_SIG_OBJS-$(CONFIG_HOST_FIT_SIGNATURE) := common/image-sig.o common/image-fit-sig.o
 FIT_CIPHER_OBJS-$(CONFIG_FIT_CIPHER) := common/image-cipher.o
 
 # The following files are synced with upstream DTC.
@@ -66,17 +66,17 @@ FIT_CIPHER_OBJS-$(CONFIG_FIT_CIPHER) := common/image-cipher.o
 LIBFDT_OBJS := $(addprefix libfdt/, fdt.o fdt_ro.o fdt_wip.o fdt_sw.o fdt_rw.o \
 		fdt_strerror.o fdt_empty_tree.o fdt_addresses.o fdt_overlay.o)
 
-RSA_OBJS-$(CONFIG_FIT_SIGNATURE) := $(addprefix lib/rsa/, \
+RSA_OBJS-$(CONFIG_HOST_FIT_SIGNATURE) := $(addprefix lib/rsa/, \
 					rsa-sign.o rsa-verify.o \
 					rsa-mod-exp.o)
 
-ECDSA_OBJS-$(CONFIG_FIT_SIGNATURE) := $(addprefix lib/ecdsa/, ecdsa-libcrypto.o)
+ECDSA_OBJS-$(CONFIG_HOST_FIT_SIGNATURE) := $(addprefix lib/ecdsa/, ecdsa-libcrypto.o)
 
 AES_OBJS-$(CONFIG_FIT_CIPHER) := $(addprefix lib/aes/, \
 					aes-encrypt.o aes-decrypt.o)
 
 # Cryptographic helpers that depend on openssl/libcrypto
-LIBCRYPTO_OBJS-$(CONFIG_FIT_SIGNATURE) := $(addprefix lib/, \
+LIBCRYPTO_OBJS-$(CONFIG_HOST_FIT_SIGNATURE) := $(addprefix lib/, \
 					fdt-libcrypto.o)
 
 ROCKCHIP_OBS = lib/rc4.o rkcommon.o rkimage.o rksd.o rkspi.o
@@ -137,13 +137,13 @@ fit_info-objs   := $(dumpimage-mkimage-objs) fit_info.o
 fit_check_sign-objs   := $(dumpimage-mkimage-objs) fit_check_sign.o
 file2include-objs := file2include.o
 
-ifneq ($(CONFIG_MX23)$(CONFIG_MX28)$(CONFIG_FIT_SIGNATURE),)
+ifneq ($(CONFIG_MX23)$(CONFIG_MX28)$(CONFIG_HOST_FIT_SIGNATURE),)
 # Add CONFIG_MXS into host CFLAGS, so we can check whether or not register
 # the mxsimage support within tools/mxsimage.c .
 HOSTCFLAGS_mxsimage.o += -DCONFIG_MXS
 endif
 
-ifdef CONFIG_FIT_SIGNATURE
+ifdef CONFIG_HOST_FIT_SIGNATURE
 # This affects include/image.h, but including the board config file
 # is tricky, so manually define this options here.
 HOST_EXTRACFLAGS	+= -DCONFIG_FIT_SIGNATURE
@@ -165,7 +165,7 @@ HOSTCFLAGS_kwbimage.o += -DCONFIG_KWB_SECURE
 endif
 
 # MXSImage needs LibSSL
-ifneq ($(CONFIG_MX23)$(CONFIG_MX28)$(CONFIG_ARMADA_38X)$(CONFIG_FIT_SIGNATURE)$(CONFIG_FIT_CIPHER),)
+ifneq ($(CONFIG_MX23)$(CONFIG_MX28)$(CONFIG_ARMADA_38X)$(CONFIG_HOST_FIT_SIGNATURE)$(CONFIG_FIT_CIPHER),)
 HOSTCFLAGS_kwbimage.o += \
 	$(shell pkg-config --cflags libssl libcrypto 2> /dev/null || echo "")
 HOSTLDLIBS_mkimage += \

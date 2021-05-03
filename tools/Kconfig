@@ -9,4 +9,29 @@ config MKIMAGE_DTC_PATH
 	  some cases the system dtc may not support all required features
 	  and the path to a different version should be given here.
 
+config HOST_FIT
+	def_bool y
+	help
+	  Enable FIT support in the host build.
+
+config HOST_FIT_FULL_CHECK
+	def_bool y
+	help
+	  Do a full check of the FIT before using it in the host build
+
+config HOST_FIT_PRINT
+	def_bool y
+	help
+	  Print the content of the FIT verbosely in the host build
+
+config HOST_FIT_SIGNATURE
+	def_bool y
+	help
+	  Enable signature verification of FIT uImages in the host build
+
+config HOST_FIT_SIGNATURE_MAX_SIZE
+	hex
+	depends on HOST_FIT_SIGNATURE
+	default 0x10000000
+
 endmenu
