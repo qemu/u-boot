@@ -1234,7 +1234,7 @@ int calculate_hash(const void *data, int data_len, const char *algo,
 		sha512_csum_wd((unsigned char *)data, data_len,
 			       (unsigned char *)value, CHUNKSZ_SHA512);
 		*value_len = SHA512_SUM_LEN;
-	} else if (IMAGE_ENABLE_MD5 && strcmp(algo, "md5") == 0) {
+	} else if (CONFIG_IS_ENABLED(MD5) && strcmp(algo, "md5") == 0) {
 		md5_wd((unsigned char *)data, data_len, value, CHUNKSZ_MD5);
 		*value_len = 16;
 	} else {
