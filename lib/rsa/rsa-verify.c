@@ -95,7 +95,7 @@ int padding_pkcs_15_verify(struct image_sign_info *info,
 	return 0;
 }
 
-#ifdef CONFIG_FIT_RSASSA_PSS
+#if CONFIG_IS_ENABLED(FIT_RSASSA_PSS)
 static void u32_i2osp(uint32_t val, uint8_t *buf)
 {
 	buf[0] = (uint8_t)((val >> 24) & 0xff);
@@ -296,7 +296,7 @@ out:
 
 	return ret;
 }
-#endif
+#endif /* FIT_RSASSA_PSS */
 
 #if CONFIG_IS_ENABLED(FIT_SIGNATURE) || CONFIG_IS_ENABLED(RSA_VERIFY_WITH_PKEY)
 /**
