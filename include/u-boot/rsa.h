@@ -31,7 +31,7 @@ struct rsa_public_key {
 
 struct image_sign_info;
 
-#if IMAGE_ENABLE_SIGN
+#if CONFIG_IS_ENABLED(FIT_SIGN)
 /**
  * sign() - calculate and return signature for given input data
  *
@@ -81,7 +81,7 @@ static inline int rsa_add_verify_data(struct image_sign_info *info,
 }
 #endif
 
-#if IMAGE_ENABLE_VERIFY
+#if CONFIG_IS_ENABLED(RSA_VERIFY)
 /**
  * rsa_verify_hash() - Verify a signature against a hash
  *
