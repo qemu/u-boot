@@ -28,7 +28,6 @@ struct fdt_region;
 #include <linux/kconfig.h>
 
 /* new uImage format support enabled on host */
-#define IMAGE_ENABLE_OF_LIBFDT	1
 #define CONFIG_FIT_VERBOSE	1 /* enable fit_format_{error,warning}() */
 #define CONFIG_FIT_ENABLE_RSASSA_PSS_SUPPORT 1
 
@@ -44,8 +43,6 @@ struct fdt_region;
 /* Take notice of the 'ignore' property for hashes */
 #define IMAGE_ENABLE_IGNORE	1
 #define IMAGE_INDENT_STRING	"   "
-
-#define IMAGE_ENABLE_OF_LIBFDT	CONFIG_IS_ENABLED(OF_LIBFDT)
 
 #endif /* USE_HOSTCC */
 
