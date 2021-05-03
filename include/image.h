@@ -34,10 +34,6 @@ struct fdt_region;
 #define CONFIG_FIT_SHA256
 #define CONFIG_FIT_SHA384
 #define CONFIG_FIT_SHA512
-#define CONFIG_SHA1
-#define CONFIG_SHA256
-#define CONFIG_SHA384
-#define CONFIG_SHA512
 
 #define IMAGE_ENABLE_IGNORE	0
 #define IMAGE_INDENT_STRING	""

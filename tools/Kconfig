@@ -34,4 +34,24 @@ config HOST_FIT_SIGNATURE_MAX_SIZE
 	depends on HOST_FIT_SIGNATURE
 	default 0x10000000
 
+config HOST_SHA1
+	def_bool y
+	help
+	  Enable SHA1 support in the host build.
+
+config HOST_SHA256
+	def_bool y
+	help
+	  Enable SHA256 support in the host build.
+
+config HOST_SHA384
+	def_bool y
+	help
+	  Enable SHA384 support in the host build.
+
+config HOST_SHA512
+	def_bool y
+	help
+	  Enable SHA512 support in the host build.
+
 endmenu
