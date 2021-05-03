@@ -21,7 +21,7 @@ struct cipher_algo cipher_algos[] = {
 		.name = "aes128",
 		.key_len = AES128_KEY_LENGTH,
 		.iv_len  = AES_BLOCK_LENGTH,
-#if IMAGE_ENABLE_ENCRYPT
+#if CONFIG_IS_ENABLED(FIT_CIPHER_ENCRYPT)
 		.calculate_type = EVP_aes_128_cbc,
 #endif
 		.encrypt = image_aes_encrypt,
@@ -32,7 +32,7 @@ struct cipher_algo cipher_algos[] = {
 		.name = "aes192",
 		.key_len = AES192_KEY_LENGTH,
 		.iv_len  = AES_BLOCK_LENGTH,
-#if IMAGE_ENABLE_ENCRYPT
+#if CONFIG_IS_ENABLED(FIT_CIPHER_ENCRYPT)
 		.calculate_type = EVP_aes_192_cbc,
 #endif
 		.encrypt = image_aes_encrypt,
@@ -43,7 +43,7 @@ struct cipher_algo cipher_algos[] = {
 		.name = "aes256",
 		.key_len = AES256_KEY_LENGTH,
 		.iv_len  = AES_BLOCK_LENGTH,
-#if IMAGE_ENABLE_ENCRYPT
+#if CONFIG_IS_ENABLED(FIT_CIPHER_ENCRYPT)
 		.calculate_type = EVP_aes_256_cbc,
 #endif
 		.encrypt = image_aes_encrypt,

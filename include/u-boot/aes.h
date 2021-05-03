@@ -9,7 +9,7 @@
 #include <errno.h>
 #include <image.h>
 
-#if IMAGE_ENABLE_ENCRYPT
+#if CONFIG_IS_ENABLED(FIT_CIPHER_ENCRYPT)
 int image_aes_encrypt(struct image_cipher_info *info,
 		      const unsigned char *data, int size,
 		      unsigned char **cipher, int *cipher_len);
@@ -28,9 +28,9 @@ int image_aes_add_cipher_data(struct image_cipher_info *info, void *keydest,
 {
 	return -ENXIO;
 }
-#endif /* IMAGE_ENABLE_ENCRYPT */
+#endif /* FIT_CIPHER_ENCRYPT */
 
-#if IMAGE_ENABLE_DECRYPT
+#if CONFIG_IS_ENABLED(FIT_CIPHER)
 int image_aes_decrypt(struct image_cipher_info *info,
 		      const void *cipher, size_t cipher_len,
 		      void **data, size_t *size);
@@ -41,6 +41,6 @@ int image_aes_decrypt(struct image_cipher_info *info,
 {
 	return -ENXIO;
 }
-#endif /* IMAGE_ENABLE_DECRYPT */
+#endif /* CONFIG_IS_ENABLED(FIT_CIPHER) */
 
 #endif

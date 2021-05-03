@@ -1368,18 +1368,8 @@ static inline int fit_image_check_target_arch(const void *fdt, int node)
  * At present we only support ciphering on the host, and unciphering on the
  * device
  */
-#if defined(USE_HOSTCC)
-# if defined(CONFIG_FIT_CIPHER)
-#  define IMAGE_ENABLE_ENCRYPT	1
-#  define IMAGE_ENABLE_DECRYPT	1
-#  include <openssl/evp.h>
-# else
-#  define IMAGE_ENABLE_ENCRYPT	0
-#  define IMAGE_ENABLE_DECRYPT	0
-# endif
-#else
-# define IMAGE_ENABLE_ENCRYPT	0
-# define IMAGE_ENABLE_DECRYPT	CONFIG_IS_ENABLED(FIT_CIPHER)
+#if CONFIG_IS_ENABLED(FIT_CIPHER_ENCRYPT)
+#include <openssl/evp.h>
 #endif
 
 /* Information passed to the ciphering routines */
@@ -1402,7 +1392,7 @@ struct cipher_algo {
 	int key_len;			/* Length of the key */
 	int iv_len;			/* Length of the IV */
 
-#if IMAGE_ENABLE_ENCRYPT
+#if CONFIG_IS_ENABLED(FIT_CIPHER_ENCRYPT)
 	const EVP_CIPHER * (*calculate_type)(void);
 #endif
 
