@@ -1157,11 +1157,6 @@ void image_set_host_blob(void *host_blob);
 # define gd_fdt_blob()		(gd->fdt_blob)
 #endif
 
-#ifdef CONFIG_FIT_BEST_MATCH
-#define IMAGE_ENABLE_BEST_MATCH	1
-#else
-#define IMAGE_ENABLE_BEST_MATCH	0
-#endif
 #endif /* FIT */
 
 /*
