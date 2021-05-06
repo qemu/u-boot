@@ -27,7 +27,6 @@ struct fdt_region;
 #include <sys/types.h>
 #include <linux/kconfig.h>
 
-#define IMAGE_ENABLE_IGNORE	0
 #define IMAGE_INDENT_STRING	""
 
 #else
@@ -36,8 +35,6 @@ struct fdt_region;
 #include <asm/u-boot.h>
 #include <command.h>
 
-/* Take notice of the 'ignore' property for hashes */
-#define IMAGE_ENABLE_IGNORE	1
 #define IMAGE_INDENT_STRING	"   "
 
 #endif /* USE_HOSTCC */
