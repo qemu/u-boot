@@ -19,6 +19,17 @@ config HOST_FIT
 	help
 	  Enable FIT support in the host build.
 
+config HOST_FIT_CIPHER
+	def_bool y
+	help
+	 Enable ciphering data in a FIT in the host build
+
+config HOST_FIT_CIPHER_ENCRYPT
+	def_bool y
+	depends on FIT_CIPHER
+	help
+	  Enables encryption in a FIT in the host build
+
 config HOST_FIT_FULL_CHECK
 	def_bool y
 	help

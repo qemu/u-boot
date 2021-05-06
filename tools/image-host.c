@@ -560,7 +560,7 @@ int fit_image_cipher_data(const char *keydir, void *keydest,
 		printf("Failure getting cipher node\n");
 		return -1;
 	}
-	if (!IMAGE_ENABLE_ENCRYPT || !keydir)
+	if (!CONFIG_IS_ENABLED(FIT_CIPHER_ENCRYPT) || !keydir)
 		return 0;
 	return fit_image_process_cipher(keydir, keydest, fit, image_name,
 		image_noffset, cipher_node_offset, data, size, cmdname);

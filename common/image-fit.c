@@ -2132,7 +2132,7 @@ int fit_image_load(bootm_headers_t *images, ulong addr,
 	}
 
 	/* Decrypt data before uncompress/move */
-	if (IS_ENABLED(CONFIG_FIT_CIPHER) && IMAGE_ENABLE_DECRYPT) {
+	if (IS_ENABLED(CONFIG_FIT_CIPHER) && CONFIG_IS_ENABLED(FIT_CIPHER)) {
 		puts("   Decrypting Data ... ");
 		if (fit_image_uncipher(fit, noffset, &buf, &size)) {
 			puts("Error\n");
