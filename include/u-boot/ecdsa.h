@@ -15,7 +15,7 @@
  * @see "struct crypto_algo"
  * @{
  */
-#if IMAGE_ENABLE_SIGN
+#if CONFIG_IS_ENABLED(FIT_SIGN)
 /**
  * sign() - calculate and return signature for given input data
  *

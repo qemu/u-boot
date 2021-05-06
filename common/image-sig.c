@@ -29,7 +29,7 @@ struct checksum_algo checksum_algos[] = {
 		.checksum_len = SHA1_SUM_LEN,
 		.der_len = SHA1_DER_LEN,
 		.der_prefix = sha1_der_prefix,
-#if IMAGE_ENABLE_SIGN
+#if CONFIG_IS_ENABLED(FIT_SIGN)
 		.calculate_sign = EVP_sha1,
 #endif
 		.calculate = hash_calculate,
@@ -39,7 +39,7 @@ struct checksum_algo checksum_algos[] = {
 		.checksum_len = SHA256_SUM_LEN,
 		.der_len = SHA256_DER_LEN,
 		.der_prefix = sha256_der_prefix,
-#if IMAGE_ENABLE_SIGN
+#if CONFIG_IS_ENABLED(FIT_SIGN)
 		.calculate_sign = EVP_sha256,
 #endif
 		.calculate = hash_calculate,
@@ -50,7 +50,7 @@ struct checksum_algo checksum_algos[] = {
 		.checksum_len = SHA384_SUM_LEN,
 		.der_len = SHA384_DER_LEN,
 		.der_prefix = sha384_der_prefix,
-#if IMAGE_ENABLE_SIGN
+#if CONFIG_IS_ENABLED(FIT_SIGN)
 		.calculate_sign = EVP_sha384,
 #endif
 		.calculate = hash_calculate,
@@ -62,7 +62,7 @@ struct checksum_algo checksum_algos[] = {
 		.checksum_len = SHA512_SUM_LEN,
 		.der_len = SHA512_DER_LEN,
 		.der_prefix = sha512_der_prefix,
-#if IMAGE_ENABLE_SIGN
+#if CONFIG_IS_ENABLED(FIT_SIGN)
 		.calculate_sign = EVP_sha512,
 #endif
 		.calculate = hash_calculate,
@@ -122,7 +122,7 @@ struct checksum_algo *image_get_checksum_algo(const char *full_name)
 				struct checksum_algo *algo = &checksum_algos[i];
 
 				MANUAL_RELOC(algo->name);
-#if IMAGE_ENABLE_SIGN
+#if CONFIG_IS_ENABLED(FIT_SIGN)
 				MANUAL_RELOC(algo->calculate_sign);
 #endif
 				MANUAL_RELOC(algo->calculate);
