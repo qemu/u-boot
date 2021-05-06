@@ -1993,9 +1993,6 @@ int fit_image_load(bootm_headers_t *images, ulong addr,
 	int type_ok, os_ok;
 	ulong load, load_end, data, len;
 	uint8_t os, comp;
-#ifndef USE_HOSTCC
-	uint8_t os_arch;
-#endif
 	const char *prop_name;
 	int ret;
 
@@ -2087,8 +2084,12 @@ int fit_image_load(bootm_headers_t *images, ulong addr,
 	}
 
 #ifndef USE_HOSTCC
+	{
+	uint8_t os_arch;
+
 	fit_image_get_arch(fit, noffset, &os_arch);
 	images->os.arch = os_arch;
+	}
 #endif
 
 	bootstage_mark(bootstage_id + BOOTSTAGE_SUB_CHECK_ALL);
