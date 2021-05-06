@@ -39,7 +39,6 @@ static void fdt_error(const char *msg)
 	puts(" - must RESET the board to recover.\n");
 }
 
-#if CONFIG_IS_ENABLED(LEGACY_IMAGE_FORMAT)
 static const image_header_t *image_get_fdt(ulong fdt_addr)
 {
 	const image_header_t *fdt_hdr = map_sysmem(fdt_addr, 0);
@@ -72,7 +71,6 @@ static const image_header_t *image_get_fdt(ulong fdt_addr)
 	}
 	return fdt_hdr;
 }
-#endif
 
 static void boot_fdt_reserve_region(struct lmb *lmb, uint64_t addr,
 				    uint64_t size)
@@ -258,16 +256,18 @@ error:
 static int select_fdt(bootm_headers_t *images, const char *select, u8 arch,
 		      ulong *fdt_addrp)
 {
-	const char *buf;
-	ulong fdt_addr;
-
-#if CONFIG_IS_ENABLED(FIT)
 	const char *fit_uname_config = images->fit_uname_cfg;
 	const char *fit_uname_fdt = NULL;
-	ulong default_addr;
 	int fdt_noffset;
+	const char *buf;
+	bool processed;
+	ulong fdt_addr = 0;
 
 	if (select) {
+		ulong default_addr;
+		bool done = false;
+
+		if (CONFIG_IS_ENABLED(FIT)) {
 			/*
 			 * If the FDT blob comes from the FIT image and the
 			 * FIT image address is omitted in the command line
@@ -283,21 +283,22 @@ static int select_fdt(bootm_headers_t *images, const char *select, u8 arch,
 
 			if (fit_parse_conf(select, default_addr, &fdt_addr,
 					   &fit_uname_config)) {
+				done = true;
 				debug("*  fdt: config '%s' from image at 0x%08lx\n",
 				      fit_uname_config, fdt_addr);
 			} else if (fit_parse_subimage(select, default_addr, &fdt_addr,
 				   &fit_uname_fdt)) {
+				done = true;
 				debug("*  fdt: subimage '%s' from image at 0x%08lx\n",
 				      fit_uname_fdt, fdt_addr);
-			} else
-#endif
-		{
+			}
+		}
+		if (!done) {
 			fdt_addr = simple_strtoul(select, NULL, 16);
 			debug("*  fdt: cmdline image address = 0x%08lx\n",
 			      fdt_addr);
 		}
-#if CONFIG_IS_ENABLED(FIT)
-	} else {
+	} else if (CONFIG_IS_ENABLED(FIT)) {
 		/* use FIT configuration provided in first bootm
 		 * command argument
 		 */
@@ -309,7 +310,6 @@ static int select_fdt(bootm_headers_t *images, const char *select, u8 arch,
 		else if (fdt_noffset < 0)
 			return fdt_noffset;
 	}
-#endif
 	debug("## Checking for 'FDT'/'FDT Image' at %08lx\n",
 	      fdt_addr);
 
@@ -319,13 +319,15 @@ static int select_fdt(bootm_headers_t *images, const char *select, u8 arch,
 	 * check image type, for FIT images get a FIT node.
 	 */
 	buf = map_sysmem(fdt_addr, 0);
+	processed = false;
 	switch (genimg_get_format(buf)) {
-#if CONFIG_IS_ENABLED(LEGACY_IMAGE_FORMAT)
-	case IMAGE_FORMAT_LEGACY: {
+	case IMAGE_FORMAT_LEGACY:
+		if (CONFIG_IS_ENABLED(LEGACY_IMAGE_FORMAT)) {
 			const image_header_t *fdt_hdr;
 			ulong load, load_end;
 			ulong image_start, image_data, image_end;
 
+			processed = true;
 			/* verify fdt_addr points to a valid image header */
 			printf("## Flattened Device Tree from Legacy Image at %08lx\n",
 			       fdt_addr);
@@ -350,7 +352,7 @@ static int select_fdt(bootm_headers_t *images, const char *select, u8 arch,
 				break;
 			}
 
-			if ((load < image_end) && (load_end > image_start)) {
+			if (load < image_end && load_end > image_start) {
 				fdt_error("fdt overwritten");
 				return -EFAULT;
 			}
@@ -363,16 +365,15 @@ static int select_fdt(bootm_headers_t *images, const char *select, u8 arch,
 				image_get_data_size(fdt_hdr));
 
 			fdt_addr = load;
-			break;
 		}
-#endif
+		break;
 	case IMAGE_FORMAT_FIT:
 		/*
 		 * This case will catch both: new uImage format
 		 * (libfdt based) and raw FDT blob (also libfdt
 		 * based).
 		 */
-#if CONFIG_IS_ENABLED(FIT)
+		if (CONFIG_IS_ENABLED(FIT)) {
 			/* check FDT blob vs FIT blob */
 			if (!fit_check_format(buf, IMAGE_SIZE_INVAL)) {
 				ulong load, len;
@@ -389,20 +390,20 @@ static int select_fdt(bootm_headers_t *images, const char *select, u8 arch,
 				images->fit_uname_fdt = fit_uname_fdt;
 				images->fit_noffset_fdt = fdt_noffset;
 				fdt_addr = load;
-
-				break;
-		} else
-#endif
-		{
-			/*
-			 * FDT blob
-			 */
+				processed = true;
+			}
+		}
+		if (!processed) {
+			/* FDT blob */
 			debug("*  fdt: raw FDT blob\n");
 			printf("## Flattened Device Tree blob at %08lx\n",
 			       (long)fdt_addr);
+			processed = true;
 		}
 		break;
-	default:
+	}
+
+	if (!processed) {
 		puts("ERROR: Did not find a cmdline Flattened Device Tree\n");
 		return -ENOENT;
 	}
@@ -492,8 +493,8 @@ int boot_get_fdt(int flag, int argc, char *const argv[], uint8_t arch,
 			debug("## No Flattened Device Tree\n");
 			goto no_fdt;
 		}
-#ifdef CONFIG_ANDROID_BOOT_IMAGE
-	} else if (genimg_get_format(buf) == IMAGE_FORMAT_ANDROID) {
+	} else if (IS_ENABLED(CONFIG_ANDROID_BOOT_IMAGE) &&
+		   genimg_get_format(buf) == IMAGE_FORMAT_ANDROID) {
 		struct andr_img_hdr *hdr = buf;
 		ulong		fdt_data, fdt_len;
 		u32			fdt_size, dtb_idx;
@@ -525,7 +526,6 @@ int boot_get_fdt(int flag, int argc, char *const argv[], uint8_t arch,
 
 			debug("## Using FDT at ${fdtaddr}=Ox%lx\n", fdt_addr);
 		}
-#endif
 	} else {
 		debug("## No Flattened Device Tree\n");
 		goto no_fdt;
