@@ -1213,7 +1213,7 @@ int fit_set_timestamp(void *fit, int noffset, time_t timestamp)
 int calculate_hash(const void *data, int data_len, const char *algo,
 			uint8_t *value, int *value_len)
 {
-	if (IMAGE_ENABLE_CRC32 && strcmp(algo, "crc32") == 0) {
+	if (CONFIG_IS_ENABLED(CRC32) && strcmp(algo, "crc32") == 0) {
 		*((uint32_t *)value) = crc32_wd(0, data, data_len,
 							CHUNKSZ_CRC32);
 		*((uint32_t *)value) = cpu_to_uimage(*((uint32_t *)value));
