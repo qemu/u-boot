@@ -25,6 +25,7 @@
 #else
 #include "mkimage.h"
 #include <time.h>
+#include <linux/kconfig.h>
 #endif /* !USE_HOSTCC*/
 
 #include <hash.h>
@@ -41,7 +42,7 @@ DECLARE_GLOBAL_DATA_PTR;
 
 static void reloc_update(void);
 
-#if defined(CONFIG_SHA1) && !defined(CONFIG_SHA_PROG_HW_ACCEL)
+#if CONFIG_IS_ENABLED(SHA1) && !CONFIG_IS_ENABLED(SHA_PROG_HW_ACCEL)
 static int hash_init_sha1(struct hash_algo *algo, void **ctxp)
 {
 	sha1_context *ctx = malloc(sizeof(sha1_context));
@@ -69,7 +70,7 @@ static int hash_finish_sha1(struct hash_algo *algo, void *ctx, void *dest_buf,
 }
 #endif
 
-#if defined(CONFIG_SHA256) && !defined(CONFIG_SHA_PROG_HW_ACCEL)
+#if CONFIG_IS_ENABLED(SHA256) && !CONFIG_IS_ENABLED(SHA_PROG_HW_ACCEL)
 static int hash_init_sha256(struct hash_algo *algo, void **ctxp)
 {
 	sha256_context *ctx = malloc(sizeof(sha256_context));
@@ -97,7 +98,7 @@ static int hash_finish_sha256(struct hash_algo *algo, void *ctx, void
 }
 #endif
 
-#if defined(CONFIG_SHA384) && !defined(CONFIG_SHA_PROG_HW_ACCEL)
+#if CONFIG_IS_ENABLED(SHA384) && !CONFIG_IS_ENABLED(SHA_PROG_HW_ACCEL)
 static int hash_init_sha384(struct hash_algo *algo, void **ctxp)
 {
 	sha512_context *ctx = malloc(sizeof(sha512_context));
@@ -125,7 +126,7 @@ static int hash_finish_sha384(struct hash_algo *algo, void *ctx, void
 }
 #endif
 
-#if defined(CONFIG_SHA512) && !defined(CONFIG_SHA_PROG_HW_ACCEL)
+#if CONFIG_IS_ENABLED(SHA512) && !CONFIG_IS_ENABLED(SHA_PROG_HW_ACCEL)
 static int hash_init_sha512(struct hash_algo *algo, void **ctxp)
 {
 	sha512_context *ctx = malloc(sizeof(sha512_context));
@@ -213,17 +214,17 @@ static int hash_finish_crc32(struct hash_algo *algo, void *ctx, void *dest_buf,
  * Note that algorithm names must be in lower case.
  */
 static struct hash_algo hash_algo[] = {
-#ifdef CONFIG_SHA1
+#if CONFIG_IS_ENABLED(SHA1)
 	{
 		.name 		= "sha1",
 		.digest_size	= SHA1_SUM_LEN,
 		.chunk_size	= CHUNKSZ_SHA1,
-#ifdef CONFIG_SHA_HW_ACCEL
+#if CONFIG_IS_ENABLED(SHA_HW_ACCEL)
 		.hash_func_ws	= hw_sha1,
 #else
 		.hash_func_ws	= sha1_csum_wd,
 #endif
-#ifdef CONFIG_SHA_PROG_HW_ACCEL
+#if CONFIG_IS_ENABLED(SHA_PROG_HW_ACCEL)
 		.hash_init	= hw_sha_init,
 		.hash_update	= hw_sha_update,
 		.hash_finish	= hw_sha_finish,
@@ -234,17 +235,17 @@ static struct hash_algo hash_algo[] = {
 #endif
 	},
 #endif
-#ifdef CONFIG_SHA256
+#if CONFIG_IS_ENABLED(SHA256)
 	{
 		.name		= "sha256",
 		.digest_size	= SHA256_SUM_LEN,
 		.chunk_size	= CHUNKSZ_SHA256,
-#ifdef CONFIG_SHA_HW_ACCEL
+#if CONFIG_IS_ENABLED(SHA_HW_ACCEL)
 		.hash_func_ws	= hw_sha256,
 #else
 		.hash_func_ws	= sha256_csum_wd,
 #endif
-#ifdef CONFIG_SHA_PROG_HW_ACCEL
+#if CONFIG_IS_ENABLED(SHA_PROG_HW_ACCEL)
 		.hash_init	= hw_sha_init,
 		.hash_update	= hw_sha_update,
 		.hash_finish	= hw_sha_finish,
@@ -255,17 +256,17 @@ static struct hash_algo hash_algo[] = {
 #endif
 	},
 #endif
-#ifdef CONFIG_SHA384
+#if CONFIG_IS_ENABLED(SHA384)
 	{
 		.name		= "sha384",
 		.digest_size	= SHA384_SUM_LEN,
 		.chunk_size	= CHUNKSZ_SHA384,
-#ifdef CONFIG_SHA_HW_ACCEL
+#if CONFIG_IS_ENABLED(SHA_HW_ACCEL)
 		.hash_func_ws	= hw_sha384,
 #else
 		.hash_func_ws	= sha384_csum_wd,
 #endif
-#ifdef CONFIG_SHA_PROG_HW_ACCEL
+#if CONFIG_IS_ENABLED(SHA_PROG_HW_ACCEL)
 		.hash_init	= hw_sha_init,
 		.hash_update	= hw_sha_update,
 		.hash_finish	= hw_sha_finish,
@@ -276,17 +277,17 @@ static struct hash_algo hash_algo[] = {
 #endif
 	},
 #endif
-#ifdef CONFIG_SHA512
+#if CONFIG_IS_ENABLED(SHA512)
 	{
 		.name		= "sha512",
 		.digest_size	= SHA512_SUM_LEN,
 		.chunk_size	= CHUNKSZ_SHA512,
-#ifdef CONFIG_SHA_HW_ACCEL
+#if CONFIG_IS_ENABLED(SHA_HW_ACCEL)
 		.hash_func_ws	= hw_sha512,
 #else
 		.hash_func_ws	= sha512_csum_wd,
 #endif
-#ifdef CONFIG_SHA_PROG_HW_ACCEL
+#if CONFIG_IS_ENABLED(SHA_PROG_HW_ACCEL)
 		.hash_init	= hw_sha_init,
 		.hash_update	= hw_sha_update,
 		.hash_finish	= hw_sha_finish,
@@ -318,9 +319,9 @@ static struct hash_algo hash_algo[] = {
 };
 
 /* Try to minimize code size for boards that don't want much hashing */
-#if defined(CONFIG_SHA256) || defined(CONFIG_CMD_SHA1SUM) || \
+#if CONFIG_IS_ENABLED(SHA256) || defined(CONFIG_CMD_SHA1SUM) || \
 	defined(CONFIG_CRC32_VERIFY) || defined(CONFIG_CMD_HASH) || \
-	defined(CONFIG_SHA384) || defined(CONFIG_SHA512)
+	CONFIG_IS_ENABLED(SHA384) || CONFIG_IS_ENABLED(SHA512)
 #define multi_hash()	1
 #else
 #define multi_hash()	0
