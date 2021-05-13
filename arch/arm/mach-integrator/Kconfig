@@ -5,9 +5,6 @@ choice
 	prompt "Integrator platform select"
 	optional
 
-config ARCH_INTEGRATOR_AP
-	bool "Support Integrator/AP platform"
-
 config ARCH_INTEGRATOR_CP
 	bool "Support Integrator/CP platform"
 	select ARCH_CINTEGRATOR
@@ -50,7 +47,6 @@ config SYS_VENDOR
 	default "armltd"
 
 config SYS_CONFIG_NAME
-	default "integratorap" if ARCH_INTEGRATOR_AP
 	default "integratorcp" if ARCH_INTEGRATOR_CP
 
 config SYS_MALLOC_F_LEN
