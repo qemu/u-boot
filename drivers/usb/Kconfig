@@ -36,6 +36,7 @@ if USB
 config DM_USB
 	bool "Enable driver model for USB"
 	depends on USB && DM
+	default y
 	help
 	  Enable driver model for USB. The USB interface is then implemented
 	  by the USB uclass. Multiple USB controllers of different types
