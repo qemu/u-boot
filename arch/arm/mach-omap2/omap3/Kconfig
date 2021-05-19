@@ -105,9 +105,6 @@ config TARGET_OMAP3_LOGIC
 	select OMAP3_GPIO_6
 	imply CMD_DM
 
-config TARGET_NOKIA_RX51
-	bool "Nokia RX51"
-
 config TARGET_TAO3530
 	bool "TAO3530"
 	select OMAP3_GPIO_2
@@ -160,7 +157,6 @@ source "board/timll/devkit8000/Kconfig"
 source "board/ti/evm/Kconfig"
 source "board/isee/igep00x0/Kconfig"
 source "board/logicpd/omap3som/Kconfig"
-source "board/nokia/rx51/Kconfig"
 source "board/lg/sniper/Kconfig"
 
 endif
