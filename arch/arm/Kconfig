@@ -558,13 +558,6 @@ config ARCH_ORION5X
 	bool "Marvell Orion"
 	select CPU_ARM926EJS
 
-config TARGET_SPEAR310
-	bool "Support spear310"
-	select BOARD_EARLY_INIT_F
-	select CPU_ARM926EJS
-	select PL011_SERIAL
-	imply CMD_SAVES
-
 config TARGET_SPEAR320
 	bool "Support spear320"
 	select BOARD_EARLY_INIT_F
@@ -1991,7 +1984,6 @@ source "board/hisilicon/poplar/Kconfig"
 source "board/isee/igep003x/Kconfig"
 source "board/kontron/sl28/Kconfig"
 source "board/myir/mys_6ulx/Kconfig"
-source "board/spear/spear310/Kconfig"
 source "board/spear/spear320/Kconfig"
 source "board/spear/spear600/Kconfig"
 source "board/spear/x600/Kconfig"
