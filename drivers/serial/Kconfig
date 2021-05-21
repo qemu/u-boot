@@ -695,12 +695,6 @@ config INTEL_MID_SERIAL
 	  Select this to enable a UART for Intel MID platforms.
 	  This uses the ns16550 driver as a library.
 
-config PL010_SERIAL
-	bool "ARM PL010 driver"
-	depends on !DM_SERIAL
-	help
-	  Select this to enable a UART for platforms using PL010.
-
 config PL011_SERIAL
 	bool "ARM PL011 driver"
 	depends on !DM_SERIAL
