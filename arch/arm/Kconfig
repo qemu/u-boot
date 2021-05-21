@@ -526,10 +526,6 @@ config TARGET_ASPENITE
 	bool "Support aspenite"
 	select CPU_ARM926EJS
 
-config TARGET_GPLUGD
-	bool "Support gplugd"
-	select CPU_ARM926EJS
-
 config ARCH_DAVINCI
 	bool "TI DaVinci"
 	select CPU_ARM926EJS
@@ -1967,7 +1963,6 @@ source "board/bosch/shc/Kconfig"
 source "board/bosch/guardian/Kconfig"
 source "board/CarMediaLab/flea3/Kconfig"
 source "board/Marvell/aspenite/Kconfig"
-source "board/Marvell/gplugd/Kconfig"
 source "board/Marvell/octeontx/Kconfig"
 source "board/Marvell/octeontx2/Kconfig"
 source "board/armltd/vexpress64/Kconfig"
