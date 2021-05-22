@@ -1,5 +1,7 @@
 menuconfig USB
 	bool "USB support"
+	depends on DM && OF_CONTROL
+	select DM_USB
 	---help---
 	  Universal Serial Bus (USB) is a specification for a serial bus
 	  subsystem which offers higher speeds and more features than the
@@ -31,11 +33,8 @@ menuconfig USB
 	  in <file:Documentation/usb/> and especially the links given in
 	  <file:Documentation/usb/usb-help.txt>.
 
-if USB
-
 config DM_USB
-	bool "Enable driver model for USB"
-	depends on USB && DM
+	bool
 	help
 	  Enable driver model for USB. The USB interface is then implemented
 	  by the USB uclass. Multiple USB controllers of different types
@@ -46,6 +45,8 @@ config DM_USB
 	  uclass takes care of device enumeration. USB devices can be
 	  declared with the U_BOOT_USB_DEVICE() macro and will be
 	  automatically probed when found on the bus.
+
+if USB
 
 config SPL_DM_USB
 	bool "Enable driver model for USB in SPL"
