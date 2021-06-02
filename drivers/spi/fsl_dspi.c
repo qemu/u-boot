@@ -9,12 +9,10 @@
  * Haikun Wang (B53464@freescale.com)
  */
 
-#include <asm/global_data.h>
-#include <linux/math64.h>
 #include <common.h>
+#include <linux/math64.h>
 #include <dm.h>
 #include <errno.h>
-#include <common.h>
 #include <log.h>
 #include <spi.h>
 #include <malloc.h>
@@ -23,6 +21,7 @@
 #ifndef CONFIG_M68K
 #include <asm/arch/clock.h>
 #endif
+#include <asm/global_data.h>
 #include <fsl_dspi.h>
 #include <linux/bitops.h>
 #include <linux/delay.h>
