@@ -781,7 +781,9 @@ static int k3_r5f_probe(struct udevice *dev)
 {
 	struct k3_r5f_cluster *cluster = dev_get_priv(dev->parent);
 	struct k3_r5f_core *core = dev_get_priv(dev);
+#ifndef CONFIG_K3_DM_FW
 	bool r_state;
+#endif
 	int ret;
 
 	dev_dbg(dev, "%s\n", __func__);
@@ -804,6 +806,12 @@ static int k3_r5f_probe(struct udevice *dev)
 		return ret;
 	}
 
+	/*
+	 * The PM functionality is not supported by the firmware during
+	 * SPL execution with the separated DM firmware image. The following
+	 * piece of code is not compiled in that case.
+	 */
+#ifndef CONFIG_K3_DM_FW
 	ret = core->tsp.sci->ops.dev_ops.is_on(core->tsp.sci, core->tsp.dev_id,
 					       &r_state, &core->in_use);
 	if (ret)
@@ -817,6 +825,7 @@ static int k3_r5f_probe(struct udevice *dev)
 
 	/* Make sure Local reset is asserted. Redundant? */
 	reset_assert(&core->reset);
+#endif
 
 	ret = k3_r5f_rproc_configure(core);
 	if (ret) {
