@@ -2,7 +2,7 @@
 # This Dockerfile is used to build an image containing basic stuff to be used
 # to build U-Boot and run our test suites.
 
-FROM ubuntu:bionic-20200807
+FROM ubuntu:focal-20210416
 MAINTAINER Tom Rini <trini@konsulko.com>
 LABEL Description=" This image is for building U-Boot inside a container"
 
@@ -12,7 +12,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Add LLVM repository
 RUN apt-get update && apt-get install -y gnupg2 wget xz-utils && rm -rf /var/lib/apt/lists/*
 RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add -
-RUN echo deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-10 main | tee /etc/apt/sources.list.d/llvm.list
+RUN echo deb http://apt.llvm.org/focal/ llvm-toolchain-focal-10 main | tee /etc/apt/sources.list.d/llvm.list
 
 # Manually install the kernel.org "Crosstool" based toolchains for gcc-7.3
 RUN wget -O - https://mirrors.edge.kernel.org/pub/tools/crosstool/files/bin/x86_64/9.2.0/x86_64-gcc-9.2.0-nolibc-aarch64-linux.tar.xz | tar -C /opt -xJ
@@ -62,10 +62,9 @@ RUN apt-get update && apt-get install -y \
 	imagemagick \
 	iputils-ping \
 	libguestfs-tools \
-	libisl15 \
 	liblz4-tool \
 	libpixman-1-dev \
-	libpython-dev \
+	libpython3-dev \
 	libsdl1.2-dev \
 	libsdl2-dev \
 	libssl-dev \
@@ -80,12 +79,12 @@ RUN apt-get update && apt-get install -y \
 	picocom \
 	parted \
 	pkg-config \
-	python \
-	python-dev \
-	python-pip \
-	python-virtualenv \
+	python-is-python3 \
+	python3 \
+	python3-dev \
 	python3-pip \
 	python3-sphinx \
+	python3-virtualenv \
 	rpm2cpio \
 	sbsigntool \
 	sloccount \
