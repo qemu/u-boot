@@ -10,6 +10,7 @@
 #include <common.h>
 #include <blk.h>
 #include <dm.h>
+#include <dm/device-internal.h>
 #include <efi_loader.h>
 #include <fs.h>
 #include <log.h>
@@ -536,6 +537,41 @@ int efi_disk_create_partitions(efi_handle_t parent, struct blk_desc *desc,
 }
 
 /**
+ * efi_block_device_register() - register a block device in the UEFI sub-system
+ *
+ * @dev:	block device
+ * Return:	status code
+ */
+efi_status_t efi_block_device_register(struct udevice *dev)
+{
+	struct blk_desc *desc = dev_get_uclass_plat(dev);
+	const char *if_typename = blk_get_if_type_name(desc->if_type);
+	struct efi_disk_obj *disk;
+	efi_status_t ret;
+
+	/* Add block device for the full device */
+	ret = device_probe(dev);
+	if (ret)
+		return EFI_NOT_FOUND;
+	log_info("Scanning disk %s...\n", dev->name);
+	ret = efi_disk_add_dev(NULL, NULL, if_typename,
+				desc, desc->devnum, NULL, 0, &disk);
+	if (ret == EFI_NOT_READY) {
+		log_notice("Disk %s not ready\n", dev->name);
+		return ret;
+	} else if (ret != EFI_SUCCESS) {
+		log_err("ERROR: failure to add disk device %s, r = %lu\n",
+			dev->name, ret & ~EFI_ERROR_MASK);
+		return ret;
+	}
+
+	/* Partitions show up as block devices in EFI */
+	efi_disk_create_partitions(&disk->header, desc, if_typename,
+				   desc->devnum, dev->name);
+	return ret;
+}
+
+/**
  * efi_disk_register() - register block devices
  *
  * U-Boot doesn't have a list of all online disk devices. So when running our
@@ -552,38 +588,16 @@ int efi_disk_create_partitions(efi_handle_t parent, struct blk_desc *desc,
  */
 efi_status_t efi_disk_register(void)
 {
+#ifdef CONFIG_BLK
+	struct udevice *dev;
+	/* Probe all block devices */
+	for (uclass_first_device_check(UCLASS_BLK, &dev); dev;
+	     uclass_next_device_check(&dev))
+		;
+#else
 	struct efi_disk_obj *disk;
 	int disks = 0;
 	efi_status_t ret;
-#ifdef CONFIG_BLK
-	struct udevice *dev;
-
-	for (uclass_first_device_check(UCLASS_BLK, &dev); dev;
-	     uclass_next_device_check(&dev)) {
-		struct blk_desc *desc = dev_get_uclass_plat(dev);
-		const char *if_typename = blk_get_if_type_name(desc->if_type);
-
-		/* Add block device for the full device */
-		log_info("Scanning disk %s...\n", dev->name);
-		ret = efi_disk_add_dev(NULL, NULL, if_typename,
-					desc, desc->devnum, NULL, 0, &disk);
-		if (ret == EFI_NOT_READY) {
-			log_notice("Disk %s not ready\n", dev->name);
-			continue;
-		}
-		if (ret) {
-			log_err("ERROR: failure to add disk device %s, r = %lu\n",
-				dev->name, ret & ~EFI_ERROR_MASK);
-			return ret;
-		}
-		disks++;
-
-		/* Partitions show up as block devices in EFI */
-		disks += efi_disk_create_partitions(
-					&disk->header, desc, if_typename,
-					desc->devnum, dev->name);
-	}
-#else
 	int i, if_type;
 
 	/* Search for all available disk devices */
@@ -630,8 +644,8 @@ efi_status_t efi_disk_register(void)
 						 if_typename, i, devname);
 		}
 	}
-#endif
 	log_info("Found %d disks\n", disks);
+#endif
 
 	return EFI_SUCCESS;
 }

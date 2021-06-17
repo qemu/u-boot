@@ -14,6 +14,7 @@
 #include <asm/global_data.h>
 #include <asm/io.h>
 #include <clk.h>
+#include <efi_loader.h>
 #include <fdtdec.h>
 #include <fdt_support.h>
 #include <malloc.h>
@@ -578,6 +579,12 @@ int device_probe(struct udevice *dev)
 
 	if (dev->parent && device_get_uclass_id(dev) == UCLASS_PINCTRL)
 		pinctrl_select_state(dev, "default");
+
+	if (CONFIG_IS_ENABLED(EFI_LOADER)) {
+		ret = efi_post_probe_device(dev);
+		if (ret)
+			goto fail_uclass;
+	}
 
 	return 0;
 fail_uclass:

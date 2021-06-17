@@ -17,6 +17,7 @@
 #include <pe.h>
 
 struct blk_desc;
+struct udevice;
 
 static inline int guidcmp(const void *g1, const void *g2)
 {
@@ -27,6 +28,9 @@ static inline void *guidcpy(void *dst, const void *src)
 {
 	return memcpy(dst, src, sizeof(efi_guid_t));
 }
+
+/* Called by device_probe() */
+int efi_post_probe_device(struct udevice *dev);
 
 /* No need for efi loader support in SPL */
 #if CONFIG_IS_ENABLED(EFI_LOADER)
@@ -420,6 +424,8 @@ efi_status_t EFIAPI efi_convert_pointer(efi_uintn_t debug_disposition,
 void efi_carve_out_dt_rsv(void *fdt);
 /* Called by bootefi to make console interface available */
 efi_status_t efi_console_register(void);
+/* Called when a block devices has been probed */
+efi_status_t efi_block_device_register(struct udevice *dev);
 /* Called by bootefi to make all disk storage accessible as EFI objects */
 efi_status_t efi_disk_register(void);
 /* Called by efi_init_obj_list() to install EFI_RNG_PROTOCOL */
