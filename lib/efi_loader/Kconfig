@@ -1,6 +1,6 @@
 config EFI_LOADER
 	bool "Support running UEFI applications"
-	depends on OF_LIBFDT && ( \
+	depends on OF_LIBFDT && DM && OF_CONTROL && ( \
 		ARM && (SYS_CPU = arm1136 || \
 			SYS_CPU = arm1176 || \
 			SYS_CPU = armv7   || \
@@ -25,6 +25,8 @@ config EFI_LOADER
 	  GRUB or iPXE) on top of U-Boot. If this option is enabled, U-Boot
 	  will expose the UEFI API to a loaded application, enabling it to
 	  reuse U-Boot's device drivers.
+
+	  For ARM 32-bit, this adds about 90KB to the size of U-Boot.
 
 if EFI_LOADER
 
