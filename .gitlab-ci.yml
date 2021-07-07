@@ -178,7 +178,7 @@ sandbox test.py:
 sandbox with clang test.py:
   variables:
     TEST_PY_BD: "sandbox"
-    OVERRIDE: "-O clang-10"
+    OVERRIDE: "-O clang-12"
   <<: *buildman_and_testpy_dfn
 
 sandbox_spl test.py:
