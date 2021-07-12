@@ -1143,7 +1143,7 @@ endif
 	$(call deprecated,CONFIG_DM_PCI,PCI,v2019.07,$(CONFIG_PCI))
 	$(call deprecated,CONFIG_DM_VIDEO,video,v2019.07,\
 		$(CONFIG_LCD)$(CONFIG_VIDEO))
-	$(call deprecated,CONFIG_DM_SPI_FLASH,SPI flash,v2019.07,\
+	$(call fatalmigration,CONFIG_DM_SPI_FLASH,SPI flash,v2019.07,\
 		$(CONFIG_SPI_FLASH))
 	$(call deprecated,CONFIG_WDT,DM watchdog,v2019.10,\
 		$(CONFIG_WATCHDOG)$(CONFIG_HW_WATCHDOG))
