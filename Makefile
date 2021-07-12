@@ -1080,6 +1080,26 @@ define deprecated
 
 endef
 
+# Show a fatal migration message
+# Args:
+# 1: List of CONFIG_DM_... to migrate to (e.g. "CONFIG_DM_MMC CONFIG_BLK")
+# 2: Name of component (e.g . "Ethernet drivers")
+# 3: Release deadline (e.g. "v202.07")
+# 4: Condition to require before checking (e.g. "$(CONFIG_NET)")
+# Note: Script avoids bash construct, hence the strange double 'if'
+# (patches welcome!)
+define fatalmigration
+	@if [ -n "$(strip $(4))" ]; then if [ "$(got)" != "$(expect)" ]; then \
+		echo >&2 "====================== ERROR ======================="; \
+		echo >&2 "This board does not use $(firstword $(1)) (Driver Model"; \
+		echo >&2 "for $(2)). Migration to $(firstword $(1)) was required by"; \
+		echo >&2 "the $(3) release."; \
+		echo >&2 "===================================================="; \
+		exit 1; \
+	fi; fi
+
+endef
+
 PHONY += inputs
 inputs: $(INPUTS-y)
 
