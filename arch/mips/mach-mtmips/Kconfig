@@ -1,6 +1,9 @@
 menu "MediaTek MIPS platforms"
 	depends on ARCH_MTMIPS
 
+config SYS_VENDOR
+	default "mediatek"
+
 config SYS_MALLOC_F_LEN
 	default 0x1000
 
