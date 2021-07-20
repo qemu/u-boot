@@ -13,4 +13,10 @@
 /* Memory Info */
 #define CONFIG_SYS_LOAD_ADDR		0x83000000
 
+/* Misc */
+#define CONFIG_EXTRA_ENV_SETTINGS \
+	"verify=yes\0"	\
+	"spi_dma=yes\0" \
+	""
+
 #endif	/* __CONFIG_H */
