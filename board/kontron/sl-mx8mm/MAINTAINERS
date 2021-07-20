@@ -1,0 +1,7 @@
+Kontron SL/BL i.MX8M Mini Boards (N801x)
+M:	Frieder Schrempf <frieder.schrempf@kontron.de>
+S:	Maintained
+F:	arch/arm/dts/imx8mm-kontron-n801x-*
+F:	board/kontron/sl-mx8mm
+F:	configs/kontron_mx8mm_defconfig
+F:	include/configs/kontron_mx8mm.h
