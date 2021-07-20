@@ -49,6 +49,12 @@ void spl_board_init(void)
 					 &dev);
 	if (rc)
 		debug("HACE initialization failure, rc=%d\n", rc);
+
+	rc = uclass_get_device_by_driver(UCLASS_MOD_EXP,
+					 DM_DRIVER_GET(aspeed_arcy),
+					 &dev);
+	if (rc)
+		debug("ARCY initialization failure, rc=%d\n", rc);
 }
 #endif
 
