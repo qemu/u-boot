@@ -38,6 +38,20 @@ struct image_header *spl_get_load_buffer(ssize_t offset, size_t size)
 	return (struct image_header *)(CONFIG_SYS_TEXT_BASE);
 }
 
+#ifdef CONFIG_SPL_BOARD_INIT
+void spl_board_init(void)
+{
+	int rc;
+	struct udevice *dev;
+
+	rc = uclass_get_device_by_driver(UCLASS_MISC,
+					 DM_DRIVER_GET(aspeed_hace),
+					 &dev);
+	if (rc)
+		debug("HACE initialization failure, rc=%d\n", rc);
+}
+#endif
+
 #ifdef CONFIG_SPL_OS_BOOT
 int spl_start_uboot(void)
 {
