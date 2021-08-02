@@ -14,7 +14,6 @@
 #include <asm-offsets.h>
 #include <config.h>
 #include <mpc85xx.h>
-#include <version.h>
 
 #include <ppc_asm.tmpl>
 #include <ppc_defs.h>
@@ -1134,15 +1133,14 @@ switch_as:
 	blr
 #endif
 
-	.text
+	.text_pre
 	.globl	_start
 _start:
 	.long	0x27051956		/* U-BOOT Magic Number */
-	.globl	version_string
-version_string:
-	.ascii U_BOOT_VERSION_STRING, "\0"
 
-	.align	4
+/* U-Boot version string is filled at this place by linker script */
+
+	.text
 	.globl	_start_cont
 _start_cont:
 	/* Setup the stack in initial RAM,could be L2-as-SRAM or L1 dcache*/

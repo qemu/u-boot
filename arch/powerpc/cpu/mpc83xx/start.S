@@ -13,7 +13,6 @@
 #include <asm-offsets.h>
 #include <config.h>
 #include <mpc83xx.h>
-#include <version.h>
 
 #define CONFIG_83XX	1		/* needed for Linux kernel header files*/
 
@@ -76,7 +75,7 @@
  * times so the processor can fetch it out of flash whether the flash
  * is 8, 16, 32, or 64 bits wide (hardware trickery).
  */
-	.text
+	.text_pre
 #define _HRCW_TABLE_ENTRY(w)		\
 	.fill	8,1,(((w)>>24)&0xff);	\
 	.fill	8,1,(((w)>>16)&0xff);	\
@@ -92,12 +91,9 @@
  */
 	.long	0x27051956		/* U-Boot Magic Number */
 
-	.globl	version_string
-version_string:
-	.ascii U_BOOT_VERSION_STRING, "\0"
+/* U-Boot version string is filled at this place by linker script */
 
-	.align 2
-
+	.text
 	.globl enable_addr_trans
 enable_addr_trans:
 	/* enable address translation */

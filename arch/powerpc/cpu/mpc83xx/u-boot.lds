@@ -10,6 +10,9 @@ SECTIONS
   /* Read-only sections, merged into text segment: */
   .text      :
   {
+    arch/powerpc/cpu/mpc83xx/start.o	(.text_pre)
+    *(.text_version_string)
+    . = ALIGN(2);
     arch/powerpc/cpu/mpc83xx/start.o	(.text*)
     *(.text*)
     . = ALIGN(16);

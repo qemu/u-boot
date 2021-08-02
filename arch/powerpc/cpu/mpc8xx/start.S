@@ -23,7 +23,6 @@
 #include <asm-offsets.h>
 #include <config.h>
 #include <mpc8xx.h>
-#include <version.h>
 
 #include <ppc_asm.tmpl>
 #include <ppc_defs.h>
@@ -60,12 +59,12 @@
  * r3 - 1st arg to board_init(): IMMP pointer
  * r4 - 2nd arg to board_init(): boot flag
  */
-	.text
+	.text_pre
 	.long	0x27051956		/* U-Boot Magic Number			*/
-	.globl	version_string
-version_string:
-	.ascii U_BOOT_VERSION_STRING, "\0"
 
+/* U-Boot version string is filled at this place by linker script */
+
+	.text
 	. = EXC_OFF_SYS_RESET
 	.globl	_start
 _start:

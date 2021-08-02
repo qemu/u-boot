@@ -20,6 +20,10 @@ SECTIONS
 {
 	. = IMAGE_TEXT_BASE;
 	.text : {
+		arch/powerpc/cpu/mpc85xx/start.o (.text_pre)
+		*(.text_version_string)
+		. = ALIGN(4);
+		arch/powerpc/cpu/mpc85xx/start.o (.text*)
 		*(.text*)
 	}
 	_etext = .;

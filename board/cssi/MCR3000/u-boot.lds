@@ -16,6 +16,8 @@ SECTIONS
 	. = + SIZEOF_HEADERS;
 	.text          :
 	{
+		arch/powerpc/cpu/mpc8xx/start.o	(.text_pre)
+		*(.text_version_string)
 		arch/powerpc/cpu/mpc8xx/start.o	(.text)
 		arch/powerpc/cpu/mpc8xx/traps.o	(.text*)
 		arch/powerpc/lib/built-in.o		(.text*)
