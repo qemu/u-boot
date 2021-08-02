@@ -52,13 +52,6 @@
 #include <asm/arch/hardware.h>	/* needed for AT91_USB_HOST_BASE */
 #endif
 
-#if defined(CONFIG_CPU_ARM920T) || \
-	defined(CONFIG_PCI_OHCI) || \
-	defined(CONFIG_DM_PCI) || \
-	defined(CONFIG_SYS_OHCI_USE_NPS)
-# define OHCI_USE_NPS		/* force NoPowerSwitching mode */
-#endif
-
 #undef OHCI_VERBOSE_DEBUG	/* not always helpful */
 #undef DEBUG
 #undef SHOW_INFO
@@ -1885,12 +1878,14 @@ static int hc_start(ohci_t *ohci)
 	mask = OHCI_INTR_RHSC | OHCI_INTR_UE | OHCI_INTR_WDH | OHCI_INTR_SO;
 	ohci_writel(mask, &ohci->regs->intrenable);
 
-#ifdef	OHCI_USE_NPS
-	/* required for AMD-756 and some Mac platforms */
+	/*
+	 * required for AMD-756 and some Mac platforms
+	 * Note: this is always enabled at present, since driver model is used
+	 * for PCI
+	 */
 	ohci_writel((roothub_a(ohci) | RH_A_NPS) & ~RH_A_PSM,
 		&ohci->regs->roothub.a);
 	ohci_writel(RH_HS_LPSC, &ohci->regs->roothub.status);
-#endif	/* OHCI_USE_NPS */
 
 	/* connect the virtual root hub */
 	ohci->rh.devnum = 0;
