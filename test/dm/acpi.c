@@ -12,8 +12,8 @@
 #include <malloc.h>
 #include <mapmem.h>
 #include <version.h>
+#include <timestamp.h>
 #include <tables_csum.h>
-#include <version.h>
 #include <acpi/acpigen.h>
 #include <acpi/acpi_device.h>
 #include <acpi/acpi_table.h>

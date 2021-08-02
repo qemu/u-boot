@@ -34,6 +34,10 @@
 #include <bootcount.h>
 #include <wdt.h>
 
+#if defined(CONFIG_SPL_SERIAL_SUPPORT) && CONFIG_IS_ENABLED(BANNER_PRINT)
+#include <timestamp.h>
+#endif
+
 DECLARE_GLOBAL_DATA_PTR;
 
 #ifndef CONFIG_SYS_UBOOT_START

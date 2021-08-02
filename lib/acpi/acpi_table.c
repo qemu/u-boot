@@ -12,6 +12,7 @@
 #include <mapmem.h>
 #include <tables_csum.h>
 #include <version.h>
+#include <timestamp.h>
 #include <acpi/acpi_table.h>
 #include <asm/global_data.h>
 #include <dm/acpi.h>
