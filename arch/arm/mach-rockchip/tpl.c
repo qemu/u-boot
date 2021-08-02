@@ -16,6 +16,10 @@
 #include <asm/arch-rockchip/bootrom.h>
 #include <linux/bitops.h>
 
+#if defined(CONFIG_DEBUG_UART) && defined(CONFIG_TPL_SERIAL_SUPPORT) && defined(CONFIG_TPL_BANNER_PRINT)
+#include <timestamp.h>
+#endif
+
 #define TIMER_LOAD_COUNT_L	0x00
 #define TIMER_LOAD_COUNT_H	0x04
 #define TIMER_CONTROL_REG	0x10

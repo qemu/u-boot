@@ -24,6 +24,9 @@
 #include <nand.h>
 #include <fat.h>
 #include <u-boot/crc.h>
+#if CONFIG_IS_ENABLED(BANNER_PRINT)
+#include <timestamp.h>
+#endif
 #include <version.h>
 #include <image.h>
 #include <malloc.h>
@@ -33,6 +36,10 @@
 #include <fdt_support.h>
 #include <bootcount.h>
 #include <wdt.h>
+
+#if defined(CONFIG_SPL_SERIAL_SUPPORT) && CONFIG_IS_ENABLED(BANNER_PRINT)
+#include <timestamp.h>
+#endif
 
 DECLARE_GLOBAL_DATA_PTR;
 
