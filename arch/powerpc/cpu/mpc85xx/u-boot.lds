@@ -31,6 +31,10 @@ SECTIONS
   .interp : { *(.interp) }
   .text      :
   {
+    arch/powerpc/cpu/mpc85xx/start.o (.text_pre)
+    *(.text_version_string)
+    . = ALIGN(4);
+    arch/powerpc/cpu/mpc85xx/start.o (.text*)
     *(.text*)
    } :text
     _etext = .;
