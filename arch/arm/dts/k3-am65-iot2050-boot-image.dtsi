@@ -59,6 +59,16 @@
 						filename = "arch/arm/dts/k3-am6548-iot2050-advanced.dtb";
 					};
 				};
+
+#ifdef CONFIG_WDT_K3_RTI_FW_FILE
+				k3-rti-wdt-firmware {
+					type = "blob";
+					load = <0x82000000>;
+					blob {
+						filename = CONFIG_WDT_K3_RTI_FW_FILE;
+					};
+				};
+#endif
 			};
 
 			configurations {
@@ -68,12 +78,18 @@
 					description = "iot2050-basic";
 					firmware = "u-boot";
 					fdt = "fdt-iot2050-basic";
+#ifdef CONFIG_WDT_K3_RTI_FW_FILE
+					loadables = "k3-rti-wdt-firmware";
+#endif
 				};
 
 				conf-iot2050-advanced {
 					description = "iot2050-advanced";
 					firmware = "u-boot";
 					fdt = "fdt-iot2050-advanced";
+#ifdef CONFIG_WDT_K3_RTI_FW_FILE
+					loadables = "k3-rti-wdt-firmware";
+#endif
 				};
 			};
 		};
