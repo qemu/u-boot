@@ -677,7 +677,7 @@ static void set_sysctl(struct fsl_esdhc_priv *priv, struct mmc *mmc, uint clock)
 	priv->clock = clock;
 }
 
-#ifdef MMC_SUPPORTS_TUNING
+#ifdef MMCS_TUNING
 static int esdhc_change_pinstate(struct udevice *dev)
 {
 	struct fsl_esdhc_priv *priv = dev_get_priv(dev);
@@ -946,7 +946,7 @@ static int esdhc_set_ios_common(struct fsl_esdhc_priv *priv, struct mmc *mmc)
 	int ret __maybe_unused;
 	u32 clock;
 
-#ifdef MMC_SUPPORTS_TUNING
+#ifdef MMCS_TUNING
 	/*
 	 * call esdhc_set_timing() before update the clock rate,
 	 * This is because current we support DDR and SDR mode,
@@ -971,7 +971,7 @@ static int esdhc_set_ios_common(struct fsl_esdhc_priv *priv, struct mmc *mmc)
 	if (priv->clock != clock)
 		set_sysctl(priv, mmc, clock);
 
-#ifdef MMC_SUPPORTS_TUNING
+#ifdef MMCS_TUNING
 	if (mmc->clk_disable) {
 #ifdef CONFIG_FSL_USDHC
 		esdhc_clrbits32(&regs->vendorspec, VENDORSPEC_CKEN);
@@ -1690,7 +1690,7 @@ static const struct dm_mmc_ops fsl_esdhc_ops = {
 	.get_cd		= fsl_esdhc_get_cd,
 	.send_cmd	= fsl_esdhc_send_cmd,
 	.set_ios	= fsl_esdhc_set_ios,
-#ifdef MMC_SUPPORTS_TUNING
+#ifdef MMCS_TUNING
 	.execute_tuning	= fsl_esdhc_execute_tuning,
 #endif
 #if CONFIG_IS_ENABLED(MMC_HS400_ES_SUPPORT)

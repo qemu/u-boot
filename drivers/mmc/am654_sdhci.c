@@ -374,7 +374,7 @@ static void am654_sdhci_write_b(struct sdhci_host *host, u8 val, int reg)
 
 	writeb(val, host->ioaddr + reg);
 }
-#ifdef MMC_SUPPORTS_TUNING
+#ifdef MMCS_TUNING
 #define ITAP_MAX	32
 static int am654_sdhci_execute_tuning(struct mmc *mmc, u8 opcode)
 {
@@ -413,7 +413,7 @@ static int am654_sdhci_execute_tuning(struct mmc *mmc, u8 opcode)
 }
 #endif
 const struct sdhci_ops am654_sdhci_ops = {
-#ifdef MMC_SUPPORTS_TUNING
+#ifdef MMCS_TUNING
 	.platform_execute_tuning = am654_sdhci_execute_tuning,
 #endif
 	.deferred_probe		= am654_sdhci_deferred_probe,
@@ -456,7 +456,7 @@ static int j721e_4bit_sdhci_set_ios_post(struct sdhci_host *host)
 }
 
 const struct sdhci_ops j721e_4bit_sdhci_ops = {
-#ifdef MMC_SUPPORTS_TUNING
+#ifdef MMCS_TUNING
 	.platform_execute_tuning = am654_sdhci_execute_tuning,
 #endif
 	.deferred_probe		= am654_sdhci_deferred_probe,

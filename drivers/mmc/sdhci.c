@@ -344,7 +344,7 @@ static int sdhci_send_command(struct mmc *mmc, struct mmc_cmd *cmd,
 		return -ECOMM;
 }
 
-#if defined(CONFIG_DM_MMC) && defined(MMC_SUPPORTS_TUNING)
+#if defined(CONFIG_DM_MMC) && defined(MMCS_TUNING)
 static int sdhci_execute_tuning(struct udevice *dev, uint opcode)
 {
 	int err;
@@ -786,7 +786,7 @@ const struct dm_mmc_ops sdhci_ops = {
 	.set_ios	= sdhci_set_ios,
 	.get_cd		= sdhci_get_cd,
 	.deferred_probe	= sdhci_deferred_probe,
-#ifdef MMC_SUPPORTS_TUNING
+#ifdef MMCS_TUNING
 	.execute_tuning	= sdhci_execute_tuning,
 #endif
 };

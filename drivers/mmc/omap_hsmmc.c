@@ -156,7 +156,7 @@ struct omap_hsmmc_adma_desc {
  * that the bandwidth is always above 3MB/s).
  */
 #define DMA_TIMEOUT_PER_MB	333
-#define OMAP_HSMMC_SUPPORTS_DUAL_VOLT		BIT(0)
+#define OMAP_HSMMCS_DUAL_VOLT		BIT(0)
 #define OMAP_HSMMC_NO_1_8_V			BIT(1)
 #define OMAP_HSMMC_USE_ADMA			BIT(2)
 #define OMAP_HSMMC_REQUIRE_IODELAY		BIT(3)
@@ -562,7 +562,7 @@ static uint32_t omap_hsmmc_set_capabilities(struct mmc *mmc)
 	mmc_base = priv->base_addr;
 	val = readl(&mmc_base->capa);
 
-	if (priv->controller_flags & OMAP_HSMMC_SUPPORTS_DUAL_VOLT) {
+	if (priv->controller_flags & OMAP_HSMMCS_DUAL_VOLT) {
 		val |= (VS33_3V3SUP | VS18_1V8SUP);
 	} else if (priv->controller_flags & OMAP_HSMMC_NO_1_8_V) {
 		val |= VS33_3V3SUP;
@@ -577,7 +577,7 @@ static uint32_t omap_hsmmc_set_capabilities(struct mmc *mmc)
 	return val;
 }
 
-#ifdef MMC_SUPPORTS_TUNING
+#ifdef MMCS_TUNING
 static void omap_hsmmc_disable_tuning(struct mmc *mmc)
 {
 	struct hsmmc *mmc_base;
@@ -1518,7 +1518,7 @@ static const struct dm_mmc_ops omap_hsmmc_ops = {
 	.get_cd		= omap_hsmmc_getcd,
 	.get_wp		= omap_hsmmc_getwp,
 #endif
-#ifdef MMC_SUPPORTS_TUNING
+#ifdef MMCS_TUNING
 	.execute_tuning = omap_hsmmc_execute_tuning,
 #endif
 	.wait_dat0	= omap_hsmmc_wait_dat0,
@@ -1927,7 +1927,7 @@ static int omap_hsmmc_of_to_plat(struct udevice *dev)
 	cfg->voltages = MMC_VDD_32_33 | MMC_VDD_33_34 | MMC_VDD_165_195;
 	cfg->b_max = CONFIG_SYS_MMC_MAX_BLK_COUNT;
 	if (fdtdec_get_bool(fdt, node, "ti,dual-volt"))
-		plat->controller_flags |= OMAP_HSMMC_SUPPORTS_DUAL_VOLT;
+		plat->controller_flags |= OMAP_HSMMCS_DUAL_VOLT;
 	if (fdtdec_get_bool(fdt, node, "no-1-8-v"))
 		plat->controller_flags |= OMAP_HSMMC_NO_1_8_V;
 	if (of_data)

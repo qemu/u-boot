@@ -54,7 +54,7 @@
 #define CONFIG_SYS_PROMPT		env_get("prompt")
 
 #if defined(CONFIG_MMC_OCTEONTX)
-#define MMC_SUPPORTS_TUNING
+#define MMCS_TUNING
 /** EMMC specific defines */
 #define CONFIG_SUPPORT_EMMC_BOOT
 #define CONFIG_SUPPORT_EMMC_RPMB
