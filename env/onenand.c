@@ -34,19 +34,14 @@ static int env_onenand_load(void)
 #endif
 	int rc;
 	size_t retlen;
-#ifdef ENV_IS_EMBEDDED
-	char *buf = (char *)&environment;
-#else
 	loff_t env_addr = CONFIG_ENV_ADDR;
 	char onenand_env[ONENAND_MAX_ENV_SIZE];
 	char *buf = (char *)&onenand_env[0];
-#endif /* ENV_IS_EMBEDDED */
 
-#ifndef ENV_IS_EMBEDDED
-# ifdef CONFIG_ENV_ADDR_FLEX
+#ifdef CONFIG_ENV_ADDR_FLEX
 	if (FLEXONENAND(this))
 		env_addr = CONFIG_ENV_ADDR_FLEX;
-# endif
+#endif
 	/* Check OneNAND exist */
 	if (mtd->writesize)
 		/* Ignore read fail */
@@ -54,7 +49,6 @@ static int env_onenand_load(void)
 				&retlen, (u_char *)buf);
 	else
 		mtd->writesize = MAX_ONENAND_PAGESIZE;
-#endif /* !ENV_IS_EMBEDDED */
 
 	rc = env_import(buf, 1, H_EXTERNAL);
 	if (!rc)

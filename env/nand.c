@@ -37,11 +37,9 @@
 #define CONFIG_ENV_RANGE	CONFIG_ENV_SIZE
 #endif
 
-#if defined(ENV_IS_EMBEDDED)
-static env_t *env_ptr = &environment;
-#elif defined(CONFIG_NAND_ENV_DST)
+#if defined(CONFIG_NAND_ENV_DST)
 static env_t *env_ptr = (env_t *)CONFIG_NAND_ENV_DST;
-#endif /* ENV_IS_EMBEDDED */
+#endif
 
 DECLARE_GLOBAL_DATA_PTR;
 
@@ -59,7 +57,7 @@ DECLARE_GLOBAL_DATA_PTR;
  */
 static int env_nand_init(void)
 {
-#if defined(ENV_IS_EMBEDDED) || defined(CONFIG_NAND_ENV_DST)
+#if defined(CONFIG_NAND_ENV_DST)
 	int crc1_ok = 0, crc2_ok = 0;
 	env_t *tmp_env1;
 
@@ -106,10 +104,10 @@ static int env_nand_init(void)
 
 	gd->env_addr = (ulong)env_ptr->data;
 
-#else /* ENV_IS_EMBEDDED || CONFIG_NAND_ENV_DST */
+#else /* CONFIG_NAND_ENV_DST */
 	gd->env_addr	= (ulong)&default_environment[0];
 	gd->env_valid	= ENV_VALID;
-#endif /* ENV_IS_EMBEDDED || CONFIG_NAND_ENV_DST */
+#endif /* CONFIG_NAND_ENV_DST */
 
 	return 0;
 }
@@ -312,9 +310,6 @@ int get_nand_env_oob(struct mtd_info *mtd, unsigned long *result)
 #ifdef CONFIG_ENV_OFFSET_REDUND
 static int env_nand_load(void)
 {
-#if defined(ENV_IS_EMBEDDED)
-	return 0;
-#else
 	int read1_fail, read2_fail;
 	env_t *tmp_env1, *tmp_env2;
 	int ret = 0;
@@ -339,7 +334,6 @@ done:
 	free(tmp_env2);
 
 	return ret;
-#endif /* ! ENV_IS_EMBEDDED */
 }
 #else /* ! CONFIG_ENV_OFFSET_REDUND */
 /*
@@ -349,7 +343,6 @@ done:
  */
 static int env_nand_load(void)
 {
-#if !defined(ENV_IS_EMBEDDED)
 	int ret;
 	ALLOC_CACHE_ALIGN_BUFFER(char, buf, CONFIG_ENV_SIZE);
 
@@ -374,9 +367,6 @@ static int env_nand_load(void)
 	}
 
 	return env_import(buf, 1, H_EXTERNAL);
-#endif /* ! ENV_IS_EMBEDDED */
-
-	return 0;
 }
 #endif /* CONFIG_ENV_OFFSET_REDUND */
 

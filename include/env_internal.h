@@ -34,16 +34,12 @@
 	((CONFIG_ENV_ADDR >= CONFIG_SYS_MONITOR_BASE) &&		\
 	(CONFIG_ENV_ADDR_REDUND + CONFIG_ENV_SIZE) <=		\
 	(CONFIG_SYS_MONITOR_BASE + CONFIG_SYS_MONITOR_LEN))
-#  define ENV_IS_EMBEDDED
+#error "Embedded environment shouldn't have happened"
 # endif
 # if	(CONFIG_ENV_ADDR >= CONFIG_SYS_MONITOR_BASE) &&		\
 	(CONFIG_ENV_ADDR + CONFIG_ENV_SIZE) <=			\
 	(CONFIG_SYS_MONITOR_BASE + CONFIG_SYS_MONITOR_LEN)
-#  define ENV_IS_EMBEDDED
-# endif
-# ifdef CONFIG_ENV_IS_EMBEDDED
-#  error "do not define CONFIG_ENV_IS_EMBEDDED in your board config"
-#  error "it is calculated automatically for you"
+#error "Embedded environment shouldn't have happened"
 # endif
 #endif	/* CONFIG_ENV_IS_IN_FLASH */
 
@@ -63,15 +59,13 @@ extern unsigned long nand_env_oob_offset;
  * calculated automatically (i.e. NAND), take the board opt-in.
  */
 #if defined(CONFIG_ENV_IS_EMBEDDED) && !defined(ENV_IS_EMBEDDED)
-# define ENV_IS_EMBEDDED
+#error "Embedded environment shouldn't have happened"
 #endif
 
 /* The build system likes to know if the env is embedded */
 #ifdef DO_DEPS_ONLY
 # ifdef ENV_IS_EMBEDDED
-#  ifndef CONFIG_ENV_IS_EMBEDDED
-#   define CONFIG_ENV_IS_EMBEDDED
-#  endif
+#error "Embedded environment shouldn't have happened"
 # endif
 #endif
 
@@ -90,7 +84,7 @@ extern unsigned long nand_env_oob_offset;
  * region.
  */
 #if defined(CONFIG_ENV_IS_EMBEDDED)
-#define TOTAL_MALLOC_LEN	CONFIG_SYS_MALLOC_LEN
+#error "Embedded environment shouldn't have happened"
 #elif (CONFIG_ENV_ADDR + CONFIG_ENV_SIZE < CONFIG_SYS_MONITOR_BASE) || \
       (CONFIG_ENV_ADDR >= CONFIG_SYS_MONITOR_BASE + CONFIG_SYS_MONITOR_LEN) || \
       defined(CONFIG_ENV_IS_IN_NVRAM)
@@ -106,10 +100,6 @@ typedef struct environment_s {
 #endif
 	unsigned char	data[ENV_SIZE]; /* Environment data		*/
 } env_t;
-
-#ifdef ENV_IS_EMBEDDED
-extern env_t embedded_environment;
-#endif /* ENV_IS_EMBEDDED */
 
 #ifdef DEFAULT_ENV_IS_RW
 extern unsigned char default_environment[];
