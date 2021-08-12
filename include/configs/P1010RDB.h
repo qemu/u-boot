@@ -521,7 +521,6 @@ extern unsigned long get_sdram_size(void);
 #define CONFIG_SYS_I2C_EEPROM_NXID
 #endif
 #define CONFIG_SYS_I2C_EEPROM_ADDR_LEN	1
-#define CONFIG_SYS_I2C_EEPROM_ADDR	0x57
 #define CONFIG_SYS_EEPROM_BUS_NUM	0
 #define MAX_NUM_PORTS			9 /* for 128Bytes EEPROM */
 #endif

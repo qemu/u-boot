@@ -16,7 +16,6 @@
 #include "eeprom.h"
 
 #ifndef CONFIG_SYS_I2C_EEPROM_ADDR
-# define CONFIG_SYS_I2C_EEPROM_ADDR	0x50
 # define CONFIG_SYS_I2C_EEPROM_ADDR_LEN	1
 #endif
 

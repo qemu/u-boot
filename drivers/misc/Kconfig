@@ -400,7 +400,7 @@ config SPL_I2C_EEPROM
 
 config SYS_I2C_EEPROM_ADDR
 	hex "Chip address of the EEPROM device"
-	depends on I2C_EEPROM || SPL_I2C_EEPROM || CMD_EEPROM || ENV_IS_IN_EEPROM
+	depends on I2C_EEPROM || SPL_I2C_EEPROM || CMD_EEPROM || CMD_I2C || ENV_IS_IN_EEPROM
 	default 0
 
 if I2C_EEPROM

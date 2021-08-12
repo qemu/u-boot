@@ -478,7 +478,6 @@
 #endif
 
 #define CONFIG_SYS_I2C_FSL
-#define CONFIG_SYS_I2C_EEPROM_ADDR	0x52
 #define CONFIG_SYS_SPD_BUS_NUM		1 /* For rom_loc and flash bank */
 
 /*

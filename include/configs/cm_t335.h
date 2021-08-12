@@ -83,7 +83,6 @@
 #define CONFIG_SYS_NS16550_COM2		0x48022000	/* UART1 */
 
 /* I2C Configuration */
-#define CONFIG_SYS_I2C_EEPROM_ADDR	0x50	/* Main EEPROM */
 #define CONFIG_SYS_I2C_EEPROM_ADDR_LEN	1
 
 /* SPL */
