@@ -614,6 +614,11 @@ config EEPROM_LAYOUT_HELP_STRING
 	    Help printed with the LAYOUT VERSIONS part of the 'eeprom'
 	    command's help.
 
+config SYS_I2C_EEPROM_BUS
+	int "I2C bus of the EEPROM device."
+	depends on CMD_EEPROM
+	default 0
+
 config LOOPW
 	bool "loopw"
 	help

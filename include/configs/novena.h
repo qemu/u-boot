@@ -64,7 +64,6 @@
 /* I2C EEPROM */
 #ifdef CONFIG_CMD_EEPROM
 #define CONFIG_SYS_I2C_EEPROM_ADDR_LEN	2
-#define CONFIG_SYS_I2C_EEPROM_BUS	2
 #endif
 
 /* MMC Configs */

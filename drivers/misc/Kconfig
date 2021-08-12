@@ -405,10 +405,6 @@ config SYS_I2C_EEPROM_ADDR
 
 if I2C_EEPROM
 
-config SYS_I2C_EEPROM_BUS
-	int "I2C bus of the EEPROM device."
-	default 0
-
 config SYS_EEPROM_SIZE
 	int "Size in bytes of the EEPROM device"
 	default 256
