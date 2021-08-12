@@ -405,10 +405,6 @@ config SYS_I2C_EEPROM_ADDR
 
 if I2C_EEPROM
 
-config SYS_EEPROM_PAGE_WRITE_DELAY_MS
-	int "Number of milliseconds to delay between page writes"
-	default 0
-
 config SYS_I2C_EEPROM_ADDR_LEN
 	int "Length in bytes of the EEPROM memory array address"
 	default 1

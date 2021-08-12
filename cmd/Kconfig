@@ -632,6 +632,11 @@ config SYS_EEPROM_PAGE_WRITE_BITS
 	  The EEPROM page size is 2^SYS_EEPROM_PAGE_WRITE_BITS.
 	  A 64 byte page, for example would require six bits.
 
+config SYS_EEPROM_PAGE_WRITE_DELAY_MS
+	int "Number of milliseconds to delay between page writes"
+	depends on CMD_EEPROM || CMD_I2C
+	default 0
+
 config LOOPW
 	bool "loopw"
 	help
