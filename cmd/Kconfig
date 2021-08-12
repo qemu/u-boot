@@ -619,6 +619,11 @@ config SYS_I2C_EEPROM_BUS
 	depends on CMD_EEPROM
 	default 0
 
+config SYS_EEPROM_SIZE
+	depends on CMD_EEPROM
+	int "Size in bytes of the EEPROM device"
+	default 256
+
 config LOOPW
 	bool "loopw"
 	help

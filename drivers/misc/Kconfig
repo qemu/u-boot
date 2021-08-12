@@ -405,10 +405,6 @@ config SYS_I2C_EEPROM_ADDR
 
 if I2C_EEPROM
 
-config SYS_EEPROM_SIZE
-	int "Size in bytes of the EEPROM device"
-	default 256
-
 config SYS_EEPROM_PAGE_WRITE_BITS
 	int "Number of bits used to address bytes in a single page"
 	default 0
