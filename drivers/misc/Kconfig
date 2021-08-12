@@ -398,11 +398,12 @@ config SPL_I2C_EEPROM
 	  This option is an SPL-variant of the I2C_EEPROM option.
 	  See the help of I2C_EEPROM for details.
 
-if I2C_EEPROM
-
 config SYS_I2C_EEPROM_ADDR
 	hex "Chip address of the EEPROM device"
+	depends on I2C_EEPROM || SPL_I2C_EEPROM || CMD_EEPROM || ENV_IS_IN_EEPROM
 	default 0
+
+if I2C_EEPROM
 
 config SYS_I2C_EEPROM_BUS
 	int "I2C bus of the EEPROM device."

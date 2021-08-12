@@ -242,10 +242,10 @@ static int parse_i2c_bus_addr(int *i2c_bus, ulong *i2c_addr, int argc,
 	int argc_no_bus = argc_no_bus_addr + 1;
 	int argc_bus_addr = argc_no_bus_addr + 2;
 
-#ifdef CONFIG_SYS_DEF_EEPROM_ADDR
+#ifdef CONFIG_SYS_I2C_EEPROM_ADDR
 	if (argc == argc_no_bus_addr) {
 		*i2c_bus = -1;
-		*i2c_addr = CONFIG_SYS_DEF_EEPROM_ADDR;
+		*i2c_addr = CONFIG_SYS_I2C_EEPROM_ADDR;
 
 		return 0;
 	}
