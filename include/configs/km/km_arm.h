@@ -130,7 +130,6 @@ extern void __set_direction(unsigned pin, int high);
 
 /* EEprom support 24C128, 24C256 valid for environment eeprom */
 #define CONFIG_SYS_EEPROM_PAGE_WRITE_ENABLE
-#define CONFIG_SYS_EEPROM_PAGE_WRITE_BITS	6 /* 64 Byte write page */
 #define CONFIG_SYS_EEPROM_PAGE_WRITE_DELAY_MS	10
 
 #define CONFIG_SYS_I2C_EEPROM_ADDR_LEN	2

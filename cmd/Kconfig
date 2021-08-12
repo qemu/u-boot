@@ -624,6 +624,14 @@ config SYS_EEPROM_SIZE
 	int "Size in bytes of the EEPROM device"
 	default 256
 
+config SYS_EEPROM_PAGE_WRITE_BITS
+	int "Number of bits used to address bytes in a single page"
+	depends on CMD_EEPROM
+	default 0
+	help
+	  The EEPROM page size is 2^SYS_EEPROM_PAGE_WRITE_BITS.
+	  A 64 byte page, for example would require six bits.
+
 config LOOPW
 	bool "loopw"
 	help

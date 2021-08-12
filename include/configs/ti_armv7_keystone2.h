@@ -121,7 +121,6 @@
 
 /* EEPROM definitions */
 #define CONFIG_SYS_I2C_EEPROM_ADDR_LEN		2
-#define CONFIG_SYS_EEPROM_PAGE_WRITE_BITS	6
 #define CONFIG_SYS_EEPROM_PAGE_WRITE_DELAY_MS	20
 
 /* NAND Configuration */
