@@ -5,6 +5,7 @@
 
 import glob
 import os
+import shlex
 import shutil
 import struct
 import sys
@@ -588,9 +589,9 @@ def PrintFullHelp(fname):
     Args:
         fname: Path to a file containing the full help message
     """
-    pager = os.getenv('PAGER')
+    pager = shlex.split(os.getenv('PAGER'))
     if not pager:
-        pager = shutil.which('less')
+        pager = [shutil.which('less')]
     if not pager:
-        pager = 'more'
-    command.Run(pager, fname)
+        pager = ['more']
+    command.Run(*pager, fname)
