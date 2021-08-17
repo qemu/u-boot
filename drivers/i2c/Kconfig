@@ -47,6 +47,13 @@ config SPL_DM_I2C
 	  device (bus child) info is kept as parent platdata. The interface
 	  is defined in include/i2c.h.
 
+config SYS_I2C_LEGACY
+	bool "Enable legacy I2C subsystem and drivers"
+	help
+	  Enable the legacy I2C subsystem and drivers.  While this is
+	  deprecated in U-Boot itself, this can be useful in some situations
+	  in SPL.
+
 config I2C_CROS_EC_TUNNEL
 	tristate "Chrome OS EC tunnel I2C bus"
 	depends on CROS_EC
