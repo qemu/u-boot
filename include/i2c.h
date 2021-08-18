@@ -620,6 +620,7 @@ void i2c_early_init_f(void);
 #define I2C_RXTX_LEN	128	/* maximum tx/rx buffer length */
 
 #if !defined(CONFIG_SYS_I2C_MAX_HOPS)
+#error "Good, remove this stuff"
 /* no muxes used bus = i2c adapters */
 #define CONFIG_SYS_I2C_DIRECT_BUS	1
 #define CONFIG_SYS_I2C_MAX_HOPS		0
