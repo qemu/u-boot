@@ -210,6 +210,7 @@ void i2c_init_board(void)
  * Returns I2C bus speed in Hz.
  */
 #if !defined(CONFIG_SYS_I2C_LEGACY) && !CONFIG_IS_ENABLED(DM_I2C)
+#error "The hell is this"
 /*
  * TODO: Implement architecture-specific get/set functions
  * Should go away, if we switched completely to new multibus support

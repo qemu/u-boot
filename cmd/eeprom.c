@@ -28,7 +28,7 @@
 #include <linux/delay.h>
 
 #ifndef	CONFIG_SYS_I2C_SPEED
-#define	CONFIG_SYS_I2C_SPEED	50000
+#error "no speed"
 #endif
 
 #ifndef CONFIG_SYS_EEPROM_PAGE_WRITE_DELAY_MS
