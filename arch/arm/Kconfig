@@ -63,8 +63,15 @@ config LNX_KRNL_IMG_TEXT_OFFSET_BASE
 endif
 endif
 
+config GICV2
+	bool
+
+config GICV3
+	bool
+
 config GIC_V3_ITS
 	bool "ARM GICV3 ITS"
+	depends on GICV3
 	select REGMAP
 	select SYSCON
 	select IRQ
@@ -651,6 +658,7 @@ config TARGET_BCMNS3
 	bool "Support Broadcom NS3"
 	select ARM64
 	select BOARD_LATE_INIT
+	select GICV3
 	help
 	  Support for Broadcom Northstar 3 SoCs. NS3 is a octo-core 64-bit
 	  ARMv8 Cortex-A72 processors targeting a broad range of networking
@@ -952,6 +960,7 @@ config ARCH_SOCFPGA
 	select CPU_V7A if TARGET_SOCFPGA_GEN5 || TARGET_SOCFPGA_ARRIA10
 	select DM
 	select DM_SERIAL
+	select GICV2
 	select GPIO_EXTRA_HEADER
 	select ENABLE_ARM_SOC_BOOT0_HOOK if TARGET_SOCFPGA_GEN5 || TARGET_SOCFPGA_ARRIA10
 	select OF_CONTROL
@@ -1062,6 +1071,7 @@ config ARCH_VERSAL
 	select DM_ETH if NET
 	select DM_MMC if MMC
 	select DM_SERIAL
+	select GICV3
 	select GPIO_EXTRA_HEADER
 	select OF_CONTROL
 	imply BOARD_LATE_INIT
@@ -1130,6 +1140,7 @@ config ARCH_ZYNQMP
 	select DM_SPI if SPI
 	select DM_SPI_FLASH if DM_SPI
 	select FIRMWARE
+	select GICV2
 	select GPIO_EXTRA_HEADER
 	select OF_CONTROL
 	select SPL_BOARD_INIT if SPL
@@ -1878,6 +1889,7 @@ config TARGET_DURIAN
 config TARGET_PRESIDIO_ASIC
 	bool "Support Cortina Presidio ASIC Platform"
 	select ARM64
+	select GICV2
 
 config TARGET_XENGUEST_ARM64
 	bool "Xen guest ARM64"
