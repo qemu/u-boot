@@ -136,14 +136,7 @@ int fixed_sdram(void)
 
 	im->ddr.sdram_cfg =
 		SDRAM_CFG_SREN
-#if defined(CONFIG_DDR_2T_TIMING)
-		| SDRAM_CFG_2T_EN
-#endif
 		| 2 << SDRAM_CFG_SDRAM_TYPE_SHIFT;
-#if defined (CONFIG_DDR_32BIT)
-	/* for 32-bit mode burst length is 8 */
-	im->ddr.sdram_cfg |= (SDRAM_CFG_32_BE | SDRAM_CFG_8_BE);
-#endif
 	im->ddr.sdram_mode = CONFIG_SYS_DDR_MODE;
 
 	im->ddr.sdram_interval = CONFIG_SYS_DDR_INTERVAL;

@@ -834,12 +834,6 @@ long int spd_sdram()
 #endif
 	debug("   DDRC ECC mode: %s\n", ddrc_ecc_enable ? "ON":"OFF");
 
-#if defined(CONFIG_DDR_2T_TIMING)
-	/*
-	 * Enable 2T timing by setting sdram_cfg[16].
-	 */
-	sdram_cfg |= SDRAM_CFG_2T_EN;
-#endif
 	/* Enable controller, and GO! */
 	ddr->sdram_cfg = sdram_cfg;
 	sync();
