@@ -15,3 +15,5 @@ config BOARD_SPECIFIC_OPTIONS
 	select PHYS_64BIT
 
 endif
+
+source "board/freescale/common/Kconfig"

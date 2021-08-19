@@ -31,7 +31,7 @@
  * configured for DDR_PLL = 2*MEM_PLL_RAT.
  * In our case DDR_FDBK_MULTI is 2, means DDR_PLL = MEM_PLL_RAT.
  */
-#define CONFIG_DDR_CLK_FREQ		(100000000 >> 1)
+#define CONFIG_DDR_CLK_FREQ		50000000
 
 #define PHYS_SDRAM			0x80000000
 #define PHYS_SDRAM_SIZE			(1u * 1024 * 1024 * 1024)

@@ -37,3 +37,5 @@ config BOARD_SPECIFIC_OPTIONS
 	imply FS_CRAMFS
 
 endif
+
+source "board/freescale/common/Kconfig"

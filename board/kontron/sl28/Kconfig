@@ -59,3 +59,5 @@ config SL28_ENABLE_SER0_CONSOLE
 	  serial line (SER0). For example, if you have a carrier which only
 	  supports the first serial port.
 endif
+
+source "board/freescale/common/Kconfig"
