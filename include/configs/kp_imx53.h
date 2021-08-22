@@ -25,7 +25,7 @@
 #define CONFIG_SYS_I2C_EEPROM_ADDR_LEN 2
 
 /* Command definition */
-#define CONFIG_LOADADDR		0x72000000	/* loadaddr env var */
+#define CONFIG_SYS_LOAD_ADDR		0x72000000	/* loadaddr env var */
 
 #define CONFIG_EXTRA_ENV_SETTINGS \
 	"console=ttymxc1,115200\0"	\
@@ -77,7 +77,6 @@
 
 /* Miscellaneous configurable options */
 #define CONFIG_SYS_CBSIZE		512	/* Console I/O Buffer Size */
-#define CONFIG_SYS_LOAD_ADDR		CONFIG_LOADADDR
 
 /* Physical Memory Map */
 #define PHYS_SDRAM_1			CSD0_BASE_ADDR
