@@ -16,8 +16,6 @@ unsigned long get_board_ddr_clk(void);
 #define CONFIG_SYS_CLK_FREQ		get_board_sys_clk()
 #define CONFIG_DDR_CLK_FREQ		get_board_ddr_clk()
 
-#define CONFIG_SKIP_LOWLEVEL_INIT
-
 #define CONFIG_LAYERSCAPE_NS_ACCESS
 
 #define CONFIG_DIMM_SLOTS_PER_CTLR	1
