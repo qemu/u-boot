@@ -17,7 +17,6 @@
 #define CONFIG_SYS_LOAD_ADDR	0x100000	/* default load address */
 
 /* Reserve 4 MB for malloc */
-#define CONFIG_SYS_MALLOC_LEN		(4 * 1024 * 1024)
 
 /* Increase max size of compressed kernel */
 #define CONFIG_SYS_BOOTM_LEN		0x2000000     /* 32 MB */

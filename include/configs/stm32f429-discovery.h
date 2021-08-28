@@ -34,8 +34,6 @@
 
 #define CONFIG_SYS_CBSIZE		1024
 
-#define CONFIG_SYS_MALLOC_LEN		(2 << 20)
-
 #define CONFIG_BOOTCOMMAND						\
 	"run bootcmd_romfs"
 

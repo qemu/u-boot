@@ -15,7 +15,6 @@
 /*
  * Size of malloc() pool
  */
-#define CONFIG_SYS_MALLOC_LEN		(512 * 1024)
 
 #define CONFIG_PL011_CLOCK		150000000
 

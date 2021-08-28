@@ -15,7 +15,6 @@
 #include "mx6_common.h"
 
 /* Size of malloc() pool */
-#define CONFIG_SYS_MALLOC_LEN		(10 * SZ_1M)
 
 #ifdef CONFIG_SPL
 #include "imx6_spl.h"

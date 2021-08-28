@@ -25,7 +25,6 @@
 #endif
 
 /* Size of malloc() pool */
-#define CONFIG_SYS_MALLOC_LEN		(32 * SZ_1M)
 
 #define CONFIG_MXC_UART_BASE		UART5_IPS_BASE_ADDR
 

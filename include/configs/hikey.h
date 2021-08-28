@@ -45,7 +45,6 @@
 #define GICC_BASE			0xf6802000
 
 /* Size of malloc() pool */
-#define CONFIG_SYS_MALLOC_LEN		(CONFIG_ENV_SIZE + SZ_8M)
 
 #ifdef CONFIG_USB_DWC2
 #define CONFIG_DWC2_ENABLE_DYNAMIC_FIFO

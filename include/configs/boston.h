@@ -35,8 +35,6 @@
 
 #define CONFIG_SYS_LOAD_ADDR		(CONFIG_SYS_SDRAM_BASE + 0x08000000)
 
-#define CONFIG_SYS_MALLOC_LEN		(256 * 1024)
-
 /*
  * Console
  */

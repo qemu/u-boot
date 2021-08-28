@@ -70,8 +70,6 @@
  */
 
 /* Size of malloc() pool */
-#define CONFIG_SYS_MALLOC_LEN \
-	ROUND(3 * CONFIG_ENV_SIZE + (4 * SZ_1M), 0x1000)
 
 /* NAND flash settings */
 #define CONFIG_SYS_MAX_NAND_DEVICE	1

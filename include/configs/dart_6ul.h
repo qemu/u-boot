@@ -30,7 +30,6 @@
 #endif
 
 /* Size of malloc() pool */
-#define CONFIG_SYS_MALLOC_LEN		(16 * SZ_1M)
 
 /* Environment settings */
 

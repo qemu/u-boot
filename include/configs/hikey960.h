@@ -34,7 +34,6 @@
 #define GICC_BASE			0xe82b2000
 
 /* Size of malloc() pool */
-#define CONFIG_SYS_MALLOC_LEN		(CONFIG_ENV_SIZE + SZ_8M)
 
 #define BOOT_TARGET_DEVICES(func) \
 	func(MMC, mmc, 0)

@@ -25,7 +25,6 @@
 #endif
 
 /* Size of malloc() pool */
-#define CONFIG_SYS_MALLOC_LEN		(35 * SZ_1M) /* Increase due to DFU */
 
 #define CONFIG_MXC_UART_BASE		UART1_BASE
 

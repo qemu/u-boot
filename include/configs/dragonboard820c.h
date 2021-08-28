@@ -51,7 +51,6 @@
 	BOOTENV
 
 /* Size of malloc() pool */
-#define CONFIG_SYS_MALLOC_LEN		(CONFIG_ENV_SIZE + SZ_8M)
 
 /* Monitor Command Prompt */
 #define CONFIG_SYS_CBSIZE		512

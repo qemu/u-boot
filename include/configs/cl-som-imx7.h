@@ -13,7 +13,6 @@
 #define CONFIG_MXC_UART_BASE            UART1_IPS_BASE_ADDR
 
 /* Size of malloc() pool */
-#define CONFIG_SYS_MALLOC_LEN		(32 * SZ_1M)
 
 /* Network */
 #define CONFIG_FEC_MXC

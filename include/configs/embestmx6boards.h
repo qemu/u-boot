@@ -18,7 +18,6 @@
 #define PHYS_SDRAM_SIZE		(1u * 1024 * 1024 * 1024)
 
 /* Size of malloc() pool */
-#define CONFIG_SYS_MALLOC_LEN		(10 * SZ_1M)
 
 /* I2C Configs */
 #define CONFIG_SYS_I2C_LEGACY

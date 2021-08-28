@@ -14,7 +14,6 @@
 #include "mx6_common.h"
 
 /* Size of malloc() pool */
-#define CONFIG_SYS_MALLOC_LEN		(16 * SZ_1M)
 
 /* Total Size of Environment Sector */
 

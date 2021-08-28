@@ -16,8 +16,6 @@
 /* Generic Timer Definitions */
 #define COUNTER_FREQUENCY		(24000000)	/* 24MHz */
 
-#define CONFIG_SYS_MALLOC_LEN		(32 * 1024 * 1024)
-
 /* Some commands use this as the default load address */
 #define CONFIG_SYS_LOAD_ADDR		(CONFIG_SYS_SDRAM_BASE + 0x7ffc0)
 

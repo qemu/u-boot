@@ -22,7 +22,6 @@
 #define CONFIG_REVISION_TAG
 
 /* Size of malloc() pool */
-#define CONFIG_SYS_MALLOC_LEN		(4 * SZ_1M)
 
 /* FEC ethernet */
 #define CONFIG_ARP_TIMEOUT		200UL

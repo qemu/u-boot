@@ -118,7 +118,6 @@
 #define CONFIG_SYS_BOOTM_LEN		SZ_64M /* Increase max gunzip size */
 
 /* Size of malloc() pool */
-#define CONFIG_SYS_MALLOC_LEN		((CONFIG_ENV_SIZE + (32 * 1024)) * 1024)
 
 #define CONFIG_SYS_SDRAM_BASE		0x80000000
 #define PHYS_SDRAM_1			0x80000000

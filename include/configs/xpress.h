@@ -14,7 +14,6 @@
 #include "imx6_spl.h"
 
 /* Size of malloc() pool */
-#define CONFIG_SYS_MALLOC_LEN		(16 << 20)
 
 #define CONFIG_MXC_UART_BASE		MX6UL_UART7_BASE_ADDR
 

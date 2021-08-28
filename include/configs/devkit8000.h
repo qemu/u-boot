@@ -37,8 +37,6 @@
 #define CONFIG_REVISION_TAG		1
 
 /* Size of malloc() pool */
-#undef CONFIG_SYS_MALLOC_LEN
-#define CONFIG_SYS_MALLOC_LEN		(CONFIG_ENV_SIZE + (128 << 10))
 
 /* Hardware drivers */
 /* DM9000 */

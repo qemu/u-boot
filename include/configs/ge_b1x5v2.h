@@ -16,7 +16,6 @@
 #define CONFIG_SPL_TARGET		"u-boot-with-spl.imx"
 
 /* Size of malloc() pool */
-#define CONFIG_SYS_MALLOC_LEN		(10 * SZ_1M)
 
 /* PWM */
 #define CONFIG_IMX6_PWM_PER_CLK		66000000

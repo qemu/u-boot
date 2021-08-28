@@ -94,8 +94,6 @@
 /*
  * Size of malloc() pool
  */
-#define CONFIG_SYS_MALLOC_LEN	ROUND(3 * CONFIG_ENV_SIZE + \
-				SZ_4M, 0x1000)
 
 /* Defines for SPL */
 #define CONFIG_SPL_MAX_SIZE		(12 * SZ_1K)
