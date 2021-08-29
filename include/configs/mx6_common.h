@@ -33,12 +33,6 @@
 
 #define CONFIG_SYS_FSL_CLK
 
-/* ATAGs */
-#define CONFIG_CMDLINE_TAG
-#define CONFIG_SETUP_MEMORY_TAGS
-#define CONFIG_INITRD_TAG
-#define CONFIG_REVISION_TAG
-
 /* Boot options */
 #if defined(CONFIG_MX6SL) || defined(CONFIG_MX6SLL) || \
 	defined(CONFIG_MX6SX) || \

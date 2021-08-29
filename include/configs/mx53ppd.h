@@ -11,16 +11,10 @@
 
 #include <asm/arch/imx-regs.h>
 
-#define CONFIG_CMDLINE_TAG
-#define CONFIG_SETUP_MEMORY_TAGS
-#define CONFIG_INITRD_TAG
-
 #define CONFIG_SYS_FSL_CLK
 
 /* Size of malloc() pool */
 #define CONFIG_SYS_MALLOC_LEN		(10 * 1024 * 1024)
-
-#define CONFIG_REVISION_TAG
 
 /* USB Configs */
 #define CONFIG_USB_HOST_ETHER

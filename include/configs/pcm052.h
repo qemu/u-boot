@@ -14,9 +14,6 @@
 
 #define CONFIG_SKIP_LOWLEVEL_INIT
 
-/* Enable passing of ATAGs */
-#define CONFIG_CMDLINE_TAG
-
 /* Size of malloc() pool */
 #define CONFIG_SYS_MALLOC_LEN		(CONFIG_ENV_SIZE + 2 * SZ_1M)
 

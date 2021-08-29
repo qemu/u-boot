@@ -24,10 +24,6 @@
 #define CONFIG_SYS_CLK_FREQ		24000000
 #define COUNTER_FREQUENCY		CONFIG_SYS_CLK_FREQ
 
-#define CONFIG_SETUP_MEMORY_TAGS
-#define CONFIG_CMDLINE_TAG
-#define CONFIG_INITRD_TAG
-
 /* Size of malloc() pool before and after relocation */
 #define CONFIG_SYS_MALLOC_LEN		(CONFIG_ENV_SIZE + (80 << 20))
 

@@ -27,11 +27,6 @@
 
 /* Miscellaneous configurable options */
 
-#define CONFIG_CMDLINE_TAG
-#define CONFIG_SETUP_MEMORY_TAGS
-#define CONFIG_INITRD_TAG
-#define CONFIG_REVISION_TAG
-
 /* Size of malloc() pool */
 #define CONFIG_SYS_MALLOC_LEN		(4 * SZ_1M)
 

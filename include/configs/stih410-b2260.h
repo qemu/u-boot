@@ -45,8 +45,6 @@
 
 /* Extra Commands */
 
-#define CONFIG_SETUP_MEMORY_TAGS
-
 /* Size of malloc() pool */
 #define CONFIG_SYS_MALLOC_LEN		0x1800000
 #define CONFIG_SYS_GBL_DATA_SIZE	1024	/* Global data structures */

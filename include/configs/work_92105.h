@@ -105,9 +105,6 @@
 /*
  * Boot Linux
  */
-#define CONFIG_CMDLINE_TAG
-#define CONFIG_SETUP_MEMORY_TAGS
-#define CONFIG_INITRD_TAG
 
 #define CONFIG_BOOTFILE			"uImage"
 #define CONFIG_LOADADDR			0x80008000

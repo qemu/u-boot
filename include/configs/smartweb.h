@@ -40,9 +40,6 @@
 #define CONFIG_SYS_AT91_MAIN_CLOCK	18432000	/* 18.432MHz crystal */
 
 /* misc settings */
-#define CONFIG_CMDLINE_TAG		/* pass commandline to Kernel */
-#define CONFIG_SETUP_MEMORY_TAGS	/* pass memory defs to kernel */
-#define CONFIG_INITRD_TAG		/* pass initrd param to kernel */
 #define CONFIG_SKIP_LOWLEVEL_INIT_ONLY	/* U-Boot is loaded by a bootloader */
 
 /* We set the max number of command args high to avoid HUSH bugs. */

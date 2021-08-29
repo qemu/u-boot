@@ -10,9 +10,6 @@
 #define CONFIG_SYS_LOAD_ADDR		0x7fc0	/* default load address */
 #define CONFIG_SYS_MALLOC_LEN		(CONFIG_ENV_SIZE + 128*1024) /* Size of malloc() pool */
 
-#define CONFIG_CMDLINE_TAG		/* enable passing of ATAGs  */
-#define CONFIG_SETUP_MEMORY_TAGS
-
 /*
  * There are various dependencies on the core module (CM) fitted
  * Users should refer to their CM user guide

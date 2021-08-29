@@ -11,7 +11,6 @@
 
 #include <asm/arch/imx-regs.h>
 
-#define CONFIG_REVISION_TAG
 #define CONFIG_SYS_FSL_CLK
 
 #define CONFIG_TIMESTAMP		/* Print image info with timestamp */
@@ -141,10 +140,6 @@
 /*
  * Boot Linux
  */
-#define CONFIG_CMDLINE_TAG
-#define CONFIG_INITRD_TAG
-#define CONFIG_REVISION_TAG
-#define CONFIG_SETUP_MEMORY_TAGS
 #define CONFIG_BOOTFILE		"boot/fitImage"
 #define CONFIG_LOADADDR		0x70800000
 #define CONFIG_BOOTCOMMAND	"run mmc_mmc"

@@ -35,9 +35,6 @@
 #endif
 
 /* Misc CPU related */
-#define CONFIG_CMDLINE_TAG		/* enable passing of ATAGs */
-#define CONFIG_SETUP_MEMORY_TAGS
-#define CONFIG_INITRD_TAG
 #define CONFIG_SKIP_LOWLEVEL_INIT
 
 /* general purpose I/O */

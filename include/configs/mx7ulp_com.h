@@ -32,10 +32,6 @@
 
 #define CONFIG_SYS_HZ_CLOCK		1000000 /* Fixed at 1MHz from TSTMR */
 
-#define CONFIG_INITRD_TAG
-#define CONFIG_CMDLINE_TAG
-#define CONFIG_SETUP_MEMORY_TAGS
-
 /* Size of malloc() pool */
 #define CONFIG_SYS_MALLOC_LEN		(8 * SZ_1M)
 

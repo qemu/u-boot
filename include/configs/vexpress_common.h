@@ -109,12 +109,8 @@
 
 /* Board info register */
 #define SYS_ID				V2M_SYSREGS
-#define CONFIG_REVISION_TAG		1
 
-#define CONFIG_CMDLINE_TAG		1	/* enable passing of ATAGs */
-#define CONFIG_SETUP_MEMORY_TAGS	1
 #define CONFIG_SYS_L2CACHE_OFF		1
-#define CONFIG_INITRD_TAG		1
 
 /* Size of malloc() pool */
 #define CONFIG_SYS_MALLOC_LEN		(CONFIG_ENV_SIZE + 512 * 1024) /* >= 512 KiB */

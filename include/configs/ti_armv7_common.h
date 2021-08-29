@@ -16,11 +16,6 @@
 #ifndef __CONFIG_TI_ARMV7_COMMON_H__
 #define __CONFIG_TI_ARMV7_COMMON_H__
 
-/* Support both device trees and ATAGs. */
-#define CONFIG_CMDLINE_TAG
-#define CONFIG_SETUP_MEMORY_TAGS
-#define CONFIG_INITRD_TAG
-
 /*
  * Our DDR memory always starts at 0x80000000 and U-Boot shall have
  * relocated itself to higher in memory by the time this value is used.

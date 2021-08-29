@@ -174,6 +174,4 @@
  */
 #define CONFIG_MISC_COMMON
 
-#undef CONFIG_REVISION_TAG
-
 #endif	/* __CONFIG_H */

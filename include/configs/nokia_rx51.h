@@ -36,11 +36,6 @@
 
 #define CONFIG_SKIP_LOWLEVEL_INIT		/* X-Loader set everything up */
 
-#define CONFIG_CMDLINE_TAG	/* enable passing kernel command line string */
-#define CONFIG_INITRD_TAG			/* enable passing initrd */
-#define CONFIG_REVISION_TAG			/* enable passing revision tag*/
-#define CONFIG_SETUP_MEMORY_TAGS		/* enable memory tag */
-
 /*
  * Size of malloc() pool
  */
