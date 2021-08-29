@@ -26,9 +26,6 @@
 
 #define CONFIG_MACH_TYPE	4520   /* Gateworks Ventana Platform */
 
-/* Serial ATAG */
-#define CONFIG_SERIAL_TAG
-
 /* Size of malloc() pool */
 #define CONFIG_SYS_MALLOC_LEN		(10 * SZ_1M)
 

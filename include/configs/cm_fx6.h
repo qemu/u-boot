@@ -186,7 +186,6 @@
 
 /* Boot */
 #define CONFIG_SYS_BOOTMAPSZ	        (8 << 20)
-#define CONFIG_SERIAL_TAG
 
 /* misc */
 #define CONFIG_SYS_MALLOC_LEN			(10 * 1024 * 1024)
