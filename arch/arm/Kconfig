@@ -1920,6 +1920,13 @@ config SERIAL_TAG
 	bool "Pass system serial number via ATAG"
 	depends on SUPPORT_PASSING_ATAGS
 
+config MACH_TYPE
+	int "Machine ID number"
+	depends on SUPPORT_PASSING_ATAGS
+	help
+	  When booting via ATAGs, the machine type must be passed as a number.
+	  For the full list see arch/arm/include/asm/mach-types.h
+
 config ARCH_SUPPORT_TFABOOT
 	bool
 
