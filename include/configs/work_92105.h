@@ -13,12 +13,6 @@
 #include <linux/sizes.h>
 #include <asm/arch/cpu.h>
 
-/*
- * Define work_92105 machine type by hand -- done only for compatibility
- * with original board code
- */
-#define CONFIG_MACH_TYPE		736
-
 #if !defined(CONFIG_SPL_BUILD)
 #define CONFIG_SKIP_LOWLEVEL_INIT
 #endif

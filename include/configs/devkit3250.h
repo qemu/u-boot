@@ -12,8 +12,6 @@
 #include <linux/sizes.h>
 #include <asm/arch/cpu.h>
 
-#define CONFIG_MACH_TYPE		MACH_TYPE_DEVKIT3250
-
 #if !defined(CONFIG_SPL_BUILD)
 #define CONFIG_SKIP_LOWLEVEL_INIT
 #endif

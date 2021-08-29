@@ -15,11 +15,6 @@
 #define CONFIG_KW88F6281		/* SOC Name */
 #define CONFIG_SKIP_LOWLEVEL_INIT	/* disable board lowlevel_init */
 
-/*
- * Machine type
- */
-#define CONFIG_MACH_TYPE	MACH_TYPE_ICONNECT
-
 #include "mv-common.h"
 
 /*

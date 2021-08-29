@@ -19,9 +19,6 @@
 #define CONFIG_DMA_COHERENT_SIZE	(1 << 20)
 
 #define CONFIG_SYS_MALLOC_LEN		(16 * 1024 * 1024)
-#ifdef CONFIG_SIEMENS_MACH_TYPE
-#define CONFIG_MACH_TYPE		CONFIG_SIEMENS_MACH_TYPE
-#endif
 
 /* commands to include */
 

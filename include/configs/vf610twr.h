@@ -13,8 +13,6 @@
 
 #define CONFIG_SYS_FSL_CLK
 
-#define CONFIG_MACH_TYPE		4146
-
 #define CONFIG_SKIP_LOWLEVEL_INIT
 
 /* Size of malloc() pool */

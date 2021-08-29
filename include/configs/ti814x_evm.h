@@ -19,7 +19,6 @@
 #include <asm/arch/omap.h>
 
 #define CONFIG_SYS_MALLOC_LEN		(1024 << 10)
-#define CONFIG_MACH_TYPE		MACH_TYPE_TI8148EVM
 
 /* commands to include */
 

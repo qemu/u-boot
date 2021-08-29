@@ -29,8 +29,6 @@
 /* memtest works on */
 #define CONFIG_SYS_LOAD_ADDR		(CONFIG_SYS_SDRAM_BASE + 0x4800000)
 
-#define CONFIG_MACH_TYPE		MACH_TYPE_TRATS
-
 #define CONFIG_BOOTCOMMAND		"run autoboot"
 
 #define CONFIG_SYS_INIT_SP_ADDR	(CONFIG_SYS_LOAD_ADDR \

@@ -11,8 +11,6 @@
 
 #include "mx6_common.h"
 
-#define CONFIG_MACH_TYPE	3769
-
 /* Size of malloc() pool */
 #define CONFIG_SYS_MALLOC_LEN		(10 * 1024 * 1024)
 
