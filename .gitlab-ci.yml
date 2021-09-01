@@ -7,8 +7,6 @@ image: trini/u-boot-gitlab-ci-runner:focal-20210723-04Aug2021
 # We run some tests in different order, to catch some failures quicker.
 stages:
   - testsuites
-  - test.py
-  - world build
 
 .buildman_and_testpy_template: &buildman_and_testpy_dfn
   stage: test.py
