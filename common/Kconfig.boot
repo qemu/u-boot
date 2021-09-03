@@ -13,6 +13,7 @@ config FIT
 	bool "Support Flattened Image Tree"
 	select MD5
 	select SHA1
+	select HASH
 	help
 	  This option allows you to boot the new uImage structure,
 	  Flattened Image Tree.  FIT is formally a FDT, which can include
@@ -133,6 +134,7 @@ if SPL
 config SPL_FIT
 	bool "Support Flattened Image Tree within SPL"
 	depends on SPL
+	select SPL_HASH
 	select SPL_OF_LIBFDT
 
 config SPL_FIT_PRINT
