@@ -545,11 +545,6 @@ config ARCH_MVEBU
 	select SPI
 	imply CMD_DM
 
-config ARCH_ORION5X
-	bool "Marvell Orion"
-	select CPU_ARM926EJS
-	select GPIO_EXTRA_HEADER
-
 config TARGET_STV0991
 	bool "Support stv0991"
 	select CPU_V7A
@@ -2031,8 +2026,6 @@ source "arch/arm/mach-imx/mxs/Kconfig"
 source "arch/arm/mach-omap2/Kconfig"
 
 source "arch/arm/cpu/armv8/fsl-layerscape/Kconfig"
-
-source "arch/arm/mach-orion5x/Kconfig"
 
 source "arch/arm/mach-owl/Kconfig"
 

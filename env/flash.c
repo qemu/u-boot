@@ -35,7 +35,6 @@ DECLARE_GLOBAL_DATA_PTR;
 /* TODO(sjg@chromium.org): Figure out all these special cases */
 #if (!defined(CONFIG_MICROBLAZE) && !defined(CONFIG_ARCH_ZYNQ) && \
 	!defined(CONFIG_TARGET_MCCMON6) && !defined(CONFIG_TARGET_X600) && \
-	!defined(CONFIG_TARGET_EDMINIV2)) || \
 	!defined(CONFIG_SPL_BUILD)
 #define LOADENV
 #endif
