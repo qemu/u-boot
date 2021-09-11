@@ -86,6 +86,16 @@ Step-2: Flashing NAND via MMC/SD
 Step-3: Set BOOTSEL pin to select NAND boot, and POR the device.
 	The device should boot from images flashed on NAND device.
 
+Ethernet Boot
+-------------
+
+The AM335x SoC supports booting from CPSW ethernet.  This feature is not
+enabled in U-Boot by default.  In order to support this ``CONFIG_SPL_ETH``
+needs to be enabled and in order to have U-Boot fit within size constraints you
+will need to disable some other functionality.  Disabling
+``CONFIG_SPL_USB_GADGET`` and ``CONFIG_SPL_MUSB_NEW`` is recommended as this is
+used to provide SPL support via USB networking instead, which is unlikely to be
+used in the same design.
 
 Falcon Mode
 -----------
