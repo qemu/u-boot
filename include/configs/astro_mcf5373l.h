@@ -74,13 +74,6 @@
 
 #define CONFIG_SYS_UNIFY_CACHE
 
-/*
- * Define baudrate for UART1 (console output, tftp, ...)
- * default value of CONFIG_BAUDRATE for Sentec board: 19200 baud
- * CONFIG_SYS_BAUDRATE_TABLE defines values that can be selected
- * in u-boot command interface
- */
-
 #define CONFIG_MCFUART
 #define CONFIG_SYS_UART_PORT		(2)
 #define CONFIG_SYS_UART2_ALT3_GPIO

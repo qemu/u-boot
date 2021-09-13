@@ -33,10 +33,6 @@
 #define CONFIG_SYS_NS16550_COM1		0xb0000c00
 #endif
 
-/* UART */
-#define CONFIG_SYS_BAUDRATE_TABLE	{ 9600, 19200, 38400, 57600, 115200, \
-					  230400, 460800, 921600 }
-
 /* RAM */
 
 /* Memory usage */

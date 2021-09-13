@@ -25,7 +25,6 @@
 
 /* prompt */
 #define CONFIG_SYS_PBSIZE		256
-#define CONFIG_SYS_BAUDRATE_TABLE	{ 115200 }
 
 /* SCIF */
 #define CONFIG_CONS_SCIF4

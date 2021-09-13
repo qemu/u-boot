@@ -16,11 +16,6 @@
 
 #define CONFIG_SYS_BOOTM_LEN	(64 * 1024 * 1024)
 
-/* uart */
-/* The following table includes the supported baudrates */
-# define CONFIG_SYS_BAUDRATE_TABLE \
-	{300, 600, 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200, 230400}
-
 /* setting reset address */
 /*#define	CONFIG_SYS_RESET_ADDRESS	CONFIG_SYS_TEXT_BASE*/
 

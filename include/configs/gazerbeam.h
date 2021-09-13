@@ -46,9 +46,6 @@
 #define CONFIG_SYS_MAX_FLASH_BANKS	1 /* number of banks */
 #define CONFIG_SYS_MAX_FLASH_SECT	135
 
-#define CONFIG_SYS_BAUDRATE_TABLE  \
-	{300, 600, 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200}
-
 /*
  * Environment
  */

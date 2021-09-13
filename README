@@ -2188,9 +2188,6 @@ Configuration Settings:
 		the application (usually a Linux kernel) when it is
 		booted
 
-- CONFIG_SYS_BAUDRATE_TABLE:
-		List of legal baudrate settings for this board.
-
 - CONFIG_SYS_MEM_RESERVE_SECURE
 		Only implemented for ARMv8 for now.
 		If defined, the size of CONFIG_SYS_MEM_RESERVE_SECURE memory

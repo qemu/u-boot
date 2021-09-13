@@ -24,6 +24,81 @@ config BAUDRATE
 	  in the SPL stage (most drivers) or for choosing a default baudrate
 	  in the absence of an environment setting (serial_mxc.c).
 
+choice
+	prompt "Supported baudrate table to use"
+	default BAUDRATE_TABLE_9600_TO_115200
+	help
+	  Typically U-Boot will support 9600, 19200, 38400, 57600, and 115200
+	  as valid baudrates for the serial ports.  This is the default option
+	  here.  A number of alternatives are used in some cases and the exact
+	  list of rates can be seen in the help for each item.
+
+config BAUDRATE_TABLE_300_TO_38400_115200
+	bool "Use a table of 300 to 38400 and then 115200"
+	help
+	  Use a table of: { 300, 600, 1200, 2400, 4800, 9600, 19200, 38400, 115200 }
+
+config BAUDRATE_TABLE_300_TO_115200
+	bool "Use a table of 300 to 115200"
+	help
+	  Use a table of: { 300, 600, 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200 }
+
+config BAUDRATE_TABLE_300_TO_230400
+	bool "Use a table of 300 to 230400"
+	help
+	  Use a table of: { 300, 600, 1200, 2400, 4800, 9600, 19200, 38400, 57600,
+	  115200, 230400 }
+
+config BAUDRATE_TABLE_300_TO_6000000
+	bool "Use a table of 300 to 6000000"
+	help
+	  Use a table of: { 300, 600, 1200, 1800, 2400, 4800, 9600, 19200, 38400,
+	  57600, 115200, 230400, 460800, 500000, 576000, 921600, 1000000, 1152000,
+	  1500000, 2000000, 2500000, 3000000, 3500000, 4000000, 4500000, 5000000,
+	  5500000, 6000000 }
+
+config BAUDRATE_TABLE_4800_TO_115200
+	bool "Use a table of 4800 to 115200"
+	help
+	  Use a table of: { 4800, 9600, 19200, 38400, 57600, 115200 }
+
+config BAUDRATE_TABLE_9600_TO_115200
+	bool "Use a table of 9600 to 115200"
+	help
+	  Use a table of: { 9600, 19200, 38400, 57600, 115200 }
+
+config BAUDRATE_TABLE_9600_TO_230400
+	bool "Use a table of 9600 to 230400"
+	help
+	  Use a table of: { 9600, 19200, 38400, 57600, 115200, 230400 }
+
+config BAUDRATE_TABLE_9600_TO_460800
+	bool "Use a table of 9600 to 460800"
+	help
+	  Use a table of: { 9600, 19200, 38400, 57600, 115200, 230400, 460800 }
+
+config BAUDRATE_TABLE_9600_TO_921600
+	bool "Use a table of 9600 to 921600"
+	help
+	  Use a table of: { 9600, 19200, 38400, 57600, 115200, 230400, 460800, 921600 }
+
+config BAUDRATE_TABLE_9600_TO_230400_500000_1500000
+	bool "Use a table of 9600 to 230400 and then 500000 and 1500000"
+	help
+	  Use a table of: { 9600, 19200, 38400, 57600, 115200, 230400, 500000, 1500000 }
+
+config BAUDRATE_TABLE_38400_115200_ONLY
+	bool "Use a table of 38400 and 115200 only"
+	help
+	  Use a table of: { 38400, 115200 }
+
+config BAUDRATE_TABLE_115200_ONLY
+	bool "Use a table of only 115200"
+	help
+	  Use a table of: { 115200 }
+
+endchoice
+
 config REQUIRE_SERIAL_CONSOLE
 	bool "Require a serial port for console"
 	# Running without a serial console is not supported by the

@@ -31,8 +31,6 @@
 #define CONFIG_SYS_NS16550_SERIAL
 #define CONFIG_SYS_NS16550_REG_SIZE	(-4)
 #endif /* !CONFIG_DM_SERIAL */
-#define CONFIG_SYS_BAUDRATE_TABLE	{4800, 9600, 19200, 38400, 57600, \
-					115200}
 
 /* Select serial console configuration */
 #ifdef CONFIG_SPL_BUILD

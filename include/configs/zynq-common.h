@@ -28,11 +28,6 @@
 #define CONFIG_SYS_TIMER_COUNTS_DOWN
 #define CONFIG_SYS_TIMER_COUNTER	(CONFIG_SYS_TIMERBASE + 0x4)
 
-/* Serial drivers */
-/* The following table includes the supported baudrates */
-#define CONFIG_SYS_BAUDRATE_TABLE  \
-	{300, 600, 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200, 230400}
-
 /* Ethernet driver */
 #if defined(CONFIG_ZYNQ_GEM)
 # define CONFIG_SYS_FAULT_ECHO_LINK_DOWN

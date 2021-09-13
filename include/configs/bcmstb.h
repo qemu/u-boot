@@ -111,12 +111,6 @@ extern phys_addr_t prior_stage_fdt_address;
 #define CONFIG_SYS_NS16550_CLK		V_NS16550_CLK
 
 /*
- * Serial console configuration.
- */
-#define CONFIG_SYS_BAUDRATE_TABLE	{4800, 9600, 19200, 38400, 57600, \
-					 115200}
-
-/*
  * Informational display configuration.
  */
 

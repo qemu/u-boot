@@ -17,14 +17,6 @@
 
 #define CONFIG_SYS_BOOTM_LEN	SZ_64M /* Increase max gunzip size */
 
-#define CONFIG_SYS_BAUDRATE_TABLE	{ 300, 600, 1200, 1800, 2400, 4800, \
-					  9600, 19200, 38400, 57600, 115200, \
-					  230400, 460800, 500000, 576000, \
-					  921600, 1000000, 1152000, 1500000, \
-					  2000000, 2500000, 3000000, 3500000, \
-					  4000000, 4500000, 5000000, 5500000, \
-					  6000000 }
-
 #define	CONFIG_SYS_CBSIZE	1024	/* Console I/O Buff Size */
 
 /*

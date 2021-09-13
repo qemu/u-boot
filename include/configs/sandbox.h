@@ -46,9 +46,6 @@
 		(SB_TO_UL(CONFIG_SANDBOX_RAM_SIZE_MB) << 20)
 #define CONFIG_SYS_MONITOR_BASE	0
 
-#define CONFIG_SYS_BAUDRATE_TABLE	{4800, 9600, 19200, 38400, 57600,\
-					115200}
-
 #define BOOT_TARGET_DEVICES(func) \
 	func(HOST, host, 1) \
 	func(HOST, host, 0)
