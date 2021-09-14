@@ -158,22 +158,31 @@ static struct spi_flash *parse_dev(char *devstr)
 int dfu_fill_entity_sf(struct dfu_entity *dfu, char *devstr, char *s)
 {
 	char *st;
-	char *devstr_bkup = strdup(devstr);
-
-	dfu->data.sf.dev = parse_dev(devstr_bkup);
-	free(devstr_bkup);
-	if (!dfu->data.sf.dev)
-		return -ENODEV;
 
 	dfu->dev_type = DFU_DEV_SF;
 	dfu->max_buf_size = dfu->data.sf.dev->sector_size;
 
 	st = strsep(&s, " ");
 	if (!strcmp(st, "raw")) {
+		char *devstr_bkup = strdup(devstr);
+		dfu->data.sf.dev = parse_dev(devstr_bkup);
+		free(devstr_bkup);
+		if (!dfu->data.sf.dev)
+			return -ENODEV;
+
 		dfu->layout = DFU_RAW_ADDR;
 		dfu->data.sf.start = hextoul(s, &s);
 		s++;
 		dfu->data.sf.size = hextoul(s, &s);
+	} else if (!strcmp(st, "sf")) {
+		st = strsep(&s, " ");
+		dfu->data.sf.dev = parse_dev(st);
+		if (!dfu->data.sf.dev)
+			return -ENODEV;
+
+		dfu->layout = DFU_RAW_ADDR;
+		dfu->data.sf.start = 0;
+		dfu->data.sf.size = dfu->data.sf.dev->size;
 	} else if (CONFIG_IS_ENABLED(DFU_SF_PART) &&
 		   (!strcmp(st, "part") || !strcmp(st, "partubi"))) {
 		char mtd_id[32];
