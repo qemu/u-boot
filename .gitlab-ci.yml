@@ -47,7 +47,7 @@ stages:
       export PYTHONPATH=/tmp/uboot-test-hooks/py/travis-ci;
       ./test/py/test.py -ra --bd ${TEST_PY_BD} ${TEST_PY_ID}
         ${TEST_PY_TEST_SPEC:+"-k ${TEST_PY_TEST_SPEC}"}
-        --build-dir "$UBOOT_TRAVIS_BUILD_DIR"
+        --build-dir "$UBOOT_TRAVIS_BUILD_DIR" -ra -s
 
 # QA jobs for code analytics
 # static code analysis with cppcheck (we can add --enable=all later)
