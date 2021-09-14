@@ -75,6 +75,9 @@ ITS_DATA = '''
             compression = "%(efi-comp)s";
             load = <0x0>;
             entry = <0x0>;
+            hash-1 {
+                    algo = "crc32";
+            };
         };
         fdt {
             description = "Test FDT";
@@ -82,6 +85,9 @@ ITS_DATA = '''
             type = "flat_dt";
             arch = "%(sys-arch)s";
             compression = "%(fdt-comp)s";
+            hash-1 {
+                    algo = "crc32";
+            };
         };
     };
 
