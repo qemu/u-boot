@@ -8,7 +8,6 @@ image: trini/u-boot-gitlab-ci-runner:focal-20210723-04Aug2021
 stages:
   - testsuites
   - test.py
-  - world build
 
 .buildman_and_testpy_template: &buildman_and_testpy_dfn
   stage: test.py
@@ -49,49 +48,6 @@ stages:
       ./test/py/test.py -ra --bd ${TEST_PY_BD} ${TEST_PY_ID}
         ${TEST_PY_TEST_SPEC:+"-k ${TEST_PY_TEST_SPEC}"}
         --build-dir "$UBOOT_TRAVIS_BUILD_DIR"
-
-build all 32bit ARM platforms:
-  stage: world build
-  script:
-    - ret=0;
-      ./tools/buildman/buildman -o /tmp -P -E -W arm -x aarch64 || ret=$?;
-      if [[ $ret -ne 0 ]]; then
-        ./tools/buildman/buildman -o /tmp -seP;
-        exit $ret;
-      fi;
-
-build all 64bit ARM platforms:
-  stage: world build
-  script:
-    - virtualenv -p /usr/bin/python3 /tmp/venv
-    - . /tmp/venv/bin/activate
-    - pip install pyelftools
-    - ret=0;
-      ./tools/buildman/buildman -o /tmp -P -E -W aarch64 || ret=$?;
-      if [[ $ret -ne 0 ]]; then
-        ./tools/buildman/buildman -o /tmp -seP;
-        exit $ret;
-      fi;
-
-build all PowerPC platforms:
-  stage: world build
-  script:
-    - ret=0;
-      ./tools/buildman/buildman -o /tmp -P -E -W powerpc || ret=$?;
-      if [[ $ret -ne 0 ]]; then
-        ./tools/buildman/buildman -o /tmp -seP;
-        exit $ret;
-      fi;
-
-build all other platforms:
-  stage: world build
-  script:
-    - ret=0;
-      ./tools/buildman/buildman -o /tmp -P -E -W -x arm,powerpc || ret=$?;
-      if [[ $ret -ne 0 ]]; then
-        ./tools/buildman/buildman -o /tmp -seP;
-        exit $ret;
-      fi;
 
 # QA jobs for code analytics
 # static code analysis with cppcheck (we can add --enable=all later)
