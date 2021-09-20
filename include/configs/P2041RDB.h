@@ -171,7 +171,6 @@ unsigned long get_board_sys_clk(unsigned long dummy);
 
 #define CONFIG_SYS_NAND_BASE_LIST     {CONFIG_SYS_NAND_BASE}
 #define CONFIG_SYS_MAX_NAND_DEVICE	1
-#define CONFIG_SYS_NAND_BLOCK_SIZE    (128 * 1024)
 
 /* NAND flash config */
 #define CONFIG_SYS_NAND_BR_PRELIM  (BR_PHYS_ADDR(CONFIG_SYS_NAND_BASE_PHYS) \
