@@ -461,6 +461,15 @@ int spl_board_boot_device(u32 boot_device);
 void __noreturn jump_to_image_linux(struct spl_image_info *spl_image);
 
 /**
+ * jump_to_image_linux() - Jump to OP-TEE OS from SPL
+ *
+ * This jumps into OP-TEE OS using the information in @spl_image.
+ *
+ * @spl_image: Image description to set up
+ */
+void __noreturn jump_to_image_optee(struct spl_image_info *spl_image);
+
+/**
  * spl_start_uboot() - Check if SPL should start the kernel or U-Boot
  *
  * This is called by the various SPL loaders to determine whether the board
