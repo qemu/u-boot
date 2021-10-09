@@ -11,6 +11,7 @@
 #include <env.h>
 #include <lmb.h>
 #include <log.h>
+#include <lz4.h>
 #include <malloc.h>
 #include <u-boot/crc.h>
 
@@ -44,6 +45,7 @@ DECLARE_GLOBAL_DATA_PTR;
 #endif
 
 #else /* USE_HOSTCC */
+#include "lz4.h"
 #include "mkimage.h"
 #include <u-boot/md5.h>
 #include <time.h>
@@ -61,7 +63,6 @@ DECLARE_GLOBAL_DATA_PTR;
 #include <display_options.h>
 #include <gzip.h>
 #include <image.h>
-#include <lz4.h>
 #include <imximage.h>
 #include <relocate.h>
 #include <linux/lzo.h>
