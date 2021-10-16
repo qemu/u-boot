@@ -334,7 +334,7 @@ static int select_ramdisk(bootm_headers_t *images, const char *select, u8 arch,
 
 	if (select) {
 		ulong default_addr;
-		bool done = true;
+		bool done = false;
 
 		if (CONFIG_IS_ENABLED(FIT)) {
 			/*
@@ -352,13 +352,13 @@ static int select_ramdisk(bootm_headers_t *images, const char *select, u8 arch,
 					   &fit_uname_config)) {
 				debug("*  ramdisk: config '%s' from image at 0x%08lx\n",
 				      fit_uname_config, rd_addr);
+				done = true;
 			} else if (fit_parse_subimage(select, default_addr,
 						      &rd_addr,
 						      &fit_uname_ramdisk)) {
 				debug("*  ramdisk: subimage '%s' from image at 0x%08lx\n",
 				      fit_uname_ramdisk, rd_addr);
-			} else {
-				done = false;
+				done = true;
 			}
 		}
 		if (!done) {
