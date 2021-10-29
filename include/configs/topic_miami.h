@@ -23,7 +23,6 @@
 #define CONFIG_SPL_FS_LOAD_PAYLOAD_NAME     "u-boot.img"
 
 /* No falcon support */
-#undef CONFIG_SPL_OS_BOOT
 
 /* FPGA commands that we don't use */
 

@@ -293,33 +293,6 @@ board_init_r():
 
 	SPL-specific notes:
 	- stack is optionally in SDRAM, if CONFIG_SPL_STACK_R is defined and
-		CONFIG_SPL_STACK_R_ADDR points into SDRAM
-	- preloader_console_init() can be called here - typically this is
-		done by selecting CONFIG_SPL_BOARD_INIT and then supplying a
-		spl_board_init() function containing this call
-	- loads U-Boot or (in falcon mode) Linux
-
-
-Configuration Options:
-----------------------
-
-Configuration depends on the combination of board and CPU type; all
-such information is kept in a configuration file
-"include/configs/<board_name>.h".
-
-Example: For a TQM823L module, all configuration settings are in
-"include/configs/TQM823L.h".
-
-
-Many of the options are named exactly as the corresponding Linux
-kernel configuration options. The intention is to make it easier to
-build a config tool - later.
-
-- ARM Platform Bus Type(CCI):
-		CoreLink Cache Coherent Interconnect (CCI) is ARM BUS which
-		provides full cache coherency between two clusters of multi-core
-		CPUs and I/O coherency for devices and I/O masters
-
 		CONFIG_SYS_FSL_HAS_CCI400
 
 		Defined For SoC that has cache coherent interconnect
@@ -1941,9 +1914,6 @@ The following options need to be configured:
 		CONFIG_SPL
 		Enable building of SPL globally.
 
-		CONFIG_SPL_LDSCRIPT
-		LDSCRIPT for linking the SPL binary.
-
 		CONFIG_SPL_MAX_FOOTPRINT
 		Maximum size in memory allocated to the SPL, BSS included.
 		When defined, the linker checks that the actual memory
@@ -1959,8 +1929,6 @@ The following options need to be configured:
 
 		CONFIG_SPL_RELOC_TEXT_BASE
 		Address to relocate to.  If unspecified, this is equal to
-		CONFIG_SPL_TEXT_BASE (i.e. no relocation is done).
-
 		CONFIG_SPL_BSS_START_ADDR
 		Link address for the BSS within the SPL binary.
 
@@ -1997,10 +1965,6 @@ The following options need to be configured:
 
 		CONFIG_SYS_SPL_MALLOC_SIZE
 		The size of the malloc pool used in SPL.
-
-		CONFIG_SPL_OS_BOOT
-		Enable booting directly to an OS from SPL.
-		See also: doc/README.falcon
 
 		CONFIG_SPL_DISPLAY_PRINT
 		For ARM, enable an optional function to print more information
