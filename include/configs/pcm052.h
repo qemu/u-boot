@@ -38,7 +38,6 @@
 #endif
 
 /* boot command, including the target-defined one if any */
-#define CONFIG_BOOTCOMMAND	PCM052_BOOTCOMMAND "run bootcmd_nand"
 
 /* Extra env settings (including the target-defined ones if any) */
 #define CONFIG_EXTRA_ENV_SETTINGS \

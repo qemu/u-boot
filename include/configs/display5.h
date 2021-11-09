@@ -56,16 +56,6 @@
 #define CONFIG_SYS_FSL_ESDHC_ADDR	0
 #define CONFIG_SYS_FSL_USDHC_NUM	2
 
-#ifndef CONFIG_BOOTCOMMAND
-#define CONFIG_BOOTCOMMAND "if run check_em_pad; then " \
-	     "run recovery;" \
-	"else if test ${BOOT_FROM} = FACTORY; then " \
-	     "run factory_nfs;" \
-	"else " \
-	     "run boot_mmc;" \
-	"fi;fi"
-#endif
-
 #define PARTS_DEFAULT \
 	/* Linux partitions */ \
 	"partitions=" \

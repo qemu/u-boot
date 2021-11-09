@@ -76,7 +76,6 @@
 #define CONFIG_BOARD_SIZE_LIMIT		520192
 
 /* boot command, including the target-defined one if any */
-#define CONFIG_BOOTCOMMAND	BK4_BOOTCOMMAND "run bootcmd_nand"
 
 /* Extra env settings (including the target-defined ones if any) */
 #define CONFIG_EXTRA_ENV_SETTINGS \
