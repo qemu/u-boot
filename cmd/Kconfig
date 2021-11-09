@@ -220,15 +220,22 @@ config BOOTM_EFI
 
 config CMD_BOOTZ
 	bool "bootz"
+	default y if !FIT_SIGNATURE && !EFI_SECURE_BOOT
 	help
 	  Boot the Linux zImage
+	  The bootz command is used for launching unsigned Linux zImage.
+	  If you want to have secure boot either via signed FIT images or via
+	  signed UEFI images, this option should be disabled.
 
 config CMD_BOOTI
 	bool "booti"
 	depends on ARM64 || RISCV
-	default y
+	default y if !FIT_SIGNATURE && !EFI_SECURE_BOOT
 	help
-	  Boot an AArch64 Linux Kernel image from memory.
+	  Boot an AArch64/RISC-V Linux Kernel image from memory.
+	  The booti command is used for launching unsigned AArch64 and RISC-V
+	  Linux kernel images. If you want to have secure boot either via signed
+	  FIT images or via signed UEFI images, this option should be disabled.
 
 config BOOTM_LINUX
 	bool "Support booting Linux OS images"
