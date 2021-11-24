@@ -239,6 +239,7 @@ IRQ_STACK_START_IN:
 	mov	r1, lr
 	stmia	r5, {r0 - r3}	@ save sp_SVC, lr_SVC, pc, cpsr
 	mov	r0, sp		@ save current stack into r0 (param register)
+	mov	r1, #0      @ set r1 param to 0, not hypervisor mode
 	.endm
 
 	.macro get_bad_stack
@@ -321,7 +322,8 @@ fiq:
 	str	r1, [sp, #S_PC]
 	str	r2, [sp, #S_PSR]
 	str	r0, [sp, #S_OLD_R0]
-	mov	r0, sp
+	mov	r0, sp		@ set r0 param to struct pt_regs on stack
+	mov	r1, #1      @ set r1 param to 1, hypervisor mode
 	.endm
 
 hyp_undefined_instruction:
