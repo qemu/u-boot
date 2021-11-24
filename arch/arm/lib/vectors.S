@@ -117,6 +117,39 @@ _not_used:		.word not_used
 _irq:			.word irq
 _fiq:			.word fiq
 
+#ifdef CONFIG_CPU_V7_HAS_VIRT
+/*
+ *************************************************************************
+ *
+ * Hypervisor mode interrupt vectors table
+ *
+ *************************************************************************
+ */
+
+	.globl	hyp_vector_table
+
+	.align	5
+hyp_vector_table:
+	ldr	pc, _hyp_reset
+	ldr	pc, _hyp_undefined_instruction
+	ldr	pc, _hyp_software_interrupt
+	ldr	pc, _hyp_prefetch_abort
+	ldr	pc, _hyp_data_abort
+	ldr	pc, _hyp_not_used
+	ldr	pc, _hyp_irq
+	ldr	pc, _hyp_fiq
+
+_hyp_reset:			.word reset
+_hyp_undefined_instruction:	.word hyp_undefined_instruction
+_hyp_software_interrupt:	.word hyp_software_interrupt
+_hyp_prefetch_abort:	.word hyp_prefetch_abort
+_hyp_data_abort:		.word hyp_data_abort
+_hyp_not_used:		.word hyp_not_used
+_hyp_irq:			.word hyp_irq
+_hyp_fiq:			.word hyp_fiq
+
+#endif  /* CONFIG_CPU_V7_HAS_VIR
+
 	.balignl 16,0xdeadbeef
 
 /*
@@ -139,6 +172,15 @@ data_abort:
 not_used:
 irq:
 fiq:
+#ifdef CONFIG_CPU_V7_HAS_VIRT
+hyp_undefined_instruction:
+hyp_software_interrupt:
+hyp_prefetch_abort:
+hyp_data_abort:
+hyp_not_used:
+hyp_irq:
+hyp_fiq:
+#endif  /* CONFIG_CPU_V7_HAS_VIRT
 1:
 	b	1b			/* hang and never return */
 
@@ -288,5 +330,58 @@ fiq:
 	get_bad_stack
 	bad_save_user_regs
 	bl	do_fiq
+
+#ifdef CONFIG_CPU_V7_HAS_VIRT
+
+/**
+ * Hypervisor mode exception handlers
+ *
+ * If exception is taken to EL2, U-Boot must have been running in hypervisor
+ * mode. Use the existing stack to save register values onto because
+ * overwriting the stack pointer would leave no way to inspect its value.
+ */
+
+	.macro	hyp_enter_exception
+	str	sp, [sp, #(-S_FRAME_SIZE + S_SP)]
+	sub	sp, sp, #S_FRAME_SIZE
+	stmia	sp, {r0 - r12}
+	mrs	r1, elr_hyp
+	mrs	r2, spsr
+	str	lr, [sp, #S_LR]
+	str	r1, [sp, #S_PC]
+	str	r2, [sp, #S_PSR]
+	str	r0, [sp, #S_OLD_R0]
+	mov	r0, sp
+	.endm
+
+hyp_undefined_instruction:
+	hyp_enter_exception
+	bl	do_undefined_instruction
+
+hyp_software_interrupt:
+	hyp_enter_exception
+	bl	do_software_interrupt
+
+hyp_prefetch_abort:
+	hyp_enter_exception
+	bl	do_prefetch_abort
+
+hyp_data_abort:
+	hyp_enter_exception
+	bl	do_data_abort
+
+hyp_not_used:
+	hyp_enter_exception
+	bl	do_not_used
+
+hyp_irq:
+	hyp_enter_exception
+	bl	do_irq
+
+hyp_fiq:
+	hyp_enter_exception
+	bl	do_fiq
+
+#endif  /* CONFIG_CPU_V7_HAS_VIRT */
 
 #endif	/* CONFIG_SPL_BUILD */
