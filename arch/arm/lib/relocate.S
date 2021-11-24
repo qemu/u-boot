@@ -60,6 +60,19 @@ ENTRY(relocate_vectors)
 	ldmia	r0!, {r2-r8,r10}
 	stmia	r1!, {r2-r8,r10}
 #endif
+#ifdef CONFIG_CPU_V7_HAS_VIRT
+	/*
+	* If the ARM processor has the virtualization extensions and running in HYP
+	* mode, use HVBAR to relocate the EL2 exception vectors.
+	*/
+	mrs	r1, cpsr
+	and	r1, r1, #0x1f		@ mask mode bits
+	teq	r1, #0x1a		@ test for HYP mode
+	bne	skip_relocate_hvbar
+	ldr	r0, =hyp_vector_table   /* load dynamically relocated address */
+	mcr	p15, 4, r0, c12, c0, 0  /* Set HVBAR */
+skip_relocate_hvbar:
+#endif
 #endif
 	bx	lr
 
