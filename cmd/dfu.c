@@ -50,7 +50,6 @@ static int do_dfu(struct cmd_tbl *cmdtp, int flag, int argc, char *const argv[])
 	if (!strcmp(argv[1], "tftp"))
 		return update_tftp(value, interface, devstring);
 #endif
-#ifdef CONFIG_DFU_OVER_USB
 	ret = dfu_init_env_entities(interface, devstring);
 	if (ret)
 		goto done;
@@ -65,6 +64,7 @@ static int do_dfu(struct cmd_tbl *cmdtp, int flag, int argc, char *const argv[])
 		goto done;
 	}
 
+#ifdef CONFIG_DFU_OVER_USB
 	int controller_index = simple_strtoul(usb_controller, NULL, 0);
 	bool retry = false;
 	do {
@@ -79,9 +79,9 @@ static int do_dfu(struct cmd_tbl *cmdtp, int flag, int argc, char *const argv[])
 		}
 	} while (retry);
 
+#endif
 done:
 	dfu_free_entities();
-#endif
 	return ret;
 }
 
@@ -100,8 +100,8 @@ U_BOOT_CMD(dfu, CONFIG_SYS_MAXARGS, 1, do_dfu,
 #ifdef CONFIG_DFU_TIMEOUT
 	"    [<timeout>] - specify inactivity timeout in seconds\n"
 #endif
-	"    [list] - list available alt settings\n"
 #endif
+	"    [list] - list available alt settings\n"
 #ifdef CONFIG_DFU_OVER_TFTP
 #ifdef CONFIG_DFU_OVER_USB
 	"dfu "
