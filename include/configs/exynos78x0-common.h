@@ -67,8 +67,6 @@
 #define PHYS_SDRAM_12		(CONFIG_SYS_SDRAM_BASE + (11 * SDRAM_BANK_SIZE))
 #define PHYS_SDRAM_12_SIZE	SDRAM_BANK_SIZE
 
-#define CONFIG_DEBUG_UART_CLOCK	132710400
-
 #define CONFIG_PREBOOT \
 "echo Read pressed buttons status;" \
 "KEY_VOLUMEUP=gpa20;" \
