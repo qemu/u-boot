@@ -50,6 +50,4 @@
 
 #define CONFIG_SPL_START_S_PATH		"arch/mips/mach-jz47xx"
 
-#define CONFIG_SYS_MMCSD_RAW_MODE_U_BOOT_SECTOR	0x1c	/* 14 KiB offset */
-
 #endif /* __CONFIG_CI20_H__ */
