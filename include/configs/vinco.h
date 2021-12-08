@@ -34,7 +34,6 @@
 
 #ifdef CONFIG_CMD_SF
 #define CONFIG_ATMEL_SPI0
-#define CONFIG_SPI_FLASH_STMICRO
 #endif
 
 /* MMC */

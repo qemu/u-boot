@@ -100,9 +100,6 @@
 		CONFIG_SYS_SCSI_MAX_LUN)
 
 /* SPI */
-#if defined(CONFIG_QSPI_BOOT) || defined(CONFIG_SD_BOOT_QSPI)
-#define CONFIG_SPI_FLASH_SPANSION
-#endif
 
 /*
  * eTSEC
