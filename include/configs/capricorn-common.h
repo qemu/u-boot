@@ -11,7 +11,6 @@
 #include <asm/arch/imx-regs.h>
 
 #include "siemens-env-common.h"
-#include "siemens-ccp-common.h"
 
 /* SPL config */
 #ifdef CONFIG_SPL_BUILD
@@ -34,9 +33,6 @@
 #endif /* CONFIG_SPL_BUILD */
 
 #define CONFIG_FACTORYSET
-
-#undef CONFIG_IDENT_STRING
-#define CONFIG_IDENT_STRING		GENERATE_CCP_VERSION("01", "07")
 
 #define CONFIG_REMAKE_ELF
 

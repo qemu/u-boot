@@ -1624,13 +1624,6 @@ The following options need to be configured:
 		Time to wait after FPGA configuration. The default is
 		200 ms.
 
-- Configuration Management:
-
-		CONFIG_IDENT_STRING
-
-		If defined, this string will be added to the U-Boot
-		version information (U_BOOT_VERSION)
-
 - Vendor Parameter Protection:
 
 		U-Boot considers the values of the environment
