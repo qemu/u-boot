@@ -668,11 +668,6 @@ The following options need to be configured:
 		this option (see include/fdtdec.h file).
 
 - Watchdog:
-		CONFIG_HW_WATCHDOG
-		When using a watchdog circuitry external to the used
-		SoC, then define this variable and provide board
-		specific code for the "hw_watchdog_reset" function.
-
 		CONFIG_SYS_WATCHDOG_FREQ
 		Some platforms automatically call WATCHDOG_RESET()
 		from the timer interrupt handler every

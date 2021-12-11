@@ -67,7 +67,6 @@
 /* Watchdog */
 #if defined(CONFIG_SPL_BUILD)
 #undef CONFIG_WDT
-#define CONFIG_HW_WATCHDOG
 #endif
 
 #ifndef CONFIG_SPL_BUILD
