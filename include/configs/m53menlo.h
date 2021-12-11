@@ -205,7 +205,6 @@
 		"fi\0"
 
 #if defined(CONFIG_SPL_BUILD)
-#undef CONFIG_WATCHDOG
 #define CONFIG_HW_WATCHDOG
 #endif
 
