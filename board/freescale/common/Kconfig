@@ -28,7 +28,7 @@ config FSL_USE_PCA9547_MUX
 	 This option enables the PCA9547 I2C mux on Freescale boards.
 
 config VID
-	depends on DM_I2C
+	depends on I2C || DM_I2C
 	bool "Enable Freescale VID"
 	help
 	 This option enables setting core voltage based on individual

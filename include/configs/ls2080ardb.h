@@ -21,9 +21,6 @@
 #define CONFIG_VOL_MONITOR_IR36021_SET
 
 #define CONFIG_VID_FLS_ENV		"ls2080ardb_vdd_mv"
-#ifndef CONFIG_SPL_BUILD
-#define CONFIG_VID
-#endif
 /* step the IR regulator in 5mV increments */
 #define IR_VDD_STEP_DOWN		5
 #define IR_VDD_STEP_UP			5
