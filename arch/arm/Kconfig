@@ -1907,6 +1907,7 @@ config ARCH_OCTEONTX
 	select OF_LIVE
 	select BOARD_LATE_INIT
 	select SYS_CACHE_SHIFT_7
+	select SYS_PCI_64BIT
 
 config ARCH_OCTEONTX2
 	bool "Support OcteonTX2 SoCs"
@@ -1918,6 +1919,7 @@ config ARCH_OCTEONTX2
 	select OF_LIVE
 	select BOARD_LATE_INIT
 	select SYS_CACHE_SHIFT_7
+	select SYS_PCI_64BIT
 
 config TARGET_THUNDERX_88XX
 	bool "Support ThunderX 88xx"
