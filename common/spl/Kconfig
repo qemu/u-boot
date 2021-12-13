@@ -1380,7 +1380,7 @@ config TPL_POWER
 
 config TPL_TEXT_BASE
 	hex "Base address for the .text section of the TPL stage"
-	depends on TPL_NEEDS_SEPARATE_TEXT_BASE
+	depends on TPL_NEEDS_SEPARATE_TEXT_BASE || X86
 	help
 	  The base address for the .text section of the TPL stage.
 
