@@ -1,0 +1,6 @@
+config PINCTRL_NPCM8XX
+	bool "Pinctrl and GPIO driver for Nuvoton NPCM8XX"
+	depends on DM && PINCTRL_GENERIC && ARCH_NPCM8XX
+	help
+	  Say Y here to enable pin controller and GPIO support
+	  for Nuvoton NPCM8xx SoCs.
