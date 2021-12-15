@@ -92,6 +92,7 @@ machine-$(CONFIG_ARCH_VERSAL)		+= versal
 machine-$(CONFIG_ARCH_ZYNQ)		+= zynq
 machine-$(CONFIG_ARCH_ZYNQMP)		+= zynqmp
 machine-$(CONFIG_ARCH_ZYNQMP_R5)	+= zynqmp-r5
+machine-$(CONFIG_ARCH_NPCM)		+= nuvoton
 
 machdirs := $(patsubst %,arch/arm/mach-%/,$(machine-y))
 

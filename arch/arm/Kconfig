@@ -1986,6 +1986,12 @@ config TARGET_XENGUEST_ARM64
 	select SSCANF
 	imply OF_HAS_PRIOR_STAGE
 
+config ARCH_NPCM
+	bool "Support Nuvoton SoCs"
+	select DM
+	select OF_CONTROL
+	imply CMD_DM
+
 endchoice
 
 config SUPPORT_PASSING_ATAGS
@@ -2191,6 +2197,8 @@ source "arch/arm/cpu/armv8/Kconfig"
 source "arch/arm/mach-imx/Kconfig"
 
 source "arch/arm/mach-nexell/Kconfig"
+
+source "arch/arm/mach-nuvoton/Kconfig"
 
 source "board/armltd/total_compute/Kconfig"
 
