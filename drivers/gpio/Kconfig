@@ -535,6 +535,13 @@ config NOMADIK_GPIO
 	  into a number of banks each with 32 GPIOs. The GPIOs for a device are
 	  defined in the device tree with one node for each bank.
 
+config NPCM_GPIO
+	bool "NuvoTon NPCM GPIO driver"
+	depends on DM_GPIO
+	help
+	  Support GPIO controllers on NuvoTon NPCM SoCs.
+	  It contains eight GPIO modules with total 256 pins.
+
 config ZYNQMP_GPIO_MODEPIN
 	bool "ZynqMP gpio modepin"
 	depends on DM_GPIO
