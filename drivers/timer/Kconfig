@@ -234,4 +234,11 @@ config IMX_GPT_TIMER
 	  Select this to enable support for the timer found on
 	  NXP i.MX devices.
 
+config NPCM_TIMER
+	bool "Nuvoton NPCM timer support"
+	depends on TIMER
+	help
+	  Select this to enable support for the timer found on
+	  Nuvoton NPCM devices.
+
 endmenu

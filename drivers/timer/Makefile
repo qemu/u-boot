@@ -26,3 +26,4 @@ obj-$(CONFIG_X86_TSC_TIMER)	+= tsc_timer.o
 obj-$(CONFIG_MTK_TIMER)		+= mtk_timer.o
 obj-$(CONFIG_MCHP_PIT64B_TIMER)	+= mchp-pit64b-timer.o
 obj-$(CONFIG_IMX_GPT_TIMER)	+= imx-gpt-timer.o
+obj-$(CONFIG_NPCM_TIMER)	+= npcm_timer.o
