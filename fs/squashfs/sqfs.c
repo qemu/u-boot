@@ -482,13 +482,20 @@ static int sqfs_search_dir(struct squashfs_dir_stream *dirs, char **token_list,
 
 	/* Initialize squashfs_dir_stream members */
 	dirs->table += SQFS_DIR_HEADER_SIZE;
-	dirs->size = get_unaligned_le16(&dir->file_size) - SQFS_DIR_HEADER_SIZE;
+	if (le16_to_cpu(dirs->i_dir.inode_type) == SQFS_DIR_TYPE)
+		dirs->size = get_unaligned_le16(&dir->file_size);
+	else
+		dirs->size = get_unaligned_le32(&ldir->file_size);
+	dirs->size -= SQFS_DIR_HEADER_SIZE;
 	dirs->entry_count = dirs->dir_header->count + 1;
 
 	/* No path given -> root directory */
 	if (!strcmp(token_list[0], "/")) {
 		dirs->table = &dirs->dir_table[offset];
-		memcpy(&dirs->i_dir, dir, sizeof(*dir));
+		if (le16_to_cpu(dirs->i_dir.inode_type) == SQFS_DIR_TYPE)
+			memcpy(&dirs->i_dir, dir, sizeof(*dir));
+		else
+			memcpy(&dirs->i_ldir, ldir, sizeof(*ldir));
 		return 0;
 	}
 
@@ -608,7 +615,10 @@ static int sqfs_search_dir(struct squashfs_dir_stream *dirs, char **token_list,
 		}
 
 		dirs->table += SQFS_DIR_HEADER_SIZE;
-		dirs->size = get_unaligned_le16(&dir->file_size);
+		if (le16_to_cpu(dirs->i_dir.inode_type) == SQFS_DIR_TYPE)
+			dirs->size = get_unaligned_le16(&dir->file_size);
+		else
+			dirs->size = get_unaligned_le32(&ldir->file_size);
 		dirs->entry_count = dirs->dir_header->count + 1;
 		dirs->size -= SQFS_DIR_HEADER_SIZE;
 		free(dirs->entry);
