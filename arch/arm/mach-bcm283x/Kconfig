@@ -188,6 +188,7 @@ config TARGET_RPI_4
 
 	  This option creates a build targeting the ARMv8/AArch64 ISA.
 	select BCM2711_64B
+	imply OF_HAS_PRIOR_STAGE
 
 config TARGET_RPI_ARM64
 	bool "Raspberry Pi one binary 64-bit build"
