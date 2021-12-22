@@ -29,6 +29,7 @@ obj-$(CONFIG_$(SPL_TPL_)RTC) += rtc/
 obj-$(CONFIG_$(SPL_TPL_)SERIAL) += serial/
 obj-$(CONFIG_$(SPL_TPL_)SPI) += spi/
 obj-$(CONFIG_$(SPL_TPL_)TIMER) += timer/
+obj-$(CONFIG_$(SPL_TPL_)VIBRATOR) += vibrator/
 obj-$(CONFIG_$(SPL_TPL_)VIRTIO) += virtio/
 obj-$(CONFIG_$(SPL_)DM_MAILBOX) += mailbox/
 obj-$(CONFIG_$(SPL_)REMOTEPROC) += remoteproc/

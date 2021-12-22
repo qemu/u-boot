@@ -134,6 +134,8 @@ source "drivers/usb/Kconfig"
 
 source "drivers/ufs/Kconfig"
 
+source "drivers/vibrator/Kconfig"
+
 source "drivers/video/Kconfig"
 
 source "drivers/virtio/Kconfig"

@@ -1609,6 +1609,16 @@
 			compatible = "sandbox,regmap_test";
 		};
 	};
+
+	vibrator_left {
+		compatible = "gpio-vibrator";
+		enable-gpios = <&gpio_a 1 0 GPIO_ACTIVE_HIGH>;
+	};
+
+	vibrator_right {
+		compatible = "gpio-vibrator";
+		enable-gpios = <&gpio_a 2 0 GPIO_ACTIVE_HIGH>;
+	};
 };
 
 #include "sandbox_pmic.dtsi"

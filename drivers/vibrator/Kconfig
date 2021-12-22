@@ -1,0 +1,21 @@
+menu "Vibrator Feedback Support"
+
+config VIBRATOR
+	bool "Enable vibration motor support"
+	depends on DM
+	help
+	  Many boards have vibration motorss which can be used to signal status or
+	  alerts. U-Boot provides a uclass API to implement this feature. Vibration
+	  motor drivers can provide access to board-specific vibration motors. Use
+	  of the device tree for configuration is encouraged.
+
+config SPL_VIBRATOR
+	bool "Enable vibration motor support in SPL"
+	depends on SPL && SPL_DM
+	help
+	  The vibration motor subsystem adds a small amount of overhead to the image.
+	  If this is acceptable and you have a need to use vibration motors in SPL,
+	  enable this option. You will need to enable device tree in SPL
+	  for this to work.
+
+endmenu
