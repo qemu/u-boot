@@ -10,10 +10,23 @@
 #include <dm/device.h>
 #include <dm/device_compat.h>
 #include <generic-phy.h>
+#include <asm-generic/gpio.h>
 
 struct nop_phy_priv {
 	struct clk_bulk bulk;
+	struct gpio_desc reset_gpio;
 };
+
+static int nop_phy_reset(struct phy *phy)
+{
+	struct nop_phy_priv *priv = dev_get_priv(phy->dev);
+
+	/* Return if there is no gpio since it's optional */
+	if (!dm_gpio_is_valid(&priv->reset_gpio))
+		return 0;
+
+	return dm_gpio_set_value(&priv->reset_gpio, false);
+}
 
 static int nop_phy_init(struct phy *phy)
 {
@@ -22,7 +35,12 @@ static int nop_phy_init(struct phy *phy)
 	if (CONFIG_IS_ENABLED(CLK))
 		return clk_enable_bulk(&priv->bulk);
 
-	return 0;
+	/* Return if there is no gpio since it's optional */
+	if (!dm_gpio_is_valid(&priv->reset_gpio))
+		return 0;
+
+	/* If there is a reset gpio, take it out of reset */
+	return dm_gpio_set_value(&priv->reset_gpio, true);
 }
 
 static int nop_phy_probe(struct udevice *dev)
@@ -38,6 +56,12 @@ static int nop_phy_probe(struct udevice *dev)
 		}
 	}
 
+	ret = gpio_request_by_name(dev, "reset-gpios", 0,
+				   &priv->reset_gpio,
+				   GPIOD_IS_OUT);
+	if (ret != -ENOENT)
+		return ret;
+
 	return 0;
 }
 
@@ -49,6 +73,7 @@ static const struct udevice_id nop_phy_ids[] = {
 
 static struct phy_ops nop_phy_ops = {
 	.init = nop_phy_init,
+	.reset = nop_phy_reset,
 };
 
 U_BOOT_DRIVER(nop_phy) = {
