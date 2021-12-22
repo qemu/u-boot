@@ -18,4 +18,20 @@ config SPL_VIBRATOR
 	  enable this option. You will need to enable device tree in SPL
 	  for this to work.
 
+config VIBRATOR_GPIO
+	bool "VIBRATOR support for GPIO-connected VIBRATORs"
+	depends on VIBRATOR && DM_GPIO
+	help
+	  Enable support for vibration motors which are connected to GPIO lines.
+	  These GPIOs may be on the SoC or some other device which provides GPIOs.
+	  The GPIO driver must used driver model. vibration motors are configured
+	  using the device tree.
+
+config SPL_VIBRATOR_GPIO
+	bool "Vibration motor support for GPIO-connected vibration motors in SPL"
+        depends on SPL_VIBRATOR && DM_GPIO
+	help
+	  This option is an SPL-variant of the VIBRATOR_GPIO option.
+	  See the help of VIBRATOR_GPIO for details.
+
 endmenu
