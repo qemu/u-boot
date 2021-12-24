@@ -33,7 +33,7 @@
  * our memory footprint. The less we use for BSS the more we have available
  * for everything else.
  */
-#define CONFIG_SPL_BSS_MAX_SIZE		0x1000
+#define CONFIG_SPL_BSS_MAX_SIZE		0xa000
 /*
  * Link BSS to be within SPL in a dedicated region located near the top of
  * the MCU SRAM, this way making it available also before relocation. Note
@@ -64,6 +64,7 @@
 		"if test $fdtfile = undefined; then " \
 			"echo WARNING: Could not determine device tree to use; fi; \0" \
 	"name_kern=Image\0"						\
+	"ethact=eth0\0"							\
 	"console=ttyS2,115200n8\0"					\
 	"args_all=setenv optargs earlycon=ns16550a,mmio32,0x02800000 "	\
 		"${mtdparts}\0"						\
@@ -139,5 +140,7 @@
 #include <configs/ti_armv7_common.h>
 
 #define CONFIG_SYS_USB_FAT_BOOT_PARTITION 1
+
+#define CONFIG_SPL_ETH_DEVICE "eth1"
 
 #endif /* __CONFIG_AM642_EVM_H */
