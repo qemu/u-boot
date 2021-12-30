@@ -218,7 +218,7 @@ static int mmc_load_image_raw_partition(struct spl_image_info *spl_image,
 }
 #endif
 
-#if CONFIG_IS_ENABLED(OS_BOOT)
+#if CONFIG_IS_ENABLED(FALCON_BOOT_MMCSD)
 static int mmc_load_image_raw_os(struct spl_image_info *spl_image,
 				 struct mmc *mmc)
 {
