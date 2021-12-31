@@ -50,8 +50,32 @@ static int hush_test_and_or(struct unit_test_state *uts)
 {
 	/* A && B || C truth table. */
 	ut_asserteq(1, run_command("false && false || false", 0));
+#ifdef CONFIG_HUSH_OLD_PARSER
 	ut_asserteq(1, run_command("false && false || true", 0));
+#elif defined(CONFIG_HUSH_2021_PARSER)
+	/*
+	 * This difference seems to come from a bug solved in Busybox hush.
+	 *
+	 * Indeed, the following expression can be seen like this:
+	 * (false && false) || true
+	 * So, (false && false) returns 1, the second false is not executed, and
+	 * true is executed because of ||.
+	 */
+	ut_assertok(run_command("false && false || true", 0));
+#endif  /* CONFIG_HUSH_2021_PARSER */
+#ifdef CONFIG_HUSH_OLD_PARSER
 	ut_asserteq(1, run_command("false && true || true", 0));
+#elif defined(CONFIG_HUSH_2021_PARSER)
+	/*
+	 * This difference seems to come from a bug solved in Busybox hush.
+	 *
+	 * Indeed, the following expression can be seen like this:
+	 * (false && true) || true
+	 * So, (false && true) returns 1, the true is not executed, and true is
+	 * executed because of ||.
+	 */
+	ut_assertok(run_command("false && true || true", 0));
+#endif  /* CONFIG_HUSH_2021_PARSER */
 	ut_asserteq(1, run_command("false && true || false", 0));
 	ut_assertok(run_command("true && true || false", 0));
 	ut_asserteq(1, run_command("true && false || false", 0));
@@ -69,8 +93,32 @@ static int hush_test_or_and(struct unit_test_state *uts)
 	ut_asserteq(1, run_command("false || false && true", 0));
 	ut_assertok(run_command("false || true && true", 0));
 	ut_asserteq(1, run_command("false || true && false", 0));
+#ifdef CONFIG_HUSH_OLD_PARSER
 	ut_assertok(run_command("true || true && false", 0));
+#elif defined(CONFIG_HUSH_2021_PARSER)
+	/*
+	 * This difference seems to come from a bug solved in Busybox hush.
+	 *
+	 * Indeed, the following expression can be seen like this:
+	 * (true || true) && false
+	 * So, (true || true) returns 0, the second true is not executed, and
+	 * then false is executed because of &&.
+	 */
+	ut_asserteq(1, run_command("true || true && false", 0));
+#endif  /* CONFIG_HUSH_2021_PARSER */
+#ifdef CONFIG_HUSH_OLD_PARSER
 	ut_assertok(run_command("true || false && false", 0));
+#elif defined(CONFIG_HUSH_2021_PARSER)
+	/*
+	 * This difference seems to come from a bug solved in Busybox hush.
+	 *
+	 * Indeed, the following expression can be seen like this:
+	 * (true || false) && false
+	 * So, (true || false) returns 0, the false is not executed, and then
+	 * false is executed because of &&.
+	 */
+	ut_asserteq(1, run_command("true || false && false", 0));
+#endif  /* CONFIG_HUSH_2021_PARSER */
 	ut_assertok(run_command("true || false && true", 0));
 	ut_assertok(run_command("true || true && true", 0));
 
