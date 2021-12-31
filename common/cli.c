@@ -47,8 +47,21 @@ int run_command(const char *cmd, int flag)
 		hush_flags |= FLAG_CONT_ON_NEWLINE;
 	return parse_string_outer(cmd, hush_flags);
 #else /* HUSH_2021_PARSER */
-	/* Not yet implemented. */
-	return 0;
+	/*
+	 * Possible values for flags are the following:
+	 * FLAG_EXIT_FROM_LOOP: This flags ensures we exit from loop in
+	 * parse_and_run_stream() after first iteration while normal behavior,
+	 * i.e. when called from cli_loop(), is to loop infinitely.
+	 * FLAG_PARSE_SEMICOLON: Hush 2021 parses ';' and does not stop first
+	 * time it sees one. So, I think we do not need this flag.
+	 * FLAG_REPARSING: For the moment, I do not understand the goal of this
+	 * flag.
+	 * FLAG_CONT_ON_NEWLINE: This flag seems to be used to continue parsing
+	 * even when reading '\n' when coming from run_command(). In this case,
+	 * Hush 2021 reads until it finds '\0'. So, I think we do not need this
+	 * flag.
+	 */
+	return parse_string_outer(cmd, FLAG_EXIT_FROM_LOOP);
 #endif
 }
 
