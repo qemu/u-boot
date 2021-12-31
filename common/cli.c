@@ -40,12 +40,15 @@ int run_command(const char *cmd, int flag)
 		return 1;
 
 	return 0;
-#else
+#elif CONFIG_IS_ENABLED(HUSH_OLD_PARSER)
 	int hush_flags = FLAG_PARSE_SEMICOLON | FLAG_EXIT_FROM_LOOP;
 
 	if (flag & CMD_FLAG_ENV)
 		hush_flags |= FLAG_CONT_ON_NEWLINE;
 	return parse_string_outer(cmd, hush_flags);
+#else /* HUSH_2021_PARSER */
+	/* Not yet implemented. */
+	return 0;
 #endif
 }
 
@@ -104,7 +107,7 @@ int run_command_list(const char *cmd, int len, int flag)
 		memcpy(buff, cmd, len);
 		buff[len] = '\0';
 	}
-#ifdef CONFIG_HUSH_PARSER
+#if CONFIG_IS_ENABLED(HUSH_OLD_PARSER)
 	rcode = parse_string_outer(buff, FLAG_PARSE_SEMICOLON);
 #else
 	/*
@@ -225,7 +228,12 @@ err:
 void cli_loop(void)
 {
 	bootstage_mark(BOOTSTAGE_ID_ENTER_CLI_LOOP);
-#ifdef CONFIG_HUSH_PARSER
+#if CONFIG_IS_ENABLED(HUSH_2021_PARSER)
+	parse_and_run_file();
+	printf("Problem\n");
+	/* This point is never reached */
+	for (;;);
+#elif CONFIG_IS_ENABLED(CONFIG_HUSH_OLD_PARSER)
 	parse_file_outer();
 	/* This point is never reached */
 	for (;;);
