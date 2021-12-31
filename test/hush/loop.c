@@ -20,7 +20,12 @@ static int hush_test_for(struct unit_test_state *uts)
 	ut_assert_nextline("quux");
 	ut_assert_console_end();
 
+#if CONFIG_IS_ENABLED(HUSH_2021_PARSER)
+	/* Reset local variable. */
+	ut_assertok(run_command("loop_i=", 0));
+#else /* HUSH_OLD_PARSER */
 	puts("Beware: this test set local variable loop_i and it cannot be unset!");
+#endif /* HUSH_OLD_PARSER */
 
 	return 0;
 }
@@ -30,12 +35,27 @@ static int hush_test_while(struct unit_test_state *uts)
 {
 	console_record_reset_enable();
 
+#if CONFIG_IS_ENABLED(HUSH_2021_PARSER)
+	/*
+	 * Hush 2021 always returns 0 from while loop...
+	 * You can see code snippet near this line to have a better
+	 * understanding:
+	 * debug_printf_exec(": while expr is false: breaking (exitcode:EXIT_SUCCESS)\n");
+	 */
+	ut_assertok(run_command("while test -z \"$loop_foo\"; do echo bar; loop_foo=quux; done", 0));
+#else /* HUSH_OLD_PARSER */
 	/* Exit status is that of test, so 1 since test is false to quit the loop. */
 	ut_asserteq(1, run_command("while test -z \"$loop_foo\"; do echo bar; loop_foo=quux; done", 0));
+#endif /* HUSH_OLD_PARSER */
 	ut_assert_nextline("bar");
 	ut_assert_console_end();
 
+#if CONFIG_IS_ENABLED(HUSH_2021_PARSER)
+	/* Reset local variable. */
+	ut_assertok(run_command("loop_foo=", 0));
+#else /* HUSH_OLD_PARSER */
 	puts("Beware: this test set local variable loop_foo and it cannot be unset!");
+#endif /* HUSH_OLD_PARSER */
 
 	return 0;
 }
