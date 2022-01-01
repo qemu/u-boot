@@ -865,8 +865,13 @@ static int sdp_handle_in_ep(struct spl_image_info *spl_image)
 			spl_parse_image_header(&spl_image, header);
 			jump_to_image_no_args(&spl_image);
 #else
-			/* In U-Boot, allow jumps to scripts */
-			image_source_script(sdp_func->jmp_address, "script@1");
+			/*
+			 * In U-Boot, allow jumps to scripts. Run/retry with default
+			 * configuration if FIT is disabled or script@1 is not found.
+			 */
+			if (!IS_ENABLED(CONFIG_FIT) ||
+			    image_source_script(sdp_func->jmp_address, "script@1"))
+				image_source_script(sdp_func->jmp_address, NULL);
 #endif
 		}
 
