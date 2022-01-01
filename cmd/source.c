@@ -26,19 +26,23 @@
 
 #if defined(CONFIG_FIT)
 /**
- * get_default_image() - Return default property from /images
+ * get_default_bootscr() - Return default boot script unit name.
  *
- * Return: Pointer to value of default property (or NULL)
+ * The default configuration is used unless board_fit_config_name_match
+ * is overridden.
+ *
+ * Return: Pointer to value of bootscr property (or NULL)
  */
-static const char *get_default_image(const void *fit)
+static const char *get_default_bootscr(const void *fit)
 {
-	int images_noffset;
+	int noffset;
 
-	images_noffset = fdt_path_offset(fit, FIT_IMAGES_PATH);
-	if (images_noffset < 0)
+	/* get default or board-specific configuration node */
+	noffset = fit_find_config_node(fit);
+	if (noffset < 0)
 		return NULL;
 
-	return fdt_getprop(fit, images_noffset, FIT_DEFAULT_PROP, NULL);
+	return fdt_getprop(fit, noffset, FIT_BOOTSCR_PROP, NULL);
 }
 #endif
 
@@ -113,7 +117,7 @@ int image_source_script(ulong addr, const char *fit_uname)
 		}
 
 		if (!fit_uname)
-			fit_uname = get_default_image(fit_hdr);
+			fit_uname = get_default_bootscr(fit_hdr);
 
 		if (!fit_uname) {
 			puts("No FIT subimage unit name\n");
@@ -128,7 +132,7 @@ int image_source_script(ulong addr, const char *fit_uname)
 		}
 
 		if (!fit_image_check_type (fit_hdr, noffset, IH_TYPE_SCRIPT)) {
-			puts ("Not a image image\n");
+			puts("Not a script image\n");
 			return 1;
 		}
 

@@ -936,6 +936,7 @@ int booti_setup(ulong image, ulong *relocated_addr, ulong *size,
 #define FIT_KERNEL_PROP		"kernel"
 #define FIT_RAMDISK_PROP	"ramdisk"
 #define FIT_FDT_PROP		"fdt"
+#define FIT_BOOTSCR_PROP	"bootscr"
 #define FIT_LOADABLE_PROP	"loadables"
 #define FIT_DEFAULT_PROP	"default"
 #define FIT_SETUP_PROP		"setup"
