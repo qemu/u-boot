@@ -1559,9 +1559,15 @@ static int fsl_esdhc_wait_dat0(struct udevice *dev, int state,
 	struct fsl_esdhc_priv *priv = dev_get_priv(dev);
 	struct fsl_esdhc *regs = priv->esdhc_regs;
 
+	/*
+	 * Clear the clock-enable and wait for the bit indicating it
+	 * is in standby.
+	 */
+	esdhc_clrbits32(&regs->vendorspec, VENDORSPEC_CKEN);
 	ret = readx_poll_timeout(esdhc_read32, &regs->prsstat, tmp,
-				!!(tmp & PRSSTAT_DAT0) == !!state,
+				(tmp & PRSSTAT_SDSTB),
 				timeout_us);
+
 	return ret;
 }
 
