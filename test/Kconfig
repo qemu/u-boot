@@ -97,5 +97,6 @@ config UT_UNICODE
 
 source "test/dm/Kconfig"
 source "test/env/Kconfig"
+source "test/lib/Kconfig"
 source "test/optee/Kconfig"
 source "test/overlay/Kconfig"
