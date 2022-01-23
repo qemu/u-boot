@@ -12,6 +12,9 @@ PHONY += xconfig gconfig menuconfig config localmodconfig localyesconfig \
 #  Set SRCARCH to .. fake this Makefile.
 SRCARCH := ..
 
+# For U-Boot, EXTRA_DEFCONFIG contains a line to be added to the defconfig
+# before processing. If empty, no line is added.
+
 ifdef KBUILD_KCONFIG
 Kconfig := $(KBUILD_KCONFIG)
 else
@@ -92,8 +95,17 @@ else
 endif
 endif
 
+# If EXTRA_DEFCONFIG is defined, add it to the end of the defconfig, before
+# processing. This allows the caller to change a setting on the fly
 %_defconfig: $(obj)/conf
-	$(Q)$< $(silent) --defconfig=arch/$(SRCARCH)/configs/$@ $(Kconfig)
+	$(Q)defconfig="$(srctree)/arch/$(SRCARCH)/configs/$@"; \
+	if [ -n "$(EXTRA_DEFCONFIG)" ]; then \
+		cat $$defconfig >defconfig_tmp; \
+		echo $(EXTRA_DEFCONFIG) >>defconfig_tmp; \
+		$< $(silent) --defconfig=defconfig_tmp $(Kconfig); \
+	else \
+		$< $(silent) --defconfig=$$defconfig $(Kconfig); \
+	fi
 
 # Added for U-Boot (backward compatibility)
 %_config: %_defconfig

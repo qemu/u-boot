@@ -570,8 +570,17 @@ export KBUILD_DEFCONFIG KBUILD_KCONFIG
 config: scripts_basic outputmakefile FORCE
 	$(Q)$(MAKE) $(build)=scripts/kconfig $@
 
+# If nothing is specified explicitly, detect the bit size for sandbox,
+# referred to from arch/sandbox/Kconfig
+# Add it to the end of the defconfig file
 %config: scripts_basic outputmakefile FORCE
-	$(Q)$(MAKE) $(build)=scripts/kconfig $@
+	$(Q)if test -f $(srctree)/configs/$@ && \
+		! grep -Eq "CONFIG_HOST_(32|64)BIT=y" $(srctree)/configs/$@; then \
+		echo '#include <stdio.h>\nint main(void) { printf("CONFIG_HOST_%dBIT=y\\n", __WORDSIZE); return 0; }' \
+			 | $(HOSTCC) -x c - -o get_word_size; \
+		extra=$$(./get_word_size); \
+	fi; \
+	$(MAKE) $(build)=scripts/kconfig EXTRA_DEFCONFIG=$$extra $@
 
 else
 # ===========================================================================

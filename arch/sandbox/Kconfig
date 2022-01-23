@@ -35,19 +35,42 @@ config SYS_CONFIG_NAME
 
 choice
 	prompt "Run sandbox on 32/64-bit host"
-	default HOST_64BIT
+	default HOST_DETECT_BITNESS
 	help
-	  Sandbox can be built on 32-bit and 64-bit hosts.
-	  The default is to build on a 64-bit host and run
-	  on a 64-bit host. If you want to run sandbox on
-	  a 32-bit host, change it here.
+	  Sandbox can be built on 32-bit and 64-bit hosts. This is generally
+	  auto-detected but you can force a particular word size here. If you
+	  see strange warnings about SANDBOX_BITS_PER_LONG then you may have
+	  selected the wrong value.
 
 config HOST_32BIT
 	bool "32-bit host"
 	depends on !PHYS_64BIT
+	help
+	  Select this if the host is a 32-bit machine. This adjusts various
+	  tests and other features to work correctly in this environment. If
+	  this option is enabled on 64-bit machines you may get build warnings
+	  and/or errors.
 
 config HOST_64BIT
 	bool "64-bit host"
+	help
+	  Select this if the host is a 64-bit machine. This adjusts various
+	  tests and other features to work correctly in this environment. If
+	  this option is enabled on 32-bit machines you may get build warnings
+	  and/or errors.
+
+config HOST_DETECT_BITNESS
+	bool "Auto-detect host bitness"
+	help
+	  Select this if you want the build system to determine the bitness
+	  automatically. This compiles a small program during the build, then
+	  runs it to determine the bitness using __WORDSIZE (32 or 64 bits).
+	  Then it adds one of the above options (CONFIG_HOST_32 or
+	  CONFIG_HOST_64) to the configuration when creating it.
+
+	  In rare situations this may fail, e.g. on an unsupported Operating
+	  System or toolchain, in which case you will likely get build warnings
+	  and errors.
 
 endchoice
 
