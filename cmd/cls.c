@@ -11,23 +11,18 @@
 #include <lcd.h>
 #include <video.h>
 
+#define ESC "\x1b"
+
 static int do_video_clear(struct cmd_tbl *cmdtp, int flag, int argc,
 			  char *const argv[])
 {
-#if defined(CONFIG_DM_VIDEO)
-	struct udevice *dev;
-
-	if (uclass_first_device_err(UCLASS_VIDEO, &dev))
-		return CMD_RET_FAILURE;
-
-	if (video_clear(dev))
-		return CMD_RET_FAILURE;
-#elif defined(CONFIG_CFB_CONSOLE)
-	video_clear();
-#elif defined(CONFIG_LCD)
-	lcd_clear();
-#else
-	return CMD_RET_FAILURE;
+	/*  Send clear screen and home */
+	printf(ESC "[2J" ESC "[1;1H");
+#if !defined(CONFIG_DM_VIDEO) && !defined(CONFIG_CFB_CONSOLE_ANSI)
+	if (CONFIG_IS_ENABLED(CFB_CONSOLE))
+		video_clear();
+	else if (CONFIG_IS_ENABLED(LCD)
+		lcd_clear();
 #endif
 	return CMD_RET_SUCCESS;
 }
