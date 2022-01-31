@@ -75,7 +75,6 @@
 /* SPI SPL */
 
 /* SATA */
-#define CONFIG_SCSI_AHCI_PLAT
 
 /* NAND support */
 #ifdef CONFIG_MTD_RAW_NAND

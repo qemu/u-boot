@@ -49,9 +49,6 @@
 #define PHY_ANEG_TIMEOUT	8000	/* PHY needs longer aneg time at 1G */
 
 /* SATA */
-#define CONFIG_SCSI_AHCI_PLAT
-#define CONFIG_SYS_SCSI_MAX_SCSI_ID	1
-#define CONFIG_SYS_SCSI_MAX_LUN		1
 
 /*
  * Default to using SPI for environment, etc.
