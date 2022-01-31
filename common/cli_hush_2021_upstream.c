@@ -1448,6 +1448,7 @@ static void xxfree(void *ptr)
  * HUSH_DEBUG >= 2 prints line number in this file where it was detected.
  */
 #if HUSH_DEBUG < 2
+#include <linux/compiler.h>
 # define msg_and_die_if_script(lineno, ...)     msg_and_die_if_script(__VA_ARGS__)
 # define syntax_error(lineno, msg)              syntax_error(msg)
 # define syntax_error_at(lineno, msg)           syntax_error_at(msg)
@@ -1465,7 +1466,7 @@ static void die_if_script(void)
 	}
 }
 
-static void msg_and_die_if_script(unsigned lineno, const char *fmt, ...)
+static void __maybe_unused msg_and_die_if_script(unsigned lineno, const char *fmt, ...)
 {
 	va_list p;
 
@@ -1539,7 +1540,7 @@ static void syntax_error_unexpected_ch(unsigned lineno UNUSED_PARAM, int ch)
 /* Replace each \x with x in place, return ptr past NUL. */
 static char *unbackslash(char *src)
 {
-	char *dst = src = strchrnul(src, '\\');
+	char *dst = src = (char *)strchrnul(src, '\\');
 	while (1) {
 		if (*src == '\\') {
 			src++;
