@@ -14,9 +14,17 @@
 
 extern int u_boot_hush_start(void);
 extern int parse_string_outer(const char *, int);
+#if CONFIG_IS_ENABLED(HUSH_OLD_PARSER)
 extern int parse_file_outer(void);
+#elif CONFIG_IS_ENABLED(HUSH_2021_PARSER)
+extern void parse_and_run_file(void);
+#endif
 
+#if CONFIG_IS_ENABLED(HUSH_OLD_PARSER)
 int set_local_var(const char *s, int flg_export);
+#elif CONFIG_IS_ENABLED(HUSH_2021_PARSER)
+int set_local_var(char *s, int flg_export);
+#endif
 void unset_local_var(const char *name);
 char *get_local_var(const char *s);
 
