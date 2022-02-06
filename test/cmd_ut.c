@@ -70,6 +70,9 @@ static struct cmd_tbl cmd_ut_sub[] = {
 #ifdef CONFIG_CMD_ADDRMAP
 	U_BOOT_CMD_MKENT(addrmap, CONFIG_SYS_MAXARGS, 1, do_ut_addrmap, "", ""),
 #endif
+#if CONFIG_IS_ENABLED(HUSH_PARSER)
+	U_BOOT_CMD_MKENT(hush, CONFIG_SYS_MAXARGS, 1, do_ut_hush, "", ""),
+#endif
 };
 
 static int do_ut_all(struct cmd_tbl *cmdtp, int flag, int argc,
@@ -148,6 +151,9 @@ static char ut_help_text[] =
 #endif
 #ifdef CONFIG_CMD_ADDRMAP
 	"ut addrmap - Very basic test of addrmap command\n"
+#endif
+#if CONFIG_IS_ENABLED(HUSH_PARSER)
+	"ut hush [test-name] - Test hush behavior\n"
 #endif
 	;
 #endif /* CONFIG_SYS_LONGHELP */
