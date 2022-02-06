@@ -39,6 +39,10 @@ static int hush_test_if_basic_operators(struct unit_test_state *uts)
 {
 	char if_formatted[128];
 
+#if CONFIG_IS_ENABLED(HUSH_2021_PARSER)
+	console_record_reset_enable();
+#endif /* HUSH_2021_PARSER */
+
 	sprintf(if_formatted, if_format, "test aaa = aaa");
 	ut_assertok(run_command(if_formatted, 0));
 
@@ -52,15 +56,54 @@ static int hush_test_if_basic_operators(struct unit_test_state *uts)
 	ut_asserteq(1, run_command(if_formatted, 0));
 
 	sprintf(if_formatted, if_format, "test aaa < bbb");
+#if CONFIG_IS_ENABLED(HUSH_2021_PARSER)
+	/*
+	 * We need to escape < and > to use as them as string comparison
+	 * operator.
+	 * Otherwise, they are interprated as redirection operators which is not
+	 * supported in U-Boot.
+	 */
+	ut_asserteq(1, run_command(if_formatted, 0));
+	/* Next lines contains error message (which is on two lines). */
+	ut_assert_skipline();
+	ut_assert_skipline();
+	ut_assert_console_end();
+
+	sprintf(if_formatted, if_format, R"(test aaa \< bbb)");
+#endif /* HUSH_2021_PARSER */
 	ut_assertok(run_command(if_formatted, 0));
 
 	sprintf(if_formatted, if_format, "test bbb < aaa");
+#if CONFIG_IS_ENABLED(HUSH_2021_PARSER)
+	ut_asserteq(1, run_command(if_formatted, 0));
+	ut_assert_skipline();
+	ut_assert_skipline();
+	ut_assert_console_end();
+
+	sprintf(if_formatted, if_format, R"(test bbb \< aaa)");
+#endif /* HUSH_2021_PARSER */
 	ut_asserteq(1, run_command(if_formatted, 0));
 
 	sprintf(if_formatted, if_format, "test bbb > aaa");
+#if CONFIG_IS_ENABLED(HUSH_2021_PARSER)
+	ut_asserteq(1, run_command(if_formatted, 0));
+	ut_assert_skipline();
+	ut_assert_skipline();
+	ut_assert_console_end();
+
+	sprintf(if_formatted, if_format, R"(test bbb \> aaa)");
+#endif /* HUSH_2021_PARSER */
 	ut_assertok(run_command(if_formatted, 0));
 
 	sprintf(if_formatted, if_format, "test aaa > bbb");
+#if CONFIG_IS_ENABLED(HUSH_2021_PARSER)
+	ut_asserteq(1, run_command(if_formatted, 0));
+	ut_assert_skipline();
+	ut_assert_skipline();
+	ut_assert_console_end();
+
+	sprintf(if_formatted, if_format, R"(test aaa \> bbb)");
+#endif /* HUSH_2021_PARSER */
 	ut_asserteq(1, run_command(if_formatted, 0));
 
 	sprintf(if_formatted, if_format, "test 123 -eq 123");
