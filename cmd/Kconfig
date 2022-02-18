@@ -26,7 +26,7 @@ config HUSH_PARSER
 choice HUSH_FLAVOR
 	bool "Hush flavor to use"
 	depends on HUSH_PARSER
-	default HUSH_OLD_PARSER
+	default HUSH_2021_PARSER
 
 	config HUSH_OLD_PARSER
 		bool "Use hush old parser"
