@@ -41,17 +41,17 @@ int	board_init(void);
 struct pt_regs;
 
 void bad_mode(void);
-void do_undefined_instruction(struct pt_regs *pt_regs);
-void do_software_interrupt(struct pt_regs *pt_regs);
-void do_prefetch_abort(struct pt_regs *pt_regs);
-void do_data_abort(struct pt_regs *pt_regs);
-void do_not_used(struct pt_regs *pt_regs);
+void do_undefined_instruction(struct pt_regs *pt_regs, bool hyp_mode);
+void do_software_interrupt(struct pt_regs *pt_regs, bool hyp_mode);
+void do_prefetch_abort(struct pt_regs *pt_regs, bool hyp_mode);
+void do_data_abort(struct pt_regs *pt_regs, bool hyp_mode);
+void do_not_used(struct pt_regs *pt_regs, bool hyp_mode);
 #ifdef CONFIG_ARM64
 void do_fiq(struct pt_regs *pt_regs, unsigned int esr);
 void do_irq(struct pt_regs *pt_regs, unsigned int esr);
 #else
-void do_fiq(struct pt_regs *pt_regs);
-void do_irq(struct pt_regs *pt_regswq);
+void do_fiq(struct pt_regs *pt_regs, bool hyp_mode);
+void do_irq(struct pt_regs *pt_regswq, bool hyp_mode);
 #endif
 
 void reset_misc(void);

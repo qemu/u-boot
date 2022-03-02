@@ -19,6 +19,7 @@ config ARCH_EXYNOS5
 	bool "Exynos5 SoC family"
 	select BOARD_EARLY_INIT_F
 	select CPU_V7A
+	select CPU_V7_HAS_VIRT
 	select SHA_HW_ACCEL
 	imply CMD_HASH
 	imply CRC32_VERIFY

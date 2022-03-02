@@ -135,17 +135,17 @@ static inline void fixup_pc(struct pt_regs *regs, int offset)
 	regs->ARM_pc = pc | (regs->ARM_pc & PCMASK);
 }
 
-void do_undefined_instruction (struct pt_regs *pt_regs)
+void do_undefined_instruction(struct pt_regs *pt_regs, bool hyp_mode)
 {
 	efi_restore_gd();
 	printf ("undefined instruction\n");
-	fixup_pc(pt_regs, -4);
+	fixup_pc(pt_regs, hyp_mode ? 0 : thumb_mode(regs) ? -2 : -4);
 	show_regs (pt_regs);
 	show_efi_loaded_images(pt_regs);
 	bad_mode ();
 }
 
-void do_software_interrupt (struct pt_regs *pt_regs)
+void do_software_interrupt(struct pt_regs *pt_regs, bool _hyp_mode)
 {
 	efi_restore_gd();
 	printf ("software interrupt\n");
@@ -155,51 +155,51 @@ void do_software_interrupt (struct pt_regs *pt_regs)
 	bad_mode ();
 }
 
-void do_prefetch_abort (struct pt_regs *pt_regs)
+void do_prefetch_abort(struct pt_regs *pt_regs, bool hyp_mode)
 {
 	efi_restore_gd();
 	printf ("prefetch abort\n");
-	fixup_pc(pt_regs, -8);
+	fixup_pc(pt_regs, hyp_mode ? 0 : -4);
 	show_regs (pt_regs);
 	show_efi_loaded_images(pt_regs);
 	bad_mode ();
 }
 
-void do_data_abort (struct pt_regs *pt_regs)
+void do_data_abort(struct pt_regs *pt_regs, bool hyp_mode)
 {
 	efi_restore_gd();
 	printf ("data abort\n");
-	fixup_pc(pt_regs, -8);
+	fixup_pc(pt_regs, hyp_mode ? 0 : -8);
 	show_regs (pt_regs);
 	show_efi_loaded_images(pt_regs);
 	bad_mode ();
 }
 
-void do_not_used (struct pt_regs *pt_regs)
+void do_not_used(struct pt_regs *pt_regs, bool hyp_mode)
 {
 	efi_restore_gd();
 	printf ("not used\n");
-	fixup_pc(pt_regs, -8);
+	fixup_pc(pt_regs, hyp_mode ? 0 : -8);
 	show_regs (pt_regs);
 	show_efi_loaded_images(pt_regs);
 	bad_mode ();
 }
 
-void do_fiq (struct pt_regs *pt_regs)
+void do_fiq(struct pt_regs *pt_regs, bool hyp_mode)
 {
 	efi_restore_gd();
 	printf ("fast interrupt request\n");
-	fixup_pc(pt_regs, -8);
+	fixup_pc(pt_regs, hyp_mode ? 0 : -4);
 	show_regs (pt_regs);
 	show_efi_loaded_images(pt_regs);
 	bad_mode ();
 }
 
-void do_irq (struct pt_regs *pt_regs)
+void do_irq(struct pt_regs *pt_regs, bool hyp_mode)
 {
 	efi_restore_gd();
 	printf ("interrupt request\n");
-	fixup_pc(pt_regs, -8);
+	fixup_pc(pt_regs, hyp_mode ? 0 : -4);
 	show_regs (pt_regs);
 	show_efi_loaded_images(pt_regs);
 	bad_mode ();

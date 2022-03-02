@@ -27,4 +27,10 @@ config TARGET_QEMU_ARM_64BIT
 
 endchoice
 
+config QEMU_ARM_32BIT_HAS_VIRT
+	bool "Virtualization Extensions for ARMv7-A"
+	depends on TARGET_QEMU_ARM_32BIT
+	select CPU_V7_HAS_VIRT
+	select ARMV7_LPAE
+
 endif

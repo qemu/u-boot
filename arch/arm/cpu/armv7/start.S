@@ -113,6 +113,14 @@ switch_to_hypervisor_ret:
 	ldr	r0, =_start
 	mcr	p15, 0, r0, c12, c0, 0	@Set VBAR
 #endif
+#ifdef CONFIG_CPU_V7_HAS_VIRT
+	/* Z flag is still set from HYP mode test */
+	bne skip_set_hvbar
+	/* Set hyp vector address in CP15 HVBAR register */
+	ldr	r0, =hyp_vector_table
+	mcr	p15, 4, r0, c12, c0, 0	@Set HVBAR
+skip_set_hvbar:
+#endif
 #endif
 
 	/* the mask ROM code should have PLL and others stable */

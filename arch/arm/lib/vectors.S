@@ -117,6 +117,39 @@ _not_used:		.word not_used
 _irq:			.word irq
 _fiq:			.word fiq
 
+#ifdef CONFIG_CPU_V7_HAS_VIRT
+/*
+ *************************************************************************
+ *
+ * Hypervisor mode interrupt vectors table
+ *
+ *************************************************************************
+ */
+
+	.globl	hyp_vector_table
+
+	.align	5
+hyp_vector_table:
+	ldr	pc, _hyp_reset
+	ldr	pc, _hyp_undefined_instruction
+	ldr	pc, _hyp_software_interrupt
+	ldr	pc, _hyp_prefetch_abort
+	ldr	pc, _hyp_data_abort
+	ldr	pc, _hyp_not_used
+	ldr	pc, _hyp_irq
+	ldr	pc, _hyp_fiq
+
+_hyp_reset:			.word reset
+_hyp_undefined_instruction:	.word hyp_undefined_instruction
+_hyp_software_interrupt:	.word hyp_software_interrupt
+_hyp_prefetch_abort:	.word hyp_prefetch_abort
+_hyp_data_abort:		.word hyp_data_abort
+_hyp_not_used:		.word hyp_not_used
+_hyp_irq:			.word hyp_irq
+_hyp_fiq:			.word hyp_fiq
+
+#endif  /* CONFIG_CPU_V7_HAS_VIR
+
 	.balignl 16,0xdeadbeef
 
 /*
@@ -139,6 +172,15 @@ data_abort:
 not_used:
 irq:
 fiq:
+#ifdef CONFIG_CPU_V7_HAS_VIRT
+hyp_undefined_instruction:
+hyp_software_interrupt:
+hyp_prefetch_abort:
+hyp_data_abort:
+hyp_not_used:
+hyp_irq:
+hyp_fiq:
+#endif  /* CONFIG_CPU_V7_HAS_VIRT
 1:
 	b	1b			/* hang and never return */
 
@@ -182,8 +224,7 @@ IRQ_STACK_START_IN:
 #define I_BIT	 0x80
 
 /*
- * use bad_save_user_regs for abort/prefetch/undef/swi ...
- * use irq_save_user_regs / irq_restore_user_regs for IRQ/FIQ handling
+ * use bad_save_user_regs for all exception types
  */
 
 	.macro	bad_save_user_regs
@@ -198,27 +239,7 @@ IRQ_STACK_START_IN:
 	mov	r1, lr
 	stmia	r5, {r0 - r3}	@ save sp_SVC, lr_SVC, pc, cpsr
 	mov	r0, sp		@ save current stack into r0 (param register)
-	.endm
-
-	.macro	irq_save_user_regs
-	sub	sp, sp, #S_FRAME_SIZE
-	stmia	sp, {r0 - r12}			@ Calling r0-r12
-	@ !!!! R8 NEEDS to be saved !!!! a reserved stack spot would be good.
-	add	r8, sp, #S_PC
-	stmdb	r8, {sp, lr}^		@ Calling SP, LR
-	str	lr, [r8, #0]		@ Save calling PC
-	mrs	r6, spsr
-	str	r6, [r8, #4]		@ Save CPSR
-	str	r0, [r8, #8]		@ Save OLD_R0
-	mov	r0, sp
-	.endm
-
-	.macro	irq_restore_user_regs
-	ldmia	sp, {r0 - lr}^			@ Calling r0 - lr
-	mov	r0, r0
-	ldr	lr, [sp, #S_PC]			@ Get PC
-	add	sp, sp, #S_FRAME_SIZE
-	subs	pc, lr, #4		@ return & move spsr_svc into cpsr
+	mov	r1, #0      @ set r1 param to 0, not hypervisor mode
 	.endm
 
 	.macro get_bad_stack
@@ -232,14 +253,6 @@ IRQ_STACK_START_IN:
 	msr	spsr, r13	@ switch modes, make sure moves will execute
 	mov	lr, pc		@ capture return pc
 	movs	pc, lr		@ jump to next instruction & switch modes.
-	.endm
-
-	.macro get_irq_stack			@ setup IRQ stack
-	ldr	sp, IRQ_STACK_START
-	.endm
-
-	.macro get_fiq_stack			@ setup FIQ stack
-	ldr	sp, FIQ_STACK_START
 	.endm
 
 /*
@@ -288,5 +301,59 @@ fiq:
 	get_bad_stack
 	bad_save_user_regs
 	bl	do_fiq
+
+#ifdef CONFIG_CPU_V7_HAS_VIRT
+
+/**
+ * Hypervisor mode exception handlers
+ *
+ * If exception is taken to EL2, U-Boot must have been running in hypervisor
+ * mode. Use the existing stack to save register values onto because
+ * overwriting the stack pointer would leave no way to inspect its value.
+ */
+
+	.macro	hyp_enter_exception
+	str	sp, [sp, #(-S_FRAME_SIZE + S_SP)]
+	sub	sp, sp, #S_FRAME_SIZE
+	stmia	sp, {r0 - r12}
+	mrs	r1, elr_hyp
+	mrs	r2, spsr
+	str	lr, [sp, #S_LR]
+	str	r1, [sp, #S_PC]
+	str	r2, [sp, #S_PSR]
+	str	r0, [sp, #S_OLD_R0]
+	mov	r0, sp		@ set r0 param to struct pt_regs on stack
+	mov	r1, #1      @ set r1 param to 1, hypervisor mode
+	.endm
+
+hyp_undefined_instruction:
+	hyp_enter_exception
+	bl	do_undefined_instruction
+
+hyp_software_interrupt:
+	hyp_enter_exception
+	bl	do_software_interrupt
+
+hyp_prefetch_abort:
+	hyp_enter_exception
+	bl	do_prefetch_abort
+
+hyp_data_abort:
+	hyp_enter_exception
+	bl	do_data_abort
+
+hyp_not_used:
+	hyp_enter_exception
+	bl	do_not_used
+
+hyp_irq:
+	hyp_enter_exception
+	bl	do_irq
+
+hyp_fiq:
+	hyp_enter_exception
+	bl	do_fiq
+
+#endif  /* CONFIG_CPU_V7_HAS_VIRT */
 
 #endif	/* CONFIG_SPL_BUILD */

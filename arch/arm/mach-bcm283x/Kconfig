@@ -8,6 +8,7 @@ config BCM2836
 	depends on ARCH_BCM283X
 	select ARMV7_LPAE
 	select CPU_V7A
+	select CPU_V7_HAS_VIRT
 
 config BCM2837
 	bool "Broadcom BCM2837 SoC support"
@@ -19,6 +20,7 @@ config BCM2837_32B
 	select BCM2837
 	select ARMV7_LPAE
 	select CPU_V7A
+	select CPU_V7_HAS_VIRT
 
 config BCM2837_64B
 	bool "Broadcom BCM2837 SoC 64-bit support"
@@ -36,6 +38,7 @@ config BCM2711_32B
 	select BCM2711
 	select ARMV7_LPAE
 	select CPU_V7A
+	select CPU_V7_HAS_VIRT
 	select PHYS_64BIT
 
 config BCM2711_64B
