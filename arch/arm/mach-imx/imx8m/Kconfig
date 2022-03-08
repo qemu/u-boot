@@ -90,6 +90,8 @@ config TARGET_IMX8MM_VENICE
 	select IMX8MM
 	select SUPPORT_SPL
 	select IMX8M_LPDDR4
+	select GATEWORKS_SC
+	select MISC
 
 config TARGET_KONTRON_MX8MM
 	bool "Kontron Electronics N80xx"
@@ -136,6 +138,8 @@ config TARGET_IMX8MN_VENICE
 	select IMX8MN
 	select SUPPORT_SPL
 	select IMX8M_LPDDR4
+	select GATEWORKS_SC
+	select MISC
 
 config TARGET_IMX8MP_EVK
 	bool "imx8mp LPDDR4 EVK board"
