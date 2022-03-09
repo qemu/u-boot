@@ -1105,6 +1105,7 @@ struct mii_dev *fec_get_miibus(ulong base_addr, int dev_id)
 }
 
 #ifndef CONFIG_DM_ETH
+#error "Convert!"
 #ifdef CONFIG_PHYLIB
 int fec_probe(struct bd_info *bd, int dev_id, uint32_t base_addr,
 		struct mii_dev *bus, struct phy_device *phydev)
