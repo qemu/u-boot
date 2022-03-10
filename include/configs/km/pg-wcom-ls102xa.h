@@ -176,13 +176,6 @@
 					{1, {I2C_NULL_HOP}                 }, \
 				}
 
-/*
- * eTSEC
- */
-#ifdef CONFIG_TSEC_ENET
-#define CONFIG_ETHPRIME			"ethernet@2d90000"
-#endif
-
 #define CONFIG_LAYERSCAPE_NS_ACCESS
 #define CONFIG_SMP_PEN_ADDR		0x01ee0200
 #define COUNTER_FREQUENCY		8333333
@@ -271,7 +264,5 @@
 
 #define CONFIG_SYS_BOOTM_LEN	(64 << 20) /* Increase max gunzip size */
 #define CONFIG_SYS_BOOTMAPSZ	(256 << 20) /* Increase map for Linux */
-
-#define CONFIG_MISC_INIT_F
 
 #endif

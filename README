@@ -374,14 +374,6 @@ The following options need to be configured:
 		See Freescale App Note 4493 for more information about
 		this erratum.
 
-		CONFIG_A003399_NOR_WORKAROUND
-		Enables a workaround for IFC erratum A003399. It is only
-		required during NOR boot.
-
-		CONFIG_A008044_WORKAROUND
-		Enables a workaround for T1040/T1042 erratum A008044. It is only
-		required during NAND boot and valid for Rev 1.0 SoC revision
-
 		CONFIG_SYS_FSL_CORENET_SNOOPVEC_COREONLY
 
 		This is the value to write into CCSR offset 0x18600
@@ -1563,24 +1555,6 @@ The following options need to be configured:
 			FLAGADM
 
 - Error Recovery:
-		CONFIG_NET_RETRY_COUNT
-
-		This variable defines the number of retries for
-		network operations like ARP, RARP, TFTP, or BOOTP
-		before giving up the operation. If not defined, a
-		default value of 5 is used.
-
-		CONFIG_ARP_TIMEOUT
-
-		Timeout waiting for an ARP reply in milliseconds.
-
-		CONFIG_NFS_TIMEOUT
-
-		Timeout in milliseconds used in NFS protocol.
-		If you encounter "ERROR: Cannot umount" in nfs command,
-		try longer timeout such as
-		#define CONFIG_NFS_TIMEOUT 10000UL
-
 	Note:
 
 		In the current implementation, the local variables

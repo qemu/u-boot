@@ -133,8 +133,6 @@
  * 0x442000 - 0x800000 : Userland
  */
 
-#define CONFIG_NET_RETRY_COUNT         10
-
 /* NAND support */
 #ifdef CONFIG_MTD_RAW_NAND
 /* UBI Support */
@@ -413,9 +411,5 @@
 #define CONFIG_SYS_ENV_SECT_SIZE	(128 << 10)	/* 128 KiB */
 #endif
 #endif
-
-/* Reboot after 60 sec if bootcmd fails */
-#define CONFIG_RESET_TO_RETRY
-#define CONFIG_BOOT_RETRY_TIME 60
 
 #endif	/* ! __CONFIG_SIEMENS_AM33X_COMMON_H */
