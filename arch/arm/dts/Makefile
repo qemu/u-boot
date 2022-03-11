@@ -928,7 +928,8 @@ dtb-$(CONFIG_ARCH_IMX8M) += \
 	imx8mp-phyboard-pollux-rdk.dtb \
 	imx8mp-verdin.dtb \
 	imx8mq-pico-pi.dtb \
-	imx8mq-kontron-pitx-imx8m.dtb
+	imx8mq-kontron-pitx-imx8m.dtb \
+	imx8mq-librem5-r4.dtb
 
 dtb-$(CONFIG_ARCH_IMXRT) += imxrt1050-evk.dtb \
 	imxrt1020-evk.dtb

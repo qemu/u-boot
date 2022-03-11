@@ -26,6 +26,7 @@ Board-specific doc
    nokia/index
    nxp/index
    openpiton/index
+   purism/index
    qualcomm/index
    rockchip/index
    samsung/index
