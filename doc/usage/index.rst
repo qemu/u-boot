@@ -43,6 +43,7 @@ Shell commands
    md
    mmc
    pinmux
+   pre-load-verify
    pstore
    qfw
    reset
