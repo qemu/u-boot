@@ -428,6 +428,14 @@ config CMD_THOR_DOWNLOAD
 	  There is no documentation about this within the U-Boot source code
 	  but you should be able to find something on the interwebs.
 
+config CMD_PRE_LOAD_VERIFY
+	bool "verify the global signature"
+	depends on IMAGE_PRE_LOAD
+	help
+	  Verify the signature provided in a pre-load header of
+	  a full image.
+          Documentation is available in doc/usage/pre-load-verify.txt
+
 config CMD_ZBOOT
 	bool "zboot - x86 boot command"
 	help
