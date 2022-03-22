@@ -16,6 +16,12 @@ struct sandbox_serial_plat {
 	int colour;	/* Text colour to use for output, -1 for none */
 };
 
+/* Total number of characters written; for use by tests */
+extern size_t sandbox_serial_written;
+
+/* Disable serial device output; for use by tests */
+extern bool sandbox_serial_enabled;
+
 /**
  * struct sandbox_serial_priv - Private data for this driver
  *
