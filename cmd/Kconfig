@@ -194,6 +194,16 @@ config CMD_BOOTM
 	help
 	  Boot an application image from the memory.
 
+config CMD_BOOTM_PRE_LOAD
+       bool "enable pre-load on bootm"
+       depends on CMD_BOOTM
+       depends on IMAGE_PRE_LOAD
+       default n
+       help
+         Enable support of stage pre-load for the bootm command.
+	 This stage allow to check or modify the image provided
+	 to the bootm command.
+
 config BOOTM_EFI
 	bool "Support booting UEFI FIT images"
 	depends on CMD_BOOTEFI && CMD_BOOTM && FIT
@@ -417,6 +427,14 @@ config CMD_THOR_DOWNLOAD
 	  downloading a software update over USB from an attached host.
 	  There is no documentation about this within the U-Boot source code
 	  but you should be able to find something on the interwebs.
+
+config CMD_PRE_LOAD_VERIFY
+	bool "verify the global signature"
+	depends on IMAGE_PRE_LOAD
+	help
+	  Verify the signature provided in a pre-load header of
+	  a full image.
+          Documentation is available in doc/usage/pre-load-verify.txt
 
 config CMD_ZBOOT
 	bool "zboot - x86 boot command"
