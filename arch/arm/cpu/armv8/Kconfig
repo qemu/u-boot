@@ -37,6 +37,12 @@ config ARMV8_SWITCH_TO_EL1
 	  In some circumstances we need to switch to running in EL1.
 	  Enable this option to have U-Boot switch to EL1.
 
+config ARMV8_SET_MAIR
+	bool "Initialize the MAIR to its constant value out of boot"
+	default y if !SYS_DISABLE_DCACHE_OPS
+	help
+	  Say Y here to set MAIR_ELx (MEMORY_ATTRIBUTES), needed by the MMU.
+
 config ARMV8_SPIN_TABLE
 	bool "Support spin-table enable method"
 	depends on ARMV8_MULTIENTRY && OF_LIBFDT
