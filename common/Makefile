@@ -8,7 +8,8 @@ ifndef CONFIG_SPL_BUILD
 obj-y += init/
 obj-y += main.o
 obj-y += exports.o
-obj-$(CONFIG_HUSH_PARSER) += cli_hush.o
+obj-$(CONFIG_HUSH_OLD_PARSER) += cli_hush.o
+obj-$(CONFIG_HUSH_2021_PARSER) += cli_hush_2021.o
 obj-$(CONFIG_AUTOBOOT) += autoboot.o
 
 # # boards
