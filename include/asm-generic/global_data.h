@@ -635,6 +635,10 @@ enum gd_flags {
 	 * @GD_FLG_SMP_READY: SMP initialization is complete
 	 */
 	GD_FLG_SMP_READY = 0x80000,
+	/**
+	 * @GD_FLG_HUSH_OLD_PARSER: Use hush old parser.
+	 */
+	GD_FLG_HUSH_OLD_PARSER = 0x100000,
 };
 
 #endif /* __ASSEMBLY__ */
