@@ -12,6 +12,8 @@ static const char *gd_flags_to_parser(void)
 {
 	if (gd->flags & GD_FLG_HUSH_OLD_PARSER)
 		return "old";
+	if (gd->flags & GD_FLG_HUSH_2021_PARSER)
+		return "2021";
 	return NULL;
 }
 
@@ -34,12 +36,15 @@ static int parser_string_to_gd_flags(const char *parser)
 {
 	if (!strcmp(parser, "old"))
 		return GD_FLG_HUSH_OLD_PARSER;
+	if (!strcmp(parser, "2021"))
+		return GD_FLG_HUSH_2021_PARSER;
 	return -1;
 }
 
 static void reset_parser_gd_flags(void)
 {
 	gd->flags &= ~GD_FLG_HUSH_OLD_PARSER;
+	gd->flags &= ~GD_FLG_HUSH_2021_PARSER;
 }
 
 static int do_parser_set(struct cmd_tbl *cmdtp, int flag, int argc,
@@ -64,6 +69,13 @@ static int do_parser_set(struct cmd_tbl *cmdtp, int flag, int argc,
 		printf("Want to set current parser to old, but its code was not compiled!\n");
 		return CMD_RET_FAILURE;
 	}
+
+	if (parser_flag == GD_FLG_HUSH_2021_PARSER
+		&& !CONFIG_IS_ENABLED(HUSH_2021_PARSER)) {
+		printf("Want to set current parser to 2021, but its code was not compiled!\n");
+		return CMD_RET_FAILURE;
+	}
+
 	reset_parser_gd_flags();
 	gd->flags |= parser_flag;
 
@@ -101,7 +113,7 @@ static int do_parser(struct cmd_tbl *cmdtp, int flag, int argc,
 #if CONFIG_IS_ENABLED(SYS_LONGHELP)
 static char parser_help_text[] =
 	"print - print current parser\n"
-	"set - set the current parser, possible value is: old"
+	"set - set the current parser, possible values are: old, 2021"
 	;
 #endif
 
