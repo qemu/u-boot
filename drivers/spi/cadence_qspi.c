@@ -188,11 +188,12 @@ static int cadence_spi_probe(struct udevice *bus)
 	if (plat->ref_clk_hz == 0) {
 		ret = clk_get_by_index(bus, 0, &clk);
 		if (ret) {
-#ifdef CONFIG_CQSPI_REF_CLK
-			plat->ref_clk_hz = CONFIG_CQSPI_REF_CLK;
-#else
-			return ret;
-#endif
+			if (IS_ENABLED(CONFIG_HAS_CQSPI_REF_CLK))
+				plat->ref_clk_hz = CONFIG_CQSPI_REF_CLK;
+			else if (IS_ENABLED(CONFIG_ARCH_SOCFPGA))
+				plat->ref_clk_hz = cm_get_qspi_controller_clk_hz();
+			else
+				return ret;
 		} else {
 			plat->ref_clk_hz = clk_get_rate(&clk);
 			clk_free(&clk);
