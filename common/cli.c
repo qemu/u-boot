@@ -40,14 +40,31 @@ int run_command(const char *cmd, int flag)
 		return 1;
 
 	return 0;
-#elif CONFIG_IS_ENABLED(HUSH_OLD_PARSER)
-	int hush_flags = FLAG_PARSE_SEMICOLON | FLAG_EXIT_FROM_LOOP;
+#elif CONFIG_IS_ENABLED(HUSH_PARSER)
+	if (gd->flags & GD_FLG_HUSH_OLD_PARSER) {
+		int hush_flags = FLAG_PARSE_SEMICOLON | FLAG_EXIT_FROM_LOOP;
 
-	if (flag & CMD_FLAG_ENV)
-		hush_flags |= FLAG_CONT_ON_NEWLINE;
-	return parse_string_outer(cmd, hush_flags);
-#else /* HUSH_2021_PARSER */
-	/* Not yet implemented. */
+		if (flag & CMD_FLAG_ENV)
+			hush_flags |= FLAG_CONT_ON_NEWLINE;
+		return parse_string_outer(cmd, hush_flags);
+	} else if (gd->flags & GD_FLG_HUSH_2021_PARSER) {
+		/*
+		 * Possible values for flags are the following:
+		 * FLAG_EXIT_FROM_LOOP: This flags ensures we exit from loop in
+		 * parse_and_run_stream() after first iteration while normal
+		 * behavior, * i.e. when called from cli_loop(), is to loop
+		 * infinitely.
+		 * FLAG_PARSE_SEMICOLON: Hush 2021 parses ';' and does not stop
+		 * first time it sees one. So, I think we do not need this flag.
+		 * FLAG_REPARSING: For the moment, I do not understand the goal
+		 * of this flag.
+		 * FLAG_CONT_ON_NEWLINE: This flag seems to be used to continue
+		 * parsing even when reading '\n' when coming from
+		 * run_command(). In this case, Hush 2021 reads until it finds
+		 * '\0'. So, I think we do not need this flag.
+		 */
+		return parse_string_outer_2021(cmd, FLAG_EXIT_FROM_LOOP);
+	}
 	return 1;
 #endif
 }
@@ -64,12 +81,24 @@ int run_command_repeatable(const char *cmd, int flag)
 #ifndef CONFIG_HUSH_PARSER
 	return cli_simple_run_command(cmd, flag);
 #else
+	int ret;
+	if (gd->flags & GD_FLG_HUSH_OLD_PARSER) {
+		ret = parse_string_outer(cmd,
+					 FLAG_PARSE_SEMICOLON
+					 | FLAG_EXIT_FROM_LOOP);
+	} else if (gd->flags & GD_FLG_HUSH_2021_PARSER) {
+		ret = parse_string_outer_2021(cmd,
+					 FLAG_PARSE_SEMICOLON
+					 | FLAG_EXIT_FROM_LOOP);
+	} else {
+		ret = 1;
+	}
+
 	/*
 	 * parse_string_outer() returns 1 for failure, so clean up
 	 * its result.
 	 */
-	if (parse_string_outer(cmd,
-			       FLAG_PARSE_SEMICOLON | FLAG_EXIT_FROM_LOOP))
+	if (ret)
 		return -1;
 
 	return 0;
@@ -108,12 +137,13 @@ int run_command_list(const char *cmd, int len, int flag)
 		buff[len] = '\0';
 	}
 #ifdef CONFIG_HUSH_PARSER
-#if CONFIG_IS_ENABLED(HUSH_OLD_PARSER)
-	rcode = parse_string_outer(buff, FLAG_PARSE_SEMICOLON);
-#else /* HUSH_2021_PARSER */
-	/* Not yet implemented. */
-	rcode = 1;
-#endif
+	if (gd->flags & GD_FLG_HUSH_OLD_PARSER) {
+		rcode = parse_string_outer(buff, FLAG_PARSE_SEMICOLON);
+	} else if (gd->flags & GD_FLG_HUSH_2021_PARSER) {
+		rcode = parse_string_outer_2021(buff, FLAG_PARSE_SEMICOLON);
+	} else {
+		rcode = 1;
+	}
 #else
 	/*
 	 * This function will overwrite any \n it sees with a \0, which
