@@ -12,6 +12,7 @@
 #include <dm/root.h>
 #include <dm/test.h>
 #include <dm/uclass-internal.h>
+#include <rng.h>
 #include <test/test.h>
 #include <test/ut.h>
 
@@ -211,3 +212,38 @@ static int dm_test_virtio_ring(struct unit_test_state *uts)
 	return 0;
 }
 DM_TEST(dm_test_virtio_ring, UT_TESTF_SCAN_PDATA | UT_TESTF_SCAN_FDT);
+
+struct virtio_rng_priv {
+	struct virtqueue *rng_vq;
+};
+
+/* Test the virtio-rng driver validates the used size */
+static int dm_test_virtio_rng(struct unit_test_state *uts)
+{
+	struct udevice *bus, *dev;
+	struct virtio_rng_priv *priv;
+	u8 buffer[16];
+
+	/* check probe success */
+	ut_assertok(uclass_first_device(UCLASS_VIRTIO, &bus));
+	ut_assertnonnull(bus);
+
+	/* check the child virtio-rng device is bound */
+	ut_assertok(device_find_first_child(bus, &dev));
+	ut_assertnonnull(dev);
+
+	/* probe the virtio-rng driver */
+	ut_assertok(device_probe(dev));
+
+	/* simulate the device returning the buffer with too much data */
+	priv = dev_get_priv(dev);
+	priv->rng_vq->vring.used->idx = 1;
+	priv->rng_vq->vring.used->ring[0].id = 0;
+	priv->rng_vq->vring.used->ring[0].len = U32_MAX;
+
+	/* check the driver gracefully handles the error */
+	ut_asserteq(-EIO, dm_rng_read(dev, buffer, sizeof(buffer)));
+
+	return 0;
+}
+DM_TEST(dm_test_virtio_rng, UT_TESTF_SCAN_PDATA | UT_TESTF_SCAN_FDT);
