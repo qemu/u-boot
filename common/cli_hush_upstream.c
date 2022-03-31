@@ -6128,7 +6128,33 @@ static struct pipe *parse_stream(char **pstring,
 			if (parse_redirect(&ctx, redir_fd, redir_style, input))
 				goto parse_error_exitcode1;
 			continue; /* get next char */
-#endif /* !__U_BOOT__ */
+#else /* __U_BOOT__ */
+			/*
+			 * In U-Boot, '<' and '>' can be used in test command to test if
+			 * a string is, alphabetically, before or after another.
+			 * In 2021 Busybox hush, using test foo < bar will show the
+			 * following error:
+			 * hush: can't open 'bar': No such file or directory
+			 * Indeed, in this context, '>' and '<' are used as redirection
+			 * operators, to use them as sorting operators, one should use:
+			 * [[ foo < bar ]]
+			 * Or:
+			 * test foo \< bar
+			 *
+			 * For the moment, we will not implement [[ ]], so we will need
+			 * the user to escape these operators to use them as string
+			 * comparaison operators.
+			 * NOTE In my opinion, when you use '<' or '>' I am almost sure
+			 * you wanted to use "-gt" or "-lt" in place, so thinking to
+			 * escape these will make you should check your code (sh syntax
+			 * at this level is, for me, error prone).
+			 */
+			case '>':
+				/* fallthrough */
+			case '<':
+				printf("Redirection operator ('%c') is not supported!\nPlease escape it ('\\%c') to use it as string comparaison operator.\n", (char) ch, (char) ch);
+				goto parse_error_exitcode1;
+#endif /* __U_BOOT__ */
 		case '#':
 			if (ctx.word.length == 0 && !ctx.word.has_quoted_part) {
 				/* skip "#comment" */
