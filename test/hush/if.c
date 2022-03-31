@@ -9,6 +9,7 @@
 #include <env_attr.h>
 #include <test/hush.h>
 #include <test/ut.h>
+#include <asm/global_data.h>
 
 /*
  * All tests will execute the following:
@@ -35,9 +36,14 @@ static int hush_test_if_base(struct unit_test_state *uts)
 }
 HUSH_TEST(hush_test_if_base, 0);
 
+DECLARE_GLOBAL_DATA_PTR;
+
 static int hush_test_if_basic_operators(struct unit_test_state *uts)
 {
 	char if_formatted[128];
+
+	if (gd->flags & GD_FLG_HUSH_2021_PARSER)
+		console_record_reset_enable();
 
 	sprintf(if_formatted, if_format, "test aaa = aaa");
 	ut_assertok(run_command(if_formatted, 0));
@@ -52,15 +58,54 @@ static int hush_test_if_basic_operators(struct unit_test_state *uts)
 	ut_asserteq(1, run_command(if_formatted, 0));
 
 	sprintf(if_formatted, if_format, "test aaa < bbb");
+	if (gd->flags & GD_FLG_HUSH_2021_PARSER) {
+		/*
+		 * We need to escape < and > to use as them as string comparison
+		 * operator.
+		 * Otherwise, they are interpreted as redirection operators
+		 * which is not supported in U-Boot.
+		 */
+		ut_asserteq(1, run_command(if_formatted, 0));
+		/* Next lines contains error message (which is on two lines). */
+		ut_assert_skipline();
+		ut_assert_skipline();
+		ut_assert_console_end();
+
+		sprintf(if_formatted, if_format, R"(test aaa \< bbb)");
+	}
 	ut_assertok(run_command(if_formatted, 0));
 
 	sprintf(if_formatted, if_format, "test bbb < aaa");
+	if (gd->flags & GD_FLG_HUSH_2021_PARSER) {
+		ut_asserteq(1, run_command(if_formatted, 0));
+		ut_assert_skipline();
+		ut_assert_skipline();
+		ut_assert_console_end();
+
+		sprintf(if_formatted, if_format, R"(test bbb \< aaa)");
+	}
 	ut_asserteq(1, run_command(if_formatted, 0));
 
 	sprintf(if_formatted, if_format, "test bbb > aaa");
+	if (gd->flags & GD_FLG_HUSH_2021_PARSER) {
+		ut_asserteq(1, run_command(if_formatted, 0));
+		ut_assert_skipline();
+		ut_assert_skipline();
+		ut_assert_console_end();
+
+		sprintf(if_formatted, if_format, R"(test bbb \> aaa)");
+	}
 	ut_assertok(run_command(if_formatted, 0));
 
 	sprintf(if_formatted, if_format, "test aaa > bbb");
+	if (gd->flags & GD_FLG_HUSH_2021_PARSER) {
+		ut_asserteq(1, run_command(if_formatted, 0));
+		ut_assert_skipline();
+		ut_assert_skipline();
+		ut_assert_console_end();
+
+		sprintf(if_formatted, if_format, R"(test aaa \> bbb)");
+	}
 	ut_asserteq(1, run_command(if_formatted, 0));
 
 	sprintf(if_formatted, if_format, "test 123 -eq 123");
