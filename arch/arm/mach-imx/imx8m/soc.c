@@ -518,6 +518,9 @@ EVENT_SPY(EVT_DM_POST_INIT, imx8m_check_clock);
 int arch_cpu_init(void)
 {
 	struct ocotp_regs *ocotp = (struct ocotp_regs *)OCOTP_BASE_ADDR;
+
+	icache_enable();
+
 	/*
 	 * ROM might disable clock for SCTR,
 	 * enable the clock before timer_init.
