@@ -39,6 +39,9 @@ config TARGET_IMX8MQ_EVK
 	select BINMAN
 	select IMX8MQ
 	select IMX8M_LPDDR4
+	select FSL_CAAM
+	select ARCH_MISC_INIT
+	select SPL_CRYPTO if SPL
 
 config TARGET_IMX8MQ_PHANBELL
 	bool "imx8mq_phanbell"
@@ -46,12 +49,22 @@ config TARGET_IMX8MQ_PHANBELL
 	select IMX8MQ
 	select IMX8M_LPDDR4
 
+config TARGET_IMX8MM_DATA_MODUL_EDM_SBC
+	bool "Data Modul eDM SBC i.MX8M Mini"
+	select BINMAN
+	select IMX8MM
+	select IMX8M_LPDDR4
+	select SUPPORT_SPL
+
 config TARGET_IMX8MM_EVK
 	bool "imx8mm LPDDR4 EVK board"
 	select BINMAN
 	select IMX8MM
 	select SUPPORT_SPL
 	select IMX8M_LPDDR4
+	select FSL_CAAM
+	select ARCH_MISC_INIT
+	select SPL_CRYPTO if SPL
 
 config TARGET_IMX8MM_ICORE_MX8MM
 	bool "Engicam i.Core MX8M Mini SOM"
@@ -77,6 +90,8 @@ config TARGET_IMX8MM_VENICE
 	select IMX8MM
 	select SUPPORT_SPL
 	select IMX8M_LPDDR4
+	select GATEWORKS_SC
+	select MISC
 
 config TARGET_KONTRON_MX8MM
 	bool "Kontron Electronics N80xx"
@@ -85,12 +100,28 @@ config TARGET_KONTRON_MX8MM
 	select SUPPORT_SPL
 	select IMX8M_LPDDR4
 
+config TARGET_IMX8MN_BSH_SMM_S2
+	bool "imx8mn-bsh-smm-s2"
+	select BINMAN
+	select IMX8MN
+	select SUPPORT_SPL
+	select IMX8M_DDR3L
+
+config TARGET_IMX8MN_BSH_SMM_S2PRO
+	bool "imx8mn-bsh-smm-s2pro"
+	select BINMAN
+	select IMX8MN
+	select SUPPORT_SPL
+	select IMX8M_DDR3L
+
 config TARGET_IMX8MN_EVK
 	bool "imx8mn LPDDR4 EVK board"
 	select BINMAN
 	select IMX8MN
 	select SUPPORT_SPL
 	select IMX8M_LPDDR4
+	select FSL_CAAM
+	select SPL_CRYPTO if SPL
 
 config TARGET_IMX8MN_DDR4_EVK
 	bool "imx8mn DDR4 EVK board"
@@ -98,6 +129,8 @@ config TARGET_IMX8MN_DDR4_EVK
 	select IMX8MN
 	select SUPPORT_SPL
 	select IMX8M_DDR4
+	select FSL_CAAM
+	select SPL_CRYPTO if SPL
 
 config TARGET_IMX8MN_VENICE
 	bool "Support Gateworks Venice iMX8M Nano module"
@@ -105,6 +138,8 @@ config TARGET_IMX8MN_VENICE
 	select IMX8MN
 	select SUPPORT_SPL
 	select IMX8M_LPDDR4
+	select GATEWORKS_SC
+	select MISC
 
 config TARGET_IMX8MP_EVK
 	bool "imx8mp LPDDR4 EVK board"
@@ -112,6 +147,9 @@ config TARGET_IMX8MP_EVK
 	select IMX8MP
 	select SUPPORT_SPL
 	select IMX8M_LPDDR4
+	select FSL_CAAM
+	select ARCH_MISC_INIT
+	select SPL_CRYPTO if SPL
 
 config TARGET_PICO_IMX8MQ
 	bool "Support Technexion Pico iMX8MQ"
@@ -203,12 +241,22 @@ config TARGET_IMX8MP_RSB3720A1_6G
 	select IMX8MP
 	select SUPPORT_SPL
 	select IMX8M_LPDDR4
+
+config TARGET_LIBREM5
+	bool "Purism Librem5 Phone"
+	select BINMAN
+	select IMX8MQ
+	select SUPPORT_SPL
+	select IMX8M_LPDDR4
+
 endchoice
 
 source "board/advantech/imx8mp_rsb3720a1/Kconfig"
 source "board/beacon/imx8mm/Kconfig"
 source "board/beacon/imx8mn/Kconfig"
+source "board/bsh/imx8mn_smm_s2/Kconfig"
 source "board/compulab/imx8mm-cl-iot-gate/Kconfig"
+source "board/data_modul/imx8mm_edm_sbc/Kconfig"
 source "board/engicam/imx8mm/Kconfig"
 source "board/freescale/imx8mq_evk/Kconfig"
 source "board/freescale/imx8mm_evk/Kconfig"
@@ -220,6 +268,7 @@ source "board/kontron/pitx_imx8m/Kconfig"
 source "board/kontron/sl-mx8mm/Kconfig"
 source "board/phytec/phycore_imx8mm/Kconfig"
 source "board/phytec/phycore_imx8mp/Kconfig"
+source "board/purism/librem5/Kconfig"
 source "board/ronetix/imx8mq-cm/Kconfig"
 source "board/technexion/pico-imx8mq/Kconfig"
 source "board/variscite/imx8mn_var_som/Kconfig"
