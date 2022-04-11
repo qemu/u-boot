@@ -137,7 +137,8 @@ check for migrated symbols in board header:
          NUM=`comm -123 --total --output-delimiter=, ${KSYMLST} ${KUSEDLST} |
             cut -d , -f 3`;
          if [[ $NUM -ne 0 ]]; then
-            echo "Unmigrated symbols found in $CFG";
+            echo "Unmigrated symbols found in $CFG:";
+            comm -12 ${KSYMLST} ${KUSEDLST}
             exit 1;
          fi;
       done
