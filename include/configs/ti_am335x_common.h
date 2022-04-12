@@ -19,7 +19,7 @@
 /* NS16550 Configuration */
 #ifdef CONFIG_SPL_BUILD
 #define CONFIG_SYS_NS16550_SERIAL
-#ifndef CONFIG_DM_SERIAL
+#if !CONFIG_IS_ENABLED(DM_SERIAL)
 #define CONFIG_SYS_NS16550_REG_SIZE	(-4)
 #endif
 #endif

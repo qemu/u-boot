@@ -81,10 +81,12 @@
 #define CONFIG_SYS_PTV			2	/* Divisor: 2^(PTV+1) => 8 */
 
 /* NS16550 Configuration */
+#if !CONFIG_IS_ENABLED(DM_SERIAL)
 #define CONFIG_SYS_NS16550_SERIAL
 #define CONFIG_SYS_NS16550_REG_SIZE	(-4)
 #define CONFIG_SYS_NS16550_CLK		(48000000)
 #define CONFIG_SYS_NS16550_COM1		0x48020000	/* Base EVM has UART0 */
+#endif
 
 /* CPU */
 

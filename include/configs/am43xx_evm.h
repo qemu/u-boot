@@ -15,7 +15,7 @@
 
 /* NS16550 Configuration */
 #define CONFIG_SYS_NS16550_CLK		48000000
-#if !defined(CONFIG_SPL_DM) || !defined(CONFIG_DM_SERIAL)
+#if !CONFIG_IS_ENABLED(DM_SERIAL)
 #define CONFIG_SYS_NS16550_REG_SIZE    (-4)
 #define CONFIG_SYS_NS16550_SERIAL
 #endif

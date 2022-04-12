@@ -807,6 +807,7 @@ config ARCH_K3
 config ARCH_OMAP2PLUS
 	bool "TI OMAP2+"
 	select CPU_V7A
+	select DM_SERIAL if SERIAL
 	select GPIO_EXTRA_HEADER
 	select SPL_BOARD_INIT if SPL
 	select SPL_STACK_R if SPL
