@@ -10,6 +10,7 @@
 #include <ide.h>
 #include <uuid.h>
 #include <linker_lists.h>
+#include <linux/errno.h>
 #include <linux/list.h>
 
 struct block_drvr {
@@ -86,7 +87,7 @@ struct disk_part {
 };
 
 /* Misc _get_dev functions */
-#ifdef CONFIG_PARTITIONS
+#if CONFIG_IS_ENABLED(PARTITIONS)
 /**
  * blk_get_dev() - get a pointer to a block device given its type and number
  *
@@ -275,6 +276,15 @@ static inline int blk_get_device_part_str(const char *ifname,
 					  struct disk_partition *info,
 					  int allow_whole_dev)
 { *dev_desc = NULL; return -1; }
+static inline int part_get_info_by_name_type(struct blk_desc *dev_desc,
+					     const char *name,
+					     struct disk_partition *info,
+					     int part_type)
+{ return -ENOENT; }
+static inline int part_get_info_by_name(struct blk_desc *dev_desc,
+					const char *name,
+					struct disk_partition *info)
+{ return -ENOENT; }
 static inline int
 part_get_info_by_dev_and_name_or_num(const char *dev_iface,
 				     const char *dev_part_str,
@@ -496,7 +506,7 @@ int layout_mbr_partitions(struct disk_partition *p, int count,
 
 #endif
 
-#ifdef CONFIG_PARTITIONS
+#if CONFIG_IS_ENABLED(PARTITIONS)
 /**
  * part_driver_get_count() - get partition driver count
  *
