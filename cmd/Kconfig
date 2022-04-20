@@ -23,12 +23,13 @@ config HUSH_PARSER
 	  If disabled, you get the old, much simpler behaviour with a somewhat
 	  smaller memory footprint.
 
-menu "Hush flavor to use"
+choice
+	prompt "Hush flavor to use"
 	depends on HUSH_PARSER
+	default HUSH_2021_PARSER
 
 	config HUSH_OLD_PARSER
 		bool "Use hush old parser"
-		default y
 		help
 		  This option enables the old flavor of hush based on hush Busybox from
 		  2005.
@@ -42,7 +43,7 @@ menu "Hush flavor to use"
 		  2021.
 
 		  For the moment, it is highly experimental and should be used at own risks.
-endmenu
+endchoice
 
 config CMDLINE_EDITING
 	bool "Enable command line editing"

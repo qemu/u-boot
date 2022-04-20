@@ -40,12 +40,6 @@
 #define USE_FOR_NOMMU(...)	__VA_ARGS__
 #define USE_FOR_MMU(...)
 
-/* TODO: Drop this before upstreaming */
-#ifdef CONFIG_SYS_PROMPT
-#undef CONFIG_SYS_PROMPT
-#define CONFIG_SYS_PROMPT	"2021> "
-#endif /* CONFIG_SYS_PROMPT */
-
 /*
  * Size-saving "small" ints (arch-dependent)
  */
