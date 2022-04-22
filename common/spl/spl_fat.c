@@ -61,6 +61,11 @@ int spl_load_image_fat(struct spl_image_info *spl_image,
 {
 	int err;
 	struct image_header *header;
+	struct spl_load_info load = {
+		.read = spl_fit_read,
+		.bl_len = 1,
+		.filename = filename,
+	};
 
 	err = spl_register_fat_device(block_dev, partition);
 	if (err)
@@ -72,36 +77,7 @@ int spl_load_image_fat(struct spl_image_info *spl_image,
 	if (err <= 0)
 		goto end;
 
-	if (IS_ENABLED(CONFIG_SPL_LOAD_FIT_FULL) &&
-	    image_get_magic(header) == FDT_MAGIC) {
-		err = file_fat_read(filename, (void *)CONFIG_SYS_LOAD_ADDR, 0);
-		if (err <= 0)
-			goto end;
-		err = spl_parse_image_header(spl_image, bootdev,
-				(struct image_header *)CONFIG_SYS_LOAD_ADDR);
-		if (err == -EAGAIN)
-			return err;
-		if (err == 0)
-			err = 1;
-	} else if (IS_ENABLED(CONFIG_SPL_LOAD_FIT) &&
-	    image_get_magic(header) == FDT_MAGIC) {
-		struct spl_load_info load;
-
-		debug("Found FIT\n");
-		load.read = spl_fit_read;
-		load.bl_len = 1;
-		load.filename = (void *)filename;
-		load.priv = NULL;
-
-		return spl_load_simple_fit(spl_image, &load, 0, header);
-	} else {
-		err = spl_parse_image_header(spl_image, bootdev, header);
-		if (err)
-			goto end;
-
-		err = file_fat_read(filename,
-				    (u8 *)(uintptr_t)spl_image->load_addr, 0);
-	}
+	err = spl_load(spl_image, bootdev, &load, header, err, 0);
 
 end:
 #ifdef CONFIG_SPL_LIBCOMMON_SUPPORT
