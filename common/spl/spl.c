@@ -416,6 +416,67 @@ int spl_parse_image_header(struct spl_image_info *spl_image,
 	return 0;
 }
 
+static int spl_simple_read(struct spl_load_info *info, void *buf, size_t size,
+			   size_t offset)
+{
+	size_t bl_len = info->filename ? ARCH_DMA_MINALIGN : bl_len;
+	size_t bl_mask = bl_len - 1;
+	size_t overhead = offset & bl_mask;
+	size_t bl_shift = ffs(bl_mask);
+	int ret;
+
+	buf -= overhead;
+	size = (size + overhead + bl_mask) >> bl_shift;
+	offset = offset >> bl_shift;
+
+	ret = info->read(info, offset, size, buf);
+	return ret == size ? 0 : -EIO;
+}
+
+int spl_load(struct spl_image_info *spl_image,
+	     const struct spl_boot_device *bootdev, struct spl_load_info *info,
+	     struct image_header *header, size_t size, size_t sector)
+{
+	int ret;
+	size_t offset = sector * info->bl_len;
+
+	if (image_get_magic(header) == FDT_MAGIC) {
+		if (IS_ENABLED(CONFIG_SPL_LOAD_FIT_FULL)) {
+			void *buf;
+
+			/*
+			 * In order to support verifying images in the FIT, we
+			 * need to load the whole FIT into memory. Try and
+			 * guess how much we need to load by using the total
+			 * size. This will fail for FITs with external data,
+			 * but there's not much we can do about that.
+			 */
+			if (!size)
+				size = roundup(fdt_totalsize(header), 4);
+			buf = spl_get_load_buffer(0, size);
+			ret = spl_simple_read(info, buf, size, offset);
+			if (ret)
+				return ret;
+
+			return spl_parse_image_header(spl_image, bootdev, buf);
+		}
+
+		if (IS_ENABLED(CONFIG_SPL_LOAD_FIT))
+			return spl_load_simple_fit(spl_image, info, sector,
+						   header);
+	}
+
+	if (IS_ENABLED(CONFIG_SPL_LOAD_IMX_CONTAINER))
+		return spl_load_imx_container(spl_image, info, sector);
+
+	ret = spl_parse_image_header(spl_image, bootdev, header);
+	if (ret)
+		return ret;
+
+	return spl_simple_read(info, (void *)spl_image->load_addr,
+			       spl_image->size, offset + spl_image->offset);
+}
+
 __weak void __noreturn jump_to_image_no_args(struct spl_image_info *spl_image)
 {
 	typedef void __noreturn (*image_entry_noargs_t)(void);
