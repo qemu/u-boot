@@ -42,6 +42,16 @@ static int apple_reset_of_xlate(struct reset_ctl *reset_ctl,
 	return 0;
 }
 
+static int apple_reset_request(struct reset_ctl *reset_ctl)
+{
+	return 0;
+}
+
+static int apple_reset_free(struct reset_ctl *reset_ctl)
+{
+	return 0;
+}
+
 static int apple_reset_assert(struct reset_ctl *reset_ctl)
 {
 	struct apple_pmgr_priv *priv = dev_get_priv(reset_ctl->dev->parent);
@@ -70,6 +80,8 @@ static int apple_reset_deassert(struct reset_ctl *reset_ctl)
 
 struct reset_ops apple_reset_ops = {
 	.of_xlate = apple_reset_of_xlate,
+	.request = apple_reset_request,
+	.rfree = apple_reset_free,
 	.rst_assert = apple_reset_assert,
 	.rst_deassert = apple_reset_deassert,
 };
