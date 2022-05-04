@@ -26,8 +26,11 @@ unsigned long __weak spl_nor_get_uboot_base(void)
 static int spl_nor_load_image(struct spl_image_info *spl_image,
 			      struct spl_boot_device *bootdev)
 {
-	__maybe_unused const struct image_header *header;
-	__maybe_unused struct spl_load_info load;
+	struct image_header *header = (void *)spl_nor_get_uboot_base();
+	struct spl_load_info load = {
+		.bl_len = 1,
+		.read = spl_nor_load_read,
+	};
 
 	/*
 	 * Loading of the payload to SDRAM is done with skipping of
@@ -91,32 +94,6 @@ static int spl_nor_load_image(struct spl_image_info *spl_image,
 	 * Load real U-Boot from its location in NOR flash to its
 	 * defined location in SDRAM
 	 */
-#ifdef CONFIG_SPL_LOAD_FIT
-	header = (const struct image_header *)spl_nor_get_uboot_base();
-	if (image_get_magic(header) == FDT_MAGIC) {
-		debug("Found FIT format U-Boot\n");
-		load.bl_len = 1;
-		load.read = spl_nor_load_read;
-		return spl_load_simple_fit(spl_image, &load,
-					   spl_nor_get_uboot_base(),
-					   (void *)header);
-	}
-#endif
-	if (IS_ENABLED(CONFIG_SPL_LOAD_IMX_CONTAINER)) {
-		load.bl_len = 1;
-		load.read = spl_nor_load_read;
-		return spl_load_imx_container(spl_image, &load,
-					      spl_nor_get_uboot_base());
-	}
-
-	/* Legacy image handling */
-	if (IS_ENABLED(CONFIG_SPL_LEGACY_IMAGE_SUPPORT)) {
-		load.bl_len = 1;
-		load.read = spl_nor_load_read;
-		return spl_load_legacy_img(spl_image, bootdev, &load,
-					   spl_nor_get_uboot_base());
-	}
-
-	return 0;
+	return spl_load(spl_image, bootdev, &load, header, 0, 0);
 }
 SPL_LOAD_IMAGE_METHOD("NOR", 0, BOOT_DEVICE_NOR, spl_nor_load_image);
