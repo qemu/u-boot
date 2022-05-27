@@ -725,7 +725,7 @@ static int label_boot(struct pxe_context *ctx, struct pxe_label *label)
 	if (!bootm_argv[3])
 		bootm_argv[3] = env_get("fdt_addr");
 
-	if (!bootm_argv[3])
+	if (genimg_get_format(buf) != IMAGE_FORMAT_FIT && !bootm_argv[3])
 		bootm_argv[3] = env_get("fdtcontroladdr");
 
 	if (bootm_argv[3]) {
