@@ -19,6 +19,7 @@
 #include <mapmem.h>
 #include <serial.h>
 #include <spl.h>
+#include <system-constants.h>
 #include <asm/global_data.h>
 #include <asm-generic/gpio.h>
 #include <asm/u-boot.h>
@@ -728,11 +729,10 @@ void board_init_r(gd_t *dummy1, ulong dummy2)
 
 	spl_set_bd();
 
-#if defined(CONFIG_SYS_SPL_MALLOC_START)
-	mem_malloc_init(CONFIG_SYS_SPL_MALLOC_START,
-			CONFIG_SYS_SPL_MALLOC_SIZE);
-	gd->flags |= GD_FLG_FULL_MALLOC_INIT;
-#endif
+	if (IS_ENABLED(CONFIG_SYS_SPL_MALLOC)) {
+		mem_malloc_init(SYS_SPL_MALLOC_START, CONFIG_SYS_SPL_MALLOC_SIZE);
+		gd->flags |= GD_FLG_FULL_MALLOC_INIT;
+	}
 	if (!(gd->flags & GD_FLG_SPL_INIT)) {
 		if (spl_init())
 			hang();
