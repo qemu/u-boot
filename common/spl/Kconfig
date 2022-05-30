@@ -1,5 +1,3 @@
-menu "SPL / TPL / VPL"
-
 config SUPPORT_SPL
 	bool
 
@@ -13,15 +11,16 @@ config SPL_DFU_NO_RESET
 	bool
 
 config SPL
-	bool
+	bool "Enable SPL"
 	depends on SUPPORT_SPL
-	prompt "Enable SPL"
 	help
 	  If you want to build SPL as well as the normal image, say Y.
 
+menu "SPL configuration options"
+	depends on SPL
+
 config SPL_FRAMEWORK
 	bool "Support SPL based upon the common SPL framework"
-	depends on SPL
 	default y
 	help
 	  Enable the SPL framework under common/spl/.  This framework
@@ -211,8 +210,6 @@ config HANDOFF
 	  in boot. It is available in gd->handoff. The state state is set up
 	  in SPL (or TPL if that is being used).
 
-if SPL
-
 config SPL_HANDOFF
 	bool "Pass hand-off information from SPL to U-Boot proper"
 	depends on HANDOFF && SPL_BLOBLIST
@@ -300,8 +297,7 @@ config SPL_LEGACY_IMAGE_CRC_CHECK
 	  are correct, without further integrity checks.
 
 config SPL_SYS_MALLOC_SIMPLE
-	bool
-	prompt "Only use malloc_simple functions in the SPL"
+	bool "Only use malloc_simple functions in the SPL"
 	help
 	  Say Y here to only use the *_simple malloc functions from
 	  malloc_simple.c, rather then using the versions from dlmalloc.c;
@@ -1472,24 +1468,6 @@ config SPL_TARGET
 	  On some platforms we need to have 'make' run additional build target
 	  rules. If required on your platform, enter it here, otherwise leave blank.
 
-config TPL
-	bool
-	depends on SUPPORT_TPL
-	prompt "Enable TPL"
-	help
-	  If you want to build TPL as well as the normal image and SPL, say Y.
-
-source "common/spl/Kconfig.tpl"
-
-config VPL
-	bool
-	depends on SUPPORT_SPL
-	prompt "Enable VPL"
-	help
-	  If you want to build VPL as well as the normal image, TPL and SPL,
-	  say Y.
-
-source "common/spl/Kconfig.vpl"
 
 config SPL_AT91_MCK_BYPASS
 	bool "Use external clock signal as a source of main clock for AT91 platforms"
@@ -1501,6 +1479,21 @@ config SPL_AT91_MCK_BYPASS
 	  The external source has to provide a stable clock on the XIN pin.
 	  If this option is disabled, the SoC expects a crystal oscillator
 	  that needs driving on both XIN and XOUT lines.
-
-endif # SPL
 endmenu
+
+config TPL
+	depends on SUPPORT_TPL
+	bool "Enable TPL"
+	help
+	  If you want to build TPL as well as the normal image and SPL, say Y.
+
+source "common/spl/Kconfig.tpl"
+
+config VPL
+	depends on SUPPORT_SPL
+	bool "Enable VPL"
+	help
+	  If you want to build VPL as well as the normal image, TPL and SPL,
+	  say Y.
+
+source "common/spl/Kconfig.vpl"
