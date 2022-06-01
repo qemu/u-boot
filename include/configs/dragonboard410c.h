@@ -24,7 +24,6 @@
 
 /* Fixup - in init code we switch from device to host mode,
  * it has to be done after each HCD reset */
-#define CONFIG_EHCI_HCD_INIT_AFTER_RESET
 
 #define BOOT_TARGET_DEVICES(func) \
 	func(USB, usb, 0) \
