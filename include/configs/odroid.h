@@ -146,9 +146,6 @@
 
 /* GPT */
 
-/* Security subsystem - enable hw_rand() */
-#define CONFIG_EXYNOS_ACE_SHA
-
 /*
  * Supported Odroid boards: X3, U3
  * TODO: Add Odroid X support
