@@ -19,14 +19,10 @@
 # define CONFIG_MALLOC_F_ADDR		0x930000
 #endif /* CONFIG_SPL_BUILD */
 
-#ifndef CONFIG_SPL_BUILD
 #define BOOT_TARGET_DEVICES(func) \
 	func(MMC, mmc, 2) \
 	func(MMC, mmc, 0)
 #include <config_distro_bootcmd.h>
-#else
-#define BOOTENV
-#endif
 
 #define ENV_MEM_LAYOUT_SETTINGS \
 	"fdt_addr_r=0x44000000\0" \
