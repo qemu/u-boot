@@ -843,6 +843,10 @@ config FSL_ESDHC_VS33_NOT_SUPPORT
 	  For eSDHC, power supply is through peripheral circuit. 3.3V support is
 	  common. Select this if 3.3V power supply not supported.
 
+config ESDHC_DETECT_QUIRK
+	bool "QIXIS-based eSDHC quirk detection"
+	depends on FSL_ESDHC && FSL_QIXIS
+
 config FSL_ESDHC_IMX
 	bool "Freescale/NXP i.MX eSDHC controller support"
 	help
