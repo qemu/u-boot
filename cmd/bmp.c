@@ -49,6 +49,7 @@ struct bmp_image *gunzip_bmp(unsigned long addr, unsigned long *lenp,
 	 * Decompress bmp image
 	 */
 	len = CONFIG_SYS_VIDEO_LOGO_MAX_SIZE;
+#error "CONFIG_SYS_VIDEO_LOGO_MAX_SIZE is not unused yet"
 	/* allocate extra 3 bytes for 32-bit-aligned-address + 2 alignment */
 	dst = malloc(CONFIG_SYS_VIDEO_LOGO_MAX_SIZE + 3);
 	if (dst == NULL) {

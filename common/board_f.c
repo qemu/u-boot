@@ -400,6 +400,7 @@ static int reserve_video(void)
 	      ((unsigned long)gd->relocaddr - addr) >> 10, addr);
 	gd->relocaddr = addr;
 #elif defined(CONFIG_LCD)
+#error "CONFIG_LCD is not yet unused"
 	/* reserve memory for LCD display (always full pages) */
 	gd->relocaddr = lcd_setmem(gd->relocaddr);
 	gd->fb_base = gd->relocaddr;

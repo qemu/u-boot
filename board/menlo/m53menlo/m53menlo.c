@@ -359,6 +359,7 @@ int board_late_init(void)
 
 	addr = hextoul(s, NULL);
 	dst = malloc(CONFIG_SYS_VIDEO_LOGO_MAX_SIZE);
+#error "CONFIG_SYS_VIDEO_LOGO_MAX_SIZE is not unused yet"
 	if (!dst)
 		return -ENOMEM;
 
