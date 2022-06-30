@@ -162,6 +162,7 @@ struct eqos_dma_regs {
 #define EQOS_DMA_SYSBUS_MODE_BLEN4			BIT(1)
 
 #define EQOS_DMA_CH0_CONTROL_DSL_SHIFT			18
+#define EQOS_DMA_CH0_CONTROL_DSL_MAX			7
 #define EQOS_DMA_CH0_CONTROL_PBLX8			BIT(16)
 
 #define EQOS_DMA_CH0_TX_CONTROL_TXPBL_SHIFT		16
@@ -226,9 +227,11 @@ struct eqos_config {
 	struct eqos_ops *ops;
 };
 
+struct eqos_priv;
+
 struct eqos_ops {
-	void (*eqos_inval_desc)(void *desc);
-	void (*eqos_flush_desc)(void *desc);
+	void (*eqos_inval_desc)(struct eqos_priv *eqos, void *desc);
+	void (*eqos_flush_desc)(struct eqos_priv *eqos, void *desc);
 	void (*eqos_inval_buffer)(void *buf, size_t size);
 	void (*eqos_flush_buffer)(void *buf, size_t size);
 	int (*eqos_probe_resources)(struct udevice *dev);
@@ -273,6 +276,7 @@ struct eqos_priv {
 	bool started;
 	bool reg_access_ok;
 	bool clk_ck_enabled;
+	bool use_cached_mem;
 };
 
 void eqos_inval_desc_generic(void *desc);
