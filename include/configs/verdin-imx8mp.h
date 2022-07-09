@@ -14,12 +14,6 @@
 	(QSPI0_AMBA_BASE + CONFIG_SYS_MMCSD_RAW_MODE_U_BOOT_SECTOR * 512)
 
 #ifdef CONFIG_SPL_BUILD
-/*#define CONFIG_ENABLE_DDR_TRAINING_DEBUG*/
-
-/* malloc f used before GD_FLG_FULL_MALLOC_INIT set */
-#define CONFIG_MALLOC_F_ADDR				0x184000
-/* For RAW image gives a error info not panic */
-
 #define CONFIG_POWER_PCA9450
 
 #define CONFIG_SYS_I2C

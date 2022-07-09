@@ -15,13 +15,6 @@
 #define CONFIG_SYS_UBOOT_BASE	\
 	(QSPI0_AMBA_BASE + CONFIG_SYS_MMCSD_RAW_MODE_U_BOOT_SECTOR * 512)
 
-#ifdef CONFIG_SPL_BUILD
-/* malloc f used before GD_FLG_FULL_MALLOC_INIT set */
-#define CONFIG_MALLOC_F_ADDR		0x912000
-/* For RAW image gives a error info not panic */
-
-#endif
-
 /* GUIDs for capsule updatable firmware images */
 #define IMX8MM_CL_IOT_GATE_FIT_IMAGE_GUID \
 	EFI_GUID(0x7a32a939, 0xab92, 0x467b, 0x91, 0x52, \

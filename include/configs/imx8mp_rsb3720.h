@@ -25,11 +25,6 @@
 		 0x5f, 0xd3, 0x6b, 0x9b, 0xe5, 0xb9)
 
 #ifdef CONFIG_SPL_BUILD
-#define CONFIG_MALLOC_F_ADDR		0x184000 /* malloc f used before \
-						  * GD_FLG_FULL_MALLOC_INIT \
-						  * set \
-						  */
-
 
 #if defined(CONFIG_NAND_BOOT)
 #define CONFIG_SPL_NAND_MXS

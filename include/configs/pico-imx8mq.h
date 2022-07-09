@@ -14,10 +14,6 @@
 #ifdef CONFIG_SPL_BUILD
 /*#define CONFIG_ENABLE_DDR_TRAINING_DEBUG*/
 #define CONFIG_SYS_SPL_PTE_RAM_BASE	0x41580000
-
-/* malloc f used before GD_FLG_FULL_MALLOC_INIT set */
-#define CONFIG_MALLOC_F_ADDR		0x182000
-/* For RAW image gives a error info not panic */
 #endif
 
 /* ENET Config */

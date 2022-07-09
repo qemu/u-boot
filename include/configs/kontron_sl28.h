@@ -29,11 +29,6 @@
 /* SMP */
 #define CPU_RELEASE_ADDR		secondary_boot_addr
 
-/* generic timer */
-
-/* early heap for SPL DM */
-#define CONFIG_MALLOC_F_ADDR		CONFIG_SYS_FSL_OCRAM_BASE
-
 /* serial port */
 #define CONFIG_SYS_NS16550_CLK          (get_bus_freq(0) / 2)
 
