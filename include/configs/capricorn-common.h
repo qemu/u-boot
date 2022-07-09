@@ -17,8 +17,6 @@
 
 #define CONFIG_SYS_MONITOR_LEN		(1024 * 1024)
 
-#define CONFIG_MALLOC_F_ADDR		0x00120000
-
 #endif /* CONFIG_SPL_BUILD */
 
 /* ENET1 connects to base board and MUX with ESAI */

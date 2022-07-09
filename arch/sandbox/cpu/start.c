@@ -506,9 +506,7 @@ int sandbox_main(int argc, char *argv[])
 			goto err;
 	}
 
-#if CONFIG_VAL(SYS_MALLOC_F_LEN)
-	gd->malloc_base = CONFIG_MALLOC_F_ADDR;
-#endif
+	gd->malloc_base = CONFIG_VAL(MALLOC_F_ADDR);
 #if CONFIG_IS_ENABLED(LOG)
 	gd->default_log_level = state->default_log_level;
 #endif

@@ -286,6 +286,24 @@ config SYS_MALLOC_F
 	  particular needs this to operate, so that it can allocate the
 	  initial serial device and any others that are needed.
 
+config MALLOC_F_ADDR
+	hex "Address of malloc() pool before relocation"
+	depends on SYS_MALLOC_F
+	default 0x120000 if ARCH_IMX8
+	default 0x182000 if ARCH_IMX8M && IMX8MQ
+	default 0x930000 if ARCH_IMX8M && IMX8MM
+	default 0x184000 if ARCH_IMX8M && IMX8MN
+	default 0x184000 if ARCH_IMX8M && IMX8MP
+	default 0x22040000 if ARCH_IMX8ULP
+	default 0x204D0000 if ARCH_IMX9
+	default 0x18000000 if ARCH_LS1028A
+	default 0x10000 if SANDBOX
+	default 0x0
+	help
+	  Before relocation, memory is very limited on many platforms. Still,
+	  we can provide a small malloc() pool if needed. This option selects
+	  placement of early malloc pool.
+
 config SYS_MALLOC_F_LEN
 	hex "Size of malloc() pool before relocation"
 	depends on SYS_MALLOC_F
@@ -320,6 +338,15 @@ config SYS_MALLOC_LEN
 	  This defines memory to be allocated for Dynamic allocation
 	  TODO: Use for other architectures
 
+config SPL_MALLOC_F_ADDR
+	hex "Address of malloc() pool before relocation in SPL"
+	depends on SYS_MALLOC_F && SPL
+	default MALLOC_F_ADDR
+	help
+	  Before relocation, memory is very limited on many platforms. Still,
+	  we can provide a small malloc() pool if needed. This option selects
+	  placement of early malloc pool in SPL.
+
 config SPL_SYS_MALLOC_F_LEN
 	hex "Size of malloc() pool in SPL"
 	depends on SYS_MALLOC_F && SPL
@@ -334,6 +361,15 @@ config SPL_SYS_MALLOC_F_LEN
 
 	  It is possible to enable CONFIG_SYS_SPL_MALLOC_START to start a new
 	  malloc() region in SDRAM once it is inited.
+
+config TPL_MALLOC_F_ADDR
+	hex "Address of malloc() pool before relocation in TPL"
+	depends on SYS_MALLOC_F && TPL
+	default SPL_MALLOC_F_ADDR
+	help
+	  Before relocation, memory is very limited on many platforms. Still,
+	  we can provide a small malloc() pool if needed. This option selects
+	  placement of early malloc pool in TPL.
 
 config TPL_SYS_MALLOC_F_LEN
 	hex "Size of malloc() pool in TPL"
@@ -359,6 +395,15 @@ config VALGRIND
 	  Enable this option to annotate U-Boot's malloc implementation so that
 	  it can be handled accurately by Valgrind. If you aren't planning on
 	  using valgrind to debug U-Boot, say 'n'.
+
+config VPL_MALLOC_F_ADDR
+	hex "Address of malloc() pool before relocation in VPL"
+	depends on SYS_MALLOC_F && VPL
+	default MALLOC_F_ADDR
+	help
+	  Before relocation, memory is very limited on many platforms. Still,
+	  we can provide a small malloc() pool if needed. This option selects
+	  placement of early malloc pool in VPL.
 
 config VPL_SYS_MALLOC_F_LEN
 	hex "Size of malloc() pool in VPL before relocation"
