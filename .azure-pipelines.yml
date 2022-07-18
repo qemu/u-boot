@@ -171,7 +171,6 @@ stages:
     steps:
       - script: |
           cat << EOF > build.sh
-          set -ex
           cd ${WORK_DIR}
           EOF
           cat << "EOF" >> build.sh
@@ -186,6 +185,7 @@ stages:
           export PYTHONPATH=${UBOOT_TRAVIS_BUILD_DIR}/scripts/dtc/pylibfdt
           export PATH=${UBOOT_TRAVIS_BUILD_DIR}/scripts/dtc:${PATH}
           ./tools/buildman/buildman -T0 -o ${UBOOT_TRAVIS_BUILD_DIR} -w --board sandbox_spl
+          set -ex
           ./tools/binman/binman --toolpath ${UBOOT_TRAVIS_BUILD_DIR}/tools test
           ./tools/buildman/buildman -t
           ./tools/dtoc/dtoc -t
@@ -219,6 +219,7 @@ stages:
     steps:
       - script: |
           cd ${WORK_DIR}
+          pwd
           git config --global --add safe.directory $(work_dir)
           export USER=azure
           pip install -r test/py/requirements.txt
@@ -228,6 +229,7 @@ stages:
           echo "load-plugins=pylint.extensions.docparams" >> .pylintrc
           export UBOOT_TRAVIS_BUILD_DIR=/tmp/sandbox_spl
           ./tools/buildman/buildman -T0 -o ${UBOOT_TRAVIS_BUILD_DIR} -w --board sandbox_spl
+          set -ex
           pylint --version
           export PYTHONPATH=${UBOOT_TRAVIS_BUILD_DIR}/scripts/dtc/pylibfdt
           make pylint_err
