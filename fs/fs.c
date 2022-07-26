@@ -28,6 +28,7 @@
 #include <efi_loader.h>
 #include <squashfs.h>
 #include <erofs.h>
+#include <memalign.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 
@@ -139,6 +140,11 @@ static inline int fs_mkdir_unsupported(const char *dirname)
 	return -1;
 }
 
+static inline int fs_get_blocksize_unsupported(const char *filename)
+{
+	return -1;
+}
+
 struct fstype_info {
 	int fstype;
 	char *name;
@@ -158,6 +164,14 @@ struct fstype_info {
 	int (*size)(const char *filename, loff_t *size);
 	int (*read)(const char *filename, void *buf, loff_t offset,
 		    loff_t len, loff_t *actread);
+	/*
+	 * Report the minimal data blocksize the fs supprts.
+	 *
+	 * This is used to handle unaligned read offset.
+	 * If not supported, read() will handle the unaligned offset all by
+	 * itself.
+	 */
+	int (*get_blocksize)(const char *filename);
 	int (*write)(const char *filename, void *buf, loff_t offset,
 		     loff_t len, loff_t *actwrite);
 	void (*close)(void);
@@ -193,6 +207,7 @@ static struct fstype_info fstypes[] = {
 		.exists = fat_exists,
 		.size = fat_size,
 		.read = fat_read_file,
+		.get_blocksize = fs_get_blocksize_unsupported,
 #if CONFIG_IS_ENABLED(FAT_WRITE)
 		.write = file_fat_write,
 		.unlink = fat_unlink,
@@ -221,6 +236,7 @@ static struct fstype_info fstypes[] = {
 		.exists = ext4fs_exists,
 		.size = ext4fs_size,
 		.read = ext4_read_file,
+		.get_blocksize = fs_get_blocksize_unsupported,
 #ifdef CONFIG_CMD_EXT4_WRITE
 		.write = ext4_write_file,
 		.ln = ext4fs_create_link,
@@ -245,6 +261,11 @@ static struct fstype_info fstypes[] = {
 		.exists = sandbox_fs_exists,
 		.size = sandbox_fs_size,
 		.read = fs_read_sandbox,
+		/*
+		 * Sandbox doesn't need to bother blocksize, as its
+		 * os_read() can handle unaligned range without any problem.
+		 */
+		.get_blocksize = fs_get_blocksize_unsupported,
 		.write = fs_write_sandbox,
 		.uuid = fs_uuid_unsupported,
 		.opendir = fs_opendir_unsupported,
@@ -264,6 +285,12 @@ static struct fstype_info fstypes[] = {
 		.exists = fs_exists_unsupported,
 		.size = smh_fs_size,
 		.read = smh_fs_read,
+		/*
+		 * Semihost doesn't need to bother blocksize, as it is using
+		 * read() system calls, and can handle unaligned range without
+		 * any problem.
+		 */
+		.get_blocksize = fs_get_blocksize_unsupported,
 		.write = smh_fs_write,
 		.uuid = fs_uuid_unsupported,
 		.opendir = fs_opendir_unsupported,
@@ -284,6 +311,7 @@ static struct fstype_info fstypes[] = {
 		.exists = ubifs_exists,
 		.size = ubifs_size,
 		.read = ubifs_read,
+		.get_blocksize = fs_get_blocksize_unsupported,
 		.write = fs_write_unsupported,
 		.uuid = fs_uuid_unsupported,
 		.opendir = fs_opendir_unsupported,
@@ -305,6 +333,7 @@ static struct fstype_info fstypes[] = {
 		.exists = btrfs_exists,
 		.size = btrfs_size,
 		.read = btrfs_read,
+		.get_blocksize = btrfs_get_blocksize,
 		.write = fs_write_unsupported,
 		.uuid = btrfs_uuid,
 		.opendir = fs_opendir_unsupported,
@@ -324,6 +353,7 @@ static struct fstype_info fstypes[] = {
 		.readdir = sqfs_readdir,
 		.ls = fs_ls_generic,
 		.read = sqfs_read,
+		.get_blocksize = fs_get_blocksize_unsupported,
 		.size = sqfs_size,
 		.close = sqfs_close,
 		.closedir = sqfs_closedir,
@@ -345,6 +375,7 @@ static struct fstype_info fstypes[] = {
 		.readdir = erofs_readdir,
 		.ls = fs_ls_generic,
 		.read = erofs_read,
+		.get_blocksize = fs_get_blocksize_unsupported,
 		.size = erofs_size,
 		.close = erofs_close,
 		.closedir = erofs_closedir,
@@ -366,6 +397,7 @@ static struct fstype_info fstypes[] = {
 		.exists = fs_exists_unsupported,
 		.size = fs_size_unsupported,
 		.read = fs_read_unsupported,
+		.get_blocksize = fs_get_blocksize_unsupported,
 		.write = fs_write_unsupported,
 		.uuid = fs_uuid_unsupported,
 		.opendir = fs_opendir_unsupported,
@@ -579,7 +611,11 @@ static int _fs_read(const char *filename, ulong addr, loff_t offset, loff_t len,
 {
 	struct fstype_info *info = fs_get_info(fs_type);
 	void *buf;
+	int blocksize;
 	int ret;
+	loff_t cur = offset;
+	loff_t bytes_read = 0;
+	loff_t total_read = 0;
 
 #ifdef CONFIG_LMB
 	if (do_lmb_check) {
@@ -589,19 +625,97 @@ static int _fs_read(const char *filename, ulong addr, loff_t offset, loff_t len,
 	}
 #endif
 
+	blocksize = info->get_blocksize(filename);
 	/*
-	 * We don't actually know how many bytes are being read, since len==0
-	 * means read the whole file.
+	 * The fs doesn't report its blocksize, let its read() to handle
+	 * the unaligned read.
+	 */
+	if (blocksize < 0) {
+		buf = map_sysmem(addr, len);
+		ret = info->read(filename, buf, offset, len, actread);
+
+		/* If we requested a specific number of bytes, check we got it */
+		if (ret == 0 && len && *actread != len)
+			log_debug("** %s shorter than offset + len **\n", filename);
+		goto out;
+	}
+
+	if (unlikely(blocksize == 0)) {
+		log_err("invalid blocksize 0 found\n");
+		return -EINVAL;
+	}
+
+	/*
+	 * @len can be 0, meaning read the whole file.
+	 * And we can not rely on info->size(), as some fses doesn't resolve
+	 * softlinks to their final destinations.
 	 */
 	buf = map_sysmem(addr, len);
-	ret = info->read(filename, buf, offset, len, actread);
+
+	/* Unaligned read offset, handle the unaligned read here. */
+	if (!IS_ALIGNED(offset, blocksize)) {
+		void *block_buf;
+		const int offset_in_block = offset & (blocksize - 1);
+		int copy_len;
+
+		block_buf = malloc_cache_aligned(blocksize);
+		if (!block_buf) {
+			log_err("** Unable to alloc memory for one block **\n");
+			return -ENOMEM;
+		}
+		memset(block_buf, 0, blocksize);
+
+		cur = round_down(offset, blocksize);
+		ret = info->read(filename, block_buf, cur, blocksize,
+				 &bytes_read);
+		if (ret < 0) {
+			log_err("** Failed to read %s at offset %llu, %d **\n",
+				filename, cur, ret);
+			free(block_buf);
+			goto out;
+		}
+		if (bytes_read <= offset_in_block) {
+			log_err("** Offset %llu is beyond file size of %s **\n",
+				offset, filename);
+			free(block_buf);
+			ret = -EIO;
+			goto out;
+		}
+
+		copy_len = min_t(int, blocksize, bytes_read) - offset_in_block;
+		memcpy(buf, block_buf + offset_in_block, copy_len);
+		free(block_buf);
+		total_read += copy_len;
+
+		/*
+		 * A short read on the block, or we have already covered the
+		 * whole read range, just call it a day.
+		 */
+		if (bytes_read < blocksize ||
+		    (len && offset + len <= cur + blocksize))
+			goto out;
+
+		cur += blocksize;
+		if (len)
+			len -= copy_len;
+	}
+
+	ret = info->read(filename, buf + total_read, cur, len, &bytes_read);
+	if (ret < 0) {
+		log_err("** failed to read %s off %llu len %llu, %d **\n",
+			filename, cur, len, ret);
+		goto out;
+	}
+	if (len && bytes_read < len)
+		log_debug("** %s short read, off %llu len %llu actual read %llu **\n",
+			  filename, cur, len, bytes_read);
+	total_read += bytes_read;
+
+out:
 	unmap_sysmem(buf);
-
-	/* If we requested a specific number of bytes, check we got it */
-	if (ret == 0 && len && *actread != len)
-		log_debug("** %s shorter than offset + len **\n", filename);
 	fs_close();
-
+	if (!ret)
+		*actread = total_read;
 	return ret;
 }
 
