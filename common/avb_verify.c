@@ -253,10 +253,10 @@ char *avb_set_enforce_verity(const char *cmdline)
 
 /**
  * ============================================================================
- * IO(mmc) auxiliary functions
+ * IO auxiliary functions
  * ============================================================================
  */
-static unsigned long mmc_read_and_flush(struct mmc_part *part,
+static unsigned long blk_read_and_flush(struct blk_part *part,
 					lbaint_t start,
 					lbaint_t sectors,
 					void *buffer)
@@ -291,7 +291,7 @@ static unsigned long mmc_read_and_flush(struct mmc_part *part,
 		tmp_buf = buffer;
 	}
 
-	blks = blk_dread(part->mmc_blk,
+	blks = blk_dread(part->blk,
 			 start, sectors, tmp_buf);
 	/* flush cache after read */
 	flush_cache((ulong)tmp_buf, sectors * part->info.blksz);
@@ -302,7 +302,7 @@ static unsigned long mmc_read_and_flush(struct mmc_part *part,
 	return blks;
 }
 
-static unsigned long mmc_write(struct mmc_part *part, lbaint_t start,
+static unsigned long blk_write(struct blk_part *part, lbaint_t start,
 			       lbaint_t sectors, void *buffer)
 {
 	void *tmp_buf;
@@ -330,37 +330,37 @@ static unsigned long mmc_write(struct mmc_part *part, lbaint_t start,
 		tmp_buf = buffer;
 	}
 
-	return blk_dwrite(part->mmc_blk,
+	return blk_dwrite(part->blk,
 			  start, sectors, tmp_buf);
 }
 
-static struct mmc_part *get_partition(AvbOps *ops, const char *partition)
+static struct blk_part *get_partition(AvbOps *ops, const char *partition)
 {
 	int ret;
 	u8 dev_num;
-	struct mmc_part *part;
-	struct blk_desc *mmc_blk;
+	struct blk_part *part;
+	struct blk_desc *blk;
 
-	part = malloc(sizeof(struct mmc_part));
+	part = malloc(sizeof(struct blk_part));
 	if (!part)
 		return NULL;
 
 	dev_num = get_boot_device(ops);
-	mmc_blk = get_blk(ops);
+	blk = get_blk(ops);
 
-	if (!mmc_blk) {
+	if (!blk) {
 		printf("Error - failed to obtain block descriptor\n");
 		goto err;
 	}
 
-	ret = part_get_info_by_name(mmc_blk, partition, &part->info);
+	ret = part_get_info_by_name(blk, partition, &part->info);
 	if (ret < 0) {
 		printf("Can't find partition '%s'\n", partition);
 		goto err;
 	}
 
 	part->dev_num = dev_num;
-	part->mmc_blk = mmc_blk;
+	part->blk = blk;
 
 	return part;
 err:
@@ -368,16 +368,16 @@ err:
 	return NULL;
 }
 
-static AvbIOResult mmc_byte_io(AvbOps *ops,
+static AvbIOResult blk_byte_io(AvbOps *ops,
 			       const char *partition,
 			       s64 offset,
 			       size_t num_bytes,
 			       void *buffer,
 			       size_t *out_num_read,
-			       enum mmc_io_type io_type)
+			       enum io_type io_type)
 {
 	ulong ret;
-	struct mmc_part *part;
+	struct blk_part *part;
 	u64 start_offset, start_sector, sectors, residue;
 	u8 *tmp_buf;
 	size_t io_cnt = 0;
@@ -410,7 +410,7 @@ static AvbIOResult mmc_byte_io(AvbOps *ops,
 			}
 
 			if (io_type == IO_READ) {
-				ret = mmc_read_and_flush(part,
+				ret = blk_read_and_flush(part,
 							 part->info.start +
 							 start_sector,
 							 1, tmp_buf);
@@ -427,7 +427,7 @@ static AvbIOResult mmc_byte_io(AvbOps *ops,
 				tmp_buf += (start_offset % part->info.blksz);
 				memcpy(buffer, (void *)tmp_buf, residue);
 			} else {
-				ret = mmc_read_and_flush(part,
+				ret = blk_read_and_flush(part,
 							 part->info.start +
 							 start_sector,
 							 1, tmp_buf);
@@ -441,7 +441,7 @@ static AvbIOResult mmc_byte_io(AvbOps *ops,
 					start_offset % part->info.blksz,
 					buffer, residue);
 
-				ret = mmc_write(part, part->info.start +
+				ret = blk_write(part, part->info.start +
 						start_sector, 1, tmp_buf);
 				if (ret != 1) {
 					printf("%s: write error (%ld, %lld)\n",
@@ -459,12 +459,12 @@ static AvbIOResult mmc_byte_io(AvbOps *ops,
 
 		if (sectors) {
 			if (io_type == IO_READ) {
-				ret = mmc_read_and_flush(part,
+				ret = blk_read_and_flush(part,
 							 part->info.start +
 							 start_sector,
 							 sectors, buffer);
 			} else {
-				ret = mmc_write(part,
+				ret = blk_write(part,
 						part->info.start +
 						start_sector,
 						sectors, buffer);
@@ -520,7 +520,7 @@ static AvbIOResult read_from_partition(AvbOps *ops,
 				       void *buffer,
 				       size_t *out_num_read)
 {
-	return mmc_byte_io(ops, partition_name, offset_from_partition,
+	return blk_byte_io(ops, partition_name, offset_from_partition,
 			   num_bytes, buffer, out_num_read, IO_READ);
 }
 
@@ -547,7 +547,7 @@ static AvbIOResult write_to_partition(AvbOps *ops,
 				      size_t num_bytes,
 				      const void *buffer)
 {
-	return mmc_byte_io(ops, partition_name, offset_from_partition,
+	return blk_byte_io(ops, partition_name, offset_from_partition,
 			   num_bytes, (void *)buffer, NULL, IO_WRITE);
 }
 
@@ -788,7 +788,7 @@ static AvbIOResult get_unique_guid_for_partition(AvbOps *ops,
 						 char *guid_buf,
 						 size_t guid_buf_size)
 {
-	struct mmc_part *part;
+	struct blk_part *part;
 	size_t uuid_size;
 
 	part = get_partition(ops, partition);
@@ -822,7 +822,7 @@ static AvbIOResult get_size_of_partition(AvbOps *ops,
 					 const char *partition,
 					 u64 *out_size_num_bytes)
 {
-	struct mmc_part *part;
+	struct blk_part *part;
 
 	if (!out_size_num_bytes)
 		return AVB_IO_RESULT_ERROR_INSUFFICIENT_SPACE;
@@ -985,7 +985,7 @@ AvbOps *avb_ops_alloc(const char *boot_device, const char *interface)
 	ops_data->ops.read_persistent_value = read_persistent_value;
 #endif
 	ops_data->ops.get_size_of_partition = get_size_of_partition;
-	ops_data->mmc_dev = simple_strtoul(boot_device, NULL, 16);
+	ops_data->blk_dev = simple_strtoul(boot_device, NULL, 16);
 	ops_data->blk = NULL;
 	if (interface && (blk_get_device_by_str(interface, boot_device, &ops_data->blk) < 0)) {
 		printf("Error - failed to obtain block descriptor for devce=%s if=%s\n",

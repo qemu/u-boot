@@ -26,7 +26,7 @@ enum avb_boot_state {
 
 struct AvbOpsData {
 	struct AvbOps ops;
-	int mmc_dev;
+	int blk_dev;
 	enum avb_boot_state boot_state;
 #ifdef CONFIG_OPTEE_TA_AVB
 	struct udevice *tee;
@@ -35,14 +35,13 @@ struct AvbOpsData {
 	struct blk_desc *blk;
 };
 
-struct mmc_part {
+struct blk_part {
 	int dev_num;
-	struct mmc *mmc;
-	struct blk_desc *mmc_blk;
+	struct blk_desc *blk;
 	struct disk_partition info;
 };
 
-enum mmc_io_type {
+enum io_type {
 	IO_READ,
 	IO_WRITE
 };
@@ -61,7 +60,7 @@ char *append_cmd_line(char *cmdline_orig, char *cmdline_new);
  * I/O helper inline functions
  * ============================================================================
  */
-static inline uint64_t calc_offset(struct mmc_part *part, int64_t offset)
+static inline uint64_t calc_offset(struct blk_part *part, int64_t offset)
 {
 	u64 part_size = part->info.size * part->info.blksz;
 
@@ -93,7 +92,7 @@ static inline int get_boot_device(AvbOps *ops)
 	if (ops) {
 		data = ops->user_data;
 		if (data)
-			return data->mmc_dev;
+			return data->blk_dev;
 	}
 
 	return -1;
