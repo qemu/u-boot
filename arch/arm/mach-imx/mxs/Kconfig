@@ -39,10 +39,6 @@ choice
 	prompt "MX28 board select"
 	optional
 
-config TARGET_MX28EVK
-	bool "Support mx28evk"
-	select BOARD_EARLY_INIT_F
-
 config TARGET_XEA
 	bool "Support XEA"
 
@@ -51,7 +47,6 @@ endchoice
 config SYS_SOC
 	default "mxs"
 
-source "board/freescale/mx28evk/Kconfig"
 source "board/liebherr/xea/Kconfig"
 
 endif
