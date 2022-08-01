@@ -743,6 +743,15 @@ config OF_LIBFDT_OVERLAY
 	help
 	  This enables the FDT library (libfdt) overlay support.
 
+config SYS_FDT_PAD
+	hex "Maximum size of the area reserved for the FDT"
+	depends on OF_LIBFDT
+	default 0x13000 if FMAN_ENET || QE || U_QE
+	default 0x3000
+	help
+	  When working with the device tree, ensure that we have at least this
+	  much memory allocated for it.
+
 config SPL_OF_LIBFDT
 	bool "Enable the FDT library for SPL"
 	depends on SPL_LIBGENERIC_SUPPORT
