@@ -315,8 +315,6 @@ static void initialize_lane_to_slot(void)
 	lane_to_slot[17] = lane_to_slot[16];
 }
 
-#endif /* #ifdef CONFIG_FMAN_ENET */
-
 /*
  * Configure the status for the virtual MDIO nodes
  *
@@ -332,7 +330,6 @@ static void initialize_lane_to_slot(void)
  */
 void fdt_fixup_board_enet(void *fdt)
 {
-#ifdef CONFIG_FMAN_ENET
 	unsigned int i;
 	int lane;
 
@@ -363,12 +360,10 @@ void fdt_fixup_board_enet(void *fdt)
 	lane = serdes_get_first_lane(XAUI_FM1);
 	if (lane >= 0)
 		fdt_status_okay_by_alias(fdt, "emi2_xgmii");
-#endif
 }
 
 int board_eth_init(struct bd_info *bis)
 {
-#ifdef CONFIG_FMAN_ENET
 	struct fsl_pq_mdio_info dtsec_mdio_info;
 	struct tgec_mdio_info tgec_mdio_info;
 	unsigned int i, slot;
@@ -520,7 +515,7 @@ int board_eth_init(struct bd_info *bis)
 			miiphy_get_dev_by_name(DEFAULT_FM_TGEC_MDIO_NAME));
 
 	cpu_eth_init(bis);
-#endif
 
 	return pci_eth_init(bis);
 }
+#endif
