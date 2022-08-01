@@ -1084,6 +1084,20 @@ got = $(foreach cfg,$(1),$($(cfg)))
 # expected value 'y for each one
 expect = $(foreach cfg,$(1),y)
 
+define unmigrated
+	@if [ -n "$(strip $(4))" ]; then if [ "$(got)" != "$(expect)" ]; then \
+		echo >&2 "===================== WARNING ======================"; \
+		echo >&2 "This board does not use $(firstword $(1)) (Driver Model"; \
+		echo >&2 "for $(2)). Please update the board to use"; \
+		echo >&2 "$(firstword $(1)) before the $(3) release. Failure to"; \
+		echo >&2 "update by the deadline may result in board removal."; \
+		echo >&2 "See doc/develop/driver-model/migration.rst for more info."; \
+		echo >&2 "===================================================="; \
+		exit 1; \
+	fi; fi
+
+endef
+
 # Show a deprecation message
 # Args:
 # 1: List of CONFIG_DM_... to migrate to (e.g. "CONFIG_DM_MMC CONFIG_BLK")
@@ -1145,7 +1159,7 @@ ifneq ($(CONFIG_DM),y)
 endif
 	$(call deprecated,CONFIG_WDT,DM watchdog,v2019.10,\
 		$(CONFIG_WATCHDOG)$(CONFIG_HW_WATCHDOG))
-	$(call deprecated,CONFIG_DM_ETH,Ethernet drivers,v2020.07,$(CONFIG_NET))
+	$(call unmigrated,CONFIG_DM_ETH,Ethernet drivers,v2020.07,$(CONFIG_NETDEVICES))
 	$(call deprecated,CONFIG_DM_I2C,I2C drivers,v2022.04,$(CONFIG_SYS_I2C_LEGACY))
 	$(call deprecated,CONFIG_DM_KEYBOARD,Keyboard drivers,v2022.10,$(CONFIG_KEYBOARD))
 	@# CONFIG_SYS_TIMER_RATE has brackets in it for some boards which
