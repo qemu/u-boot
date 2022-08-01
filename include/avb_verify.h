@@ -32,6 +32,7 @@ struct AvbOpsData {
 	struct udevice *tee;
 	u32 session;
 #endif
+	struct blk_desc *blk;
 };
 
 struct mmc_part {
@@ -46,7 +47,7 @@ enum mmc_io_type {
 	IO_WRITE
 };
 
-AvbOps *avb_ops_alloc(int boot_device);
+AvbOps *avb_ops_alloc(const char *boot_device, const char *interface);
 void avb_ops_free(AvbOps *ops);
 
 char *avb_set_state(AvbOps *ops, enum avb_boot_state boot_state);
@@ -96,6 +97,14 @@ static inline int get_boot_device(AvbOps *ops)
 	}
 
 	return -1;
+}
+
+static inline struct blk_desc *get_blk(AvbOps *ops)
+{
+	if (ops && ops->user_data)
+		return ((struct AvbOpsData *)ops->user_data)->blk;
+
+	return NULL;
 }
 
 #endif /* _AVB_VERIFY_H */

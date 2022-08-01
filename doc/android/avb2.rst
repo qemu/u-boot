@@ -38,7 +38,7 @@ AVB 2.0 U-Boot shell commands
 Provides CLI interface to invoke AVB 2.0 verification + misc. commands for
 different testing purposes::
 
-    avb init <dev> - initialize avb 2.0 for <dev>
+    avb init <dev> [<interface>] - initialize avb2 for <dev> [<interface>]
     avb verify - run verification process using hash data from vbmeta structure
     avb read_rb <num> - read rollback index at location <num>
     avb write_rb <num> <rb> - write rollback index <rb> to <num>
