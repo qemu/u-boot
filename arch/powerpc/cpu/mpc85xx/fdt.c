@@ -643,7 +643,7 @@ void ft_cpu_setup(void *blob, struct bd_info *bd)
 	ft_fixup_qe_snum(blob);
 #endif
 
-#ifdef CONFIG_SYS_DPAA_FMAN
+#ifdef CONFIG_FMAN_ENET
 	fdt_fixup_fman_firmware(blob);
 #endif
 
