@@ -41,23 +41,26 @@ requirements enumerated above. Below is the command's help message::
    bcb - Load/set/clear/test/dump/store Android BCB fields
 
    Usage:
-   bcb load  <dev> <part>       - load  BCB from mmc <dev>:<part>
-   bcb set   <field> <val>      - set   BCB <field> to <val>
-   bcb clear [<field>]          - clear BCB <field> or all fields
-   bcb test  <field> <op> <val> - test  BCB <field> against <val>
-   bcb dump  <field>            - dump  BCB <field>
-   bcb store                    - store BCB back to mmc
+   bcb load  <dev> <part> [<iftype>]    - load  BCB from <dev>:<part>[<iftype>]
+   bcb set   <field> <val>              - set   BCB <field> to <val>
+   bcb clear [<field>]                  - clear BCB <field> or all fields
+   bcb test  <field> <op> <val>         - test  BCB <field> against <val>
+   bcb dump  <field>                    - dump  BCB <field>
+   bcb store                            - store BCB back to <iftype>
 
    Legend:
-   <dev>   - MMC device index containing the BCB partition
-   <part>  - MMC partition index or name containing the BCB
-   <field> - one of {command,status,recovery,stage,reserved}
-   <op>    - the binary operator used in 'bcb test':
-             '=' returns true if <val> matches the string stored in <field>
-             '~' returns true if <val> matches a subset of <field>'s string
-   <val>   - string/text provided as input to bcb {set,test}
-             NOTE: any ':' character in <val> will be replaced by line feed
-             during 'bcb set' and used as separator by upper layers
+   <dev>    - device index containing the BCB partition
+   <iftype> - Optional parameter of the interface type for the specified
+              block device like: mmc,sd,virtio see blk.h for details.
+              The default value is mmc.
+   <part>   - partition index or name containing the BCB
+   <field>  - one of {command,status,recovery,stage,reserved}
+   <op>     - the binary operator used in 'bcb test':
+              '=' returns true if <val> matches the string stored in <field>
+              '~' returns true if <val> matches a subset of <field>'s string
+   <val>    - string/text provided as input to bcb {set,test}
+              NOTE: any ':' character in <val> will be replaced by line feed
+              during 'bcb set' and used as separator by upper layers
 
 
 'bcb'. Example of getting reboot reason
