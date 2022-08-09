@@ -602,6 +602,20 @@ int phy_register(struct phy_driver *drv)
 	return 0;
 }
 
+static int of_set_phy_supported(struct phy_device *phydev)
+{
+	ofnode node = phy_get_ofnode(phydev);
+	u32 max_speed;
+
+	if (!ofnode_valid(node))
+		return 0;
+
+	if (!ofnode_read_u32(node, "max-speed", &max_speed))
+		return phy_set_supported(phydev, max_speed);
+
+	return 0;
+}
+
 int phy_set_supported(struct phy_device *phydev, u32 max_speed)
 {
 	/* The default values for phydev->supported are provided by the PHY
@@ -1060,6 +1074,12 @@ __weak int board_phy_config(struct phy_device *phydev)
 
 int phy_config(struct phy_device *phydev)
 {
+	int ret;
+
+	ret = of_set_phy_supported(phydev);
+	if (ret)
+		return ret;
+
 	/* Invoke an optional board-specific helper */
 	return board_phy_config(phydev);
 }
