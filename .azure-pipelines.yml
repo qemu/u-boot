@@ -437,107 +437,56 @@ stages:
     pool:
       vmImage: $(ubuntu_vm)
     strategy:
-      # Use almost the same target division in .travis.yml, only merged
-      # 3 small build jobs (arc/microblaze/xtensa) into one.
+      # We need some special sandbox builds to test specific cases.
+      # Then we try and maximize the 10 parallel jobs we can have at once that
+      # also must not take more than 60 minutes total to complete.
       matrix:
-        arc_microblaze_xtensa:
-          BUILDMAN: "arc microblaze xtensa"
-        arm11_arm7_arm920t_arm946es:
-          BUILDMAN: "arm11 arm7 arm920t arm946es"
-        arm926ejs:
-          BUILDMAN: "arm926ejs -x freescale,siemens,at91,kirkwood,omap"
-        at91_non_armv7:
-          BUILDMAN: "at91 -x armv7"
-        at91_non_arm926ejs:
-          BUILDMAN: "at91 -x arm926ejs"
-        boundary_engicam_toradex:
-          BUILDMAN: "boundary engicam toradex"
-        arm_bcm:
-          BUILDMAN: "bcm -x mips"
-        nxp_arm32:
-          BUILDMAN: "freescale -x powerpc,m68k,aarch64,ls101,ls102,ls104,ls108,ls20,lx216"
-        nxp_ls101x:
-          BUILDMAN: "freescale&ls101"
-        nxp_ls102x:
-          BUILDMAN: "freescale&ls102"
-        nxp_ls104x:
-          BUILDMAN: "freescale&ls104"
-        nxp_ls108x:
-          BUILDMAN: "freescale&ls108"
-        nxp_ls20xx:
-          BUILDMAN: "freescale&ls20"
-        nxp_lx216x:
-          BUILDMAN: "freescale&lx216"
-        imx6:
-          BUILDMAN: "mx6 -x boundary,engicam,freescale,technexion,toradex"
-        imx:
-          BUILDMAN: "mx -x mx6,freescale,technexion,toradex"
-        imx8:
-          BUILDMAN: "imx8"
-        keystone2_keystone3:
-          BUILDMAN: "k2 k3"
         sandbox_asan:
           BUILDMAN: "sandbox"
           OVERRIDE: "-a ASAN"
         sandbox_clang_asan:
           BUILDMAN: "sandbox"
           OVERRIDE: "-O clang-13 -a ASAN"
-        samsung_socfpga:
-          BUILDMAN: "samsung socfpga"
-        sun4i:
-          BUILDMAN: "sun4i"
-        sun5i:
-          BUILDMAN: "sun5i"
-        sun6i:
-          BUILDMAN: "sun6i"
-        sun7i:
-          BUILDMAN: "sun7i"
-        sun8i_32bit:
-          BUILDMAN: "sun8i&armv7"
-        sun8i_64bit:
-          BUILDMAN: "sun8i&aarch64"
-        sun9i:
-          BUILDMAN: "sun9i"
-        sun50i:
-          BUILDMAN: "sun50i"
-        arm_catch_all:
-          BUILDMAN: "arm -x arm11,arm7,arm9,aarch64,at91,bcm,freescale,kirkwood,mvebu,renesas,siemens,tegra,uniphier,mx,samsung,sunxi,am33xx,omap,rk,toradex,socfpga,k2,k3,zynq"
+        arc_microblaze_mips_m68k_riscv_xtensa:
+          BUILDMAN: "arc microblaze mips m68k riscv xtensa"
+        arm11_arm7_arm920t_arm926ejs_arm946es:
+          BUILDMAN: "arm11 arm7 arm920t arm946es arm926ejs -x mx,siemens,at91,kirkwood,omap"
+        at91:
+          BUILDMAN: "at91"
+        boundary_bcm_engicam_toradex_technexion:
+          BUILDMAN: "boundary bcm engicam toradex technexion"
+        nxp_arm32:
+          BUILDMAN: "freescale -x powerpc,m68k,aarch64,ls1,ls2,lx2"
+        layerscape_ls1xxx:
+          BUILDMAN: "ls1"
+        layerscape_ls2xxx_lx2xxx:
+          BUILDMAN: "ls2 lx2"
+        imx8:
+          BUILDMAN: "imx8"
+        imx_catchall:
+          BUILDMAN: "mx -x boundary,engicam,freescale,technexion,toradex"
+        am33xx_keystone2_keystone3_no_siemens:
+          BUILDMAN: "am33xx k2 k3 -x siemens"
+        samsung_siemens_socfpga:
+          BUILDMAN: "samsung siemens socfpga"
+        sun4i_sun5i_sun6i_sun7i:
+          BUILDMAN: "sun4i sun5i sun6i sun7i"
+        sun8i_sun9i_sun50i:
+          BUILDMAN: "sun8i sun9i sun50i"
         sandbox_x86:
           BUILDMAN: "sandbox x86"
-        technexion:
-          BUILDMAN: "technexion"
-        kirkwood:
-          BUILDMAN: "kirkwood"
-        mvebu:
-          BUILDMAN: "mvebu"
-        m68k:
-          BUILDMAN: "m68k"
-        mips:
-          BUILDMAN: "mips"
+        kirkwood_mvebu_renesas:
+          BUILDMAN: "kirkwood mvebu renesas"
         powerpc:
           BUILDMAN: "powerpc"
-        siemens:
-          BUILDMAN: "siemens"
-        tegra:
-          BUILDMAN: "tegra -x toradex"
-        am33xx_no_siemens:
-          BUILDMAN: "am33xx -x siemens"
-        omap:
-          BUILDMAN: "omap"
-        uniphier:
-          BUILDMAN: "uniphier"
-        aarch64_catch_all:
-          BUILDMAN: "aarch64 -x bcm,imx8,k3,tegra,ls1,ls2,lx216,mvebu,uniphier,renesas,sunxi,samsung,socfpga,rk,versal,zynq"
         rockchip:
           BUILDMAN: "rk"
-        renesas:
-          BUILDMAN: "renesas"
-        zynq:
-          BUILDMAN: "zynq&armv7"
-        zynqmp_versal:
-          BUILDMAN: "versal|zynqmp&aarch64"
-        riscv:
-          BUILDMAN: "riscv"
+        omap_versal_zynq:
+          BUILDMAN: "omap versal zynq"
+        arm_catch_all:
+          BUILDMAN: "arm -x arm11,arm7,arm9,aarch64,at91,bcm,freescale,kirkwood,mvebu,renesas,siemens,mx,samsung,sunxi,am33xx,omap,rk,toradex,socfpga,k2,k3,zynq"
+        aarch64_catch_all:
+          BUILDMAN: "aarch64 -x bcm,imx8,k3,ls1,ls2,lx2,mvebu,renesas,sunxi,samsung,socfpga,rk,versal,zynq"
     steps:
       - script: |
           cat << EOF > build.sh
