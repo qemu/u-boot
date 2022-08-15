@@ -234,6 +234,10 @@ int btrfs_read(const char *file, void *buf, loff_t offset, loff_t len,
 	int ret;
 
 	ASSERT(fs_info);
+
+	/* Higher layer has ensures it never pass unaligned offset in. */
+	ASSERT(IS_ALIGNED(offset, fs_info->sectorsize));
+
 	ret = btrfs_lookup_path(fs_info->fs_root, BTRFS_FIRST_FREE_OBJECTID,
 				file, &root, &ino, &type, 40);
 	if (ret < 0) {
@@ -273,6 +277,12 @@ int btrfs_read(const char *file, void *buf, loff_t offset, loff_t len,
 
 	*actread = len;
 	return 0;
+}
+
+int btrfs_get_blocksize(const char *filename)
+{
+	ASSERT(current_fs_info);
+	return current_fs_info->sectorsize;
 }
 
 void btrfs_close(void)
