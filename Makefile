@@ -751,13 +751,17 @@ KBUILD_CFLAGS += $(call cc-disable-warning, stringop-overflow)
 # Enabled with W=2, disabled by default as noisy
 KBUILD_CFLAGS += $(call cc-disable-warning, maybe-uninitialized)
 
-# change __FILE__ to the relative path from the srctree
-KBUILD_CFLAGS	+= $(call cc-option,-fmacro-prefix-map=$(srctree)/=)
+# change __FILE__ and debugging symbols to the relative path from the
+# srctree
+KBUILD_CFLAGS	+= $(call cc-option,-ffile-prefix-map=$(srctree)/=)
 
 KBUILD_CFLAGS	+= -g
 # $(KBUILD_AFLAGS) sets -g, which causes gcc to pass a suitable -g<format>
 # option to the assembler.
 KBUILD_AFLAGS	+= -g
+
+# Use relative paths in debugging symbols
+KBUILD_AFLAGS   += --debug-prefix-map=$(srctree)/=
 
 # Report stack usage if supported
 # ARC tools based on GCC 7.1 has an issue with stack usage
