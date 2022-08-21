@@ -1537,6 +1537,11 @@ endmenu
 
 menu "Shell scripting commands"
 
+config CMD_CAT
+	bool "cat"
+	help
+	  Print file to standard output
+
 config CMD_ECHO
 	bool "echo"
 	default y
