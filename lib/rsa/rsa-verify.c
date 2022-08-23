@@ -234,6 +234,11 @@ int padding_pss_verify(struct image_sign_info *info,
 	uint8_t leftmost_mask;
 	struct checksum_algo *checksum = info->checksum;
 
+	if (db_len <= 0) {
+		printf("%s: invalid db length\n", __func__);
+		return -EINVAL;
+	}
+
 	/* first, allocate everything */
 	db_mask = malloc(db_len);
 	db = malloc(db_len);
