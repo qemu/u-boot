@@ -782,7 +782,10 @@ image_set_hdr_b(comp)		/* image_set_comp */
 
 static inline void image_set_name(image_header_t *hdr, const char *name)
 {
-	strncpy(image_get_name(hdr), name, IH_NMLEN);
+	char *hdr_name = image_get_name(hdr);
+
+	strncpy(hdr_name, name, IH_NMLEN - 1);
+	hdr_name[IH_NMLEN - 1] = '\0';
 }
 
 int image_check_hcrc(const image_header_t *hdr);
