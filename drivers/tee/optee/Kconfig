@@ -45,6 +45,18 @@ config OPTEE_SERVICE_DISCOVERY
 	  This implements automated driver binding of OP-TEE service drivers by
 	  requesting OP-TEE firmware to enumerate its hosted services.
 
+config TEE_I2C_NXP_SE05X_ERRATA
+	bool "Enable NXP SE05X Errata"
+	default n
+	help
+	 This config prevents the I2C trampoline driver from probing
+	 on every transfer.
+
+config TEE_I2C_NXP_SE05X_ERRATA_IN_BUS
+	int "I2C bus where to apply the NXP SE05X errata"
+	depends on TEE_I2C_NXP_SE05X_ERRATA
+	default 0
+
 endmenu
 
 endif

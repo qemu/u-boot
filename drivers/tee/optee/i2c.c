@@ -3,12 +3,17 @@
  * Copyright (c) 2020 Foundries.io Ltd
  */
 
+#define LOG_CATEGORY UCLASS_I2C
+
 #include <common.h>
 #include <dm.h>
 #include <i2c.h>
+#include <stdlib.h>
 #include <tee.h>
 #include "optee_msg.h"
 #include "optee_private.h"
+
+#define NXP_SE05X_ADDR 0x48
 
 static int check_xfer_flags(struct udevice *chip, uint tee_flags)
 {
@@ -30,6 +35,30 @@ static int check_xfer_flags(struct udevice *chip, uint tee_flags)
 	return 0;
 }
 
+static struct udevice *get_chip_dev(int bnum, int addr)
+{
+	struct udevice *chip;
+	struct udevice *bus;
+
+#if defined(CONFIG_TEE_I2C_NXP_SE05X_ERRATA)
+	if (bnum == CONFIG_TEE_I2C_NXP_SE05X_ERRATA_IN_BUS &&
+	    addr == NXP_SE05X_ADDR) {
+		if (uclass_get_device_by_seq(UCLASS_I2C, bnum, &bus))
+			return NULL;
+
+		if (i2c_get_chip(bus, addr, 0, &chip))
+			return NULL;
+
+		return chip;
+	}
+#endif
+
+	if (i2c_get_chip_for_busnum(bnum, addr, 0, &chip))
+		return NULL;
+
+	return chip;
+}
+
 void optee_suppl_cmd_i2c_transfer(struct optee_msg_arg *arg)
 {
 	const u8 attr[] = {
@@ -38,7 +67,8 @@ void optee_suppl_cmd_i2c_transfer(struct optee_msg_arg *arg)
 		OPTEE_MSG_ATTR_TYPE_RMEM_INOUT,
 		OPTEE_MSG_ATTR_TYPE_VALUE_OUTPUT,
 	};
-	struct udevice *chip_dev;
+	struct udevice *chip_dev = NULL;
+
 	struct tee_shm *shm;
 	u8 *buf;
 	int ret;
@@ -56,9 +86,9 @@ void optee_suppl_cmd_i2c_transfer(struct optee_msg_arg *arg)
 	if (!buf)
 		goto bad;
 
-	if (i2c_get_chip_for_busnum((int)arg->params[0].u.value.b,
-				    (int)arg->params[0].u.value.c,
-				    0, &chip_dev))
+	chip_dev = get_chip_dev((int)arg->params[0].u.value.b,
+				(int)arg->params[0].u.value.c);
+	if (!chip_dev)
 		goto bad;
 
 	if (check_xfer_flags(chip_dev, arg->params[1].u.value.a))
@@ -66,10 +96,16 @@ void optee_suppl_cmd_i2c_transfer(struct optee_msg_arg *arg)
 
 	switch (arg->params[0].u.value.a) {
 	case OPTEE_MSG_RPC_CMD_I2C_TRANSFER_RD:
+		log_debug("OPTEE_MSG_RPC_CMD_I2C_TRANSFER_RD %d\n",
+			  (size_t)arg->params[2].u.rmem.size);
+
 		ret = dm_i2c_read(chip_dev, 0, buf,
 				  (size_t)arg->params[2].u.rmem.size);
 		break;
 	case OPTEE_MSG_RPC_CMD_I2C_TRANSFER_WR:
+		log_debug("OPTEE_MSG_RPC_CMD_I2C_TRANSFER_WR %d\n",
+			  (size_t)arg->params[2].u.rmem.size);
+
 		ret = dm_i2c_write(chip_dev, 0, buf,
 				   (size_t)arg->params[2].u.rmem.size);
 		break;
