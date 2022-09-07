@@ -296,9 +296,16 @@ int ofnode_read_u32_array(ofnode node, const char *propname,
 		return of_read_u32_array(ofnode_to_np(node), propname,
 					 out_values, sz);
 	} else {
-		return fdtdec_get_int_array(gd->fdt_blob,
-					    ofnode_to_offset(node), propname,
-					    out_values, sz);
+		int ret;
+
+		ret = fdtdec_get_int_array(gd->fdt_blob,
+					   ofnode_to_offset(node), propname,
+					   out_values, sz);
+		if (ret == -FDT_ERR_NOTFOUND)
+			return -EINVAL;
+		else if (ret == -FDT_ERR_BADLAYOUT)
+			return -EOVERFLOW;
+		return ret;
 	}
 }
 
