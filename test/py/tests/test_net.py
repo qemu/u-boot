@@ -126,6 +126,21 @@ def test_net_ping(u_boot_console):
     output = u_boot_console.run_command('ping $serverip')
     assert 'is alive' in output
 
+@pytest.mark.buildconfigspec('cmd_ping6')
+def test_net_ping6(u_boot_console):
+    """Test the ping6 command.
+
+    The $serverip6 (as set up by test_net_setup_static) is pinged.
+    The test validates that the host is alive, as reported by the
+    ping6 command's output.
+    """
+
+    if not net_set_up:
+        pytest.skip('Network not initialized')
+
+    output = u_boot_console.run_command('ping6 $serverip6')
+    assert 'is alive' in output
+
 @pytest.mark.buildconfigspec('cmd_net')
 def test_net_tftpboot(u_boot_console):
     """Test the tftpboot command.
