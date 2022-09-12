@@ -178,10 +178,10 @@ sloccount:
     - sloccount .
 
 # ensure all configs have MAINTAINERS entries
-Check for configs without MAINTAINERS entry:
-  stage: testsuites
-  script:
-    - ./tools/buildman/buildman -R
+#Check for configs without MAINTAINERS entry:
+#  stage: testsuites
+#  script:
+#    - ./tools/buildman/buildman -R
 
 # Ensure host tools build
 Build tools-only:

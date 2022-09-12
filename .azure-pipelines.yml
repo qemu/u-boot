@@ -131,16 +131,16 @@ stages:
     steps:
       - script: sloccount .
 
-  - job: maintainers
-    displayName: 'Ensure all configs have MAINTAINERS entries'
-    pool:
-      vmImage: $(ubuntu_vm)
-    container:
-      image: $(ci_runner_image)
-      options: $(container_option)
-    steps:
-      - script: |
-          ./tools/buildman/buildman -R
+#  - job: maintainers
+#    displayName: 'Ensure all configs have MAINTAINERS entries'
+#    pool:
+#      vmImage: $(ubuntu_vm)
+#    container:
+#      image: $(ci_runner_image)
+#      options: $(container_option)
+#    steps:
+#      - script: |
+#          ./tools/buildman/buildman -R
 
   - job: tools_only
     displayName: 'Ensure host tools build'
