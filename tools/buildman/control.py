@@ -329,7 +329,8 @@ def DoBuildman(options, args, toolchains=None, make_func=None, brds=None,
             warnings_as_errors=options.warnings_as_errors,
             work_in_output=options.work_in_output,
             test_thread_exceptions=test_thread_exceptions,
-            adjust_cfg=adjust_cfg)
+            adjust_cfg=adjust_cfg,
+            allow_missing_binaries=options.allow_missing_binaries)
     builder.force_config_on_failure = not options.quick
     if make_func:
         builder.do_make = make_func

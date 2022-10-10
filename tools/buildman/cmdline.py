@@ -15,6 +15,9 @@ def ParseArgs():
     parser = OptionParser()
     parser.add_option('-a', '--adjust-cfg', type=str, action='append',
           help='Adjust the Kconfig settings in .config before building')
+    parser.add_option('--allow-missing-binaries', action='store_true',
+          default=False, help='Tell binman to allow for external binaries to'
+              ' be missing and generate fake ones as needed'),
     parser.add_option('-A', '--print-prefix', action='store_true',
           help='Print the tool-chain prefix for a board (CROSS_COMPILE=)')
     parser.add_option('-b', '--branch', type='string',
