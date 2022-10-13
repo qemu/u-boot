@@ -1108,6 +1108,17 @@ define deprecated
 
 endef
 
+define removing
+	@if [ -n "$(strip $(4))" ]; then if [ "$(got)" != "$(expect)" ]; then \
+		echo >&2 "====================== ERROR ======================="; \
+		echo >&2 "This board does not use $(firstword $(1)) (Driver Model"; \
+		echo >&2 "for $(2)). Lack of migration is now fatal."; \
+		echo >&2 "===================================================="; \
+		exit 1; \
+	fi; fi
+
+endef
+
 PHONY += inputs
 inputs: $(INPUTS-y)
 
@@ -1148,7 +1159,7 @@ ifneq ($(CONFIG_DM),y)
 endif
 	$(call deprecated,CONFIG_WDT,DM watchdog,v2019.10,\
 		$(CONFIG_WATCHDOG)$(CONFIG_HW_WATCHDOG))
-	$(call deprecated,CONFIG_DM_I2C,I2C drivers,v2022.04,$(CONFIG_SYS_I2C_LEGACY))
+	$(call removing,CONFIG_DM_I2C,I2C drivers,v2022.04,$(CONFIG_SYS_I2C_LEGACY))
 	$(call deprecated,CONFIG_DM_KEYBOARD,Keyboard drivers,v2022.10,$(CONFIG_KEYBOARD))
 	@# CONFIG_SYS_TIMER_RATE has brackets in it for some boards which
 	@# confuses this rule. Use if() to send just a single character which
