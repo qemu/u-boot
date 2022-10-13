@@ -55,7 +55,7 @@ int spl_parse_legacy_header(struct spl_image_info *spl_image,
 	spl_image->os = image_get_os(header);
 	spl_image->name = image_get_name(header);
 	debug(SPL_TPL_PROMPT
-	      "payload image: %32s load addr: 0x%lx size: %d\n",
+	      "payload image: %.*s load addr: 0x%lx size: %d\n", IH_NMLEN,
 	      spl_image->name, spl_image->load_addr, spl_image->size);
 
 	return 0;
