@@ -18,6 +18,7 @@
 #include "compiler.h"
 #include <asm/byteorder.h>
 #include <stdbool.h>
+#include <linux/compiler_attributes.h>
 
 /* Define this to avoid #ifdefs later on */
 struct lmb;
@@ -275,7 +276,7 @@ struct legacy_img_hdr {
 	uint8_t		ih_arch;	/* CPU architecture		*/
 	uint8_t		ih_type;	/* Image Type			*/
 	uint8_t		ih_comp;	/* Compression Type		*/
-	uint8_t		ih_name[IH_NMLEN];	/* Image Name		*/
+	uint8_t		ih_name[IH_NMLEN] __nonstring;	/* Image Name	*/
 };
 
 struct image_info {
