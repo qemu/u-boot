@@ -20,36 +20,10 @@
 		reg = <0x0 0xff620000 0x0 0x100>;
 	};
 
-	dfi: dfi@ff630000 {
-		u-boot,dm-pre-reloc;
-		reg = <0x00 0xff630000 0x00 0x4000>;
-		compatible = "rockchip,rk3399-dfi";
-		rockchip,pmu = <&pmugrf>;
-		clocks = <&cru PCLK_DDR_MON>;
-		clock-names = "pclk_ddr_mon";
-	};
-
 	rng: rng@ff8b8000 {
 		compatible = "rockchip,cryptov1-rng";
 		reg = <0x0 0xff8b8000 0x0 0x1000>;
 		status = "okay";
-	};
-
-	dmc: dmc {
-		u-boot,dm-pre-reloc;
-		compatible = "rockchip,rk3399-dmc";
-		devfreq-events = <&dfi>;
-		interrupts = <GIC_SPI 1 IRQ_TYPE_LEVEL_HIGH 0>;
-		clocks = <&cru SCLK_DDRCLK>;
-		clock-names = "dmc_clk";
-		reg = <0x0 0xffa80000 0x0 0x0800
-		       0x0 0xffa80800 0x0 0x1800
-		       0x0 0xffa82000 0x0 0x2000
-		       0x0 0xffa84000 0x0 0x1000
-		       0x0 0xffa88000 0x0 0x0800
-		       0x0 0xffa88800 0x0 0x1800
-		       0x0 0xffa8a000 0x0 0x2000
-		       0x0 0xffa8c000 0x0 0x1000>;
 	};
 
 	pmusgrf: syscon@ff330000 {
@@ -86,6 +60,16 @@
 
 &cru {
 	u-boot,dm-pre-reloc;
+};
+
+&dfi {
+	u-boot,dm-pre-reloc;
+	status = "okay";
+};
+
+&dmc {
+	u-boot,dm-pre-reloc;
+	status = "okay";
 };
 
 &emmc_phy {
