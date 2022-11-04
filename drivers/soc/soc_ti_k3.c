@@ -17,6 +17,7 @@
 #define J721S2			0xbb75
 #define AM62X			0xbb7e
 #define J784S4			0xbb80
+#define AM62AX			0xbb8d
 
 #define JTAG_ID_VARIANT_SHIFT	28
 #define JTAG_ID_VARIANT_MASK	(0xf << 28)
@@ -56,6 +57,8 @@ static const char *get_family_string(u32 idreg)
 		break;
 	case J784S4:
 		family = "J784S4";
+	case AM62AX:
+		family = "AM62AX";
 		break;
 	default:
 		family = "Unknown Silicon";
