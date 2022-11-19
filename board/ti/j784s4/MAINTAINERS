@@ -1,0 +1,7 @@
+J784S4 BOARD
+M:	Hari Nagalla <hnagalla@ti.com>
+S:	Maintained
+F:	board/ti/j784s4
+F:	include/configs/j784s4_evm.h
+F:	configs/j784s4_evm_r5_defconfig
+F:	configs/j784s4_evm_a72_defconfig
