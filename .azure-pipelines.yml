@@ -362,6 +362,7 @@ stages:
           cat << "EOF" >> test.sh
           # the below corresponds to .gitlab-ci.yml "before_script"
           cd ${WORK_DIR}
+          git config --global --add safe.directory ${WORK_DIR}
           git clone --depth=1 https://source.denx.de/u-boot/u-boot-test-hooks /tmp/uboot-test-hooks
           ln -s travis-ci /tmp/uboot-test-hooks/bin/`hostname`
           ln -s travis-ci /tmp/uboot-test-hooks/py/`hostname`
@@ -551,6 +552,7 @@ stages:
           export BUILDMAN="${BUILDMAN}"
           EOF
           cat << "EOF" >> build.sh
+          git config --global --add safe.directory ${WORK_DIR}
           if [[ "${BUILDMAN}" != "" ]]; then
               ret=0;
               tools/buildman/buildman -o /tmp -PEWM ${BUILDMAN} ${OVERRIDE} || ret=$?;
