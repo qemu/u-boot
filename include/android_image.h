@@ -323,6 +323,8 @@ struct andr_image_data {
 	ulong kernel_ptr;
 	u32 kernel_size;
 	u32 ramdisk_size;
+	ulong vendor_ramdisk_ptr;
+	u32 vendor_ramdisk_size;
 	u32 boot_ramdisk_size;
 	ulong second_ptr;
 	u32 second_size;
@@ -342,6 +344,7 @@ struct andr_image_data {
 	ulong tags_addr;
 	u32 header_version;
 	u32 boot_img_total_size;
+	u32 vendor_boot_img_total_size;
 };
 
 #endif
