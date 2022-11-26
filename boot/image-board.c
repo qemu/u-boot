@@ -426,10 +426,18 @@ static int select_ramdisk(struct bootm_headers *images, const char *select, u8 a
 		break;
 	case IMAGE_FORMAT_ANDROID:
 		if (IS_ENABLED(CONFIG_ANDROID_BOOT_IMAGE)) {
-			void *ptr = map_sysmem(images->os.start, 0);
 			int ret;
-			ret = android_image_get_ramdisk(ptr, NULL, rd_datap, rd_lenp);
-			unmap_sysmem(ptr);
+			if (IS_ENABLED(CONFIG_CMD_ABOOTIMG)) {
+				ret = android_image_get_ramdisk((void *)get_abootimg_addr(),
+								(void *)get_avendor_bootimg_addr(),
+								rd_datap, rd_lenp);
+			} else {
+				void *ptr = map_sysmem(images->os.start, 0);
+
+				ret = android_image_get_ramdisk(ptr, NULL, rd_datap, rd_lenp);
+				unmap_sysmem(ptr);
+			}
+
 			if (ret)
 				return ret;
 			done = true;

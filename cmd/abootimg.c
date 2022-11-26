@@ -17,6 +17,16 @@
 static ulong _abootimg_addr = -1;
 static ulong _avendor_bootimg_addr = -1;
 
+ulong get_abootimg_addr(void)
+{
+	return (_abootimg_addr == -1 ? image_load_addr : _abootimg_addr);
+}
+
+ulong get_avendor_bootimg_addr(void)
+{
+	return _avendor_bootimg_addr;
+}
+
 static int abootimg_get_ver(int argc, char *const argv[])
 {
 	const struct andr_boot_img_hdr_v0_v1_v2 *hdr;
@@ -70,7 +80,8 @@ static int abootimg_get_dtb_load_addr(int argc, char *const argv[])
 		return CMD_RET_USAGE;
 	struct andr_image_data img_data = {0};
 
-	if (!android_image_get_data((void *)abootimg_addr(), NULL, &img_data))
+	if (!android_image_get_data((void *)abootimg_addr(),
+				    (void *)get_avendor_bootimg_addr(), &img_data))
 		return CMD_RET_FAILURE;
 
 	if (img_data.header_version < 2) {
@@ -114,7 +125,8 @@ static int abootimg_get_dtb_by_index(int argc, char *const argv[])
 		return CMD_RET_FAILURE;
 	}
 
-	if (!android_image_get_dtb_by_index(abootimg_addr(), NULL, num,
+	if (!android_image_get_dtb_by_index(abootimg_addr(),
+					    (void *)get_avendor_bootimg_addr(), num,
 					    &addr, &size)) {
 		return CMD_RET_FAILURE;
 	}
