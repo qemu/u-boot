@@ -1725,7 +1725,6 @@ int fit_image_cipher_get_algo(const void *fit, int noffset, char **algo);
 struct cipher_algo *image_get_cipher_algo(const char *full_name);
 
 struct andr_boot_img_hdr_v0_v1_v2;
-int android_image_check_header(const struct andr_boot_img_hdr_v0_v1_v2 *hdr);
 int android_image_get_kernel(const struct andr_boot_img_hdr_v0_v1_v2 *hdr, int verify,
 			     ulong *os_data, ulong *os_len);
 int android_image_get_ramdisk(const struct andr_boot_img_hdr_v0_v1_v2 *hdr,
@@ -1740,6 +1739,7 @@ ulong android_image_get_kload(const struct andr_boot_img_hdr_v0_v1_v2 *hdr);
 ulong android_image_get_kcomp(const struct andr_boot_img_hdr_v0_v1_v2 *hdr);
 void android_print_contents(const struct andr_boot_img_hdr_v0_v1_v2 *hdr);
 bool android_image_print_dtb_contents(ulong hdr_addr);
+bool is_android_boot_image_header(const struct andr_boot_img_hdr_v0_v1_v2 *hdr);
 
 /**
  * board_fit_config_name_match() - Check for a matching board name
