@@ -14,11 +14,58 @@
 #include <linux/compiler.h>
 #include <linux/types.h>
 
+#define ANDR_GKI_PAGE_SIZE 4096
 #define ANDR_BOOT_MAGIC "ANDROID!"
 #define ANDR_BOOT_MAGIC_SIZE 8
 #define ANDR_BOOT_NAME_SIZE 16
 #define ANDR_BOOT_ARGS_SIZE 512
 #define ANDR_BOOT_EXTRA_ARGS_SIZE 1024
+#define VENDOR_BOOT_MAGIC "VNDRBOOT"
+#define ANDR_VENDOR_BOOT_MAGIC_SIZE 8
+#define ANDR_VENDOR_BOOT_ARGS_SIZE 2048
+#define ANDR_VENDOR_BOOT_NAME_SIZE 16
+
+struct andr_boot_img_hdr_v3_v4 {
+	u8 magic[ANDR_BOOT_MAGIC_SIZE];
+
+	u32 kernel_size;    /* size in bytes */
+	u32 ramdisk_size;   /* size in bytes */
+
+	u32 os_version;
+
+	u32 header_size;    /* size of boot image header in bytes */
+	u32 reserved[4];
+	u32 header_version; /* offset remains constant for version check */
+
+	u8 cmdline[ANDR_BOOT_ARGS_SIZE + ANDR_BOOT_EXTRA_ARGS_SIZE];
+	/* for boot image header v4 only */
+	u32 signature_size; /* size in bytes */
+};
+
+struct andr_vendor_boot_img_hdr_v3_v4 {
+	u8 magic[ANDR_VENDOR_BOOT_MAGIC_SIZE];
+	u32 header_version;
+	u32 page_size;           /* flash page size we assume */
+
+	u32 kernel_addr;         /* physical load addr */
+	u32 ramdisk_addr;        /* physical load addr */
+
+	u32 vendor_ramdisk_size; /* size in bytes */
+
+	u8 cmdline[ANDR_VENDOR_BOOT_ARGS_SIZE];
+
+	u32 tags_addr;           /* physical addr for kernel tags */
+
+	u8 name[ANDR_VENDOR_BOOT_NAME_SIZE]; /* asciiz product name */
+	u32 header_size;         /* size of vendor boot image header in bytes */
+	u32 dtb_size;            /* size of dtb image */
+	u64 dtb_addr;            /* physical load address */
+	/* for boot image header v4 only */
+	u32 vendor_ramdisk_table_size; /* size in bytes for the vendor ramdisk table */
+	u32 vendor_ramdisk_table_entry_num; /* number of entries in the vendor ramdisk table */
+	u32 vendor_ramdisk_table_entry_size; /* size in bytes for a vendor ramdisk table entry */
+	u32 bootconfig_size; /* size in bytes for the bootconfig section */
+};
 
 /* The bootloader expects the structure of andr_boot_img_hdr_v0_v1_v2 with header
  * version 0 to be as follows: */
