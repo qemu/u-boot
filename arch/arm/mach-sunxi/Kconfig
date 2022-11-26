@@ -685,6 +685,10 @@ config MMC1_PINS_PH
 	---help---
 	Select this option for boards where mmc1 uses the Port H pinmux.
 
+config MMC_SUNXI_SLOT
+	int
+	default 0
+
 config MMC_SUNXI_SLOT_EXTRA
 	int "mmc extra slot number"
 	default -1
