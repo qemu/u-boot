@@ -18,7 +18,7 @@
 
 static char andr_tmp_str[ANDR_BOOT_ARGS_SIZE + 1];
 
-static ulong android_image_get_kernel_addr(const struct andr_img_hdr *hdr)
+static ulong android_image_get_kernel_addr(const struct andr_boot_img_hdr_v0_v1_v2 *hdr)
 {
 	/*
 	 * All the Android tools that generate a boot.img use this
@@ -59,7 +59,7 @@ static ulong android_image_get_kernel_addr(const struct andr_img_hdr *hdr)
  * Return: Zero, os start address and length on success,
  *		otherwise on failure.
  */
-int android_image_get_kernel(const struct andr_img_hdr *hdr, int verify,
+int android_image_get_kernel(const struct andr_boot_img_hdr_v0_v1_v2 *hdr, int verify,
 			     ulong *os_data, ulong *os_len)
 {
 	u32 kernel_addr = android_image_get_kernel_addr(hdr);
@@ -122,12 +122,12 @@ int android_image_get_kernel(const struct andr_img_hdr *hdr, int verify,
 	return 0;
 }
 
-int android_image_check_header(const struct andr_img_hdr *hdr)
+int android_image_check_header(const struct andr_boot_img_hdr_v0_v1_v2 *hdr)
 {
 	return memcmp(ANDR_BOOT_MAGIC, hdr->magic, ANDR_BOOT_MAGIC_SIZE);
 }
 
-ulong android_image_get_end(const struct andr_img_hdr *hdr)
+ulong android_image_get_end(const struct andr_boot_img_hdr_v0_v1_v2 *hdr)
 {
 	ulong end;
 
@@ -150,12 +150,12 @@ ulong android_image_get_end(const struct andr_img_hdr *hdr)
 	return end;
 }
 
-ulong android_image_get_kload(const struct andr_img_hdr *hdr)
+ulong android_image_get_kload(const struct andr_boot_img_hdr_v0_v1_v2 *hdr)
 {
 	return android_image_get_kernel_addr(hdr);
 }
 
-ulong android_image_get_kcomp(const struct andr_img_hdr *hdr)
+ulong android_image_get_kcomp(const struct andr_boot_img_hdr_v0_v1_v2 *hdr)
 {
 	const void *p = (void *)((uintptr_t)hdr + hdr->page_size);
 
@@ -167,7 +167,7 @@ ulong android_image_get_kcomp(const struct andr_img_hdr *hdr)
 		return image_decomp_type(p, sizeof(u32));
 }
 
-int android_image_get_ramdisk(const struct andr_img_hdr *hdr,
+int android_image_get_ramdisk(const struct andr_boot_img_hdr_v0_v1_v2 *hdr,
 			      ulong *rd_data, ulong *rd_len)
 {
 	if (!hdr->ramdisk_size) {
@@ -186,7 +186,7 @@ int android_image_get_ramdisk(const struct andr_img_hdr *hdr,
 	return 0;
 }
 
-int android_image_get_second(const struct andr_img_hdr *hdr,
+int android_image_get_second(const struct andr_boot_img_hdr_v0_v1_v2 *hdr,
 			      ulong *second_data, ulong *second_len)
 {
 	if (!hdr->second_size) {
@@ -226,7 +226,7 @@ int android_image_get_second(const struct andr_img_hdr *hdr,
  */
 bool android_image_get_dtbo(ulong hdr_addr, ulong *addr, u32 *size)
 {
-	const struct andr_img_hdr *hdr;
+	const struct andr_boot_img_hdr_v0_v1_v2 *hdr;
 	ulong dtbo_img_addr;
 	bool ret = true;
 
@@ -275,7 +275,7 @@ exit:
  */
 static bool android_image_get_dtb_img_addr(ulong hdr_addr, ulong *addr)
 {
-	const struct andr_img_hdr *hdr;
+	const struct andr_boot_img_hdr_v0_v1_v2 *hdr;
 	ulong dtb_img_addr;
 	bool ret = true;
 
@@ -328,7 +328,7 @@ exit:
 bool android_image_get_dtb_by_index(ulong hdr_addr, u32 index, ulong *addr,
 				    u32 *size)
 {
-	const struct andr_img_hdr *hdr;
+	const struct andr_boot_img_hdr_v0_v1_v2 *hdr;
 	bool res;
 	ulong dtb_img_addr;	/* address of DTB part in boot image */
 	u32 dtb_img_size;	/* size of DTB payload in boot image */
@@ -393,7 +393,7 @@ bool android_image_get_dtb_by_index(ulong hdr_addr, u32 index, ulong *addr,
  * returns:
  *     no returned results
  */
-void android_print_contents(const struct andr_img_hdr *hdr)
+void android_print_contents(const struct andr_boot_img_hdr_v0_v1_v2 *hdr)
 {
 	const char * const p = IMAGE_INDENT_STRING;
 	/* os_version = ver << 11 | lvl */
@@ -485,7 +485,7 @@ static bool android_image_print_dtb_info(const struct fdt_header *fdt,
  */
 bool android_image_print_dtb_contents(ulong hdr_addr)
 {
-	const struct andr_img_hdr *hdr;
+	const struct andr_boot_img_hdr_v0_v1_v2 *hdr;
 	bool res;
 	ulong dtb_img_addr;	/* address of DTB part in boot image */
 	u32 dtb_img_size;	/* size of DTB payload in boot image */

@@ -20,9 +20,9 @@
 #define ANDR_BOOT_ARGS_SIZE 512
 #define ANDR_BOOT_EXTRA_ARGS_SIZE 1024
 
-/* The bootloader expects the structure of andr_img_hdr with header
+/* The bootloader expects the structure of andr_boot_img_hdr_v0_v1_v2 with header
  * version 0 to be as follows: */
-struct andr_img_hdr {
+struct andr_boot_img_hdr_v0_v1_v2 {
     /* Must be ANDR_BOOT_MAGIC. */
     char magic[ANDR_BOOT_MAGIC_SIZE];
 
