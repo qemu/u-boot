@@ -1723,7 +1723,9 @@ struct cipher_algo {
 int fit_image_cipher_get_algo(const void *fit, int noffset, char **algo);
 
 struct cipher_algo *image_get_cipher_algo(const char *full_name);
+struct andr_image_data;
 
+bool android_image_get_data(const void *boot_hdr, struct andr_image_data *data);
 struct andr_boot_img_hdr_v0_v1_v2;
 int android_image_get_kernel(const struct andr_boot_img_hdr_v0_v1_v2 *hdr, int verify,
 			     ulong *os_data, ulong *os_len);

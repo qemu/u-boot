@@ -317,4 +317,31 @@ struct andr_boot_img_hdr_v0_v1_v2 {
  *    contained outside boot and vendor boot partitions), otherwise
  *    jump to kernel_addr
  */
+
+/* Private struct */
+struct andr_image_data {
+	ulong kernel_ptr;
+	u32 kernel_size;
+	u32 ramdisk_size;
+	u32 boot_ramdisk_size;
+	ulong second_ptr;
+	u32 second_size;
+	ulong dtb_ptr;
+	u32 dtb_size;
+	ulong recovery_dtbo_ptr;
+	u32 recovery_dtbo_size;
+
+	const char *kcmdline;
+	const char *kcmdline_extra;
+	const char *image_name;
+
+	u32 kernel_addr;
+	ulong ramdisk_addr;
+	ulong ramdisk_ptr;
+	ulong dtb_load_addr;
+	ulong tags_addr;
+	u32 header_version;
+	u32 boot_img_total_size;
+};
+
 #endif
