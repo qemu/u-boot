@@ -70,7 +70,7 @@ static int abootimg_get_dtb_load_addr(int argc, char *const argv[])
 		return CMD_RET_USAGE;
 	struct andr_image_data img_data = {0};
 
-	if (!android_image_get_data((void *)abootimg_addr(), &img_data))
+	if (!android_image_get_data((void *)abootimg_addr(), NULL, &img_data))
 		return CMD_RET_FAILURE;
 
 	if (img_data.header_version < 2) {
@@ -114,7 +114,7 @@ static int abootimg_get_dtb_by_index(int argc, char *const argv[])
 		return CMD_RET_FAILURE;
 	}
 
-	if (!android_image_get_dtb_by_index(abootimg_addr(), num,
+	if (!android_image_get_dtb_by_index(abootimg_addr(), NULL, num,
 					    &addr, &size)) {
 		return CMD_RET_FAILURE;
 	}
