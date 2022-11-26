@@ -1732,8 +1732,8 @@ struct andr_boot_img_hdr_v0_v1_v2;
 int android_image_get_kernel(const struct andr_boot_img_hdr_v0_v1_v2 *hdr,
 			     const void *vendor_boot_img, int verify,
 			     ulong *os_data, ulong *os_len);
-int android_image_get_ramdisk(const struct andr_boot_img_hdr_v0_v1_v2 *hdr,
-			      const void *vendor_boot_img, ulong *rd_data, ulong *rd_len);
+int android_image_get_ramdisk(const void *hdr, const void *vendor_boot_img,
+			      ulong *rd_data, ulong *rd_len);
 int android_image_get_second(const struct andr_boot_img_hdr_v0_v1_v2 *hdr,
 			      ulong *second_data, ulong *second_len);
 bool android_image_get_dtbo(ulong hdr_addr, ulong *addr, u32 *size);
