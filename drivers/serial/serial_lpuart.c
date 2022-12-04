@@ -168,8 +168,8 @@ static void _lpuart_serial_setbrg(struct udevice *dev,
 static int _lpuart_serial_getc(struct lpuart_serial_plat *plat)
 {
 	struct lpuart_fsl *base = plat->reg;
-	while (!(__raw_readb(&base->us1) & (US1_RDRF | US1_OR)))
-		schedule();
+	if (!(__raw_readb(&base->us1) & (US1_RDRF | US1_OR)))
+		return -EAGAIN;
 
 	barrier();
 
@@ -181,8 +181,8 @@ static void _lpuart_serial_putc(struct lpuart_serial_plat *plat,
 {
 	struct lpuart_fsl *base = plat->reg;
 
-	while (!(__raw_readb(&base->us1) & US1_TDRE))
-		schedule();
+	if (!(__raw_readb(&base->us1) & US1_TDRE))
+		return -EAGAIN;
 
 	__raw_writeb(c, &base->ud);
 }
