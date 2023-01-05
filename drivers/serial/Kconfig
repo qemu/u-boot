@@ -771,13 +771,15 @@ config SYS_NS16550_PORT_MAPPED
 
 config SYS_NS16550_REG_SIZE
 	int "ns16550 register width and endianness"
-	depends on SYS_NS16550_SERIAL || SPL_SYS_NS16550_SERIAL
+	depends on SYS_NS16550 && !NS16550_DYNAMIC
 	range -4 4
 	default -4 if ARCH_OMAP2PLUS || ARCH_SUNXI
+	default -1 if DM_SERIAL || SPL_DM_SERIAL || TPL_DM_SERIAL
 	default 1
 	help
 	  Indicates register width and also endianness. If positive, big-endian
-	  access is used. If negative, little-endian is used.
+	  access is used. If negative, little-endian is used. In the case of
+	  DM_SERIAL being enabled, this value is ignored.
 
 config SPL_NS16550_MIN_FUNCTIONS
 	bool "Only provide NS16550_init and NS16550_putc in SPL"
