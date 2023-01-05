@@ -420,7 +420,7 @@ int spl_mmc_load(struct spl_image_info *spl_image,
 	static struct mmc *mmc;
 	u32 boot_mode;
 	int err = 0;
-	__maybe_unused int hw_part = 0;
+	__maybe_unused int part, hw_part = 0;
 	int mmc_dev;
 
 	/* Perform peripheral init only once for an mmc device */
@@ -445,11 +445,12 @@ int spl_mmc_load(struct spl_image_info *spl_image,
 	switch (boot_mode) {
 	case MMCSD_MODE_EMMCBOOT:
 		hw_part = spl_mmc_emmc_boot_partition(mmc);
+		part = hw_part == 7 ? 0 : hw_part;
 
 		if (CONFIG_IS_ENABLED(MMC_TINY))
-			err = mmc_switch_part(mmc, hw_part);
+			err = mmc_switch_part(mmc, part);
 		else
-			err = blk_dselect_hwpart(mmc_get_blk_desc(mmc), hw_part);
+			err = blk_dselect_hwpart(mmc_get_blk_desc(mmc), part);
 
 		if (err) {
 #ifdef CONFIG_SPL_LIBCOMMON_SUPPORT
@@ -479,7 +480,7 @@ int spl_mmc_load(struct spl_image_info *spl_image,
 #endif
 #ifdef CONFIG_SYS_MMCSD_RAW_MODE_U_BOOT_USE_SECTOR
 		err = mmc_load_image_raw_sector(spl_image, bootdev, mmc,
-				raw_sect + spl_mmc_raw_uboot_offset(hw_part));
+				raw_sect + spl_mmc_raw_uboot_offset(part));
 		if (!err)
 			return err;
 #endif
