@@ -26,15 +26,15 @@
 
 #include <linux/types.h>
 
-#if CONFIG_IS_ENABLED(DM_SERIAL) && !defined(CONFIG_SYS_NS16550_REG_SIZE)
+#if CONFIG_IS_ENABLED(DM_SERIAL)
 /*
  * For driver model we always use one byte per register, and sort out the
  * differences in the driver
  */
-#define CONFIG_SYS_NS16550_REG_SIZE (-1)
-#endif
-
-#if defined(CONFIG_NS16550_DYNAMIC) || defined(CONFIG_DEBUG_UART)
+#define UART_REG(x)							\
+	unsigned char x;						\
+	unsigned char postpad_##x[0];
+#elif defined(CONFIG_NS16550_DYNAMIC) || defined(CONFIG_DEBUG_UART)
 #define UART_REG(x)	unsigned char x
 #else
 #if !defined(CONFIG_SYS_NS16550_REG_SIZE) || (CONFIG_SYS_NS16550_REG_SIZE == 0)
