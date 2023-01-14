@@ -474,6 +474,7 @@ config BOOTMETH_VBE
 	depends on FIT
 	default y
 	select BOOTMETH_GLOBAL
+	select EVENT
 	help
 	  Enables support for VBE boot. This is a standard boot method which
 	  supports selection of various firmware components, seleciton of an OS to

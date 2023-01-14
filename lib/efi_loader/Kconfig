@@ -14,9 +14,8 @@ config EFI_LOADER
 	depends on !EFI_APP
 	default y if !ARM || SYS_CPU = armv7 || SYS_CPU = armv8
 	select CHARSET
-	select DM_EVENT
-	select EVENT
-	select EVENT_DYNAMIC
+	select DM_EVENT if PARTITIONS
+	select EVENT_DYNAMIC if EVENT
 	select LIB_UUID
 	imply PARTITION_UUIDS
 	select REGEX
