@@ -29,6 +29,7 @@
 #include <u-boot/md5.h>
 #include <u-boot/sha1.h>
 #include <linux/errno.h>
+#include <linux/zstd.h>
 #include <asm/io.h>
 
 DECLARE_GLOBAL_DATA_PTR;
@@ -61,7 +62,6 @@ DECLARE_GLOBAL_DATA_PTR;
 #include <imximage.h>
 #include <relocate.h>
 #include <linux/lzo.h>
-#include <linux/zstd.h>
 #include <linux/kconfig.h>
 #include <lzma/LzmaTypes.h>
 #include <lzma/LzmaDec.h>
