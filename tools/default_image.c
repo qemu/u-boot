@@ -82,7 +82,13 @@ static int image_verify_header(unsigned char *ptr, int image_size,
 	}
 
 	data = (const unsigned char *)ptr + sizeof(struct legacy_img_hdr);
-	len  = image_size - sizeof(struct legacy_img_hdr);
+	len = image_get_data_size(hdr);
+
+	if (image_size - sizeof(struct legacy_img_hdr) < len) {
+		debug("%s: Bad image size: \"%s\" is no valid image\n",
+		      params->cmdname, params->imagefile);
+		return -FDT_ERR_BADSTRUCTURE;
+	}
 
 	checksum = be32_to_cpu(hdr->ih_dcrc);
 	if (crc32(0, data, len) != checksum) {
