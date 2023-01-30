@@ -822,11 +822,10 @@ void board_init_r(gd_t *dummy1, ulong dummy2)
 	if (ret) {
 		if (CONFIG_IS_ENABLED(SHOW_ERRORS) &&
 		    CONFIG_IS_ENABLED(LIBCOMMON_SUPPORT))
-			printf(SPL_TPL_PROMPT "failed to boot from all boot devices (err=%d)\n",
-			       ret);
+			panic(SPL_TPL_PROMPT "failed to boot from all boot devices (err=%d)\n",
+			      ret);
 		else
-			puts(SPL_TPL_PROMPT "failed to boot from all boot devices\n");
-		hang();
+			panic_str(SPL_TPL_PROMPT "failed to boot from all boot devices\n");
 	}
 
 	spl_perform_fixups(&spl_image);
