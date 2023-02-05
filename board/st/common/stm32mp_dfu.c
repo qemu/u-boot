@@ -159,7 +159,7 @@ void set_dfu_alt_info(char *interface, char *devstr)
 	puts("DFU alt info setting: done\n");
 }
 
-#if CONFIG_IS_ENABLED(DFU_VIRT)
+#if IS_ENABLED(CONFIG_DFU_VIRT)
 #include <dfu.h>
 #include <power/stpmic1.h>
 
