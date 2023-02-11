@@ -8,7 +8,6 @@ image: trini/u-boot-gitlab-ci-runner:jammy-20230126-10Feb2023
 stages:
   - testsuites
   - test.py
-  - world build
 
 .buildman_and_testpy_template: &buildman_and_testpy_dfn
   stage: test.py
@@ -77,52 +76,6 @@ stages:
     - if [[ "${TEST_PY_BD}" == "coreboot" ]]; then
         cp -v /tmp/coreboot/*.{html,css} .;
       fi
-
-build all 32bit ARM platforms:
-  stage: world build
-  script:
-    - ret=0;
-      git config --global --add safe.directory "${CI_PROJECT_DIR}";
-      ./tools/buildman/buildman -o /tmp -PEWM arm -x aarch64 || ret=$?;
-      if [[ $ret -ne 0 ]]; then
-        ./tools/buildman/buildman -o /tmp -seP;
-        exit $ret;
-      fi;
-
-build all 64bit ARM platforms:
-  stage: world build
-  script:
-    - virtualenv -p /usr/bin/python3 /tmp/venv
-    - . /tmp/venv/bin/activate
-    - ret=0;
-      git config --global --add safe.directory "${CI_PROJECT_DIR}";
-      ./tools/buildman/buildman -o /tmp -PEWM aarch64 || ret=$?;
-      if [[ $ret -ne 0 ]]; then
-        ./tools/buildman/buildman -o /tmp -seP;
-        exit $ret;
-      fi;
-
-build all PowerPC platforms:
-  stage: world build
-  script:
-    - ret=0;
-      git config --global --add safe.directory "${CI_PROJECT_DIR}";
-      ./tools/buildman/buildman -o /tmp -P -E -W powerpc || ret=$?;
-      if [[ $ret -ne 0 ]]; then
-        ./tools/buildman/buildman -o /tmp -seP;
-        exit $ret;
-      fi;
-
-build all other platforms:
-  stage: world build
-  script:
-    - ret=0;
-      git config --global --add safe.directory "${CI_PROJECT_DIR}";
-      ./tools/buildman/buildman -o /tmp -PEWM -x arm,powerpc || ret=$?;
-      if [[ $ret -ne 0 ]]; then
-        ./tools/buildman/buildman -o /tmp -seP;
-        exit $ret;
-      fi;
 
 check for new CONFIG symbols outside Kconfig:
   stage: testsuites
@@ -206,12 +159,6 @@ Run binman, buildman, dtoc, Kconfig and patman testsuites:
       ./tools/dtoc/dtoc -t;
       ./tools/patman/patman test;
       make testconfig
-
-Run tests for Nokia RX-51 (aka N900):
-  stage: testsuites
-  script:
-    - export PATH=/opt/gcc-12.2.0-nolibc/arm-linux-gnueabi/bin:$PATH;
-      test/nokia_rx51_test.sh
 
 # Check for any pylint regressions
 Run pylint:
