@@ -76,6 +76,7 @@ SECTIONS
 	/DISCARD/ : { *(.plt*) }
 	/DISCARD/ : { *(.interp*) }
 	/DISCARD/ : { *(.gnu*) }
+	/DISCARD/ : { *(.note.GNU-stack) }
 }
 
 #if defined(CONFIG_TPL_MAX_SIZE)

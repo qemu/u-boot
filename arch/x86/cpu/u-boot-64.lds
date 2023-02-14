@@ -110,4 +110,5 @@ SECTIONS
 	/DISCARD/ : { *(.interp*) }
 	/DISCARD/ : { *(.gnu*) }
 	/DISCARD/ : { *(.note.gnu.property) }
+	/DISCARD/ : { *(.note.GNU-stack) }
 }

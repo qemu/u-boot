@@ -84,6 +84,7 @@ SECTIONS
 	/DISCARD/ : { *(.plt*) }
 	/DISCARD/ : { *(.interp*) }
 	/DISCARD/ : { *(.gnu*) }
+	/DISCARD/ : { *(.note.GNU-stack) }
 
 #ifdef CONFIG_LINUX_KERNEL_IMAGE_HEADER
 #include "linux-kernel-image-header-vars.h"

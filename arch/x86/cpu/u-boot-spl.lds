@@ -83,6 +83,7 @@ SECTIONS
 	/DISCARD/ : { *(.interp*) }
 	/DISCARD/ : { *(.gnu*) }
 	/DISCARD/ : { *(.note.gnu.property) }
+	/DISCARD/ : { *(.note.GNU-stack) }
 
 #if defined(CONFIG_SPL_X86_16BIT_INIT) || defined(CONFIG_TPL_X86_16BIT_INIT)
 	/*

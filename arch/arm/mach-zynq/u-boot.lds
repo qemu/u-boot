@@ -136,4 +136,5 @@ SECTIONS
 	/DISCARD/ : { *(.gnu*) }
 	/DISCARD/ : { *(.ARM.exidx*) }
 	/DISCARD/ : { *(.gnu.linkonce.armexidx.*) }
+	/DISCARD/ : { *(.note.GNU-stack) }
 }

@@ -35,6 +35,7 @@ SECTIONS
 	 */
 	/DISCARD/ : { *(.rel._secure*) }
 #endif
+	/DISCARD/ : { *(.note.GNU-stack) }
 	. = 0x00000000;
 
 	. = ALIGN(4);
