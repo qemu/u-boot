@@ -51,11 +51,6 @@ void spl_dram_init(void)
 	ddr_init(&dram_timing);
 }
 
-void spl_board_init(void)
-{
-	arch_misc_init();
-}
-
 #ifdef CONFIG_SPL_LOAD_FIT
 int board_fit_config_name_match(const char *name)
 {
