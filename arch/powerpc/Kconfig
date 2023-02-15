@@ -17,6 +17,7 @@ config MPC83xx
 
 config MPC85xx
 	bool "MPC85xx"
+	select ARCH_MISC_INIT if FSL_CAAM
 	select CREATE_ARCH_SYMLINK
 	select SYS_FSL_DDR
 	select SYS_FSL_DDR_BE

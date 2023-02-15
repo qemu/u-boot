@@ -51,7 +51,6 @@ config TARGET_IMX8MQ_EVK
 	select IMX8MQ
 	select IMX8M_LPDDR4
 	select FSL_CAAM
-	select ARCH_MISC_INIT
 	select SPL_CRYPTO if SPL
 
 config TARGET_IMX8MQ_PHANBELL
@@ -74,7 +73,6 @@ config TARGET_IMX8MM_EVK
 	select SUPPORT_SPL
 	select IMX8M_LPDDR4
 	select FSL_CAAM
-	select ARCH_MISC_INIT
 	select SPL_CRYPTO if SPL
 
 config TARGET_IMX8MM_ICORE_MX8MM
@@ -126,7 +124,6 @@ config TARGET_KONTRON_MX8MM
 	select SUPPORT_SPL
 	select IMX8M_LPDDR4
 	select FSL_CAAM
-	select ARCH_MISC_INIT
 	select SPL_CRYPTO if SPL
 
 config TARGET_IMX8MN_BSH_SMM_S2
@@ -198,7 +195,6 @@ config TARGET_IMX8MP_EVK
 	select SUPPORT_SPL
 	select IMX8M_LPDDR4
 	select FSL_CAAM
-	select ARCH_MISC_INIT
 	select SPL_CRYPTO if SPL
 
 config TARGET_IMX8MP_VENICE
@@ -250,7 +246,6 @@ config TARGET_IMX8MM_BEACON
 	select SUPPORT_SPL
 	select IMX8M_LPDDR4
 	select FSL_CAAM
-	select ARCH_MISC_INIT
 	select SPL_CRYPTO if SPL
 
 config TARGET_IMX8MN_BEACON
@@ -260,7 +255,6 @@ config TARGET_IMX8MN_BEACON
 	select SUPPORT_SPL
 	select IMX8M_LPDDR4
 	select FSL_CAAM
-	select ARCH_MISC_INIT
 	select SPL_CRYPTO if SPL
 
 config TARGET_PHYCORE_IMX8MM

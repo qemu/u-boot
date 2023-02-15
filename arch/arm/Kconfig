@@ -605,6 +605,7 @@ config ARCH_MVEBU
 
 config ARCH_ORION5X
 	bool "Marvell Orion"
+	select ARCH_MISC_INIT
 	select CPU_ARM926EJS
 	select GPIO_EXTRA_HEADER
 	select SPL_SEPARATE_BSS if SPL
@@ -819,6 +820,7 @@ config ARCH_LPC32XX
 config ARCH_IMX8
 	bool "NXP i.MX8 platform"
 	select ARM64
+	select ARCH_MISC_INIT if FSL_CAAM
 	select SYS_FSL_HAS_SEC
 	select SYS_FSL_SEC_COMPAT_4
 	select SYS_FSL_SEC_LE
@@ -832,6 +834,7 @@ config ARCH_IMX8
 config ARCH_IMX8M
 	bool "NXP i.MX8M platform"
 	select ARM64
+	select ARCH_MISC_INIT if FSL_CAAM
 	select GPIO_EXTRA_HEADER
 	select MACH_IMX
 	select SYS_FSL_HAS_SEC
@@ -880,6 +883,7 @@ config ARCH_IMXRT
 
 config ARCH_MX23
 	bool "NXP i.MX23 family"
+	select ARCH_MISC_INIT
 	select CPU_ARM926EJS
 	select GPIO_EXTRA_HEADER
 	select MACH_IMX
@@ -888,6 +892,7 @@ config ARCH_MX23
 
 config ARCH_MX28
 	bool "NXP i.MX28 family"
+	select ARCH_MISC_INIT
 	select CPU_ARM926EJS
 	select GPIO_EXTRA_HEADER
 	select PL011_SERIAL
@@ -902,6 +907,7 @@ config ARCH_MX31
 
 config ARCH_MX7ULP
 	bool "NXP MX7ULP"
+	select ARCH_MISC_INIT if FSL_CAAM
 	select BOARD_POSTCLK_INIT
 	select CPU_V7A
 	select GPIO_EXTRA_HEADER
@@ -929,6 +935,7 @@ config ARCH_MX7
 
 config ARCH_MX6
 	bool "Freescale MX6"
+	select ARCH_MISC_INIT
 	select BOARD_POSTCLK_INIT
 	select CPU_V7A
 	select GPIO_EXTRA_HEADER
@@ -1023,6 +1030,7 @@ config ARCH_QEMU
 
 config ARCH_RMOBILE
 	bool "Renesas ARM SoCs"
+	select ARCH_MISC_INIT
 	select DM
 	select DM_SERIAL
 	select GPIO_EXTRA_HEADER
@@ -1198,6 +1206,7 @@ config ARCH_VERSAL_NET
 
 config ARCH_VF610
 	bool "Freescale Vybrid"
+	select ARCH_MISC_INIT
 	select CPU_V7A
 	select GPIO_EXTRA_HEADER
 	select IOMUX_SHARE_CONF_REG
