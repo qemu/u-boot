@@ -10,10 +10,12 @@ choice
 
 config TARGET_MX23_OLINUXINO
 	bool "Support mx23_olinuxino"
+	select ARCH_MISC_INIT
 	select BOARD_EARLY_INIT_F
 
 config TARGET_MX23EVK
 	bool "Support mx23evk"
+	select ARCH_MISC_INIT
 	select BOARD_EARLY_INIT_F
 
 config TARGET_XFI3
@@ -41,6 +43,7 @@ choice
 
 config TARGET_MX28EVK
 	bool "Support mx28evk"
+	select ARCH_MISC_INIT
 	select BOARD_EARLY_INIT_F
 
 config TARGET_XEA

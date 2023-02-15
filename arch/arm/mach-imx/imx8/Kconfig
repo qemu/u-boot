@@ -75,7 +75,6 @@ config TARGET_IMX8QM_MEK
 	select BOARD_LATE_INIT
 	select IMX8QM
 	select FSL_CAAM
-	select ARCH_MISC_INIT
 	select SPL_CRYPTO if SPL
 
 config TARGET_CONGA_QMX8
@@ -98,7 +97,6 @@ config TARGET_IMX8QXP_MEK
 	select BOARD_LATE_INIT
 	select IMX8QXP
 	select FSL_CAAM
-	select ARCH_MISC_INIT
 	select SPL_CRYPTO if SPL
 
 endchoice

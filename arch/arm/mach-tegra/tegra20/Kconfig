@@ -57,6 +57,7 @@ config TARGET_VENTANA
 
 config TARGET_COLIBRI_T20
 	bool "Toradex Colibri T20 board"
+	select ARCH_MISC_INIT
 	select BOARD_LATE_INIT
 	select TEGRA_UARTA_SDIO1
 

@@ -12,6 +12,7 @@ choice
 
 config TARGET_APALIS_T30
 	bool "Toradex Apalis T30 board"
+	select ARCH_MISC_INIT
 	select BOARD_LATE_INIT
 
 config TARGET_BEAVER
@@ -26,6 +27,7 @@ config TARGET_CARDHU
 
 config TARGET_COLIBRI_T30
 	bool "Toradex Colibri T30 board"
+	select ARCH_MISC_INIT
 	select BOARD_LATE_INIT
 
 config TARGET_TEC_NG
