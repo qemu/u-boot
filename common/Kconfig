@@ -685,6 +685,10 @@ config BOARD_LATE_INIT
 config CLOCKS
 	bool "Call set_cpu_clk_info"
 	depends on ARM
+	help
+	  Some platforms need to call set_cpu_clk_info to set various fields
+	  under the board info struct to set clock information. This is done
+	  after the call to board_init().
 
 config HWCONFIG
 	bool "hwconfig infrastructure"
