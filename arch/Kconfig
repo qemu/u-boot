@@ -221,6 +221,7 @@ config X86
 	select DM
 	select HAVE_ARCH_IOMAP
 	select HAVE_PRIVATE_LIBGCC
+	select LAST_STAGE_INIT
 	select OF_CONTROL
 	select PCI
 	select SUPPORT_ACPI
