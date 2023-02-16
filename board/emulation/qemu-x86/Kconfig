@@ -22,6 +22,7 @@ config BOARD_SPECIFIC_OPTIONS # dummy
 	select QEMU
 	select QFW_PIO
 	select BOARD_ROMSIZE_KB_1024
+	select PCI_INIT_R
 	imply VIRTIO_PCI
 	imply VIRTIO_NET
 	imply VIRTIO_BLK

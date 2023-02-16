@@ -1822,6 +1822,7 @@ config TARGET_SL28
 	select DM_SERIAL
 	select DM_SPI
 	select GPIO_EXTRA_HEADER
+	select PCI_INIT_R
 	select SPL_DM if SPL
 	select SPL_DM_SPI if SPL
 	select SPL_DM_SPI_FLASH if SPL
@@ -1839,6 +1840,7 @@ config TARGET_TEN64
 	select ARMV8_MULTIENTRY
 	select ARCH_SUPPORT_TFABOOT
 	select BOARD_LATE_INIT
+	select PCI_INIT_R
 	select SUPPORT_SPL
 	select FSL_DDR_INTERACTIVE if !SD_BOOT
 	select GPIO_EXTRA_HEADER

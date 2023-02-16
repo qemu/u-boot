@@ -759,7 +759,7 @@ config SYS_I2C_EEPROM_NXID
 endchoice
 
 config PCI_INIT_R
-	bool "Enumerate PCI buses during init"
+	bool
 	depends on PCI
 	help
 	  With this option U-Boot will call pci_init() soon after relocation,

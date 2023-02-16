@@ -28,11 +28,11 @@ config SPL_OPENSBI_LOAD_ADDR
 config BOARD_SPECIFIC_OPTIONS # dummy
 	def_bool y
 	select GENERIC_RISCV
+	select PCI_INIT_R
 	select SUPPORT_SPL
 	imply AHCI
 	imply SMP
 	imply BOARD_LATE_INIT
-	imply PCI_INIT_R
 	imply SPL_RAM_SUPPORT
 	imply SPL_RAM_DEVICE
 	imply CMD_PCI

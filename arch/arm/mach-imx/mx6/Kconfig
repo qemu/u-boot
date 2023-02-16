@@ -225,6 +225,7 @@ config TARGET_GE_B1X5V2
 config TARGET_GW_VENTANA
 	bool "gw_ventana"
 	depends on MX6QDL
+	select PCI_INIT_R
 	select SUPPORT_SPL
 	select GATEWORKS_SC
 	select MISC
