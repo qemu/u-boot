@@ -665,10 +665,12 @@ config BOARD_EARLY_INIT_R
 	  in the post-relocation init sequence.
 
 config BOARD_POSTCLK_INIT
-	bool "Call board_postclk_init"
+	bool
 	help
 	  Some boards need this to initialize select items, after clocks /
-	  timebase and before env / serial.
+	  timebase and before env / serial. With this option, U-Boot calls
+	  board_postclk_init() prior to initialization of the environment
+	  and shortly after the board_early_init_f call.
 
 config BOARD_LATE_INIT
 	bool "Execute Board late init"
