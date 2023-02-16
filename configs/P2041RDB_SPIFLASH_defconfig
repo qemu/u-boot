@@ -35,7 +35,6 @@ CONFIG_SYS_FSL_PBL_RCW="board/freescale/p2041rdb/rcw_p2041rdb.cfg"
 CONFIG_BOOTDELAY=10
 CONFIG_USE_BOOTCOMMAND=y
 CONFIG_BOOTCOMMAND="setenv bootargs root=/dev/$bdev rw console=$consoledev,$baudrate $othbootargs;tftp $loadaddr $bootfile;tftp $fdtaddr $fdtfile;bootm $loadaddr - $fdtaddr"
-CONFIG_ARCH_MISC_INIT=y
 CONFIG_BOARD_EARLY_INIT_F=y
 CONFIG_BOARD_EARLY_INIT_R=y
 CONFIG_ID_EEPROM=y

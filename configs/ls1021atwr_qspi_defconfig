@@ -32,7 +32,6 @@ CONFIG_BOOTARGS="console=ttyS0,115200 root=/dev/ram0"
 CONFIG_BOOTCOMMAND="run distro_bootcmd; run qspi_bootcmd; env exists secureboot && esbc_halt"
 CONFIG_SILENT_CONSOLE=y
 CONFIG_SYS_CONSOLE_IS_IN_ENV=y
-CONFIG_ARCH_MISC_INIT=y
 CONFIG_MISC_INIT_R=y
 CONFIG_ID_EEPROM=y
 CONFIG_SYS_EEPROM_BUS_NUM=1
