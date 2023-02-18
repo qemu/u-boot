@@ -132,19 +132,14 @@ static int pci_generic_ecam_write_config(struct udevice *bus, pci_dev_t bdf,
 static int pci_generic_ecam_of_to_plat(struct udevice *dev)
 {
 	struct generic_ecam_pcie *pcie = dev_get_priv(dev);
-	struct fdt_resource reg_res;
-	DECLARE_GLOBAL_DATA_PTR;
-	int err;
+	fdt_addr_t addr;
+	fdt_size_t size;
 
-	err = fdt_get_resource(gd->fdt_blob, dev_of_offset(dev), "reg",
-			       0, &reg_res);
-	if (err < 0) {
-		pr_err("\"reg\" resource not found\n");
-		return err;
-	}
-
-	pcie->size = fdt_resource_size(&reg_res);
-	pcie->cfg_base = map_physmem(reg_res.start, pcie->size, MAP_NOCACHE);
+	addr = dev_read_addr_size(dev, "reg", &size);
+	if (addr == FDT_ADDR_T_NONE)
+		return -EINVAL;
+	pcie->size = size;
+	pcie->cfg_base = map_physmem(addr, pcie->size, MAP_NOCACHE);
 
 	return 0;
 }
