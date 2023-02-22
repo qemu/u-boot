@@ -415,7 +415,9 @@ int cpu_phys_address_size(void)
 /* Don't allow PCI region 3 to use memory in the 2-4GB memory hole */
 static void setup_pci_ram_top(void)
 {
+#if CONFIG_IS_ENABLED(PCI)
 	gd->pci_ram_top = 0x80000000U;
+#endif
 }
 
 static void setup_mtrr(void)
