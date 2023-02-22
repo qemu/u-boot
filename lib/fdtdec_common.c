@@ -13,6 +13,7 @@
 #include <linux/libfdt.h>
 #include <fdtdec.h>
 #else
+#include <linux/kconfig.h>
 #include "libfdt.h"
 #include "fdt_support.h"
 

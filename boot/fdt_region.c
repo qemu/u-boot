@@ -5,6 +5,7 @@
  * Written by Simon Glass <sjg@chromium.org>
  */
 
+#include <linux/kconfig.h>
 #include <fdt_support.h>
 #include <linux/libfdt_env.h>
 #include <fdt_region.h>

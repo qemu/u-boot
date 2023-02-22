@@ -12,6 +12,7 @@
 #include <compiler.h>
 #include <env.h>
 #include <errno.h>
+#include <linux/kconfig.h>
 #include <env_flags.h>
 #include <fcntl.h>
 #include <libgen.h>

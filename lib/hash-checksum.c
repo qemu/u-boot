@@ -11,6 +11,7 @@
 #include <asm/unaligned.h>
 #include <hash.h>
 #else
+#include <linux/kconfig.h>
 #include "fdt_host.h"
 #endif
 #include <hash.h>

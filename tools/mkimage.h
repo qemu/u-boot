@@ -8,6 +8,7 @@
 #ifndef _MKIIMAGE_H_
 #define _MKIIMAGE_H_
 
+#include <linux/kconfig.h>
 #include "os_support.h"
 #include <errno.h>
 #include <fcntl.h>
