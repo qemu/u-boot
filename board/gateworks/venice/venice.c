@@ -41,7 +41,7 @@ int board_fit_config_name_match(const char *name)
 	return -1;
 }
 
-#if (IS_ENABLED(CONFIG_NET))
+#if IS_ENABLED(CONFIG_NET)
 static int setup_fec(void)
 {
 	struct iomuxc_gpr_base_regs *gpr =
@@ -113,10 +113,12 @@ int board_init(void)
 {
 	venice_eeprom_init(1);
 
+#if IS_ENABLED(CONFIG_NET)
 	if (IS_ENABLED(CONFIG_FEC_MXC))
 		setup_fec();
 	if (IS_ENABLED(CONFIG_DWC_ETH_QOS))
 		setup_eqos();
+#endif
 
 	return 0;
 }
