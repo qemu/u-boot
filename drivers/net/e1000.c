@@ -60,7 +60,7 @@ tested on both gig copper and gig fiber boards
  * move these buffers and the tx/rx pointers to struct e1000_hw.
  */
 DEFINE_ALIGN_BUFFER(struct e1000_tx_desc, tx_base, 16, E1000_BUFFER_ALIGN);
-DEFINE_ALIGN_BUFFER(struct e1000_rx_desc, rx_base, 16, E1000_BUFFER_ALIGN);
+DEFINE_ALIGN_BUFFER(struct e1000_rx_desc, rx_base, NUM_RX_DESC, E1000_BUFFER_ALIGN);
 DEFINE_ALIGN_BUFFER(unsigned char, packet, 4096, E1000_BUFFER_ALIGN);
 
 static int tx_tail;
@@ -5095,7 +5095,7 @@ fill_rx(struct e1000_hw *hw)
 
 	rx_last = rx_tail;
 	rd = rx_base + rx_tail;
-	rx_tail = (rx_tail + 1) % 8;
+	rx_tail = (rx_tail + 1) % NUM_RX_DESC;
 	memset(rd, 0, 16);
 	rd->buffer_addr = cpu_to_le64(virt_to_phys(packet));
 
@@ -5272,7 +5272,7 @@ e1000_configure_rx(struct e1000_hw *hw)
 	E1000_WRITE_REG(hw, RDBAL, lower_32_bits(virt_to_phys(rx_base)));
 	E1000_WRITE_REG(hw, RDBAH, upper_32_bits(virt_to_phys(rx_base)));
 
-	E1000_WRITE_REG(hw, RDLEN, 128);
+	E1000_WRITE_REG(hw, RDLEN, NUM_RX_DESC * sizeof(struct e1000_rx_desc));
 
 	/* Setup the HW Rx Head and Tail Descriptor Pointers */
 	E1000_WRITE_REG(hw, RDH, 0);

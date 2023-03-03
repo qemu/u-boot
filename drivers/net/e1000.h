@@ -42,6 +42,8 @@
 #define DEBUGOUT(fmt, args...)	do { } while (0)
 #endif
 
+#define NUM_RX_DESC            8
+
 /* I/O wrapper functions */
 #define E1000_WRITE_REG(a, reg, value) \
 	writel((value), ((a)->hw_addr + E1000_##reg))
