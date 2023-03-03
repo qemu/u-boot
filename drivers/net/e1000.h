@@ -1134,6 +1134,11 @@ struct e1000_hw {
 	bool		initialize_hw_bits_disable;
 	e1000_smart_speed	smart_speed;
 	e1000_dsp_config	dsp_config_state;
+
+	struct e1000_rx_desc *rx_base;
+	unsigned char *rx_packet;
+	int rx_tail;
+	int rx_last;
 };
 
 #define E1000_EEPROM_SWDPIN0   0x0001	/* SWDPIN 0 EEPROM Value */

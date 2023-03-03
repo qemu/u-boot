@@ -61,10 +61,9 @@ tested on both gig copper and gig fiber boards
  */
 DEFINE_ALIGN_BUFFER(struct e1000_tx_desc, tx_base, 16, E1000_BUFFER_ALIGN);
 DEFINE_ALIGN_BUFFER(struct e1000_rx_desc, rx_base, NUM_RX_DESC, E1000_BUFFER_ALIGN);
-DEFINE_ALIGN_BUFFER(unsigned char, packet, 4096, E1000_BUFFER_ALIGN);
+DEFINE_ALIGN_BUFFER(unsigned char, _packet, 4096, E1000_BUFFER_ALIGN);
 
 static int tx_tail;
-static int rx_tail, rx_last;
 static int num_cards;	/* Number of E1000 devices seen so far */
 
 static struct pci_device_id e1000_supported[] = {
@@ -5090,12 +5089,13 @@ e1000_sw_init(struct e1000_hw *hw)
 void
 fill_rx(struct e1000_hw *hw)
 {
+	unsigned char *packet = hw->rx_packet;
 	struct e1000_rx_desc *rd;
 	unsigned long flush_start, flush_end;
 
-	rx_last = rx_tail;
-	rd = rx_base + rx_tail;
-	rx_tail = (rx_tail + 1) % NUM_RX_DESC;
+	hw->rx_last = hw->rx_tail;
+	rd = hw->rx_base + hw->rx_tail;
+	hw->rx_tail = (hw->rx_tail + 1) % NUM_RX_DESC;
 	memset(rd, 0, 16);
 	rd->buffer_addr = cpu_to_le64(virt_to_phys(packet));
 
@@ -5111,7 +5111,7 @@ fill_rx(struct e1000_hw *hw)
 	flush_end = flush_start + roundup(sizeof(*rd), ARCH_DMA_MINALIGN);
 	flush_dcache_range(flush_start, flush_end);
 
-	E1000_WRITE_REG(hw, RDT, rx_tail);
+	E1000_WRITE_REG(hw, RDT, hw->rx_tail);
 }
 
 /**
@@ -5248,7 +5248,7 @@ static void
 e1000_configure_rx(struct e1000_hw *hw)
 {
 	unsigned long rctl, ctrl_ext;
-	rx_tail = 0;
+	hw->rx_tail = 0;
 
 	/* make sure receives are disabled while setting up the descriptors */
 	rctl = E1000_READ_REG(hw, RCTL);
@@ -5269,8 +5269,8 @@ e1000_configure_rx(struct e1000_hw *hw)
 		E1000_WRITE_FLUSH(hw);
 	}
 	/* Setup the Base and Length of the Rx Descriptor Ring */
-	E1000_WRITE_REG(hw, RDBAL, lower_32_bits(virt_to_phys(rx_base)));
-	E1000_WRITE_REG(hw, RDBAH, upper_32_bits(virt_to_phys(rx_base)));
+	E1000_WRITE_REG(hw, RDBAL, lower_32_bits(virt_to_phys(hw->rx_base)));
+	E1000_WRITE_REG(hw, RDBAH, upper_32_bits(virt_to_phys(hw->rx_base)));
 
 	E1000_WRITE_REG(hw, RDLEN, NUM_RX_DESC * sizeof(struct e1000_rx_desc));
 
@@ -5298,12 +5298,13 @@ POLL - Wait for a frame
 static int
 _e1000_poll(struct e1000_hw *hw)
 {
+	unsigned char *packet = hw->rx_packet;
 	struct e1000_rx_desc *rd;
 	unsigned long inval_start, inval_end;
 	uint32_t len;
 
 	/* return true if there's an ethernet packet ready to read */
-	rd = rx_base + rx_last;
+	rd = hw->rx_base + hw->rx_last;
 
 	/* Re-load the descriptor from RAM. */
 	inval_start = ((unsigned long)rd) & ~(ARCH_DMA_MINALIGN - 1);
@@ -5468,6 +5469,9 @@ static int e1000_init_one(struct e1000_hw *hw, int cardnum,
 		E1000_ERR(hw, "Can't enable bus-mastering\n");
 		return -EPERM;
 	}
+
+	hw->rx_base = rx_base;
+	hw->rx_packet = _packet;
 
 	/* Are these variables needed? */
 	hw->fc = e1000_fc_default;
@@ -5663,7 +5667,7 @@ static int e1000_eth_recv(struct udevice *dev, int flags, uchar **packetp)
 
 	len = _e1000_poll(hw);
 	if (len)
-		*packetp = packet;
+		*packetp = hw->rx_packet;
 
 	return len ? len : -EAGAIN;
 }
