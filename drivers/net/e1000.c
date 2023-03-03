@@ -54,14 +54,11 @@ tested on both gig copper and gig fiber boards
 #define E1000_BUFFER_ALIGN	128
 
 /*
- * TODO(sjg@chromium.org): Even with driver model we share these buffers.
- * Concurrent receiving on multiple active Ethernet devices will not work.
- * Normally U-Boot does not support this anyway. To fix it in this driver,
- * move these buffers and the tx/rx pointers to struct e1000_hw.
+ * TODO(sjg@chromium.org): Even with driver model we share tx buffer.
+ * To fix it in this driver, move these buffer and the tx pointers to
+ * struct e1000_hw.
  */
 DEFINE_ALIGN_BUFFER(struct e1000_tx_desc, tx_base, 16, E1000_BUFFER_ALIGN);
-DEFINE_ALIGN_BUFFER(struct e1000_rx_desc, rx_base, NUM_RX_DESC, E1000_BUFFER_ALIGN);
-DEFINE_ALIGN_BUFFER(unsigned char, _packet, 4096, E1000_BUFFER_ALIGN);
 
 static int tx_tail;
 static int num_cards;	/* Number of E1000 devices seen so far */
@@ -5442,6 +5439,12 @@ void e1000_get_bus_type(struct e1000_hw *hw)
 	}
 }
 
+static inline void *
+e1000_alloc(size_t size)
+{
+	return memalign(E1000_BUFFER_ALIGN, size);
+}
+
 static int e1000_init_one(struct e1000_hw *hw, int cardnum,
 			  struct udevice *devno, unsigned char enetaddr[6])
 {
@@ -5470,8 +5473,14 @@ static int e1000_init_one(struct e1000_hw *hw, int cardnum,
 		return -EPERM;
 	}
 
-	hw->rx_base = rx_base;
-	hw->rx_packet = _packet;
+	hw->rx_base = e1000_alloc(NUM_RX_DESC * sizeof(struct e1000_rx_desc));
+	hw->rx_packet = e1000_alloc(4096);
+
+	if (!hw->rx_base || !hw->rx_packet) {
+		free(hw->rx_base);
+		free(hw->rx_packet);
+		return -ENOMEM;
+	}
 
 	/* Are these variables needed? */
 	hw->fc = e1000_fc_default;
