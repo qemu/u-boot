@@ -5086,7 +5086,7 @@ e1000_sw_init(struct e1000_hw *hw)
 void
 fill_rx(struct e1000_hw *hw)
 {
-	unsigned char *packet = hw->rx_packet;
+	unsigned char *packet = hw->rx_packet[hw->rx_tail];
 	struct e1000_rx_desc *rd;
 	unsigned long flush_start, flush_end;
 
@@ -5284,6 +5284,9 @@ e1000_configure_rx(struct e1000_hw *hw)
 		mdelay(20);
 	}
 
+	for (int i = 0; i < NUM_RX_DESC; i++)
+		memset(&hw->rx_base[i], 0, 16);
+
 	E1000_WRITE_REG(hw, RCTL, rctl);
 
 	fill_rx(hw);
@@ -5295,9 +5298,9 @@ POLL - Wait for a frame
 static int
 _e1000_poll(struct e1000_hw *hw)
 {
-	unsigned char *packet = hw->rx_packet;
 	struct e1000_rx_desc *rd;
 	unsigned long inval_start, inval_end;
+	unsigned char *packet;
 	uint32_t len;
 
 	/* return true if there's an ethernet packet ready to read */
@@ -5310,6 +5313,9 @@ _e1000_poll(struct e1000_hw *hw)
 
 	if (!(rd->status & E1000_RXD_STAT_DD))
 		return 0;
+
+	packet = (unsigned char *)rd->buffer_addr;
+
 	/* DEBUGOUT("recv: packet len=%d\n", rd->length); */
 	/* Packet received, make sure the data are re-loaded from RAM. */
 	len = le16_to_cpu(rd->length);
@@ -5403,8 +5409,8 @@ _e1000_init(struct e1000_hw *hw, unsigned char enetaddr[6])
 		return ret_val;
 	}
 	e1000_configure_tx(hw);
-	e1000_setup_rctl(hw);
 	e1000_configure_rx(hw);
+	e1000_setup_rctl(hw);
 	return 0;
 }
 
@@ -5474,12 +5480,14 @@ static int e1000_init_one(struct e1000_hw *hw, int cardnum,
 	}
 
 	hw->rx_base = e1000_alloc(NUM_RX_DESC * sizeof(struct e1000_rx_desc));
-	hw->rx_packet = e1000_alloc(4096);
 
-	if (!hw->rx_base || !hw->rx_packet) {
-		free(hw->rx_base);
-		free(hw->rx_packet);
+	if (!hw->rx_base)
 		return -ENOMEM;
+
+	for (int i = 0; i < NUM_RX_DESC; i++) {
+		hw->rx_packet[i] = e1000_alloc(4096);
+		if (!hw->rx_packet[i])
+			goto out_alloc_fail;
 	}
 
 	/* Are these variables needed? */
@@ -5529,6 +5537,12 @@ static int e1000_init_one(struct e1000_hw *hw, int cardnum,
 #endif
 
 	return 0;
+
+out_alloc_fail:
+	for (int i = 0; i < NUM_RX_DESC; i++)
+		free(hw->rx_packet[i]);
+
+	return -ENOMEM;
 }
 
 /* Put the name of a device in a string */
@@ -5676,7 +5690,7 @@ static int e1000_eth_recv(struct udevice *dev, int flags, uchar **packetp)
 
 	len = _e1000_poll(hw);
 	if (len)
-		*packetp = hw->rx_packet;
+		*packetp = hw->rx_packet[hw->rx_last];
 
 	return len ? len : -EAGAIN;
 }

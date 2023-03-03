@@ -1136,7 +1136,7 @@ struct e1000_hw {
 	e1000_dsp_config	dsp_config_state;
 
 	struct e1000_rx_desc *rx_base;
-	unsigned char *rx_packet;
+	unsigned char *rx_packet[NUM_RX_DESC];
 	int rx_tail;
 	int rx_last;
 };
