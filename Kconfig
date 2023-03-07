@@ -121,6 +121,7 @@ config ARCH_SUPPORTS_LTO
 config LTO
 	bool "Enable Link Time Optimizations"
 	depends on ARCH_SUPPORTS_LTO
+	default y if ARM
 	help
 	  This option enables Link Time Optimization (LTO), a mechanism which
 	  allows the compiler to optimize between different compilation units.
