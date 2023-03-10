@@ -324,6 +324,8 @@ uint32_t sunxi_get_spl_size(void)
  * immediately follow the SPL if that is bigger than that.
  */
 unsigned long spl_mmc_get_uboot_raw_sector(struct mmc *mmc,
+					   unsigned long hw_part,
+					   unsigned long raw_part,
 					   unsigned long raw_sect)
 {
 	unsigned long spl_size = sunxi_get_spl_size();
