@@ -160,6 +160,7 @@ ld_flags       = $(KBUILD_LDFLAGS) $(ldflags-y) $(LDFLAGS_$(@F))
 
 # Try these files in order to find the U-Boot-specific .dtsi include file
 u_boot_dtsi_options = $(strip $(wildcard $(dir $<)$(basename $(notdir $<))-u-boot.dtsi) \
+	$(wildcard $(dir $<)$(subst $\",,$(CONFIG_SYS_BOARD))-u-boot.dtsi) \
 	$(wildcard $(dir $<)$(subst $\",,$(CONFIG_SYS_SOC))-u-boot.dtsi) \
 	$(wildcard $(dir $<)$(subst $\",,$(CONFIG_SYS_CPU))-u-boot.dtsi) \
 	$(wildcard $(dir $<)$(subst $\",,$(CONFIG_SYS_VENDOR))-u-boot.dtsi) \
@@ -167,6 +168,7 @@ u_boot_dtsi_options = $(strip $(wildcard $(dir $<)$(basename $(notdir $<))-u-boo
 
 u_boot_dtsi_options_raw = $(warning Automatic .dtsi inclusion: options: \
 	$(dir $<)$(basename $(notdir $<))-u-boot.dtsi \
+	$(dir $<)$(subst $\",,$(CONFIG_SYS_BOARD))-u-boot.dtsi \
 	$(dir $<)$(subst $\",,$(CONFIG_SYS_SOC))-u-boot.dtsi \
 	$(dir $<)$(subst $\",,$(CONFIG_SYS_CPU))-u-boot.dtsi \
 	$(dir $<)$(subst $\",,$(CONFIG_SYS_VENDOR))-u-boot.dtsi \

@@ -174,6 +174,7 @@ devicetree for your board, searching for them in the same directory as the
 main file, in this order::
 
    <orig_filename>-u-boot.dtsi
+   <CONFIG_SYS_BOARD>-u-boot.dtsi
    <CONFIG_SYS_SOC>-u-boot.dtsi
    <CONFIG_SYS_CPU>-u-boot.dtsi
    <CONFIG_SYS_VENDOR>-u-boot.dtsi
