@@ -22,14 +22,11 @@
 	"kernel_addr_r=0x62000000\0" \
 	"ramdisk_addr_r=0x64000000\0"
 
-#include <config_distro_bootcmd.h>
-
 #define CFG_EXTRA_ENV_SETTINGS \
 	"fdt_high=0x6fffffff\0" \
 	"initrd_high=0x6fffffff\0" \
 	"partitions=" PARTS_DEFAULT \
 	ENV_MEM_LAYOUT_SETTINGS \
-	ROCKCHIP_DEVICE_SETTINGS \
-	BOOTENV
+	ROCKCHIP_DEVICE_SETTINGS
 
 #endif

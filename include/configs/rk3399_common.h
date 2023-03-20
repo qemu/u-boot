@@ -55,7 +55,7 @@
 	"boot_targets=" BOOT_TARGETS "\0" \
 	"altbootcmd=" \
 		"setenv boot_syslinux_conf extlinux/extlinux-rollback.conf;" \
-		"run distro_bootcmd\0"
+		"bootflow scan\0"
 
 #endif
 
