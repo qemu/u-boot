@@ -124,9 +124,19 @@ static int do_bootflow_scan(struct cmd_tbl *cmdtp, int flag, int argc,
 		if (!label)
 			dev = std->cur_bootdev;
 	} else {
+		/*
+		 * allow -b and -l (which is ignored) but complain about
+		 * anything else
+		 */
 		if (has_args) {
-			printf("Flags not supported: enable CONFIG_BOOTFLOW_FULL\n");
-			return CMD_RET_USAGE;
+			char *p;
+
+			for (p = argv[1] + 1; *p; p++) {
+				if (*p != 'b' && *p != 'l') {
+					printf("Flags not supported: enable CONFIG_BOOTFLOW_FULL\n");
+					return CMD_RET_USAGE;
+				}
+			}
 		}
 		boot = true;
 	}
