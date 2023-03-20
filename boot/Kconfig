@@ -409,6 +409,7 @@ if BOOTSTD
 config BOOTSTD_DEFAULTS
 	bool "Select some common defaults for standard boot"
 	depends on BOOTSTD
+	default y
 	imply USE_BOOTCOMMAND
 	# Bring in some defaults which are generally needed. Boards can drop
 	# these as needed to save code space. Bootstd does not generally require
