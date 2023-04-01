@@ -1435,7 +1435,6 @@ void net_process_received_packet(uchar *in_packet, int len)
 static int net_check_prereq(enum proto_t protocol)
 {
 	switch (protocol) {
-		/* Fall through */
 #if defined(CONFIG_CMD_PING)
 	case PING:
 		if (net_ping_ip.s_addr == 0) {
@@ -1470,7 +1469,7 @@ static int net_check_prereq(enum proto_t protocol)
 #if defined(CONFIG_CMD_NFS)
 	case NFS:
 #endif
-		/* Fall through */
+		fallthrough;
 	case TFTPGET:
 	case TFTPPUT:
 		if (IS_ENABLED(CONFIG_IPV6) && use_ip6) {
@@ -1484,11 +1483,11 @@ static int net_check_prereq(enum proto_t protocol)
 			puts("*** ERROR: `serverip' not set\n");
 			return 1;
 		}
+		fallthrough;
 #if	defined(CONFIG_CMD_PING) || \
 	defined(CONFIG_CMD_DNS) || defined(CONFIG_PROT_UDP)
 common:
 #endif
-		/* Fall through */
 
 	case NETCONS:
 	case FASTBOOT:
@@ -1503,7 +1502,7 @@ common:
 			puts("*** ERROR: `ipaddr' not set\n");
 			return 1;
 		}
-		/* Fall through */
+		fallthrough;
 
 #ifdef CONFIG_CMD_RARP
 	case RARP:
@@ -1534,7 +1533,7 @@ common:
 			net_start_again();
 			return 2;
 		}
-		/* Fall through */
+		fallthrough;
 	default:
 		return 0;
 	}
