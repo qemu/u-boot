@@ -1168,9 +1168,21 @@ struct efi_key_descriptor {
 	u16 affected_attribute;
 } __packed;
 
+/* The warniing:
+ * field guid within 'struct efi_hii_keyboard_layout' is less aligned than 'efi_guid_t' and is usually due to 'struct efi_hii_keyboard_layout' being packed, which can lead to unaligned accesses [-Wunaligned-access]
+ * is intentional due to EFI requiring unaligned access to be supported.
+ */
 struct efi_hii_keyboard_layout {
 	u16 layout_length;
+#ifdef CONFIG_CC_IS_CLANG
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunaligned-access"
+#endif
 	efi_guid_t guid;
+#ifdef CONFIG_CC_IS_CLANG
+#pragma clang diagnostic pop
+#endif
+
 	u32 layout_descriptor_string_offset;
 	u8 descriptor_count;
 	struct efi_key_descriptor descriptors[];
