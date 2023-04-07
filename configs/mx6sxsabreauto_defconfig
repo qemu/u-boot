@@ -10,6 +10,7 @@ CONFIG_TARGET_MX6SXSABREAUTO=y
 CONFIG_DM_GPIO=y
 CONFIG_DEFAULT_DEVICE_TREE="imx6sx-sabreauto"
 # CONFIG_CMD_BMODE is not set
+# CONFIG_BOOTSTD is not set
 CONFIG_SUPPORT_RAW_INITRD=y
 CONFIG_USE_BOOTCOMMAND=y
 CONFIG_BOOTCOMMAND="mmc dev ${mmcdev};mmc dev ${mmcdev}; if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi"

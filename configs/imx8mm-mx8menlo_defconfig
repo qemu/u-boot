@@ -28,6 +28,7 @@ CONFIG_SYS_MONITOR_LEN=524288
 CONFIG_FIT=y
 CONFIG_FIT_EXTERNAL_OFFSET=0x3000
 CONFIG_SPL_LOAD_FIT=y
+# CONFIG_BOOTSTD is not set
 CONFIG_OF_SYSTEM_SETUP=y
 CONFIG_DISTRO_DEFAULTS=y
 CONFIG_BOOTCOMMAND="mmc partconf 0 distro_bootpart && load ${devtype} ${devnum}:${distro_bootpart} ${loadaddr} boot/fitImage && source ${loadaddr}:bootscr-boot.cmd ; reset"

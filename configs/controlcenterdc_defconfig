@@ -27,6 +27,7 @@ CONFIG_OF_BOARD_FIXUP=y
 CONFIG_FIT=y
 CONFIG_FIT_SIGNATURE=y
 CONFIG_FIT_VERBOSE=y
+# CONFIG_BOOTSTD is not set
 CONFIG_USE_BOOTCOMMAND=y
 CONFIG_BOOTCOMMAND="if env exists keyprogram; then; setenv keyprogram; run nfsboot; fi; run dobootfail"
 CONFIG_USE_PREBOOT=y
