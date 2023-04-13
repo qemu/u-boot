@@ -119,9 +119,12 @@
  *   1024 bytes long sector sizes and also can be changed at runtime.
  *
  *   For MMC-compatible devices, image can be stored at offset 0 or at offset
- *   2 MB. If MMC device supports HW boot partitions then image must be stored
- *   on the HW partition as is configured in the EXT_CSC register (it can be
- *   either boot or user data).
+ *   2 MB. If eMMC device supports HW/boot partitions then image is read from
+ *   partitions in following order: Boot 1, Boot 2, RPMB, GP 1, GP 2, GP 3,
+ *   GP 4, User Data, Boot 1, Boot 2. (Boot 1 and Boot 2 are really repeated).
+ *   Boot configuration stored in EXT_CSD_PART_CONF eMMC register is completely
+ *   ignored by the BootROM. But it sets PARTITION_ACCESS bits of that register
+ *   to the selected partition from which it loaded image.
  *
  *   Note that source address for SDIO image is stored in byte unit, like for
  *   any other images (except SATA). Marvell Functional Specifications for
