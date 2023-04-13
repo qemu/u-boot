@@ -1,7 +1,7 @@
 Update from original Marvell U-Boot to mainline U-Boot:
 -------------------------------------------------------
 
-Generate the U-Boot image with these commands:
+Generate the U-Boot image for eMMC/SD with these commands:
 
 $ make clearfog_defconfig
 $ make
@@ -9,7 +9,7 @@ $ make
 The resulting image including the SPL binary with the
 full DDR setup is "u-boot-with-spl.kwb".
 
-Now all you need to do is copy this image on a SD card.
+Now all you need to do is copy this image on a SD card's sector 1.
 For example with this command:
 
 $ sudo dd if=u-boot-with-spl.kwb of=/dev/sdX bs=512 seek=1
@@ -19,12 +19,6 @@ of "/dev/sdX" here!
 
 Install U-Boot on eMMC:
 -----------------------
-
-To make SPL load the main U-Boot image from the eMMC boot partition enable
-eMMC boot acknowledgement and boot partition with the following U-Boot
-command:
-
-  mmc partconf 0 1 1 0
 
 Install U-Boot on eMMC boot partition from Linux running on Clearfog:
 
@@ -37,8 +31,14 @@ Consider initial boot from UART (see below).
 Install U-Boot on SATA:
 -----------------------
 
-When loading the main U-Boot image from raw SATA sector, set
-CONFIG_SPL_SATA_RAW_U_BOOT_SECTOR to 0x141.
+Generate the U-Boot image for SATA with these commands:
+
+$ make clearfog_sata_defconfig
+$ make
+
+Copy image on a SATA disk's sector 1:
+
+$ sudo dd if=u-boot-with-spl.kwb of=/dev/sdX bs=512 seek=1
 
 Boot selection:
 ---------------
