@@ -11,6 +11,7 @@
 #include <image.h>
 #include <init.h>
 #include <log.h>
+#include <mmc.h>
 #include <spl.h>
 #include <asm/global_data.h>
 #include <asm/io.h>
@@ -34,8 +35,9 @@
 
 /*
  * When loading U-Boot via SPL from eMMC, the kwbimage main header is stored at
- * sector 0 and either on HW boot partition or on data partition. Choice of HW
- * partition depends on what is configured in eMMC EXT_CSC register.
+ * sector 0 on some HW/boot partition. Choice of HW partition depends on what is
+ * set in PART_ACCESS_MASK bits of EXT_CSD_PART_CONF eMMC register. Partition
+ * access bits into EXT_CSD_PART_CONF are set by the BootROM.
  * When loading U-Boot via SPL from SD card, the kwbimage main header is stored
  * at sector 1.
  * Therefore MBR/GPT partition booting, fixed sector number and fixed eMMC HW
@@ -122,6 +124,10 @@ struct kwbimage_main_hdr_v1 {
 u32 spl_mmc_boot_mode(struct mmc *mmc, const u32 boot_device)
 {
 	return IS_SD(mmc) ? MMCSD_MODE_RAW : MMCSD_MODE_EMMCBOOT;
+}
+int spl_mmc_emmc_boot_partition(struct mmc *mmc)
+{
+	return EXT_CSD_EXTRACT_PARTITION_ACCESS(mmc->part_config);
 }
 unsigned long spl_mmc_get_uboot_raw_sector(struct mmc *mmc,
 					   unsigned long raw_sect)
