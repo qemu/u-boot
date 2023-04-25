@@ -1,0 +1,35 @@
+if TARGET_TRANSFORMER_T30
+
+config SYS_BOARD
+	default "transformer-t30"
+
+config SYS_VENDOR
+	default "asus"
+
+config SYS_CONFIG_NAME
+	default "transformer-t30"
+
+config TRANSFORMER_SPI_BOOT
+	bool "Enable support for SPI based flash"
+	select TEGRA20_SLINK
+	select DM_SPI_FLASH
+	select SPI_FLASH_WINBOND
+	default n
+	help
+	  Tegra 3 based Transformers with Windows RT have core
+	  boot sequence (BCT and EBT) on separate SPI FLASH
+	  memory with 4MB size.
+
+config TRANSFORMER_HALL_GPIO
+	int "Number of GPIO connected to HALL sensor"
+	default 150
+	help
+	  If device has no HALL sensor, set this to 0.
+
+config TRANSFORMER_ACTION_GPIO
+	int "Number of GPIO connected to action key"
+	default 131
+	help
+	  Transformers use volume down key as action key.
+
+endif

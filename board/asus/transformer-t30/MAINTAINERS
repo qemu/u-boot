@@ -1,0 +1,6 @@
+TRANSFORMER BOARD
+M:	Svyatoslav Ryhel <clamor95@gmail.com>
+S:	Maintained
+F:	board/asus/transformer-t30/
+F:	include/configs/transformer-t30.h
+F:	configs/transformer_t30_defconfig
