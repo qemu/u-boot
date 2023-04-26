@@ -13,6 +13,7 @@ config CMDLINE
 
 config HUSH_PARSER
 	bool "Use hush shell"
+	default y
 	depends on CMDLINE
 	help
 	  This option enables the "hush" shell (from Busybox) as command line
