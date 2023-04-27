@@ -1,4 +1,4 @@
-dtb-y += sh7751-r2dplus.dtb
+# SPDX-License-Identifier: GPL-2.0+
 
 include $(srctree)/scripts/Makefile.dts
 
