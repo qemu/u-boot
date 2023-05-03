@@ -824,8 +824,8 @@ u32 hws_serdes_topology_verify(enum serdes_type serdes_type, u32 serdes_id,
 	enum unit_id unit_id;
 
 	if (serdes_type > RXAUI) {
-		printf("%s: Warning: Wrong serdes type %s serdes#%d\n",
-		       __func__, serdes_type_to_string[serdes_type], serdes_id);
+		printf("%s: Warning: Wrong serdes type %d serdes#%d\n",
+		       __func__, serdes_type, serdes_id);
 		return MV_FAIL;
 	}
 

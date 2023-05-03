@@ -2329,8 +2329,17 @@ static int mmc_startup_v4(struct mmc *mmc)
 	/* store the partition info of emmc */
 	mmc->part_support = ext_csd[EXT_CSD_PARTITIONING_SUPPORT];
 	if ((ext_csd[EXT_CSD_PARTITIONING_SUPPORT] & PART_SUPPORT) ||
-	    ext_csd[EXT_CSD_BOOT_MULT])
-		mmc->part_config = ext_csd[EXT_CSD_PART_CONF];
+	    ext_csd[EXT_CSD_BOOT_MULT]) {
+		/*
+		 * At this stage PART_ACCESS_MASK bits in ext_csd[] are already cleared.
+		 * But it is possible that they were already filled into mmc->part_config.
+		 */
+		if (mmc->part_config == MMCPART_NOAVAILABLE)
+			mmc->part_config = ext_csd[EXT_CSD_PART_CONF];
+		else
+			mmc->part_config = (ext_csd[EXT_CSD_PART_CONF] & ~PART_ACCESS_MASK) |
+					   (mmc->part_config & PART_ACCESS_MASK);
+	}
 	if (part_completed &&
 	    (ext_csd[EXT_CSD_PARTITIONING_SUPPORT] & ENHNCD_SUPPORT))
 		mmc->part_attr = ext_csd[EXT_CSD_PARTITIONS_ATTRIBUTE];
@@ -2603,7 +2612,6 @@ static int mmc_startup(struct mmc *mmc)
 #if CONFIG_IS_ENABLED(MMC_WRITE)
 	mmc->erase_grp_size = 1;
 #endif
-	mmc->part_config = MMCPART_NOAVAILABLE;
 
 	err = mmc_startup_v4(mmc);
 	if (err)
@@ -2851,8 +2859,25 @@ int mmc_get_op_cond(struct mmc *mmc, bool quiet)
 		return err;
 	mmc->ddr_mode = 0;
 
+	mmc->part_config = MMCPART_NOAVAILABLE;
+
 retry:
 	mmc_set_initial_state(mmc);
+
+	/*
+	 * Read partition access bits from partition config register before card reset command
+	 * because these bits are reset to default value (User Data Area) during card reset.
+	 * This allows us to preserve original value of partition access bits used by the code
+	 * which loaded us (for example BootROM) and use it for board specific boot purposes.
+	 */
+	if (mmc->part_config == MMCPART_NOAVAILABLE) {
+		ALLOC_CACHE_ALIGN_BUFFER(u8, ext_csd, MMC_MAX_BLOCK_LEN);
+		err = mmc_send_ext_csd(mmc, ext_csd);
+		if (err == 0 &&
+		    ((ext_csd[EXT_CSD_PARTITIONING_SUPPORT] & PART_SUPPORT) ||
+		     ext_csd[EXT_CSD_BOOT_MULT]))
+			mmc->part_config = ext_csd[EXT_CSD_PART_CONF] & PART_ACCESS_MASK;
+	}
 
 	/* Reset the Card */
 	err = mmc_go_idle(mmc);
