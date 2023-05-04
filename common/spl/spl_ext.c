@@ -8,6 +8,26 @@
 #include <ext4fs.h>
 #include <errno.h>
 #include <image.h>
+#include <linux/libfdt.h>
+
+static ulong spl_fit_read(struct spl_load_info *load, ulong file_offset,
+			  ulong size, void *buf)
+{
+	loff_t filelen = (loff_t)load->priv, actlen;
+	char *filename = (char *)load->filename;
+	int ret;
+
+	ret = ext4fs_read(buf, file_offset, filelen, &actlen);
+	if (ret < 0) {
+		if (IS_ENABLED(CONFIG_SPL_LIBCOMMON_SUPPORT)) {
+			printf("%s: error reading image %s, err - %d\n",
+			       __func__, filename, ret);
+		}
+		return ret;
+	}
+
+	return actlen;
+}
 
 int spl_load_image_ext(struct spl_image_info *spl_image,
 		       struct spl_boot_device *bootdev,
@@ -45,6 +65,19 @@ int spl_load_image_ext(struct spl_image_info *spl_image,
 	if (err < 0) {
 		puts("spl: ext4fs_read failed\n");
 		goto end;
+	}
+
+	if (IS_ENABLED(CONFIG_SPL_LOAD_FIT) &&
+	    image_get_magic(header) == FDT_MAGIC) {
+		struct spl_load_info load;
+
+		debug("Found FIT\n");
+		load.read = spl_fit_read;
+		load.bl_len = 1;
+		load.filename = (void *)filename;
+		load.priv = (void *)filelen;
+
+		return spl_load_simple_fit(spl_image, &load, 0, header);
 	}
 
 	err = spl_parse_image_header(spl_image, bootdev, header);
