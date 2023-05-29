@@ -22,7 +22,7 @@ struct fwu_image_bank_info {
 	efi_guid_t  image_uuid;
 	uint32_t accepted;
 	uint32_t reserved;
-};
+} __packed;
 
 /**
  * struct fwu_image_entry - information for a particular type of image
@@ -38,7 +38,7 @@ struct fwu_image_entry {
 	efi_guid_t image_type_uuid;
 	efi_guid_t location_uuid;
 	struct fwu_image_bank_info img_bank_info[CONFIG_FWU_NUM_BANKS];
-};
+} __packed;
 
 /**
  * struct fwu_mdata - FWU metadata structure for multi-bank updates
@@ -62,6 +62,6 @@ struct fwu_mdata {
 	uint32_t previous_active_index;
 
 	struct fwu_image_entry img_entry[CONFIG_FWU_NUM_IMAGES_PER_BANK];
-};
+} __packed;
 
 #endif /* _FWU_MDATA_H_ */
