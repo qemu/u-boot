@@ -4,7 +4,7 @@ VERSION = 2023
 PATCHLEVEL = 07
 SUBLEVEL =
 EXTRAVERSION = -rc2
-NAME =
+NAME = SomeChanges
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
