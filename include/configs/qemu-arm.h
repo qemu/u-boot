@@ -11,4 +11,7 @@
 
 /* For timer, QEMU emulates an ARMv7/ARMv8 architected timer */
 
+#define GICD_BASE		0x8000000	/* 24MHz, FPGA runs at 5MHz */
+#define GICR_BASE		0x80a0000	/* 24MHz, FPGA runs at 5MHz */
+
 #endif /* __CONFIG_H */
