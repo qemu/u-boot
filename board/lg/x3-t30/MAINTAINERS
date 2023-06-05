@@ -1,0 +1,6 @@
+X3 BOARD
+M:	Svyatoslav Ryhel <clamor95@gmail.com>
+S:	Maintained
+F:	board/lg/x3-t30/
+F:	include/configs/x3-t30.h
+F:	configs/x3_t30_defconfig

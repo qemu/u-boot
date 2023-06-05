@@ -1,0 +1,6 @@
+GROUPER BOARD
+M:	Svyatoslav Ryhel <clamor95@gmail.com>
+S:	Maintained
+F:	board/asus/grouper/
+F:	include/configs/grouper.h
+F:	configs/grouper_common_defconfig
