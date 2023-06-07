@@ -82,11 +82,9 @@
 		};
 
 		hsspi_pll: hsspi-pll {
-			compatible = "fixed-factor-clock";
+			compatible = "fixed-clock";
 			#clock-cells = <0>;
-			clocks = <&periph_clk>;
-			clock-mult = <2>;
-			clock-div = <1>;
+			clock-frequency = <400000000>;
 		};
 
 		uart_clk: uart-clk {
@@ -249,16 +247,15 @@
 			status = "disabled";
 		};
 
-		hsspi: spi-controller@1000 {
-			compatible = "brcm,bcm6328-hsspi";
+		hsspi: spi@1000 {
 			#address-cells = <1>;
 			#size-cells = <0>;
+			compatible = "brcm,bcm63158-hsspi", "brcm,bcmbca-hsspi-v1.0";
 			reg = <0x1000 0x600>;
-			clocks = <&hsspi_pll>, <&hsspi_pll>;
+			interrupts = <GIC_SPI 37 IRQ_TYPE_LEVEL_HIGH>;
+			clocks = <&hsspi_pll &hsspi_pll>;
 			clock-names = "hsspi", "pll";
-			spi-max-frequency = <100000000>;
 			num-cs = <8>;
-
 			status = "disabled";
 		};
 

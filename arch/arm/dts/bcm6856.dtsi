@@ -63,20 +63,18 @@
 			clock-frequency = <200000000>;
 		};
 
-		hsspi_pll: hsspi-pll {
-			compatible = "fixed-factor-clock";
-			#clock-cells = <0>;
-			clocks = <&periph_clk>;
-			clock-mult = <2>;
-			clock-div = <1>;
-		};
-
 		wdt_clk: wdt-clk {
 			compatible = "fixed-factor-clock";
 			#clock-cells = <0>;
 			clocks = <&periph_clk>;
 			clock-div = <4>;
 			clock-mult = <1>;
+		};
+
+		hsspi_pll: hsspi-pll {
+			compatible = "fixed-clock";
+			#clock-cells = <0>;
+			clock-frequency = <400000000>;
 		};
 	};
 
@@ -224,16 +222,15 @@
 			status = "disabled";
 		};
 
-		hsspi: spi-controller@1000 {
-			compatible = "brcm,bcm6328-hsspi";
+		hsspi: spi@1000 {
 			#address-cells = <1>;
 			#size-cells = <0>;
+			compatible = "brcm,bcm6856-hsspi", "brcm,bcmbca-hsspi-v1.0";
 			reg = <0x1000 0x600>;
-			clocks = <&hsspi_pll>, <&hsspi_pll>;
+			interrupts = <GIC_SPI 37 IRQ_TYPE_LEVEL_HIGH>;
+			clocks = <&hsspi_pll &hsspi_pll>;
 			clock-names = "hsspi", "pll";
-			spi-max-frequency = <100000000>;
 			num-cs = <8>;
-
 			status = "disabled";
 		};
 
