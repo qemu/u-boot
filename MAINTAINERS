@@ -826,6 +826,15 @@ F:	include/bootstd.h
 F:	net/eth_bootdevice.c
 F:	test/boot/
 
+BROADCOM Broadband SoC High Speed SPI Controller DRIVER
+M:	William Zhang <william.zhang@broadcom.com>
+M:	Kursad Oney <kursad.oney@broadcom.com>
+M:	Álvaro Fernández Rojas <noltari@gmail.com>
+S:	Maintained
+F:	doc/device-tree-bindings/spi/brcm,bcm63xx-hsspi.yaml
+F:	drivers/spi/bcm63xx_hsspi.c
+F:	drivers/spi/bcmbca_hsspi.c
+
 BTRFS
 M:	Marek Behún <kabel@kernel.org>
 R:	Qu Wenruo <wqu@suse.com>
