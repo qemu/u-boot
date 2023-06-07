@@ -11,6 +11,7 @@ config BCM47622
 	select CPU_V7A
 	select DM_SERIAL
 	select PL01X_SERIAL
+	select BCM63XX_HSSPI
 
 config BCM4908
 	bool "Support for Broadcom 4908 Family"
@@ -18,6 +19,7 @@ config BCM4908
 	select SYS_ARCH_TIMER
 	select DM_SERIAL
 	select BCM6345_SERIAL
+	select BCM63XX_HSSPI
 
 config BCM4912
 	bool "Support for Broadcom 4912 Family"
@@ -25,6 +27,7 @@ config BCM4912
 	select SYS_ARCH_TIMER
 	select DM_SERIAL
 	select PL01X_SERIAL
+	select BCMBCA_HSSPI
 
 config BCM63138
 	bool "Support for Broadcom 63138 Family"
@@ -33,6 +36,7 @@ config BCM63138
 	select CPU_V7A
 	select DM_SERIAL
 	select BCM6345_SERIAL
+	select BCM63XX_HSSPI
 
 config BCM63146
 	bool "Support for Broadcom 63146 Family"
@@ -40,6 +44,7 @@ config BCM63146
 	select SYS_ARCH_TIMER
 	select DM_SERIAL
 	select PL01X_SERIAL
+	select BCM63XX_HSSPI
 
 config BCM63148
 	bool "Support for Broadcom 63148 Family"
@@ -47,6 +52,7 @@ config BCM63148
 	select CPU_V7A
 	select DM_SERIAL
 	select BCM6345_SERIAL
+	select BCM63XX_HSSPI
 
 config BCM63158
 	bool "Support for Broadcom 63158 Family"
@@ -54,6 +60,7 @@ config BCM63158
 	select SYS_ARCH_TIMER
 	select DM_SERIAL
 	select PL01X_SERIAL
+	select BCM63XX_HSSPI
 
 config BCM63178
 	bool "Support for Broadcom 63178 Family"
@@ -61,6 +68,7 @@ config BCM63178
 	select CPU_V7A
 	select DM_SERIAL
 	select PL01X_SERIAL
+	select BCM63XX_HSSPI
 
 config BCM6756
 	bool "Support for Broadcom 6756 Family"
@@ -68,6 +76,7 @@ config BCM6756
 	select CPU_V7A
 	select DM_SERIAL
 	select PL01X_SERIAL
+	select BCMBCA_HSSPI
 
 config BCM6813
 	bool "Support for Broadcom 6813 Family"
@@ -75,6 +84,7 @@ config BCM6813
 	select SYS_ARCH_TIMER
 	select DM_SERIAL
 	select PL01X_SERIAL
+	select BCMBCA_HSSPI
 
 config BCM6846
 	bool "Support for Broadcom 6846 Family"
@@ -82,6 +92,7 @@ config BCM6846
 	select CPU_V7A
 	select DM_SERIAL
 	select BCM6345_SERIAL
+	select BCM63XX_HSSPI
 
 config BCM6855
 	bool "Support for Broadcom 6855 Family"
@@ -89,6 +100,7 @@ config BCM6855
 	select CPU_V7A
 	select DM_SERIAL
 	select PL01X_SERIAL
+	select BCMBCA_HSSPI
 	help
 	  Broadcom BCM6855 is a triple core Cortex A7 based xPON Gateway
 	  SoC. This SoC family includes BCM6855x, BCM68252 and BCM6753.
@@ -99,6 +111,7 @@ config BCM6856
 	select SYS_ARCH_TIMER
 	select DM_SERIAL
 	select BCM6345_SERIAL
+	select BCM63XX_HSSPI
 	help
 	  Broadcom BCM6856 is a dual core Brahma-B53 ARMv8 based xPON Gateway
 	  SoC. This SoC family includes BCM6856, BCM6836 and BCM4910.
@@ -109,6 +122,7 @@ config BCM6858
 	select SYS_ARCH_TIMER
 	select DM_SERIAL
 	select BCM6345_SERIAL
+	select BCM63XX_HSSPI
 	help
 	  Broadcom BCM6858 is a quad core Brahma-B53 ARMv8 based xPON Gateway
 	  SoC. This SoC family includes BCM6858, BCM49508, BCM5504X and BCM6545.
@@ -119,6 +133,15 @@ config BCM6878
 	select CPU_V7A
 	select DM_SERIAL
 	select PL01X_SERIAL
+	select BCM63XX_HSSPI
+
+config HAVE_SPI_CS_CTRL
+	bool "SoC supports SPI chip select control"
+	default y if BCM4912 || BCM6756 || BCM6855 || BCM6813
+	default n
+	help
+	  Enable this option if SoC supports SPI chip select control explicitly
+	  through software.
 
 source "arch/arm/mach-bcmbca/bcm47622/Kconfig"
 source "arch/arm/mach-bcmbca/bcm4908/Kconfig"

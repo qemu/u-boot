@@ -660,6 +660,8 @@ config ARCH_BCMSTB
 config ARCH_BCMBCA
 	bool "Broadcom broadband chip family"
 	select DM
+	select DM_SPI
+	select SPI
 	select OF_CONTROL
 	imply CMD_DM
 
