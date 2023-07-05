@@ -259,6 +259,41 @@ def do_fetch_arch(toolchains, col, fetch_arch):
     return 0
 
 
+def get_boards_obj(output_dir, regen_board_list, threads, verbose):
+    """Object the Boards object to use
+
+    Creates the output directory and ensures there is a boards.cfg file, then
+    read it in.
+
+    Args:
+        output_dir (str): Output directory to use
+        regen_board_list (bool): True to just regenerate the board list
+        threads (int or None): Number of threads to use to create boards file
+        verbose (bool): False to suppress output from boards-file generation
+
+    Returns:
+        Either:
+            int: Operation completed and buildman should exit with exit code
+            Boards: Boards object to use
+    """
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    board_file = os.path.join(output_dir, 'boards.cfg')
+    if regen_board_list and regen_board_list != '-':
+        board_file = regen_board_list
+
+    brds = boards.Boards()
+    okay = brds.ensure_board_list(
+        board_file,
+        threads or multiprocessing.cpu_count(),
+        force=regen_board_list,
+        quiet=not verbose)
+    if regen_board_list:
+        return 0 if okay else 2
+    brds.read_boards(board_file)
+    return brds
+
+
 def determine_boards(brds, args, col, opt_boards, exclude):
     """Determine which boards to build
 
@@ -351,21 +386,10 @@ def do_buildman(options, args, toolchains=None, make_func=None, brds=None,
 
     # Work out what subset of the boards we are building
     if not brds:
-        if not os.path.exists(options.output_dir):
-            os.makedirs(options.output_dir)
-        board_file = os.path.join(options.output_dir, 'boards.cfg')
-        if options.regen_board_list and options.regen_board_list != '-':
-            board_file = options.regen_board_list
-
-        brds = boards.Boards()
-        okay = brds.ensure_board_list(
-            board_file,
-            options.threads or multiprocessing.cpu_count(),
-            force=options.regen_board_list,
-            quiet=not options.verbose)
-        if options.regen_board_list:
-            return 0 if okay else 2
-        brds.read_boards(board_file)
+        brds = get_boards_obj(options.output_dir, options.regen_board_list,
+                              options.threads, options.verbose)
+        if isinstance(brds, int):
+            return brds
 
     selected, why_selected, board_warnings = determine_boards(
         brds, args, col, options.boards, options.exclude)
