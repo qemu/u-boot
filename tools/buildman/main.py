@@ -40,7 +40,7 @@ def run_tests(skip_net_tests, verbose, args):
     from buildman import func_test
     from buildman import test
 
-    test_name = args and args[0] or None
+    test_name = args.terms and args.terms[0] or None
     if skip_net_tests:
         test.use_network = False
 
@@ -59,22 +59,22 @@ def run_buildman():
     This is the main program. It collects arguments and runs either the tests or
     the control module.
     """
-    options, args = cmdline.parse_args()
+    args = cmdline.parse_args()
 
-    if not options.debug:
+    if not args.debug:
         sys.tracebacklimit = 0
 
     # Run our meagre tests
-    if cmdline.HAS_TESTS and options.test:
-        run_tests(options.skip_net_tests, options.verbose, args)
+    if cmdline.HAS_TESTS and args.test:
+        run_tests(args.skip_net_tests, args.verbose, args)
 
-    elif options.full_help:
+    elif args.full_help:
         tools.print_full_help(str(files('buildman').joinpath('README.rst')))
 
     # Build selected commits for selected boards
     else:
-        bsettings.Setup(options.config_file)
-        ret_code = control.do_buildman(options, args)
+        bsettings.Setup(args.config_file)
+        ret_code = control.do_buildman(args)
         sys.exit(ret_code)
 
 
