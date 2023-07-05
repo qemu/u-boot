@@ -791,3 +791,22 @@ CONFIG_LOCALVERSION=y
             result = self._RunControl('-A', 'board0')
         self.assertEqual('arm-\n', stdout.getvalue())
         self.assertEqual('', stderr.getvalue())
+
+    def test_regen_boards(self):
+        """Test that we can regenerate the boards.cfg file"""
+        outfile = os.path.join(self._output_dir, 'test-boards.cfg')
+        if os.path.exists(outfile):
+            os.remove(outfile)
+        result = self._RunControl('-R', outfile, brds=None, get_builder=False)
+        self.assertTrue(os.path.exists(outfile))
+
+    def test_single_boards(self):
+        """Test building single boards"""
+        self._RunControl('--boards', 'board1')
+        self.assertEqual(1, self._builder.count)
+
+        self._RunControl('--boards', 'board1', '--boards', 'board2')
+        self.assertEqual(2, self._builder.count)
+
+        self._RunControl('--boards', 'board1,board2', '--boards', 'board4')
+        self.assertEqual(3, self._builder.count)
