@@ -184,8 +184,8 @@ class TestFunctional(unittest.TestCase):
         self._buildman_pathname = sys.argv[0]
         self._buildman_dir = os.path.dirname(os.path.realpath(sys.argv[0]))
         command.test_result = self._HandleCommand
-        bsettings.Setup(None)
-        bsettings.AddFile(settings_data)
+        bsettings.setup(None)
+        bsettings.add_file(settings_data)
         self.setupToolchains()
         self._toolchains.Add('arm-gcc', test=False)
         self._toolchains.Add('powerpc-gcc', test=False)
@@ -225,29 +225,34 @@ class TestFunctional(unittest.TestCase):
         return command.run_pipe([[self._buildman_pathname] + list(args)],
                 capture=True, capture_stderr=True)
 
-    def _RunControl(self, *args, brds=None, clean_dir=False,
-                    test_thread_exceptions=False):
+    def _RunControl(self, *args, brds=False, clean_dir=False,
+                    test_thread_exceptions=False, get_builder=True):
         """Run buildman
 
         Args:
             args: List of arguments to pass
-            brds: Boards object
+            brds: Boards object, or False to pass self._boards, or None to pass
+                None
             clean_dir: Used for tests only, indicates that the existing output_dir
                 should be removed before starting the build
             test_thread_exceptions: Uses for tests only, True to make the threads
                 raise an exception instead of reporting their result. This simulates
                 a failure in the code somewhere
+            get_builder (bool): Set self._builder to the resulting builder
 
         Returns:
             result code from buildman
         """
         sys.argv = [sys.argv[0]] + list(args)
-        options, args = cmdline.ParseArgs()
-        result = control.DoBuildman(options, args, toolchains=self._toolchains,
-                make_func=self._HandleMake, brds=brds or self._boards,
-                clean_dir=clean_dir,
-                test_thread_exceptions=test_thread_exceptions)
-        self._builder = control.builder
+        args = cmdline.parse_args()
+        if brds == False:
+            brds = self._boards
+        result = control.do_buildman(
+            args, toolchains=self._toolchains, make_func=self._HandleMake,
+            brds=brds, clean_dir=clean_dir,
+            test_thread_exceptions=test_thread_exceptions)
+        if get_builder:
+            self._builder = control.TEST_BUILDER
         return result
 
     def testFullHelp(self):
@@ -496,10 +501,12 @@ Some images are invalid'''
         for commit in range(self._commits):
             for brd in self._boards.get_list():
                 if brd.arch != 'sandbox':
-                  errfile = self._builder.GetErrFile(commit, brd.target)
+                  errfile = self._builder.get_err_file(commit, brd.target)
                   fd = open(errfile)
-                  self.assertEqual(fd.readlines(),
-                          ['No tool chain for %s\n' % brd.arch])
+                  self.assertEqual(
+                      fd.readlines(),
+                      [f'Tool chain error for {brd.arch}: '
+                       f"No tool chain found for arch '{brd.arch}'"])
                   fd.close()
 
     def testBranch(self):
@@ -686,7 +693,7 @@ Some images are invalid'''
 
     def testBlobSettingsAlways(self):
         """Test the 'always' policy"""
-        bsettings.SetItem('global', 'allow-missing', 'always')
+        bsettings.set_item('global', 'allow-missing', 'always')
         self.assertEqual(True,
                          control.get_allow_missing(False, False, 1, False))
         self.assertEqual(False,
@@ -694,7 +701,7 @@ Some images are invalid'''
 
     def testBlobSettingsBranch(self):
         """Test the 'branch' policy"""
-        bsettings.SetItem('global', 'allow-missing', 'branch')
+        bsettings.set_item('global', 'allow-missing', 'branch')
         self.assertEqual(False,
                          control.get_allow_missing(False, False, 1, False))
         self.assertEqual(True,
@@ -704,7 +711,7 @@ Some images are invalid'''
 
     def testBlobSettingsMultiple(self):
         """Test the 'multiple' policy"""
-        bsettings.SetItem('global', 'allow-missing', 'multiple')
+        bsettings.set_item('global', 'allow-missing', 'multiple')
         self.assertEqual(False,
                          control.get_allow_missing(False, False, 1, False))
         self.assertEqual(True,
@@ -714,7 +721,7 @@ Some images are invalid'''
 
     def testBlobSettingsBranchMultiple(self):
         """Test the 'branch multiple' policy"""
-        bsettings.SetItem('global', 'allow-missing', 'branch multiple')
+        bsettings.set_item('global', 'allow-missing', 'branch multiple')
         self.assertEqual(False,
                          control.get_allow_missing(False, False, 1, False))
         self.assertEqual(True,
@@ -779,3 +786,36 @@ Some images are invalid'''
 CONFIG_LOCALVERSION=y
 ''', cfg_data)
         self.assertIn('Not dropping LOCALVERSION_AUTO', stdout.getvalue())
+
+    def test_print_prefix(self):
+        """Test that we can print the toolchain prefix"""
+        with test_util.capture_sys_output() as (stdout, stderr):
+            result = self._RunControl('-A', 'board0')
+        self.assertEqual('arm-\n', stdout.getvalue())
+        self.assertEqual('', stderr.getvalue())
+
+    def test_regen_boards(self):
+        """Test that we can regenerate the boards.cfg file"""
+        outfile = os.path.join(self._output_dir, 'test-boards.cfg')
+        if os.path.exists(outfile):
+            os.remove(outfile)
+        result = self._RunControl('-R', outfile, brds=None, get_builder=False)
+        self.assertTrue(os.path.exists(outfile))
+
+    def test_single_boards(self):
+        """Test building single boards"""
+        self._RunControl('--boards', 'board1')
+        self.assertEqual(1, self._builder.count)
+
+        self._RunControl('--boards', 'board1', '--boards', 'board2')
+        self.assertEqual(2, self._builder.count)
+
+        self._RunControl('--boards', 'board1,board2', '--boards', 'board4')
+        self.assertEqual(3, self._builder.count)
+
+    def test_print_arch(self):
+        """Test that we can print the board architecture"""
+        with test_util.capture_sys_output() as (stdout, stderr):
+            result = self._RunControl('--print-arch', 'board0')
+        self.assertEqual('arm\n', stdout.getvalue())
+        self.assertEqual('', stderr.getvalue())
