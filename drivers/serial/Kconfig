@@ -15,6 +15,16 @@ menuconfig SERIAL
 
 if SERIAL
 
+config DM_SERIAL
+	def_bool y
+	depends on DM
+	select SYS_MALLOC_F
+	help
+	  Enable driver model for serial. This replaces
+	  drivers/serial/serial.c with the serial uclass, which
+	  implements serial_putc() etc. The uclass interface is
+	  defined in include/serial.h.
+
 config BAUDRATE
 	int "Default baudrate"
 	default 115200
@@ -28,7 +38,6 @@ config REQUIRE_SERIAL_CONSOLE
 	bool "Require a serial port for console"
 	# Running without a serial console is not supported by the
 	# non-dm serial code
-	depends on DM_SERIAL
 	default y
 	help
 	  Require a serial port for the console, and panic if none is found
@@ -37,7 +46,7 @@ config REQUIRE_SERIAL_CONSOLE
 
 config SPECIFY_CONSOLE_INDEX
 	bool "Specify the port number used for console"
-	default y if !DM_SERIAL || (SPL && !SPL_DM_SERIAL) || \
+	default y if (SPL && !SPL_DM_SERIAL) || \
 		(TPL && !TPL_DM_SERIAL)
 	help
 	  In various cases, we need to specify which of the UART devices that
@@ -46,7 +55,6 @@ config SPECIFY_CONSOLE_INDEX
 
 config SERIAL_PRESENT
 	bool "Provide a serial driver"
-	depends on DM_SERIAL
 	default y
 	help
 	  In very space-constrained devices even the full UART driver is too
@@ -56,7 +64,7 @@ config SERIAL_PRESENT
 
 config SPL_SERIAL_PRESENT
 	bool "Provide a serial driver in SPL"
-	depends on DM_SERIAL && SPL
+	depends on SPL
 	default y
 	help
 	  In very space-constrained devices even the full UART driver is too
@@ -66,7 +74,7 @@ config SPL_SERIAL_PRESENT
 
 config TPL_SERIAL_PRESENT
 	bool "Provide a serial driver in TPL"
-	depends on DM_SERIAL && TPL
+	depends on TPL
 	default y
 	help
 	  In very space-constrained devices even the full UART driver is too
@@ -76,7 +84,7 @@ config TPL_SERIAL_PRESENT
 
 config VPL_SERIAL_PRESENT
 	bool "Provide a serial driver in VPL"
-	depends on DM_SERIAL && VPL
+	depends on VPL
 	default y
 	help
 	  In very space-constrained devices even the full UART driver is too
@@ -92,19 +100,8 @@ config CONS_INDEX
 	help
 	  Set this to match the UART number of the serial console.
 
-config DM_SERIAL
-	bool "Enable Driver Model for serial drivers"
-	depends on DM
-	select SYS_MALLOC_F
-	help
-	  Enable driver model for serial. This replaces
-	  drivers/serial/serial.c with the serial uclass, which
-	  implements serial_putc() etc. The uclass interface is
-	  defined in include/serial.h.
-
 config SERIAL_RX_BUFFER
 	bool "Enable RX buffer for serial input"
-	depends on DM_SERIAL
 	help
 	  Enable RX buffer support for the serial driver. This enables
 	  pasting longer strings, even when the RX FIFO of the UART is
@@ -119,7 +116,6 @@ config SERIAL_RX_BUFFER_SIZE
 
 config SERIAL_PUTS
 	bool "Enable printing strings all at once"
-	depends on DM_SERIAL
 	help
 	  Some serial drivers are much more efficient when printing multiple
 	  characters at once rather than printing characters individually. This
@@ -132,7 +128,6 @@ config SERIAL_PUTS
 
 config SERIAL_SEARCH_ALL
 	bool "Search for serial devices after default one failed"
-	depends on DM_SERIAL
 	help
 	  The serial subsystem only searches for a single serial device
 	  that was instantiated, but does not check whether it was probed
@@ -144,7 +139,6 @@ config SERIAL_SEARCH_ALL
 
 config SERIAL_PROBE_ALL
 	bool "Probe all available serial devices"
-	depends on DM_SERIAL
 	help
 	  The serial subsystem only probes for a single serial device,
 	  but does not probe for other remaining serial devices.
@@ -159,7 +153,7 @@ config SERIAL_PROBE_ALL
 
 config SPL_DM_SERIAL
 	bool "Enable Driver Model for serial drivers in SPL"
-	depends on DM_SERIAL && SPL_DM
+	depends on SPL_DM
 	select SYS_SPL_MALLOC_F
 	default y
 	help
@@ -170,9 +164,9 @@ config SPL_DM_SERIAL
 
 config TPL_DM_SERIAL
 	bool "Enable Driver Model for serial drivers in TPL"
-	depends on DM_SERIAL && TPL_DM
+	depends on TPL_DM
 	select SYS_TPL_MALLOC_F
-	default y if TPL && DM_SERIAL
+	default y
 	help
 	  Enable driver model for serial in TPL. This replaces
 	  drivers/serial/serial.c with the serial uclass, which
@@ -181,8 +175,8 @@ config TPL_DM_SERIAL
 
 config VPL_DM_SERIAL
 	bool "Enable Driver Model for serial drivers in VPL"
-	depends on DM_SERIAL
-	default y if VPL && DM_SERIAL
+	depends on VPL_DM
+	default y
 	help
 	  Enable driver model for serial in VPL. This replaces
 	  drivers/serial/serial.c with the serial uclass, which
@@ -374,7 +368,7 @@ config DEBUG_UART_PL010
 
 config DEBUG_UART_PL011
 	bool "pl011"
-	depends on PL01X_SERIAL || PL011_SERIAL
+	depends on PL01X_SERIAL
 	help
 	  Select this to enable a debug UART using the pl01x driver with the
 	  PL011 UART type. You will need to provide parameters to make this
@@ -574,7 +568,6 @@ config DEBUG_UART_NS16550_CHECK_ENABLED
 
 config ALTERA_JTAG_UART
 	bool "Altera JTAG UART support"
-	depends on DM_SERIAL
 	help
 	  Select this to enable an JTAG UART for Altera devices.The JTAG UART
 	  core implements a method to communicate serial character streams
@@ -593,14 +586,13 @@ config ALTERA_JTAG_UART_BYPASS
 
 config ALTERA_UART
 	bool "Altera UART support"
-	depends on DM_SERIAL
 	help
 	  Select this to enable an UART for Altera devices. Please find
 	  details on the "Embedded Peripherals IP User Guide" of Altera.
 
 config AR933X_UART
 	bool "QCA/Atheros ar933x UART support"
-	depends on DM_SERIAL && SOC_AR933X
+	depends on SOC_AR933X
 	help
 	  Select this to enable UART support for QCA/Atheros ar933x
 	  devices. This driver uses driver model and requires a device
@@ -609,7 +601,6 @@ config AR933X_UART
 
 config ARC_SERIAL
 	bool "ARC UART support"
-	depends on DM_SERIAL
 	help
 	  Select this to enable support for ARC UART now typically
 	  only used in Synopsys DesignWare ARC simulators like nSIM.
@@ -638,7 +629,7 @@ config SPL_UART_CLOCK
 
 config BCM283X_MU_SERIAL
 	bool "Support for BCM283x Mini-UART"
-	depends on DM_SERIAL && ARCH_BCM283X
+	depends on ARCH_BCM283X
 	default y
 	help
 	  Select this to enable Mini-UART support on BCM283X family of SoCs.
@@ -654,13 +645,11 @@ config BCM283X_PL011_SERIAL
 
 config BCM6345_SERIAL
 	bool "Support for BCM6345 UART"
-	depends on DM_SERIAL
 	help
 	  Select this to enable UART on BCM6345 SoCs.
 
 config COREBOOT_SERIAL
 	bool "Coreboot UART support"
-	depends on DM_SERIAL
 	default y if SYS_COREBOOT
 	select SYS_NS16550
 	help
@@ -681,14 +670,12 @@ config COREBOOT_SERIAL_FROM_DBG2
 
 config CORTINA_UART
 	bool "Cortina UART support"
-	depends on DM_SERIAL
 	help
 	  Select this to enable UART support for Cortina-Access UART devices
 	  found on CAxxxx SoCs.
 
 config FSL_LINFLEXUART
 	bool "Freescale Linflex UART support"
-	depends on DM_SERIAL
 	help
 	  Select this to enable the Linflex serial module found on some
 	  NXP SoCs like S32V234.
@@ -733,20 +720,15 @@ config NULLDEV_SERIAL
 
 config PIC32_SERIAL
 	bool "Support for Microchip PIC32 on-chip UART"
-	depends on DM_SERIAL && MACH_PIC32
+	depends on MACH_PIC32
 	default y
 	help
 	  Support for the UART found on Microchip PIC32 SoC's.
 
-config SYS_NS16550_SERIAL
-	bool "NS16550 UART or compatible legacy driver"
-	depends on !DM_SERIAL
-	select SYS_NS16550
-
 config SPL_SYS_NS16550_SERIAL
 	bool "NS16550 UART or compatible legacy driver in SPL"
 	depends on SPL && !SPL_DM_SERIAL
-	default y if SYS_NS16550_SERIAL || ARCH_SUNXI || ARCH_OMAP2PLUS
+	default y if ARCH_SUNXI || ARCH_OMAP2PLUS
 	select SYS_NS16550
 
 config SYS_NS16550
@@ -789,7 +771,7 @@ config SYS_NS16550_PORT_MAPPED
 
 config SYS_NS16550_REG_SIZE
 	int "ns16550 register width and endianness"
-	depends on SYS_NS16550_SERIAL || SPL_SYS_NS16550_SERIAL
+	depends on SPL_SYS_NS16550_SERIAL
 	range -4 4
 	default -4 if ARCH_OMAP2PLUS || ARCH_SUNXI
 	default 1
@@ -809,28 +791,19 @@ config SPL_NS16550_MIN_FUNCTIONS
 
 config INTEL_MID_SERIAL
 	bool "Intel MID platform UART support"
-	depends on DM_SERIAL && OF_CONTROL
-	depends on INTEL_MID
+	depends on OF_CONTROL && INTEL_MID
 	select SYS_NS16550
 	help
 	  Select this to enable a UART for Intel MID platforms.
 	  This uses the ns16550 driver as a library.
 
-config PL011_SERIAL
-	bool "ARM PL011 driver"
-	depends on !DM_SERIAL
-	help
-	  Select this to enable a UART for platforms using PL011.
-
 config PL01X_SERIAL
 	bool "ARM PL010 and PL011 driver"
-	depends on DM_SERIAL
 	help
 	  Select this to enable a UART for platforms using PL010 or PL011.
 
 config ROCKCHIP_SERIAL
 	bool "Rockchip on-chip UART support"
-	depends on DM_SERIAL
 	select SYS_NS16550
 	help
 	  Select this to enable a debug UART for Rockchip devices when using
@@ -847,7 +820,7 @@ config S5P_SERIAL
 
 config S5P4418_PL011_SERIAL
 	bool "Extended PL011 driver for S5P4418"
-	depends on DM_SERIAL && PL01X_SERIAL && ARCH_NEXELL
+	depends on PL01X_SERIAL && ARCH_NEXELL
 	default y
 	help
 	  Select this to enable support of the PL011 UARTs in the S5P4418 SOC.
@@ -885,7 +858,7 @@ config SCIF_CONSOLE
 
 choice
 	prompt "SCIF console port"
-	depends on SCIF_CONSOLE && (!DM_SERIAL || (SPL && !SPL_DM_SERIAL))
+	depends on SCIF_CONSOLE && (SPL && !SPL_DM_SERIAL)
 
 config CONS_SCIF0
 	bool "SCIF0"
@@ -906,7 +879,7 @@ endchoice
 
 config SH_SCIF_CLK_FREQ
 	int "SCIF console clock frequency"
-	depends on SCIF_CONSOLE && (!DM_SERIAL || (SPL && !SPL_DM_SERIAL))
+	depends on SCIF_CONSOLE && (SPL && !SPL_DM_SERIAL)
 	default 65000000
 
 config SEMIHOSTING_SERIAL
@@ -933,21 +906,19 @@ config UNIPHIER_SERIAL
 
 config XILINX_UARTLITE
 	bool "Xilinx Uarlite support"
-	depends on DM_SERIAL
 	help
 	  If you have a Xilinx based board and want to use the uartlite
 	  serial ports, say Y to this option. If unsure, say N.
 
 config MESON_SERIAL
 	bool "Support for Amlogic Meson UART"
-	depends on DM_SERIAL && ARCH_MESON
+	depends on ARCH_MESON
 	help
 	  If you have an Amlogic Meson based board and want to use the on-chip
 	  serial ports, say Y to this option. If unsure, say N.
 
 config MSM_SERIAL
 	bool "Qualcomm on-chip UART"
-	depends on DM_SERIAL
 	help
 	  Support Data Mover UART used on Qualcomm Snapdragon SoCs.
 	  It should support all Qualcomm devices with UARTDM version 1.4,
@@ -968,7 +939,6 @@ config MSM_GENI_SERIAL
 
 config MXS_AUART_SERIAL
 	bool "MXS AUART"
-	depends on DM_SERIAL
 	help
 	  Support for Freescale i.MX23 / i.MX28 AUART or Application UART IP.
 	  This IP is present in the aforementioned SoCs, however this is not
@@ -977,7 +947,6 @@ config MXS_AUART_SERIAL
 config OCTEON_SERIAL_BOOTCMD
 	bool "MIPS Octeon PCI remote bootcmd input"
 	depends on ARCH_OCTEON
-	depends on DM_SERIAL
 	select SYS_IS_IN_ENV
 	select CONSOLE_MUX
 	help
@@ -988,7 +957,7 @@ config OCTEON_SERIAL_BOOTCMD
 config OCTEON_SERIAL_PCIE_CONSOLE
 	bool "MIPS Octeon PCIe remote console"
 	depends on ARCH_OCTEON
-	depends on (DM_SERIAL && DM_STDIO)
+	depends on DM_STDIO
 	select SYS_STDIO_DEREGISTER
 	select SYS_CONSOLE_IS_IN_ENV
 	select CONSOLE_MUX
@@ -1000,7 +969,6 @@ config OCTEON_SERIAL_PCIE_CONSOLE
 
 config OMAP_SERIAL
 	bool "Support for OMAP specific UART"
-	depends on DM_SERIAL
 	default y if (ARCH_OMAP2PLUS || ARCH_K3)
 	select SYS_NS16550
 	help
@@ -1009,7 +977,7 @@ config OMAP_SERIAL
 
 config OWL_SERIAL
 	bool "Actions Semi OWL UART"
-	depends on DM_SERIAL && ARCH_OWL
+	depends on ARCH_OWL
 	help
 	  If you have a Actions Semi OWL based board and want to use the on-chip
 	  serial port, say Y to this option. If unsure, say N.
@@ -1017,7 +985,7 @@ config OWL_SERIAL
 
 config HTIF_CONSOLE
 	bool "RISC-V HTIF console support"
-	depends on DM_SERIAL && 64BIT
+	depends on 64BIT
 	help
 	  Select this to enable host transfer interface (HTIF) based serial
 	  console. The HTIF device is quite common in RISC-V emulators and
@@ -1025,13 +993,12 @@ config HTIF_CONSOLE
 
 config SIFIVE_SERIAL
 	bool "SiFive UART support"
-	depends on DM_SERIAL
 	help
 	  This driver supports the SiFive UART. If unsure say N.
 
 config STI_ASC_SERIAL
 	bool "STMicroelectronics on-chip UART"
-	depends on DM_SERIAL && ARCH_STI
+	depends on ARCH_STI
 	help
 	  Select this to enable Asynchronous Serial Controller available
 	  on STiH410 SoC. This is a basic implementation,  it supports
@@ -1039,7 +1006,7 @@ config STI_ASC_SERIAL
 
 config STM32_SERIAL
 	bool "STMicroelectronics STM32 SoCs on-chip UART"
-	depends on DM_SERIAL && (STM32F4 || STM32F7 || STM32H7 || ARCH_STM32MP)
+	depends on STM32F4 || STM32F7 || STM32H7 || ARCH_STM32MP
 	help
 	  If you have a machine based on a STM32 F4, F7, H7 or MP1 SOC
 	  you can enable its onboard serial ports, say Y to this option.
@@ -1047,14 +1014,12 @@ config STM32_SERIAL
 
 config ZYNQ_SERIAL
 	bool "Cadence (Xilinx Zynq) UART support"
-	depends on DM_SERIAL
 	help
 	  This driver supports the Cadence UART. It is found e.g. in Xilinx
 	  Zynq/ZynqMP.
 
 config MTK_SERIAL
 	bool "MediaTek High-speed UART support"
-	depends on DM_SERIAL
 	help
 	  Select this to enable UART support for MediaTek High-speed UART
 	  devices. This driver uses driver model and requires a device
@@ -1064,7 +1029,6 @@ config MTK_SERIAL
 
 config MT7620_SERIAL
 	bool "UART driver for MediaTek MT7620 and earlier SoCs"
-	depends on DM_SERIAL
 	help
 	  Select this to enable UART support for MediaTek MT7620 and earlier
 	  SoCs. This driver uses driver model and requires a device tree
@@ -1079,7 +1043,6 @@ config MPC8XX_CONS
 
 config NPCM_SERIAL
 	bool "Nuvoton NPCM UART driver"
-	depends on DM_SERIAL
 	help
 	  Select this to enable UART support for Nuvoton BMCs
 	  (NPCM7xx and NPCM8xx).
