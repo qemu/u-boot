@@ -536,7 +536,6 @@ class Builder:
             if self._verbose:
                 terminal.print_clear()
                 boards_selected = {target : result.brd}
-                self.reset_result_summary(boards_selected)
                 self.produce_result_summary(result.commit_upto, self.commits,
                                           boards_selected)
         else:
