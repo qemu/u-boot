@@ -18,7 +18,6 @@
 #include <linux/soc/ti/ti_sci_protocol.h>
 #include <g_dnl.h>
 #include <usb.h>
-#include <dfu.h>
 #include <dm/uclass-internal.h>
 #include <spi_flash.h>
 
@@ -297,6 +296,8 @@ static void k3_sysfw_configure_using_fit(void *fit,
 }
 
 #if CONFIG_IS_ENABLED(DFU)
+#include <dfu.h>
+
 static int k3_sysfw_dfu_download(void *addr)
 {
 	char dfu_str[50];
