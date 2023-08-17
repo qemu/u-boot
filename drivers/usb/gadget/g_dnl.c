@@ -16,8 +16,6 @@
 
 #include <g_dnl.h>
 #include <usb_mass_storage.h>
-#include <dfu.h>
-#include <thor.h>
 
 #include <env_callback.h>
 
