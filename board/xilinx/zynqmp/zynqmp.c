@@ -8,7 +8,6 @@
 #include <command.h>
 #include <cpu_func.h>
 #include <debug_uart.h>
-#include <dfu.h>
 #include <env.h>
 #include <env_internal.h>
 #include <init.h>
@@ -606,6 +605,7 @@ enum env_location env_get_location(enum env_operation op, int prio)
 }
 
 #if defined(CONFIG_SET_DFU_ALT_INFO)
+#include <dfu.h>
 
 #define DFU_ALT_BUF_LEN		SZ_1K
 
