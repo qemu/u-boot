@@ -81,6 +81,8 @@ struct fdt_usb {
 	enum periph_id periph_id;/* peripheral id */
 	struct gpio_desc vbus_gpio;	/* GPIO for vbus enable */
 	struct gpio_desc phy_reset_gpio; /* GPIO to reset ULPI phy */
+	bool xcvr_setup_use_fuses; /* Indicates that the value is read from the on-chip fuses */
+	u32 xcvr_setup;	/* Input of XCVR cell, HS driver output control */
 };
 
 /*
@@ -464,10 +466,16 @@ static int init_utmi_usb_controller(struct fdt_usb *config,
 
 		/* Recommended PHY settings for EYE diagram */
 		val = readl(&usbctlr->utmip_xcvr_cfg0);
-		clrsetbits_le32(&val, UTMIP_XCVR_SETUP_MASK,
-				0x4 << UTMIP_XCVR_SETUP_SHIFT);
-		clrsetbits_le32(&val, UTMIP_XCVR_SETUP_MSB_MASK,
-				0x3 << UTMIP_XCVR_SETUP_MSB_SHIFT);
+
+		if (!config->xcvr_setup_use_fuses) {
+			clrsetbits_le32(&val, UTMIP_XCVR_SETUP_MASK,
+					config->xcvr_setup <<
+					UTMIP_XCVR_SETUP_SHIFT);
+			clrsetbits_le32(&val, UTMIP_XCVR_SETUP_MSB_MASK,
+					config->xcvr_setup <<
+					UTMIP_XCVR_SETUP_MSB_SHIFT);
+		}
+
 		clrsetbits_le32(&val, UTMIP_XCVR_HSSLEW_MSB_MASK,
 				0x8 << UTMIP_XCVR_HSSLEW_MSB_SHIFT);
 		writel(val, &usbctlr->utmip_xcvr_cfg0);
@@ -522,7 +530,9 @@ static int init_utmi_usb_controller(struct fdt_usb *config,
 	setbits_le32(&usbctlr->utmip_bat_chrg_cfg0, UTMIP_PD_CHRG);
 
 	clrbits_le32(&usbctlr->utmip_xcvr_cfg0, UTMIP_XCVR_LSBIAS_SE);
-	setbits_le32(&usbctlr->utmip_spare_cfg0, FUSE_SETUP_SEL);
+
+	if (config->xcvr_setup_use_fuses)
+		setbits_le32(&usbctlr->utmip_spare_cfg0, FUSE_SETUP_SEL);
 
 	/*
 	 * Configure the UTMIP_IDLE_WAIT and UTMIP_ELASTIC_LIMIT
@@ -843,6 +853,8 @@ static const struct ehci_ops tegra_ehci_ops = {
 static int ehci_usb_of_to_plat(struct udevice *dev)
 {
 	struct fdt_usb *priv = dev_get_priv(dev);
+	u32 usb_phy_phandle;
+	ofnode usb_phy_node;
 	int ret;
 
 	ret = fdt_decode_usb(dev, priv);
@@ -850,6 +862,32 @@ static int ehci_usb_of_to_plat(struct udevice *dev)
 		return ret;
 
 	priv->type = dev_get_driver_data(dev);
+
+	ret = ofnode_read_u32(dev_ofnode(dev), "nvidia,phy", &usb_phy_phandle);
+	if (ret) {
+		log_debug("%s: required usb phy node isn't provided\n", __func__);
+		priv->xcvr_setup_use_fuses = true;
+		return 0;
+	}
+
+	usb_phy_node = ofnode_get_by_phandle(usb_phy_phandle);
+	if (!ofnode_valid(usb_phy_node)) {
+		log_err("%s: failed to find usb phy node\n", __func__);
+		return -EINVAL;
+	}
+
+	priv->xcvr_setup_use_fuses = ofnode_read_bool(
+		usb_phy_node, "nvidia,xcvr-setup-use-fuses");
+
+	if (!priv->xcvr_setup_use_fuses) {
+		ret = ofnode_read_u32(usb_phy_node, "nvidia,xcvr-setup",
+				      &priv->xcvr_setup);
+		if (ret)
+			return ret;
+	}
+
+	log_debug("%s: xcvr_setup_use_fuses %d, xcvr_setup %d\n",
+		  __func__, priv->xcvr_setup_use_fuses, priv->xcvr_setup);
 
 	return 0;
 }
