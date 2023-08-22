@@ -5,13 +5,13 @@
 
 extra-y	:= start.o
 
+obj-y	+= cache_v8.o
 obj-y	+= cpu.o
 ifndef CONFIG_$(SPL_TPL_)TIMER
 obj-$(CONFIG_SYS_ARCH_TIMER) += generic_timer.o
 endif
 ifndef CONFIG_$(SPL_)SYS_DCACHE_OFF
-obj-y	+= cache_v8.o
-obj-y	+= cache.o
+obj-y  += cache.o
 endif
 ifdef CONFIG_SPL_BUILD
 obj-$(CONFIG_ARMV8_SPL_EXCEPTION_VECTORS) += exceptions.o
