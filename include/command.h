@@ -15,6 +15,9 @@
 
 #include <linux/compiler_attributes.h>
 
+/* For ARRAY_SIZE() */
+#include <linux/kernel.h>
+
 #ifndef NULL
 #define NULL	0
 #endif
