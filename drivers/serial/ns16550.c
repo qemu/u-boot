@@ -479,6 +479,7 @@ static int ns16550_serial_getinfo(struct udevice *dev,
 	info->addr_space = SERIAL_ADDRESS_SPACE_MEMORY;
 #endif
 	info->addr = plat->base;
+	info->size = plat->size;
 	info->reg_width = plat->reg_width;
 	info->reg_shift = plat->reg_shift;
 	info->reg_offset = plat->reg_offset;
@@ -487,7 +488,8 @@ static int ns16550_serial_getinfo(struct udevice *dev,
 	return 0;
 }
 
-static int ns16550_serial_assign_base(struct ns16550_plat *plat, fdt_addr_t base)
+static int ns16550_serial_assign_base(struct ns16550_plat *plat,
+				      fdt_addr_t base, fdt_size_t size)
 {
 	if (base == FDT_ADDR_T_NONE)
 		return -EINVAL;
@@ -497,6 +499,7 @@ static int ns16550_serial_assign_base(struct ns16550_plat *plat, fdt_addr_t base
 #else
 	plat->base = (unsigned long)map_physmem(base, 0, MAP_NOCACHE);
 #endif
+	plat->size = size;
 
 	return 0;
 }
@@ -507,6 +510,7 @@ int ns16550_serial_probe(struct udevice *dev)
 	struct ns16550 *const com_port = dev_get_priv(dev);
 	struct reset_ctl_bulk reset_bulk;
 	fdt_addr_t addr;
+	fdt_addr_t size;
 	int ret;
 
 	/*
@@ -514,8 +518,8 @@ int ns16550_serial_probe(struct udevice *dev)
 	 * or via a PCI bridge, assign plat->base before probing hardware.
 	 */
 	if (device_is_on_pci_bus(dev)) {
-		addr = devfdt_get_addr_pci(dev);
-		ret = ns16550_serial_assign_base(plat, addr);
+		addr = devfdt_get_addr_pci(dev, &size);
+		ret = ns16550_serial_assign_base(plat, addr, size);
 		if (ret)
 			return ret;
 	}
@@ -543,11 +547,12 @@ int ns16550_serial_of_to_plat(struct udevice *dev)
 	struct ns16550_plat *plat = dev_get_plat(dev);
 	const u32 port_type = dev_get_driver_data(dev);
 	fdt_addr_t addr;
+	fdt_size_t size;
 	struct clk clk;
 	int err;
 
-	addr = dev_read_addr(dev);
-	err = ns16550_serial_assign_base(plat, addr);
+	addr = dev_read_addr_size(dev, &size);
+	err = ns16550_serial_assign_base(plat, addr, size);
 	if (err && !device_is_on_pci_bus(dev))
 		return err;
 
