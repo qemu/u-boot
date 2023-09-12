@@ -631,6 +631,25 @@ void fdt_fixup_ethernet(void *fdt)
 	}
 }
 
+int fdt_fixup_kaslr_seed(ofnode node, const u8 *seed, int len)
+{
+	ofnode chosen;
+	int ret;
+
+	/* find or create "/chosen" node. */
+	ret = ofnode_add_subnode(node, "chosen", &chosen);
+	if (ret && ret != -EEXIST)
+		return -ENOENT;
+
+	ret = ofnode_write_prop(chosen, "kaslr-seed", seed, len, true);
+	if (ret) {
+		printf("WARNING: can't set kaslr-seed\n");
+		return ret;
+	}
+
+	return 0;
+}
+
 int fdt_record_loadable(void *blob, u32 index, const char *name,
 			uintptr_t load_addr, u32 size, uintptr_t entry_point,
 			const char *type, const char *os, const char *arch)
