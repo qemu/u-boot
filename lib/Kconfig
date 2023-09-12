@@ -477,6 +477,13 @@ config VPL_TPM
 	  for the low-level TPM interface, but only one TPM is supported at
 	  a time by the TPM library.
 
+config KASLR_RNG_SEED
+	bool "Use RNG driver for KASLR random seed"
+	depends on DM_RNG
+	help
+	  This enables support for using the RNG driver as entropy source for
+	  KASLR seed populated in kernel's device tree.
+
 endmenu
 
 menu "Android Verified Boot"
