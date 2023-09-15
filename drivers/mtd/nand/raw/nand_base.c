@@ -47,6 +47,7 @@
 #endif
 #include <asm/io.h>
 #include <linux/errno.h>
+#include <linux/printk.h>
 
 /* Define default oob placement schemes for large and small page devices */
 #ifndef CONFIG_SYS_NAND_DRIVER_ECC_LAYOUT

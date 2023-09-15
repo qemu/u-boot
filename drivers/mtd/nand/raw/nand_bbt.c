@@ -67,6 +67,7 @@
 #include <linux/mtd/bbm.h>
 #include <linux/mtd/rawnand.h>
 #include <linux/bitops.h>
+#include <linux/printk.h>
 #include <linux/string.h>
 
 #define BBT_BLOCK_GOOD		0x00
