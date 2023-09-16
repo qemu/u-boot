@@ -189,10 +189,10 @@ static inline void raw_write_daif(unsigned int daif)
 
 typedef void __noreturn (*atf_entry_t)(struct bl31_params *params, void *plat_params);
 
-static void __noreturn bl31_entry(uintptr_t bl31_entry, uintptr_t bl32_entry,
-				  uintptr_t bl33_entry, uintptr_t fdt_addr)
+static void __noreturn bl31spl_enter_atf(uintptr_t bl31_entry, uintptr_t bl32_entry,
+					 uintptr_t bl33_entry, uintptr_t fdt_addr)
 {
-	atf_entry_t  atf_entry = (atf_entry_t)bl31_entry;
+	atf_entry_t atf_entry = (atf_entry_t)bl31_entry;
 	void *bl31_params;
 
 	if (CONFIG_IS_ENABLED(ATF_LOAD_IMAGE_V2))
@@ -240,7 +240,7 @@ static int spl_fit_images_find(void *blob, int os)
 
 uintptr_t spl_fit_images_get_entry(void *blob, int node)
 {
-	ulong  val;
+	ulong val;
 	int ret;
 
 	ret = fit_image_get_entry(blob, node, &val);
@@ -253,25 +253,25 @@ uintptr_t spl_fit_images_get_entry(void *blob, int node)
 
 void __noreturn spl_invoke_atf(struct spl_image_info *spl_image)
 {
-	uintptr_t  bl32_entry = 0;
-	uintptr_t  bl33_entry = CONFIG_TEXT_BASE;
+	uintptr_t bl32_entry = 0;
+	uintptr_t bl33_entry = CONFIG_TEXT_BASE;
 	void *blob = spl_image->fdt_addr;
 	uintptr_t platform_param = (uintptr_t)blob;
 	int node;
 
 	/*
-	 * Find the OP-TEE binary (in /fit-images) load address or
-	 * entry point (if different) and pass it as the BL3-2 entry
-	 * point, this is optional.
+	 * Find (in /fit-images) the TEE binary entry point address
+	 * (or load address if entry point is missing) and pass it as
+	 * the BL3-2 entry point. This is optional.
 	 */
 	node = spl_fit_images_find(blob, IH_OS_TEE);
 	if (node >= 0)
 		bl32_entry = spl_fit_images_get_entry(blob, node);
 
 	/*
-	 * Find the U-Boot binary (in /fit-images) load addreess or
-	 * entry point (if different) and pass it as the BL3-3 entry
-	 * point.
+	 * Find (in /fit-images) the U-Boot binary entry point address
+	 * (or load address if entry point is missing) and pass it as
+	 * the BL3-3 entry point.
 	 * This will need to be extended to support Falcon mode.
 	 */
 
@@ -281,17 +281,13 @@ void __noreturn spl_invoke_atf(struct spl_image_info *spl_image)
 
 	/*
 	 * If ATF_NO_PLATFORM_PARAM is set, we override the platform
-	 * parameter and always pass 0.  This is a workaround for
+	 * parameter and always pass 0. This is a workaround for
 	 * older ATF versions that have insufficiently robust (or
 	 * overzealous) argument validation.
 	 */
 	if (CONFIG_IS_ENABLED(ATF_NO_PLATFORM_PARAM))
 		platform_param = 0;
 
-	/*
-	 * We don't provide a BL3-2 entry yet, but this will be possible
-	 * using similar logic.
-	 */
-	bl31_entry(spl_image->entry_point, bl32_entry,
-		   bl33_entry, platform_param);
+	spl_enter_atf(spl_image->entry_point, bl32_entry,
+		      bl33_entry, platform_param);
 }
