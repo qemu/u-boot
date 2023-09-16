@@ -238,17 +238,16 @@ static int spl_fit_images_find(void *blob, int os)
 	return -FDT_ERR_NOTFOUND;
 }
 
-uintptr_t spl_fit_images_get_entry(void *blob, int node)
+void spl_fit_images_get_entry(void *blob, int node, uintptr_t *entry_p)
 {
 	ulong val;
-	int ret;
 
-	ret = fit_image_get_entry(blob, node, &val);
-	if (ret)
-		ret = fit_image_get_load(blob, node, &val);
+	if (fit_image_get_entry(blob, node, &val))
+		if (fit_image_get_load(blob, node, &val))
+			return;
 
 	debug("%s: entry point 0x%lx\n", __func__, val);
-	return val;
+	*entry_p = val;
 }
 
 void __noreturn spl_invoke_atf(struct spl_image_info *spl_image)
@@ -266,7 +265,7 @@ void __noreturn spl_invoke_atf(struct spl_image_info *spl_image)
 	 */
 	node = spl_fit_images_find(blob, IH_OS_TEE);
 	if (node >= 0)
-		bl32_entry = spl_fit_images_get_entry(blob, node);
+		spl_fit_images_get_entry(blob, node, &bl32_entry);
 
 	/*
 	 * Find (in /fit-images) the U-Boot binary entry point address
@@ -277,7 +276,7 @@ void __noreturn spl_invoke_atf(struct spl_image_info *spl_image)
 
 	node = spl_fit_images_find(blob, IH_OS_U_BOOT);
 	if (node >= 0)
-		bl33_entry = spl_fit_images_get_entry(blob, node);
+		spl_fit_images_get_entry(blob, node, &bl33_entry);
 
 	/*
 	 * If ATF_NO_PLATFORM_PARAM is set, we override the platform
