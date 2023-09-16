@@ -209,7 +209,19 @@ static void __noreturn bl31spl_enter_atf(uintptr_t bl31_entry, uintptr_t bl32_en
 	atf_entry(bl31_params, (void *)fdt_addr);
 }
 
-static int spl_fit_images_find(void *blob, int os)
+static void spl_fit_images_get_entry(void *blob, int node, uintptr_t *entry_p)
+{
+	ulong val;
+
+	if (fit_image_get_entry(blob, node, &val))
+		if (fit_image_get_load(blob, node, &val))
+			return;
+
+	debug("%s: entry point 0x%lx\n", __func__, val);
+	*entry_p = val;
+}
+
+static int spl_fit_images_get_os_entry(void *blob, int os, uintptr_t *entry_p)
 {
 	int parent, node, ndepth = 0;
 	const void *data;
@@ -231,24 +243,15 @@ static int spl_fit_images_find(void *blob, int os)
 		if (!data)
 			continue;
 
-		if (genimg_get_os_id(data) == os)
-			return node;
+		if (genimg_get_os_id(data) == os) {
+			spl_fit_images_get_entry(blob, node, entry_p);
+			return 0;
+		}
 	};
 
 	return -FDT_ERR_NOTFOUND;
 }
 
-void spl_fit_images_get_entry(void *blob, int node, uintptr_t *entry_p)
-{
-	ulong val;
-
-	if (fit_image_get_entry(blob, node, &val))
-		if (fit_image_get_load(blob, node, &val))
-			return;
-
-	debug("%s: entry point 0x%lx\n", __func__, val);
-	*entry_p = val;
-}
 
 void __noreturn spl_invoke_atf(struct spl_image_info *spl_image)
 {
@@ -256,16 +259,13 @@ void __noreturn spl_invoke_atf(struct spl_image_info *spl_image)
 	uintptr_t bl33_entry = CONFIG_TEXT_BASE;
 	void *blob = spl_image->fdt_addr;
 	uintptr_t platform_param = (uintptr_t)blob;
-	int node;
 
 	/*
 	 * Find (in /fit-images) the TEE binary entry point address
 	 * (or load address if entry point is missing) and pass it as
 	 * the BL3-2 entry point. This is optional.
 	 */
-	node = spl_fit_images_find(blob, IH_OS_TEE);
-	if (node >= 0)
-		spl_fit_images_get_entry(blob, node, &bl32_entry);
+	spl_fit_images_get_os_entry(blob, IH_OS_TEE, &bl32_entry);
 
 	/*
 	 * Find (in /fit-images) the U-Boot binary entry point address
@@ -273,10 +273,7 @@ void __noreturn spl_invoke_atf(struct spl_image_info *spl_image)
 	 * the BL3-3 entry point.
 	 * This will need to be extended to support Falcon mode.
 	 */
-
-	node = spl_fit_images_find(blob, IH_OS_U_BOOT);
-	if (node >= 0)
-		spl_fit_images_get_entry(blob, node, &bl33_entry);
+	spl_fit_images_get_os_entry(blob, IH_OS_U_BOOT, &bl33_entry);
 
 	/*
 	 * If ATF_NO_PLATFORM_PARAM is set, we override the platform
