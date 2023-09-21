@@ -43,6 +43,10 @@ __weak int exynos_early_init_f(void)
 	return 0;
 }
 
+__weak void exynos_init(void)
+{
+}
+
 __weak int exynos_power_init(void)
 {
 	return 0;

@@ -422,11 +422,9 @@ int exynos_early_init_f(void)
 	return 0;
 }
 
-int exynos_init(void)
+void exynos_init(void)
 {
 	board_gpio_init();
-
-	return 0;
 }
 
 int exynos_power_init(void)

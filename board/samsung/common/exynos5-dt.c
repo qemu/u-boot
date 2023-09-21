@@ -37,11 +37,6 @@
 
 DECLARE_GLOBAL_DATA_PTR;
 
-int exynos_init(void)
-{
-	return 0;
-}
-
 static int exynos_set_regulator(const char *name, uint uv)
 {
 	struct udevice *dev;
