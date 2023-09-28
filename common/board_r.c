@@ -98,7 +98,7 @@ static int initr_trace(void)
 static int initr_reloc(void)
 {
 	/* tell others: relocation done */
-	gd->flags |= GD_FLG_RELOC | GD_FLG_FULL_MALLOC_INIT;
+	gd->flags |= GD_FLG_RELOC;
 
 	return 0;
 }
@@ -204,6 +204,7 @@ static int initr_malloc(void)
 	gd_set_malloc_start(start);
 	mem_malloc_init((ulong)map_sysmem(start, TOTAL_MALLOC_LEN),
 			TOTAL_MALLOC_LEN);
+	gd->flags |= GD_FLG_FULL_MALLOC_INIT;
 	return 0;
 }
 
