@@ -32,9 +32,6 @@ U_BOOT_CMD(
 /* This does not use the U_BOOT_CMD macro as ? can't be used in symbol names */
 ll_entry_declare(struct cmd_tbl, question_mark, cmd) = {
 	"?",	CONFIG_SYS_MAXARGS, cmd_always_repeatable,	do_help,
-	"alias for 'help'",
-#ifdef  CONFIG_SYS_LONGHELP
-	""
-#endif /* CONFIG_SYS_LONGHELP */
+	"alias for 'help'", ""
 };
 #endif
