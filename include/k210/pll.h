@@ -13,7 +13,7 @@ struct k210_pll_config {
 	u8 od;
 };
 
-#ifdef CONFIG_UNIT_TEST
+#ifdef CONFIG_SANDBOX
 TEST_STATIC int k210_pll_calc_config(u32 rate, u32 rate_in,
 				     struct k210_pll_config *best);
 #ifndef nop
