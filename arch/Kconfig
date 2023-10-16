@@ -208,6 +208,9 @@ config SANDBOX
 	imply PHYSMEM
 	imply GENERATE_ACPI_TABLE
 	imply BINMAN
+	imply BOOTSTD_DEFAULTS if BOOTSTD_FULL && CMDLINE
+	imply BOOTMETH_DISTRO if BOOTSTD_FULL && CMDLINE
+	imply CMD_SYSBOOT if BOOTSTD_FULL
 
 config SH
 	bool "SuperH architecture"
