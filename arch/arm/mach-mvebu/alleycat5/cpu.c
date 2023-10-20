@@ -63,6 +63,11 @@ static struct mm_region ac5_mem_map[] = {
 
 struct mm_region *mem_map = ac5_mem_map;
 
+u64 get_page_table_size(void)
+{
+	return 0x80000;
+}
+
 void reset_cpu(void)
 {
 }
