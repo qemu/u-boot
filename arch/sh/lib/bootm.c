@@ -39,8 +39,7 @@ static unsigned long sh_check_cmd_arg(char *cmdline, char *key, int base)
 	return val;
 }
 
-int do_bootm_linux(int flag, int argc, char *const argv[],
-		   struct bootm_headers *images)
+int do_bootm_linux(int flag, struct bootm_headers *images)
 {
 	/* Linux kernel load address */
 	void (*kernel) (void) = (void (*)(void))images->ep;

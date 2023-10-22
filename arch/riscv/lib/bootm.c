@@ -105,8 +105,7 @@ static void boot_jump_linux(struct bootm_headers *images, int flag)
 	}
 }
 
-int do_bootm_linux(int flag, int argc, char *const argv[],
-		   struct bootm_headers *images)
+int do_bootm_linux(int flag, struct bootm_headers *images)
 {
 	/* No need for those on RISC-V */
 	if (flag & BOOTM_STATE_OS_BD_T || flag & BOOTM_STATE_OS_CMDLINE)
@@ -130,7 +129,7 @@ int do_bootm_linux(int flag, int argc, char *const argv[],
 int do_bootm_vxworks(int flag, int argc, char *const argv[],
 		     struct bootm_headers *images)
 {
-	return do_bootm_linux(flag, argc, argv, images);
+	return do_bootm_linux(flag, images);
 }
 
 static ulong get_sp(void)

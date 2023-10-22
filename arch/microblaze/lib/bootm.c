@@ -81,8 +81,7 @@ static void boot_prep_linux(struct bootm_headers *images)
 	}
 }
 
-int do_bootm_linux(int flag, int argc, char *const argv[],
-		   struct bootm_headers *images)
+int do_bootm_linux(int flag, struct bootm_headers *images)
 {
 	images->cmdline_start = (ulong)env_get("bootargs");
 

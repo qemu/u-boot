@@ -223,8 +223,7 @@ static int boot_body_linux(struct bootm_headers *images)
 	return 0;
 }
 
-noinline int do_bootm_linux(int flag, int argc, char *const argv[],
-			    struct bootm_headers *images)
+noinline int do_bootm_linux(int flag, struct bootm_headers *images)
 {
 	int	ret;
 
