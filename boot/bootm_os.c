@@ -527,8 +527,8 @@ __weak void board_preboot_os(void)
 	/* please define board specific board_preboot_os() */
 }
 
-int boot_selected_os(int argc, char *const argv[], int state,
-		     struct bootm_headers *images, boot_os_fn *boot_fn)
+int boot_selected_os(int state, struct bootm_headers *images,
+		     boot_os_fn *boot_fn)
 {
 	arch_preboot_os();
 	board_preboot_os();

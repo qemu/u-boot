@@ -42,8 +42,8 @@ boot_os_fn *bootm_os_get_boot_func(int os);
 int bootm_host_load_images(const void *fit, int cfg_noffset);
 #endif
 
-int boot_selected_os(int argc, char *const argv[], int state,
-		     struct bootm_headers *images, boot_os_fn *boot_fn);
+int boot_selected_os(int argc, struct bootm_headers *images,
+		     boot_os_fn *boot_fn);
 
 ulong bootm_disable_interrupts(void);
 
