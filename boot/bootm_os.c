@@ -41,20 +41,6 @@ static int do_bootm_standalone(int flag, int argc, char *const argv[],
 /* OS booting routines */
 /*******************************************************************/
 
-#if defined(CONFIG_BOOTM_NETBSD) || defined(CONFIG_BOOTM_PLAN9)
-static void copy_args(char *dest, int argc, char *const argv[], char delim)
-{
-	int i;
-
-	for (i = 0; i < argc; i++) {
-		if (i > 0)
-			*dest++ = delim;
-		strcpy(dest, argv[i]);
-		dest += strlen(argv[i]);
-	}
-}
-#endif
-
 static void __maybe_unused fit_unsupported_reset(const char *msg)
 {
 	if (CONFIG_IS_ENABLED(FIT_VERBOSE)) {
@@ -211,16 +197,12 @@ static int do_bootm_plan9(int flag, int argc, char *const argv[],
 
 	/* See README.plan9 */
 	s = env_get("confaddr");
-	if (s != NULL) {
+	if (s) {
 		char *confaddr = (char *)hextoul(s, NULL);
 
-		if (argc > 0) {
-			copy_args(confaddr, argc, argv, '\n');
-		} else {
-			s = env_get("bootargs");
-			if (s != NULL)
-				strcpy(confaddr, s);
-		}
+		s = env_get("bootargs");
+		if (!s)
+			strcpy(confaddr, s);
 	}
 
 	entry_point = (void (*)(void))images->ep;
