@@ -977,10 +977,13 @@ struct efi_device_path *efi_dp_from_uart(void)
 	return buf;
 }
 
-struct efi_device_path __maybe_unused *efi_dp_from_eth(void)
+struct efi_device_path *efi_dp_from_eth(void)
 {
 	void *buf, *start;
 	unsigned dpsize = 0;
+
+	if (!IS_ENABLED(CONFIG_NETDEVICES))
+		return NULL;
 
 	assert(eth_get_dev());
 
