@@ -102,19 +102,9 @@ static int do_bootm_netbsd(int flag, int argc, char *const argv[],
 			os_hdr = hdr;
 	}
 
-	if (argc > 0) {
-		ulong len;
-		int   i;
-
-		for (i = 0, len = 0; i < argc; i += 1)
-			len += strlen(argv[i]) + 1;
-		cmdline = malloc(len);
-		copy_args(cmdline, argc, argv, ' ');
-	} else {
-		cmdline = env_get("bootargs");
-		if (cmdline == NULL)
-			cmdline = "";
-	}
+	cmdline = env_get("bootargs");
+	if (!cmdline)
+		cmdline = "";
 
 	loader = (void (*)(struct bd_info *, struct legacy_img_hdr *, char *, char *))images->ep;
 
