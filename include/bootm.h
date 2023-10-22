@@ -16,6 +16,41 @@ struct cmd_tbl;
 #define BOOTM_ERR_OVERLAP		(-2)
 #define BOOTM_ERR_UNIMPLEMENTED	(-3)
 
+/**
+ * struct bootm_info() - information used when processing images to boot
+ *
+ * These mirror the first three arguments of the bootm command. They are
+ * designed to handle any type of image, but typically it is a FIT.
+ *
+ * @addr_fit: Address of image to bootm, as passed to
+ *	genimg_get_kernel_addr_fit() for processing:
+ *
+ *    NULL: Usees default load address, i.e. image_load_addr
+ *    <addr>: Uses hex address
+ *
+ * For FIT:
+ *    "[<addr>]#<conf>": Uses address (or image_load_addr) and also specifies
+ *	the FIT configuration to use
+ *    "[<addr>]:<subimage>": Uses address (or image_load_addr) and also
+ *	specifies the subimage name containing the OS
+ *
+ * @conf_ramdisk: Address (or with FIT, the name) of the ramdisk image, as
+ *	passed to boot_get_ramdisk() for processing, or NULL for none
+ * @conf_fdt: Address (or with FIT, the name) of the FDT image, as passed to
+ *	boot_get_fdt() for processing, or NULL for none
+ * @boot_progress: true to show boot progress
+ * @images: images information
+ * @cmd_name: command which invoked this operation, e.g. "bootm"
+ */
+struct bootm_info {
+	const char *addr_fit;
+	const char *conf_ramdisk;
+	const char *conf_fdt;
+	bool boot_progress;
+	struct bootm_headers *images;
+	const char *cmd_name;
+};
+
 /*
  *  Continue booting an OS image; caller already has:
  *  - copied image header to global variable `header'
@@ -82,9 +117,25 @@ int bootm_find_images(ulong img_addr, const char *conf_ramdisk,
  */
 int bootm_measure(struct bootm_headers *images);
 
-int do_bootm_states(struct cmd_tbl *cmdtp, int flag, int argc,
-		    char *const argv[], int states, struct bootm_headers *images,
-		    int boot_progress);
+/**
+ * bootm_run_states() - Execute selected states of the bootm command.
+ *
+ * Note that if states contains more than one flag it MUST contain
+ * BOOTM_STATE_START, since this handles the addr_fit, conf_ramdisk and conf_fit
+ * members of @bmi
+ *
+ * Also note that aside from boot_os_fn functions and bootm_load_os, no other
+ * functions store the return value of in 'ret' may use a negative return
+ * value, without special handling.
+ *
+ * @bmi: bootm information
+ * @states	Mask containing states to run (BOOTM_STATE_...)
+ * Return: 0 if ok, something else on error. Some errors will cause this
+ *	function to perform a reboot! If states contains BOOTM_STATE_OS_GO
+ *	then the intent is to boot an OS, so this function will not return
+ *	unless the image type is standalone.
+ */
+int bootm_run_states(struct bootm_info *bmi, int states);
 
 void arch_preboot_os(void);
 
