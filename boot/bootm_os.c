@@ -333,7 +333,7 @@ int do_bootm_vxworks(int flag, int argc, char *const argv[],
 static int do_bootm_qnxelf(int flag, int argc, char *const argv[],
 			   struct bootm_headers *images)
 {
-	char *local_args[2];
+	char *local_args[3];
 	char str[16];
 	int dcache;
 
@@ -348,8 +348,9 @@ static int do_bootm_qnxelf(int flag, int argc, char *const argv[],
 #endif
 
 	sprintf(str, "%lx", images->ep); /* write entry-point into string */
-	local_args[0] = argv[0];
-	local_args[1] = str;	/* and provide it via the arguments */
+	local_args[0] = "qnxelf";
+	local_args[1] = env_get("bootargs");
+	local_args[2] = NULL;
 
 	/*
 	 * QNX images require the data cache is disabled.
@@ -358,7 +359,7 @@ static int do_bootm_qnxelf(int flag, int argc, char *const argv[],
 	if (dcache)
 		dcache_disable();
 
-	do_bootelf(NULL, 0, 2, local_args);
+	do_bootelf(NULL, 0, local_args[1] ? 2 : 1, local_args);
 
 	if (dcache)
 		dcache_enable();
