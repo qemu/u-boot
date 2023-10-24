@@ -17,6 +17,8 @@
 
 efi_status_t efi_obj_list_initialized = OBJ_LIST_NOT_INITIALIZED;
 
+efi_guid_t vendor_fdtfile_guid = VENDOR_FDTFILE_GUID;
+
 /*
  * Allow unaligned memory access.
  *
@@ -24,6 +26,27 @@ efi_status_t efi_obj_list_initialized = OBJ_LIST_NOT_INITIALIZED;
  */
 void __weak allow_unaligned(void)
 {
+}
+
+/**
+ * efi_init_fdtfile() - set EFI variable FdtFile
+ *
+ * Return:	status code
+ */
+static efi_status_t efi_init_fdtfile(void)
+{
+	char *val;
+
+	val = env_get("fdtfile");
+	if (!val)
+		return EFI_SUCCESS;
+
+	return efi_set_variable_int(u"FdtFile",
+				    &vendor_fdtfile_guid,
+				    EFI_VARIABLE_BOOTSERVICE_ACCESS |
+				    EFI_VARIABLE_RUNTIME_ACCESS |
+				    EFI_VARIABLE_READ_ONLY,
+				    strlen(val) + 1, val, false);
 }
 
 /**
@@ -249,6 +272,13 @@ efi_status_t efi_init_obj_list(void)
 	ret = efi_init_platform_lang();
 	if (ret != EFI_SUCCESS)
 		goto out;
+
+	/* Define EFI variable FdtFile */
+	if (!CONFIG_IS_ENABLED(GENERATE_ACPI_TABLE)) {
+		ret = efi_init_fdtfile();
+		if (ret != EFI_SUCCESS)
+			goto out;
+	}
 
 	/* Indicate supported features */
 	ret = efi_init_os_indications();

@@ -916,6 +916,20 @@ So our final format of the FilePathList[] is::
 
     Loaded image - end node (0xff) - VenMedia - initrd_1 - [end node (0x01) - initrd_n ...] - end node (0xff)
 
+EFI variable FdtFile
+~~~~~~~~~~~~~~~~~~~~
+
+Ideally U-Boot would always expose a device-tree that can be used for booting
+any operating systems. Unfortunately operating systems like Linux sometimes
+break forward and backward compatibility. In this case there is a need to load
+an operating system version specific device-tree.
+
+U-Boot has an environment variable fdtfile identifying the device-tree file to
+load. The content of this variable is exposed as EFI variable Fdtfile, vendor
+GUID d45dde69-3bd6-40e0-90d5-6b606aa57730. It contains the device-tree path
+name as a NUL terminated ASCII string. On many architectures the file name is
+preceded by a vendor directory ('vendor-directory/board-name.dtb').
+
 Links
 -----
 
