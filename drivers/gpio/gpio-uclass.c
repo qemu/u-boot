@@ -1143,9 +1143,22 @@ static int gpio_request_tail(int ret, const char *nodename,
 		ret = uclass_get_device_by_ofnode(UCLASS_GPIO, args->node,
 						  &desc->dev);
 		if (ret) {
-			debug("%s: uclass_get_device_by_ofnode failed\n",
-			      __func__);
-			goto err;
+			struct udevice *pmic;
+			ret = uclass_get_device_by_ofnode(UCLASS_PMIC, args->node,
+							  &pmic);
+			if (ret) {
+				log_err("PMIC device get failed, err %d\n", ret);
+				goto err;
+			}
+
+			device_foreach_child(desc->dev, pmic) {
+				if (device_get_uclass_id(desc->dev) == UCLASS_GPIO)
+					break;
+			}
+
+			/* if loop exits without GPIO device return error */
+			if (device_get_uclass_id(desc->dev) != UCLASS_GPIO)
+				goto err;
 		}
 	}
 	ret = gpio_find_and_xlate(desc, args);
