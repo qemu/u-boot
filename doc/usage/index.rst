@@ -94,6 +94,7 @@ Shell commands
    cmd/saves
    cmd/sbi
    cmd/sf
+   cmd/scmi
    cmd/scp03
    cmd/seama
    cmd/setexpr
