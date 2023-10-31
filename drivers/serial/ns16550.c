@@ -514,6 +514,7 @@ int ns16550_serial_probe(struct udevice *dev)
 	struct ns16550_plat *plat = dev_get_plat(dev);
 	struct ns16550 *const com_port = dev_get_priv(dev);
 	struct reset_ctl_bulk reset_bulk;
+	struct clk_bulk clk_bulk;
 	fdt_addr_t addr;
 	fdt_addr_t size;
 	int ret;
@@ -532,6 +533,10 @@ int ns16550_serial_probe(struct udevice *dev)
 	ret = reset_get_bulk(dev, &reset_bulk);
 	if (!ret)
 		reset_deassert_bulk(&reset_bulk);
+
+	ret = clk_get_bulk(dev, &clk_bulk);
+	if (!ret)
+		clk_enable_bulk(&clk_bulk);
 
 	com_port->plat = dev_get_plat(dev);
 	ns16550_init(com_port, -1);
