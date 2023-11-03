@@ -966,6 +966,23 @@ ofnode oftree_path(oftree tree, const char *path)
 	}
 }
 
+int root_ofnode_from_fdt(void *fdt, ofnode *root_node)
+{
+	oftree tree;
+	/* If OFNODE_MULTI_TREE is not set, and if fdt is not the control FDT,
+	 *  oftree_from_fdt() will return NULL
+	 */
+	tree = oftree_from_fdt(fdt);
+
+	if (!oftree_valid(tree)) {
+		printf("Cannot create oftree\n");
+		return -EINVAL;
+	}
+	*root_node = oftree_root(tree);
+
+	return 0;
+}
+
 const void *ofnode_read_chosen_prop(const char *propname, int *sizep)
 {
 	ofnode chosen_node;

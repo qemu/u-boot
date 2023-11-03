@@ -937,6 +937,18 @@ ofnode oftree_path(oftree tree, const char *path);
 ofnode oftree_root(oftree tree);
 
 /**
+ * root_ofnode_from_fdt() - Gets the root ofnode given an FDT blob.
+ *                          Note, this will fail if OFNODE_MULTI_TREE
+ *                          is not set.
+ *
+ * @fdt: Device tree to use
+ * @root_node : Root ofnode
+ *
+ * Return: 0 if OK, -ve on error
+ */
+int root_ofnode_from_fdt(void *fdt, ofnode *root_node);
+
+/**
  * ofnode_read_chosen_prop() - get the value of a chosen property
  *
  * This looks for a property within the /chosen node and returns its value.
