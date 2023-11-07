@@ -41,7 +41,14 @@ Get the current parser::
 
 Change the current parser::
 
+    => cli get
+    old
+    => cli set 2021
+    => cli get
+    2021
     => cli set old
+    => cli get
+    old
 
 Trying to set the current parser to an unknown value::
 
@@ -51,7 +58,15 @@ Trying to set the current parser to an unknown value::
 
     Usage:
     cli get - print current cli
-    set - set the current cli, possible value is: old
+    set - set the current cli, possible values are: old, 2021
+
+Trying to set the current parser to a correct value but its code was not
+compiled::
+
+    => cli get
+    2021
+    => cli set old
+    Want to set current parser to old, but its code was not compiled!
 
 Return value
 ------------
