@@ -27,7 +27,7 @@ menu "Hush flavor to use"
 
 	config HUSH_OLD_PARSER
 		bool "Use hush old parser"
-		default y
+		default y if VENDOR_KM
 		help
 		  This option enables the old flavor of hush based on hush Busybox from
 		  2005.
@@ -36,6 +36,7 @@ menu "Hush flavor to use"
 
 	config HUSH_2021_PARSER
 		bool "Use hush 2021 parser"
+		default y if !VENDOR_KM
 		help
 		  This option enables the new flavor of hush based on hush Busybox from
 		  2021.

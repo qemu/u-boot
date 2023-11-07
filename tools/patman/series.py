@@ -316,6 +316,8 @@ class Series(dict):
             # Show progress any commits that are taking forever
             lastlen = 0
             while True:
+                # pylint does not find future which is set above.
+                # pylint: disable=E1101
                 left = [commit for commit in self.commits
                         if not commit.future.done()]
                 if not left:
@@ -333,6 +335,8 @@ class Series(dict):
             print('Cc processing complete')
 
         for commit in self.commits:
+            # pylint does not find future which is set above.
+            # pylint: disable=E1101
             cc = commit.future.result()
             all_ccs += cc
             print(commit.patch, '\0'.join(sorted(set(cc))), file=fd)
