@@ -32,7 +32,7 @@
  * Define hush features by the names used upstream.
  */
 #define ENABLE_HUSH_INTERACTIVE	1
-#define ENABLE_FEATURE_EDITING	1
+#define ENABLE_FEATURE_EDITING	0
 #define ENABLE_HUSH_IF		1
 #define ENABLE_HUSH_LOOPS	1
 /* No MMU in U-Boot */

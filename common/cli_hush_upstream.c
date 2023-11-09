@@ -3087,7 +3087,9 @@ static int i_getch(struct in_str *i)
 
 #endif /* !__U_BOOT__ */
 	ch = fgetc_interactive(i);
+#ifndef __U_BOOT__
  out:
+#endif /* !__U_BOOT__ */
 	debug_printf("file_get: got '%c' %d\n", ch, ch);
 	i->last_char = ch;
 #if ENABLE_HUSH_LINENO_VAR
