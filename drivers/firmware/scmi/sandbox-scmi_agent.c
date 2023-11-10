@@ -66,10 +66,18 @@ struct scmi_channel {
 };
 
 static u8 protocols[] = {
+#if IS_ENABLED(CONFIG_SCMI_POWER_DOMAIN)
 	SCMI_PROTOCOL_ID_POWER_DOMAIN,
+#endif
+#if IS_ENABLED(CONFIG_CLK_SCMI)
 	SCMI_PROTOCOL_ID_CLOCK,
+#endif
+#if IS_ENABLED(CONFIG_RESET_SCMI)
 	SCMI_PROTOCOL_ID_RESET_DOMAIN,
+#endif
+#if IS_ENABLED(CONFIG_DM_REGULATOR_SCMI)
 	SCMI_PROTOCOL_ID_VOLTAGE_DOMAIN,
+#endif
 };
 
 #define NUM_PROTOCOLS ARRAY_SIZE(protocols)
@@ -1160,6 +1168,9 @@ static int sandbox_scmi_test_process_msg(struct udevice *dev,
 		}
 		break;
 	case SCMI_PROTOCOL_ID_POWER_DOMAIN:
+		if (!IS_ENABLED(CONFIG_SCMI_POWER_DOMAIN))
+			goto not_supported;
+
 		switch (msg->message_id) {
 		case SCMI_PROTOCOL_VERSION:
 			return sandbox_scmi_pwd_protocol_version(dev, msg);
@@ -1180,6 +1191,9 @@ static int sandbox_scmi_test_process_msg(struct udevice *dev,
 		}
 		break;
 	case SCMI_PROTOCOL_ID_CLOCK:
+		if (!IS_ENABLED(CONFIG_CLK_SCMI))
+			goto not_supported;
+
 		switch (msg->message_id) {
 		case SCMI_PROTOCOL_ATTRIBUTES:
 			return sandbox_scmi_clock_protocol_attribs(dev, msg);
@@ -1196,6 +1210,9 @@ static int sandbox_scmi_test_process_msg(struct udevice *dev,
 		}
 		break;
 	case SCMI_PROTOCOL_ID_RESET_DOMAIN:
+		if (!IS_ENABLED(CONFIG_RESET_SCMI))
+			goto not_supported;
+
 		switch (msg->message_id) {
 		case SCMI_RESET_DOMAIN_ATTRIBUTES:
 			return sandbox_scmi_rd_attribs(dev, msg);
@@ -1206,6 +1223,9 @@ static int sandbox_scmi_test_process_msg(struct udevice *dev,
 		}
 		break;
 	case SCMI_PROTOCOL_ID_VOLTAGE_DOMAIN:
+		if (!IS_ENABLED(CONFIG_DM_REGULATOR_SCMI))
+			goto not_supported;
+
 		switch (msg->message_id) {
 		case SCMI_VOLTAGE_DOMAIN_ATTRIBUTES:
 			return sandbox_scmi_voltd_attribs(dev, msg);
@@ -1224,8 +1244,7 @@ static int sandbox_scmi_test_process_msg(struct udevice *dev,
 	case SCMI_PROTOCOL_ID_SYSTEM:
 	case SCMI_PROTOCOL_ID_PERF:
 	case SCMI_PROTOCOL_ID_SENSOR:
-		*(u32 *)msg->out_msg = SCMI_NOT_SUPPORTED;
-		return 0;
+		goto not_supported;
 	default:
 		break;
 	}
@@ -1238,6 +1257,10 @@ static int sandbox_scmi_test_process_msg(struct udevice *dev,
 
 	/* Intentionnaly report unhandled IDs through the SCMI return code */
 	*(u32 *)msg->out_msg = SCMI_PROTOCOL_ERROR;
+	return 0;
+
+not_supported:
+	*(u32 *)msg->out_msg = SCMI_NOT_SUPPORTED;
 	return 0;
 }
 
