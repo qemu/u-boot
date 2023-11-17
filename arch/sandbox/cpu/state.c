@@ -3,7 +3,7 @@
  * Copyright (c) 2011-2012 The Chromium OS Authors.
  */
 
-#include <common.h>
+#include <config.h>
 #include <autoboot.h>
 #include <bloblist.h>
 #include <errno.h>
