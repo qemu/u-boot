@@ -1,0 +1,96 @@
+// SPDX-License-Identifier: GPL-2.0+
+
+/dts-v1/;
+
+#include <dt-bindings/gpio/gpio.h>
+#include "ast2600-evb.dts"
+
+/ {
+	model = "IBM SBP1";
+	compatible = "ibm,sbp1-bmc", "aspeed,ast2600";
+	memory {
+		device_type = "memory";
+		reg = <0x80000000 0x20000000>;
+	};
+
+	chosen {
+		stdout-path = &uart1;
+	};
+
+	aliases {
+		mmc0 = &emmc;
+		mmc1 = &sdhci0;
+		mmc2 = &sdhci1;
+		ethernet0 = &mac2;
+		ethernet1 = &mac3;
+	};
+
+	cpus {
+		cpu@0 {
+			clock-frequency = <1200000000>;
+		};
+		cpu@1 {
+			clock-frequency = <1200000000>;
+		};
+	};
+
+};
+
+&uart1 {
+	bootph-all;
+	status = "okay";
+};
+
+&uart5 {
+	status = "disabled";
+};
+
+&mdio {
+	status = "okay";
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_mdio3_default &pinctrl_mdio4_default>;
+};
+
+&mac0 {
+	status = "disabled";
+};
+
+&mac1 {
+	status = "disabled";
+};
+
+&gpio0 {
+	status = "okay";
+	line_50 {
+		gpio-hog;
+		gpios = <50 GPIO_ACTIVE_LOW>;
+		output-low;
+		line-name = "BMC_MAC1_RESET_N";
+	};
+	line_175 {
+		gpio-hog;
+		gpios = <175 GPIO_ACTIVE_LOW>;
+		output-low;
+		line-name = "BMC_MAC0_RESET_N";
+	};
+};
+
+&spi1 {
+	status = "disabled";
+};
+
+&spi2 {
+	status = "disabled";
+};
+
+&emmc {
+	status = "disabled";
+};
+
+&sdhci0 {
+	status = "disabled";
+};
+
+&sdhci1 {
+	status = "disabled";
+};
