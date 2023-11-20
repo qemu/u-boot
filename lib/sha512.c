@@ -11,13 +11,12 @@
  */
 
 #ifndef USE_HOSTCC
-#include <common.h>
 #include <linux/string.h>
+#include <watchdog.h>
 #else
 #include <string.h>
 #endif /* USE_HOSTCC */
 #include <compiler.h>
-#include <watchdog.h>
 #include <u-boot/sha512.h>
 
 const uint8_t sha384_der_prefix[SHA384_DER_LEN] = {

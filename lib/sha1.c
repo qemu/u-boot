@@ -17,12 +17,11 @@
 #endif
 
 #ifndef USE_HOSTCC
-#include <common.h>
 #include <linux/string.h>
+#include <watchdog.h>
 #else
 #include <string.h>
 #endif /* USE_HOSTCC */
-#include <watchdog.h>
 #include <u-boot/sha1.h>
 
 #include <linux/compiler_attributes.h>
