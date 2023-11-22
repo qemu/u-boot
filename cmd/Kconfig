@@ -1762,6 +1762,7 @@ if CMD_NET
 
 config CMD_BOOTP
 	bool "bootp"
+	depends on LIB_RAND || LIB_HW_RAND
 	default y
 	help
 	  bootp - boot image via network using BOOTP/TFTP protocol
@@ -1771,7 +1772,6 @@ config CMD_DHCP
 	depends on CMD_BOOTP
 	help
 	  Boot image via network using DHCP/TFTP protocol
-
 config CMD_DHCP6
 	bool "dhcp6"
 	depends on IPV6
