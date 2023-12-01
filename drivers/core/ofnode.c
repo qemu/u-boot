@@ -135,12 +135,6 @@ int oftree_new(oftree *treep)
 	return 0;
 }
 
-void oftree_dispose(oftree tree)
-{
-	if (of_live_active())
-		of_live_free(tree.np);
-}
-
 void *ofnode_lookup_fdt(ofnode node)
 {
 	if (gd->flags & GD_FLG_RELOC) {
@@ -242,6 +236,12 @@ int oftree_new(oftree *treep)
 }
 
 #endif /* OFNODE_MULTI_TREE */
+
+void oftree_dispose(oftree tree)
+{
+	if (of_live_active())
+		of_live_free(tree.np);
+}
 
 int oftree_to_fdt(oftree tree, struct abuf *buf)
 {
