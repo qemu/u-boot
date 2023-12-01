@@ -12,7 +12,10 @@
 #include <log.h>
 #include <mapmem.h>
 #include <net.h>
+#include <rng.h>
 #include <stdio_dev.h>
+#include <dm/device.h>
+#include <dm/uclass.h>
 #include <dm/ofnode.h>
 #include <linux/ctype.h>
 #include <linux/types.h>
@@ -649,6 +652,38 @@ int fdt_fixup_kaslr_seed(ofnode node, const u8 *seed, int len)
 
 	return 0;
 }
+
+#if defined(CONFIG_KASLR_RNG_SEED)
+int fdt_rng_kaslr_seed(void *ctx, struct event *event)
+{
+	u8 rand[8] = {0};
+	struct udevice *dev;
+	int ret;
+	oftree tree = event->data.ft_fixup.tree;
+	ofnode root_node = oftree_root(tree);
+
+	ret = uclass_first_device_err(UCLASS_RNG, &dev);
+	if (ret) {
+		printf("ERROR: Failed to find RNG device\n");
+		return ret;
+	}
+
+	ret = dm_rng_read(dev, rand, sizeof(rand));
+	if (ret) {
+		printf("ERROR: RNG read failed, ret=%d\n", ret);
+		return ret;
+	}
+
+	ret = fdt_fixup_kaslr_seed(root_node, rand, sizeof(rand));
+	if (ret) {
+		printf("ERROR: failed to add kaslr-seed to fdt\n");
+		return ret;
+	}
+
+	return 0;
+}
+EVENT_SPY_FULL(EVT_FT_FIXUP, fdt_rng_kaslr_seed);
+#endif
 
 int fdt_record_loadable(void *blob, u32 index, const char *name,
 			uintptr_t load_addr, u32 size, uintptr_t entry_point,
