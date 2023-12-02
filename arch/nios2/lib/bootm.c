@@ -29,8 +29,6 @@ int do_bootm_linux(int flag, int argc, char *const argv[],
 	if (images->ft_len)
 		of_flat_tree = images->ft_addr;
 #endif
-	if (!of_flat_tree && argc > 1)
-		of_flat_tree = (char *)hextoul(argv[1], NULL);
 	if (of_flat_tree)
 		initrd_end = (ulong)of_flat_tree;
 
