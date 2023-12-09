@@ -23,7 +23,7 @@ regressions in any module.
 To run this locally you should use this version of pylint::
 
     # pylint --version
-    pylint 2.11.1
+    pylint 2.17.7
     astroid 2.8.6
     Python 3.8.10 (default, Sep 28 2021, 16:10:42)
     [GCC 9.3.0]
@@ -31,7 +31,7 @@ To run this locally you should use this version of pylint::
 
 You should be able to select and this install other required tools with::
 
-    pip install pylint==2.11.1
+    pip install pylint==2.17.7
     pip install -r test/py/requirements.txt
     pip install asteval pyopenssl
 
