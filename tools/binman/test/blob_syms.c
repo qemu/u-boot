@@ -5,7 +5,6 @@
  * Simple program to create some binman symbols. This is used by binman tests.
  */
 
-#include <linux/kconfig.h>
 #include <binman_sym.h>
 
 DECLARE_BINMAN_MAGIC_SYM;

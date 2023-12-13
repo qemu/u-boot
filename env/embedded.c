@@ -4,8 +4,6 @@
  * Erik Theisen,  Wave 7 Optics, etheisen@mindspring.com.
  */
 
-#include <linux/kconfig.h>
-
 #ifndef __ASSEMBLY__
 #define	__ASSEMBLY__			/* Dirty trick to get only #defines */
 #endif

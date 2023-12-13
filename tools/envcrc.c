@@ -12,8 +12,6 @@
 #include <u-boot/crc.h>
 #include <unistd.h>
 
-#include <linux/kconfig.h>
-
 #ifndef __ASSEMBLY__
 #define	__ASSEMBLY__			/* Dirty trick to get only #defines	*/
 #endif
