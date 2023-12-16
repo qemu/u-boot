@@ -10,6 +10,7 @@
 #if !defined(USE_HOSTCC)
 
 #include <asm/u-boot.h>
+#include <dm/ofnode_decl.h>
 #include <linux/libfdt.h>
 #include <abuf.h>
 
@@ -130,6 +131,14 @@ static inline int fdt_fixup_memory_banks(void *blob, u64 start[], u64 size[],
 #endif
 
 void fdt_fixup_ethernet(void *fdt);
+
+/*
+ * fdt_fixup_kaslr_seed - Add kaslr-seed node in Device tree
+ * @node:		ofnode
+ * @eret:		0 for success
+ */
+int fdt_fixup_kaslr_seed(ofnode node, const u8 *seed, int len);
+
 int fdt_find_and_setprop(void *fdt, const char *node, const char *prop,
 			 const void *val, int len, int create);
 void fdt_fixup_qe_firmware(void *fdt);

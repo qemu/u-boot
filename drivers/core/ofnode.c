@@ -140,12 +140,6 @@ int oftree_new(oftree *treep)
 	return 0;
 }
 
-void oftree_dispose(oftree tree)
-{
-	if (of_live_active())
-		of_live_free(tree.np);
-}
-
 void *ofnode_lookup_fdt(ofnode node)
 {
 	if (gd->flags & GD_FLG_RELOC) {
@@ -247,6 +241,12 @@ int oftree_new(oftree *treep)
 }
 
 #endif /* OFNODE_MULTI_TREE */
+
+void oftree_dispose(oftree tree)
+{
+	if (of_live_active())
+		of_live_free(tree.np);
+}
 
 int oftree_to_fdt(oftree tree, struct abuf *buf)
 {
@@ -969,6 +969,23 @@ ofnode oftree_path(oftree tree, const char *path)
 
 		return ofnode_from_tree_offset(tree, offset);
 	}
+}
+
+int ofnode_root_from_fdt(void *fdt, ofnode *root_node)
+{
+	oftree tree;
+	/* If OFNODE_MULTI_TREE is not set, and if fdt is not the control FDT,
+	 *  oftree_from_fdt() will return NULL
+	 */
+	tree = oftree_from_fdt(fdt);
+
+	if (!oftree_valid(tree)) {
+		printf("Cannot create oftree\n");
+		return -EINVAL;
+	}
+	*root_node = oftree_root(tree);
+
+	return 0;
 }
 
 const void *ofnode_read_chosen_prop(const char *propname, int *sizep)

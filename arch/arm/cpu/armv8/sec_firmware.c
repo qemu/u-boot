@@ -411,46 +411,35 @@ int sec_firmware_init(const void *sec_firmware_img,
 /*
  * fdt_fix_kaslr - Add kalsr-seed node in Device tree
  * @fdt:		Device tree
- * @eret:		0 in case of error, 1 for success
+ * @eret:		0 for success
  */
 int fdt_fixup_kaslr(void *fdt)
 {
-	int nodeoffset;
-	int err, ret = 0;
-	u8 rand[8];
+	int ret = 0;
 
 #if defined(CONFIG_ARMV8_SEC_FIRMWARE_SUPPORT)
+	u8 rand[8];
+	ofnode root;
+
 	/* Check if random seed generation is  supported */
 	if (sec_firmware_support_hwrng() == false) {
 		printf("WARNING: SEC firmware not running, no kaslr-seed\n");
-		return 0;
+		return -EOPNOTSUPP;
 	}
 
-	err = sec_firmware_get_random(rand, 8);
-	if (err < 0) {
+	ret = sec_firmware_get_random(rand, 8);
+	if (ret < 0) {
 		printf("WARNING: No random number to set kaslr-seed\n");
-		return 0;
+		return ret;
 	}
 
-	err = fdt_check_header(fdt);
-	if (err < 0) {
-		printf("fdt_chosen: %s\n", fdt_strerror(err));
-		return 0;
+	ret = ofnode_root_from_fdt(fdt, &root);
+	if (ret < 0) {
+		printf("WARNING: Unable to get root ofnode\n");
+		return ret;
 	}
 
-	/* find or create "/chosen" node. */
-	nodeoffset = fdt_find_or_add_subnode(fdt, 0, "chosen");
-	if (nodeoffset < 0)
-		return 0;
-
-	err = fdt_setprop(fdt, nodeoffset, "kaslr-seed", rand,
-				  sizeof(rand));
-	if (err < 0) {
-		printf("WARNING: can't set kaslr-seed %s.\n",
-		       fdt_strerror(err));
-		return 0;
-	}
-	ret = 1;
+	ret = fdt_fixup_kaslr_seed(root, rand, sizeof(rand));
 #endif
 
 	return ret;
