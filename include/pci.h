@@ -1350,8 +1350,8 @@ pci_addr_t dm_pci_phys_to_bus(struct udevice *dev, phys_addr_t addr, size_t len,
  *
  * Looks up a base address register and finds the physical memory address
  * that corresponds to it.
- * Can be used for 32b BARs 0-5 on type 0 functions and for 32b BARs 0-1 on
- * type 1 functions.
+ * Can be used for 32b/64b BARs 0-5 on type 0 functions and for 32b BARs 0-1
+ * on type 1 functions.
  * Can also be used on type 0 functions that support Enhanced Allocation for
  * 32b/64b BARs.  Note that duplicate BEI entries are not supported.
  *

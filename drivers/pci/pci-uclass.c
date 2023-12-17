@@ -1611,6 +1611,17 @@ void *dm_pci_map_bar(struct udevice *dev, int bar, size_t offset, size_t len,
 	dm_pci_read_config32(udev, bar, &bar_response);
 	pci_bus_addr = (pci_addr_t)(bar_response & ~0xf);
 
+	/*
+	 * This assumes that dm_pciauto_setup_device() will allocate
+	 * a 64-bit address if CONFIG_SYS_PCI_64BIT is enabled and
+	 * the device advertises that it supports it.
+	 */
+	if (IS_ENABLED(CONFIG_SYS_PCI_64BIT) &&
+	    (bar_response & PCI_BASE_ADDRESS_MEM_TYPE_64)) {
+		dm_pci_read_config32(udev, bar + 4, &bar_response);
+		pci_bus_addr |= (pci_addr_t)bar_response << 32;
+	}
+
 	if (~((pci_addr_t)0) - pci_bus_addr < offset)
 		return NULL;
 
