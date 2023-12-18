@@ -38,6 +38,7 @@
 #include "board.h"
 #include "../common/factoryset.h"
 
+#ifdef CONFIG_SPL_BUILD
 /*
  * Read header information from EEPROM into global structure.
  */
@@ -46,7 +47,6 @@ static int read_eeprom(void)
 	return 0;
 }
 
-#ifdef CONFIG_SPL_BUILD
 static void board_init_ddr(void)
 {
 struct emif_regs rut_ddr3_emif_reg_data = {
