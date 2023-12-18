@@ -1,12 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Common board functions for siemens AM335X based boards
+ * Common board functions for siemens based boards
+ *
+ * TI am335x specifics moved to board_am335x.c
+ *
  * (C) Copyright 2013 Siemens Schweiz AG
  * (C) Heiko Schocher, DENX Software Engineering, hs@denx.de.
- *
- * Based on:
- * U-Boot file:/board/ti/am335x/board.c
- * Copyright (C) 2011, Texas Instruments, Incorporated - https://www.ti.com/
  */
 
 #include <common.h>
@@ -38,7 +37,6 @@
 #include "factoryset.h"
 
 DECLARE_GLOBAL_DATA_PTR;
-
 
 #if CONFIG_IS_ENABLED(DM_I2C)
 static struct udevice *i2c_dev;
@@ -82,39 +80,6 @@ int siemens_ee_read_data(uint address, uchar *buffer, int len)
 #endif
 }
 
-
-#ifdef CONFIG_SPL_BUILD
-void set_uart_mux_conf(void)
-{
-	enable_uart0_pin_mux();
-}
-
-void set_mux_conf_regs(void)
-{
-	/* Initalize the board header */
-	enable_i2c0_pin_mux();
-
-	/* enable early the console */
-	gd->baudrate = CONFIG_BAUDRATE;
-	serial_init();
-	gd->have_console = 1;
-
-	siemens_ee_setup();
-	if (read_eeprom() < 0)
-		puts("Could not get board ID.\n");
-
-	enable_board_pin_mux();
-}
-
-void sdram_init(void)
-{
-	spl_siemens_board_init();
-	board_init_ddr();
-
-	return;
-}
-#endif /* #ifdef CONFIG_SPL_BUILD */
-
 #ifndef CONFIG_SPL_BUILD
 /*
  * Basic board specific setup.  Pinmux has been handled already.
@@ -144,15 +109,6 @@ int board_init(void)
 	return 0;
 }
 #endif /* #ifndef CONFIG_SPL_BUILD */
-
-#define OSC	(V_OSCK/1000000)
-const struct dpll_params dpll_ddr = {
-		DDR_PLL_FREQ, OSC-1, 1, -1, -1, -1, -1};
-
-const struct dpll_params *get_dpll_ddr_params(void)
-{
-	return &dpll_ddr;
-}
 
 #ifndef CONFIG_SPL_BUILD
 
@@ -232,7 +188,7 @@ U_BOOT_CMD(
  * defines the startup state of the led, S1 the special state of the led when
  * it enters e.g. dfu mode.
  */
-void set_env_gpios(unsigned char state)
+static void set_env_gpios(unsigned char state)
 {
 	char *ptr_env;
 	char str_tmp[5];	/* must contain "ledX"*/

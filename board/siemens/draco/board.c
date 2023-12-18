@@ -37,7 +37,7 @@
 #include <watchdog.h>
 #include <linux/delay.h>
 #include "board.h"
-#include "../common/board.h"
+#include "../common/board_am335x.h"
 #include "../common/factoryset.h"
 #include <nand.h>
 
@@ -159,7 +159,7 @@ static int draco_read_nand_geometry(void)
 /*
  * Read header information from EEPROM into global structure.
  */
-static int read_eeprom(void)
+int siemens_read_eeprom(void)
 {
 	/* Read Siemens eeprom data (DDR3) */
 	if (siemens_ee_read_data(SIEMENS_EE_ADDR_DDR3, (uchar *)&settings.ddr3,
@@ -195,7 +195,7 @@ static int read_eeprom(void)
 	return draco_read_nand_geometry();
 }
 
-static void board_init_ddr(void)
+void siemens_init_ddr(void)
 {
 struct emif_regs draco_ddr3_emif_reg_data = {
 	.zq_config = 0x50074BE4,
@@ -242,7 +242,7 @@ struct ctrl_ioregs draco_ddr3_ioregs = {
 		   &draco_ddr3_cmd_ctrl_data, &draco_ddr3_emif_reg_data, 0);
 }
 
-static void spl_siemens_board_init(void)
+void spl_siemens_board_init(void)
 {
 	return;
 }
@@ -383,5 +383,3 @@ static void board_nand_cs_init(void)
 			      0x18000000, GPMC_SIZE_16M);
 }
 #endif
-
-#include "../common/board.c"

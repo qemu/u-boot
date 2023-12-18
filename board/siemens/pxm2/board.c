@@ -35,14 +35,14 @@
 #include <miiphy.h>
 #include <cpsw.h>
 #include <watchdog.h>
-#include "board.h"
-#include "../common/factoryset.h"
 #include "pmic.h"
 #include <nand.h>
 #include <bmp_layout.h>
+#include "../common/board_am335x.h"
+#include "../common/factoryset.h"
 
 #ifdef CONFIG_SPL_BUILD
-static void board_init_ddr(void)
+void siemens_init_ddr(void)
 {
 struct emif_regs pxm2_ddr3_emif_reg_data = {
 	.sdram_config = 0x41805332,
@@ -161,7 +161,7 @@ void spl_siemens_board_init(void)
 	}
 }
 
-int read_eeprom(void)
+int siemens_read_eeprom(void)
 {
 	/* nothing ToDo here for this board */
 
@@ -274,5 +274,3 @@ int board_late_init(void)
 	return 0;
 }
 #endif
-
-#include "../common/board.c"

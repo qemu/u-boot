@@ -17,6 +17,7 @@
 #include <asm/arch/mux.h>
 #include <asm/io.h>
 #include <i2c.h>
+#include "../common/board_am335x.h"
 
 static struct module_pin_mux uart0_pin_mux[] = {
 	{OFFSET(uart0_rxd), (MODE(0) | PULLUDDIS | RXACTIVE)},	/* UART0_RXD */
