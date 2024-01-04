@@ -92,7 +92,7 @@ static int expo_base(struct unit_test_state *uts)
 	*name = '\0';
 	ut_assertnonnull(exp);
 	ut_asserteq(0, exp->scene_id);
-	ut_asserteq(0, exp->next_id);
+	ut_asserteq(1, exp->next_id);
 
 	/* Make sure the name was allocated */
 	ut_assertnonnull(exp->name);
@@ -131,7 +131,7 @@ static int expo_scene(struct unit_test_state *uts)
 	ut_assertok(expo_new(EXPO_NAME, NULL, &exp));
 
 	scn = NULL;
-	ut_asserteq(0, exp->next_id);
+	ut_asserteq(1, exp->next_id);
 	strcpy(name, SCENE_NAME1);
 	id = scene_new(exp, name, SCENE1, &scn);
 	*name = '\0';
@@ -167,6 +167,25 @@ static int expo_scene(struct unit_test_state *uts)
 	return 0;
 }
 BOOTSTD_TEST(expo_scene, UT_TESTF_DM | UT_TESTF_SCAN_FDT);
+
+/* Check creating a scene with no ID */
+static int expo_scene_no_id(struct unit_test_state *uts)
+{
+	struct scene *scn;
+	struct expo *exp;
+	char name[100];
+	int id;
+
+	ut_assertok(expo_new(EXPO_NAME, NULL, &exp));
+	ut_asserteq(1, exp->next_id);
+
+	strcpy(name, SCENE_NAME1);
+	id = scene_new(exp, SCENE_NAME1, 0, &scn);
+	ut_asserteq(1, scn->id);
+
+	return 0;
+}
+BOOTSTD_TEST(expo_scene_no_id, UT_TESTF_DM | UT_TESTF_SCAN_FDT);
 
 /* Check creating a scene with objects */
 static int expo_object(struct unit_test_state *uts)
