@@ -47,7 +47,6 @@ int add_txt_str(struct build_info *info, ofnode node, struct scene *scn,
 		const char *find_name, uint obj_id)
 {
 	const char *text;
-	uint str_id;
 	int ret;
 
 	info->err_prop = find_name;
@@ -68,12 +67,7 @@ int add_txt_str(struct build_info *info, ofnode node, struct scene *scn,
 			return log_msg_ret("id", -EINVAL);
 	}
 
-	ret = expo_str(scn->expo, find_name, 0, text);
-	if (ret < 0)
-		return log_msg_ret("add", ret);
-	str_id = ret;
-
-	ret = scene_txt_str(scn, find_name, obj_id, str_id, text, NULL);
+	ret = scene_txt_str(scn, find_name, obj_id, 0, text, NULL);
 	if (ret < 0)
 		return log_msg_ret("add", ret);
 
@@ -95,7 +89,6 @@ int add_txt_str_list(struct build_info *info, ofnode node, struct scene *scn,
 		     const char *find_name, int index, uint obj_id)
 {
 	const char *text;
-	uint str_id;
 	int ret;
 
 	ret = ofnode_read_string_index(node, find_name, index, &text);
@@ -115,12 +108,7 @@ int add_txt_str_list(struct build_info *info, ofnode node, struct scene *scn,
 			return log_msg_ret("id", -EINVAL);
 	}
 
-	ret = expo_str(scn->expo, find_name, 0, text);
-	if (ret < 0)
-		return log_msg_ret("add", ret);
-	str_id = ret;
-
-	ret = scene_txt_str(scn, find_name, obj_id, str_id, text, NULL);
+	ret = scene_txt_str(scn, find_name, obj_id, 0, text, NULL);
 	if (ret < 0)
 		return log_msg_ret("add", ret);
 
