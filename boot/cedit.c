@@ -585,7 +585,7 @@ static int h_read_settings_env(struct scene_obj *obj, void *vpriv)
 
 		/*
 		 * note that no validation is done here, to make sure the ID is
-		 * valid * and actually points to a menu item
+		 * valid and actually points to a menu item
 		 */
 		menu->cur_item_id = val;
 		break;
@@ -719,6 +719,7 @@ int cedit_write_settings_cmos(struct expo *exp, struct udevice *dev,
 	}
 
 	/* write the data to the RTC */
+	log_debug("Writing CMOS\n");
 	first = CMOS_MAX_BYTES;
 	last = -1;
 	for (i = 0, count = 0; i < CMOS_MAX_BYTES; i++) {
@@ -786,6 +787,7 @@ static int h_read_settings_cmos(struct scene_obj *obj, void *vpriv)
 	}
 
 	/* update the current item */
+	log_debug("look for menuitem value %d in menu %d\n", val, menu->obj.id);
 	mi = scene_menuitem_find_seq(menu, val);
 	if (!mi)
 		return log_msg_ret("seq", -ENOENT);
@@ -820,7 +822,7 @@ int cedit_read_settings_cmos(struct expo *exp, struct udevice *dev,
 		goto done;
 	}
 
-	/* read the data to the RTC */
+	/* indicate what bytes were read from the RTC */
 	first = CMOS_MAX_BYTES;
 	last = -1;
 	for (i = 0, count = 0; i < CMOS_MAX_BYTES; i++) {
