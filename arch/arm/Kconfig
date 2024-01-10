@@ -605,6 +605,7 @@ config ARCH_MVEBU
 	select DM_SPI
 	select DM_SPI_FLASH
 	select GPIO_EXTRA_HEADER
+	select MTD
 	select SPL_DM_SPI if SPL
 	select SPL_DM_SPI_FLASH if SPL
 	select SPL_TIMER if SPL
@@ -630,6 +631,7 @@ config TARGET_STV0991
 	select DM_SPI_FLASH
 	select GPIO_EXTRA_HEADER
 	select PL01X_SERIAL
+	select MTD
 	select SPI
 	select SPI_FLASH
 	imply CMD_DM
@@ -715,6 +717,7 @@ config ARCH_EXYNOS
 	select DM_SERIAL
 	select DM_SPI
 	select DM_SPI_FLASH
+	select MTD
 	select SPI
 	select GPIO_EXTRA_HEADER
 	imply SYS_THUMB_BUILD
@@ -997,6 +1000,7 @@ config ARCH_APPLE
 	select VIDEO
 	select IOMMU
 	select LINUX_KERNEL_IMAGE_HEADER
+	select MTD
 	select OF_BOARD_SETUP
 	select OF_CONTROL
 	select PCI
@@ -1108,6 +1112,7 @@ config ARCH_SOCFPGA
 	imply DM_SPI
 	imply DM_SPI_FLASH
 	imply FAT_WRITE
+	imply MTD
 	imply SPL
 	imply SPL_DM
 	imply SPL_DM_SPI
@@ -1131,7 +1136,7 @@ config ARCH_SUNXI
 	select DM_GPIO
 	select DM_I2C if I2C
 	select DM_SPI if SPI
-	select DM_SPI_FLASH if SPI
+	select DM_SPI_FLASH if SPI && MTD
 	select DM_KEYBOARD
 	select DM_MMC if MMC
 	select DM_SERIAL
@@ -1249,6 +1254,7 @@ config ARCH_ZYNQ
 	select DM_SPI
 	select DM_SPI_FLASH
 	select OF_CONTROL
+	select MTD
 	select SPI
 	select SPL_BOARD_INIT if SPL
 	select SPL_CLK if SPL
@@ -1287,6 +1293,7 @@ config ARCH_ZYNQMP
 	imply DM_MAILBOX
 	select DM_MMC if MMC
 	select DM_SERIAL
+	select MTD
 	select DM_SPI if SPI
 	select DM_SPI_FLASH if DM_SPI
 	imply FIRMWARE
@@ -1833,6 +1840,7 @@ config TARGET_SL28
 	select DM_GPIO
 	select DM_I2C
 	select DM_MMC
+	select MTD
 	select DM_SPI_FLASH
 	select DM_MDIO
 	select PCI
@@ -1976,6 +1984,7 @@ config ARCH_ROCKCHIP
 	select DM_SPI_FLASH
 	select ENABLE_ARM_SOC_BOOT0_HOOK
 	select OF_CONTROL
+	select MTD
 	select SPI
 	select SPL_DM if SPL
 	select SPL_DM_SPI if SPL
