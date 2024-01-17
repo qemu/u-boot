@@ -117,12 +117,17 @@ def check_function(cons, fname, proftool, map_fname, trace_dat):
     out = util.run_and_log(cons, ['sh', '-c', cmd])
 
     # Format:
-    # unknown option 14
     #      u-boot-1     [000]    60.805596: function:             initf_malloc
     #      u-boot-1     [000]    60.805597: function:             initf_malloc
     #      u-boot-1     [000]    60.805601: function:             initf_bootstage
     #      u-boot-1     [000]    60.805607: function:             initf_bootstage
-    lines = [line.replace(':', '').split() for line in out.splitlines()]
+    # OR:
+    #      u-boot-1     [000] .....    60.805596: function:             initf_malloc
+    #      u-boot-1     [000] .....    60.805597: function:             initf_malloc
+    #      u-boot-1     [000] .....    60.805601: function:             initf_bootstage
+    #      u-boot-1     [000] .....    60.805607: function:             initf_bootstage
+
+    lines = [re.sub(r'(:|\.\.\.\.\.)', '', line).split() for line in out.splitlines()]
     vals = {items[4]: float(items[2]) for items in lines if len(items) == 5}
     base = None
     max_delta = 0
@@ -176,6 +181,7 @@ def check_funcgraph(cons, fname, proftool, map_fname, trace_dat):
     #  u-boot-1     [000]   282.101375: funcgraph_exit:         0.006 us   |      }
     # Then check for this:
     #  u-boot-1     [000]   282.101375: funcgraph_entry:        0.000 us   |    initcall_is_event();
+    # And this all may be '[000] .....    282.' instead.
 
     expected_indent = None
     found_start = False
@@ -185,7 +191,7 @@ def check_funcgraph(cons, fname, proftool, map_fname, trace_dat):
     # Look for initf_bootstage() entry and make sure we see the exit
     # Collect the time for initf_dm()
     for line in out.splitlines():
-        m = RE_LINE.match(line)
+        m = RE_LINE.match(re.sub(r'\.\.\.\.\.', '', line))
         if m:
             timestamp, indent, func, brace = m.groups()
             if found_end:
@@ -209,7 +215,7 @@ def check_funcgraph(cons, fname, proftool, map_fname, trace_dat):
     start_timestamp = None
     end_timestamp = None
     for line in out.splitlines():
-        m = RE_LINE.match(line)
+        m = RE_LINE.match(re.sub(r'\.\.\.\.\.', '', line))
         if m:
             timestamp, indent, func, brace = m.groups()
             if func == 'initf_dm() ':
