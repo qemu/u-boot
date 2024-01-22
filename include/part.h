@@ -690,6 +690,14 @@ int part_get_type_by_name(const char *name);
  */
 int part_get_bootable(struct blk_desc *desc);
 
+/**
+ * part_get_esp() - Find the EFI system partition
+ *
+ * @desc: Block-device descriptor
+ * Return: the EFI system partition, or 0 if there is none
+ */
+int part_get_esp(struct blk_desc *desc);
+
 #else
 static inline int part_driver_get_count(void)
 { return 0; }
@@ -699,6 +707,11 @@ static inline struct part_driver *part_driver_get_first(void)
 
 static inline bool part_get_bootable(struct blk_desc *desc)
 { return false; }
+
+static inline int part_get_esp(struct blk_desc *desc)
+{
+	return 0;
+}
 
 #endif /* CONFIG_PARTITIONS */
 

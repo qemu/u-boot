@@ -848,3 +848,19 @@ int part_get_bootable(struct blk_desc *desc)
 
 	return 0;
 }
+
+int part_get_esp(struct blk_desc *desc)
+{
+	struct disk_partition info;
+	int p;
+
+	for (p = 1; p <= MAX_SEARCH_PARTITIONS; p++) {
+		int ret;
+
+		ret = part_get_info(desc, p, &info);
+		if (!ret && (info.bootable & PART_EFI_SYSTEM_PARTITION))
+			return p;
+	}
+
+	return 0;
+}
