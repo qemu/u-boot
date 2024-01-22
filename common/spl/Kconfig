@@ -1291,6 +1291,14 @@ config SPL_SATA_RAW_U_BOOT_SECTOR
 	  Sector on the SATA disk to load U-Boot from, when the SATA disk is being
 	  used in raw mode. Units: SATA disk sectors (1 sector = 512 bytes).
 
+config SPL_ESP_BOOT
+	bool "Load next stage boot image from the UEFI system partition"
+	default y if BOOT_DEFAULTS
+	select SPL_PARTITION_TYPE_GUID
+	help
+	  When enabled, first try to boot from the UEFI system partition as
+	  described in the Ch.4 of the EBBR specification.
+
 config SPL_NVME
 	bool "NVM Express device support"
 	depends on BLK

@@ -60,10 +60,10 @@ static ulong spl_fit_read(struct spl_load_info *load, ulong file_offset,
 	return actread;
 }
 
-int spl_load_image_fat(struct spl_image_info *spl_image,
-		       struct spl_boot_device *bootdev,
-		       struct blk_desc *block_dev, int partition,
-		       const char *filename)
+int spl_load_image_fat_one(struct spl_image_info *spl_image,
+			   struct spl_boot_device *bootdev,
+			   struct blk_desc *block_dev, int partition,
+			   const char *filename)
 {
 	int err;
 	loff_t size;
@@ -101,6 +101,32 @@ end:
 #endif
 
 	return err;
+}
+
+int spl_load_image_fat(struct spl_image_info *spl_image,
+		       struct spl_boot_device *bootdev,
+		       struct blk_desc *block_dev, int partition,
+		       const char *filename)
+{
+	int err, part;
+
+	/*
+	 * First try to boot from EFI System partition. In case of failure,
+	 * fall back to the configured partition.
+	 */
+	if (IS_ENABLED(CONFIG_SPL_ESP_BOOT)) {
+		part = part_get_esp(block_dev);
+		if (part) {
+			err = spl_load_image_fat_one(spl_image, bootdev,
+						     block_dev, part,
+						     filename);
+			if (!err)
+				return err;
+		}
+	}
+
+	return spl_load_image_fat_one(spl_image, bootdev, block_dev,
+				      partition, filename);
 }
 
 #if CONFIG_IS_ENABLED(OS_BOOT)
