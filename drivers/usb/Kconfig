@@ -54,8 +54,7 @@ config SPL_DM_USB
 	default y
 
 config DM_USB_GADGET
-	bool "Enable driver model for USB Gadget"
-	depends on DM_USB
+	bool
 	help
 	  Enable driver model for USB Gadget (Peripheral
 	  mode)

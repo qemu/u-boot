@@ -17,6 +17,7 @@ menuconfig USB_GADGET
 	bool "USB Gadget Support"
 	depends on DM
 	select DM_USB
+	select DM_USB_GADGET
 	imply CMD_BIND
 	help
 	   USB is a master/slave protocol, organized with one master

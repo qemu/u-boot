@@ -77,7 +77,7 @@ config USB_MUSB_SUNXI
 
 config USB_MUSB_UX500
 	bool "Enable ST-Ericsson Ux500 USB controller"
-	depends on DM_USB && DM_USB_GADGET && ARCH_U8500
+	depends on ARCH_U8500
 	default y
 	help
 	  Say y to enable support for the MUSB OTG USB controller used in
