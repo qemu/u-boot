@@ -110,7 +110,7 @@ void board_init_f(ulong dummy)
 	 * through a SYSFW PM-init step and will need a re-init in some way
 	 * due to changing module clock frequencies.
 	 */
-	if (IS_ENABLED(CONFIG_K3_EARLY_CONS))
+	if (IS_ENABLED(CONFIG_K3_EARLY_CONS)) {
 		ret = early_console_init();
 		if (ret)
 			panic("early_console_init() failed: %d\n", ret);
@@ -122,7 +122,7 @@ void board_init_f(ulong dummy)
 	 * callback hook, effectively switching on (or over) the console
 	 * output.
 	 */
-	if (IS_ENABLED(CONFIG_K3_LOAD_SYSFW) {
+	if (IS_ENABLED(CONFIG_K3_LOAD_SYSFW)) {
 		ret = is_rom_loaded_sysfw(&bootdata);
 		if (!ret)
 			panic("ROM has not loaded TIFS firmware\n");
