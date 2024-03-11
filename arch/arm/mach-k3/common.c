@@ -284,3 +284,13 @@ int misc_init_r(void)
 void __weak do_board_detect(void)
 {
 }
+
+#if (IS_ENABLED(CONFIG_K3_QOS))
+void setup_qos(void)
+{
+	u32 i;
+
+	for (i = 0; i < qos_count; i++)
+		writel(qos_data[i].val, (uintptr_t)qos_data[i].reg);
+}
+#endif
