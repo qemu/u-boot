@@ -194,3 +194,9 @@ To update the `coreboot.rom` file which is used:
 #. Upload the file to Google drive
 
 #. Send a patch to change the file ID used by wget in the CI yaml files.
+
+Editing CMOS RAM settings
+-------------------------
+
+U-Boot supports creating a configuration editor to edit coreboot CMOS-RAM
+settings. See :ref:`cedit_cb_load`.
