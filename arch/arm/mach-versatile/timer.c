@@ -18,7 +18,7 @@
  * Philippe Robin, ARM Ltd. <philippe.robin@arm.com>
  */
 
-#include <common.h>
+#include <config.h>
 
 #define TIMER_ENABLE	(1 << 7)
 #define TIMER_MODE_MSK	(1 << 6)
