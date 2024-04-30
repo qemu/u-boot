@@ -4,7 +4,6 @@
  * NVIDIA Corporation <www.nvidia.com>
  */
 
-#include <common.h>
 #include <power/as3722.h>
 
 #include <asm/arch/gpio.h>
