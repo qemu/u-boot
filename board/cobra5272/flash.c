@@ -4,13 +4,14 @@
  * Wolfgang Denk, DENX Software Engineering, wd@denx.de.
  */
 
-#include <common.h>
+#include <config.h>
 #include <console.h>
 #include <cpu_func.h>
 #include <flash.h>
 #include <irq_func.h>
 #include <uuid.h>
 #include <linux/delay.h>
+#include <linux/string.h>
 
 #define PHYS_FLASH_1 CFG_SYS_FLASH_BASE
 #define FLASH_BANK_SIZE 0x200000
