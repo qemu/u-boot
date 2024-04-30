@@ -6,7 +6,7 @@
  * Wolfgang Denk, DENX Software Engineering, wd@denx.de.
  */
 
-#include <common.h>
+#include <config.h>
 #include <asm/mmu.h>
 
 struct fsl_e_tlb_entry tlb_table[] = {

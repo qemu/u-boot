@@ -3,7 +3,7 @@
  * Copyright 2014 Freescale Semiconductor, Inc.
  */
 
-#include <common.h>
+#include <config.h>
 #include <asm/mmu.h>
 
 struct fsl_e_tlb_entry tlb_table[] = {

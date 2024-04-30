@@ -4,7 +4,7 @@
  */
 
 
-#include <common.h>
+#include <config.h>
 #include <clock_legacy.h>
 
 /*

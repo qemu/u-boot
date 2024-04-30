@@ -5,7 +5,7 @@
  * Freescale T2080RDB board-specific CPLD controlling supports.
  */
 
-#include <common.h>
+#include <config.h>
 #include <command.h>
 #include "cpld.h"
 
