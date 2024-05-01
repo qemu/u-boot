@@ -5,7 +5,6 @@
  * Extracted from Chromium coreboot commit 3f59b13d
  */
 
-#include <common.h>
 #include <bootstage.h>
 #include <dm.h>
 #include <edid.h>

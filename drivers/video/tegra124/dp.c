@@ -4,7 +4,6 @@
  * Copyright 2014 Google Inc.
  */
 
-#include <common.h>
 #include <display.h>
 #include <dm.h>
 #include <div64.h>
