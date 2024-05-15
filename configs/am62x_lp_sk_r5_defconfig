@@ -1,0 +1,2 @@
+#include <configs/am62x_evm_r5_defconfig>
+CONFIG_DEFAULT_DEVICE_TREE="k3-am62-r5-lp-sk"

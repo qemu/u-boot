@@ -1,0 +1,3 @@
+#include <configs/am62x_evm_a53_defconfig>
+CONFIG_DEFAULT_DEVICE_TREE="ti/k3-am62-lp-sk"
+CONFIG_OF_UPSTREAM=y
