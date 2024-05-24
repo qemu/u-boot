@@ -50,6 +50,13 @@ config SPI_DIRMAP
 	  improvements as it automates the whole process of sending SPI memory
 	  operations every time a new region is accessed.
 
+config SPI_ADVANCE
+	bool "Enable the advance feature"
+	default y
+	help
+	  Enable the SPI advance feature support. By default this is set to y.
+	  If you intend not to use the advance feature support you should say n here.
+
 if DM_SPI
 
 config ALTERA_SPI
