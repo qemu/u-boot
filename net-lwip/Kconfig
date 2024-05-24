@@ -12,4 +12,5 @@ menuconfig NET_LWIP
 	  depend on CONFIG_NET (such as cmd/net.c enabled via CONFIG_CMD_NET).
 	  Therefore the two symbols CONFIG_NET and CONFIG_NET_LWIP are mutually
 	  exclusive.
-	  NOTE: This is currently a placeholder.
+	  NOTE: This currently only builds the lwIP library but does not add
+	  any functionality to U-Boot.
