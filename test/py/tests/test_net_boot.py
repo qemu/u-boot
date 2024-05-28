@@ -201,7 +201,8 @@ def setup_pxe_boot(u_boot_console):
         pytest.skip('No PXE bootable file to read')
 
     test_net.test_net_dhcp(u_boot_console)
-    test_net.test_net_setup_static(u_boot_console)
+    if not test_net.net_set_up:
+        test_net.test_net_setup_static(u_boot_console)
     return f
 
 @pytest.mark.buildconfigspec('cmd_net')
